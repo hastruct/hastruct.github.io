@@ -1,0 +1,108 @@
+<div class="post-highlight-header">
+  <div class="ph-container">
+    
+    <h1 class="ph-title">{{ page.title }}</h1>
+
+    {% if page.excerpt %}
+    <p class="ph-excerpt">
+      {{ page.excerpt | strip_html }}
+    </p>
+    {% endif %}
+
+    <div class="ph-meta">
+      <span class="ph-read-time">
+        <i class="far fa-clock"></i> 
+        {% assign words = content | number_of_words %}
+        {% if words < 360 %}
+          1 phút để đọc
+        {% else %}
+          {{ words | divided_by: 180 }} phút để đọc
+        {% endif %}
+      </span>
+    </div>
+
+    {% if page.header.caption %}
+    <div class="ph-caption">
+      {{ page.header.caption }}
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+<style>
+  .post-highlight-header {
+    position: relative;
+    /* Màu nền gradient chuẩn như hình đính kèm */
+    background: linear-gradient(135deg, #1a1a2e 0%, #004d99 100%);
+    color: #ffffff;
+    padding: 60px 40px 80px 40px;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  .ph-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ph-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    letter-spacing: -0.5px;
+  }
+
+  .ph-excerpt {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    max-width: 850px;
+    font-weight: 400;
+  }
+
+  .ph-meta {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+  }
+
+  .ph-meta i {
+    margin-right: 8px;
+  }
+
+  .ph-caption {
+    position: absolute;
+    bottom: -60px; /* Căn chỉnh theo padding của container */
+    right: 0;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+  }
+
+  /* Responsive cho thiết bị di động */
+  @media (max-width: 768px) {
+    .post-highlight-header {
+      padding: 40px 20px 60px 20px;
+    }
+    .ph-title {
+      font-size: 1.8rem;
+    }
+    .ph-excerpt {
+      font-size: 1.1rem;
+    }
+    .ph-caption {
+      position: static;
+      margin-top: 20px;
+      text-align: right;
+    }
+  }
+</style>
