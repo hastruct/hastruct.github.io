@@ -3,10 +3,9 @@ layout: splash
 title: "HST.AI"
 permalink: /apps/
 header:
-  # Ảnh mặc định (sẽ bị CSS bên dưới ghi đè để chạy slide)
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<span style='color: #FFD700; font-weight: bold;'>Email: ha.nguyen@hydrostructai.com | Tel: +84 374874142</span>"
-  title: "Các Ứng dụng Web Apps cho Kỹ thuật xây dựng"  
+  caption: "<span class='hero-contact-info'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1'>HST.AI</a> | Email: <a href='mailto:ha.nguyen@hydrostructai.com'>ha.nguyen@hydrostructai.com</a> | Tel: +84 374874142</span>"
+  title: "Các Ứng dụng Web Apps cho Kỹ thuật xây dựng"
 ---
 
 <link rel="stylesheet" href="/assets/css/custom-home.css">
@@ -80,6 +79,16 @@ header:
   @media (max-width: 768px) {
     .wasm-grid { grid-template-columns: 1fr; gap: 20px; }
   }
+  /* Đồng bộ giao diện caption với trang chủ */
+	.page__hero-caption {
+	  text-align: right !important;
+	  padding-right: 40px !important;
+	}
+	.hero-contact-info, .hero-contact-info a {
+	  color: #FFD700 !important;
+	  font-weight: bold !important;
+	  text-decoration: none;
+	}
 </style>
 
 <div class="home-wrapper">
