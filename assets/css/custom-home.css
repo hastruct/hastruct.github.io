@@ -509,3 +509,30 @@
     height: 160px;
   }
 }
+
+/* ── Hero caption — shared across all pages ── */
+.page__hero-caption {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  text-align: right !important;
+  margin: 0 !important;
+  padding: 6px 48px !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-contact-wrapper {
+  display: block;
+  text-align: right;
+  /* KHÔNG có padding ở đây — đã có padding trên .page__hero-caption */
+}
+
+.hero-contact-info,
+.hero-contact-info a {
+  color: #FFD700 !important;
+  font-weight: bold !important;
+  text-decoration: none;
+}
+

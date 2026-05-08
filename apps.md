@@ -79,16 +79,7 @@ header:
   @media (max-width: 768px) {
     .wasm-grid { grid-template-columns: 1fr; gap: 20px; }
   }
-  /* Đồng bộ giao diện caption với trang chủ */
-	.page__hero-caption {
-	  text-align: right !important;
-	  padding-right: 40px !important;
-	}
-	.hero-contact-info, .hero-contact-info a {
-	  color: #FFD700 !important;
-	  font-weight: bold !important;
-	  text-decoration: none;
-	}
+
 </style>
 
 <div class="home-wrapper">
