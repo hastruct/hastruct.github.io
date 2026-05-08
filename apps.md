@@ -4,7 +4,19 @@ title: "Ứng dụng"
 permalink: /apps/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper'><span class='c-item'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item'>Email: <a href='mailto:ha.nguyen@hydrostructai.com'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item'>Tel: +84 374874142</span></div>"
+	caption: "<div class='hero-contact-wrapper'>
+	  <span class='c-item'>
+		<span class='c-label'>WhatsApp:</span> <a href='https://wa.me/qr/UOQNWYT5B7SNG1' class='v-whatsapp'>HST.AI</a>
+	  </span> 
+	  <span class='c-sep'>|</span> 
+	  <span class='c-item'>
+		<span class='c-label'>Email:</span> <a href='mailto:ha.nguyen@hydrostructai.com' class='v-email'>ha.nguyen@hydrostructai.com</a>
+	  </span> 
+	  <span class='c-sep'>|</span> 
+	  <span class='c-item'>
+		<span class='c-label'>Tel:</span> <span class='v-tel'>+84 374874142</span>
+	  </span>
+	</div>"
   title: "Các Ứng dụng cho Kỹ thuật xây dựng"
 ---
 
