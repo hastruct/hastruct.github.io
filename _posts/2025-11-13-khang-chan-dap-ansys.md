@@ -1,26 +1,41 @@
 ---
-layout: single
 title: "Phân tích kháng chấn đập bê tông trọng lực theo phương pháp phổ phản ứng"
 author_profile: true
 author_name: "HST.AI"
 date: 2025-10-26 10:00:00 +0700
-# Gợi ý: Bạn nên tạo một ảnh xem trước cho bài viết này
-#image: /assets/images/posts/hypocycloid-hero.png 
-
+layout: single
+featured: true
+toc: true
+toc_sticky: true
+toc_label: "📑 Mục Lục"
+permalink: "/posts/khang-chan-dap-ansys-apdl/"
 categories:
   - Ansys
+  - Structural-Analysis
 tags:
   - Ansys
   - Phân tích kháng chấn
   - Phổ phản ứng
   - FEM
   - APDL
-description: "Hướng dẫn các bước phân tích kháng chấn đập bê tông trọng lực bằng Ansys (APDL) theo phương pháp phổ phản ứng."
+excerpt: "Hướng dẫn chi tiết quy trình 4 bước phân tích kháng chấn cho đập bê tông trọng lực bằng Ansys APDL. Bao gồm thiết lập mô hình FEM 3D, phân tích Modal và tổ hợp phổ phản ứng theo quy phạm."
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  caption: "© HydrostrucAI - Phân tích Kết cấu & Mô phỏng số"
 ---
 
-Để thực hiện phân tích, chúng ta làm việc với mô hình phần tử hữu hạn ba chiều (FEM 3D) của đập bê tông trọng lực. Dưới đây là hình ảnh trực quan của mô hình đã được xây dựng trong Ansys.
+Để phục vụ quá trình mô phỏng, bài viết thiết lập mô hình phần tử hữu hạn ba chiều (3D FEM) chi tiết cho kết cấu đập bê tông trọng lực. Hình ảnh dưới đây minh họa mô hình hình học được thực hiện trong môi trường Ansys, dựa trên các phương pháp luận từ công trình nghiên cứu của **PGS.TS Vũ Hoàng Hưng (Đại học Thủy lợi)**.
 
-<img src="/assets/images/app-icons/mo-hinh-dap-bttl.jpg" alt="Mô hình đập BTTL" title="Mo hinh dap BTTL" style="width: 80%; max-width: 700px; margin: 20px auto; display: block; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+---
+
+<div style="text-align: center;">
+  <img src="/assets/images/posts/khang-chan-dap/3d-fem-model.jpg" 
+       alt="Mô hình phần tử hữu hạn 3D của đập trọng lực trong Ansys" 
+       title="Mô hình 3D FEM đập trọng lực" 
+       style="width: 85%; max-width: 800px; margin: 20px auto; display: block; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+  <p style="font-size: 0.9em; color: #555;"><i>Hình 1: Mô hình phần tử hữu hạn 3D của đập trọng lực được thiết lập trong Ansys</i></p>
+</div>
 
 Dưới đây là toàn bộ tập lệnh (script) APDL để thực hiện phân tích:
 

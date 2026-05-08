@@ -4,6 +4,7 @@ author_profile: true
 author_name: "HST.AI"
 date: 2026-05-07 08:00:00 +0700
 layout: single
+featured: true  # <--- Thêm dòng này để đánh dấu bài nổi bật
 toc: true
 toc_sticky: true
 toc_label: "📑 Mục Lục"
@@ -22,7 +23,7 @@ tags:
     Nghiệm thu,
     Chi phí xây dựng
   ]
-excerpt: "70% chủ nhà mắc sai lầm ngay từ đầu mà không biết. Phân tích chuyên sâu dưới góc nhìn kỹ sư xây dựng - 3 nhóm sai lầm điển hình, khung giải pháp 5 trụ cột và bộ checklist nghiệm thu theo TCVN."
+excerpt: "Nhiều chủ nhà mắc sai lầm ngay từ đầu mà không biết. Phân tích chuyên sâu dưới góc nhìn kỹ sư xây dựng - 3 nhóm sai lầm điển hình, khung giải pháp 5 trụ cột và bộ checklist nghiệm thu theo TCVN."
 header:
   overlay_color: "#1a1a2e"
   overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
