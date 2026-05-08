@@ -405,12 +405,25 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
       <h2><span class="section-icon">🏗️</span> Giới thiệu chung</h2>
 
       <p>
-        <strong>HydroStructAI</strong> là nền tảng kỹ thuật chuyên biệt kết hợp
-        <code class="tag">Quản lý dự án</code> + 
-        <code class="tag">Đào tạo kỹ thuật</code> + 
-        <code class="tag">Ứng dụng web kỹ thuật</code> +
-        <code class="tag">Trí tuệ nhân tạo</code> 
-        - Trang web mang đến cho chủ đầu tư và các bên liên quan một hệ sinh thái công cụ thực chiến, từ quản lý dự án theo chuẩn <strong>PMBOK 7th</strong> đến các ứng dụng phân tích kỹ thuật chạy ngay trên trình duyệt.
+        <strong>HydroStructAI</strong> là nền tảng kỹ thuật chuyên biệt kết hợp gồm:
+		
+		<div style="
+		  background: var(--color-background-primary);
+		  border: 0.5px solid #ccc;
+		  border-left: 3px solid #004d99;
+		  border-radius: 0 6px 6px 0;
+		  padding: 14px 20px;
+		  margin: 1.5rem 0;
+		  font-size: 15px;
+		  line-height: 1.7;
+		">
+		  <code class="tag">Quản lý dự án</code> + 
+		  <code class="tag">Đào tạo kỹ thuật</code> + 
+		  <code class="tag">Ứng dụng web kỹ thuật</code> +
+		  <code class="tag">Trí tuệ nhân tạo</code>
+		</div>
+
+        Mục tiêu mang đến cho chủ đầu tư và các bên liên quan một hệ sinh thái công cụ thực chiến, từ quản lý dự án theo chuẩn <strong>PMBOK 7th</strong> đến các ứng dụng phân tích kỹ thuật chạy ngay trên trình duyệt.
       </p>
 
       <p>
