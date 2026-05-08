@@ -4,24 +4,7 @@ title: "Danh Sách Tags"
 permalink: /tags/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  <div class='hero-contact-wrapper' style='font-weight: 900;'>
-	  <span class='c-item' style='color: #FF0000;'>
-		WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #FF0000; text-decoration: none;'>HST.AI</a>
-	  </span> 
-	  
-	  <span class='c-sep' style='color: #000000; margin: 0 5px;'>|</span> 
-	  
-	  <span class='c-item' style='color: #00008B;'>
-		Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #00008B; text-decoration: none;'>ha.nguyen@hydrostructai.com</a>
-	  </span> 
-	  
-	  <span class='c-sep' style='color: #000000; margin: 0 5px;'>|</span> 
-	  
-	  <span class='c-item' style='color: #000000;'>
-		Tel: +84 374874142
-	  </span>
-</div>
-
+caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #FF0000; font-weight: 900;'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #FF0000; font-weight: 900;'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #00008B; font-weight: 900;'>Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #00008B; font-weight: 900;'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #000000; font-weight: 900;'>Tel: +84 374874142</span></div>"
   title: "Tags"
 ---
 
