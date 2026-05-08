@@ -5,17 +5,13 @@ permalink: /tags/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
   caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #FFD700; font-weight: bold;'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #FFD700;'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FF6B6B; font-weight: bold;'>Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #FF6B6B;'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FFFFFF; font-weight: bold;'>Tel: +84 374874142</span></div>"
+  title: "Tags"
 ---
 
 <link rel="stylesheet" href="/assets/css/custom-home.css">
 
 <style>
-  .tags-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-
+  /* Tags Page Specific Styles */
   .tag-section {
     margin-bottom: 3rem;
   }
@@ -48,7 +44,7 @@ header:
 
   .posts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -100,6 +96,23 @@ header:
     overflow: hidden;
   }
 
+  .post-cta {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #667eea;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  .post-cta:hover {
+    background: #5468d3;
+    transform: translateY(-1px);
+  }
+
   .post-tags {
     display: flex;
     gap: 0.5rem;
@@ -122,13 +135,6 @@ header:
     color: white;
   }
 
-  .no-posts {
-    text-align: center;
-    padding: 2rem;
-    color: #6a737d;
-    font-style: italic;
-  }
-
   .intro-box {
     background: linear-gradient(135deg, #f5f7fa 0%, #f9fafc 100%);
     border-left: 4px solid #667eea;
@@ -137,102 +143,115 @@ header:
     margin-bottom: 2rem;
   }
 
-  .intro-box p {
-    margin: 0.5rem 0;
-    color: #333;
+  .tags-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.9rem;
   }
 </style>
 
-<div class="tags-container">
+<!-- Structure like apps.md: home-wrapper + sidebar-left + center-content -->
+<div class="home-wrapper">
 
-  <!-- Introduction Box -->
-  <div class="intro-box">
-    <h3 style="margin-top: 0;">📌 Cách Sử Dụng Tags</h3>
-    <p>Trang này hiển thị tất cả <strong>tags</strong> được sử dụng trong các bài viết của HST.AI. Mỗi tag liệt kê các bài viết liên quan kèm <strong>tóm tắt nội dung</strong> và <strong>ngày đăng</strong>.</p>
-    <p style="margin-bottom: 0;"><strong>Mẹo:</strong> Sử dụng Ctrl+F (⌘+F trên Mac) để tìm tag bạn cần.</p>
-  </div>
+  <!-- LEFT SIDEBAR (từ _includes/sidebar-left.html) -->
+  {% include sidebar-left.html %}
 
-  <!-- Tags List -->
-  {% assign tags = site.tags | sort %}
-  {% assign tag_count = tags | size %}
-
-  <div style="margin-bottom: 1.5rem;">
-    <h2 style="color: #1a1a2e; margin-bottom: 0.5rem;">
-      🏷️ Tất Cả Tags
-      <span class="tag-badge">{{ tag_count }} tags</span>
-    </h2>
-    <p style="color: #6a737d; margin: 0;">Nhấp vào tiêu đề bài viết để đọc nội dung đầy đủ</p>
-  </div>
-
-  <!-- Tags Sections -->
-  {% for tag in tags %}
-    {% assign tag_name = tag | first %}
-    {% assign tag_posts = tag | last %}
-    {% assign post_count = tag_posts | size %}
-
-    <div class="tag-section">
-      <div class="tag-header">
-        <h2>{{ tag_name }}</h2>
-        <span class="tag-badge">{{ post_count }}</span>
-      </div>
-
-      <!-- Posts Grid -->
-      <div class="posts-grid">
-        {% for post in tag_posts %}
-          <div class="post-card">
-            <!-- Post Title -->
-            <h3>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </h3>
-
-            <!-- Post Date -->
-            <div class="post-date">
-              📅 {{ post.date | date: "%d/%m/%Y" }}
-            </div>
-
-            <!-- Post Excerpt / Summary -->
-            {% if post.excerpt %}
-              <div class="post-excerpt">
-                {{ post.excerpt | strip_html | truncatewords: 30 }}
-              </div>
-            {% elsif post.content %}
-              <div class="post-excerpt">
-                {{ post.content | strip_html | truncatewords: 30 }}
-              </div>
-            {% else %}
-              <div class="post-excerpt">
-                <em>Không có mô tả</em>
-              </div>
-            {% endif %}
-
-            <!-- Read More Button -->
-            <div style="margin-top: 1rem;">
-              <a href="{{ post.url }}" style="display: inline-block; padding: 0.5rem 1rem; background: #667eea; color: white; text-decoration: none; border-radius: 4px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s;">
-                Đọc tiếp <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i>
-              </a>
-            </div>
-
-            <!-- Categories / Tags -->
-            {% if post.tags %}
-              <div class="post-tags">
-                {% for tag_item in post.tags limit:3 %}
-                  <span class="post-tag">{{ tag_item }}</span>
-                {% endfor %}
-                {% if post.tags.size > 3 %}
-                  <span class="post-tag">+{{ post.tags.size | minus: 3 }}</span>
-                {% endif %}
-              </div>
-            {% endif %}
-          </div>
-        {% endfor %}
-      </div>
+  <!-- CENTER CONTENT -->
+  <div class="center-content">
+    
+    <!-- Introduction Box -->
+    <div class="intro-box">
+      <h3 style="margin-top: 0;">📌 Cách Sử Dụng Tags</h3>
+      <p>Trang này hiển thị tất cả <strong>tags</strong> được sử dụng trong các bài viết của HST.AI. Mỗi tag liệt kê các bài viết liên quan kèm <strong>tóm tắt nội dung</strong> và <strong>ngày đăng</strong>.</p>
+      <p style="margin-bottom: 0;"><strong>Mẹo:</strong> Sử dụng Ctrl+F (⌘+F trên Mac) để tìm tag bạn cần.</p>
     </div>
-  {% endfor %}
 
-  <!-- Footer -->
-  <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e1e4e8; text-align: center; color: #6a737d; font-size: 0.9rem;">
-    <p>Cập nhật lần cuối: <strong>{{ site.time | date: "%d/%m/%Y %H:%M" }}</strong></p>
-    <p>Tổng cộng: <strong>{{ site.posts | size }}</strong> bài viết | <strong>{{ tag_count }}</strong> tags</p>
+    <!-- Tags List -->
+    {% assign tags = site.tags | sort %}
+    {% assign tag_count = tags | size %}
+
+    <div style="margin-bottom: 1.5rem;">
+      <h2 style="color: #1a1a2e; margin-bottom: 0.5rem;">
+        🏷️ Tất Cả Tags
+        <span class="tag-badge">{{ tag_count }} tags</span>
+      </h2>
+      <p style="color: #6a737d; margin: 0;">Nhấp vào tiêu đề bài viết để đọc nội dung đầy đủ</p>
+    </div>
+
+    <!-- Tags Sections -->
+    {% for tag in tags %}
+      {% assign tag_name = tag | first %}
+      {% assign tag_posts = tag | last %}
+      {% assign post_count = tag_posts | size %}
+
+      <div class="tag-section">
+        <div class="tag-header">
+          <h2>{{ tag_name }}</h2>
+          <span class="tag-badge">{{ post_count }}</span>
+        </div>
+
+        <!-- Posts Grid -->
+        <div class="posts-grid">
+          {% for post in tag_posts %}
+            <div class="post-card">
+              <!-- Post Title -->
+              <h3>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h3>
+
+              <!-- Post Date -->
+              <div class="post-date">
+                📅 {{ post.date | date: "%d/%m/%Y" }}
+              </div>
+
+              <!-- Post Excerpt / Summary -->
+              {% if post.excerpt %}
+                <div class="post-excerpt">
+                  {{ post.excerpt | strip_html | truncatewords: 30 }}
+                </div>
+              {% elsif post.content %}
+                <div class="post-excerpt">
+                  {{ post.content | strip_html | truncatewords: 30 }}
+                </div>
+              {% else %}
+                <div class="post-excerpt">
+                  <em>Không có mô tả</em>
+                </div>
+              {% endif %}
+
+              <!-- Read More Button -->
+              <div style="margin-top: 1rem;">
+                <a href="{{ post.url }}" class="post-cta">
+                  Đọc tiếp <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i>
+                </a>
+              </div>
+
+              <!-- Tags -->
+              {% if post.tags %}
+                <div class="post-tags">
+                  {% for tag_item in post.tags limit:3 %}
+                    <span class="post-tag">{{ tag_item }}</span>
+                  {% endfor %}
+                  {% if post.tags.size > 3 %}
+                    <span class="post-tag">+{{ post.tags.size | minus: 3 }}</span>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+
+    <!-- Footer -->
+    <div class="tags-footer">
+      <p>Cập nhật lần cuối: <strong>{{ site.time | date: "%d/%m/%Y %H:%M" }}</strong></p>
+      <p>Tổng cộng: <strong>{{ site.posts | size }}</strong> bài viết | <strong>{{ tag_count }}</strong> tags</p>
+    </div>
+
   </div>
 
 </div>
