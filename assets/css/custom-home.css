@@ -528,7 +528,8 @@
   text-align: right !important;
   z-index: 10;
   border-top: 1px solid rgba(0,0,0,0.1);
-  margin-top: 30px !important;
+  position: relative !important;
+  top: 50px !important;
 }
 
 /* 3. Định dạng chung cho cụm chữ liên hệ */
@@ -543,7 +544,7 @@
 /* Cụm WhatsApp: Đỏ */
 .hero-contact-wrapper .c-item:nth-child(1), 
 .hero-contact-wrapper .c-item:nth-child(1) a {
-  color: #000080 !important; /* WhatsApp: Navy */
+  color: #000000 !important; /* WhatsApp: Navy */
 }
 
 /* Cụm Email: Xanh Navy */
@@ -554,7 +555,7 @@
 
 /* Cụm Tel: Đen */
 .hero-contact-wrapper .c-item:nth-child(5) {
-  color: #000000 !important; /* Tel: Đen */
+  color: #00008B !important; /* Tel: Đen */
 }
 
 /* Dấu gạch đứng phân cách */
