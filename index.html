@@ -3,7 +3,6 @@ layout: splash
 title: "HST.AI"
 author_profile: false
 header:
-  # Ảnh mặc định (sẽ bị CSS bên dưới ghi đè để chạy slide)
   overlay_image: "/assets/images/hero-engineering.jpg"
   caption: "<span style='color: #000080; font-weight: bold;'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #000080; text-decoration: underline;' target='_blank'>HST.AI</a> | Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #000080; text-decoration: underline;'>ha.nguyen@hydrostructai.com</a> </span>"
   title: "Ứng dụng Web cho Kỹ thuật Xây dựng"
@@ -18,39 +17,26 @@ header:
 /* ==========================================================================
    HERO SLIDESHOW ANIMATION
    ========================================================================== */
-/* 1. Định nghĩa chuyển động của 2 ảnh */
 @keyframes hero-slide {
-  /* 0% đến 20%: Hiển thị Ảnh 1 */
   0%, 45% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                       url('{{ site.baseurl }}/assets/images/hero-engineering1.jpg');
   }
-  /* 25% đến 45%: Hiển thị Ảnh 2 */
   45%, 100% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                       url('{{ site.baseurl }}/assets/images/hero-engineering2.jpg');
   }
 }
 
-/* 2. Áp dụng vào class mặc định của theme Minimal Mistakes */
 .page__hero--overlay {
-  /* Thời gian chạy 1 vòng là 16s, lặp vô hạn */
   animation: hero-slide 16s infinite;
-  
-  /* Đảm bảo ảnh phủ kín và mượt mà */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
-  /* Hiệu ứng chuyển đổi giữa các thuộc tính (giúp mượt hơn trên một số trình duyệt) */
   transition: background-image 1s ease-in-out;
-  
-  /* Quan trọng: Ghi đè style inline của Jekyll */
-  background-image: url('{{ site.baseurl }}/assets/images/hero-engineering.jpg') !important; 
-  /* Fallback nếu animation không chạy, nhưng @keyframes sẽ đè lên cái này */
+  background-image: url('{{ site.baseurl }}/assets/images/hero-engineering.jpg') !important;
 }
 
-/* 3. Căn giữa vùng thông tin liên hệ (caption) */
 .page__hero-caption {
   position: absolute !important;
   bottom: 0 !important;
@@ -60,17 +46,394 @@ header:
   text-align: center !important;
   margin: 0 !important;
   padding: 10px 0 !important;
-  background-color: rgba(128, 128, 128, 0.8) !important; /* Nền xám che toàn bộ chiều ngang */
+  background-color: rgba(128, 128, 128, 0.8) !important;
 }
 
 .page__hero-caption span {
-  /* Box shadow removed for flat grey bar if preferred, but keeping it for depth */
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.5); 
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+}
+
+/* ==========================================================================
+   FEATURED POST STRIP — bài viết mới nhất, hiển thị trên cùng trang chủ
+   ========================================================================== */
+.featured-post-strip {
+  background: #1a1a2e;
+  border-bottom: 3px solid #c8410a;
+  padding: 0;
+  margin: 0 0 32px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-post-strip::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #c8410a, #b8860b);
+}
+
+.featured-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 32px 20px 36px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.featured-badge {
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c8410a;
+  background: rgba(200, 65, 10, 0.12);
+  border: 1px solid rgba(200, 65, 10, 0.35);
+  padding: 4px 10px;
+  border-radius: 2px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.featured-meta {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  color: rgba(245, 240, 232, 0.4);
+  letter-spacing: 1px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.featured-title-link {
+  flex: 1;
+  min-width: 260px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.featured-title-link:hover .featured-title {
+  color: #e8a87c;
+}
+
+.featured-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: rgba(245, 240, 232, 0.92);
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+
+.featured-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.featured-tag {
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(245, 240, 232, 0.45);
+  border: 1px solid rgba(245, 240, 232, 0.15);
+  padding: 3px 8px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.featured-arrow {
+  color: #b8860b;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.featured-title-link:hover .featured-arrow {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   LATEST POSTS CARD SECTION — dưới featured strip
+   ========================================================================== */
+.latest-posts-section {
+  max-width: 1280px;
+  margin: 0 auto 40px;
+  padding: 0 16px;
+}
+
+.latest-posts-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.latest-posts-header h2 {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7a7468;
+  font-weight: 500;
+  margin: 0;
+}
+
+.latest-posts-line {
+  flex: 1;
+  height: 1px;
+  background: #d4cebe;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* Featured (first) post card — larger */
+.post-card-featured {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 0;
+  background: white;
+  border: 1px solid #d4cebe;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card-featured:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.post-card-featured .card-accent-bar {
+  width: 5px;
+  background: linear-gradient(180deg, #c8410a, #b8860b);
+  flex-shrink: 0;
+}
+
+.post-card-featured .card-content {
+  padding: 24px 28px;
+  flex: 1;
+}
+
+.card-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.card-cat {
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.cat-management { background: rgba(200, 65, 10, 0.1); color: #c8410a; }
+.cat-standards  { background: rgba(26, 107, 74, 0.1); color: #1a6b4a; }
+.cat-hydraulic  { background: rgba(26, 58, 92, 0.1);  color: #1a3a5c; }
+
+.card-date {
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  color: #7a7468;
+  letter-spacing: 1px;
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.card-excerpt {
+  font-size: 0.86rem;
+  color: #555;
+  line-height: 1.65;
+  margin: 0 0 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.card-tag-pill {
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7a7468;
+  border: 1px solid #d4cebe;
+  padding: 2px 7px;
+  border-radius: 2px;
+}
+
+/* Regular post cards */
+.post-card {
+  background: white;
+  border: 1px solid #d4cebe;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s, transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.09);
+  transform: translateY(-2px);
+}
+
+.post-card .card-top-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #c8410a, #b8860b);
+}
+
+.post-card .card-content {
+  padding: 18px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card .card-title {
+  font-size: 0.97rem;
+}
+
+.post-card .card-excerpt {
+  flex: 1;
+  -webkit-line-clamp: 2;
+}
+
+@media (max-width: 680px) {
+  .featured-inner { padding: 14px 16px; gap: 12px; }
+  .featured-tags  { display: none; }
+  .post-card-featured { flex-direction: column; }
+  .post-card-featured .card-accent-bar { width: 100%; height: 4px; }
+  .posts-grid { grid-template-columns: 1fr; }
 }
 </style>
 
+<!-- ══════════════════════════════════════════════════════
+     FEATURED POST STRIP — Bài viết mới nhất nổi bật
+══════════════════════════════════════════════════════ -->
+<div class="featured-post-strip">
+  <div class="featured-inner">
+    <span class="featured-badge">🆕 Bài mới</span>
+    <span class="featured-meta">07 / 05 / 2026</span>
+    <a class="featured-title-link" href="{{ site.baseurl }}/2026/05/07/giai-phap-QLDA-nha.html">
+      <span class="featured-title">Các Sai Lầm Và Giải Pháp Khắc Phục Trong Quản Lý Dự Án Xây Dựng Nhà Ở Riêng Lẻ</span>
+      <span class="featured-arrow">→</span>
+    </a>
+    <div class="featured-tags">
+      <span class="featured-tag">QLDA</span>
+      <span class="featured-tag">Thi công</span>
+      <span class="featured-tag">TCVN</span>
+      <span class="featured-tag">PMBOK</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     LATEST POSTS GRID — 2 bài gần nhất
+══════════════════════════════════════════════════════ -->
+<div class="latest-posts-section">
+  <div class="latest-posts-header">
+    <h2>Bài viết gần đây</h2>
+    <div class="latest-posts-line"></div>
+  </div>
+
+  <div class="posts-grid">
+
+    <!-- ── CARD 1: Bài mới nhất (featured, full-width) ── -->
+    <a class="post-card-featured" href="{{ site.baseurl }}/2026/05/07/giai-phap-QLDA-nha.html">
+      <div class="card-accent-bar"></div>
+      <div class="card-content">
+        <div class="card-eyebrow">
+          <span class="card-cat cat-management">Construction Management</span>
+          <span class="card-date">07 Tháng 5, 2026</span>
+        </div>
+        <h3 class="card-title">Các Sai Lầm Và Giải Pháp Khắc Phục Trong Quản Lý Dự Án Xây Dựng Nhà Ở Riêng Lẻ</h3>
+        <p class="card-excerpt">70% chủ nhà mắc sai lầm ngay từ đầu mà không biết. Phân tích chuyên sâu dưới góc nhìn kỹ sư xây dựng — 3 nhóm sai lầm điển hình, khung giải pháp 5 trụ cột (PMBOK · RIBA) và bộ checklist nghiệm thu đầy đủ theo TCVN, kèm căn cứ pháp lý cập nhật đến Nghị định 175/2024/NĐ-CP.</p>
+        <div class="card-tags">
+          <span class="card-tag-pill">Quản lý dự án</span>
+          <span class="card-tag-pill">Nhà ở riêng lẻ</span>
+          <span class="card-tag-pill">Giám sát thi công</span>
+          <span class="card-tag-pill">PMBOK</span>
+          <span class="card-tag-pill">TCVN</span>
+          <span class="card-tag-pill">Nghiệm thu</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- ── CARD 2: Bài trước (TCVN 9902:2025) ── -->
+    <a class="post-card" href="{{ site.baseurl }}/2026/04/16/TCVN-9902-2025-diem-moi.html">
+      <div class="card-top-bar"></div>
+      <div class="card-content">
+        <div class="card-eyebrow">
+          <span class="card-cat cat-hydraulic">Hydraulic Engineering</span>
+          <span class="card-date">16 Tháng 4, 2026</span>
+        </div>
+        <h3 class="card-title">TCVN 9902:2025 Đê Sông – Những Điểm Mới và Lưu Ý Thiết Kế</h3>
+        <p class="card-excerpt">Những thay đổi quan trọng trong tư duy thiết kế và quản lý đê điều — phân cấp công trình, kết cấu mặt cắt, bài toán ổn định và thách thức trước biến đổi khí hậu.</p>
+        <div class="card-tags">
+          <span class="card-tag-pill">TCVN 9902</span>
+          <span class="card-tag-pill">Đê sông</span>
+          <span class="card-tag-pill">Thiết kế đê điều</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- ── CARD 3: Placeholder — bài tiếp theo ── -->
+    <a class="post-card" href="{{ site.baseurl }}/posts/">
+      <div class="card-top-bar" style="background: linear-gradient(90deg, #1a3a5c, #1a6b4a);"></div>
+      <div class="card-content">
+        <div class="card-eyebrow">
+          <span class="card-cat cat-standards">Xem tất cả</span>
+        </div>
+        <h3 class="card-title">Khám phá thêm bài viết kỹ thuật</h3>
+        <p class="card-excerpt">Toàn bộ các bài viết chuyên sâu về kỹ thuật thủy lợi, kết cấu, địa kỹ thuật, tiêu chuẩn xây dựng và quản lý dự án từ đội ngũ HydrostrucAI.</p>
+        <div class="card-tags">
+          <span class="card-tag-pill">Tất cả bài viết →</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     LAYOUT CHÍNH (giữ nguyên cấu trúc gốc)
+══════════════════════════════════════════════════════ -->
 <div class="home-wrapper">
-  
+
   {% include sidebar-left.html %}
 
   {% include home-center.html %}

@@ -1,0 +1,80 @@
+---
+layout: splash
+title: "HST.AI"
+author_profile: false
+header:
+  # Ảnh mặc định (sẽ bị CSS bên dưới ghi đè để chạy slide)
+  overlay_image: "/assets/images/hero-engineering.jpg"
+  caption: "<span style='color: #000080; font-weight: bold;'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #000080; text-decoration: underline;' target='_blank'>HST.AI</a> | Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #000080; text-decoration: underline;'>ha.nguyen@hydrostructai.com</a> </span>"
+  title: "Ứng dụng Web cho Kỹ thuật Xây dựng"
+  subtitle: "Các công cụ trực tuyến miễn phí hỗ trợ kỹ sư kết cấu & địa kỹ thuật."
+  cta_label: "Xem chi tiết"
+  cta_url: "/apps/landing.html"
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom-home.css">
+
+<style>
+/* ==========================================================================
+   HERO SLIDESHOW ANIMATION
+   ========================================================================== */
+/* 1. Định nghĩa chuyển động của 2 ảnh */
+@keyframes hero-slide {
+  /* 0% đến 20%: Hiển thị Ảnh 1 */
+  0%, 45% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('{{ site.baseurl }}/assets/images/hero-engineering1.jpg');
+  }
+  /* 25% đến 45%: Hiển thị Ảnh 2 */
+  45%, 100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('{{ site.baseurl }}/assets/images/hero-engineering2.jpg');
+  }
+}
+
+/* 2. Áp dụng vào class mặc định của theme Minimal Mistakes */
+.page__hero--overlay {
+  /* Thời gian chạy 1 vòng là 16s, lặp vô hạn */
+  animation: hero-slide 16s infinite;
+  
+  /* Đảm bảo ảnh phủ kín và mượt mà */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Hiệu ứng chuyển đổi giữa các thuộc tính (giúp mượt hơn trên một số trình duyệt) */
+  transition: background-image 1s ease-in-out;
+  
+  /* Quan trọng: Ghi đè style inline của Jekyll */
+  background-image: url('{{ site.baseurl }}/assets/images/hero-engineering.jpg') !important; 
+  /* Fallback nếu animation không chạy, nhưng @keyframes sẽ đè lên cái này */
+}
+
+/* 3. Căn giữa vùng thông tin liên hệ (caption) */
+.page__hero-caption {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  background-color: rgba(128, 128, 128, 0.8) !important; /* Nền xám che toàn bộ chiều ngang */
+}
+
+.page__hero-caption span {
+  /* Box shadow removed for flat grey bar if preferred, but keeping it for depth */
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5); 
+}
+</style>
+
+<div class="home-wrapper">
+  
+  {% include sidebar-left.html %}
+
+  {% include home-center.html %}
+
+  {% include sidebar-right.html %}
+
+</div>
