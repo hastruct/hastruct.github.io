@@ -30,7 +30,7 @@ header:
 ---
 
 <div style="text-align: center;">
-  <img src="/assets/images/posts/khang-chan-dap/3d-fem-model.jpg" 
+  <img src="/assets/images/app-icons/mo-hinh-dap-bttl.jpg" 
        alt="Mô hình phần tử hữu hạn 3D của đập trọng lực trong Ansys" 
        title="Mô hình 3D FEM đập trọng lực" 
        style="width: 85%; max-width: 800px; margin: 20px auto; display: block; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">

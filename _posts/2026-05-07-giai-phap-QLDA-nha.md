@@ -45,7 +45,7 @@ Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất
 | Tỷ lệ chủ nhà mắc sai lầm ngay từ đầu | **70%** | Thực tiễn QLDA nhà ở VN |
 | Chi phí đội vốn trung bình | **+20%** | So với dự toán ban đầu |
 | Khuyết tật công trình từ giai đoạn thi công | **51%** | Aljassmi & Han, 2014 |
-| Tỷ lệ chi phí sửa lỗi thiết kế vs sau bàn giao | **1 : 25** | Định luật Boehm, 1981 |
+| Tỷ lệ chi phí sửa lỗi thiết kế vs sau bàn giao | **1 : 25** | Ứng dụng tương tự định luật Boehm, 1981 |
 
 ### Khuyến nghị cốt lõi
 
@@ -264,7 +264,7 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 | ☐ | Định vị tim trục, cao độ móng đúng bản vẽ | TCVN 9398:2012 |
 | ☐ | Kiểm tra cọc: chứng chỉ xuất xưởng, độ sâu, nén tĩnh/PDA | TCVN 9393:2012 |
 | ☐ | Cốp pha móng: kích thước, độ thẳng, độ kín, chống đỡ | TCVN 4453:1995 |
-| ☐ | Cốt thép móng: chủng loại, Ø, khoảng cách, lớp bảo vệ | TCVN 1651:2018 |
+| ☐ | Cốt thép móng: chủng loại, Ø, khoảng cách, lớp bảo vệ | TCVN 1651-2:2018 |
 | ☐ | Mác bê tông + phiếu xuất xưởng + kết quả thử độ sụt | TCVN 3106:1993 |
 | ☐ | Lấy mẫu thử bê tông 3 tổ/cấu kiện tại hiện trường | TCVN 3105:1993 |
 | ☐ | Bảo dưỡng bê tông sau đổ ≥ 7 ngày | TCVN 8828:2011 |
@@ -278,7 +278,7 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 | ☐ | Cốt thép cột/dầm/sàn: số lượng, Ø, khoảng cách, neo nối | TCVN 1651:2018 |
 | ☐ | Cốp pha cột/dầm/sàn: chống đỡ, chống xê dịch, kín nước xi măng | TCVN 4453:1995 |
 | ☐ | Điện nước âm tường/sàn lắp đặt và thử áp lực trước đổ BT | TCVN 4519:1988 |
-| ☐ | Bê tông được đầm chặt, dùng rung dùi đầy đủ, không phân tầng | TCVN 4453:1995 |
+| ☐ | Bê tông được đầm chặt, dùng rung dùi đầy đủ, không phân tầng | TCVN 12252:2020 |
 | ☐ | Thí nghiệm cường độ bê tông sau 7/28 ngày | TCVN 3118:1993 |
 | ☐ | Tường xây: mạch vữa, gạch ngâm nước, mác vữa đúng | TCVN 4085:2011 |
 | ☐ | Độ thẳng đứng, độ phẳng tường bằng thước thăng bằng | TCVN 5674:1992 |
