@@ -348,14 +348,17 @@ header:
 <!-- ══════════════════════════════════════════════════════
      FEATURED POST STRIP — Bài viết mới nhất nổi bật
 ══════════════════════════════════════════════════════ -->
+{% assign latest_post = site.posts.first %}
 <div class="featured-post-strip">
   <div class="featured-inner">
     <span class="featured-badge">🆕 Bài mới</span>
-    <span class="featured-meta">07 / 05 / 2026</span>
-	<a class="featured-title-link" href="{{ latest_post.url | relative_url }}">
-      <span class="featured-title">Các Sai Lầm Và Giải Pháp Khắc Phục Trong Quản Lý Dự Án Xây Dựng Nhà Ở Riêng Lẻ</span>
+    <span class="featured-meta">{{ latest_post.date | date: "%d / %m / %Y" }}</span>
+    
+    <a class="featured-title-link" href="{{ latest_post.url | relative_url }}">
+      <span class="featured-title">{{ latest_post.title }}</span>
       <span class="featured-arrow">→</span>
     </a>
+
     <div class="featured-tags">
       <span class="featured-tag">QLDA</span>
       <span class="featured-tag">Thi công</span>
@@ -364,8 +367,6 @@ header:
     </div>
   </div>
 </div>
-
-
 
 <!-- ══════════════════════════════════════════════════════
      LAYOUT CHÍNH (giữ nguyên cấu trúc gốc)
