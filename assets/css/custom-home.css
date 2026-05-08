@@ -523,11 +523,12 @@
   right: 0 !important;
   width: 100% !important;
   margin: 0 !important;
-  padding: 50px 15px !important; /* Tăng padding để cân đối */
+  padding: 10px 15px !important; /* Tăng padding để cân đối */
   background-color: rgba(255, 255, 255, 0.85) !important; /* Nền trắng trong suốt để chữ màu đậm nổi bật hơn */
   text-align: right !important;
   z-index: 10;
   border-top: 1px solid rgba(0,0,0,0.1);
+  margin-top: 30px !important;
 }
 
 /* 3. Định dạng chung cho cụm chữ liên hệ */
