@@ -6,8 +6,8 @@ header:
   overlay_image: "/assets/images/hero-engineering.jpg"
   overlay_color: "#0d1b2a"
   overlay_filter: "linear-gradient(135deg, rgba(13, 27, 42, 0.92), rgba(0, 77, 153, 0.75))"
-  caption: "<span style='color: #FFD700; font-weight: bold;'>Email: ha.nguyen@hydrostructai.com &nbsp;|&nbsp; Tel: +84 374 874 142</span>"
-  title: "Giới thiệu chung"
+caption: "<div class='hero-contact-wrapper'><span class='c-item'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item'>Email: <a href='mailto:ha.nguyen@hydrostructai.com'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item'>Tel: +84 374874142</span></div>"
+title: "Giới thiệu chung"
 ---
 
 <link rel="stylesheet" href="/assets/css/custom-home.css">
@@ -403,7 +403,7 @@ header:
     <!-- 1. SỨ MỆNH                                     -->
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
-      <h2><span class="section-icon">🏗️</span> Về HydroStructAI</h2>
+      <h2><span class="section-icon">🏗️</span> Giới thiệu chung</h2>
 
       <p>
         <strong>HydroStructAI</strong> là nền tảng kỹ thuật chuyên biệt kết hợp
@@ -420,7 +420,7 @@ header:
 
       <div class="stat-strip">
         <div class="stat-item">
-          <div class="stat-val">QLDA</div>
+          <div class="stat-val">PROJECT MANAGEMENT</div>
           <div class="stat-label">Quản lý dự án chuyên nghiệp</div>
         </div>
         <div class="stat-item">
