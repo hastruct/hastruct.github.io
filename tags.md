@@ -157,7 +157,7 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
 <div class="home-wrapper">
 
   <!-- LEFT SIDEBAR (từ _includes/sidebar-left.html) -->
-  <!--{% include sidebar-left.html %}-->
+  {% include sidebar-left.html %}
 
   <!-- CENTER CONTENT -->
   <div class="center-content">
