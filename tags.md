@@ -1,74 +1,238 @@
 ---
-layout: archive
+layout: splash
 title: "Danh Sách Tags"
 permalink: /tags/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
   caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #FFD700; font-weight: bold;'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #FFD700;'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FF6B6B; font-weight: bold;'>Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #FF6B6B;'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FFFFFF; font-weight: bold;'>Tel: +84 374874142</span></div>"
-  title: "Tags - Danh Sách Thẻ"
 ---
 
 <link rel="stylesheet" href="/assets/css/custom-home.css">
 
-## 📌 Cách Sử Dụng Tags
+<style>
+  .tags-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
 
-Trang này liệt kê tất cả **tags** được sử dụng trong các bài viết của HST.AI. Nhấp vào bất kỳ tag nào để xem các bài viết liên quan.
+  .tag-section {
+    margin-bottom: 3rem;
+  }
 
-### 🏷️ Các Danh Mục Tag Chính:
+  .tag-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #667eea;
+  }
 
-- **Kỹ Thuật Kết Cấu:** PileGroup, ShortColumn, SheetPileFEM, FEM, Biaxial
-- **Tiêu Chuẩn & Quy Định:** TCVN5574:2018, TCVN10304:2014, ACI318, Eurocode2
-- **Phần Mềm:** VBA, JavaScript, ETABS, WebAssembly
-- **Chủ Đề:** Tutorial, Case Study, Theory, Code, Calculation
-- **Ngành:** Civil Engineering, Water Resources, Infrastructure, BIM
+  .tag-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
----
+  .tag-badge {
+    background: #667eea;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
 
-## 📋 Danh Sách Tags (Tất Cả)
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
 
-{% assign tags = site.tags | sort %}
-{% assign tag_count = tags | size %}
+  .post-card {
+    background: white;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
 
-**Tổng cộng: {{ tag_count }} tags**
+  .post-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+    transform: translateY(-2px);
+  }
 
-{% for tag in tags %}
-  {%- capture tag_name -%}{{ tag | first }}{%- endcapture -%}
-  {%- capture tag_post_count -%}{{ tag | last | size }}{%- endcapture -%}
-  
-  <div style="margin: 20px 0; padding: 12px; background: #f9f9f9; border-left: 4px solid #667eea; border-radius: 4px;">
-    <h3 style="margin: 0 0 8px 0; color: #333;">
-      <a href="/tags/{{ tag_name | slugify }}/" style="text-decoration: none; color: #0d6efd;">
-        {{ tag_name }}
-      </a>
-      <span style="font-size: 0.85rem; color: #666; margin-left: 8px; background: #e9ecef; padding: 2px 8px; border-radius: 12px;">
-        {{ tag_post_count }} bài
-      </span>
-    </h3>
-    
-    <!-- Danh sách bài viết theo tag -->
-    <ul style="margin: 0; padding-left: 20px; list-style-type: none;">
-      {%- for post in tag[1] -%}
-        <li style="margin: 4px 0;">
-          <a href="{{ post.url }}" style="color: #333; text-decoration: none;">
-            • {{ post.title }}
-          </a>
-          <span style="font-size: 0.8rem; color: #999;">
-            ({{ post.date | date: "%d/%m/%Y" }})
-          </span>
-        </li>
-      {%- endfor -%}
-    </ul>
+  .post-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  .post-card a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .post-card a:hover {
+    text-decoration: underline;
+  }
+
+  .post-date {
+    font-size: 0.85rem;
+    color: #6a737d;
+    margin-bottom: 0.75rem;
+  }
+
+  .post-excerpt {
+    font-size: 0.9rem;
+    color: #586069;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .post-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+  }
+
+  .post-tag {
+    font-size: 0.75rem;
+    background: #f1f3f5;
+    color: #495057;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .post-tag:hover {
+    background: #667eea;
+    color: white;
+  }
+
+  .no-posts {
+    text-align: center;
+    padding: 2rem;
+    color: #6a737d;
+    font-style: italic;
+  }
+
+  .intro-box {
+    background: linear-gradient(135deg, #f5f7fa 0%, #f9fafc 100%);
+    border-left: 4px solid #667eea;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+  }
+
+  .intro-box p {
+    margin: 0.5rem 0;
+    color: #333;
+  }
+</style>
+
+<div class="tags-container">
+
+  <!-- Introduction Box -->
+  <div class="intro-box">
+    <h3 style="margin-top: 0;">📌 Cách Sử Dụng Tags</h3>
+    <p>Trang này hiển thị tất cả <strong>tags</strong> được sử dụng trong các bài viết của HST.AI. Mỗi tag liệt kê các bài viết liên quan kèm <strong>tóm tắt nội dung</strong> và <strong>ngày đăng</strong>.</p>
+    <p style="margin-bottom: 0;"><strong>Mẹo:</strong> Sử dụng Ctrl+F (⌘+F trên Mac) để tìm tag bạn cần.</p>
   </div>
-{% endfor %}
 
----
+  <!-- Tags List -->
+  {% assign tags = site.tags | sort %}
+  {% assign tag_count = tags | size %}
 
-## 🎯 Gợi Ý Sử Dụng
+  <div style="margin-bottom: 1.5rem;">
+    <h2 style="color: #1a1a2e; margin-bottom: 0.5rem;">
+      🏷️ Tất Cả Tags
+      <span class="tag-badge">{{ tag_count }} tags</span>
+    </h2>
+    <p style="color: #6a737d; margin: 0;">Nhấp vào tiêu đề bài viết để đọc nội dung đầy đủ</p>
+  </div>
 
-- **Tìm nhanh:** Sử dụng Ctrl+F (⌘+F trên Mac) để tìm tag bạn cần
-- **Theo dõi chủ đề:** Subscribe vào tag yêu thích để nhận thông báo bài mới
-- **SEO:** Mỗi tag có trang riêng tối ưu cho tìm kiếm
+  <!-- Tags Sections -->
+  {% for tag in tags %}
+    {% assign tag_name = tag | first %}
+    {% assign tag_posts = tag | last %}
+    {% assign post_count = tag_posts | size %}
 
----
+    <div class="tag-section">
+      <div class="tag-header">
+        <h2>{{ tag_name }}</h2>
+        <span class="tag-badge">{{ post_count }}</span>
+      </div>
 
-**Cập nhật lần cuối:** {{ site.time | date: "%d/%m/%Y" }}
+      <!-- Posts Grid -->
+      <div class="posts-grid">
+        {% for post in tag_posts %}
+          <div class="post-card">
+            <!-- Post Title -->
+            <h3>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+
+            <!-- Post Date -->
+            <div class="post-date">
+              📅 {{ post.date | date: "%d/%m/%Y" }}
+            </div>
+
+            <!-- Post Excerpt / Summary -->
+            {% if post.excerpt %}
+              <div class="post-excerpt">
+                {{ post.excerpt | strip_html | truncatewords: 30 }}
+              </div>
+            {% elsif post.content %}
+              <div class="post-excerpt">
+                {{ post.content | strip_html | truncatewords: 30 }}
+              </div>
+            {% else %}
+              <div class="post-excerpt">
+                <em>Không có mô tả</em>
+              </div>
+            {% endif %}
+
+            <!-- Read More Button -->
+            <div style="margin-top: 1rem;">
+              <a href="{{ post.url }}" style="display: inline-block; padding: 0.5rem 1rem; background: #667eea; color: white; text-decoration: none; border-radius: 4px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s;">
+                Đọc tiếp <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i>
+              </a>
+            </div>
+
+            <!-- Categories / Tags -->
+            {% if post.tags %}
+              <div class="post-tags">
+                {% for tag_item in post.tags limit:3 %}
+                  <span class="post-tag">{{ tag_item }}</span>
+                {% endfor %}
+                {% if post.tags.size > 3 %}
+                  <span class="post-tag">+{{ post.tags.size | minus: 3 }}</span>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+
+  <!-- Footer -->
+  <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e1e4e8; text-align: center; color: #6a737d; font-size: 0.9rem;">
+    <p>Cập nhật lần cuối: <strong>{{ site.time | date: "%d/%m/%Y %H:%M" }}</strong></p>
+    <p>Tổng cộng: <strong>{{ site.posts | size }}</strong> bài viết | <strong>{{ tag_count }}</strong> tags</p>
+  </div>
+
+</div>
