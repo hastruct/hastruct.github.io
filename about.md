@@ -410,12 +410,12 @@ title: "Giới thiệu chung"
         <code class="tag">Quản lý dự án</code>
         <code class="tag">Đào tạo kỹ thuật</code>
         <code class="tag">Ứng dụng web kỹ thuật</code>
-        <code class="tag">Ứng dụng trí tuệ nhân tạo</code> —
-        mang đến cho kỹ sư xây dựng và chủ đầu tư một hệ sinh thái công cụ thực chiến, từ quản lý dự án theo chuẩn <strong>PMBOK 7th</strong> đến các ứng dụng phân tích kỹ thuật chạy ngay trên trình duyệt.
+        <code class="tag">Ứng dụng trí tuệ nhân tạo</code> 
+        Trang web mang đến cho chủ đầu tư và các bên liên quan một hệ sinh thái công cụ thực chiến, từ quản lý dự án theo chuẩn <strong>PMBOK 7th</strong> đến các ứng dụng phân tích kỹ thuật chạy ngay trên trình duyệt.
       </p>
 
       <p>
-        Chúng tôi tin rằng <strong>quản lý dự án tốt không phải là điền đủ biểu mẫu</strong> — mà là kiến tạo giá trị thực, kiểm soát rủi ro chủ động và ra quyết định dựa trên dữ liệu. Đó cũng là triết lý mà chúng tôi đưa vào từng bài viết, từng công cụ và từng tư vấn dự án.
+        Chúng tôi tin rằng <strong>quản lý dự án tốt không phải là điền đủ biểu mẫu</strong> - mà là kiến tạo giá trị thực, kiểm soát rủi ro chủ động và ra quyết định dựa trên dữ liệu. Đó cũng là triết lý mà chúng tôi đưa vào từng bài viết, từng công cụ và từng tư vấn dự án.
       </p>
 
       <div class="stat-strip">
@@ -454,7 +454,7 @@ title: "Giới thiệu chung"
           <div class="pillar-num">01</div>
           <h4>Quản lý Dự án Xây dựng (Tư duy PMBOK 7th)</h4>
           <p>
-            Tư vấn và đào tạo quản lý dự án theo tư duy <strong>Value Delivery System</strong> — từ Scope, Schedule, Cost đến Risk, Stakeholders và Quality trong bối cảnh pháp lý Việt Nam (Luật XD, NĐ 175/2024, NĐ 06/2021).
+            Tư vấn và đào tạo quản lý dự án theo tư duy <strong>Value Delivery System</strong> - từ Scope, Schedule, Cost đến Risk, Stakeholders và Quality trong bối cảnh pháp lý Việt Nam (Luật XD, NĐ 175/2024, NĐ 06/2021).
           </p>
         </div>
 
@@ -462,7 +462,7 @@ title: "Giới thiệu chung"
           <div class="pillar-num">02</div>
           <h4>Ứng dụng Web Kỹ thuật cho Kỹ sư</h4>
           <p>
-            Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>WebAssembly</strong> — FEM kết cấu, tính toán thủy lực, dự toán chi phí — không cần cài đặt, không cần phần cứng đắt tiền.
+            Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>WebAssembly</strong> - FEM kết cấu, tính toán thủy lực, dự toán chi phí - không cần cài đặt, không cần phần cứng đắt tiền.
           </p>
         </div>
 
@@ -476,7 +476,7 @@ title: "Giới thiệu chung"
       <h2><span class="section-icon">📐</span> Tư Duy Quản Lý Dự Án Hiện Đại</h2>
 
       <p>
-        Chúng tôi xây dựng nội dung và tư vấn dựa trên <strong>PMBOK® Guide</strong> — sự chuyển dịch từ quản lý quy trình sang quản lý nguyên tắc và hiệu suất, áp dụng vào thực tiễn xây dựng Việt Nam.
+        Chúng tôi xây dựng nội dung và tư vấn dựa trên <strong>PMBOK® Guide</strong> - sự chuyển dịch từ quản lý quy trình sang quản lý nguyên tắc và hiệu suất, áp dụng vào thực tiễn xây dựng Việt Nam.
       </p>
 
       <div class="process-steps">
@@ -485,7 +485,7 @@ title: "Giới thiệu chung"
           <div class="step-dot">P1</div>
           <div class="step-body">
             <h4>Tư duy Hệ thống (Systems Thinking)</h4>
-            <p>Nhìn dự án như một hệ thống liên thông — thay đổi GPMB ảnh hưởng thế nào đến dòng tiền? Rủi ro pháp lý tác động ra sao đến tiến độ? Mọi quyết định đều được phân tích trong bối cảnh tổng thể.</p>
+            <p>Nhìn dự án như một hệ thống liên thông - thay đổi GPMB ảnh hưởng thế nào đến dòng tiền? Rủi ro pháp lý tác động ra sao đến tiến độ? Mọi quyết định đều được phân tích trong bối cảnh tổng thể.</p>
           </div>
         </div>
 
@@ -493,7 +493,7 @@ title: "Giới thiệu chung"
           <div class="step-dot">P2</div>
           <div class="step-body">
             <h4>Kiểm soát Chủ động (Proactive Control)</h4>
-            <p>Áp dụng <strong>Hold Points</strong> và <strong>Inspection Test Plan (ITP)</strong> để ngăn chặn sai sót trước khi phát sinh — không phải xử lý sự cố sau khi đã bê tông xong. Chi phí phòng ngừa rẻ hơn 25 lần so với sửa lỗi sau bàn giao.</p>
+            <p>Áp dụng <strong>Hold Points</strong> và <strong>Inspection Test Plan (ITP)</strong> để ngăn chặn sai sót trước khi phát sinh - không phải xử lý sự cố sau khi đã bê tông xong. Chi phí phòng ngừa rẻ hơn 25 lần so với sửa lỗi sau bàn giao.</p>
           </div>
         </div>
 
@@ -509,7 +509,7 @@ title: "Giới thiệu chung"
           <div class="step-dot">P4</div>
           <div class="step-body">
             <h4>Tuân thủ Pháp lý (Legal Compliance)</h4>
-            <p>Tích hợp đầy đủ yêu cầu của <strong>Luật xây dựng</strong>, <strong>Nghị định 175/2024/NĐ-CP</strong> và <strong>NĐ 06/2021</strong> vào quy trình quản lý — RACI matrix, thẩm quyền phân cấp, hồ sơ hoàn công điện tử theo quy định mới nhất.</p>
+            <p>Tích hợp đầy đủ yêu cầu của <strong>Luật xây dựng</strong>, <strong>Nghị định 175/2024/NĐ-CP</strong> và <strong>NĐ 06/2021</strong> vào quy trình quản lý - RACI matrix, thẩm quyền phân cấp, hồ sơ hoàn công điện tử theo quy định mới nhất.</p>
           </div>
         </div>
 
@@ -517,7 +517,7 @@ title: "Giới thiệu chung"
           <div class="step-dot">P5</div>
           <div class="step-body">
             <h4>Tùy chỉnh linh hoạt (Tailoring)</h4>
-            <p>Không có một quy trình nào phù hợp cho mọi dự án. Chúng tôi hướng dẫn cách <em>tailoring</em> phương pháp — từ Predictive (Waterfall) cho dự án lớn đến Hybrid/Agile cho dự án cần linh hoạt.</p>
+            <p>Không có một quy trình nào phù hợp cho mọi dự án. Chúng tôi hướng dẫn cách <em>tailoring</em> phương pháp - từ Predictive (Waterfall) cho dự án lớn đến Hybrid/Agile cho dự án cần linh hoạt.</p>
           </div>
         </div>
 
@@ -581,7 +581,7 @@ title: "Giới thiệu chung"
       </div>
 
       <p style="margin-top: 1.4rem; font-size: 0.9rem; color: var(--color-subtext);">
-        <strong>Lộ trình phát triển:</strong> Mỗi ứng dụng đi kèm bài viết kỹ thuật giải thích lý thuyết và thuật toán — <em>"Blog as Documentation"</em>. Phiên bản cộng đồng (Free) luôn có đầy đủ chức năng cơ bản.
+        <strong>Lộ trình phát triển:</strong> Mỗi ứng dụng đi kèm bài viết kỹ thuật giải thích lý thuyết và thuật toán - <em>"Blog as Documentation"</em>. Phiên bản cộng đồng (Free) luôn có đầy đủ chức năng cơ bản.
       </p>
     </div>
 
@@ -608,7 +608,7 @@ title: "Giới thiệu chung"
         <div class="pillar-card accent-teal">
           <div class="pillar-num">📝</div>
           <h4>Blog là Tài liệu</h4>
-          <p>Mỗi bài viết giải thích cả "Tại sao?" lẫn "Như thế nào?" — lý thuyết thuật toán, khung pháp lý, và thực hành thực chiến tại công trường Việt Nam.</p>
+          <p>Mỗi bài viết giải thích cả "Tại sao?" lẫn "Như thế nào?" - lý thuyết thuật toán, khung pháp lý, và thực hành thực chiến tại công trường Việt Nam.</p>
         </div>
 
       </div>
@@ -623,7 +623,7 @@ title: "Giới thiệu chung"
       <div class="author-block">
         <div class="author-avatar">HH</div>
         <div class="author-bio">
-          <h4>TS. Nguyễn Hải Hà — PMP®</h4>
+          <h4>TS. Nguyễn Hải Hà - PMP®</h4>
           <p>
             Tiến sĩ Kỹ thuật Xây dựng Công trình Thủy. Chuyên gia về Công trình Thủy lợi, Bảo vệ bờ sông bờ biển, Kết cấu công trình và Địa kỹ thuật. Có kinh nghiệm thực chiến trong quản lý và giám sát các dự án xây dựng theo chuẩn quốc tế (FIDIC, PMBOK). Đam mê lập trình và ứng dụng WebAssembly để đưa công cụ kỹ thuật hiệu suất cao lên nền tảng web.
           </p>
