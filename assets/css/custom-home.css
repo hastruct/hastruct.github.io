@@ -518,7 +518,7 @@
 /* 2. Định dạng dải băng chứa thông tin (Caption Bar) */
 .page__hero-caption {
   position: absolute !important;
-  bottom: 0 !important;
+  bottom: -50px !important;
   left: 0 !important;
   right: 0 !important;
   width: 100% !important;
