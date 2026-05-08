@@ -407,11 +407,11 @@ title: "Giới thiệu chung"
 
       <p>
         <strong>HydroStructAI</strong> là nền tảng kỹ thuật chuyên biệt kết hợp
-        <code class="tag">Quản lý dự án</code>
-        <code class="tag">Đào tạo kỹ thuật</code>
-        <code class="tag">Ứng dụng web kỹ thuật</code>
-        <code class="tag">Ứng dụng trí tuệ nhân tạo</code> 
-        Trang web mang đến cho chủ đầu tư và các bên liên quan một hệ sinh thái công cụ thực chiến, từ quản lý dự án theo chuẩn <strong>PMBOK 7th</strong> đến các ứng dụng phân tích kỹ thuật chạy ngay trên trình duyệt.
+        <code class="tag">Quản lý dự án</code> + 
+        <code class="tag">Đào tạo kỹ thuật</code> + 
+        <code class="tag">Ứng dụng web kỹ thuật</code> +
+        <code class="tag">Trí tuệ nhân tạo</code> 
+        - Trang web mang đến cho chủ đầu tư và các bên liên quan một hệ sinh thái công cụ thực chiến, từ quản lý dự án theo chuẩn <strong>PMBOK 7th</strong> đến các ứng dụng phân tích kỹ thuật chạy ngay trên trình duyệt.
       </p>
 
       <p>
@@ -625,16 +625,16 @@ title: "Giới thiệu chung"
         <div class="author-bio">
           <h4>TS. Nguyễn Hải Hà - PMP®</h4>
           <p>
-            Tiến sĩ Kỹ thuật Xây dựng Công trình Thủy. Chuyên gia về Công trình Thủy lợi, Bảo vệ bờ sông bờ biển, Kết cấu công trình và Địa kỹ thuật. Có kinh nghiệm thực chiến trong quản lý và giám sát các dự án xây dựng theo chuẩn quốc tế (FIDIC, PMBOK). Đam mê lập trình và ứng dụng WebAssembly để đưa công cụ kỹ thuật hiệu suất cao lên nền tảng web.
+            Tiến sĩ Kỹ thuật, chuyên gia về Công trình Thủy, Công trình bảo vệ bờ sông bờ biển, Kết cấu công trình và Địa kỹ thuật. Có kinh nghiệm thực chiến trong quản lý và giám sát các dự án xây dựng theo chuẩn trong nước và quốc tế (FIDIC, PMBOK). Đam mê lập trình và ứng dụng  để đưa công cụ kỹ thuật hiệu suất cao lên nền tảng web.
           </p>
           <div class="tag-row">
             <span class="etag">PMP® – PMI</span>
-            <span class="etag">PMBOK 7th</span>
+            <span class="etag">PMBOK Guide</span>
             <span class="etag">FEM / FEA</span>
             <span class="etag">Thủy lực tính toán</span>
             <span class="etag">TCVN / QCVN</span>
             <span class="etag">NĐ 175/2024</span>
-            <span class="etag">WebAssembly</span>
+            <span class="etag">Ứng dụng Web</span>
             <span class="etag">C++ / Python / Rust</span>
           </div>
         </div>
@@ -648,7 +648,7 @@ title: "Giới thiệu chung"
       <h2><span class="section-icon">🤝</span> Kết Nối & Hợp Tác</h2>
 
       <p>
-        Chúng tôi luôn tìm kiếm sự hợp tác từ kỹ sư, nhà nghiên cứu, doanh nghiệp xây dựng và các tổ chức muốn ứng dụng công nghệ vào quản lý dự án. Nếu bạn có câu hỏi, ý tưởng đóng góp hoặc nhu cầu tư vấn:
+        Chúng tôi luôn tìm kiếm sự hợp tác từ các tổ chức, các doanh nghiệp xây dựng, các chuyên gia và đồng nghiệp muốn ứng dụng công nghệ vào quản lý dự án. Nếu bạn có câu hỏi, ý tưởng đóng góp hoặc nhu cầu tư vấn:
       </p>
 
       <ul style="margin: 0.8rem 0 1.2rem 1.5rem; padding: 0;">
