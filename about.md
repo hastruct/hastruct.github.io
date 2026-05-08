@@ -7,7 +7,7 @@ header:
   overlay_color: "#0d1b2a"
   overlay_filter: "linear-gradient(135deg, rgba(13, 27, 42, 0.92), rgba(0, 77, 153, 0.75))"
   caption: "<span style='color: #FFD700; font-weight: bold;'>Email: ha.nguyen@hydrostructai.com &nbsp;|&nbsp; Tel: +84 374 874 142</span>"
-  title: "Giới thiệu về HydroStructAI"
+  title: "Giới thiệu chung"
 ---
 
 <link rel="stylesheet" href="/assets/css/custom-home.css">
@@ -407,10 +407,10 @@ header:
 
       <p>
         <strong>HydroStructAI</strong> là nền tảng kỹ thuật chuyên biệt kết hợp
-        <code class="tag">Thủy lực</code>
-        <code class="tag">Kết cấu công trình</code>
         <code class="tag">Quản lý dự án</code>
-        <code class="tag">Trí tuệ nhân tạo</code> —
+        <code class="tag">Đào tạo kỹ thuật</code>
+        <code class="tag">Ứng dụng web kỹ thuật</code>
+        <code class="tag">Ứng dụng trí tuệ nhân tạo</code> —
         mang đến cho kỹ sư xây dựng và chủ đầu tư một hệ sinh thái công cụ thực chiến, từ quản lý dự án theo chuẩn <strong>PMBOK 7th</strong> đến các ứng dụng phân tích kỹ thuật chạy ngay trên trình duyệt.
       </p>
 
