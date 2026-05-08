@@ -529,7 +529,7 @@
   z-index: 10;
   border-top: 1px solid rgba(0,0,0,0.1);
   position: relative !important;
-  top: 50px !important;
+  top: 5px !important;
 }
 
 /* 3. Định dạng chung cho cụm chữ liên hệ */
