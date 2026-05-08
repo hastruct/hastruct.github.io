@@ -14,7 +14,7 @@ title: "Hydro Structure AI"
 title_separator: "|"
 name: "Hydro Structure AI"
 description: "Các ứng dụng Web cho Kỹ thuật Xây dựng"
-url: "https://hydrostructai.github.io"
+url: "https://hydrostructai.com"
 baseurl: ""
 repository: "hydrostructai/hydrostructai.github.io"
 teaser: # path to an image to be used as a teaser - relative to /assets/images/
@@ -118,7 +118,7 @@ sass:
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /posts/:title/
 paginate: 5 # number of posts to show
 paginate_path: /page:num/
 timezone: "Asia/Ho_Chi_Minh" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
