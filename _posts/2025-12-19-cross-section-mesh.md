@@ -1,23 +1,43 @@
 ---
-title: "Phân Tích Tiết Diện dầm Sử Dụng Thư viện Python SectionProperties"
+title: "Tiết Diện Dầm: Tạo lưới và phân tích ứng suất với SectionProperties"
 author_profile: true
 author_name: "HST.AI"
-date: 2025-12-19 10:00:00 +0700
+date: 2026-05-09 10:00:00 +0700
 layout: single
+featured: false
 mathjax: true
 toc: true
 toc_sticky: true
 toc_label: "📑 Mục Lục"
-
+permalink: "/posts/phan-tich-tiet-dien-dam-sectionproperties/"
 categories:
-  - Structural Engineering
-  - 2D Analysis
+  - Structural-Engineering
+  - FEM-Analysis
+  - Cross-Section-Analysis
 tags:
   [
-    Cross Section,
-	Mesh
+    "Tiết diện dầm",
+    "Cross-section",
+    SectionProperties,
+    Python,
+    "Phần tử hữu hạn",
+    FEM,
+    Mesh,
+    "Ứng suất Von Mises",
+    "Vòng Mohr",
+    "Độ cứng uốn",
+    "Tính chất hình học",
+    TCVN
   ]
+excerpt: "Hướng dẫn phân tích tiết diện dầm bê tông với Python SectionProperties: Định nghĩa vật liệu, tạo lưới FEM 60mm², tính tính chất hình học (diện tích, mô-men quán tính), độ cứng (EA, EI, GJ), phân tích ứng suất Von Mises, vectơ ứng suất cắt, vòng Mohr tại điểm tới hạn, trực quan hóa các tâm hình học."
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
+---
+
 image: /assets/images/posts/2025-12-19-cross-section-mesh/box-girder.png
+
 ---
 
 ## Tổng Quan

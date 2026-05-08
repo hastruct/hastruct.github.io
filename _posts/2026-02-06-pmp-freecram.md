@@ -2,27 +2,42 @@
 title: "PMP Project Management Professional Exam 2025 (Version e7002) - Comprehensive Review"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-02-06 16:00:00 +0700
+date: 2026-05-09 10:00:00 +0700
 layout: single
+featured: true
 toc: true
 toc_sticky: true
-toc_label: "📑 Content / Mục Lục"
+toc_label: "📑 Mục Lục"
+permalink: "/posts/pmp-freecram-2025/"
 categories:
+  - Project-Management
+  - Professional-Certification
   - PMP
-  - Education
-  - Career
 tags:
   [
     PMP,
-    Certification,
+    Chứng chỉ quản lý dự án,
     Freecram,
-    Exam Prep,
-    PMI
+    Chuẩn bị thi PMP,
+    PMI,
+    "Agile, Waterfall",
+    "Hybrid Project Management",
+    "Quản lý nhân sự dự án",
+    "Kiểm soát thay đổi",
+    PMBOK,
+    Exam Preparation,
+    "Kỹ năng lãnh đạo phục vụ"
   ]
+excerpt: "Phân tích chuyên sâu tài liệu luyện thi PMP Freecram v2025 (e7002): Cấu trúc bài thi, phân bố miền People-Process-Business, các lỗi thường gặp và chiến lược thi đỗ lần đầu trong 4-6 tuần. Bao gồm ví dụ thực tế, mẫu câu hỏi chi tiết và tài liệu tham khảo từ PMI chính thức."
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
-> **Note:** This report is based on the analysis of PMP exam resources, specifically the structure and content style of the Freecram PMP v2025-12-17 update.  
-> *Lưu ý: Báo cáo này dựa trên phân tích các tài liệu thi PMP, cụ thể là cấu trúc và phong cách nội dung của bản cập nhật Freecram PMP v2025-12-17.*
+Báo cáo này dựa trên phân tích các tài liệu thi PMP, cụ thể là cấu trúc và phong cách nội dung bài thi PMP tham khảo từ Freecram PMP v2025-12-17.*
+
+---
 
 ## 1. Objectives / Mục tiêu
 

@@ -1,24 +1,39 @@
 ---
-title: "Markov Chain Monte Carlo (MCMC): Overview & Applications / Tổng quan & Ứng dụng"
+title: "Markov Chain Monte Carlo: Tổng quan & Ứng dụng trong Kỹ thuật Xây dựng"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-02-06 08:00:00 +0700
+date: 2026-05-09 10:00:00 +0700
 layout: single
+featured: false
 toc: true
 toc_sticky: true
-toc_label: "📑 Content / Mục Lục"
+toc_label: "📑 Mục Lục"
+permalink: "/posts/markov-chain-mcmc-ung-dung/"
 categories:
-  - Data Science
-  - Algorithms
-  - Engineering
+  - Data-Science
+  - Statistical-Methods
+  - Engineering-Analysis
 tags:
   [
     MCMC,
-    Monte Carlo,
-    Bayesian Statistics,
+    "Markov Chain Monte Carlo",
+    "Lấy mẫu thống kê",
+    "Suy luận Bayes",
+    "Phân tích độ tin cậy kết cấu",
+    "Quản lý rủi ro dự án",
+    "Tối ưu hóa thiết kế",
     Python,
-    Algorithm
+    "Metropolis-Hastings",
+    "Gibbs Sampling",
+    Thuật toán,
+    PMBOK,
+    "Phân tích dự báo"
   ]
+excerpt: "Phân tích chuyên sâu thuật toán Markov Chain Monte Carlo (MCMC) và ứng dụng thực tế trong kỹ thuật xây dựng. Bao gồm lý thuyết chuỗi Markov, phương pháp Monte Carlo, suy luận Bayes, các thuật toán MCMC phổ biến (MH, Gibbs, HMC), và ví dụ mô phỏng thực tế với dữ liệu."
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
 Markov Chain Monte Carlo (MCMC) is a powerful class of algorithms for sampling from probability distributions. By constructing a Markov chain that has the desired distribution as its equilibrium distribution, one can obtain a sample of the desired distribution to approximate complex integrals or understand posterior distributions in Bayesian statistics.  

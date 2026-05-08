@@ -31,7 +31,7 @@ excerpt: "Nhiều chủ nhà mắc sai lầm ngay từ đầu mà không biết.
 header:
   overlay_color: "#1a1a2e"
   overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
-  caption: "© HydrostrucAI - Tư vấn Quản lý Dự án & Giám sát Thi công"
+  caption: "©  HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
 Thực tế, **Nhiều chủ nhà, chủ đầu tư** xây dựng công trình nhà ở riêng lẻ mắc sai lầm ngay từ giai đoạn đầu, và điều đáng nói là họ **không hề biết mình đang sai**. Sai lầm tích tụ qua từng quyết định nhỏ - *"tiền không mất một lần mà mất dần qua từng quyết định nhỏ của bạn"* - và chỉ bộc lộ ở giai đoạn cuối hoặc sau khi bàn giao.

@@ -1,23 +1,40 @@
 ---
-title: "Giải thuật Quy hoạch Tuyến tính ứng dụng vào bài toán thực tế"
+title: "Quy hoạch Tuyến tính: Giải thuật Ứng dụng Sản xuất, Vận chuyển & Dự án"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-01-23 10:00:00 +0700
+date: 2026-05-09 10:00:00 +0700
 layout: single
+featured: false
 mathjax: true
 toc: true
 toc_sticky: true
 toc_label: "📑 Mục Lục"
+permalink: "/posts/quy-hoach-tuyen-tinh-ung-dung/"
 categories:
   - Optimization
-  - Data Science
+  - Operations-Research
+  - Data-Science
 tags:
   [
-    Linear Programming,
+    "Quy hoạch tuyến tính",
+    "Linear Programming",
     Python,
     SciPy,
-    Operations Research,
+    "Tối ưu hóa",
+    Simplex,
+    "Phương pháp điểm trong",
+    "Quản lý sản xuất",
+    "Vận chuyển hàng hóa",
+    "Quản lý dự án",
+    CPM,
+    "Nghiên cứu hoạt động",
+    PMBOK
   ]
+excerpt: "Hướng dẫn toàn diện quy hoạch tuyến tính (Linear Programming): Cơ sở toán học, phương pháp Simplex, Interior Point, chi tiết mô hình hóa 3 bài toán thực tế (Sản xuất, Vận chuyển, CPM Dự án) với code Python SciPy, biểu đồ trực quan hóa và kết quả tối ưu."
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
 Quy hoạch tuyến tính (Linear Programming - LP) là một trong những kỹ thuật tối ưu hóa quan trọng nhất trong toán học ứng dụng và kinh tế. Bài viết này sẽ giới thiệu về cơ sở toán học của LP và cách triển khai giải quyết 3 bài toán thực tế bằng thư viện SciPy trong Python.

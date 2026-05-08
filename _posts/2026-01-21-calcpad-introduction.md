@@ -1,31 +1,44 @@
 ---
-title: "Giới thiệu và hướng dẫn sử dụng phần mềm Calcpad trong Kỹ thuật Xây dựng"
+title: "Calcpad: Hướng dẫn Sử dụng Công cụ Tính toán Kỹ thuật Xây dựng"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-01-21 10:00:00 +0700
+date: 2026-05-09 10:00:00 +0700
 layout: single
+featured: false
 mathjax: true
 toc: true
 toc_sticky: true
 toc_label: "📑 Mục Lục"
+permalink: "/posts/calcpad-cong-cu-tinh-toan-ky-thuat/"
 categories:
-  - Software
-  - Engineering
+  - Software-Engineering
+  - Technical-Tools
+  - Engineering-Automation
 tags:
   [
     Calcpad,
+    "Tính toán kỹ thuật",
     Automation,
-    Structural Engineering,
-    Technical Report,
+    "Báo cáo kỹ thuật",
+    Python,
+    "Phân tích kết cấu",
+    "Dầm bê tông",
+    "Cốt thép",
+    "Xuất HTML/PDF",
+    "VS Code",
+    Template,
+    TCVN,
+    "Quy trình chuyên nghiệp"
   ]
----
-
-**[Xem chi tiết các báo cáo mẫu tại đây](https://hydrostructai.com/calcpad_engineering/calcpad.html)**
-
+excerpt: "Hướng dẫn toàn diện Calcpad: Công cụ tính toán kỹ thuật mã nguồn mở, viết phương trình văn bản, tự động tính toán, xuất báo cáo HTML/PDF chuyên nghiệp. Bao gồm cú pháp cơ bản, ví dụ thực tế (diện tích, dầm, cốt thép), định dạng văn bản, mẹo & thủ thuật, hỗ trợ VS Code/WSL."
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
 Calcpad là công cụ tính toán kỹ thuật mạnh mẽ cho phép bạn viết các phép tính phức tạp dưới dạng văn bản và tự động tạo báo cáo chuyên nghiệp.
-
+**[Xem chi tiết các báo cáo mẫu tại đây](https://hydrostructai.com/calcpad_engineering/calcpad.html)**
 **Website Calcpad:** [https://www.calcpad.eu](https://www.calcpad.eu)
 
 ---

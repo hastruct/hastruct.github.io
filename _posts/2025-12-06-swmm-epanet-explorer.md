@@ -1,24 +1,48 @@
 ---
-title: "Công cụ Trực quan hóa Tệp dữ liệu cho SWMM5 và EPANET"
+title: "SWMM5 & EPANET Explorer: Công cụ Trực quan hóa File INP Trực tuyến"
 author_profile: true
 author_name: "HST.AI"
-date: 2025-12-06 10:00:00 +0700
+date: 2026-05-09 10:00:00 +0700
 layout: single
-# QUAN TRỌNG: Bật MathJax để hiển thị công thức
+featured: true
 mathjax: true
-
-categories: 
-    - Tools
-tags: [SWMM, EPANET, Water Modeling, Web Tool, Engineering]
-# Ảnh đại diện cho bài viết
-image: /assets/images/swmm-epanet-explorer.png
+toc: true
+toc_sticky: true
+toc_label: "📑 Mục Lục"
+permalink: "/posts/swmm-epanet-explorer-tool/"
+categories:
+  - Water-Modeling
+  - Software-Tools
+  - Engineering-Applications
+tags:
+  [
+    "SWMM5",
+    EPANET,
+    "Mô hình hóa nước",
+    "Thủy văn",
+    "Thoát nước mưa",
+    "Cấp nước",
+    "Web App",
+    "File INP",
+    "Trực quan hóa dữ liệu",
+    "Kiểm tra nhanh",
+    TCVN,
+    "EPA Software"
+  ]
+excerpt: "Giới thiệu công cụ web SWMM5 & EPANET Explorer: Trực quan hóa file dữ liệu .INP trực tuyến, không cần cài đặt, kéo & thả tệp, danh sách tiêu đề phần dữ liệu, xem chi tiết từng section (JUNCTIONS, CONDUITS, PIPES, v.v.), hỗ trợ EPA SWMM 5.2.4 & EPANET, tối ưu cho kiểm tra nhanh mô hình nước."
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 
 ---
 
-Chào mừng các bạn đến với bài viết giới thiệu về một công cụ tiện ích mới dành cho cộng đồng mô hình hóa nước. Dưới đây là tổng hợp về một giải pháp web giúp đơn giản hóa quy trình làm việc với các tệp dữ liệu đầu vào của SWMM và EPANET.
+Bài viết giới thiệu về một công cụ tiện ích mới dành cho cộng đồng mô hình hóa nước. Dưới đây là tổng hợp về một giải pháp web giúp đơn giản hóa quy trình làm việc với các tệp dữ liệu đầu vào của SWMM và EPANET.
 
 [![SWMM-EPANET Explorer](/assets/images/swmm-epanet-explorer.png)](https://swmm5epanetinpviewer.com/)
 *Hình ảnh giao diện công cụ Trình xem tệp dữ liệu EPA SWMM5 và EPANET INP. Nhấn vào ảnh để truy cập ứng dụng.*
+
+---
 
 ### 1. Thách thức với Tệp Đầu vào (.INP)
 

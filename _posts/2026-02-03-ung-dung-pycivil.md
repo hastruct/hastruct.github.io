@@ -1,25 +1,39 @@
 ---
-title: "Pycivile: Open Source Structural Engineering Library & BIM Integration Strategy"
+title: "Thư viện Kỹ thuật Kết cấu Mã nguồn Mở Pycivil & Chiến lược Tích hợp BIM"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-02-03 08:00:00 +0700
+date: 2026-05-09 10:00:00 +0700
 layout: single
+featured: false
 toc: true
 toc_sticky: true
-toc_label: "📑 Content / Mục Lục"
+toc_label: "📑 Mục Lục"
+permalink: "/posts/pycivile-bem-tich-hop-bim/"
 categories:
-  - Structural Engineering
-  - Python
-  - BIM
+  - Structural-Engineering
+  - Software-Development
+  - BIM-Integration
 tags:
   [
     Pycivile,
+    "Kỹ thuật kết cấu",
     Python,
-    Finite Element Method,
-    BIM Integration,
-    Open Source
+    "Phương pháp phần tử hữu hạn",
+    "Tích hợp BIM",
+    "Mã nguồn mở",
+    "Phân tích BTCT",
+    Eurocode 2,
+    TCVN,
+    "Code_Aster",
+    "Generative Design",
+    Automation,
+    "Tối ưu hóa thiết kế"
   ]
-
+excerpt: "Phân tích chuyên sâu thư viện Python Pycivile cho kỹ thuật kết cấu: Kiến trúc bộ máy EXAGeometry, EXAStructural, tích hợp FEM, chiến lược BIM. Bao gồm phân tích tiết diện BTCT, biểu đồ tương tác ULS, tích hợp MIDAS/Code_Aster, ưu nhược điểm và tầm nhìn Generative Design."
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
 Pycivile is an open-source Python library designed to liberate structural engineers from dependency on commercial software while preserving professional knowledge.  

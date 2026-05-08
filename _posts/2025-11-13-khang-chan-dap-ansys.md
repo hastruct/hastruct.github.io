@@ -22,7 +22,7 @@ excerpt: "Hướng dẫn chi tiết quy trình 4 bước phân tích kháng ch�
 header:
   overlay_color: "#1a1a2e"
   overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
-  caption: "© HydrostrucAI - Phân tích Kết cấu & Mô phỏng số"
+  caption: "©  HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
 Để phục vụ quá trình mô phỏng, bài viết thiết lập mô hình phần tử hữu hạn ba chiều (3D FEM) chi tiết cho kết cấu đập bê tông trọng lực. Hình ảnh dưới đây minh họa mô hình hình học được thực hiện trong môi trường Ansys, dựa trên các phương pháp luận từ công trình nghiên cứu của **PGS.TS Vũ Hoàng Hưng (Đại học Thủy lợi)**.
