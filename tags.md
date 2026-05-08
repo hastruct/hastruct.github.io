@@ -255,3 +255,5 @@ header:
   </div>
 
 </div>
+<!-- RIGHT SIDEBAR -->
+  {% include sidebar-right.html %}
