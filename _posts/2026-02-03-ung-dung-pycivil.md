@@ -2,7 +2,7 @@
 title: "Thư viện Kỹ thuật Kết cấu Mã nguồn Mở Pycivil & Chiến lược Tích hợp BIM"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-05-09 10:00:00 +0700
+date: 2026-02-03 10:00:00 +0700
 layout: single
 featured: false
 toc: true

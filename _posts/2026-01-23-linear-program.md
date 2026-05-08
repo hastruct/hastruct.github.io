@@ -2,7 +2,7 @@
 title: "Quy hoạch Tuyến tính: Giải thuật Ứng dụng Sản xuất, Vận chuyển & Dự án"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-05-09 10:00:00 +0700
+date: 2026-01-23 10:00:00 +0700
 layout: single
 featured: false
 mathjax: true

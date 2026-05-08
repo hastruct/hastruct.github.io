@@ -2,9 +2,9 @@
 title: "Calcpad: Hướng dẫn Sử dụng Công cụ Tính toán Kỹ thuật Xây dựng"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-05-09 10:00:00 +0700
+date: 2026-01-21 10:00:00 +0700
 layout: single
-featured: false
+featured: true
 mathjax: true
 toc: true
 toc_sticky: true

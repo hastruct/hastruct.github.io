@@ -2,7 +2,7 @@
 title: "Tiết Diện Dầm: Tạo lưới và phân tích ứng suất với SectionProperties"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-05-09 10:00:00 +0700
+date: 2025-12-19 10:00:00 +0700
 layout: single
 featured: false
 mathjax: true
