@@ -420,16 +420,20 @@ header:
 
       <div class="stat-strip">
         <div class="stat-item">
+          <div class="stat-val">QLDA</div>
+          <div class="stat-label">Quản lý dự án chuyên nghiệp</div>
+        </div>
+        <div class="stat-item">
           <div class="stat-val">PMBOK 7</div>
           <div class="stat-label">Chuẩn quản trị áp dụng</div>
         </div>
         <div class="stat-item">
-          <div class="stat-val">NĐ 175</div>
-          <div class="stat-label">Khung pháp lý cập nhật 2024</div>
+          <div class="stat-val">LESSONS LEARNED</div>
+          <div class="stat-label">Các bài học kinh nghiệm</div>
         </div>
         <div class="stat-item">
           <div class="stat-val">WASM</div>
-          <div class="stat-label">Nền tảng tính toán web</div>
+          <div class="stat-label">Nền tảng ứng dụng trên web</div>
         </div>
         <div class="stat-item">
           <div class="stat-val">Free</div>
@@ -448,9 +452,9 @@ header:
 
         <div class="pillar-card">
           <div class="pillar-num">01</div>
-          <h4>Quản lý Dự án Xây dựng theo PMBOK 7th</h4>
+          <h4>Quản lý Dự án Xây dựng (Tư duy PMBOK 7th)</h4>
           <p>
-            Tư vấn và đào tạo quản lý dự án theo tư duy <strong>Value Delivery System</strong> — từ Scope, Schedule, Cost đến Risk, Stakeholders và Quality trong bối cảnh pháp lý Việt Nam (NĐ 175/2024, NĐ 06/2021).
+            Tư vấn và đào tạo quản lý dự án theo tư duy <strong>Value Delivery System</strong> — từ Scope, Schedule, Cost đến Risk, Stakeholders và Quality trong bối cảnh pháp lý Việt Nam (Luật XD, NĐ 175/2024, NĐ 06/2021).
           </p>
         </div>
 
@@ -472,7 +476,7 @@ header:
       <h2><span class="section-icon">📐</span> Tư Duy Quản Lý Dự Án Hiện Đại</h2>
 
       <p>
-        Chúng tôi xây dựng nội dung và tư vấn dựa trên <strong>PMBOK® Guide 7th Edition</strong> — sự chuyển dịch từ quản lý quy trình sang quản lý nguyên tắc và hiệu suất, áp dụng vào thực tiễn xây dựng Việt Nam.
+        Chúng tôi xây dựng nội dung và tư vấn dựa trên <strong>PMBOK® Guide</strong> — sự chuyển dịch từ quản lý quy trình sang quản lý nguyên tắc và hiệu suất, áp dụng vào thực tiễn xây dựng Việt Nam.
       </p>
 
       <div class="process-steps">
@@ -505,7 +509,7 @@ header:
           <div class="step-dot">P4</div>
           <div class="step-body">
             <h4>Tuân thủ Pháp lý (Legal Compliance)</h4>
-            <p>Tích hợp đầy đủ yêu cầu của <strong>Nghị định 175/2024/NĐ-CP</strong> và <strong>NĐ 06/2021</strong> vào quy trình quản lý — RACI matrix, thẩm quyền phân cấp, hồ sơ hoàn công điện tử theo quy định mới nhất.</p>
+            <p>Tích hợp đầy đủ yêu cầu của <strong>Luật xây dựng</strong>, <strong>Nghị định 175/2024/NĐ-CP</strong> và <strong>NĐ 06/2021</strong> vào quy trình quản lý — RACI matrix, thẩm quyền phân cấp, hồ sơ hoàn công điện tử theo quy định mới nhất.</p>
           </div>
         </div>
 
@@ -663,8 +667,8 @@ header:
         <a href="/apps/" class="btn-primary">
           🚀 Khám phá Ứng dụng
         </a>
-        <a href="/posts/" class="btn-outline">
-          📖 Đọc Blog Kỹ thuật
+        <a href="/" class="btn-outline">
+          📖 Thông tin trang chủ
         </a>
       </div>
     </div>
