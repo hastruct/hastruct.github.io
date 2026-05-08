@@ -8,8 +8,8 @@ toc: true
 toc_sticky: true
 toc_label: "📑 Mục Lục"
 categories:
-  - Construction Management
-  - Project Management
+  - Construction-Management
+  - Project-Management
 tags:
   [
     Quản lý dự án xây dựng,
