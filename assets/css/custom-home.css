@@ -523,7 +523,7 @@
   right: 0 !important;
   width: 100% !important;
   margin: 0 !important;
-  padding: 12px 25px !important; /* Tăng padding để cân đối */
+  padding: 15px 15px !important; /* Tăng padding để cân đối */
   background-color: rgba(255, 255, 255, 0.85) !important; /* Nền trắng trong suốt để chữ màu đậm nổi bật hơn */
   text-align: right !important;
   z-index: 10;
