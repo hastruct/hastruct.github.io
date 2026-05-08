@@ -420,24 +420,29 @@ title: "Giới thiệu chung"
 
       <div class="stat-strip">
         <div class="stat-item">
-          <div class="stat-val">PROJECT MANAGEMENT</div>
+          <div class="stat-val">QLDA</div>
           <div class="stat-label">Quản lý dự án chuyên nghiệp</div>
         </div>
         <div class="stat-item">
-          <div class="stat-val">PMBOK 7</div>
+          <div class="stat-val">Tư duy PMBOK</div>
           <div class="stat-label">Chuẩn quản trị áp dụng</div>
         </div>
         <div class="stat-item">
-          <div class="stat-val">LESSONS LEARNED</div>
-          <div class="stat-label">Các bài học kinh nghiệm</div>
+          <div class="stat-val">Đào tạo kỹ thuật</div>
+          <div class="stat-label">Hỗ trợ đào tạo</div>
         </div>
+
         <div class="stat-item">
-          <div class="stat-val">WASM</div>
+          <div class="stat-val">Ứng dụng KT</div>
           <div class="stat-label">Nền tảng ứng dụng trên web</div>
         </div>
         <div class="stat-item">
           <div class="stat-val">Free</div>
           <div class="stat-label">Công cụ cốt lõi miễn phí</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val">Lessons Learned</div>
+          <div class="stat-label">Các bài học kinh nghiệm</div>
         </div>
       </div>
     </div>
@@ -452,7 +457,7 @@ title: "Giới thiệu chung"
 
         <div class="pillar-card">
           <div class="pillar-num">01</div>
-          <h4>Quản lý Dự án Xây dựng (Tư duy PMBOK 7th)</h4>
+          <h4>Quản lý Dự án Xây dựng (Tư duy QLDA theo PMBOK)</h4>
           <p>
             Tư vấn và đào tạo quản lý dự án theo tư duy <strong>Value Delivery System</strong> - từ Scope, Schedule, Cost đến Risk, Stakeholders và Quality trong bối cảnh pháp lý Việt Nam (Luật XD, NĐ 175/2024, NĐ 06/2021).
           </p>
@@ -462,7 +467,7 @@ title: "Giới thiệu chung"
           <div class="pillar-num">02</div>
           <h4>Ứng dụng Web Kỹ thuật cho Kỹ sư</h4>
           <p>
-            Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>WebAssembly</strong> - FEM kết cấu, tính toán thủy lực, dự toán chi phí - không cần cài đặt, không cần phần cứng đắt tiền.
+            Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>WASM</strong> - Phần mềm tính toán kết cấu, tính toán thủy lực, dự toán chi phí - không cần cài đặt, không cần phần cứng đắt tiền.
           </p>
         </div>
 
@@ -528,7 +533,7 @@ title: "Giới thiệu chung"
     <!-- 4. ỨNG DỤNG WEB KỸ THUẬT                      -->
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
-      <h2><span class="section-icon">⚙️</span> Ứng Dụng Web Hỗ Trợ Kỹ Sư</h2>
+      <h2><span class="section-icon">⚙️</span> Ứng Dụng Kỹ Thuật Hỗ Trợ Kỹ Sư</h2>
 
       <p>
         Các phần mềm CAE/FEM truyền thống đòi hỏi workstation đắt tiền và bản quyền hàng nghìn đô la. Chúng tôi đang thay đổi điều đó bằng cách mang lõi tính toán hiệu suất cao (C++, Fortran) lên trình duyệt qua <strong>WebAssembly</strong>.
