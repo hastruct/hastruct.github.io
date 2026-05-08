@@ -4,14 +4,7 @@ title: "Danh Sách Tags"
 permalink: /tags/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-<div class='hero-contact-wrapper'>
-  <span class='c-item'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1'>HST.AI</a></span> 
-  <span class='c-sep'>|</span> 
-  <span class='c-item'>Email: <a href='mailto:ha.nguyen@hydrostructai.com'>ha.nguyen@hydrostructai.com</a></span> 
-  <span class='c-sep'>|</span> 
-  <span class='c-item'>Tel: +84 374874142</span>
-</div>
-  title: "Tags"
+  caption: "<div class='hero-contact-wrapper'><span class='c-item'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item'>Email: <a href='mailto:ha.nguyen@hydrostructai.com'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item'>  title: "Tags"
 ---
 
 <link rel="stylesheet" href="/assets/css/custom-home.css">
@@ -163,7 +156,7 @@ header:
 <div class="home-wrapper">
 
   <!-- LEFT SIDEBAR (từ _includes/sidebar-left.html) -->
-  {% include sidebar-left.html %}-->
+  {% include sidebar-left.html %}
 
   <!-- CENTER CONTENT -->
   <div class="center-content">
