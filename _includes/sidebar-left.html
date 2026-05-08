@@ -1,168 +1,124 @@
 <aside class="left-sidebar">
-  <!-- Traffic Stats Section -->
-<div class="sidebar-module">
-  <h4 class="sidebar-heading header-highlight">📊 Traffic Stats</h4>
-  <div style="padding: 12px; background: #f9f9f9; border-radius: 4px; border: 1px solid #eee; margin: 10px 0;">
-    
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-      <span style="font-size: 0.8rem; color: #666; font-weight: 500;">
-        <i class="fas fa-chart-line" style="margin-right: 5px;"></i> counter.dev
-      </span>
-      <span id="hst-status-badge" 
-            style="font-size: 0.6rem; color: #666; background: #eee; padding: 1px 6px; border-radius: 10px;">
-        Loading...
-      </span>
-    </div>
-
-    <!-- Counters Display -->
-    <div style="margin-bottom: 8px;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-        <span style="font-size: 0.8rem; color: #333;">Site Views</span>
-        <span id="hst-pv-count" 
-              style="font-weight: bold; color: #2231d2; font-family: monospace;">—</span>
-      </div>
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="font-size: 0.8rem; color: #333;">Unique Visitors</span>
-        <span id="hst-uv-count" 
-              style="font-weight: bold; color: #2231d2; font-family: monospace;">—</span>
-      </div>
-    </div>
-
-    <div style="text-align: center; margin-top: 10px; padding-top: 8px; border-top: 1px dashed #ddd;">
-      <a href="https://counter.dev" target="_blank" rel="noopener noreferrer"
-         style="font-size: 0.7rem; color: #0d6efd; text-decoration: none;">
-        <i class="fas fa-link"></i> counter.dev
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- ============================================================
-     COUNTER.DEV API SCRIPT
-     Lấy dữ liệu từ API công khai: https://api.counter.dev/stats
-     Thay data-id nếu thay đổi trong tương lai
-============================================================ -->
-<script>
-(function() {
-  // ✅ Counter.dev Data-ID từ <script src="https://cdn.counter.dev/script.js" data-id="...">
-  var COUNTER_DATA_ID = "{{ site.counter_dev.data_id }}"; 
-  var badgeEl = document.getElementById('hst-status-badge');
-  var pvEl    = document.getElementById('hst-pv-count');
-  var uvEl    = document.getElementById('hst-uv-count');
-
-  // --- GA4 status badge ---
-  window.addEventListener('load', function() {
-    if (typeof gtag === 'function') {
-      badgeEl.innerText = 'GA4 ✓';
-      badgeEl.style.background = '#e8f5e9';
-      badgeEl.style.color = '#28a745';
-    } else {
-      badgeEl.innerText = 'GA4 ✗';
-      badgeEl.style.background = '#ffebee';
-      badgeEl.style.color = '#d32f2f';
-    }
-  });
-
-  // --- counter.dev API call ---
-  // API công khai: https://api.counter.dev/stats?id=DATA_ID
-  var apiUrl = "https://api.counter.dev/stats?id=" + COUNTER_DATA_ID;
-
-  fetch(apiUrl, { mode: 'cors' })
-    .then(function(res) {
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      return res.json();
-    })
-    .then(function(data) {
-      // API trả về: { stats: { visits: N, visitors: N } }
-      var stats = data.stats || {};
-      var visits = stats.visits || stats.count || 0;
-      var visitors = stats.visitors || 0;
-
-      pvEl.innerText = (visits > 0) 
-        ? visits.toLocaleString('vi-VN') 
-        : '—';
-      uvEl.innerText = (visitors > 0) 
-        ? visitors.toLocaleString('vi-VN') 
-        : '—';
-    })
-    .catch(function(err) {
-      console.warn('counter.dev API fail:', err.message);
-      // Fallback: hiển thị thông báo
-      badgeEl.innerText = 'API ✗';
-      badgeEl.style.background = '#fff3cd';
-      badgeEl.style.color = '#856404';
-      pvEl.innerText = '—';
-      uvEl.innerText = '—';
-    });
-})();
-</script>
   
-        
-        <div style="text-align: center; margin-top: 10px; padding-top: 8px; border-top: 1px dashed #ddd;">
-            <a href="https://analytics.google.com/analytics/web/" target="_blank" style="font-size: 0.7rem; color: #0d6efd; text-decoration: none;">
-                <i class="fab fa-google"></i> Analysis Dashboard
-            </a>
-        </div>
-    </div>
-    <ul class="share-list">
-      <li class="share-item">
-        <a href="https://analytics.google.com/analytics/web/" target="_blank" class="share-link">
-          <i class="fas fa-chart-line"></i> View GA Dashboard
+  <!-- Analytics Status Section -->
+  <div class="sidebar-module">
+    <h4 class="sidebar-heading header-highlight">📊 Analytics</h4>
+    <div style="padding: 12px; background: #f9f9f9; border-radius: 4px; border: 1px solid #eee; margin: 10px 0;">
+      
+      <!-- GA4 Status Badge -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <span style="font-size: 0.8rem; color: #666; font-weight: 500;">
+          <i class="fas fa-chart-line" style="margin-right: 5px;"></i> GA4 Status
+        </span>
+        <span id="hst-ga4-badge" 
+              style="font-size: 0.6rem; color: #666; background: #eee; padding: 2px 8px; border-radius: 10px; font-weight: bold;">
+          Checking...
+        </span>
+      </div>
+
+      <!-- Info Text -->
+      <p style="font-size: 0.75rem; color: #666; margin: 0;">
+        ✅ <strong>GA4 Tracking Active</strong><br>
+        Real-time data available in GA4 Dashboard
+      </p>
+
+      <!-- Dashboard Link -->
+      <div style="margin-top: 10px;">
+        <a href="https://analytics.google.com/analytics/web/" target="_blank" rel="noopener noreferrer"
+           style="display: inline-block; padding: 6px 10px; background: #0d6efd; color: white; text-decoration: none; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">
+          <i class="fab fa-google" style="margin-right: 3px;"></i> GA4 Dashboard
         </a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 
+  <!-- Share Section -->
   <div class="sidebar-module">
-    <h4 class="sidebar-heading header-highlight">Share</h4>
+    <h4 class="sidebar-heading">📤 Share</h4>
     <ul class="share-list">
       <li class="share-item">
         <a href="#" class="share-link" onclick="window.print(); return false;">
-          <i class="fas fa-print"></i> Print this page
+          <i class="fas fa-print"></i> Print
         </a>
       </li>
       <li class="share-item">
         <a href="mailto:?subject=Engineering Tools&body=Check this out!" class="share-link">
-          <i class="fas fa-envelope"></i> Send via Email
+          <i class="fas fa-envelope"></i> Email
         </a>
       </li>
       <li class="share-item">
-        <a href="#" class="share-link">
-          <i class="fab fa-twitter"></i> Share on Twitter
+        <a href="#" class="share-link" onclick="navigator.share ? navigator.share({title: document.title, url: window.location.href}) : alert('Share not supported'); return false;">
+          <i class="fas fa-share-alt"></i> Share
         </a>
       </li>
     </ul>
   </div>
 
+  <!-- Resources Section -->
   <div class="sidebar-module">
-    <h4 class="sidebar-heading">Facebook</h4>
-    <a href="https://facebook.com/g.technical" target="_blank" class="rec-link">
-      <i class="fab fa-facebook-square" style="color: #4267B2; font-size: 1.2rem;"></i> FB Fanpage
-    </a>
-  </div>
-
-  <div class="sidebar-module">
-    <h4 class="sidebar-heading">Recommend Books</h4>
+    <h4 class="sidebar-heading">📚 Resources</h4>
     <ul class="rec-list">
       <li class="rec-item">
-        <a href="#" class="rec-link"><i class="fas fa-book"></i> Design of Concrete Structures (Nilson)</a>
+        <a href="https://www.pmi.org/pmbok-guide-standards" target="_blank" class="rec-link">
+          <i class="fas fa-book"></i> PMBOK Guide
+        </a>
       </li>
       <li class="rec-item">
-        <a href="#" class="rec-link"><i class="fas fa-book"></i> Foundation Analysis and Design (Bowles)</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="sidebar-module">
-    <h4 class="sidebar-heading">Recommend Courses</h4>
-    <ul class="rec-list">
-      <li class="rec-item">
-        <a href="#" class="rec-link"><i class="fas fa-graduation-cap"></i> Coursera: Civil Engineering</a>
-      </li>
-      <li class="rec-item">
-        <a href="#" class="rec-link"><i class="fas fa-graduation-cap"></i> Udemy: SAP2000 Ultimate</a>
+        <a href="https://tcvn.tcvn.vn" target="_blank" class="rec-link">
+          <i class="fas fa-file-pdf"></i> TCVN Standards
+        </a>
       </li>
     </ul>
   </div>
 
 </aside>
+
+<!-- ============================================================
+     GA4 STATUS CHECKER - SIMPLE VERSION
+     
+     Function:
+     - Check if GA4 gtag is loaded
+     - Update badge status
+     - Send tracking event
+     
+     No external APIs, no dependencies, no fallback needed
+============================================================ -->
+<script>
+(function() {
+  var badgeEl = document.getElementById('hst-ga4-badge');
+
+  function checkGA4Status() {
+    if (typeof gtag === 'function') {
+      // GA4 is available and working
+      badgeEl.innerText = '✓ Active';
+      badgeEl.style.background = '#d4edda';
+      badgeEl.style.color = '#155724';
+      
+      console.log('✅ GA4 tracking is ACTIVE');
+      
+      // Send custom event to GA4
+      gtag('event', 'sidebar_view', {
+        'event_category': 'engagement',
+        'event_label': 'analytics_section',
+        'page_location': window.location.href
+      });
+    } else {
+      // GA4 not found
+      badgeEl.innerText = '✗ Offline';
+      badgeEl.style.background = '#f8d7da';
+      badgeEl.style.color = '#721c24';
+      
+      console.warn('⚠️ GA4 tracking NOT available');
+    }
+  }
+
+  // Check when page loads
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(checkGA4Status, 500);
+    });
+  } else {
+    checkGA4Status();
+  }
+})();
+</script>
