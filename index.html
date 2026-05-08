@@ -18,11 +18,11 @@ header:
    ========================================================================== */
 @keyframes hero-slide {
   0%, 45% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
                       url('{{ site.baseurl }}/assets/images/hero-engineering1.jpg');
   }
   50%, 95% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
                       url('{{ site.baseurl }}/assets/images/hero-engineering2.jpg');
   }
 }
@@ -31,8 +31,8 @@ header:
   animation: hero-slide 16s infinite;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  transition: background-image 1s ease-in-out;
+  background-repeat: repeat;
+  transition: background-image 10s ease-in-out;
   /* ĐÃ XÓA !important Ở ĐÂY ĐỂ ANIMATION HOẠT ĐỘNG */
   background-image: url('{{ site.baseurl }}/assets/images/hero-engineering.jpg');
 }
