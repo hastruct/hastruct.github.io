@@ -4,19 +4,19 @@ title: "Trang chủ"
 author_profile: false
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-	caption: "<div class='hero-contact-wrapper'>
-	  <span class='c-item'>
-		<span class='c-label'>WhatsApp:</span> <a href='https://wa.me/qr/UOQNWYT5B7SNG1' class='v-whatsapp'>HST.AI</a>
-	  </span> 
-	  <span class='c-sep'>|</span> 
-	  <span class='c-item'>
-		<span class='c-label'>Email:</span> <a href='mailto:ha.nguyen@hydrostructai.com' class='v-email'>ha.nguyen@hydrostructai.com</a>
-	  </span> 
-	  <span class='c-sep'>|</span> 
-	  <span class='c-item'>
-		<span class='c-label'>Tel:</span> <span class='v-tel'>+84 374874142</span>
-	  </span>
-	</div>"
+caption: "<div class='hero-contact-wrapper'>
+  <span class='c-item'>
+	<span class='c-label'>WhatsApp:</span> <a href='https://wa.me/qr/UOQNWYT5B7SNG1' class='v-whatsapp'>HST.AI</a>
+  </span> 
+  <span class='c-sep'>|</span> 
+  <span class='c-item'>
+	<span class='c-label'>Email:</span> <a href='mailto:ha.nguyen@hydrostructai.com' class='v-email'>ha.nguyen@hydrostructai.com</a>
+  </span> 
+  <span class='c-sep'>|</span> 
+  <span class='c-item'>
+	<span class='c-label'>Tel:</span> <span class='v-tel'>+84 374874142</span>
+  </span>
+</div>"
   
   cta_label: "Xem chi tiết"
   cta_url: "/apps/landing.html"
@@ -33,20 +33,20 @@ header:
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                       url('{{ site.baseurl }}/assets/images/hero-engineering1.jpg');
   }
-  45%, 100% {
+  50%, 95% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                       url('{{ site.baseurl }}/assets/images/hero-engineering2.jpg');
   }
 }
 
-}
 .page__hero--overlay {
   animation: hero-slide 16s infinite;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: background-image 1s ease-in-out;
-  background-image: url('{{ site.baseurl }}/assets/images/hero-engineering.jpg') !important;
+  /* ĐÃ XÓA !important Ở ĐÂY ĐỂ ANIMATION HOẠT ĐỘNG */
+  background-image: url('{{ site.baseurl }}/assets/images/hero-engineering.jpg');
 }
 
 
