@@ -4,7 +4,13 @@ title: "HST.AI"
 permalink: /about/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #FFD700; font-weight: 900;'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #FFD700; font-weight: 900;'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FF6B6B; font-weight: 900;'>Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #FF6B6B; font-weight: 900;'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FFFFFF; font-weight: 900;'>Tel: +84 374874142</span></div>"
+<div class='hero-contact-wrapper'>
+  <span class='c-item'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1'>HST.AI</a></span> 
+  <span class='c-sep'>|</span> 
+  <span class='c-item'>Email: <a href='mailto:ha.nguyen@hydrostructai.com'>ha.nguyen@hydrostructai.com</a></span> 
+  <span class='c-sep'>|</span> 
+  <span class='c-item'>Tel: +84 374874142</span>
+</div>
 
   title: "Giới thiệu chung"
 ---
