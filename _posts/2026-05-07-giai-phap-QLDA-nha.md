@@ -24,7 +24,7 @@ tags:
 excerpt: "70% chủ nhà mắc sai lầm ngay từ đầu mà không biết. Phân tích chuyên sâu dưới góc nhìn kỹ sư xây dựng — 3 nhóm sai lầm điển hình, khung giải pháp 5 trụ cột và bộ checklist nghiệm thu theo TCVN."
 header:
   overlay_color: "#1a1a2e"
-  overlay_filter: 0.7
+  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
   caption: "© HydrostrucAI — Tư vấn Quản lý Dự án & Giám sát Thi công"
 ---
 
