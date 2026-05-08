@@ -349,6 +349,8 @@ header:
      FEATURED POST STRIP — Bài viết mới nhất nổi bật
 ══════════════════════════════════════════════════════ -->
 {% assign latest_post = site.posts.first %}
+
+{% if latest_post %}
 <div class="featured-post-strip">
   <div class="featured-inner">
     <span class="featured-badge">🆕 Bài mới</span>
@@ -360,14 +362,13 @@ header:
     </a>
 
     <div class="featured-tags">
-      <span class="featured-tag">QLDA</span>
-      <span class="featured-tag">Thi công</span>
-      <span class="featured-tag">TCVN</span>
-      <span class="featured-tag">PMBOK</span>
+      {% for tag in latest_post.tags limit:4 %}
+        <span class="featured-tag">{{ tag }}</span>
+      {% endfor %}
     </div>
   </div>
 </div>
-
+{% endif %}
 <!-- ══════════════════════════════════════════════════════
      LAYOUT CHÍNH (giữ nguyên cấu trúc gốc)
 ══════════════════════════════════════════════════════ -->
