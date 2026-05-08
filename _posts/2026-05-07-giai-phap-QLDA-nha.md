@@ -242,8 +242,8 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 
 ### 📅 Trụ cột 5 - Quản lý Tiến độ & Truyền thông
 
-- Tổng tiến độ **Gantt + Look-ahead 3 tuần**.
-- Họp giao ban tuần với biên bản chuẩn (**Minutes of Meeting**).
+- Tổng tiến độ **Gantt + Dự kiến 3 tuần**.
+- Họp giao ban tuần với biên bản chuẩn (**weekly Meeting**).
 - Báo cáo tuần: tiến độ thực tế vs kế hoạch, vấn đề phát sinh, đề xuất xử lý.
 
 ---
@@ -270,21 +270,21 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 | ☐ | Kiểm tra cọc: chứng chỉ xuất xưởng, độ sâu, nén tĩnh/PDA | TCVN 9393:2012 |
 | ☐ | Cốp pha móng: kích thước, độ thẳng, độ kín, chống đỡ | TCVN 4453:1995 |
 | ☐ | Cốt thép móng: chủng loại, Ø, khoảng cách, lớp bảo vệ | TCVN 1651-2:2018 |
-| ☐ | Mác bê tông + phiếu xuất xưởng + kết quả thử độ sụt | TCVN 3106:1993 |
-| ☐ | Lấy mẫu thử bê tông 3 tổ/cấu kiện tại hiện trường | TCVN 3105:1993 |
+| ☐ | Mác bê tông + phiếu xuất xưởng + kết quả thử độ sụt | TCVN 3106:2022 |
+| ☐ | Lấy mẫu thử bê tông 3 tổ/cấu kiện tại hiện trường | TCVN 3105:2022 |
 | ☐ | Bảo dưỡng bê tông sau đổ ≥ 7 ngày | TCVN 8828:2011 |
-| ☐ | **HOLD POINT:** Biên bản nghiệm thu trước khi lấp đất | **Bắt buộc** |
+| ☐ | **QUAN TRỌNG:** Biên bản nghiệm thu trước khi lấp đất | **Bắt buộc** |
 
 ### Giai đoạn 3 - Phần thân (Cột – Dầm – Sàn – Tường)
 
 | ☐ | Hạng mục kiểm tra | Tiêu chuẩn |
 |---|-------------------|-----------|
 | ☐ | Định vị tim cột, cao độ, kích thước đúng bản vẽ | TCVN 9398:2012 |
-| ☐ | Cốt thép cột/dầm/sàn: số lượng, Ø, khoảng cách, neo nối | TCVN 1651:2018 |
+| ☐ | Cốt thép cột/dầm/sàn: số lượng, Ø, khoảng cách, neo nối | TCVN 1651-2:2018 |
 | ☐ | Cốp pha cột/dầm/sàn: chống đỡ, chống xê dịch, kín nước xi măng | TCVN 4453:1995 |
 | ☐ | Điện nước âm tường/sàn lắp đặt và thử áp lực trước đổ BT | TCVN 4519:1988 |
 | ☐ | Bê tông được đầm chặt, dùng rung dùi đầy đủ, không phân tầng | TCVN 12252:2020 |
-| ☐ | Thí nghiệm cường độ bê tông sau 7/28 ngày | TCVN 3118:1993 |
+| ☐ | Thí nghiệm cường độ bê tông sau 7/28 ngày | TCVN 3118:2022 |
 | ☐ | Tường xây: mạch vữa, gạch ngâm nước, mác vữa đúng | TCVN 4085:2011 |
 | ☐ | Độ thẳng đứng, độ phẳng tường bằng thước thăng bằng | TCVN 5674:1992 |
 
@@ -373,9 +373,10 @@ Tổng nghiệm thu, lập hồ sơ hoàn công, theo dõi bảo hành và xử 
 - **TCVN 9398:2012** — Công tác trắc địa trong xây dựng – Yêu cầu chung.
 - **TCVN 9393:2012** — Cọc – Phương pháp thử nghiệm tại hiện trường bằng tải trọng tĩnh ép dọc trục.
 - **TCVN 9363:2012** — Khảo sát cho xây dựng – Khảo sát địa kỹ thuật cho nhà cao tầng.
-- **TCVN 1651:2018** — Thép cốt bê tông (thay thế TCVN 1651:2008).
+- **TCVN 1651-2:2018** — Thép cốt bê tông (thay thế TCVN 1651:2008).
 - **TCVN 4085:2011** — Kết cấu gạch đá – Tiêu chuẩn thi công và nghiệm thu.
 - **TCVN 8828:2011** — Bê tông – Yêu cầu bảo dưỡng ẩm tự nhiên.
+- **TCVN 3118:2022** — Bê tông – Phương pháp xác định cường độ chịu nén.
 - **TCVN 14177-1:2024 / 14177-2:2024** — Tiêu chuẩn áp dụng BIM trong hoạt động xây dựng *(mới ban hành 2024)*.
 
 ### Sách chuyên khảo & chuẩn quốc tế
@@ -406,7 +407,7 @@ Tổng nghiệm thu, lập hồ sơ hoàn công, theo dõi bảo hành và xử 
 - [BIMserver](https://github.com/opensourceBIM/BIMserver) — Máy chủ BIM mã nguồn mở cho mô hình IFC.
 - [IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell) — Thư viện xử lý IFC mã nguồn mở (Python/C++).
 - [Speckle](https://github.com/specklesystems/speckle-server) — Nền tảng dữ liệu mở cho AEC.
-- [Awesome Construction](https://github.com/Construct-PM/awesome-construction) — Tổng hợp công cụ & chuẩn dữ liệu ngành xây dựng.
+- [Awesome Construction](https://github.com/search?q=awesome-construction&type=repositories&s=&o=desc) — Tổng hợp công cụ & chuẩn dữ liệu ngành xây dựng.
 - [construction-management topics](https://github.com/topics/construction-management) — Template Excel BoQ, tiến độ, quản lý nhà thầu.
 
 ---

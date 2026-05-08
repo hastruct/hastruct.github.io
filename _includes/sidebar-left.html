@@ -1,45 +1,102 @@
 <aside class="left-sidebar">
-  
   <!-- Traffic Stats Section -->
-  <div class="sidebar-module">
-    <h4 class="sidebar-heading header-highlight">Traffic Stats</h4>
-    <div style="padding: 12px; background: #f9f9f9; border-radius: 4px; border: 1px solid #eee; margin: 10px 0;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-            <span style="font-size: 0.8rem; color: #666; font-weight: 500;">
-              <i class="fas fa-chart-line" style="margin-right: 5px;"></i> Stats API
-            </span>
-            <span id="ga4-status-badge" style="font-size: 0.6rem; color: #666; background: #eee; padding: 1px 6px; border-radius: 10px;">Connecting...</span>
-        </div>
-        
-        <!-- API-based Counter (Busuanzi) -->
-        <div style="margin-bottom: 8px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-                <span style="font-size: 0.8rem; color: #333;">Site Views (PV)</span>
-                <span id="busuanzi_value_site_pv" style="font-weight: bold; color: #2231d2; font-family: monospace;">...</span>
-            </div>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-size: 0.8rem; color: #333;">Total Unique Visitors</span>
-                <span id="busuanzi_value_site_uv" style="font-weight: bold; color: #2231d2; font-family: monospace;">...</span>
-            </div>
-        </div>
-        
-        <script>
-          // Step 3 & 4 Verification: Verify tracking status and handle API display
-          window.addEventListener('load', function() {
-            setTimeout(function() {
-              const badge = document.getElementById('ga4-status-badge');
-              if (typeof gtag === 'function') {
-                badge.innerText = 'GA4 Active';
-                badge.style.background = '#e8f5e9';
-                badge.style.color = '#28a745';
-              } else {
-                badge.innerText = 'GA4 Offline';
-                badge.style.background = '#ffebee';
-                badge.style.color = '#d32f2f';
-              }
-            }, 2000);
-          });
-        </script>
+<div class="sidebar-module">
+  <h4 class="sidebar-heading header-highlight">📊 Traffic Stats</h4>
+  <div style="padding: 12px; background: #f9f9f9; border-radius: 4px; border: 1px solid #eee; margin: 10px 0;">
+    
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <span style="font-size: 0.8rem; color: #666; font-weight: 500;">
+        <i class="fas fa-chart-line" style="margin-right: 5px;"></i> counter.dev
+      </span>
+      <span id="hst-status-badge" 
+            style="font-size: 0.6rem; color: #666; background: #eee; padding: 1px 6px; border-radius: 10px;">
+        Loading...
+      </span>
+    </div>
+
+    <!-- Counters Display -->
+    <div style="margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <span style="font-size: 0.8rem; color: #333;">Site Views</span>
+        <span id="hst-pv-count" 
+              style="font-weight: bold; color: #2231d2; font-family: monospace;">—</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.8rem; color: #333;">Unique Visitors</span>
+        <span id="hst-uv-count" 
+              style="font-weight: bold; color: #2231d2; font-family: monospace;">—</span>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 10px; padding-top: 8px; border-top: 1px dashed #ddd;">
+      <a href="https://counter.dev" target="_blank" rel="noopener noreferrer"
+         style="font-size: 0.7rem; color: #0d6efd; text-decoration: none;">
+        <i class="fas fa-link"></i> counter.dev
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     COUNTER.DEV API SCRIPT
+     Lấy dữ liệu từ API công khai: https://api.counter.dev/stats
+     Thay data-id nếu thay đổi trong tương lai
+============================================================ -->
+<script>
+(function() {
+  // ✅ Counter.dev Data-ID từ <script src="https://cdn.counter.dev/script.js" data-id="...">
+  var COUNTER_DATA_ID = "{{ site.counter_dev.data_id }}"; 
+  var badgeEl = document.getElementById('hst-status-badge');
+  var pvEl    = document.getElementById('hst-pv-count');
+  var uvEl    = document.getElementById('hst-uv-count');
+
+  // --- GA4 status badge ---
+  window.addEventListener('load', function() {
+    if (typeof gtag === 'function') {
+      badgeEl.innerText = 'GA4 ✓';
+      badgeEl.style.background = '#e8f5e9';
+      badgeEl.style.color = '#28a745';
+    } else {
+      badgeEl.innerText = 'GA4 ✗';
+      badgeEl.style.background = '#ffebee';
+      badgeEl.style.color = '#d32f2f';
+    }
+  });
+
+  // --- counter.dev API call ---
+  // API công khai: https://api.counter.dev/stats?id=DATA_ID
+  var apiUrl = "https://api.counter.dev/stats?id=" + COUNTER_DATA_ID;
+
+  fetch(apiUrl, { mode: 'cors' })
+    .then(function(res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(function(data) {
+      // API trả về: { stats: { visits: N, visitors: N } }
+      var stats = data.stats || {};
+      var visits = stats.visits || stats.count || 0;
+      var visitors = stats.visitors || 0;
+
+      pvEl.innerText = (visits > 0) 
+        ? visits.toLocaleString('vi-VN') 
+        : '—';
+      uvEl.innerText = (visitors > 0) 
+        ? visitors.toLocaleString('vi-VN') 
+        : '—';
+    })
+    .catch(function(err) {
+      console.warn('counter.dev API fail:', err.message);
+      // Fallback: hiển thị thông báo
+      badgeEl.innerText = 'API ✗';
+      badgeEl.style.background = '#fff3cd';
+      badgeEl.style.color = '#856404';
+      pvEl.innerText = '—';
+      uvEl.innerText = '—';
+    });
+})();
+</script>
+  
         
         <div style="text-align: center; margin-top: 10px; padding-top: 8px; border-top: 1px dashed #ddd;">
             <a href="https://analytics.google.com/analytics/web/" target="_blank" style="font-size: 0.7rem; color: #0d6efd; text-decoration: none;">
