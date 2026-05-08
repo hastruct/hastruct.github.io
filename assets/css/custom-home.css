@@ -528,8 +528,6 @@
   text-align: right !important;
   z-index: 10;
   border-top: 1px solid rgba(0,0,0,0.1);
-  position: relative !important;
-  top: 5px !important;
 }
 
 /* 3. Định dạng chung cho cụm chữ liên hệ */
@@ -537,7 +535,7 @@
   display: block;
   font-family: inherit;
   font-weight: 900 !important; /* Cực đậm như yêu cầu */
-  font-size: 0.95rem;
+  font-size: 0.8rem;
 }
 
 /* 4. Sửa lỗi màu sắc cho từng thành phần (Khớp với HTML) */
@@ -576,7 +574,7 @@
 /* Tổng thể khung chứa */
 .hero-contact-wrapper {
   font-weight: 800 !important;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
 }
 
 /* 1. Class cho các nhãn: WhatsApp, Email, Tel luôn màu đen */
