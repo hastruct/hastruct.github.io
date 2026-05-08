@@ -4,21 +4,35 @@ title: "Ứng dụng"
 permalink: /apps/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #FFD700; font-weight: 900;'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #FFD700; font-weight: 900;'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FF6B6B; font-weight: 900;'>Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #FF6B6B; font-weight: 900;'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FFFFFF; font-weight: 900;'>Tel: +84 374874142</span></div>"
+  caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #FFD700; font-weight: 900;'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #FFD700; font-weight: 900;'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FF6B6B; font-weight: 900;'>Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #FF6B6B; font-weight: 900;'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FFFFFF; font-weight: 900;'>Tel: +84 374874142</span></div>"
   title: "Các Ứng dụng cho Kỹ thuật xây dựng"
 ---
 
-<link rel="stylesheet" href="/assets/css/custom-home.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom-home.css">
 
 <style>
-  /* Chỉ định nghĩa thêm những gì trang Apps cần mà custom-home.css chưa có */
+  /* ── FIX: đảm bảo .center-content là flex child đúng cách ── */
+  .home-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+  }
+
+  .center-content {
+    flex: 1;          /* chiếm toàn bộ không gian còn lại */
+    min-width: 0;     /* ngăn flex child bị overflow ra ngoài */
+    padding: 1.5rem 1.5rem 2rem;
+  }
+
+  /* ── App card badges ── */
   .app-card-badges {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
     margin-bottom: 0.8rem;
   }
-  
+
   .badge {
     padding: 0.35em 0.6em;
     font-weight: 600;
@@ -27,12 +41,14 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
     color: #fff;
     text-transform: uppercase;
   }
-  
+
   .bg-primary { background-color: #0d6efd; }
-  .bg-success { background-color: #198754; }
-  .bg-danger { background-color: #dc3545; }
-  .bg-warning { background-color: #ffc107; color: #000; }
-  
+  .bg-success  { background-color: #198754; }
+  .bg-danger   { background-color: #dc3545; }
+  .bg-info     { background-color: #0dcaf0; }
+  .bg-warning  { background-color: #ffc107; color: #000; }
+
+  /* ── App features list ── */
   .app-features-list {
     background: #f8f9fa;
     padding: 10px 15px;
@@ -40,7 +56,7 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
     margin-bottom: 15px;
     border: 1px solid #eee;
   }
-  
+
   .app-features-list h6 {
     margin: 0 0 5px 0;
     font-size: 0.8rem;
@@ -48,17 +64,17 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
     color: #555;
     text-transform: uppercase;
   }
-  
+
   .app-features-list ul {
     margin: 0;
     padding-left: 1.2rem;
     font-size: 0.85rem;
     color: #666;
   }
-  
+
   .app-features-list li { margin-bottom: 2px; }
 
-  /* Info Box WASM Styles */
+  /* ── WASM Info Box ── */
   .wasm-box {
     background: #f0f7ff;
     border: 1px solid #cce5ff;
@@ -67,19 +83,36 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
     margin-top: 2rem;
     text-align: center;
   }
+
   .wasm-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-top: 15px;
   }
-  .wasm-item h6 { font-size: 0.8rem; margin: 5px 0 0 0; font-weight: bold; }
-  .wasm-item p { font-size: 0.75rem; margin: 0; color: #666; }
-  
-  @media (max-width: 768px) {
-    .wasm-grid { grid-template-columns: 1fr; gap: 20px; }
+
+  .wasm-item h6 {
+    font-size: 0.8rem;
+    margin: 5px 0 0 0;
+    font-weight: bold;
   }
 
+  .wasm-item p {
+    font-size: 0.75rem;
+    margin: 0;
+    color: #666;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .home-wrapper {
+      flex-direction: column;
+    }
+    .wasm-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
 </style>
 
 <div class="home-wrapper">
@@ -87,17 +120,18 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
   {% include sidebar-left.html %}
 
   <div class="center-content">
-    
+
     <h2 class="section-title">Danh sách Ứng dụng</h2>
     <p style="color: #666; margin-bottom: 20px;">
       Các công cụ tính toán chạy trực tiếp trên trình duyệt, không cần cài đặt.
     </p>
 
     <div class="app-grid">
-      
+
+      <!-- 1. ShortCol 3D -->
       <div class="app-card">
         <div class="app-card-image">
-          <img src="/assets/images/app-icons/shortcol3D.png" alt="Short Column 3D">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/shortcol3D.png" alt="Short Column 3D">
         </div>
         <div class="app-card-body">
           <h3 class="app-card-title">ShortCol 3D</h3>
@@ -120,9 +154,10 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
         </div>
       </div>
 
+      <!-- 2. ShortCol 2D -->
       <div class="app-card">
         <div class="app-card-image">
-          <img src="/assets/images/app-icons/shortcol2D.png" alt="Short Column 2D">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/shortcol2D.png" alt="Short Column 2D">
         </div>
         <div class="app-card-body">
           <h3 class="app-card-title">ShortCol 2D</h3>
@@ -145,15 +180,18 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
         </div>
       </div>
 
+      <!-- 3. Cọc Chịu Tải Ngang -->
       <div class="app-card">
         <div class="app-card-image">
-           <img src="{{ relative_url }}/assets/images/app-icons/lateral-pile.png" alt="Lateral Pile Analysis" onerror="this.src='/assets/images/app-icons/pile-group2.png'">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/lateral-pile.png"
+               alt="Lateral Pile Analysis"
+               onerror="this.src='{{ site.baseurl }}/assets/images/app-icons/pile-group2.png'">
         </div>
         <div class="app-card-body">
           <h3 class="app-card-title">Cọc Chịu Tải Ngang</h3>
           <div class="app-card-badges">
             <span class="badge bg-danger">P-Y Curve</span>
-            <span class="badge bg-info" style="color:#000">TCVN 10304</span>
+            <span class="badge bg-info" style="color: #000;">TCVN 10304</span>
           </div>
           <p class="app-card-desc">
             Phân tích cọc đơn chịu tải trọng ngang sử dụng mô hình phi tuyến p-y curve.
@@ -163,16 +201,17 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
             <ul>
               <li>Mô hình đất nền nhiều lớp</li>
               <li>Đất dính và đất rời</li>
-              <li>Biểu đồ chuyển vị & nội lực</li>
+              <li>Biểu đồ chuyển vị &amp; nội lực</li>
             </ul>
           </div>
           <a href="{{ site.baseurl }}/apps/landing.html" class="btn--app">Xem chi tiết</a>
         </div>
       </div>
 
+      <!-- 4. Tường Cừ FEM -->
       <div class="app-card">
         <div class="app-card-image">
-          <img src="/assets/images/app-icons/sheetpile-icon.png" alt="Sheet Pile FEM">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/sheetpile-icon.png" alt="Sheet Pile FEM">
         </div>
         <div class="app-card-body">
           <h3 class="app-card-title">Tường Cừ (FEM)</h3>
@@ -187,7 +226,7 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
             <h6>Tính năng:</h6>
             <ul>
               <li>Mô phỏng thi công theo giai đoạn</li>
-              <li>Hệ thanh chống (Strut) & Neo</li>
+              <li>Hệ thanh chống (Strut) &amp; Neo</li>
               <li>Tính toán dòng thấm</li>
             </ul>
           </div>
@@ -195,9 +234,10 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
         </div>
       </div>
 
+      <!-- 5. Nhóm Cọc 3D -->
       <div class="app-card">
         <div class="app-card-image">
-          <img src="/assets/images/app-icons/pilegroup-icon.png" alt="Pile Group 3D">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/pilegroup-icon.png" alt="Pile Group 3D">
         </div>
         <div class="app-card-body">
           <h3 class="app-card-title">Nhóm Cọc 3D</h3>
@@ -220,12 +260,15 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
         </div>
       </div>
 
+      <!-- 6. Dốc Nước & Tiêu Năng -->
       <div class="app-card">
         <div class="app-card-image">
-          <img src="/assets/images/app-icons/hydraulic-spillway.png" alt="Hydraulic Spillway" onerror="this.src='/assets/images/app-icons/chute-spillway.png'">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/hydraulic-spillway.png"
+               alt="Hydraulic Spillway"
+               onerror="this.src='{{ site.baseurl }}/assets/images/app-icons/chute-spillway.png'">
         </div>
         <div class="app-card-body">
-          <h3 class="app-card-title">Dốc Nước & Tiêu Năng</h3>
+          <h3 class="app-card-title">Dốc Nước &amp; Tiêu Năng</h3>
           <div class="app-card-badges">
             <span class="badge bg-primary">Thủy lực</span>
             <span class="badge bg-success">Hydraulic Jump</span>
@@ -245,8 +288,9 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
         </div>
       </div>
 
-    </div>
+    </div><!-- /.app-grid -->
 
+    <!-- WASM Info Box -->
     <div class="wasm-box">
       <h5 style="color: #0d6efd; margin-bottom: 0.5rem; font-weight: bold;">
         <i class="fas fa-microchip"></i> Công Nghệ WebAssembly (WASM)
@@ -273,8 +317,8 @@ caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #
       </div>
     </div>
 
-  </div>
+  </div><!-- /.center-content -->
 
   {% include sidebar-right.html %}
 
-</div>
+</div><!-- /.home-wrapper -->

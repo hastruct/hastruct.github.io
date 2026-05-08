@@ -1,259 +1,324 @@
 ---
 layout: splash
-title: "Danh Sách Tags"
-permalink: /tags/
+title: "Ứng dụng"
+permalink: /apps/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #FFD700; font-weight: 900;'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #FFD700; font-weight: 900;'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FF6B6B; font-weight: 900;'>Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #FF6B6B; font-weight: 900;'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FFFFFF; font-weight: 900;'>Tel: +84 374874142</span></div>"
-  title: "Tags"
+  caption: "<div class='hero-contact-wrapper'><span class='c-item' style='color: #FFD700; font-weight: 900;'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1' style='color: #FFD700; font-weight: 900;'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FF6B6B; font-weight: 900;'>Email: <a href='mailto:ha.nguyen@hydrostructai.com' style='color: #FF6B6B; font-weight: 900;'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item' style='color: #FFFFFF; font-weight: 900;'>Tel: +84 374874142</span></div>"
+  title: "Các Ứng dụng cho Kỹ thuật xây dựng"
 ---
 
-<link rel="stylesheet" href="/assets/css/custom-home.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom-home.css">
 
 <style>
-  /* Tags Page Specific Styles */
-  .tag-section {
-    margin-bottom: 3rem;
-  }
-
-  .tag-header {
+  /* ── FIX: đảm bảo .center-content là flex child đúng cách ── */
+  .home-wrapper {
     display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 2px solid #667eea;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
   }
 
-  .tag-header h2 {
-    margin: 0;
-    font-size: 1.8rem;
-    color: #1a1a2e;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  .center-content {
+    flex: 1;          /* chiếm toàn bộ không gian còn lại */
+    min-width: 0;     /* ngăn flex child bị overflow ra ngoài */
+    padding: 1.5rem 1.5rem 2rem;
   }
 
-  .tag-badge {
-    background: #667eea;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-  }
-
-  .posts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .post-card {
-    background: white;
-    border: 1px solid #e1e4e8;
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: all 0.2s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  }
-
-  .post-card:hover {
-    border-color: #667eea;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
-    transform: translateY(-2px);
-  }
-
-  .post-card h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
-  }
-
-  .post-card a {
-    color: #0d6efd;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  .post-card a:hover {
-    text-decoration: underline;
-  }
-
-  .post-date {
-    font-size: 0.85rem;
-    color: #6a737d;
-    margin-bottom: 0.75rem;
-  }
-
-  .post-excerpt {
-    font-size: 0.9rem;
-    color: #586069;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .post-cta {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #667eea;
-    color: white !important;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    transition: all 0.2s;
-  }
-
-  .post-cta:hover {
-    background: #5468d3;
-    transform: translateY(-1px);
-  }
-
-  .post-tags {
+  /* ── App card badges ── */
+  .app-card-badges {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
-    margin-top: 0.75rem;
+    margin-bottom: 0.8rem;
   }
 
-  .post-tag {
-    font-size: 0.75rem;
-    background: #f1f3f5;
-    color: #495057;
-    padding: 0.25rem 0.5rem;
-    border-radius: 3px;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-
-  .post-tag:hover {
-    background: #667eea;
-    color: white;
-  }
-
-  .intro-box {
-    background: linear-gradient(135deg, #f5f7fa 0%, #f9fafc 100%);
-    border-left: 4px solid #667eea;
-    padding: 1.5rem;
+  .badge {
+    padding: 0.35em 0.6em;
+    font-weight: 600;
     border-radius: 4px;
-    margin-bottom: 2rem;
+    font-size: 0.7rem;
+    color: #fff;
+    text-transform: uppercase;
   }
 
-  .tags-footer {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #e1e4e8;
+  .bg-primary { background-color: #0d6efd; }
+  .bg-success  { background-color: #198754; }
+  .bg-danger   { background-color: #dc3545; }
+  .bg-info     { background-color: #0dcaf0; }
+  .bg-warning  { background-color: #ffc107; color: #000; }
+
+  /* ── App features list ── */
+  .app-features-list {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+  }
+
+  .app-features-list h6 {
+    margin: 0 0 5px 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+  }
+
+  .app-features-list ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  .app-features-list li { margin-bottom: 2px; }
+
+  /* ── WASM Info Box ── */
+  .wasm-box {
+    background: #f0f7ff;
+    border: 1px solid #cce5ff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
     text-align: center;
-    color: #6a737d;
-    font-size: 0.9rem;
+  }
+
+  .wasm-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .wasm-item h6 {
+    font-size: 0.8rem;
+    margin: 5px 0 0 0;
+    font-weight: bold;
+  }
+
+  .wasm-item p {
+    font-size: 0.75rem;
+    margin: 0;
+    color: #666;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .home-wrapper {
+      flex-direction: column;
+    }
+    .wasm-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
   }
 </style>
 
-<!-- Structure like apps.md: home-wrapper + sidebar-left + center-content -->
 <div class="home-wrapper">
 
-  <!-- LEFT SIDEBAR (từ _includes/sidebar-left.html) -->
   {% include sidebar-left.html %}
 
-  <!-- CENTER CONTENT -->
   <div class="center-content">
-    
-    <!-- Introduction Box -->
-    <div class="intro-box">
-      <h3 style="margin-top: 0;">📌 Cách Sử Dụng Tags</h3>
-      <p>Trang này hiển thị tất cả <strong>tags</strong> được sử dụng trong các bài viết của HST.AI. Mỗi tag liệt kê các bài viết liên quan kèm <strong>tóm tắt nội dung</strong> và <strong>ngày đăng</strong>.</p>
-      <p style="margin-bottom: 0;"><strong>Mẹo:</strong> Sử dụng Ctrl+F (⌘+F trên Mac) để tìm tag bạn cần.</p>
-    </div>
 
-    <!-- Tags List -->
-    {% assign tags = site.tags | sort %}
-    {% assign tag_count = tags | size %}
+    <h2 class="section-title">Danh sách Ứng dụng</h2>
+    <p style="color: #666; margin-bottom: 20px;">
+      Các công cụ tính toán chạy trực tiếp trên trình duyệt, không cần cài đặt.
+    </p>
 
-    <div style="margin-bottom: 1.5rem;">
-      <h2 style="color: #1a1a2e; margin-bottom: 0.5rem;">
-        🏷️ Tất Cả Tags
-        <span class="tag-badge">{{ tag_count }} tags</span>
-      </h2>
-      <p style="color: #6a737d; margin: 0;">Nhấp vào tiêu đề bài viết để đọc nội dung đầy đủ</p>
-    </div>
+    <div class="app-grid">
 
-    <!-- Tags Sections -->
-    {% for tag in tags %}
-      {% assign tag_name = tag | first %}
-      {% assign tag_posts = tag | last %}
-      {% assign post_count = tag_posts | size %}
-
-      <div class="tag-section">
-        <div class="tag-header">
-          <h2>{{ tag_name }}</h2>
-          <span class="tag-badge">{{ post_count }}</span>
+      <!-- 1. ShortCol 3D -->
+      <div class="app-card">
+        <div class="app-card-image">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/shortcol3D.png" alt="Short Column 3D">
         </div>
-
-        <!-- Posts Grid -->
-        <div class="posts-grid">
-          {% for post in tag_posts %}
-            <div class="post-card">
-              <!-- Post Title -->
-              <h3>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-              </h3>
-
-              <!-- Post Date -->
-              <div class="post-date">
-                📅 {{ post.date | date: "%d/%m/%Y" }}
-              </div>
-
-              <!-- Post Excerpt / Summary -->
-              {% if post.excerpt %}
-                <div class="post-excerpt">
-                  {{ post.excerpt | strip_html | truncatewords: 30 }}
-                </div>
-              {% elsif post.content %}
-                <div class="post-excerpt">
-                  {{ post.content | strip_html | truncatewords: 30 }}
-                </div>
-              {% else %}
-                <div class="post-excerpt">
-                  <em>Không có mô tả</em>
-                </div>
-              {% endif %}
-
-              <!-- Read More Button -->
-              <div style="margin-top: 1rem;">
-                <a href="{{ post.url }}" class="post-cta">
-                  Đọc tiếp <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i>
-                </a>
-              </div>
-
-              <!-- Tags -->
-              {% if post.tags %}
-                <div class="post-tags">
-                  {% for tag_item in post.tags limit:3 %}
-                    <span class="post-tag">{{ tag_item }}</span>
-                  {% endfor %}
-                  {% if post.tags.size > 3 %}
-                    <span class="post-tag">+{{ post.tags.size | minus: 3 }}</span>
-                  {% endif %}
-                </div>
-              {% endif %}
-            </div>
-          {% endfor %}
+        <div class="app-card-body">
+          <h3 class="app-card-title">ShortCol 3D</h3>
+          <div class="app-card-badges">
+            <span class="badge bg-primary">Bê tông</span>
+            <span class="badge bg-success">Lệch tâm xiên</span>
+          </div>
+          <p class="app-card-desc">
+            Xây dựng biểu đồ tương tác không gian 3D (P-Mx-My) cho cột bê tông cốt thép tiết diện chữ nhật.
+          </p>
+          <div class="app-features-list">
+            <h6>Tính năng:</h6>
+            <ul>
+              <li>Biểu đồ 3D xoay chiều trực quan</li>
+              <li>Kiểm tra hệ số an toàn</li>
+              <li>Xuất thuyết minh tính toán</li>
+            </ul>
+          </div>
+          <a href="{{ site.baseurl }}/apps/landing.html" class="btn--app">Xem chi tiết</a>
         </div>
       </div>
-    {% endfor %}
 
-    <!-- Footer -->
-    <div class="tags-footer">
-      <p>Cập nhật lần cuối: <strong>{{ site.time | date: "%d/%m/%Y %H:%M" }}</strong></p>
-      <p>Tổng cộng: <strong>{{ site.posts | size }}</strong> bài viết | <strong>{{ tag_count }}</strong> tags</p>
+      <!-- 2. ShortCol 2D -->
+      <div class="app-card">
+        <div class="app-card-image">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/shortcol2D.png" alt="Short Column 2D">
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">ShortCol 2D</h3>
+          <div class="app-card-badges">
+            <span class="badge bg-primary">Bê tông</span>
+            <span class="badge bg-warning">Lệch tâm phẳng</span>
+          </div>
+          <p class="app-card-desc">
+            Biểu đồ tương tác 2D (P-M) cho cột tiết diện chữ nhật chịu nén lệch tâm phẳng.
+          </p>
+          <div class="app-features-list">
+            <h6>Tính năng:</h6>
+            <ul>
+              <li>Vẽ biểu đồ tương tác lát cắt</li>
+              <li>Tính toán cốt thép nhanh</li>
+              <li>Giao diện nhập liệu đơn giản</li>
+            </ul>
+          </div>
+          <a href="{{ site.baseurl }}/apps/landing.html" class="btn--app">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- 3. Cọc Chịu Tải Ngang -->
+      <div class="app-card">
+        <div class="app-card-image">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/lateral-pile.png"
+               alt="Lateral Pile Analysis"
+               onerror="this.src='{{ site.baseurl }}/assets/images/app-icons/pile-group2.png'">
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">Cọc Chịu Tải Ngang</h3>
+          <div class="app-card-badges">
+            <span class="badge bg-danger">P-Y Curve</span>
+            <span class="badge bg-info" style="color: #000;">TCVN 10304</span>
+          </div>
+          <p class="app-card-desc">
+            Phân tích cọc đơn chịu tải trọng ngang sử dụng mô hình phi tuyến p-y curve.
+          </p>
+          <div class="app-features-list">
+            <h6>Tính năng:</h6>
+            <ul>
+              <li>Mô hình đất nền nhiều lớp</li>
+              <li>Đất dính và đất rời</li>
+              <li>Biểu đồ chuyển vị &amp; nội lực</li>
+            </ul>
+          </div>
+          <a href="{{ site.baseurl }}/apps/landing.html" class="btn--app">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- 4. Tường Cừ FEM -->
+      <div class="app-card">
+        <div class="app-card-image">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/sheetpile-icon.png" alt="Sheet Pile FEM">
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">Tường Cừ (FEM)</h3>
+          <div class="app-card-badges">
+            <span class="badge bg-primary">FEM</span>
+            <span class="badge bg-success">WASM</span>
+          </div>
+          <p class="app-card-desc">
+            Phân tích tường cừ, tường vây hố đào sâu bằng phương pháp Phần tử hữu hạn.
+          </p>
+          <div class="app-features-list">
+            <h6>Tính năng:</h6>
+            <ul>
+              <li>Mô phỏng thi công theo giai đoạn</li>
+              <li>Hệ thanh chống (Strut) &amp; Neo</li>
+              <li>Tính toán dòng thấm</li>
+            </ul>
+          </div>
+          <a href="{{ site.baseurl }}/apps/landing.html" class="btn--app">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- 5. Nhóm Cọc 3D -->
+      <div class="app-card">
+        <div class="app-card-image">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/pilegroup-icon.png" alt="Pile Group 3D">
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">Nhóm Cọc 3D</h3>
+          <div class="app-card-badges">
+            <span class="badge bg-warning">Zavriev</span>
+            <span class="badge bg-primary">Móng cọc</span>
+          </div>
+          <p class="app-card-desc">
+            Phân tích móng cọc đài cao (bệ cứng) theo phương pháp Zavriev-Spiro.
+          </p>
+          <div class="app-features-list">
+            <h6>Tính năng:</h6>
+            <ul>
+              <li>Hỗ trợ cọc xiên không gian</li>
+              <li>Tải trọng 6 thành phần</li>
+              <li>Tính phản lực đầu cọc</li>
+            </ul>
+          </div>
+          <a href="{{ site.baseurl }}/apps/landing.html" class="btn--app">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- 6. Dốc Nước & Tiêu Năng -->
+      <div class="app-card">
+        <div class="app-card-image">
+          <img src="{{ site.baseurl }}/assets/images/app-icons/hydraulic-spillway.png"
+               alt="Hydraulic Spillway"
+               onerror="this.src='{{ site.baseurl }}/assets/images/app-icons/chute-spillway.png'">
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">Dốc Nước &amp; Tiêu Năng</h3>
+          <div class="app-card-badges">
+            <span class="badge bg-primary">Thủy lực</span>
+            <span class="badge bg-success">Hydraulic Jump</span>
+          </div>
+          <p class="app-card-desc">
+            Tính toán thủy lực dốc nước và bể tiêu năng dựa trên lý thuyết nước nhảy thủy lực.
+          </p>
+          <div class="app-features-list">
+            <h6>Tính năng:</h6>
+            <ul>
+              <li>Tính toán nối tiếp sau dốc</li>
+              <li>Thiết kế bể tiêu năng</li>
+              <li>Kiểm tra hệ số ngập an toàn</li>
+            </ul>
+          </div>
+          <a href="{{ site.baseurl }}/apps/landing.html" class="btn--app">Xem chi tiết</a>
+        </div>
+      </div>
+
+    </div><!-- /.app-grid -->
+
+    <!-- WASM Info Box -->
+    <div class="wasm-box">
+      <h5 style="color: #0d6efd; margin-bottom: 0.5rem; font-weight: bold;">
+        <i class="fas fa-microchip"></i> Công Nghệ WebAssembly (WASM)
+      </h5>
+      <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+        Các ứng dụng trên được biên dịch từ C++ chạy native trên trình duyệt.
+      </p>
+      <div class="wasm-grid">
+        <div class="wasm-item">
+          <i class="fas fa-bolt text-warning"></i>
+          <h6>Tốc độ cao</h6>
+          <p>Hiệu năng như App cài đặt</p>
+        </div>
+        <div class="wasm-item">
+          <i class="fas fa-user-shield text-success"></i>
+          <h6>Bảo mật</h6>
+          <p>Dữ liệu xử lý tại máy bạn</p>
+        </div>
+        <div class="wasm-item">
+          <i class="fas fa-wifi text-primary"></i>
+          <h6>Offline</h6>
+          <p>Dùng được khi mất mạng</p>
+        </div>
+      </div>
     </div>
 
-  </div>
+  </div><!-- /.center-content -->
 
-</div>
-<!-- RIGHT SIDEBAR -->
   {% include sidebar-right.html %}
+
+</div><!-- /.home-wrapper -->
