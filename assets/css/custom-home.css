@@ -519,8 +519,8 @@
   width: 100% !important;
   text-align: right !important;
   margin: 0 !important;
-  padding: 6px 48px !important;
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  padding: 12px 32px 6px 0 !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
 }
 
 .hero-contact-wrapper {
