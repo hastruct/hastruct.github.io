@@ -1,11 +1,11 @@
 ---
 layout: splash
-title: "HST.AI"
+title: "Ứng dụng"
 permalink: /apps/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
   caption: "<div class='hero-contact-wrapper'><span class='c-item'>WhatsApp: <a href='https://wa.me/qr/UOQNWYT5B7SNG1'>HST.AI</a></span> <span class='c-sep'>|</span> <span class='c-item'>Email: <a href='mailto:ha.nguyen@hydrostructai.com'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item'>Tel: +84 374874142</span></div>"
-  title: "Các Ứng dụng Web Apps cho Kỹ thuật xây dựng"
+  title: "Các Ứng dụng cho Kỹ thuật xây dựng"
 ---
 
 <link rel="stylesheet" href="/assets/css/custom-home.css">
@@ -97,7 +97,7 @@ header:
 
   <div class="center-content">
     
-    <h2 class="section-title">Danh sách Ứng dụng (Web Apps)</h2>
+    <h2 class="section-title">Danh sách Ứng dụng</h2>
     <p style="color: #666; margin-bottom: 20px;">
       Các công cụ tính toán chạy trực tiếp trên trình duyệt, không cần cài đặt.
     </p>

@@ -1,7 +1,7 @@
 main:
-  - title: "Blog"
+  - title: "Trang chủ"
     url: /
-  - title: "Web Apps"
+  - title: "Ứng dụng"
     url: /apps/
   - title: "Về chúng tôi"
     url: /about/
