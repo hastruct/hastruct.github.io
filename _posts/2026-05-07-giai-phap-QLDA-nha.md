@@ -7,6 +7,7 @@ layout: single
 toc: true
 toc_sticky: true
 toc_label: "📑 Mục Lục"
+permalink: "/posts/giai-phap-qlda-nha/"
 categories:
   - Construction-Management
   - Project-Management
