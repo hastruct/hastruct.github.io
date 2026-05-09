@@ -523,7 +523,7 @@
   right: 0 !important;
   width: 100% !important;
   margin: 0 !important;
-  padding: 5px 30px !important; /* Tăng padding để cân đối */
+  padding: 5px 20px !important; /* Tăng padding để cân đối */
   background-color: rgba(255, 255, 255, 0.85) !important; /* Nền trắng trong suốt để chữ màu đậm nổi bật hơn */
   text-align: right !important;
   z-index: 10;
@@ -534,7 +534,7 @@
   display: block;
   font-family: inherit;
   font-weight: 700 !important; /* Cực đậm như yêu cầu */
-  font-size: 0.55rem!important;
+  font-size: 0.5rem!important;
   line-height: 1;
 }
 
@@ -574,7 +574,7 @@
 /* Tổng thể khung chứa */
 .hero-contact-wrapper {
   font-weight: 700 !important;
-  font-size: 0.55rem;
+  font-size: 0.5rem;
 }
 
 /* 1. Class cho các nhãn: WhatsApp, Email, Tel luôn màu đen */
