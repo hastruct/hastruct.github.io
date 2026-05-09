@@ -346,26 +346,26 @@ f_cd = ?               'kiểm tra giá trị
 M_limit = f_cd * b * d^2 * 0.295
 ```
 
-### Biến chuỗi & Trang bìa tự động
+### Biến chuỗi & trang bìa tự động
 
 ```calcpad
 'Khai báo metadata dự án
-#def project$  = Dự án ABC — Tòa nhà 20 tầng, TP.HCM
-#def doc_no$   = TK-KC-001
-#def rev$      = Rev.0
-#def date$     = 2026-01-21
-#def standard$ = TCVN 5574:2018 | Eurocode 2
-#def author$   = KS. Nguyễn Văn A
+#def project  = Dự án ABC — Tòa nhà 20 tầng, TP.HCM
+#def doc_no   = TK-KC-001
+#def rev      = Rev.0
+#def date     = 2026-01-21
+#def standard = TCVN 5574:2018 | Eurocode 2
+#def author   = KS. Nguyễn Văn A
 
-"| **Dự án** | {project$} |"
-"| **Số hiệu** | {doc_no$} | **Phiên bản** | {rev$} |"
-"| **Tiêu chuẩn** | {standard$} |"
-"| **Ngày** | {date$} | **Người lập** | {author$} |"
+| **Dự án** | {project} |
+| **Số hiệu** | {doc_no} | **Phiên bản** | {rev} |
+| **Tiêu chuẩn** | {standard} |"
+| **Ngày** | {date} | **Người lập** | {author} |"
 
 'Macro đa dòng — kiểm tra ULS
-#def check_uls$(name$; E_d$; R_d$; unit$)
-"**{name$}:** E_d = {E_d$} {unit$} | R_d = {R_d$} {unit$}"
-DCR = {E_d$} / {R_d$}
+#def check_uls(name; E_d; R_d; unit)
+"**{name$}:** E_d = {E_d} {unit} | R_d = {R_d} {unit}"
+DCR = {E_d} / {R_d}
 if(DCR ≤ 1; "**✅ ĐẠT**"; "**❌ KHÔNG ĐẠT**")
 #end def
 
@@ -638,14 +638,14 @@ Phân tích bản sàn phẳng nhiều nhịp sử dụng phần tử **Bogner-F
 "__1. Dữ liệu đầu vào"
 
 "___1.1 Nhịp sàn"
-a⃗ = hp([3.6; 4.2; 4.2; 3.6]) "m"    'nhịp theo phương x
-b⃗ = hp([3; 3.6; 3]) "m"             'nhịp theo phương y
+ax= hp([3.6; 4.2; 4.2; 3.6]) "m"    'nhịp theo phương x
+by= hp([3; 3.6; 3]) "m"             'nhịp theo phương y
 n_sa = len(a⃗) + 1 = ?               'số trục theo x: 5
 n_sb = len(b⃗) + 1 = ?               'số trục theo y: 4
 
 'Kích thước tổng thể
-l_a = sum(a⃗) = ? "m"                '= 15.6 m
-l_b = sum(b⃗) = ? "m"                '= 9.6 m
+l_a = sum(ax) = ? "m"                '= 15.6 m
+l_b = sum(by) = ? "m"                '= 9.6 m
 
 "___1.2 Tải trọng"
 g_k = 5 "kN/m²"        'tĩnh tải đặc trưng
@@ -665,8 +665,8 @@ E   = 35000 "MPa"       'module đàn hồi
 a1 = 0.6 "m"; b1 = 0.6 "m"           'kích thước phần tử mục tiêu
 
 'Số phần tử theo từng nhịp (làm tròn lên)
-n⃗_a = ceiling(a⃗ / a1) = ?            '= [6; 7; 7; 6]
-n⃗_b = ceiling(b⃗ / b1) = ?            '= [5; 6; 5]
+n⃗_a = ceiling(ax / a1) = ?            '= [6; 7; 7; 6]
+n⃗_b = ceiling(by / b1) = ?            '= [5; 6; 5]
 
 'Tổng số phần tử và nút
 n_ea = sum(n⃗_a) = ?; n_ja = n_ea + 1 = ?    '26 phần tử, 27 nút
@@ -800,17 +800,17 @@ $Plot{M_x(x; l_b/2) @ x = 0 : l_a}
 
 ```calcpad
 "TÊN CÔNG TRÌNH — PHÂN TÍCH KẾT CẤU"
-#def project$  = Dự án ABC — Tòa nhà 20 tầng
-#def doc_no$   = TK-KC-001
-#def rev$      = Rev.0
-#def date$     = 2026-01-21
-#def author$   = KS. Nguyễn Văn A
-#def checker$  = ThS. Trần Thị B
+#def project  = Dự án ABC — Tòa nhà 20 tầng
+#def doc_no   = TK-KC-001
+#def rev      = Rev.0
+#def date     = 2026-01-21
+#def author   = KS. Nguyễn Văn A
+#def checker  = ThS. Trần Thị B
 
-"| **Dự án** | {project$} |"
-"| **Số hiệu** | {doc_no$} | **Phiên bản** | {rev$} |"
-"| **Ngày** | {date$} | **Người lập** | {author$} |"
-"| **Người kiểm tra** | {checker$} | **Ngày k.tra** | |"
+| **Dự án** | {project} |
+| **Số hiệu** | {doc_no} | **Phiên bản** | {rev} |
+| **Ngày** | {date} | **Người lập** | {author} |
+| **Người kiểm tra** | {checker} | **Ngày k.tra** | |
 ```
 
 ### Kiểm soát hiển thị
