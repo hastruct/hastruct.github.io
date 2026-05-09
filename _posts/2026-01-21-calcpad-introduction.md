@@ -38,8 +38,8 @@ header:
 ---
 
 Calcpad là công cụ tính toán kỹ thuật mạnh mẽ cho phép bạn viết các phép tính phức tạp dưới dạng văn bản và tự động tạo báo cáo chuyên nghiệp.
-**[Xem chi tiết các báo cáo mẫu tại đây](https://hydrostructai.com/calcpad_engineering/calcpad.html)**
-**Website Calcpad:** [https://www.calcpad.eu](https://www.calcpad.eu)
+
+**[Một số báo cáo tính toán mẫu](https://hydrostructai.com/calcpad_engineering/calcpad.html)**
 
 ---
 
@@ -48,10 +48,10 @@ Calcpad là công cụ tính toán kỹ thuật mạnh mẽ cho phép bạn vi�
 ### Calcpad là gì?
 Calcpad cho phép bạn:
 - ✅ Viết phương trình toán học dạng văn bản đơn giản
-- ✅ Tự động tính toán và hiển thị kết quả
+- ✅ Lập trình tự động tính toán
 - ✅ Tạo báo cáo chuyên nghiệp (HTML + PDF)
 - ✅ Giữ lịch sử tính toán rõ ràng
-- ✅ Chia sẻ công việc dễ dàng qua file `.cpd`
+- ✅ Chia sẻ công việc dễ dàng 
 
 ### Tại sao dùng Calcpad?
 - 📊 **Rõ ràng:** Mọi công thức và kết quả đều có thể nhìn thấy
