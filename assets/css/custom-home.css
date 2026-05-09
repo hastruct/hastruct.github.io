@@ -518,7 +518,7 @@
 /* 2. Định dạng dải băng chứa thông tin (Caption Bar) */
 .page__hero-caption {
   position: absolute !important;
-  bottom: -50px !important;
+  bottom: -25px !important;
   left: 0 !important;
   right: 0 !important;
   width: 100% !important;
@@ -535,7 +535,7 @@
   display: block;
   font-family: inherit;
   font-weight: 900 !important; /* Cực đậm như yêu cầu */
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 /* 4. Sửa lỗi màu sắc cho từng thành phần (Khớp với HTML) */
@@ -574,7 +574,7 @@
 /* Tổng thể khung chứa */
 .hero-contact-wrapper {
   font-weight: 800 !important;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 /* 1. Class cho các nhãn: WhatsApp, Email, Tel luôn màu đen */
