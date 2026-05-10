@@ -35,7 +35,7 @@ tags:
     "Ma trận độ cứng",
     "Quy trình chuyên nghiệp"
   ]
-excerpt: "Hướng dẫn chuyên sâu Calcpad: lập trình vòng lặp (#For, #While, #Repeat), hàm tự định nghĩa, module/#Include, vector & ma trận hiệu năng cao (hp), ứng dụng phân tích FEM bản sàn phẳng (BFS element 16 DOF), xuất báo cáo HTML/PDF chuyên nghiệp. Bao gồm ví dụ thực tế tính cốt thép theo TCVN 5574:2018."
+excerpt: "Hướng dẫn chuyên sâu Calcpad: lập trình vòng lặp, hàm tự định nghĩa, vector & ma trận hiệu năng cao (hp), ứng dụng phân tích FEM bản sàn phẳng, xuất báo cáo HTML/PDF chuyên nghiệp. Bao gồm ví dụ thực tế tính cốt thép theo TCVN 5574:2018."
 header:
   overlay_color: "#1a1a2e"
   overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
@@ -414,7 +414,7 @@ xi_lim = switch(f_yk≤300"MPa"; 0.7; f_yk≤400"MPa"; 0.65; 0.55)
 
 > **Phân biệt:** `#if` kiểm soát luồng (đa dòng, thay đổi văn bản báo cáo). `if()` là hàm inline trả về một giá trị duy nhất.
 
-### #Repeat / #Loop — Lặp cố định số lần
+### Repeat / Loop — Lặp cố định số lần
 
 ```calcpad
 '--- CÚ PHÁP ---
@@ -444,7 +444,7 @@ fact = 1; k = 0
 "10! =" fact = ?
 ```
 
-### #For / #Loop — Lặp với bộ đếm tường minh
+### For / Loop — Lặp với bộ đếm tường minh
 
 ```calcpad
 '--- CÚ PHÁP ---
@@ -474,7 +474,7 @@ results = matrix(n; 3)       'ma trận n×3 lưu [x; M; A_s]
 "M_max =" max(col(results; 2)) = ?
 ```
 
-### #While / #Loop — Lặp theo điều kiện
+### While / Loop — Lặp theo điều kiện
 
 Dùng cho bài toán hội tụ lặp: Newton-Raphson, phương pháp điểm bất động, cập nhật nội lực phi tuyến.
 
@@ -517,7 +517,7 @@ x = x0; iter = 0; max_iter = 200
 
 > ⚠️ **Cảnh báo:** Luôn thêm bộ đếm tối đa (`iter ≤ max_iter`) hoặc `#break` có điều kiện giới hạn để tránh vòng lặp vô hạn.
 
-### #Break và #Continue
+### Break và Continue
 
 ```calcpad
 '--- #BREAK: Thoát vòng lặp khi hội tụ ---
@@ -530,7 +530,7 @@ x = x0; iter = 0; max_iter = 200
   x = x_new
 #loop
 
-'--- #CONTINUE: Bỏ qua phần tử không cần xử lý ---
+'--- CONTINUE: Bỏ qua phần tử không cần xử lý ---
 #for i = 1 : len(elements)
   #if mod(i; 2) ≡ 0
     #continue     'bỏ qua phần tử chẵn
@@ -538,8 +538,8 @@ x = x0; iter = 0; max_iter = 200
   check_element(i) = ?
 #loop
 
-'--- #REPEAT KHÔNG GIỚI HẠN (với #Break bắt buộc) ---
-#repeat               'lặp vô hạn — PHẢI có #Break!
+'--- REPEAT KHÔNG GIỚI HẠN (với Break bắt buộc) ---
+#repeat               'lặp vô hạn — PHẢI có break!
   #if converged
     #break
   #end if
