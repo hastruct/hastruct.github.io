@@ -72,7 +72,7 @@ Công trình hạ tầng - thủy lợi không phải là "tòa nhà nằm ngang
 
 Sự khác biệt này không chỉ là kỹ thuật. Nó kéo theo một loạt yêu cầu về **cấu trúc mô hình, logic phân rã thông tin, và cơ chế phối hợp** mà các phương pháp BIM cho nhà cao tầng đơn thuần **không thể áp dụng máy móc** được [^1][^2].
 
-![Mô hình BIM công trình thủy lợi](\assets\images\posts\bim-ung-dung-ha-tang-thuy-loi/mot-so-du-an-bim.jpg)
+![Mô hình BIM công trình thủy lợi](\assets\images\posts\bim-ung-dung-ha-tang-thuy-loi/bim-thuy-loi.png)
 *Hình minh họa mô hình BIM công trình thủy lợi — Nguồn: Nhóm dự án BIM - HydrostructAI*
 
 ### 1.2. Vì sao đa số dự án hạ tầng VN dừng ở "mô hình 3D đẹp"
@@ -186,7 +186,7 @@ Với công trình thủy lợi thi công theo nhiều gói thầu song song (đ
 
 TimeLiner trong Navisworks cho phép gắn từng cấu kiện mô hình với hoạt động trên Gantt chart từ Microsoft Project hoặc Primavera P6. Dự án Metro số 2 TP.HCM là minh chứng thực tế việc 4D Simulation có thể phát hiện xung đột không gian-thời gian từ giai đoạn thiết kế kỹ thuật, **trước khi nhà thầu ra hiện trường** [^5][^12].
 
-![Mô hình thi công công trình thủy lợi](\assets\images\posts\bim-ung-dung-ha-tang-thuy-loi/mot-so-du-an-bim.jpg)
+![Mô hình thi công công trình thủy lợi](\assets\images\posts\bim-ung-dung-ha-tang-thuy-loi/bim-thi-cong.png)
 *Hình minh họa thi công mô hình công trình thủy lợi — Nguồn: Nhóm dự án BIM - HydrostructAI*
 
 ---
