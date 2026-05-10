@@ -112,7 +112,7 @@ Trước khi tranh luận "Civil 3D hay Revit", "Tekla hay AECOsim", có ba đi�
 Với một tuyến kênh tưới dài 20 km hay tuyến cống hộp đô thị 5 km, **không thể** dựng tất cả vào một file mô hình duy nhất. Việc phân rã mô hình phải đi trước cả việc bắt đầu vẽ:
 
 - **Theo chainage/station:** Phân vùng mô hình theo các đoạn lý trình (ví dụ: Km0+000 đến Km5+000, Km5+000 đến Km10+000...) - tương ứng với cách phân vùng thi công và phân vùng quản lý vận hành sau này.
-- **Theo bộ môn (discipline):** Mỗi bộ môn có file mô hình riêng (`AR`, `ST`, `CV`, `MEP`, `EE`, `TE`...) - đây cũng là nguyên tắc của TCVN 14177-1:2024 về "công-te-nơ thông tin" (information container) [^6].
+- **Theo bộ môn (discipline):** Mỗi bộ môn có file mô hình riêng (`AR`, `ST`, `CV`, `MEP`, `EE`, `TE`...) - đây cũng là nguyên tắc của TCVN 14177-1:2024 về đơn vị lưu trữ thông tin [^6].
 - **Theo giai đoạn (phase):** Hiện trạng / di dời tạm / thiết kế mới - đặc biệt quan trọng với dự án hạ tầng đô thị nơi phải làm việc với rất nhiều công trình hiện hữu.
 
 Nếu cấu trúc phân rã không được thiết lập từ BEP, hệ quả là: file model nặng hàng GB không cộng tác được, Clash Report chứa hàng nghìn false positive vô nghĩa, và đội mô hình phải làm lại từ đầu khi sang giai đoạn TKKT.
@@ -388,7 +388,7 @@ Câu trả lời nằm ở chỗ **hiểu đúng bản chất** - BIM hạ tần
 
 [^5]: Nguyễn Quang Hoài, Trần Văn Tâm (2021). *Ứng dụng BIM cho gói thầu Di dời công trình hạ tầng ngầm quanh các nhà ga tuyến Metro 2, TP.HCM.* iDECO Việt Nam.
 
-[^6]: TCVN 14177-1:2024 - Mục về Information Container và phân rã mô hình theo bộ môn (Hình A.2 - Diễn giải minh họa chia tách công-te-nơ thông tin).
+[^6]: TCVN 14177-1:2024 - Mục về Information Container và phân rã mô hình theo bộ môn (Hình A.2 - Diễn giải minh họa chia tách đơn vị thông tin).
 
 [^7]: Tài liệu EIR - Dự án KDTM DL, ST, ND, VCGT huyện Tiên Du (Tiểu khu 112.1), Chương 4 - Mục tiêu và nội dung áp dụng BIM.
 
