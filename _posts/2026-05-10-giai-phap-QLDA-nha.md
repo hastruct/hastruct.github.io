@@ -425,4 +425,3 @@ Bối cảnh pháp lý đang thay đổi mạnh mẽ — **Luật Xây dựng 13
 ---
 
 *© 2026 HydrostrucAI - Tư vấn Quản lý Dự án & Giám sát Thi công*
-*Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)*
