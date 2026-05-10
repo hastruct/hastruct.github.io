@@ -2,23 +2,31 @@
 title: "Xây dựng Biểu đồ Tương tác Cột (P-M) theo 3 Tiêu chuẩn: TCVN, EC2 và ACI"
 author_profile: true
 author_name: "HST.AI"
-date: 2025-12-12 10:00:00 +0700
+date: 2025-12-12 08:00:00 +0700
 layout: single
-mathjax: true
+featured: true  # <--- Thêm dòng này để đánh dấu bài nổi bật
 toc: true
 toc_sticky: true
 toc_label: "📑 Mục Lục"
-
+permalink: "/posts/interaction-diagram-vn-ec2-aci/"
 categories:
-  - Structural Engineering
-  - Algorithms
+  - Structural-Engineering
+  - Interaction-Diagram
+  - ShortCol
 tags: [ShortCol, Interaction Diagram, TCVN 5574, Eurocode 2, ACI 318]
 image: /assets/images/app-icons/shortcol2D.png
+excerpt: "Biểu đồ tương tác cho cột chịu nén lệch tâm."
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  caption: "©  HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
 ## Bài toán Cột Chịu Nén Lệch Tâm
 
 Trong thiết kế kết cấu, **cột chịu nén lệch tâm** là một trong những tình huống phức tạp nhất. Khác với nén đúng tâm (tải trọng dọc tác dụng ở tâm), nén lệch tâm có momen uốn phụ kèm theo, dẫn đến phân bố ứng suất không đều trên tiết diện.
+
+---
 
 Để kiểm chứng an toàn của cột dưới tác dụng kết hợp nén + uốn, kỹ sư sử dụng **biểu đồ tương tác P-M** (Interaction Diagram). Đây là biểu đồ biểu thị quan hệ giữa:
 
@@ -59,9 +67,9 @@ $$\text{"Mặt cắt phẳng vẫn giữ nguyên phẳng sau biến dạng"}$$
 
 Xác định kích thước và vị trí:
 
-- Cột chữ nhật: $B$ (chiều rộng), $H$ (chiều cao)
-- Cột tròn: $D$ (đường kính)
-- Lớp bảo vệ: $d_c$ (cover)
+- Cột chữ nhật: $$B$$ (chiều rộng), $$H$$ (chiều cao)
+- Cột tròn: $$D$$ (đường kính)
+- Lớp bảo vệ: $$d_c$$ (cover)
 
 #### Bước 2: Bố Trí Cốt Thép
 
@@ -70,7 +78,7 @@ Xác định vị trí của từng thanh thép:
 - **Cột chữ nhật**: Thanh thép phân bố dọc theo chu vi tiết diện
 - **Cột tròn**: Thanh thép phân bố trong đường tròn
 
-Công thức bố trí cho cột chữ nhật với $N_b$ thanh:
+Công thức bố trí cho cột chữ nhật với $$N_b$$ thanh:
 
 $$\text{Chu vi lõi} = 2(B + H) - 4 \cdot d_c$$
 
@@ -78,23 +86,23 @@ $$\text{Khoảng cách} = \frac{\text{Chu vi lõi}}{N_b}$$
 
 #### Bước 3: Quét Vị Trí Trục Trung Hòa
 
-Thực hiện vòng lặp trên vị trí của trục trung hòa từ $c = -\infty$ đến $c = +\infty$:
+Thực hiện vòng lặp trên vị trí của trục trung hòa từ $$c = -\infty$$ đến $$c = +\infty$$:
 
 $$c \in [-100 \text{ mm}, -50 \text{ mm}, ..., 0, ..., 50 \text{ mm}, 100 \text{ mm}]$$
 
-Mỗi vị trí $c$ sẽ sinh ra **một điểm** trên biểu đồ P-M.
+Mỗi vị trí $$c$$ sẽ sinh ra **một điểm** trên biểu đồ P-M.
 
 #### Bước 4: Tích Phân Lực & Momen
 
-**Lực Bê Tông** ($F_c$):
+**Ứng suất bê tông** ($$F_c$$):
 
-Ứng suất bê tông phân bố trên vùng nén với cường độ thiết kế $R_b$ (hay $f_{cd}$ hay $0.85f'_c$):
+Ứng suất bê tông phân bố trên vùng nén với cường độ thiết kế $$R_b$$ (hay $$f_{cd}$$ hay $$0.85f'_c$$):
 
 $$F_c = R_b \times \text{Area}_{nén}$$
 
 $$M_c = F_c \times \text{khoảng cách tới tâm}$$
 
-**Lực Cốt Thép** ($F_s$):
+**Ứng suất cốt thép** ($$F_s$$):
 
 Sử dụng **Strain Compatibility** để tính ứng suất mỗi thanh:
 
@@ -102,9 +110,9 @@ $$\varepsilon_s = \varepsilon_{cu} \times \frac{y_{bar} - y_{NA}}{c}$$
 
 Trong đó:
 
-- $\varepsilon_{cu}$ = biến dạng cực hạn bê tông (0.0035 cho TCVN/EC2; 0.003 cho ACI)
-- $y_{bar}$ = vị trí Y của thanh thép
-- $y_{NA}$ = vị trí trục trung hòa
+- $$\varepsilon_{cu}$$ = biến dạng cực hạn bê tông (0.0035 cho TCVN/EC2; 0.003 cho ACI)
+- $$y_{bar}$$ = vị trí Y của thanh thép
+- $$y_{NA}$$ = vị trí trục trung hòa
 
 Ứng suất thép với cắt ngọn:
 
@@ -122,7 +130,7 @@ $$P_u = \frac{F_c + \sum F_s}{1000} \text{ [kN]}$$
 
 $$M_u = \frac{M_c + \sum M_s}{1,000,000} \text{ [kNm]}$$
 
-Tập hợp tất cả các cặp $(M_u, P_u)$ từ các vị trí $c$ khác nhau tạo thành **đường cong tương tác**.
+Tập hợp tất cả các cặp $$(M_u, P_u)$$ từ các vị trí $$c$$ khác nhau tạo thành **đường cong tương tác**.
 
 ---
 
@@ -138,7 +146,7 @@ $$R_b = f_{ck} \quad \text{(Không chia hệ số)}$$
 
 $$R_s = f_{yk} \quad \text{(Không chia hệ số)}$$
 
-Ví dụ: $f_{ck} = 25$ MPa $\Rightarrow R_b = 25$ MPa
+Ví dụ: $$f_{ck} = 25$$ MPa $$\Rightarrow R_b = 25$$ MPa
 
 #### Biến Dạng Cực Hạn
 
@@ -150,7 +158,7 @@ $$\alpha = 0.8 \quad \Rightarrow \quad a = 0.8 \times c$$
 
 #### Độc Lập Tiêu Chuẩn
 
-Giá trị $R_b$ và $R_s$ **đã tích hợp** hệ số bảo toàn, nên tiêu chuẩn này độc lập hơn với các tiêu chuẩn khác.
+Giá trị $$R_b$$ và $$R_s$$ **đã tích hợp** hệ số bảo toàn, nên tiêu chuẩn này độc lập hơn với các tiêu chuẩn khác.
 
 ### 2. EC2:2004/2015 (Châu Âu)
 
@@ -162,12 +170,12 @@ $$f_{cd} = 0.85 \times \frac{f_{ck}}{\gamma_c} = 0.85 \times \frac{f_{ck}}{1.5} 
 
 $$f_{yd} = \frac{f_{yk}}{\gamma_s} = \frac{f_{yk}}{1.15} \approx 0.87 \times f_{yk}$$
 
-Ví dụ: $f_{ck} = 25$ MPa $\Rightarrow f_{cd} \approx 8.24$ MPa
+Ví dụ: $$f_{ck} = 25$$ MPa $$\Rightarrow f_{cd} \approx 8.24$$ MPa
 
-**Hệ số bảo toàn rõ ràng:**
+**Hệ số cho bê tông và cốt thép:**
 
-- $\gamma_c = 1.5$ (bê tông)
-- $\gamma_s = 1.15$ (thép)
+- $$\gamma_c = 1.5$$ (bê tông)
+- $$\gamma_s = 1.15$$ (cốt thép)
 
 #### Ưu Điểm
 
@@ -175,14 +183,14 @@ Ví dụ: $f_{ck} = 25$ MPa $\Rightarrow f_{cd} \approx 8.24$ MPa
 ✓ **Kiểm chứng độc lập**: Dễ dàng audit lại tính toán  
 ✓ **Bảo toàn hơn**: Chia 1.5 cho bê tông là rất thận trọng
 
-#### Hệ Lệnh
+#### Hệ số
 
-| Khía Cạnh          | Giá Trị |
+| Hệ số          | Giá Trị |
 | ------------------ | ------- |
-| $\varepsilon_{cu}$ | 0.0035  |
-| $\alpha$           | 0.8     |
-| $\gamma_c$         | 1.5     |
-| $\gamma_s$         | 1.15    |
+| $$\varepsilon_{cu}$$ | 0.0035  |
+| $$\alpha$$           | 0.8     |
+| $$\gamma_c$$         | 1.5     |
+| $$\gamma_s$$         | 1.15    |
 
 ### 3. ACI 318-19 (Mỹ/Canada)
 
@@ -194,7 +202,7 @@ $$f_c'' = 0.85 \times f'_c \quad \text{(không chia hệ số)}$$
 
 $$f_y = f_y \quad \text{(sử dụng trực tiếp)}$$
 
-Ví dụ: $f'_c = 28$ MPa $\Rightarrow f_c'' = 23.8$ MPa
+Ví dụ: $$f'_c = 28$$ MPa $$\Rightarrow f_c'' = 23.8$$ MPa
 
 #### Biến Dạng Cực Hạn - **Điểm Khác Biệt Chính**
 
@@ -210,7 +218,7 @@ Với biến dạng cực hạn nhỏ hơn, vùng nén bê tông cần phải l�
 
 #### Hệ Số Khối Ứng Suất - **Biến Đổi**
 
-Khác với TCVN/EC2 ($\alpha = 0.8$ cố định), ACI có:
+Khác với TCVN/EC2 ($$\alpha = 0.8$$ cố định), ACI có:
 
 $$
 \beta_1 = f(f'_c) = \begin{cases}
@@ -228,21 +236,21 @@ ACI áp dụng hệ số giảm riêng biệt:
 
 $$\phi = 0.75 \quad \text{(cho uốn + nén)}$$
 
-Điều này **không tích hợp** vào $f_c''$, mà áp dụng sau tính toán.
+Điều này **không tích hợp** vào $$f_c''$$, mà áp dụng sau tính toán.
 
 ### Bảng So Sánh Tổng Hợp
 
 | Tiêu Chuẩn | Rb / fcd / σc        | εcu       | β / β1             | Đặc Điểm                     |
 | ---------- | -------------------- | --------- | ------------------ | ---------------------------- |
-| **TCVN**   | $f_{ck}$ (100%)      | 0.0035    | 0.8 (cố định)      | Đơn giản, trực tiếp          |
-| **EC2**    | $0.567 f_{ck}$ (57%) | 0.0035    | 0.8 (cố định)      | Bảo toàn rõ ràng, γ=1.5/1.15 |
-| **ACI**    | $0.85 f'_c$ (85%)    | **0.003** | Biến đổi 0.65-0.85 | Bảo toàn hơn (εcu nhỏ)       |
+| **TCVN**   | $$f_{ck}$$ (100%)      | 0.0035    | 0.8 (cố định)      | Đơn giản, trực tiếp          |
+| **EC2**    | $$0.567 f_{ck}$$ (57%) | 0.0035    | 0.8 (cố định)      | Bảo toàn rõ ràng, γ=1.5/1.15 |
+| **ACI**    | $$0.85 f'_c$$ (85%)    | **0.003** | Biến đổi 0.65-0.85 | Bảo toàn hơn (εcu nhỏ)       |
 
 ### Ví Dụ Tính Toán Cụ Thể
 
-**Cho**: Cột $300 \times 400$ mm, $f_{ck} = 25$ MPa, $f_{yk} = 400$ MPa, 6 thanh $\Phi 18$
+**Cho**: Cột $$300 \times 400$$ mm, $$f_{ck} = 25$$ MPa, $$f_{yk} = 400$$ MPa, 6 thanh $$\Phi 18$$
 
-**Giả sử**: Trục trung hòa $c = 100$ mm (nén không quá cao)
+**Giả sử**: Trục trung hòa $$c = 100$$ mm (nén không quá cao)
 
 #### TCVN
 
@@ -294,10 +302,10 @@ $$P_u \approx (643 + 458) = 1101 \text{ kN}$$
 
 Cho:
 
-- Điểm tải trọng thực tế: $(M_{load}, P_{load})$
-- Đường cong sức chịu: Tập hợp điểm $(M_{cap}, P_{cap})$
+- Điểm tải trọng thực tế: $$(M_{load}, P_{load})$$
+- Đường cong sức chịu: Tập hợp điểm $$(M_{cap}, P_{cap})$$
 
-Tìm: Hệ số an toàn $k$ sao cho:
+Tìm: Hệ số an toàn $$k$$ sao cho:
 
 $$k = \frac{\text{Khoảng cách từ gốc O đến điểm sức chịu}}{\text{Khoảng cách từ gốc O đến điểm tải trọng}}$$
 
@@ -323,7 +331,7 @@ $$t \cdot P_{load} = P_1 + s \cdot (P_2 - P_1)$$
 
 **Bước 4**: Tính hệ số
 
-Giá trị $t$ chính là **hệ số an toàn**:
+Giá trị $$t$$ chính là **hệ số an toàn**:
 
 $$k = t = \frac{\text{Sức chịu}}{\text{Tải trọng}}$$
 
@@ -352,15 +360,15 @@ $$k = 1.0 \quad \Rightarrow \quad \text{Giới hạn}$$
 
 | Tiêu Chuẩn | Phương Pháp                             | Ưu Điểm   | Nhược Điểm             |
 | ---------- | --------------------------------------- | --------- | ---------------------- |
-| **TCVN**   | Tích hợp vào $R_b, R_s$                 | Đơn giản  | Khó kiểm chứng độc lập |
-| **EC2**    | Rõ ràng ($\gamma_c=1.5, \gamma_s=1.15$) | Minh bạch | Phức tạp hơn           |
-| **ACI**    | Riêng biệt ($\phi = 0.75$)              | Linh hoạt | Dễ bỏ sót $\phi$       |
+| **TCVN**   | Tích hợp vào $$R_b, R_s$$                 | Đơn giản  | Khó kiểm chứng độc lập |
+| **EC2**    | Rõ ràng ($$\gamma_c=1.5, \gamma_s=1.15$$) | Minh bạch | Phức tạp hơn           |
+| **ACI**    | Riêng biệt ($$\phi = 0.75$$)              | Linh hoạt | Dễ bỏ sót $$\phi$$       |
 
 ### 3. Sự Thích Ứng với Cường Độ Cao (f'c > 50 MPa)
 
-- **TCVN**: Không đề cập, $\alpha = 0.8$ vẫn cố định
+- **TCVN**: Không đề cập, $$\alpha = 0.8$$ vẫn cố định
 - **EC2**: Có công thức điều chỉnh cho bê tông C90
-- **ACI**: β1 giảm từ 0.85 xuống 0.65 khi $f'_c > 55$ MPa
+- **ACI**: β1 giảm từ 0.85 xuống 0.65 khi $$f'_c > 55$$ MPa
 
 **ACI phù hợp hơn** với các dự án dùng bê tông cường độ cao (như cầu, tòa nhà chọc trời).
 
