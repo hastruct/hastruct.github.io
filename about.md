@@ -671,9 +671,6 @@ header:
         <li style="margin-bottom: 0.5rem; color: var(--color-text);">
           📧 Email: <a href="mailto:ha.nguyen@hydrostructai.com" style="color: var(--color-accent); font-weight: 600;">ha.nguyen@hydrostructai.com</a>
         </li>
-        <li style="margin-bottom: 0.5rem; color: var(--color-text);">
-          📞 Tel: <a href="tel:+84374874142" style="color: var(--color-accent); font-weight: 600;">+84 374 874 142</a>
-        </li>
         <li style="color: var(--color-text);">
           🌐 Blog: Cập nhật hàng tuần về QLDA xây dựng, kỹ thuật số và công cụ mới
         </li>
