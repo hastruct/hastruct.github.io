@@ -21,7 +21,7 @@ Cụ thể, có thể hỗ trợ:
 **Liên hệ:**
 
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) — mô tả ngắn giai đoạn dự án và vướng mắc cụ thể
-- WhatsApp: [HST.AI](https://chat.whatsapp.com/Dg8hN1twzuzFRT5tlFL18W) — trao đổi nhanh trước khi quyết định
+- Phone: [WhatsApp](https://wa.me/84374874142) — trao đổi nhanh trước khi quyết định
 
 > Nếu bạn đang ở giai đoạn trước khi ký hợp đồng với nhà thầu, đó là thời điểm tốt nhất để hỏi — không phải sau khi đã đổ bê tông.
 
