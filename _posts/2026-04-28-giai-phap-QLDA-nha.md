@@ -40,7 +40,7 @@ Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất
 
 ---
 
-## 1. Tóm Tắt Điều Hành
+## 1. Các chỉ số và khuyến nghị
 
 ### Các chỉ số cảnh báo
 
@@ -62,7 +62,7 @@ Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất
 
 ---
 
-## 2. Bối Cảnh & Quy Mô Vấn Đề
+## 2. Đặc điểm và quy mô
 
 ### 2.1. Đặc thù của phân khúc nhà ở riêng lẻ – nhà phố
 
@@ -70,7 +70,7 @@ Khác với các dự án xây dựng có chủ đầu tư là tổ chức (có 
 
 - Chủ đầu tư là **cá nhân**, không có chuyên môn xây dựng và thường mới làm nhà lần đầu trong đời.
 - Quy mô nhỏ (1–5 tỷ VNĐ) nhưng rủi ro tương đối lớn vì đó thường là **tài sản tích lũy cả đời người**.
-- Theo Luật Xây dựng và **Nghị định 175/2024/NĐ-CP**, nhà ở riêng lẻ ≤ 7 tầng hoặc dưới 250m² sàn **không bắt buộc thuê tổ chức TVGS độc lập** — chủ nhà có thể tự giám sát hoặc thuê cá nhân có năng lực — dễ dẫn đến tình trạng "vừa đá bóng vừa thổi còi".
+- Theo Luật Xây dựng và **Nghị định 175/2024/NĐ-CP**, nhà ở riêng lẻ ≤ 7 tầng hoặc dưới 250m² sàn **không bắt buộc thuê tổ chức TVGS độc lập** - chủ nhà có thể tự giám sát hoặc thuê cá nhân có năng lực - dễ dẫn đến tình trạng "vừa đá bóng vừa thổi còi".
 - Nhà thầu phần lớn là đội thợ nhỏ - **năng lực quản lý dự án không đồng đều**.
 
 ### 2.2. Mô hình chi phí leo thang điển hình
@@ -87,11 +87,11 @@ Khác với các dự án xây dựng có chủ đầu tư là tổ chức (có 
 
 ---
 
-## 3. Phân Tích Các Sai Lầm Điển Hình
+## 3. Các sai lầm điển hình
 
 ### 3.1. Sai lầm 1 - Không hiểu quy trình nguyên tắc thực hiện
 
-#### Tình huống điển hình
+#### Tình huống  
 
 > Một buổi sáng, người phụ trách kỹ thuật của đội thầu nhắn tin cho chủ nhà: *"Hôm nay bên em tiến hành đổ bê tông móng nhé anh?"*
 >
@@ -132,7 +132,7 @@ Một tin nhắn ngắn gọn *"Các anh cứ làm theo tiến độ"* - về b�
 
 ### 3.2. Sai lầm 2 - Giao chọn gói và đặt niềm tin 100% vào nhà thầu
 
-#### Tình huống điển hình
+#### Tình huống 
 
 > Sau khi ký hợp đồng trọn gói, chủ nhà gần như vắng mặt hoàn toàn trong suốt hai tháng đầu thi công. Khi quay lại công trường thì phần thô đã xây xong. Lúc này mới phát hiện nhiều hạng mục chưa đúng thiết kế, kỹ thuật không đảm bảo, thậm chí một số vật liệu đưa vào thi công không khớp với chủng loại đã ký trong hợp đồng.
 >
@@ -172,15 +172,15 @@ Một tin nhắn ngắn gọn *"Các anh cứ làm theo tiến độ"* - về b�
 
 ### 3.3. Sai lầm 3 - Không kiểm soát tốt chi phí và chất lượng từ đầu
 
-#### Câu chuyện điển hình
+#### Tình huống
 
 > Chủ nhà lập kế hoạch xây căn nhà 2 tầng mái Thái với ngân sách **1,5 tỷ đồng**. Khi công trình hoàn thành khoảng 80% khối lượng, chi phí thực tế đã tiêu tốn gần **2 tỷ**. Điều đáng lo hơn là chủ nhà không thể xác định được tiền đã đội ở hạng mục nào, giai đoạn nào, vì không có dự toán chi tiết theo đầu việc làm cơ sở đối chiếu.
 >
 > Đến giai đoạn hoàn thiện mới ộ ra các kết cấu bị sai vị trí, bị lệch so với bản vẽ thiết kế. Nhiều công trình đưa vào sử dụng chưa được một năm đã xuất hiện tình trạng **thấm dột, nứt tường**, sửa thì tốn kém, không sửa thì ảnh hưởng đến chất lượng sống suốt nhiều năm.
 
-#### Nguyên lý Cost of Quality
+#### Nguyên lý chi phí chất lượng
 
-Philip Crosby (1979) và Joseph Juran phát triển nguyên lý **"Cost of Quality"**: chi phí phòng ngừa và đánh giá (*prevention + appraisal*) luôn rẻ hơn nhiều lần so với chi phí thất bại. Trong xây dựng nhà ở, áp dụng **Định luật 1:5:25** (Boehm, 1981):
+Philip Crosby (1979) và Joseph Juran phát triển nguyên lý chi phí chất lượng (**"Cost of Quality"**): chi phí phòng ngừa và đánh giá (*prevention + appraisal*) luôn rẻ hơn nhiều lần so với chi phí thất bại. Trong xây dựng nhà ở, áp dụng **Định luật 1:5:25** (Boehm, 1981):
 
 | Giai đoạn phát hiện lỗi | Hệ số chi phí sửa |
 |------------------------|-------------------|
@@ -248,7 +248,7 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 
 ---
 
-## 5. Checklist Kiểm Soát Theo Giai Đoạn Thi Công
+## 5. Checklist kiểm soát theo giai đoạn thi công
 
 ### Giai đoạn 1 - Chuẩn bị trước thi công
 
@@ -302,7 +302,7 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 
 ---
 
-## 6. Vai Trò Của Tư Vấn Quản Lý Dự Án
+## 6. Vai trò của Tư vấn quản lý dự án
 
 ### 6.1. Phân biệt Quản lý dự án (QLDA) và Tư vấn giám sát (TVGS)
 
@@ -314,13 +314,13 @@ Thực tế nhiều chủ nhà nhầm lẫn hai vai trò này. Đây là hai ch�
 |---------|--------------------------|----------------------|
 | **Phạm vi thời gian** | Toàn bộ vòng đời dự án (chuẩn bị → thực hiện → kết thúc) | Chỉ giai đoạn thi công |
 | **Trách nhiệm chính** | Tiến độ, chi phí, hợp đồng, stakeholder, tổng thể dự án | Chất lượng, kỹ thuật, an toàn tại hiện trường |
-| **PMBOK tương ứng** | Project Manager — 10 Knowledge Areas | Construction Manager / Inspector — Quality & Execution Domain |
+| **PMBOK tương ứng** | Project Manager - 10 Knowledge Areas | Construction Manager / Inspector - Quality & Execution Domain |
 | **FIDIC tương ứng** | Engineer / Owner's Representative | Resident Engineer / Site Inspector |
 | **Khung pháp lý hiện hành** | Điều 85 ND 175/2024; Điều 88 Luật XD 135/2025 | Điều 83 ND 175/2024; Điều 88 Luật XD 135/2025 |
-| **CCHN cá nhân (đến 30/6/2026)** | Bắt buộc — CCHN QLDA hạng I/II/III | Bắt buộc — CCHN Giám sát thi công xây dựng |
-| **CCHN cá nhân từ 01/7/2026** | **Giám đốc QLDA không còn bắt buộc CCHN** (Luật XD 2025) | **Vẫn bắt buộc CCHN** — không thay đổi |
+| **CCHN cá nhân (đến 30/6/2026)** | Bắt buộc - CCHN QLDA hạng I/II/III | Bắt buộc - CCHN Giám sát thi công xây dựng |
+| **CCHN cá nhân từ 01/7/2026** | **Giám đốc QLDA không còn bắt buộc CCHN** (Luật XD 2025) | **Vẫn bắt buộc CCHN** - không thay đổi |
 | **Chứng chỉ năng lực tổ chức** | Đã bãi bỏ từ **01/7/2025** (Luật Đường sắt 2025) | Đã bãi bỏ từ **01/7/2025** |
-| **Với nhà ở riêng lẻ ≤ 7 tầng** | Không bắt buộc — nên thuê để kiểm soát HĐ & tài chính | Không bắt buộc — nên thuê độc lập để bảo vệ chất lượng |
+| **Với nhà ở riêng lẻ ≤ 7 tầng** | Không bắt buộc - nên thuê để kiểm soát HĐ & tài chính | Không bắt buộc - nên thuê độc lập để bảo vệ chất lượng |
 
 > 📌 **Lưu ý quan trọng:** Theo ND 175/2024 (Điều 83 và Điều 85), chứng chỉ hành nghề QLDA và TVGS vẫn là **hai loại riêng biệt**. ND 175 chỉ gộp **phạm vi loại công trình** trong từng chứng chỉ (không còn phân chuyên ngành dân dụng / giao thông / hạ tầng). Một cá nhân có thể đồng thời giữ cả hai chứng chỉ, nhưng về thực tiễn quản trị, **không nên kiêm nhiệm cả hai vai trò trong cùng một dự án** để tránh xung đột lợi ích.
 
@@ -356,36 +356,36 @@ Tổng nghiệm thu, lập hồ sơ hoàn công, theo dõi bảo hành và xử 
 
 ### Căn cứ pháp lý (cập nhật 2026)
 
-- **Luật Xây dựng số 135/2025/QH15** (thông qua 10/12/2025, **hiệu lực 01/7/2026**) — văn bản pháp lý cao nhất về xây dựng; bãi bỏ yêu cầu CCHN đối với chức danh Giám đốc QLDA, giữ CCHN đối với giám sát thi công, định giá, khảo sát, thiết kế.
-- **Luật Xây dựng 2014 (số 50/2014/QH13)** và **Luật sửa đổi số 62/2020/QH14** — vẫn áp dụng đến hết ngày 30/6/2026 trong các nội dung không bị bãi bỏ.
-- **Luật Đường sắt 2025** (Điều 56 khoản 1 điểm g, hiệu lực 01/7/2025) — bãi bỏ khoản 4 Điều 148 và khoản 2 Điều 159 Luật Xây dựng 2014: **bỏ chứng chỉ năng lực hoạt động xây dựng của tổ chức/doanh nghiệp**.
-- **Nghị định số 175/2024/NĐ-CP** ngày 30/12/2024 — Quy định chi tiết một số điều và biện pháp thi hành Luật Xây dựng về quản lý hoạt động xây dựng *(thay thế Nghị định 15/2021/NĐ-CP; vẫn hiệu lực đến khi có Nghị định mới hướng dẫn Luật XD 2025)*.
-- **Nghị định số 06/2021/NĐ-CP** — Quản lý chất lượng, thi công xây dựng và bảo trì công trình xây dựng *(các nội dung không trái với Luật XD 2025 vẫn áp dụng)*.
-- **Thông tư số 11/2021/TT-BXD** — Hướng dẫn xác định và quản lý chi phí đầu tư xây dựng.
-- **Thông tư số 12/2021/TT-BXD** — Định mức xây dựng (bao gồm Phụ lục VIII — định mức chi phí QLDA và tư vấn).
+- **Luật Xây dựng số 135/2025/QH15** (thông qua 10/12/2025, **hiệu lực 01/7/2026**) - văn bản pháp lý cao nhất về xây dựng; bãi bỏ yêu cầu CCHN đối với chức danh Giám đốc QLDA, giữ CCHN đối với giám sát thi công, định giá, khảo sát, thiết kế.
+- **Luật Xây dựng 2014 (số 50/2014/QH13)** và **Luật sửa đổi số 62/2020/QH14** - vẫn áp dụng đến hết ngày 30/6/2026 trong các nội dung không bị bãi bỏ.
+- **Luật Đường sắt 2025** (Điều 56 khoản 1 điểm g, hiệu lực 01/7/2025) - bãi bỏ khoản 4 Điều 148 và khoản 2 Điều 159 Luật Xây dựng 2014: **bỏ chứng chỉ năng lực hoạt động xây dựng của tổ chức/doanh nghiệp**.
+- **Nghị định số 175/2024/NĐ-CP** ngày 30/12/2024 - Quy định chi tiết một số điều và biện pháp thi hành Luật Xây dựng về quản lý hoạt động xây dựng *(thay thế Nghị định 15/2021/NĐ-CP; vẫn hiệu lực đến khi có Nghị định mới hướng dẫn Luật XD 2025)*.
+- **Nghị định số 06/2021/NĐ-CP** - Quản lý chất lượng, thi công xây dựng và bảo trì công trình xây dựng *(các nội dung không trái với Luật XD 2025 vẫn áp dụng)*.
+- **Thông tư số 11/2021/TT-BXD** - Hướng dẫn xác định và quản lý chi phí đầu tư xây dựng.
+- **Thông tư số 12/2021/TT-BXD** - Định mức xây dựng (bao gồm Phụ lục VIII - định mức chi phí QLDA và tư vấn).
 
 > **Cập nhật:** Bộ Xây dựng đang trình Chính phủ **8 Nghị định và Thông tư** hướng dẫn Luật XD 2025 trong tháng 4/2026; chủ đầu tư cần theo dõi văn bản thay thế ND 175/2024 sẽ được ban hành tới đây.
 
 ### Tiêu chuẩn & Quy chuẩn kỹ thuật Việt Nam (TCVN / QCVN)
 
-- **QCVN 03:2022/BXD** — Quy chuẩn kỹ thuật quốc gia về phân cấp công trình xây dựng.
-- **TCVN 4453:1995** — Kết cấu bê tông và bê tông cốt thép toàn khối – Quy phạm thi công và nghiệm thu.
-- **TCVN 9398:2012** — Công tác trắc địa trong xây dựng – Yêu cầu chung.
-- **TCVN 9393:2012** — Cọc – Phương pháp thử nghiệm tại hiện trường bằng tải trọng tĩnh ép dọc trục.
-- **TCVN 9363:2012** — Khảo sát cho xây dựng – Khảo sát địa kỹ thuật cho nhà cao tầng.
-- **TCVN 1651-2:2018** — Thép cốt bê tông (thay thế TCVN 1651:2008).
-- **TCVN 4085:2011** — Kết cấu gạch đá – Tiêu chuẩn thi công và nghiệm thu.
-- **TCVN 8828:2011** — Bê tông – Yêu cầu bảo dưỡng ẩm tự nhiên.
-- **TCVN 3118:2022** — Bê tông – Phương pháp xác định cường độ chịu nén.
-- **TCVN 14177-1:2024 / 14177-2:2024** — Tiêu chuẩn áp dụng BIM trong hoạt động xây dựng *(mới ban hành 2024)*.
+- **QCVN 03:2022/BXD** - Quy chuẩn kỹ thuật quốc gia về phân cấp công trình xây dựng.
+- **TCVN 4453:1995** - Kết cấu bê tông và bê tông cốt thép toàn khối – Quy phạm thi công và nghiệm thu.
+- **TCVN 9398:2012** - Công tác trắc địa trong xây dựng – Yêu cầu chung.
+- **TCVN 9393:2012** - Cọc – Phương pháp thử nghiệm tại hiện trường bằng tải trọng tĩnh ép dọc trục.
+- **TCVN 9363:2012** - Khảo sát cho xây dựng – Khảo sát địa kỹ thuật cho nhà cao tầng.
+- **TCVN 1651-2:2018** - Thép cốt bê tông (thay thế TCVN 1651:2008).
+- **TCVN 4085:2011** - Kết cấu gạch đá – Tiêu chuẩn thi công và nghiệm thu.
+- **TCVN 8828:2011** - Bê tông – Yêu cầu bảo dưỡng ẩm tự nhiên.
+- **TCVN 3118:2022** - Bê tông – Phương pháp xác định cường độ chịu nén.
+- **TCVN 14177-1:2024 / 14177-2:2024** - Tiêu chuẩn áp dụng BIM trong hoạt động xây dựng *(mới ban hành 2024)*.
 
 ### Sách chuyên khảo & chuẩn quốc tế
 
 - **PMI (2021).** *A Guide to the Project Management Body of Knowledge (PMBOK® Guide) – 7th Edition.* Project Management Institute. [pmi.org](https://www.pmi.org/pmbok-guide-standards)
 - **RIBA (2020).** *RIBA Plan of Work 2020.* RIBA Publishing. [architecture.com](https://www.architecture.com/knowledge-and-resources/resources-landing-page/riba-plan-of-work)
 - **FIDIC (2017).** *Conditions of Contract for Construction - Red Book, 2nd Edition.* [fidic.org](https://fidic.org)
-- **ISO 21500:2021** — *Project, programme and portfolio management — Context and concepts.*
-- **TCVN 11866:2017** — Quản lý dự án (tương đương ISO 21500 phiên bản tiếng Việt).
+- **ISO 21500:2021** - *Project, programme and portfolio management - Context and concepts.*
+- **TCVN 11866:2017** - Quản lý dự án (tương đương ISO 21500 phiên bản tiếng Việt).
 - **Crosby, P. B. (1979).** *Quality Is Free: The Art of Making Quality Certain.* McGraw-Hill.
 - **Juran, J. M. & De Feo, J. A. (2010).** *Juran's Quality Handbook (6th ed.).* McGraw-Hill.
 - **Hendrickson, C. & Au, T. (2008).** *Project Management for Construction (2nd ed.).* Carnegie Mellon University. [cmu.edu](https://www.cmu.edu/cee/projects/PMbook/)
@@ -403,12 +403,12 @@ Tổng nghiệm thu, lập hồ sơ hoàn công, theo dõi bảo hành và xử 
 
 ### Nguồn mở (GitHub)
 
-- [OpenProject](https://github.com/opf/openproject) — Phần mềm QLDA mã nguồn mở (Gantt, WBS, chi phí).
-- [BIMserver](https://github.com/opensourceBIM/BIMserver) — Máy chủ BIM mã nguồn mở cho mô hình IFC.
-- [IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell) — Thư viện xử lý IFC mã nguồn mở (Python/C++).
-- [Speckle](https://github.com/specklesystems/speckle-server) — Nền tảng dữ liệu mở cho AEC.
-- [Awesome Construction](https://github.com/search?q=awesome-construction&type=repositories&s=&o=desc) — Tổng hợp công cụ & chuẩn dữ liệu ngành xây dựng.
-- [construction-management topics](https://github.com/topics/construction-management) — Template Excel BoQ, tiến độ, quản lý nhà thầu.
+- [OpenProject](https://github.com/opf/openproject) - Phần mềm QLDA mã nguồn mở (Gantt, WBS, chi phí).
+- [BIMserver](https://github.com/opensourceBIM/BIMserver) - Máy chủ BIM mã nguồn mở cho mô hình IFC.
+- [IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell) - Thư viện xử lý IFC mã nguồn mở (Python/C++).
+- [Speckle](https://github.com/specklesystems/speckle-server) - Nền tảng dữ liệu mở cho AEC.
+- [Awesome Construction](https://github.com/search?q=awesome-construction&type=repositories&s=&o=desc) - Tổng hợp công cụ & chuẩn dữ liệu ngành xây dựng.
+- [construction-management topics](https://github.com/topics/construction-management) - Template Excel BoQ, tiến độ, quản lý nhà thầu.
 
 ---
 
@@ -418,7 +418,7 @@ Xây nhà là hành trình đầu tư lớn nhất trong cuộc đời của h�
 
 Ba sai lầm được phân tích trong bài viết này đều có một điểm chung: **chúng hoàn toàn có thể phòng tránh được** nếu chủ đầu tư hiểu rõ quy trình, thiết lập cơ chế giám sát và dùng đúng công cụ quản lý ngay từ đầu.
 
-Bối cảnh pháp lý đang thay đổi mạnh mẽ — **Luật Xây dựng 135/2025** (hiệu lực 01/7/2026) cùng **Nghị định 175/2024/NĐ-CP** đẩy mạnh phân cấp, số hóa và đơn giản hóa thủ tục. Tuy nhiên, dù chứng chỉ hành nghề Giám đốc QLDA không còn bắt buộc, **trách nhiệm về chất lượng và an toàn công trình vẫn không thay đổi**. Việc thuê đại diện chuyên môn độc lập (Owner's Representative / TVGS) cho dự án nhà ở riêng lẻ vẫn là quyết định đúng đắn để bảo vệ tài sản tích lũy cả đời.
+Bối cảnh pháp lý đang thay đổi mạnh mẽ - **Luật Xây dựng 135/2025** (hiệu lực 01/7/2026) cùng **Nghị định 175/2024/NĐ-CP** đẩy mạnh phân cấp, số hóa và đơn giản hóa thủ tục. Tuy nhiên, dù chứng chỉ hành nghề Giám đốc QLDA không còn bắt buộc, **trách nhiệm về chất lượng và an toàn công trình vẫn không thay đổi**. Việc thuê đại diện chuyên môn độc lập cho dự án nhà ở riêng lẻ vẫn là quyết định đúng đắn để bảo vệ tài sản tích lũy cả đời.
 
 > *Xây nhà không khó, không khổ - chỉ sợ sai cách.*
 
