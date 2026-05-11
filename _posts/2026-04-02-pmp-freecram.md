@@ -2,7 +2,7 @@
 title: "PMP Project Management Professional Exam 2025 (Version e7002) - Comprehensive Review"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-05-09 10:00:00 +0700
+date: 2026-04-02 10:00:00 +0700
 layout: single
 featured: true
 toc: true
