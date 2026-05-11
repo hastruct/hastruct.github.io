@@ -542,7 +542,7 @@
 /* Cụm WhatsApp: Đỏ */
 .hero-contact-wrapper .c-item:nth-child(1), 
 .hero-contact-wrapper .c-item:nth-child(1) a {
-  color: #000000 !important; /* WhatsApp: Navy */
+  color: #FFD700 !important; /* WhatsApp: Gold */
 }
 
 /* Cụm Email: Xanh Navy */
