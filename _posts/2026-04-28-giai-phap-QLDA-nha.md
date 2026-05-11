@@ -174,9 +174,9 @@ Một tin nhắn ngắn gọn *"Các anh cứ làm theo tiến độ"* - về b�
 
 #### Câu chuyện điển hình
 
-> Chủ nhà lập kế hoạch xây căn nhà 2 tầng mái Thái với ngân sách **1 tỷ đồng**. Khi công trình hoàn thành khoảng 50% khối lượng, chi phí thực tế đã tiêu tốn gần **2 tỷ**. Điều đáng lo hơn là chủ nhà không thể xác định được tiền đã đội ở hạng mục nào, giai đoạn nào - vì không có dự toán chi tiết theo đầu việc làm cơ sở đối chiếu.
+> Chủ nhà lập kế hoạch xây căn nhà 2 tầng mái Thái với ngân sách **1,5 tỷ đồng**. Khi công trình hoàn thành khoảng 80% khối lượng, chi phí thực tế đã tiêu tốn gần **2 tỷ**. Điều đáng lo hơn là chủ nhà không thể xác định được tiền đã đội ở hạng mục nào, giai đoạn nào, vì không có dự toán chi tiết theo đầu việc làm cơ sở đối chiếu.
 >
-> Đến giai đoạn hoàn thiện mới lộ ra các kết cấu bị sai vị trí, bị lệch so với bản vẽ thiết kế. Nhiều công trình đưa vào sử dụng chưa được một năm đã xuất hiện tình trạng **thấm dột, nứt tường** - sửa thì tốn kém, không sửa thì ảnh hưởng đến chất lượng sống suốt nhiều năm.
+> Đến giai đoạn hoàn thiện mới ộ ra các kết cấu bị sai vị trí, bị lệch so với bản vẽ thiết kế. Nhiều công trình đưa vào sử dụng chưa được một năm đã xuất hiện tình trạng **thấm dột, nứt tường**, sửa thì tốn kém, không sửa thì ảnh hưởng đến chất lượng sống suốt nhiều năm.
 
 #### Nguyên lý Cost of Quality
 
@@ -204,43 +204,43 @@ Philip Crosby (1979) và Joseph Juran phát triển nguyên lý **"Cost of Quali
 | Công cụ | Chức năng |
 |---------|-----------|
 | **Checklist nghiệm thu** | Áp dụng cho từng giai đoạn thi công (xem chi tiết tại Mục 5). |
-| **Sổ tay vật liệu** *(material submittal log)* | Danh mục và mẫu vật liệu đã được chủ đầu tư phê duyệt trước khi đưa vào công trình. |
-| **Biểu mẫu yêu cầu nghiệm thu** *(Inspection Request – IR)* | Mẫu chuẩn để nhà thầu gửi yêu cầu, giám sát xác nhận trước khi thi công từng công đoạn. |
-| **Hồ sơ ảnh** *(photo log)* | Chụp và lưu trữ ảnh các công đoạn ẩn trước khi che kín - bằng chứng kỹ thuật quan trọng. |
+| **Sổ tay vật liệu** | Danh mục và mẫu vật liệu đã được chủ đầu tư phê duyệt trước khi đưa vào công trình. |
+| **Biểu mẫu yêu cầu nghiệm thu** | Mẫu chuẩn để nhà thầu gửi yêu cầu, giám sát xác nhận trước khi thi công từng công đoạn. |
+| **Hồ sơ ảnh** | Chụp và lưu trữ ảnh các công đoạn ẩn trước khi che kín - bằng chứng kỹ thuật quan trọng. |
 
 > 💡 *Chi phí và chất lượng không tự quản lý được - nếu chủ đầu tư không chủ động kiểm soát từ đầu, chính công trình sẽ dạy bạn bài học đó bằng tiền thật.*
 
 ---
 
-## 4. Khung Giải Pháp 5 Trụ Cột
+## 4. Khung Giải Pháp 
 
 Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp **5 Pillars Framework** - tham chiếu từ **PMI PMBOK 7th Edition** và **RIBA Plan of Work 2020**, hiệu chỉnh phù hợp với đặc thù công trình nhà ở riêng lẻ tại Việt Nam:
 
-### 📐 Trụ cột 1 - Quy hoạch & Thiết kế
+### 1. Quy hoạch & Thiết kế
 
 - Khảo sát địa chất công trình trước khi thiết kế móng.
 - Hồ sơ thiết kế gồm đầy đủ 3 bộ: **kiến trúc, kết cấu, MEP** - không chấp nhận "thiết kế trên giấy A4".
 - Phối hợp đa ngành (*clash detection*) giữa kiến trúc – kết cấu – MEP trước khi triển khai thi công.
 
-### 📋 Trụ cột 2 - Hợp đồng & Pháp lý
+### 2. Hợp đồng & Pháp lý
 
 - Hợp đồng phải có: bản vẽ thiết kế đính kèm, BoQ chi tiết, danh mục vật tư cụ thể (chủng loại, hãng, mã), tiến độ thi công, điều khoản thanh toán theo nghiệm thu, phạt chậm tiến độ, bảo hành kết cấu chính theo Luật Xây dựng.
 - Quy định rõ **Hold Points / Witness Points** trong hợp đồng.
 - Đảm bảo có giấy phép xây dựng và hồ sơ pháp lý đầy đủ theo **Nghị định 175/2024/NĐ-CP**.
 
-### 💰 Trụ cột 3 - Quản lý Chi phí
+### 3. Quản lý Chi phí
 
 - Áp dụng phương pháp **Earned Value Management (EVM)** đơn giản: theo dõi % khối lượng hoàn thành so với % chi phí đã thanh toán.
 - Sổ theo dõi phát sinh: mọi đề xuất phát sinh phải có dự toán điều chỉnh và phê duyệt bằng văn bản trước khi thi công.
 - Quỹ dự phòng **10–15%** được kiểm soát chặt.
 
-### 🏗️ Trụ cột 4 - Quản lý Chất lượng
+### 4. Quản lý Chất lượng
 
 - Lập **Quality Plan**: danh mục các điểm kiểm tra (**ITP – Inspection and Test Plan**) cho từng cấu kiện.
 - Thử nghiệm vật liệu đầu vào: thép (kéo nén), bê tông (mẫu nén), gạch (cường độ, độ hút nước).
-- Hồ sơ ảnh các công đoạn ẩn - chụp đầy đủ trước khi che kín.
+- Hồ sơ ảnh các công đoạn ẩn, chụp đầy đủ trước khi che kín.
 
-### 📅 Trụ cột 5 - Quản lý Tiến độ & Truyền thông
+### 5. Quản lý Tiến độ & Truyền thông
 
 - Tổng tiến độ **Gantt + Dự kiến 3 tuần**.
 - Họp giao ban tuần với biên bản chuẩn (**weekly Meeting**).
@@ -364,7 +364,7 @@ Tổng nghiệm thu, lập hồ sơ hoàn công, theo dõi bảo hành và xử 
 - **Thông tư số 11/2021/TT-BXD** — Hướng dẫn xác định và quản lý chi phí đầu tư xây dựng.
 - **Thông tư số 12/2021/TT-BXD** — Định mức xây dựng (bao gồm Phụ lục VIII — định mức chi phí QLDA và tư vấn).
 
-> ℹ️ **Cập nhật:** Bộ Xây dựng đang trình Chính phủ **8 Nghị định và Thông tư** hướng dẫn Luật XD 2025 trong tháng 4/2026; chủ đầu tư cần theo dõi văn bản thay thế ND 175/2024 sẽ được ban hành tới đây.
+> **Cập nhật:** Bộ Xây dựng đang trình Chính phủ **8 Nghị định và Thông tư** hướng dẫn Luật XD 2025 trong tháng 4/2026; chủ đầu tư cần theo dõi văn bản thay thế ND 175/2024 sẽ được ban hành tới đây.
 
 ### Tiêu chuẩn & Quy chuẩn kỹ thuật Việt Nam (TCVN / QCVN)
 
@@ -424,4 +424,4 @@ Bối cảnh pháp lý đang thay đổi mạnh mẽ — **Luật Xây dựng 13
 
 ---
 
-*© 2026 HydrostrucAI - Tư vấn Quản lý Dự án & Giám sát Thi công*
+*© 2026 HydrostrucAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật*
