@@ -31,7 +31,7 @@ tags:
     Nghị định 175,
     LOD - LOI
   ]
-excerpt: "> *Mô hình BIM tốt nhất không phải mô hình đẹp nhất, mà là mô hình được dùng nhiều nhất.*. Một số dự án hạ tầng và thủy lợi tại Việt Nam triển khai BIM nhưng kết quả chỉ dừng ở 'mô hình 3D đẹp'. Bài viết phân tích chuyên sâu vì sao BIM hạ tầng khác hoàn toàn BIM dân dụng, vai trò trọng tâm của Điều phối (Coordination) và CDE, framework lựa chọn phần mềm theo bài toán thực, cập nhật theo TCVN 14177-1&2:2024, Quyết định 347-348/BXD và Nghị định 175/2024/NĐ-CP."
+excerpt: "*Mô hình BIM tốt nhất không phải mô hình đẹp nhất, mà là mô hình được dùng nhiều nhất.*. Một số dự án hạ tầng và thủy lợi tại Việt Nam triển khai BIM nhưng kết quả chỉ dừng ở 'mô hình 3D đẹp'. Bài viết phân tích chuyên sâu vì sao BIM hạ tầng khác hoàn toàn BIM dân dụng, vai trò trọng tâm của Điều phối (Coordination) và CDE, framework lựa chọn phần mềm theo bài toán thực tế."
 header:
   overlay_color: "#1b263b"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
