@@ -352,7 +352,46 @@ Tổng nghiệm thu, lập hồ sơ hoàn công, theo dõi bảo hành và xử 
 
 ---
 
-## 7. Tài Liệu Tham Khảo
+## Kết Luận
+
+Xây nhà là hành trình đầu tư lớn nhất trong cuộc đời của hầu hết mọi người. Sự thất bại không đến từ việc thiếu tiền hay thiếu nhà thầu tốt - mà đến từ việc thiếu **hệ thống quản lý** phù hợp.
+
+Ba sai lầm được phân tích trong bài viết này đều có một điểm chung: **chúng hoàn toàn có thể phòng tránh được** nếu chủ đầu tư hiểu rõ quy trình, thiết lập cơ chế giám sát và dùng đúng công cụ quản lý ngay từ đầu.
+
+Bối cảnh pháp lý đang thay đổi mạnh mẽ: **Luật Xây dựng 135/2025** (hiệu lực 01/7/2026) cùng **Nghị định 175/2024/NĐ-CP** đẩy mạnh phân cấp, số hóa và đơn giản hóa thủ tục. Tuy nhiên, dù chứng chỉ hành nghề Giám đốc QLDA không còn bắt buộc, **trách nhiệm về chất lượng và an toàn công trình vẫn không thay đổi**. Việc thuê đại diện chuyên môn độc lập cho dự án nhà ở riêng lẻ vẫn là quyết định đúng đắn để bảo vệ tài sản tích lũy cả đời.
+
+> *Xây nhà không khó, không khổ, chỉ sợ sai cách.*
+
+---
+
+## Bạn đang chuẩn bị xây nhà hoặc đang gặp vấn đề giữa chừng?
+
+Hầu hết chủ nhà chỉ tìm đến tư vấn độc lập sau khi vấn đề đã xảy ra như đội vốn, tranh chấp với nhà thầu, hoặc phát hiện lỗi kỹ thuật lúc gần hoàn thiện. Chi phí xử lý lúc đó cao hơn nhiều so với phòng ngừa từ đầu.
+
+HydrostructAI cung cấp dịch vụ **Owner's Representative** cho chủ nhà xây nhà riêng lẻ: đại diện kỹ thuật độc lập, không liên quan đến nhà thầu thi công, không có xung đột lợi ích.
+
+Cụ thể, có thể hỗ trợ:
+
+- Rà soát hồ sơ thiết kế và bảng dự toán trước khi ký hợp đồng thi công
+- Thiết lập ITP (Inspection Test Plan) và checklist nghiệm thu theo TCVN cho từng giai đoạn
+- Tham gia nghiệm thu các công đoạn ẩn: cốt thép, cốp pha, hệ thống MEP trước khi lấp
+- Xem xét phát sinh và tranh chấp với nhà thầu dựa trên hồ sơ hợp đồng thực tế
+
+**Liên hệ:**
+
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) -> Gửi mô tả ngắn giai đoạn dự án và vướng mắc cụ thể
+- Liên hệ: [WhatsApp](https://wa.me/84374874142) —> trao đổi nhanh trước khi quyết định
+
+> Nếu bạn đang ở giai đoạn trước khi ký hợp đồng với nhà thầu, đó là thời điểm tốt nhất để hỏi, không phải sau khi đã đổ bê tông.
+
+---
+
+*© 2026 HydrostrucAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật*
+
+---
+
+
+## Tài Liệu Tham Khảo
 
 ### Căn cứ pháp lý (cập nhật 2026)
 
@@ -411,39 +450,3 @@ Tổng nghiệm thu, lập hồ sơ hoàn công, theo dõi bảo hành và xử 
 - [construction-management topics](https://github.com/topics/construction-management) - Template Excel BoQ, tiến độ, quản lý nhà thầu.
 
 ---
-
-## Kết Luận
-
-Xây nhà là hành trình đầu tư lớn nhất trong cuộc đời của hầu hết mọi người. Sự thất bại không đến từ việc thiếu tiền hay thiếu nhà thầu tốt - mà đến từ việc thiếu **hệ thống quản lý** phù hợp.
-
-Ba sai lầm được phân tích trong bài viết này đều có một điểm chung: **chúng hoàn toàn có thể phòng tránh được** nếu chủ đầu tư hiểu rõ quy trình, thiết lập cơ chế giám sát và dùng đúng công cụ quản lý ngay từ đầu.
-
-Bối cảnh pháp lý đang thay đổi mạnh mẽ - **Luật Xây dựng 135/2025** (hiệu lực 01/7/2026) cùng **Nghị định 175/2024/NĐ-CP** đẩy mạnh phân cấp, số hóa và đơn giản hóa thủ tục. Tuy nhiên, dù chứng chỉ hành nghề Giám đốc QLDA không còn bắt buộc, **trách nhiệm về chất lượng và an toàn công trình vẫn không thay đổi**. Việc thuê đại diện chuyên môn độc lập cho dự án nhà ở riêng lẻ vẫn là quyết định đúng đắn để bảo vệ tài sản tích lũy cả đời.
-
-> *Xây nhà không khó, không khổ - chỉ sợ sai cách.*
-
----
-
-## Bạn đang chuẩn bị xây nhà hoặc đang gặp vấn đề giữa chừng?
-
-Hầu hết chủ nhà chỉ tìm đến tư vấn độc lập sau khi vấn đề đã xảy ra — đội vốn, tranh chấp với nhà thầu, hoặc phát hiện lỗi kỹ thuật lúc gần hoàn thiện. Chi phí xử lý lúc đó cao hơn nhiều so với phòng ngừa từ đầu.
-
-HydrostructAI cung cấp dịch vụ **Owner's Representative** cho chủ nhà xây nhà riêng lẻ: đại diện kỹ thuật độc lập, không liên quan đến nhà thầu thi công, không có xung đột lợi ích.
-
-Cụ thể, có thể hỗ trợ:
-
-- Rà soát hồ sơ thiết kế và bảng dự toán trước khi ký hợp đồng thi công
-- Thiết lập ITP (Inspection Test Plan) và checklist nghiệm thu theo TCVN cho từng giai đoạn
-- Tham gia nghiệm thu các công đoạn ẩn: cốt thép, cốp pha, hệ thống MEP trước khi lấp
-- Xem xét phát sinh và tranh chấp với nhà thầu dựa trên hồ sơ hợp đồng thực tế
-
-**Liên hệ:**
-
-- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) Gửi mô tả ngắn giai đoạn dự án và vướng mắc cụ thể
-- Liên hệ: [WhatsApp](https://wa.me/84374874142) — trao đổi nhanh trước khi quyết định
-
-> Nếu bạn đang ở giai đoạn trước khi ký hợp đồng với nhà thầu, đó là thời điểm tốt nhất để hỏi — không phải sau khi đã đổ bê tông.
-
----
-
-*© 2026 HydrostrucAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật*
