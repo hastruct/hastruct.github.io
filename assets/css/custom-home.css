@@ -397,6 +397,10 @@
   transform: translateY(-2px);
 }
 
+.page__lead {
+  color: #9ca3af;   /* trắng hơn, đổi thành #d1d5db nếu cần nhạt hơn nữa */
+}
+
 .post-card__thumb-link {
   flex-shrink: 0;
   display: block;
