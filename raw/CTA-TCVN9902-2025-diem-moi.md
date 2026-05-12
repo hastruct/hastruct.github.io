@@ -18,8 +18,8 @@ Có thể liên hệ trực tiếp để trao đổi kỹ thuật.
 
 **Liên hệ:**
 
-- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) — mô tả ngắn dự án và vấn đề kỹ thuật đang gặp
-- WhatsApp: [HST.AI](https://chat.whatsapp.com/Dg8hN1twzuzFRT5tlFL18W) — trao đổi nhanh trong nhóm kỹ sư thủy lợi
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) -> mô tả ngắn dự án và vấn đề kỹ thuật đang gặp
+- Liên hệ: [WhatsApp](https://wa.me/84374874142) ->  trao đổi nhanh trong nhóm kỹ sư thủy lợi
 
 > Câu hỏi kỹ thuật liên quan đến tiêu chuẩn không mất phí tư vấn ban đầu.
 

@@ -67,11 +67,11 @@ Calcpad cho phép bạn:
 
 ### Tại sao dùng Calcpad?
 
-- 📊 **Rõ ràng:** Mọi công thức và kết quả đều nhìn thấy trong báo cáo
-- 🔄 **Tái sử dụng:** Thay đổi giá trị đầu vào → kết quả tự động cập nhật
-- 📁 **Dễ lưu trữ:** Một file `.cpd` chứa mọi thứ — công thức, tính toán, báo cáo
-- 🔢 **FEM native:** Hỗ trợ ma trận hiệu năng cao (`hp`), giải `Kd = F` trực tiếp
-- ⚡ **Nhanh:** Viết công thức nhanh hơn Excel, dễ hơn Python cho kỹ sư
+- **Rõ ràng:** Mọi công thức và kết quả đều nhìn thấy trong báo cáo
+- **Tái sử dụng:** Thay đổi giá trị đầu vào → kết quả tự động cập nhật
+- **Dễ lưu trữ:** Một file `.cpd` chứa mọi thứ — công thức, tính toán, báo cáo
+- **FEM native:** Hỗ trợ ma trận hiệu năng cao (`hp`), giải `Kd = F` trực tiếp
+- **Nhanh:** Viết công thức nhanh hơn Excel, dễ hơn Python cho kỹ sư
 
 ### Calcpad vs. Các công cụ khác
 
@@ -86,7 +86,7 @@ Calcpad cho phép bạn:
 
 ---
 
-## 🎯 Tính năng chính
+## Tính năng chính
 
 | Tính năng | Mô tả |
 |-----------|-------|
@@ -105,7 +105,7 @@ Calcpad cho phép bạn:
 
 ---
 
-## 🚀 Bắt đầu nhanh (5 Phút)
+## Bắt đầu nhanh
 
 ### Bước 1: Tạo File `.cpd`
 
@@ -156,7 +156,7 @@ wkhtmltopdf --page-size A4 my_analysis.html my_analysis.pdf
 
 ---
 
-## 📝 Cú pháp Calcpad cơ bản
+## Cú pháp Calcpad cơ bản
 
 ### 1. Khai báo biến & phép toán
 
@@ -298,7 +298,7 @@ A_s = if(A_s_req ≥ A_s_min; A_s_req; A_s_min) "cm²"
 
 ---
 
-## ⚙️ Lập trình Calcpad — Tư duy kỹ sư
+## Lập trình Calcpad - Tư duy kỹ sư
 
 ### Hàm tự định nghĩa (Custom Functions)
 
@@ -896,7 +896,7 @@ wkhtmltopdf --page-size A4 \
 
 ---
 
-## ⚡ Mẹo & Thủ thuật
+## Mẹo & Thủ thuật
 
 ### 1. Tái sử dụng Template
 
@@ -954,7 +954,7 @@ h = {0.6|"m"|Chiều cao dầm}
 
 ---
 
-## 🛠 Xử lý sự cố
+## Xử lý sự cố
 
 | Vấn đề | Nguyên nhân | Giải pháp |
 |--------|-------------|-----------|
@@ -968,7 +968,7 @@ h = {0.6|"m"|Chiều cao dầm}
 
 ---
 
-## 👨‍💼 Hỗ trợ
+## Hỗ trợ
 
 **Câu hỏi thường gặp:**
 
@@ -979,14 +979,33 @@ h = {0.6|"m"|Chiều cao dầm}
 5. Giải ma trận: dùng phép chia trái `d = K \ F`
 
 **Tài nguyên:**
-- 📖 Documentation: [calcpad.eu/docs](https://www.calcpad.eu/docs)
-- 📐 Thư viện worksheet: [calcpad.eu](https://calcpad.eu)
-- 💻 GitHub: [github.com/Proektsoftbg/Calcpad](https://github.com/Proektsoftbg/Calcpad)
-- 🏗️ Ví dụ FEM: [hydrostructai.com/calcpad_engineering](https://hydrostructai.com/calcpad_engineering/calcpad.html)
+- Documentation: [calcpad.eu/docs](https://www.calcpad.eu/docs)
+- Thư viện worksheet: [calcpad.eu](https://calcpad.eu)
+- GitHub: [github.com/Proektsoftbg/Calcpad](https://github.com/Proektsoftbg/Calcpad)
+- Ví dụ FEM: [hydrostructai.com/calcpad_engineering](https://hydrostructai.com/calcpad_engineering/calcpad.html)
 
 ---
 
-## 📚 Tài liệu Tham khảo
+## Dùng Calcpad cho dự án thực? Có thể liên hệ để trao đổi thêm
+
+Bài viết này mô tả Calcpad ở mức kỹ thuật. Nếu bạn đang cân nhắc dùng nó cho tính toán kết cấu thực tế, đặc biệt là tính cốt thép theo TCVN 5574:2018 hoặc phân tích FEM bản sàn và muốn xem template `.cpd` cụ thể trước khi tự build, có thể liên hệ trực tiếp.
+
+HydrostructAI đang sử dụng Calcpad trong quy trình tính toán kỹ thuật nội bộ và có thể chia sẻ template cho một số bài toán phổ biến: dầm đơn, bản sàn phẳng, tính toán móng cọc.
+
+**Liên hệ:**
+
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) -> ghi rõ loại bài toán và tiêu chuẩn áp dụng
+- Liên hệ: [WhatsApp](https://wa.me/84374874142) -> trao đổi kỹ thuật nhanh trong nhóm kỹ sư
+
+Ngoài ra, nếu bạn đang xây dựng quy trình tính toán có kiểm tra độc lập (peer review) cho dự án có yêu cầu kiểm soát chất lượng cao, đây cũng là mảng HydrostructAI có thể hỗ trợ.
+
+---
+
+*© 2026 HydrostructAI — Tư vấn Quản lý Dự án & Ứng dụng Kỹ thuật*
+
+---
+
+## Tài liệu Tham khảo
 
 ### Phần mềm & Tài liệu Calcpad
 
@@ -1033,5 +1052,3 @@ h = {0.6|"m"|Chiều cao dầm}
 [18] Wexler, N., *Engineering Calculation Software Comparison: Mathcad vs. Calcpad vs. Excel*, Structural Engineering Forum, 2023.
 
 ---
-
-*© 2026 HydrostructAI — Tư vấn Quản lý Dự án & Ứng dụng Kỹ thuật.*

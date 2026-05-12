@@ -440,7 +440,7 @@ Cụ thể, có thể hỗ trợ:
 **Liên hệ:**
 
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) Gửi mô tả ngắn giai đoạn dự án và vướng mắc cụ thể
-- Phone: [WhatsApp](https://wa.me/84374874142) — trao đổi nhanh trước khi quyết định
+- Liên hệ: [WhatsApp](https://wa.me/84374874142) — trao đổi nhanh trước khi quyết định
 
 > Nếu bạn đang ở giai đoạn trước khi ký hợp đồng với nhà thầu, đó là thời điểm tốt nhất để hỏi — không phải sau khi đã đổ bê tông.
 
