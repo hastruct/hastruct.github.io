@@ -132,7 +132,7 @@ Yêu cầu thông tin trao đổi (EIR) thường ghi LOD 200-300 cho hạ tần
 
 ---
 
-## 3. Điều phối - Trọng tâm Thực sự của BIM Hạ tầng
+## 3. Điều phối - Trọng tâm thực sự của BIM Hạ tầng
 
 Đây là phần **quyết định** giá trị thực của BIM trong dự án hạ tầng - thủy lợi. Mô hình hóa chỉ là khâu sản xuất; điều phối mới là khâu tạo ra giá trị.
 
@@ -154,7 +154,7 @@ Quyết định 347/QĐ-BXD phân loại va chạm thành ba nhóm cần có quy
 - **Va chạm mềm:** Một đối tượng nằm trong vùng ảnh hưởng của đối tượng khác - khoảng hở bảo trì không đủ, không gian thao tác van không đảm bảo. **Medium** - cần đánh giá theo case-by-case.
 - **Va chạm 4D:** Xung đột về tiến độ không gian - đào kênh chưa lấp đã phải đặt cống bên cạnh, không đủ không gian thi công. **Critical** với dự án thủy lợi đa hạng mục.
 
-> 💡 **Không có Clash Matrix, Clash Report chỉ là một danh sách noise.** Bộ môn này không biết clash của bộ môn kia có quan trọng không, ai phải sửa, sửa khi nào - và thế là tất cả cùng để đó.
+> **Nếu không có ma trận phối hợp bộ môn thì báo cáo va chạm (Clash Report) chỉ là một mớ hỗn độn các thông tin nhiễu..** Bộ môn này không biết va chạm của bộ môn kia có quan trọng không, ai phải sửa, sửa khi nào và thế là tất cả cùng để đó.
 
 ### 3.2. Vòng lặp phối hợp phải được cơ chế hóa
 
@@ -206,7 +206,7 @@ Theo TCVN 14177-1:2024 và ISO 19650-1:2018, CDE phải được tổ chức the
 | **Published** | Đã được Chủ đầu tư phê duyệt chính thức | Tất cả các bên + lưu trữ pháp lý |
 | **Archive** | Lưu trữ lịch sử các phiên bản | Tham khảo khi tranh chấp / kiểm toán |
 
-> ⚠️ **Vấn đề thực tế tại VN:** Nhiều dự án bỏ qua bước Shared và phát hành thẳng từ WIP lên Published. Hậu quả là các bộ môn khác không có cơ hội phản biện chéo trước khi tài liệu trở thành chính thức - và xung đột chỉ được phát hiện ở công trường.
+> **Vấn đề thực tế tại VN:** Nhiều dự án bỏ qua bước Shared và phát hành thẳng từ WIP lên Published. Hậu quả là các bộ môn khác không có cơ hội phản biện chéo trước khi tài liệu trở thành chính thức - và xung đột chỉ được phát hiện ở công trường.
 
 ### 4.2. Tính đồng bộ của CDE là bài toán con người, không phải công nghệ
 
@@ -232,7 +232,7 @@ Khi dự án có nhiều gói thầu (như Metro số 2 TP.HCM hoặc các dự 
 
 ## 5. Phần mềm - Chọn theo Bài toán, không Chọn theo Thương hiệu
 
-> 📌 *Phần này chỉ có vai trò phụ. Vấn đề phần mềm trở nên đơn giản khi ba nền tảng (mô hình hóa, điều phối, CDE) được chọn theo bài toán cụ thể, chứ không phải theo brand.*
+> *Phần này chỉ có vai trò phụ. Vấn đề phần mềm trở nên đơn giản khi ba nền tảng (mô hình hóa, điều phối, CDE) được chọn theo bài toán cụ thể, chứ không phải theo brand.*
 
 ### 5.1. Ba nhóm công việc - Ba nhóm công cụ
 
@@ -253,7 +253,7 @@ Khi dự án có nhiều gói thầu (như Metro số 2 TP.HCM hoặc các dự 
 | Chi phí license/năm | ~$3,500 (gói AEC Collection) | ~$4,000 - $6,000 |
 | Năng lực nhân sự VN | Phổ biến | Hạn chế |
 
-> 💡 **Khuyến nghị HydrostructAI:** Với **đa số dự án thủy lợi vừa và nhỏ tại Việt Nam**, Revit kết hợp Civil 3D đủ để đạt LOD 300-350 và đủ để Clash Detection có giá trị thực. Chỉ đầu tư Tekla khi dự án có hạng mục kết cấu yêu cầu LOD 400+ (như đập bê tông cường độ cao, âu tàu lớn).
+> **Khuyến nghị HydrostructAI:** Với **đa số dự án thủy lợi vừa và nhỏ tại Việt Nam**, Revit kết hợp Civil 3D đủ để đạt LOD 300-350 và đủ để Clash Detection có giá trị thực. Chỉ đầu tư Tekla khi dự án có hạng mục kết cấu yêu cầu LOD 400+ (như đập bê tông cường độ cao, âu tàu lớn).
 
 ### 5.3. Tiêu chí quyết định thực sự
 
@@ -279,7 +279,7 @@ Không phải tính năng trên catalog - mà là ba câu hỏi rất cụ thể
 | **BIM Coordinator** | **Chủ trì cuộc họp phối hợp**, tạo mô hình tích hợp, kiểm tra xung đột, gửi báo cáo, đảm bảo chất lượng mô hình các bộ môn |
 | **BIM Modeller** | Cập nhật mô hình thành phần từ kết quả họp phối hợp |
 
-> 💬 *"Một BIM Coordinator không có thẩm quyền ra quyết định kỹ thuật thì Clash Report cũng chỉ nằm trong folder. Đây là vai trò người vận hành thật sự của hệ thống BIM - và phải được trao đủ quyền để làm việc đó."*
+> *"Một BIM Coordinator không có thẩm quyền ra quyết định kỹ thuật thì Clash Report cũng chỉ nằm trong folder. Đây là vai trò người vận hành thật sự của hệ thống BIM - và phải được trao đủ quyền để làm việc đó."*
 
 ### 6.2. Cụ thể hóa Naming Convention và Phân loại theo TCVN 14176-2:2024
 
@@ -341,47 +341,7 @@ HydrostructAI tư vấn chuyên biệt BIM cho công trình hạ tầng và th�
 
 ---
 
-## Danh mục tài liệu tham khảo
-
-[^1]: Eastman, C., Teicholz, P., Sacks, R., & Liston, K. (2018). *BIM Handbook (3rd ed.).* Chapter 6 - Infrastructure BIM. Wiley.
-
-[^2]: Nguyễn Phước Thiện (2025). *Hướng dẫn chuyển đổi số cho ngành xây dựng bằng BIM.* Chương 4 - Phạm vi áp dụng ISO 19650 cho hạ tầng tuyến tính (Horizontal Entity).
-
-[^3]: Viện Kinh tế Xây dựng - Bộ Xây dựng (2024). *Khảo sát thực trạng áp dụng BIM tại Việt Nam* - Báo cáo nghiên cứu xây dựng mô hình BIM xây dựng.
-
-[^4]: Bộ Xây dựng (2021). *Quyết định 348/QĐ-BXD - Hướng dẫn chung áp dụng BIM*, Mục 7.5 - Hệ thống tọa độ; Quyết định 347/QĐ-BXD, Mục về thiết lập điểm gốc dự án.
-
-[^5]: Nguyễn Quang Hoài, Trần Văn Tâm (2021). *Ứng dụng BIM cho gói thầu Di dời công trình hạ tầng ngầm quanh các nhà ga tuyến Metro 2, TP.HCM.* iDECO Việt Nam.
-
-[^6]: TCVN 14177-1:2024 - Mục về Information Container và phân rã mô hình theo bộ môn (Hình A.2 - Diễn giải minh họa chia tách đơn vị thông tin).
-
-[^7]: Tài liệu EIR - Dự án KDTM DL, ST, ND, VCGT huyện Tiên Du (Tiểu khu 112.1), Chương 4 - Mục tiêu và nội dung áp dụng BIM.
-
-[^8]: Matejka, P., & Sabart, D. (2018). *Categorization of clashes and their impacts on Construction Projects* (được dẫn chiếu trong Quyết định 347/QĐ-BXD).
-
-[^9]: Bộ Xây dựng (2021). *Quyết định 347/QĐ-BXD - Hướng dẫn chi tiết áp dụng BIM cho công trình dân dụng và hạ tầng kỹ thuật đô thị*, Mục 4 - Hướng dẫn phối hợp và xử lý xung đột.
-
-[^10]: TCVN 14177-2:2024 - Quy trình quản lý thông tin trong giai đoạn chuyển giao tài sản (tương đương ISO 19650-2:2018).
-
-[^11]: Quyết định 347/QĐ-BXD, Mục 4.3 - Tần suất phối hợp; Quyết định 348/QĐ-BXD, Mục 7.1 - Quy trình phối hợp.
-
-[^12]: HECII (2022). *Áp dụng BIM cho công trình thủy lợi* - Mô phỏng quá trình và tiến độ thi công.
-
-[^13]: TCVN 14177-1:2024 - Mục về Common Data Environment (CDE) và bốn khu vực trạng thái.
-
-[^14]: ISO 19650-1:2018 - Section 12 - Common data environment (CDE) solution and workflow.
-
-[^15]: BS 1192:2007 + A2:2016 - Collaborative production of architectural, engineering and construction information - Code of practice (cơ sở cho quy ước đặt tên file).
-
-[^16]: HECII (2022). *Áp dụng BIM cho công trình thủy lợi* - Phương thức phối hợp và lợi ích cho đơn vị quản lý vận hành.
-
-[^17]: TCVN 14177-2:2024 và Quyết định 347/QĐ-BXD, Mục 4.1 - Trách nhiệm trong việc phối hợp đa bộ môn.
-
-[^18]: TCVN 14176-2:2024 - Khung phân loại thông tin về công trình xây dựng (biên soạn trên cơ sở ISO 12006-2:2015).
-
-[^19]: ISO 19650-3:2020 - Operational phase of the assets; Nguyễn Phước Thiện (2025). *Hướng dẫn chuyển đổi số* - Chương 6 về Asset Information Model (AIM).
-
-## Tài liệu khác
+## Tài liệu dự án 
 
 ### Căn cứ pháp lý
 
@@ -436,4 +396,47 @@ HydrostructAI tư vấn chuyên biệt BIM cho công trình hạ tầng và th�
 - [Speckle](https://github.com/specklesystems/speckle-server) - Nền tảng dữ liệu mở cho AEC, hỗ trợ Civil 3D, Revit, Tekla, Rhino.
 - [BlenderBIM Add-on](https://github.com/IfcOpenShell/IfcOpenShell/tree/v0.7.0/src/blenderbim) - Công cụ BIM mã nguồn mở dựa trên Blender.
 - [FreeCAD BIM Workbench](https://github.com/yorikvanhavre/BIM_Workbench) - Mô-đun BIM cho FreeCAD.
+
+---
+
+## Danh mục tài liệu tham khảo
+
+[^1]: Eastman, C., Teicholz, P., Sacks, R., & Liston, K. (2018). *BIM Handbook (3rd ed.).* Chapter 6 - Infrastructure BIM. Wiley.
+
+[^2]: Nguyễn Phước Thiện (2025). *Hướng dẫn chuyển đổi số cho ngành xây dựng bằng BIM.* Chương 4 - Phạm vi áp dụng ISO 19650 cho hạ tầng tuyến tính (Horizontal Entity).
+
+[^3]: Viện Kinh tế Xây dựng - Bộ Xây dựng (2024). *Khảo sát thực trạng áp dụng BIM tại Việt Nam* - Báo cáo nghiên cứu xây dựng mô hình BIM xây dựng.
+
+[^4]: Bộ Xây dựng (2021). *Quyết định 348/QĐ-BXD - Hướng dẫn chung áp dụng BIM*, Mục 7.5 - Hệ thống tọa độ; Quyết định 347/QĐ-BXD, Mục về thiết lập điểm gốc dự án.
+
+[^5]: Nguyễn Quang Hoài, Trần Văn Tâm (2021). *Ứng dụng BIM cho gói thầu Di dời công trình hạ tầng ngầm quanh các nhà ga tuyến Metro 2, TP.HCM.* iDECO Việt Nam.
+
+[^6]: TCVN 14177-1:2024 - Mục về Information Container và phân rã mô hình theo bộ môn (Hình A.2 - Diễn giải minh họa chia tách đơn vị thông tin).
+
+[^7]: Tài liệu EIR - Dự án KDTM DL, ST, ND, VCGT huyện Tiên Du (Tiểu khu 112.1), Chương 4 - Mục tiêu và nội dung áp dụng BIM.
+
+[^8]: Matejka, P., & Sabart, D. (2018). *Categorization of clashes and their impacts on Construction Projects* (được dẫn chiếu trong Quyết định 347/QĐ-BXD).
+
+[^9]: Bộ Xây dựng (2021). *Quyết định 347/QĐ-BXD - Hướng dẫn chi tiết áp dụng BIM cho công trình dân dụng và hạ tầng kỹ thuật đô thị*, Mục 4 - Hướng dẫn phối hợp và xử lý xung đột.
+
+[^10]: TCVN 14177-2:2024 - Quy trình quản lý thông tin trong giai đoạn chuyển giao tài sản (tương đương ISO 19650-2:2018).
+
+[^11]: Quyết định 347/QĐ-BXD, Mục 4.3 - Tần suất phối hợp; Quyết định 348/QĐ-BXD, Mục 7.1 - Quy trình phối hợp.
+
+[^12]: HECII (2022). *Áp dụng BIM cho công trình thủy lợi* - Mô phỏng quá trình và tiến độ thi công.
+
+[^13]: TCVN 14177-1:2024 - Mục về Common Data Environment (CDE) và bốn khu vực trạng thái.
+
+[^14]: ISO 19650-1:2018 - Section 12 - Common data environment (CDE) solution and workflow.
+
+[^15]: BS 1192:2007 + A2:2016 - Collaborative production of architectural, engineering and construction information - Code of practice (cơ sở cho quy ước đặt tên file).
+
+[^16]: HECII (2022). *Áp dụng BIM cho công trình thủy lợi* - Phương thức phối hợp và lợi ích cho đơn vị quản lý vận hành.
+
+[^17]: TCVN 14177-2:2024 và Quyết định 347/QĐ-BXD, Mục 4.1 - Trách nhiệm trong việc phối hợp đa bộ môn.
+
+[^18]: TCVN 14176-2:2024 - Khung phân loại thông tin về công trình xây dựng (biên soạn trên cơ sở ISO 12006-2:2015).
+
+[^19]: ISO 19650-3:2020 - Operational phase of the assets; Nguyễn Phước Thiện (2025). *Hướng dẫn chuyển đổi số* - Chương 6 về Asset Information Model (AIM).
+
 ---
