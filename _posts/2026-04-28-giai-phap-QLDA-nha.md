@@ -29,14 +29,14 @@ tags:
   ]
 excerpt: "Nhiều chủ nhà mắc sai lầm ngay từ đầu mà không biết. Phân tích chuyên sâu dưới góc nhìn kỹ sư xây dựng - 3 nhóm sai lầm điển hình, khung giải pháp 5 trụ cột và bộ checklist nghiệm thu theo TCVN, cập nhật theo Luật Xây dựng 2025 và Nghị định 175/2024/NĐ-CP."
 header:
-  overlay_color: "#1a1a2e"
-  overlay_filter: "linear-gradient(135deg, rgba(20, 30, 48, 0.85), rgba(36, 59, 85, 0.7))"
+  overlay_color: "#1b263b"
+  overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
   caption: "©  HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
 Thực tế, **Nhiều chủ nhà, chủ đầu tư** xây dựng công trình nhà ở riêng lẻ mắc sai lầm ngay từ giai đoạn đầu, và điều đáng nói là họ **không hề biết mình đang sai**. Sai lầm tích tụ qua từng quyết định nhỏ - *"tiền không mất một lần mà mất dần qua từng quyết định nhỏ của bạn"* và chỉ bộc lộ ở giai đoạn cuối hoặc sau khi bàn giao.
 
-Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất dưới góc nhìn kỹ sư xây dựng và quản lý dự án, đồng thời đề xuất khung giải pháp 5 trụ cột và bộ checklist nghiệm thu thực hành theo tiêu chuẩn TCVN, cập nhật theo **Luật Xây dựng 135/2025/QH15** (hiệu lực 01/7/2026) và **Nghị định 175/2024/NĐ-CP**.
+Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất dưới góc nhìn kỹ sư xây dựng và quản lý dự án, đồng thời đề xuất khung giải pháp 5 trụ cột và bộ checklist nghiệm thu thực hành theo TCVN, cập nhật theo **Luật Xây dựng 135/2025/QH15** (hiệu lực 01/7/2026) và **Nghị định 175/2024/NĐ-CP**.
 
 ---
 
@@ -372,17 +372,17 @@ HydrostructAI cung cấp dịch vụ **Owner's Representative** cho chủ nhà x
 
 Cụ thể, có thể hỗ trợ:
 
-- Rà soát hồ sơ thiết kế và bảng dự toán trước khi ký hợp đồng thi công
-- Thiết lập ITP (Inspection Test Plan) và checklist nghiệm thu theo TCVN cho từng giai đoạn
-- Tham gia nghiệm thu các công đoạn ẩn: cốt thép, cốp pha, hệ thống MEP trước khi lấp
-- Xem xét phát sinh và tranh chấp với nhà thầu dựa trên hồ sơ hợp đồng thực tế
+- Rà soát hồ sơ thiết kế và bảng dự toán trước khi ký hợp đồng thi công;
+- Lập kế hoạch kiểm tra & thử nghiệm (ITP) và danh mục nghiệm thu (Checklist) cho từng giai đoạn dự án;
+- Tham gia nghiệm thu các công đoạn ẩn: cốt thép, cốp pha, hệ thống điện, nước trước khi lấp;
+- Xem xét phát sinh và tranh chấp với nhà thầu dựa trên hồ sơ hợp đồng thực tế.
 
 **Liên hệ:**
 
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) -> Gửi mô tả ngắn giai đoạn dự án và vướng mắc cụ thể
-- Liên hệ: [WhatsApp](https://wa.me/84374874142) —> trao đổi nhanh trước khi quyết định
+- Liên hệ: [WhatsApp](https://wa.me/84374874142) —> Trao đổi nhanh trước khi quyết định
 
-> Nếu bạn đang ở giai đoạn trước khi ký hợp đồng với nhà thầu, đó là thời điểm tốt nhất để hỏi, không phải sau khi đã đổ bê tông.
+> Nếu bạn đang ở giai đoạn trước khi ký hợp đồng với nhà thầu, đó là thời điểm tốt nhất để hỏi, không phải sau khi đã đổ bê tông. Bạn vẫn đang băn khoăn về giải pháp? Đừng ngần ngại gửi mô tả tình huống qua email hay WhatsApp. Chúng tôi luôn sẵn sàng lắng nghe và giải đáp mọi thắc mắc kỹ thuật của bạn hoàn toàn miễn phí.
 
 ---
 

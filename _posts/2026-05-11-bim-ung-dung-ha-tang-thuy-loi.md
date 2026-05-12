@@ -33,8 +33,8 @@ tags:
   ]
 excerpt: "> *Mô hình BIM tốt nhất không phải mô hình đẹp nhất, mà là mô hình được dùng nhiều nhất.*. Một số dự án hạ tầng và thủy lợi tại Việt Nam triển khai BIM nhưng kết quả chỉ dừng ở 'mô hình 3D đẹp'. Bài viết phân tích chuyên sâu vì sao BIM hạ tầng khác hoàn toàn BIM dân dụng, vai trò trọng tâm của Điều phối (Coordination) và CDE, framework lựa chọn phần mềm theo bài toán thực, cập nhật theo TCVN 14177-1&2:2024, Quyết định 347-348/BXD và Nghị định 175/2024/NĐ-CP."
 header:
-  overlay_color: "#1a1a2e"
-  overlay_filter: "linear-gradient(135deg, rgba(20, 30, 48, 0.85), rgba(36, 59, 85, 0.7))"
+  overlay_color: "#1b263b"
+  overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
   caption: "© HydrostructAI - Tư vấn Mô hình hóa BIM & Điều phối Dự án hạ tầng, công trình thủy lợi"
 ---
 
@@ -300,7 +300,7 @@ BIM không kết thúc khi bàn giao công trình. Theo ISO 19650-3:2020 (đang 
 
 Dự án nào không thiết kế ngược từ đích AIM ngay từ giai đoạn EIR - thì mô hình BIM sẽ chỉ là sản phẩm phụ của giai đoạn thiết kế, và bị bỏ xó sau khi nghiệm thu.
 
-> ✅ **Điểm chốt:** Một dự án BIM hạ tầng thành công có ba cột mốc: **(1) Mô hình khả thi** ở giai đoạn thiết kế (đúng tọa độ, đúng phân rã, đủ LOD/LOI), **(2) Hệ thống điều phối đồng bộ** trong thi công (Clash Matrix + CDE workflow + 4D), **(3) AIM sống** trong vận hành (gắn dữ liệu bảo trì, lịch sử sửa chữa, IoT). Thiếu bất kỳ cột mốc nào, đầu tư vào BIM cũng không hoàn vốn được.
+> ✅ **Điểm chốt:** Một dự án BIM hạ tầng thành công có ba cột mốc: **(1) Mô hình khả thi** ở giai đoạn thiết kế (đúng tọa độ, đúng phân rã, đủ LOD/LOI), **(2) Hệ thống điều phối đồng bộ** trong thi công (Clash Matrix + CDE workflow + 4D), **(3) Mô hình thông tin AIM hiệu quả** trong vận hành (gắn dữ liệu bảo trì, lịch sử sửa chữa, IoT). Thiếu bất kỳ cột mốc nào, đầu tư vào BIM cũng không hoàn vốn được.
 
 ---
 
@@ -312,7 +312,7 @@ Ba điều kiện đã được phân tích trong bài viết: **mô hình khả
 
 Bối cảnh pháp lý đang chín muồi **Quyết định 258/QĐ-TTg** đã đưa BIM thành **bắt buộc** với công trình cấp I, cấp II từ 2023-2025; **TCVN 14177-1&2:2024** đã cung cấp khung tiêu chuẩn quốc gia tương đương ISO 19650; **Nghị định 175/2024/NĐ-CP** đã cập nhật cơ chế quản lý phù hợp. Vấn đề không còn là *"có nên dùng BIM không"* mà là *"dùng BIM thế nào để thực sự tạo giá trị"*.
 
-Câu trả lời nằm ở chỗ **hiểu đúng bản chất** BIM hạ tầng là hệ thống thông tin sống, không phải là sản phẩm 3D; là cơ chế phối hợp đa bên, không phải là một mô hình duy nhất; là quy trình kiểm soát thông tin xuyên vòng đời, không phải là một deliverable trong hồ sơ thiết kế.
+Câu trả lời nằm ở chỗ **hiểu đúng bản chất** BIM hạ tầng là hệ thống thông tin sống, không phải là sản phẩm 3D; là cơ chế phối hợp đa bên, không phải là một mô hình duy nhất; là quy trình kiểm soát thông tin xuyên vòng đời, không phải là một sản phẩm giao nộp trong hồ sơ thiết kế.
 
 > *Mô hình BIM tốt nhất không phải mô hình đẹp nhất mà là mô hình được dùng nhiều nhất.*
 
@@ -326,14 +326,14 @@ Nếu bạn vừa đọc đến đây, nhiều khả năng bạn đang đối m�
 - Đơn vị tư vấn thiết kế đang dựng mô hình BIM nhưng chưa thiết lập được quy trình CDE và phối hợp đa bộ môn thực sự hoạt động
 - Nhà thầu thi công đang tiếp nhận mô hình từ tư vấn nhưng không biết kiểm tra LOD/LOI có đúng yêu cầu hợp đồng không
 
-HydrostructAI tư vấn chuyên biệt BIM cho công trình hạ tầng và thủy lợi - trạm bơm, cống ngăn sông, đê điều, kênh mương - theo chuẩn ISO 19650 / TCVN 14177:2024. Không phải tư vấn lý thuyết: từ thiết lập BEP, dựng mô hình tích hợp đa bộ môn (Civil 3D + Revit + Tekla), đến vận hành CDE trên Autodesk Construction Cloud.
+HydrostructAI tư vấn chuyên biệt BIM cho công trình hạ tầng và thủy lợi như trạm bơm, cống ngăn sông, đê điều, kênh mương theo chuẩn ISO 19650 / TCVN 14177:2024. Không phải tư vấn lý thuyết mà từ thiết lập BEP, dựng mô hình tích hợp đa bộ môn (Civil 3D + Revit + Tekla), đến vận hành CDE trên Autodesk Construction Cloud.
 
 **Liên hệ trực tiếp:**
 
-- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) -> mô tả ngắn dự án, giai đoạn hiện tại, và vấn đề cụ thể bạn đang gặp
-- Liên hệ: [WhatsApp](https://wa.me/84374874142) -> trao đổi nhanh trước khi quyết định
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) -> Mô tả ngắn dự án, giai đoạn hiện tại, và vấn đề cụ thể bạn đang gặp
+- Liên hệ: [WhatsApp](https://wa.me/84374874142) -> Trao đổi nhanh trước khi quyết định
 
-> Nếu bạn chưa chắc mình cần tư vấn gì, gửi email mô tả tình huống. Câu hỏi kỹ thuật không mất phí tư vấn ban đầu.
+> Bạn vẫn đang băn khoăn về giải pháp? Đừng ngần ngại gửi mô tả tình huống qua email hay WhatsApp. Chúng tôi luôn sẵn sàng lắng nghe và giải đáp mọi thắc mắc kỹ thuật của bạn hoàn toàn miễn phí.
 
 ---
 
