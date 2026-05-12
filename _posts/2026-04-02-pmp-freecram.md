@@ -311,7 +311,7 @@ Còn nếu bạn cần tư vấn QLDA thực tế cho dự án đang triển kha
 
 **Liên hệ:**
 
-- WhatsApp: [HST.AI](https://chat.whatsapp.com/Dg8hN1twzuzFRT5tlFL18W) -> trao đổi kỹ thuật QLDA trong nhóm kỹ sư
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) ->  trao đổi kinh nghiệm QLDA và luyện thi PMP
 - Liên hệ: [WhatsApp](https://wa.me/84374874142) ->  cho câu hỏi cụ thể hơn về dự án thực
 
 ---
