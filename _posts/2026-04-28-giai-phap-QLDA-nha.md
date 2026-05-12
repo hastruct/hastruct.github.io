@@ -30,7 +30,7 @@ tags:
 excerpt: "Nhiều chủ nhà mắc sai lầm ngay từ đầu mà không biết. Phân tích chuyên sâu dưới góc nhìn kỹ sư xây dựng - 3 nhóm sai lầm điển hình, khung giải pháp 5 trụ cột và bộ checklist nghiệm thu theo TCVN, cập nhật theo Luật Xây dựng 2025 và Nghị định 175/2024/NĐ-CP."
 header:
   overlay_color: "#1a1a2e"
-  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  overlay_filter: "linear-gradient(135deg, rgba(20, 30, 48, 0.85), rgba(36, 59, 85, 0.7))"
   caption: "©  HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
