@@ -34,7 +34,7 @@ header:
   caption: "©  HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
-Thực tế, **Nhiều chủ nhà, chủ đầu tư** xây dựng công trình nhà ở riêng lẻ mắc sai lầm ngay từ giai đoạn đầu, và điều đáng nói là họ **không hề biết mình đang sai**. Sai lầm tích tụ qua từng quyết định nhỏ - *"tiền không mất một lần mà mất dần qua từng quyết định nhỏ của bạn"* - và chỉ bộc lộ ở giai đoạn cuối hoặc sau khi bàn giao.
+Thực tế, **Nhiều chủ nhà, chủ đầu tư** xây dựng công trình nhà ở riêng lẻ mắc sai lầm ngay từ giai đoạn đầu, và điều đáng nói là họ **không hề biết mình đang sai**. Sai lầm tích tụ qua từng quyết định nhỏ - *"tiền không mất một lần mà mất dần qua từng quyết định nhỏ của bạn"* và chỉ bộc lộ ở giai đoạn cuối hoặc sau khi bàn giao.
 
 Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất dưới góc nhìn kỹ sư xây dựng và quản lý dự án, đồng thời đề xuất khung giải pháp 5 trụ cột và bộ checklist nghiệm thu thực hành theo tiêu chuẩn TCVN, cập nhật theo **Luật Xây dựng 135/2025/QH15** (hiệu lực 01/7/2026) và **Nghị định 175/2024/NĐ-CP**.
 
@@ -70,8 +70,8 @@ Khác với các dự án xây dựng có chủ đầu tư là tổ chức (có 
 
 - Chủ đầu tư là **cá nhân**, không có chuyên môn xây dựng và thường mới làm nhà lần đầu trong đời.
 - Quy mô nhỏ (1–5 tỷ VNĐ) nhưng rủi ro tương đối lớn vì đó thường là **tài sản tích lũy cả đời người**.
-- Theo Luật Xây dựng và **Nghị định 175/2024/NĐ-CP**, nhà ở riêng lẻ ≤ 7 tầng hoặc dưới 250m² sàn **không bắt buộc thuê tổ chức TVGS độc lập** - chủ nhà có thể tự giám sát hoặc thuê cá nhân có năng lực - dễ dẫn đến tình trạng "vừa đá bóng vừa thổi còi".
-- Nhà thầu phần lớn là đội thợ nhỏ - **năng lực quản lý dự án không đồng đều**.
+- Theo Luật Xây dựng và **Nghị định 175/2024/NĐ-CP**, nhà ở riêng lẻ ≤ 7 tầng hoặc dưới 250m² sàn **không bắt buộc thuê tổ chức TVGS độc lập** chủ nhà có thể tự giám sát hoặc thuê cá nhân có năng lực - dễ dẫn đến tình trạng "vừa đá bóng vừa thổi còi".
+- Nhà thầu phần lớn là đội thợ nhỏ **năng lực quản lý dự án không đồng đều**.
 
 ### 2.2. Mô hình chi phí leo thang điển hình
 
@@ -101,7 +101,7 @@ Khác với các dự án xây dựng có chủ đầu tư là tổ chức (có 
 
 #### Bản chất kỹ thuật
 
-Đổ bê tông móng là một trong những **công đoạn ẩn (concealed work)** - sau khi đổ xong và lấp đất, không có cách nào kiểm tra lại bằng mắt thường. Theo **TCVN 4453:1995**, trước khi đổ bê tông bắt buộc phải nghiệm thu:
+Đổ bê tông móng là một trong những **công đoạn ẩn (concealed work)** sau khi đổ xong và lấp đất, không có cách nào kiểm tra lại bằng mắt thường. Theo **TCVN 4453:1995**, trước khi đổ bê tông bắt buộc phải nghiệm thu:
 
 - **Cốp pha:** kích thước, độ thẳng đứng, độ kín khít, hệ chống đỡ.
 - **Cốt thép:** chủng loại, đường kính, khoảng cách, lớp bê tông bảo vệ, liên kết cọc/đà giằng.
@@ -308,7 +308,7 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 
 Thực tế nhiều chủ nhà nhầm lẫn hai vai trò này. Đây là hai chức năng độc lập về mặt nghiệp vụ, dù trong dự án nhà ở quy mô nhỏ có thể do cùng một bên đảm nhiệm:
 
-*Bảng 6.1 - So sánh QLDA và TVGS theo pháp luật Việt Nam và thông lệ quốc tế*
+*Bảng 6.1. So sánh QLDA và TVGS theo pháp luật Việt Nam và thông lệ quốc tế*
 
 | Tiêu chí | Quản lý dự án (PM / QLDA) | Tư vấn giám sát (TVGS) |
 |---------|--------------------------|----------------------|
@@ -326,7 +326,7 @@ Thực tế nhiều chủ nhà nhầm lẫn hai vai trò này. Đây là hai ch�
 
 ### 6.2. Lợi ích định lượng khi có Đại diện CĐT độc lập
 
-*Bảng 6.2 - So sánh kết quả dự án có và không có Owner's Representative / TVGS độc lập*
+*Bảng 6.2. So sánh kết quả dự án có và không có Owner's Representative / TVGS độc lập*
 
 | Hạng mục | Không có TVGS | Có TVGS độc lập |
 |----------|--------------|-----------------|
@@ -338,16 +338,16 @@ Thực tế nhiều chủ nhà nhầm lẫn hai vai trò này. Đây là hai ch�
 
 ### 6.3. Quy trình đồng hành của Đại diện Chủ đầu tư
 
-**Giai đoạn 1 - Chuẩn bị & Tiền thi công:**
+**Giai đoạn 1: Chuẩn bị & tiền thi công:**
 Rà soát hồ sơ thiết kế, BoQ, hợp đồng nhà thầu; tư vấn lựa chọn nhà thầu; kiểm tra giấy phép xây dựng theo ND 175/2024.
 
-**Giai đoạn 2 - Giám sát thi công thường xuyên:**
+**Giai đoạn 2: Giám sát thi công thường xuyên:**
 Giám sát tại công trường, nghiệm thu từng cấu kiện theo Hold Points; kiểm tra vật tư đầu vào theo ITP.
 
-**Giai đoạn 3 - Quản lý chi phí & Tiến độ:**
+**Giai đoạn 3: Quản lý chi phí & tiến độ:**
 Kiểm soát phát sinh VO; xác nhận khối lượng làm cơ sở thanh toán; báo cáo tuần cho chủ đầu tư.
 
-**Giai đoạn 4 - Bàn giao & Bảo hành:**
+**Giai đoạn 4: Bàn giao & bảo hành:**
 Tổng nghiệm thu, lập hồ sơ hoàn công, theo dõi bảo hành và xử lý khuyết tật sau bàn giao.
 
 ---
