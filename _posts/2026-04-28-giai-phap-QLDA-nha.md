@@ -29,6 +29,8 @@ tags:
   ]
 excerpt: "> *Nhiều chủ nhà mắc sai lầm ngay từ đầu mà không biết, tiền không mất một lần mà mất dần qua từng quyết định nhỏ*. Phân tích chuyên sâu dưới góc nhìn kỹ sư xây dựng gồm 3 nhóm sai lầm điển hình, khung giải pháp và bộ checklist nghiệm thu theo TCVN."
 header:
+  overlay_color: "#1b263b"
+  overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
   caption: "©  HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 

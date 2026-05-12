@@ -609,55 +609,29 @@
   text-decoration: underline !important;
 }
 
-/* ==========================================================================
-   BỔ SUNG ĐỒNG BỘ GIAO DIỆN (HEADER & EXCERPT) 
-   ========================================================================== */
-
-/* 1. ĐỒNG BỘ HEADER (Bỏ qua việc khai báo màu trong từng file .md) */
-.page__hero--overlay {
-  background-color: #1b263b !important; /* Màu nền fallback */
-  background-image: linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8)) !important; /* Dải màu Gradient */
-  min-height: 300px; /* Đảm bảo độ cao header cân đối */
-  display: flex;
-  align-items: center;
-}
-
-/* Làm sáng các thành phần chữ trong Header */
-.page__hero--overlay h1,
-.page__hero--overlay .page__lead,
-.page__hero--overlay .page__meta,
-.page__hero--overlay .page__hero-caption {
-  color: #ffffff !important;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Thêm bóng đổ nhẹ để chữ nổi bật hơn */
-}
-
-/* 2. TÙY CHỈNH EXCERPT (Làm sáng chữ khi dùng dấu >) */
+/* --- TÙY CHỈNH EXCERPT SIÊU SÁNG --- */
 .archive__item-excerpt blockquote {
   margin: 15px 0;
-  padding: 5px 15px;
-  color: #ecf0f1 !important; /* Màu trắng xám (Cloud) cực sáng và dịu mắt */
-  border-left: 4px solid #3498db; /* Đường kẻ xanh Blue nhận diện kỹ thuật */
-  background: rgba(255, 255, 255, 0.05); /* Nền cực mờ để tạo khối trích dẫn */
+  padding: 10px 18px;
+  /* Ép màu trắng tinh khiết */
+  color: #ffffff !important; 
+  /* Đường kẻ xanh sáng để làm nổi bật khối */
+  border-left: 4px solid #00d4ff; 
+  /* Nền tối nhẹ phía sau chữ để tạo độ tương phản (Contrast) */
+  background: rgba(0, 0, 0, 0.3) !important; 
   font-style: italic;
-  font-size: 0.95rem;
+  font-size: 1.0rem; /* Tăng nhẹ cỡ chữ để dễ đọc hơn */
   line-height: 1.6;
-  opacity: 1 !important; /* Xóa bỏ độ mờ mặc định của theme */
+  /* QUAN TRỌNG: Loại bỏ mọi độ mờ từ theme */
+  opacity: 1 !important; 
+  border-radius: 0 4px 4px 0;
 }
 
-/* Đảm bảo các định dạng bên trong blockquote cũng sáng rõ */
+/* Đảm bảo các thành phần bên trong không bị dính màu cũ */
 .archive__item-excerpt blockquote p,
 .archive__item-excerpt blockquote em,
 .archive__item-excerpt blockquote i,
 .archive__item-excerpt blockquote strong {
-  color: #ecf0f1 !important;
-}
-
-/* 3. ĐIỀU CHỈNH KHOẢNG CÁCH (Layout Fix) */
-.archive__item-title {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.25em !important;
-}
-
-.archive__item-excerpt {
-  margin-top: 0;
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
