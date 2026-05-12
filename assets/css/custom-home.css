@@ -246,7 +246,7 @@
 
 .lp-excerpt {
   font-size: 0.85rem;
-  color: #586069;
+  color: #9ca3af;
   line-height: 1.5;
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
@@ -462,7 +462,7 @@
 
 .post-card__excerpt {
   font-size: 0.88rem;
-  color: #586069;
+  color: #9ca3af;
   line-height: 1.55;
   margin: 0 0 10px 0;
   display: -webkit-box;
