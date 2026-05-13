@@ -34,7 +34,7 @@ header:
   caption: "©  HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
-Thực tế, **nhiều chủ nhà, chủ đầu tư** xây dựng công trình nhà ở riêng lẻ mắc sai lầm ngay từ giai đoạn đầu, và điều đáng nói là họ **không hề biết mình đang sai**. Sai lầm tích tụ qua từng quyết định nhỏ - *"tiền không mất một lần mà mất dần qua từng quyết định nhỏ của bạn"* và chỉ bộc lộ ở giai đoạn cuối hoặc sau khi bàn giao.
+Thực tế, **nhiều chủ nhà, chủ đầu tư** xây dựng công trình nhà ở riêng lẻ mắc sai lầm ngay từ giai đoạn đầu, và điều đáng nói là họ **không hề biết mình đang sai**. Sai lầm tích tụ qua từng quyết định nhỏ, *"tiền không mất một lần mà mất dần qua từng quyết định nhỏ của bạn"* và chỉ bộc lộ ở giai đoạn cuối hoặc sau khi bàn giao.
 
 Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất dưới góc nhìn kỹ sư xây dựng và quản lý dự án, đồng thời đề xuất khung giải pháp 5 trụ cột và bộ checklist nghiệm thu thực hành theo TCVN, cập nhật theo **Luật Xây dựng 135/2025/QH15** (hiệu lực 01/7/2026) và **Nghị định 175/2024/NĐ-CP**.
 
@@ -55,7 +55,7 @@ Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất
 
 > **Bốn điều chủ đầu tư cần làm trước khi đào móng:**
 >
-> 1. Đầu tư vào **quy trình** ngay từ trước khi khởi công - chi phí rẻ nhất, hiệu quả cao nhất.
+> 1. Đầu tư vào **quy trình** ngay từ trước khi khởi công, chi phí rẻ nhất, hiệu quả cao nhất.
 > 2. Tách bạch ba vai trò: **Thiết kế – Thi công – Giám sát** thành ba pháp nhân khác nhau.
 > 3. Dùng **bảng dự toán chi tiết theo đầu việc (BoQ)** làm xương sống cho mọi quyết định tài chính.
 > 4. Phân biệt rõ **Quản lý dự án (QLDA)** và **Tư vấn giám sát (TVGS)** - hai chức năng khác nhau, có thể do một bên kiêm nhiệm nhưng phải được định nghĩa minh bạch trong hợp đồng.
@@ -64,7 +64,7 @@ Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất
 
 ## 2. Đặc điểm và quy mô
 
-### 2.1. Đặc thù của phân khúc nhà ở riêng lẻ – nhà phố
+### 2.1. Đặc thù của phân khúc nhà ở riêng lẻ, nhà phố
 
 Khác với các dự án xây dựng có chủ đầu tư là tổ chức (có ban quản lý dự án chuyên nghiệp, bộ phận pháp chế, kỹ thuật, mua sắm), dự án nhà ở riêng lẻ có những đặc điểm đặc biệt khiến rủi ro quản trị cao hơn nhiều:
 
@@ -89,7 +89,7 @@ Khác với các dự án xây dựng có chủ đầu tư là tổ chức (có 
 
 ## 3. Các sai lầm điển hình
 
-### 3.1. Sai lầm 1 - Không hiểu quy trình nguyên tắc thực hiện
+### 3.1. Sai lầm 1: Không hiểu quy trình nguyên tắc thực hiện
 
 #### Tình huống  
 
@@ -130,7 +130,7 @@ Một tin nhắn ngắn gọn *"Các anh cứ làm theo tiến độ"* - về b�
 
 ---
 
-### 3.2. Sai lầm 2 - Giao chọn gói và đặt niềm tin 100% vào nhà thầu
+### 3.2. Sai lầm 2: Giao chọn gói và đặt niềm tin 100% vào nhà thầu
 
 #### Tình huống 
 
@@ -138,7 +138,7 @@ Một tin nhắn ngắn gọn *"Các anh cứ làm theo tiến độ"* - về b�
 >
 > *"Thực tế là không ai có trách nhiệm bảo vệ quyền lợi và chất lượng công trình của bạn tốt hơn chính bạn."*
 
-#### Bản chất quản trị - Agency Theory
+#### Bản chất quản trị xây dựng
 
 Đây là lỗi quản trị kinh điển được phân tích trong lý thuyết **Agency Theory (Jensen & Meckling, 1976)** - hay còn gọi là "vấn đề người ủy quyền – người được ủy quyền" (*principal-agent problem*). Khi chủ đầu tư (*principal*) ủy toàn quyền cho nhà thầu (*agent*) mà không thiết lập cơ chế giám sát, sẽ phát sinh hai rủi ro song hành:
 
@@ -170,7 +170,7 @@ Một tin nhắn ngắn gọn *"Các anh cứ làm theo tiến độ"* - về b�
 
 ---
 
-### 3.3. Sai lầm 3 - Không kiểm soát tốt chi phí và chất lượng từ đầu
+### 3.3. Sai lầm 3: Không kiểm soát tốt chi phí và chất lượng từ đầu
 
 #### Tình huống
 
@@ -250,7 +250,7 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 
 ## 5. Checklist kiểm soát theo giai đoạn thi công
 
-### Giai đoạn 1 - Chuẩn bị trước thi công
+### Giai đoạn 1: Chuẩn bị trước thi công
 
 | ☐ | Hạng mục kiểm tra | Tiêu chuẩn |
 |---|-------------------|-----------|
@@ -262,7 +262,7 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 | ☐ | Tiến độ thi công tổng thể (Master Schedule) đã được duyệt | MS/Gantt |
 | ☐ | Phương án thi công, biện pháp an toàn lao động đã trình | Method Statement |
 
-### Giai đoạn 2 - Phần ngầm (Móng – Cọc)
+### Giai đoạn 2: Phần ngầm (Móng – Cọc)
 
 | ☐ | Hạng mục kiểm tra | Tiêu chuẩn |
 |---|-------------------|-----------|
@@ -275,7 +275,7 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 | ☐ | Bảo dưỡng bê tông sau đổ ≥ 7 ngày | TCVN 8828:2011 |
 | ☐ | **QUAN TRỌNG:** Biên bản nghiệm thu trước khi lấp đất | **Bắt buộc** |
 
-### Giai đoạn 3 - Phần thân (Cột – Dầm – Sàn – Tường)
+### Giai đoạn 3: Phần thân (Cột – Dầm – Sàn – Tường)
 
 | ☐ | Hạng mục kiểm tra | Tiêu chuẩn |
 |---|-------------------|-----------|
@@ -288,7 +288,7 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 | ☐ | Tường xây: mạch vữa, gạch ngâm nước, mác vữa đúng | TCVN 4085:2011 |
 | ☐ | Độ thẳng đứng, độ phẳng tường bằng thước thăng bằng | TCVN 5674:1992 |
 
-### Giai đoạn 4 - Hoàn thiện & Bàn giao
+### Giai đoạn 4: Hoàn thiện & Bàn giao
 
 | ☐ | Hạng mục kiểm tra | Tiêu chuẩn |
 |---|-------------------|-----------|
@@ -314,10 +314,10 @@ Thực tế nhiều chủ nhà nhầm lẫn hai vai trò này. Đây là hai ch�
 |---------|--------------------------|----------------------|
 | **Phạm vi thời gian** | Toàn bộ vòng đời dự án (chuẩn bị → thực hiện → kết thúc) | Chỉ giai đoạn thi công |
 | **Trách nhiệm chính** | Tiến độ, chi phí, hợp đồng, stakeholder, tổng thể dự án | Chất lượng, kỹ thuật, an toàn tại hiện trường |
-| **PMBOK tương ứng** | Project Manager - 10 Knowledge Areas | Construction Manager / Inspector - Quality & Execution Domain |
+| **PMBOK tương ứng** | Project Manager: 10 Knowledge Areas | Construction Manager / Inspector, Quality & Execution Domain |
 | **FIDIC tương ứng** | Engineer / Owner's Representative | Resident Engineer / Site Inspector |
 | **Khung pháp lý hiện hành** | Điều 85 ND 175/2024; Điều 88 Luật XD 135/2025 | Điều 83 ND 175/2024; Điều 88 Luật XD 135/2025 |
-| **CCHN cá nhân (đến 30/6/2026)** | Bắt buộc - CCHN QLDA hạng I/II/III | Bắt buộc - CCHN Giám sát thi công xây dựng |
+| **CCHN cá nhân (đến 30/6/2026)** | Bắt buộc, CCHN QLDA hạng I/II/III | Bắt buộc, CCHN Giám sát thi công xây dựng |
 | **CCHN cá nhân từ 01/7/2026** | **Giám đốc QLDA không còn bắt buộc CCHN** (Luật XD 2025) | **Vẫn bắt buộc CCHN** - không thay đổi |
 | **Chứng chỉ năng lực tổ chức** | Đã bãi bỏ từ **01/7/2025** (Luật Đường sắt 2025) | Đã bãi bỏ từ **01/7/2025** |
 | **Với nhà ở riêng lẻ ≤ 7 tầng** | Không bắt buộc - nên thuê để kiểm soát HĐ & tài chính | Không bắt buộc - nên thuê độc lập để bảo vệ chất lượng |

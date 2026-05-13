@@ -303,7 +303,7 @@ Below is a summary of essential resources recommended for PMP candidates to supp
 
 ## Đang ôn thi PMP và muốn trao đổi về ứng dụng vào thực tế xây dựng?
 
-Tài liệu luyện thi PMP, kể cả Freecram, tốt nhất khi được đọc song song với kinh nghiệm dự án thực. Nhiều câu hỏi về People domain hoặc xử lý xung đột stakeholder sẽ dễ hơn nhiều nếu bạn đã từng đứng ở vị trí đó trong một dự án xây dựng thực sự.
+Tài liệu luyện thi PMP, kể cả Freecram cần thiết đọc song song với các kinh nghiệm dự án thực. Nhiều câu hỏi về People domain hoặc xử lý xung đột stakeholder sẽ dễ hơn nhiều nếu bạn đã từng đứng ở vị trí đó trong một dự án xây dựng thực sự.
 
 HydrostructAI không cung cấp khóa học luyện thi PMP. Nhưng nếu bạn là kỹ sư xây dựng đang học PMP và muốn trao đổi về cách áp dụng PMBOK 7th vào bối cảnh dự án hạ tầng Việt Nam, quy trình pháp lý, quan hệ với PMU, xử lý phát sinh, có thể tham gia nhóm thảo luận.
 

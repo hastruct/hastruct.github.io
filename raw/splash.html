@@ -1,0 +1,301 @@
+---
+layout: default
+---
+
+<style>
+/* ==========================================================================
+   HERO SLIDESHOW ANIMATION
+   ========================================================================== */
+@keyframes hero-slide {
+  0%, 25% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                      url('{{ page.hero_image | default: "/assets/images/hero-engineering.jpg" | relative_url }}');
+  }
+  25%, 50% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                      url('{{ "/assets/images/hero-engineering2.jpg" | relative_url }}');
+  }
+}
+
+.page__hero--overlay {
+  animation: hero-slide 16s infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 10s ease-in-out;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                    url('{{ page.hero_image | default: "/assets/images/hero-engineering1.jpg" | relative_url }}');
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-contact-wrapper {
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.hero-contact-wrapper a {
+  color: #e8a87c;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   FEATURED POST STRIP
+   ========================================================================== */
+.featured-post-strip {
+  background: linear-gradient(135deg, #1a1a2e 0%, #004d99 100%);
+  border-bottom: 3px solid #c8410a;
+  padding: 0;
+  margin: 0 0 32px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-post-strip::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #c8410a, #b8860b);
+}
+
+.featured-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 32px 20px 36px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.featured-badge {
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c8410a;
+  background: rgba(200, 65, 10, 0.12);
+  border: 1px solid rgba(200, 65, 10, 0.35);
+  padding: 4px 10px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.featured-meta {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  color: rgba(245, 240, 232, 0.4);
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.featured-title-link {
+  flex: 1;
+  min-width: 260px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.featured-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: rgba(245, 240, 232, 0.92);
+}
+
+.featured-arrow {
+  color: #b8860b;
+  transition: transform 0.2s;
+}
+
+.featured-title-link:hover .featured-arrow {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   LATEST POSTS CARD SECTION
+   ========================================================================== */
+.latest-posts-section {
+  max-width: 1280px;
+  margin: 0 auto 40px;
+  padding: 0 16px;
+}
+
+.latest-posts-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.latest-posts-header h2 {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #1a1a2e;
+  font-weight: 700;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.latest-posts-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(26, 26, 46, 0.15);
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.post-card-featured {
+  grid-column: 1 / -1;
+  display: flex;
+  background: #fdfcf9;
+  border: 1px solid rgba(26, 26, 46, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(26, 26, 46, 0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.post-card-featured:hover {
+  transform: translateY(-2px);
+}
+
+.card-accent-bar {
+  width: 6px;
+  background: linear-gradient(180deg, #1a1a2e, #004d99);
+}
+
+.post-card {
+  background: #ffffff;
+  border: 1px solid rgba(26, 26, 46, 0.08);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  transition: transform 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+}
+
+.card-top-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #1a1a2e, #415a77);
+}
+
+.card-content {
+  padding: 24px 28px;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 12px;
+}
+
+.card-date {
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  color: #7a7468;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-excerpt {
+  font-size: 0.88rem;
+  color: #4a4a5e;
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 680px) {
+  .post-card-featured { flex-direction: column; }
+  .card-accent-bar { width: 100%; height: 5px; }
+  .posts-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<main>
+  <header class="page__hero--overlay">
+    <div class="hero-content">
+      <h1>{{ page.title | default: site.title }}</h1>
+      {% if page.header.caption %}
+        {{ page.header.caption }}
+      {% endif %}
+    </div>
+  </header>
+
+  {% assign latest_post = site.posts.first %}
+  {% if latest_post %}
+  <div class="featured-post-strip">
+    <div class="featured-inner">
+      <span class="featured-badge">🆕 Bài mới</span>
+      <span class="featured-meta">{{ latest_post.date | date: "%d / %m / %Y" }}</span>
+      <a class="featured-title-link" href="{{ latest_post.url | relative_url }}">
+        <span class="featured-title">{{ latest_post.title }}</span>
+        <span class="featured-arrow">→</span>
+      </a>
+      <div class="featured-tags">
+        {% for tag in latest_post.tags limit:4 %}
+          <span class="featured-tag" style="font-family: 'Courier New'; font-size: 10px; color: #f5f0e8; border: 1px solid rgba(245,240,232,0.3); padding: 2px 6px;">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <section class="latest-posts-section">
+    <div class="latest-posts-header">
+      <h2>Danh sách bài viết</h2>
+      <div class="latest-posts-line"></div>
+    </div>
+    <div class="posts-grid">
+      {% for post in site.posts limit:6 %}
+        <a href="{{ post.url | relative_url }}" class="{% if forloop.first %}post-card-featured{% else %}post-card{% endif %}">
+          <div class="{% if forloop.first %}card-accent-bar{% else %}card-top-bar{% endif %}"></div>
+          <div class="card-content">
+            <time class="card-date">{{ post.date | date: "%B %-d, %Y" }}</time>
+            <h3 class="card-title">{{ post.title }}</h3>
+            <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+</main>

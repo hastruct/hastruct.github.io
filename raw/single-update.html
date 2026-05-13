@@ -2,52 +2,64 @@
 layout: default
 ---
 
-{%- comment -%} 
-  1. KHÔI PHỤC HERO LOGIC: Giữ nguyên khả năng hỗ trợ Video, Overlay Image của theme 
-{%- endcomment -%}
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}
-
-{%- comment -%} 
-  2. KHÔI PHỤC BREADCRUMBS: Đảm bảo điều hướng luôn xuất hiện 
-{%- endcomment -%}
-{% assign breadcrumbs_enabled = site.breadcrumbs %}
-{% if page.breadcrumbs != null %}
-  {% assign breadcrumbs_enabled = page.breadcrumbs %}
-{% endif %}
-{% if breadcrumbs_enabled %}
-  {% unless paginator %}
-    <div class="breadcrumbs-wrapper">
-      {% include breadcrumbs.html %}
-    </div>
-  {% endunless %}
-{% endif %}
-
 <style>
-  /* CẬP NHẬT CSS: Tích hợp hiệu ứng Slideshow vào class Hero của theme 
-     mà không phá vỡ cấu trúc nguyên bản.
-  */
+  /* ==========================================================================
+     HERO ANIMATION & STYLE (TỪ INDEX.HTML)
+     ========================================================================== */
   @keyframes single-hero-slide {
     0%, 25% {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                        url('{{ site.baseurl }}/assets/images/hero-engineering.jpg');
+                        url('{{ page.image | default: page.header.overlay_image | default: "/assets/images/hero-engineering.jpg" | relative_url }}');
     }
     25%, 50% {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                        url('{{ site.baseurl }}/assets/images/hero-engineering2.jpg');
+                        url('{{ "/assets/images/hero-engineering2.jpg" | relative_url }}');
     }
   }
 
-  /* Áp dụng animation cho lớp phủ hero của theme */
-  .page__hero--overlay {
+  .single__hero--overlay {
     animation: single-hero-slide 16s infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     transition: background-image 10s ease-in-out;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('{{ page.image | default: page.header.overlay_image | default: "/assets/images/hero-engineering1.jpg" | relative_url }}');
+    height: 45vh;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
   }
 
-  /* Cấu hình lưới 3 cột cho bài viết */
+  .single-hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+  }
+
+  .single-hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    line-height: 1.3;
+  }
+
+  .single-hero-meta {
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    color: #e8a87c;
+    background: rgba(0,0,0,0.4);
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  /* 1. Cấu hình lưới 3 cột */
   .post-grid-container {
     display: grid !important;
     grid-template-columns: 240px minmax(0, 1fr) 240px !important;
@@ -58,7 +70,9 @@ layout: default
     padding: 0 1rem !important;
   }
 
-  .post-grid-sidebar-left, .post-grid-sidebar-right {
+  .post-grid-sidebar-left {
+    display: block !important;
+    grid-column: 1 / 2 !important;
     position: sticky !important;
     top: 80px !important;
     height: calc(100vh - 100px) !important;
@@ -70,68 +84,110 @@ layout: default
     box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
   }
 
+  .post-grid-sidebar-right {
+    display: block !important;
+    grid-column: 3 / 4 !important;
+    position: sticky !important;
+    top: 80px !important;
+    height: calc(100vh - 100px) !important;
+    overflow-y: auto !important;
+    padding: 15px !important;
+    background: #ffffff !important;
+    border: 1px solid #e9ecef !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
+  }
+
+  .post-grid-sidebar-left::-webkit-scrollbar,
+  .post-grid-sidebar-right::-webkit-scrollbar { width: 8px; }
+  .post-grid-sidebar-left::-webkit-scrollbar-track,
+  .post-grid-sidebar-right::-webkit-scrollbar-track { background: #f8f9fa; border-radius: 10px; }
+  .post-grid-sidebar-left::-webkit-scrollbar-thumb,
+  .post-grid-sidebar-right::-webkit-scrollbar-thumb { background-color: #ced4da; border-radius: 10px; border: 2px solid #f8f9fa; }
+
   .post-grid-article {
     grid-column: 2 / 3 !important;
     width: 100% !important;
     max-width: none !important;
-    min-width: 0;
+    min-width: 0; 
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /* Ép nội dung bài viết giãn 100% không gian cột giữa */
+  .page__related-wrapper {
+    max-width: 1600px !important;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .page__related { border-top: 1px solid #eee; padding-top: 2rem; }
+
+  .post-grid-article,
   .post-grid-article .page__inner-wrap,
   .post-grid-article .page__content {
     width: 100% !important;
     max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
-  .breadcrumbs-wrapper {
-    max-width: 1600px;
-    margin: 0 auto 1rem;
-    padding: 0 1rem;
+  .post-grid-article header,
+  .post-grid-article section,
+  .post-grid-article footer {
+    width: 100% !important;
+    max-width: none !important;
   }
-
-  /* Responsive */
+  
   @media (max-width: 1200px) {
     .post-grid-container { grid-template-columns: 220px 1fr !important; }
     .post-grid-sidebar-right { display: none !important; }
   }
+
   @media (max-width: 768px) {
     .post-grid-container { grid-template-columns: 1fr !important; }
     .post-grid-sidebar-left, .post-grid-sidebar-right { display: none !important; }
   }
 </style>
 
+<header class="single__hero--overlay">
+  <div class="single-hero-content">
+    <h1 itemprop="headline">{{ page.title | markdownify | strip_html | escape_once }}</h1>
+    <div class="single-hero-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.author %} | {{ page.author }}{% endif %}
+    </div>
+  </div>
+</header>
+
+{% assign breadcrumbs_enabled = site.breadcrumbs %}
+{% if page.breadcrumbs != null %}
+  {% assign breadcrumbs_enabled = page.breadcrumbs %}
+{% endif %}
+{% if breadcrumbs_enabled %}
+  {% unless paginator %}
+    <div style="max-width: 1600px; margin: 0 auto 1rem; padding: 0 1rem;">
+      {% include breadcrumbs.html %}
+    </div>
+  {% endunless %}
+{% endif %}
+
 <div id="main" role="main" class="post-grid-container">
   
-  <aside class="post-grid-sidebar-left">
+  <div class="post-grid-sidebar-left">
     {% include sidebar-left.html %}
-  </aside>
+  </div>
 
   <article class="page h-entry post-grid-article" itemscope itemtype="https://schema.org/Article">
-    {%- comment -%} KHÔI PHỤC SEO META HEADLINE {%- endcomment -%}
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
-      {%- comment -%} KHÔI PHỤC TIÊU ĐỀ DỰ PHÒNG (Khi không có Hero Image) {%- endcomment -%}
-      {% unless page.header.overlay_color or page.header.overlay_image %}
-        <header>
-          {% if page.title %}
-            <h1 id="page-title" class="page__title p-name" itemprop="headline">
-              <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
-            </h1>
-          {% endif %}
-          {% include page__meta.html %}
-        </header>
-      {% endunless %}
-
       <section class="page__content e-content" itemprop="articleBody">
         {{ content }}
-        {% if page.link %}
-          <div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>
-        {% endif %}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
       <footer class="page__meta">
@@ -144,8 +200,18 @@ layout: default
 
       {% if page.share %}{% include social-share.html %}{% endif %}
       
-      {%- comment -%} KHÔI PHỤC MODULE PHÂN TRANG GỐC {%- endcomment -%}
-      {% include post_pagination.html %}
+      <nav class="pagination">
+        {% if page.previous %}
+          <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.title | escape }}">Kế trước</a>
+        {% else %}
+          <a href="#" class="pagination--pager disabled">Kế trước</a>
+        {% endif %}
+        {% if page.next %}
+          <a href="{{ page.next.url | relative_url }}" class="pagination--pager" title="{{ page.next.title | escape }}">Tiếp theo</a>
+        {% else %}
+          <a href="#" class="pagination--pager disabled">Tiếp theo</a>
+        {% endif %}
+      </nav>
     </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
@@ -153,9 +219,9 @@ layout: default
     {% endif %}
   </article>
 
-  <aside class="post-grid-sidebar-right">
+  <div class="post-grid-sidebar-right">
     {% include sidebar-right.html %}
-  </aside>
+  </div>
 
 </div>
 
@@ -174,7 +240,9 @@ layout: default
       <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
       <div class="grid__wrapper">
         {% for post in site.posts limit:4 %}
-          {% if post.id == page.id %}{% continue %}{% endif %}
+          {% if post.id == page.id %}
+            {% continue %}
+          {% endif %}
           {% include archive-single.html type="grid" %}
         {% endfor %}
       </div>
@@ -182,7 +250,6 @@ layout: default
   {% endif %}
 </div>
 
-{%- comment -%} KHÔI PHỤC SEO SCHEMA JSON-LD {%- endcomment -%}
 {% if page.id %}
 <script type="application/ld+json">
 {
