@@ -397,8 +397,12 @@
   transform: translateY(-2px);
 }
 
-.page__lead {
-  color: #9ca3af;   /* trắng hơn, đổi thành #d1d5db nếu cần nhạt hơn nữa */
+/* ── FIX: Màu excerpt trang bài viết (layout: single) ── */
+.page__meta,
+.page__lead,
+.archive__item-excerpt,
+.page__content p:first-of-type {
+  color: #9ca3af;
 }
 
 .post-card__thumb-link {
