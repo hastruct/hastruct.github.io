@@ -33,7 +33,7 @@ tags:
   ]
 excerpt: "> *Mô hình BIM tốt nhất không phải mô hình đẹp nhất, mà là mô hình được dùng nhiều nhất*. Một số dự án hạ tầng và thủy lợi tại Việt Nam triển khai BIM nhưng kết quả chỉ dừng ở 'mô hình 3D đẹp'. Bài viết phân tích chuyên sâu vì sao BIM hạ tầng khác hoàn toàn BIM dân dụng, vai trò trọng tâm của Điều phối (Coordination) và CDE, framework lựa chọn phần mềm theo bài toán thực tế."
 header:
-  overlay_color: "#9ca3af"
+  overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
   caption: "© HydrostructAI - Tư vấn Mô hình hóa BIM & Điều phối Dự án hạ tầng, công trình thủy lợi"
 ---
