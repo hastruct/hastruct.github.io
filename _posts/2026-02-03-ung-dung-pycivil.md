@@ -29,10 +29,10 @@ tags:
     Automation,
     "Tối ưu hóa thiết kế"
   ]
-excerpt: "Phân tích chuyên sâu thư viện Python Pycivile cho kỹ thuật kết cấu: Kiến trúc bộ máy EXAGeometry, EXAStructural, tích hợp FEM, chiến lược BIM. Bao gồm phân tích tiết diện BTCT, biểu đồ tương tác ULS, tích hợp MIDAS/Code_Aster, ưu nhược điểm và tầm nhìn Generative Design."
+excerpt: "> *Phân tích chuyên sâu thư viện Python Pycivile cho kỹ thuật kết cấu*: Kiến trúc thư viện, tích hợp FEM, chiến lược BIM. Bao gồm phân tích tiết diện BTCT, biểu đồ tương tác ULS, tích hợp MIDAS/Code_Aster, ưu nhược điểm và tầm nhìn thiết kế."
 header:
-  overlay_color: "#1a1a2e"
-  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  overlay_color: "#f1f5f9"
+  overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
   caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 

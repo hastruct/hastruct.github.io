@@ -29,10 +29,10 @@ tags:
     PMBOK,
     "Phân tích dự báo"
   ]
-excerpt: "Phân tích chuyên sâu thuật toán Markov Chain Monte Carlo (MCMC) và ứng dụng thực tế trong kỹ thuật xây dựng. Bao gồm lý thuyết chuỗi Markov, phương pháp Monte Carlo, suy luận Bayes, các thuật toán MCMC phổ biến (MH, Gibbs, HMC), và ví dụ mô phỏng thực tế với dữ liệu."
+excerpt: "> *Phân tích chuyên sâu thuật toán Markov Chain Monte Carlo* và ứng dụng thực tế trong kỹ thuật xây dựng. Bao gồm lý thuyết chuỗi Markov, phương pháp Monte Carlo, suy luận Bayes, các thuật toán MCMC phổ biến (MH, Gibbs, HMC), và ví dụ mô phỏng thực tế với dữ liệu."
 header:
-  overlay_color: "#1a1a2e"
-  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  overlay_color: "#f1f5f9"
+  overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
   caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 

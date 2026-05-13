@@ -1,5 +1,5 @@
 ---
-title: "PMP Project Management Professional Exam 2025 (Version e7002) - Comprehensive Review"
+title: "PMP Project Management Professional Exam 2025 (Ver e7002)"
 author_profile: true
 author_name: "HST.AI"
 date: 2026-04-02 10:00:00 +0700
@@ -28,10 +28,10 @@ tags:
     Exam Preparation,
     "Kỹ năng lãnh đạo phục vụ"
   ]
-excerpt: "Phân tích chuyên sâu tài liệu luyện thi PMP Freecram v2025 (e7002): Cấu trúc bài thi, phân bố miền People-Process-Business, các lỗi thường gặp và chiến lược thi đỗ lần đầu trong 4-6 tuần. Bao gồm ví dụ thực tế, mẫu câu hỏi chi tiết và tài liệu tham khảo từ PMI chính thức."
+excerpt: "> *Phân tích chuyên sâu tài liệu luyện thi PMP Freecram v2025 (e7002)*: Cấu trúc bài thi, phân bố miền People-Process-Business, các lỗi thường gặp và chiến lược thi đỗ lần đầu trong 4-6 tuần. Bao gồm ví dụ thực tế, mẫu câu hỏi chi tiết và tài liệu tham khảo từ PMI chính thức."
 header:
-  overlay_color: "#1a1a2e"
-  overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
+  overlay_color: "#f1f5f9"
+  overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
   caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
