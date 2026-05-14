@@ -2,63 +2,44 @@
 layout: default
 ---
 
-{%- comment -%} 
-  1. KHÔI PHỤC HERO LOGIC: Giữ nguyên khả năng hỗ trợ Video, Overlay Image của theme 
-{%- endcomment -%}
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
   {% include page__hero_video.html %}
 {% endif %}
 
-{%- comment -%} 
-  2. KHÔI PHỤC BREADCRUMBS: Đảm bảo điều hướng luôn xuất hiện 
-{%- endcomment -%}
 {% assign breadcrumbs_enabled = site.breadcrumbs %}
 {% if page.breadcrumbs != null %}
   {% assign breadcrumbs_enabled = page.breadcrumbs %}
 {% endif %}
 {% if breadcrumbs_enabled %}
   {% unless paginator %}
-    <div class="breadcrumbs-wrapper">
-      {% include breadcrumbs.html %}
-    </div>
+    {% include breadcrumbs.html %}
   {% endunless %}
 {% endif %}
 
 <style>
-  /* CẬP NHẬT CSS: Tích hợp hiệu ứng Slideshow vào class Hero của theme 
-     mà không phá vỡ cấu trúc nguyên bản.
-  */
-  @keyframes single-hero-slide {
-    0%, 25% {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                        url('{{ site.baseurl }}/assets/images/hero-engineering.jpg');
-    }
-    25%, 50% {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                        url('{{ site.baseurl }}/assets/images/hero-engineering2.jpg');
-    }
-  }
-
-  /* Áp dụng animation cho lớp phủ hero của theme */
-  .page__hero--overlay {
-    animation: single-hero-slide 16s infinite;
-    transition: background-image 10s ease-in-out;
-  }
-
-  /* Cấu hình lưới 3 cột cho bài viết */
+  /* 1. Cấu hình lưới 3 cột */
   .post-grid-container {
     display: grid !important;
+    /* Sidebar Trái: 240px (Thu nhỏ xíu để nhường chỗ)
+       Nội dung Giữa: 1fr (Tự động chiếm hết khoảng trống còn lại)
+       Sidebar Phải: 240px 
+    */
     grid-template-columns: 240px minmax(0, 1fr) 240px !important;
     gap: 30px !important;
     align-items: start;
+    
+    /* 2. Tăng chiều rộng tổng thể lên ~20% (từ 1280px -> 1600px) */
     max-width: 1600px !important; 
     margin: 0 auto !important;
     padding: 0 1rem !important;
   }
 
-  .post-grid-sidebar-left, .post-grid-sidebar-right {
+  /* Sidebar Trái */
+  .post-grid-sidebar-left {
+    display: block !important;
+    grid-column: 1 / 2 !important;
     position: sticky !important;
     top: 80px !important;
     height: calc(100vh - 100px) !important;
@@ -70,68 +51,135 @@ layout: default
     box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
   }
 
-  .post-grid-article {
-    grid-column: 2 / 3 !important;
-    width: 100% !important;
-    max-width: none !important;
-    min-width: 0;
+  /* Sidebar Phải (Mục lục/Bài viết mới) - Cân xứng với sidebar trái */
+  .post-grid-sidebar-right {
+    display: block !important;
+    grid-column: 3 / 4 !important;
+    position: sticky !important;
+    top: 80px !important;
+    height: calc(100vh - 100px) !important;
+    overflow-y: auto !important;
+    padding: 15px !important;
+    background: #ffffff !important;
+    border: 1px solid #e9ecef !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
   }
 
-  /* Ép nội dung bài viết giãn 100% không gian cột giữa */
+  /* Tối ưu scrollbar cho sidebars (Hiện rõ hơn để người dùng biết có thể cuộn) */
+  .post-grid-sidebar-left::-webkit-scrollbar,
+  .post-grid-sidebar-right::-webkit-scrollbar {
+    width: 8px;
+  }
+  .post-grid-sidebar-left::-webkit-scrollbar-track,
+  .post-grid-sidebar-right::-webkit-scrollbar-track {
+    background: #f8f9fa;
+    border-radius: 10px;
+  }
+  .post-grid-sidebar-left::-webkit-scrollbar-thumb,
+  .post-grid-sidebar-right::-webkit-scrollbar-thumb {
+    background-color: #ced4da;
+    border-radius: 10px;
+    border: 2px solid #f8f9fa;
+  }
+  .post-grid-sidebar-left::-webkit-scrollbar-thumb:hover,
+  .post-grid-sidebar-right::-webkit-scrollbar-thumb:hover {
+    background-color: #adb5bd;
+  }
+
+  /* Make items spaced out to ensure overflow */
+  .latest-post-item {
+    margin-bottom: 20px !important;
+  }
+
+  /* Nội dung bài viết (Ở giữa) */
+  .post-grid-article {
+    grid-column: 2 / 3 !important;
+    width: 100% !important; /* Đảm bảo article chiếm toàn bộ cột 2 */
+    max-width: none !important;
+    min-width: 0; /* Tránh vỡ layout khi có ảnh to */
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Bài viết liên quan (Full width dưới cùng) */
+  .page__related-wrapper {
+    max-width: 1600px !important; /* Đồng bộ độ rộng với grid trên */
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .page__related {
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+  }
+ /* CHUYÊN GIA: Ép nội dung bên trong bài viết giãn 100% */
+  /* CHUYÊN GIA: Ép mọi lớp bao trong phải giãn 100% */
+  .post-grid-article,
   .post-grid-article .page__inner-wrap,
   .post-grid-article .page__content {
     width: 100% !important;
     max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-
-  .breadcrumbs-wrapper {
-    max-width: 1600px;
-    margin: 0 auto 1rem;
-    padding: 0 1rem;
+  /* Khử giới hạn của các thẻ nội dung cụ thể nếu có */
+  .post-grid-article header,
+  .post-grid-article section,
+  .post-grid-article footer {
+    width: 100% !important;
+    max-width: none !important;
   }
-
-  /* Responsive */
+  /* --- RESPONSIVE --- */
+  
+  /* Laptop nhỏ/Tablet (Ẩn cột phải, dồn không gian cho nội dung) */
   @media (max-width: 1200px) {
-    .post-grid-container { grid-template-columns: 220px 1fr !important; }
-    .post-grid-sidebar-right { display: none !important; }
+    .post-grid-container {
+      grid-template-columns: 220px 1fr !important; /* 2 Cột */
+    }
+    .post-grid-sidebar-right {
+      display: none !important; /* Tạm ẩn TOC bên phải để không chật */
+    }
   }
+
+  /* Mobile (1 Cột dọc) */
   @media (max-width: 768px) {
-    .post-grid-container { grid-template-columns: 1fr !important; }
-    .post-grid-sidebar-left, .post-grid-sidebar-right { display: none !important; }
+    .post-grid-container {
+      grid-template-columns: 1fr !important;
+    }
+    .post-grid-sidebar-left, 
+    .post-grid-sidebar-right {
+      display: none !important;
+    }
   }
 </style>
 
 <div id="main" role="main" class="post-grid-container">
   
-  <aside class="post-grid-sidebar-left">
+  <div class="post-grid-sidebar-left">
     {% include sidebar-left.html %}
-  </aside>
+  </div>
 
   <article class="page h-entry post-grid-article" itemscope itemtype="https://schema.org/Article">
-    {%- comment -%} KHÔI PHỤC SEO META HEADLINE {%- endcomment -%}
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
-      {%- comment -%} KHÔI PHỤC TIÊU ĐỀ DỰ PHÒNG (Khi không có Hero Image) {%- endcomment -%}
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}
-            <h1 id="page-title" class="page__title p-name" itemprop="headline">
-              <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
-            </h1>
-          {% endif %}
+          {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+          </h1>{% endif %}
           {% include page__meta.html %}
         </header>
       {% endunless %}
 
       <section class="page__content e-content" itemprop="articleBody">
         {{ content }}
-        {% if page.link %}
-          <div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>
-        {% endif %}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
       <footer class="page__meta">
@@ -143,8 +191,6 @@ layout: default
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
-      
-      {%- comment -%} KHÔI PHỤC MODULE PHÂN TRANG GỐC {%- endcomment -%}
       {% include post_pagination.html %}
     </div>
 
@@ -153,12 +199,11 @@ layout: default
     {% endif %}
   </article>
 
-  <aside class="post-grid-sidebar-right">
+  <div class="post-grid-sidebar-right">
     {% include sidebar-right.html %}
-  </aside>
+  </div>
 
 </div>
-
 <div class="page__related-wrapper">
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
@@ -174,7 +219,9 @@ layout: default
       <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
       <div class="grid__wrapper">
         {% for post in site.posts limit:4 %}
-          {% if post.id == page.id %}{% continue %}{% endif %}
+          {% if post.id == page.id %}
+            {% continue %}
+          {% endif %}
           {% include archive-single.html type="grid" %}
         {% endfor %}
       </div>
@@ -182,7 +229,9 @@ layout: default
   {% endif %}
 </div>
 
-{%- comment -%} KHÔI PHỤC SEO SCHEMA JSON-LD {%- endcomment -%}
+{%- comment -%}
+  Enhanced Schema.org JSON-LD for Article SEO
+{%- endcomment -%}
 {% if page.id %}
 <script type="application/ld+json">
 {
