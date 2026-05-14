@@ -1,4 +1,6 @@
-/* --- LAYOUT GRID 3 CỘT --- */
+/* custom-home.css */
+
+/* --- LAYOUT GRID 3 CỘT CHO TRANG CHỦ --- */
 .home-wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -11,24 +13,15 @@
 
 @media (min-width: 1024px) {
   .home-wrapper {
-    /* CŨ: grid-template-columns: 250px 1fr 300px; */
-    
-    /* MỚI: Tỷ lệ 1 - 3 - 1 tương ứng 20% - 60% - 20% */
     grid-template-columns: 1fr 3fr 1fr; 
   }
 }
+
 /* --- LEFT SIDEBAR (Sticky) --- */
 .left-sidebar {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-@media (min-width: 1024px) {
-  .left-sidebar {
-   /* position: sticky;
-    top: 20px;*/
-  }
 }
 
 .sidebar-module {
@@ -73,7 +66,7 @@
 
 /* --- CENTER CONTENT (Web Apps) --- */
 .center-content {
-  min-width: 0; /* Prevent grid blowout */
+  min-width: 0; 
 }
 
 .section-title {
@@ -94,7 +87,7 @@
 
 .app-card {
   background: white;
-  border: 1px solid #e1e4e8; /* Viền mỏng nhẹ kiểu GitHub */
+  border: 1px solid #e1e4e8;
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 0.2s, transform 0.2s;
@@ -108,9 +101,8 @@
   border-color: #0d6efd;
 }
 
-/* Tăng size ảnh icon lên 150% so với bản cũ */
 .app-card-image {
-  height: 280px; /* Cũ là ~180-200px -> Tăng lên */
+  height: 280px; 
   background: #f8f9fa;
   display: flex;
   align-items: center;
@@ -124,7 +116,6 @@
   max-height: 100%;
   object-fit: contain;
   transition: transform 0.3s;
-  /* Nếu ảnh gốc nhỏ, ta scale lên */
   transform: scale(1.2); 
 }
 
@@ -201,10 +192,6 @@
 }
 
 /* --- RIGHT SIDEBAR (Latest Posts) --- */
-.right-sidebar {
-  /* Có thể sticky nếu muốn */
-}
-
 .latest-posts-list {
   list-style: none;
   padding: 0;
@@ -249,7 +236,7 @@
   color: #9ca3af;
   line-height: 1.5;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
+  -webkit-line-clamp: 2; 
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -260,26 +247,22 @@
     grid-template-columns: 1fr;
   }
   .left-sidebar {
-    display: none; /* Hoặc đẩy xuống dưới cùng */
+    display: none; 
   }
 }
-/* --- STYLE MỚI: HEADER XANH ĐẬM --- */
 
-/* 1. Định dạng thanh tiêu đề */
+/* --- STYLE MỚI: HEADER XANH ĐẬM --- */
 .sidebar-heading.header-highlight {
-  background-color: #0b2e59; /* Xanh đậm */
-  color: #ffffff !important; /* Chữ trắng (dùng !important để đè màu cũ) */
-  padding: 12px 15px;        /* Tăng khoảng cách cho thoáng */
-  margin-bottom: 0;          /* Bỏ margin dưới để dính liền với list */
-  border-radius: 4px 4px 0 0; /* Bo tròn 2 góc trên */
+  background-color: #0b2e59; 
+  color: #ffffff !important; 
+  padding: 12px 15px;        
+  margin-bottom: 0;          
+  border-radius: 4px 4px 0 0; 
   border: none;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
-/* 2. Đóng khung cho khối chứa header này */
-/* Lưu ý: :has() hỗ trợ tốt trên Chrome/Edge/Safari mới. 
-   Nếu trình duyệt cũ không nhận, nó sẽ chỉ hiện header xanh mà không có khung bao quanh (vẫn ổn). */
 .sidebar-module:has(.header-highlight) {
   background: #fff;
   border: 1px solid #e1e4e8;
@@ -287,13 +270,11 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* 3. Căn chỉnh lại danh sách bên trong để không dính sát viền */
 .sidebar-module:has(.header-highlight) ul {
   padding: 15px;
   margin: 0;
 }
 
-/* Tinh chỉnh riêng cho link trong khung Share để đẹp hơn */
 .sidebar-module:has(.header-highlight) .share-item {
   margin-bottom: 12px;
 }
@@ -397,7 +378,6 @@
   transform: translateY(-2px);
 }
 
-/* ── FIX: Màu excerpt trang bài viết (layout: single) ── */
 .page__meta,
 .page__lead,
 .archive__item-excerpt,
@@ -518,12 +498,10 @@
   }
 }
 
-/* 1. Đảm bảo thẻ cha chứa ảnh Hero phải có thuộc tính này để caption không bị bay mất */
 .page__hero {
   position: relative !important;
 }
 
-/* 2. Định dạng dải băng chứa thông tin (Caption Bar) */
 .page__hero-caption {
   position: absolute !important;
   bottom: -5px !important;
@@ -531,47 +509,40 @@
   right: 0 !important;
   width: 100% !important;
   margin: 0 !important;
-  padding: 5px 20px !important; /* Tăng padding để cân đối */
-  background-color: rgba(255, 255, 255, 0.85) !important; /* Nền trắng trong suốt để chữ màu đậm nổi bật hơn */
+  padding: 5px 20px !important; 
+  background-color: rgba(255, 255, 255, 0.85) !important; 
   text-align: right !important;
   z-index: 10;
 }
 
-/* 3. Định dạng chung cho cụm chữ liên hệ */
 .hero-contact-wrapper {
   display: block;
   font-family: inherit;
-  font-weight: 700 !important; /* Cực đậm như yêu cầu */
+  font-weight: 700 !important; 
   font-size: 0.5rem!important;
   line-height: 1;
 }
 
-/* 4. Sửa lỗi màu sắc cho từng thành phần (Khớp với HTML) */
-/* Cụm WhatsApp: Đỏ */
 .hero-contact-wrapper .c-item:nth-child(1), 
 .hero-contact-wrapper .c-item:nth-child(1) a {
-  color: #2E8B57 !important; /* WhatsApp: Gold */
+  color: #2E8B57 !important; 
 }
 
-/* Cụm Email: Xanh Navy */
 .hero-contact-wrapper .c-item:nth-child(3), 
 .hero-contact-wrapper .c-item:nth-child(3) a {
   color: #00008B !important;
 }
 
-/* Cụm Tel: Đen */
 .hero-contact-wrapper .c-item:nth-child(5) {
-  color: #00008B !important; /* Tel: Đen */
+  color: #00008B !important; 
 }
 
-/* Dấu gạch đứng phân cách */
 .c-sep {
   color: #000000 !important;
   margin: 0 8px !important;
   opacity: 0.4;
 }
 
-/* Loại bỏ gạch chân link */
 .hero-contact-wrapper a {
   text-decoration: none !important;
 }
@@ -579,40 +550,206 @@
   text-decoration: underline !important;
 }
 
-/* Tổng thể khung chứa */
-.hero-contact-wrapper {
-  font-weight: 700 !important;
-  font-size: 0.5rem;
-}
-
-/* 1. Class cho các nhãn: WhatsApp, Email, Tel luôn màu đen */
 .c-label {
   color: #000000 !important;
 }
 
-/* 2. Class riêng cho từng loại giá trị */
 .v-whatsapp {
-  color: #000080 !important; /* Xanh Navy */
+  color: #000080 !important; 
   text-decoration: none !important;
 }
 
 .v-email {
-  color: #00008B !important; /* Xanh Đậm */
+  color: #00008B !important; 
   text-decoration: none !important;
 }
 
 .v-tel {
-  color: #000000 !important; /* Đen */
+  color: #000000 !important; 
 }
 
-/* Dấu gạch đứng */
-.c-sep {
-  color: #000000 !important;
-  margin: 0 10px !important;
+/* ==========================================================================
+   CẬP NHẬT GIAO DIỆN BÀI VIẾT CHI TIẾT (SINGLE.HTML)
+   ========================================================================== */
+
+/* 1. Hero Animation & Style (Kế thừa từ trang chủ) */
+@keyframes single-hero-slide {
+  0%, 25% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url('{{ page.image | default: page.header.overlay_image | default: "/assets/images/hero-engineering.jpg" | relative_url }}');
+  }
+  25%, 50% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url('{{ "/assets/images/hero-engineering2.jpg" | relative_url }}');
+  }
+}
+
+.single__hero--overlay {
+  position: relative !important;
+  animation: single-hero-slide 16s infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 10s ease-in-out;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('{{ page.image | default: page.header.overlay_image | default: "/assets/images/hero-engineering1.jpg" | relative_url }}');
+  height: 45vh;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.single-hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.single-hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  line-height: 1.3;
+}
+
+.single-hero-meta {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #e8a87c;
+  background: rgba(0,0,0,0.4);
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* 2. Cấu hình lưới 3 cột cho bài viết chi tiết */
+.post-grid-container {
+  display: grid !important;
+  grid-template-columns: 240px minmax(0, 1fr) 240px !important;
+  gap: 30px !important;
+  align-items: start;
+  max-width: 1600px !important; 
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+.post-grid-sidebar-left {
+  display: block !important;
+  grid-column: 1 / 2 !important;
+  position: sticky !important;
+  top: 80px !important;
+  height: calc(100vh - 100px) !important;
+  overflow-y: auto !important;
+  padding: 15px !important;
+  background: #ffffff !important;
+  border: 1px solid #e9ecef !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
+}
+
+.post-grid-sidebar-right {
+  display: block !important;
+  grid-column: 3 / 4 !important;
+  position: sticky !important;
+  top: 80px !important;
+  height: calc(100vh - 100px) !important;
+  overflow-y: auto !important;
+  padding: 15px !important;
+  background: #ffffff !important;
+  border: 1px solid #e9ecef !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
+}
+
+.post-grid-sidebar-left::-webkit-scrollbar,
+.post-grid-sidebar-right::-webkit-scrollbar { width: 8px; }
+.post-grid-sidebar-left::-webkit-scrollbar-track,
+.post-grid-sidebar-right::-webkit-scrollbar-track { background: #f8f9fa; border-radius: 10px; }
+.post-grid-sidebar-left::-webkit-scrollbar-thumb,
+.post-grid-sidebar-right::-webkit-scrollbar-thumb { background-color: #ced4da; border-radius: 10px; border: 2px solid #f8f9fa; }
+
+.post-grid-article {
+  grid-column: 2 / 3 !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0; 
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.breadcrumbs-wrapper {
+  max-width: 1600px !important;
+  margin: 0 auto 1rem;
+  padding: 0 1rem;
+}
+
+.page__related-wrapper {
+  max-width: 1600px !important;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.page__related { border-top: 1px solid #eee; padding-top: 2rem; }
+
+.post-grid-article,
+.post-grid-article .page__inner-wrap,
+.post-grid-article .page__content {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.post-grid-article header,
+.post-grid-article section,
+.post-grid-article footer {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.pagination--pager {
+  padding: 10px 20px;
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #1565c0;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.pagination--pager:hover {
+  background: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+.pagination--pager.disabled {
   opacity: 0.5;
+  pointer-events: none;
 }
 
-/* Hiệu ứng khi di chuột vào link */
-.hero-contact-wrapper a:hover {
-  text-decoration: underline !important;
+@media (max-width: 1200px) {
+  .post-grid-container { grid-template-columns: 220px 1fr !important; }
+  .post-grid-sidebar-right { display: none !important; }
+}
+
+@media (max-width: 768px) {
+  .post-grid-container { grid-template-columns: 1fr !important; }
+  .post-grid-sidebar-left, .post-grid-sidebar-right { display: none !important; }
 }
