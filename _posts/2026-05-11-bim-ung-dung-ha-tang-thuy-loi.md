@@ -31,7 +31,7 @@ tags:
     Nghị định 175,
     LOD - LOI
   ]
-excerpt: "> *Mô hình BIM tốt nhất không phải mô hình đẹp nhất, mà là mô hình được dùng nhiều nhất*. Một số dự án hạ tầng và thủy lợi tại Việt Nam triển khai BIM nhưng kết quả chỉ dừng ở 'mô hình 3D đẹp'. Bài viết phân tích chuyên sâu vì sao BIM hạ tầng khác hoàn toàn BIM dân dụng, vai trò trọng tâm của Điều phối (Coordination) và CDE, framework lựa chọn phần mềm theo bài toán thực tế."
+excerpt: "> *Mô hình BIM tốt nhất không phải mô hình đẹp nhất, mà là mô hình được ứng dụng hiệu quả nhất*. Một số dự án hạ tầng và thủy lợi tại Việt Nam triển khai BIM nhưng kết quả chỉ dừng ở 'mô hình 3D đẹp'. Bài viết phân tích chuyên sâu vì sao BIM hạ tầng khác hoàn toàn BIM dân dụng, vai trò trọng tâm của Điều phối (Coordination) và CDE, framework lựa chọn phần mềm theo bài toán thực tế."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
@@ -314,7 +314,7 @@ Bối cảnh pháp lý đang chín muồi **Quyết định 258/QĐ-TTg** đã �
 
 Câu trả lời nằm ở chỗ **hiểu đúng bản chất** BIM hạ tầng là hệ thống thông tin sống, không phải là sản phẩm 3D; là cơ chế phối hợp đa bên, không phải là một mô hình duy nhất; là quy trình kiểm soát thông tin xuyên vòng đời, không phải là một sản phẩm giao nộp trong hồ sơ thiết kế.
 
-> *Mô hình BIM tốt nhất không phải mô hình đẹp nhất mà là mô hình được dùng nhiều nhất.*
+> *Mô hình BIM tốt nhất không phải mô hình đẹp nhất mà là mô hình được ứng dụng hiệu quả nhất.*
 
 ---
 
