@@ -210,6 +210,8 @@ function showCLIInstructions(url, platform, format, quality) {
         command = `socialmediadl "${url}" -q ${quality} -f ${format}`;
     }
 
+    const escapedCommand = command.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
     const message = `
         <div style="text-align: left;">
             <p><strong>To download this ${format.toUpperCase()} file:</strong></p>
@@ -218,8 +220,8 @@ function showCLIInstructions(url, platform, format, quality) {
                 <li>Run this command:</li>
             </ol>
             <div style="background: #1e293b; color: #e2e8f0; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; font-family: monospace; position: relative;">
-                <code>${command}</code>
-                <button onclick="copyToClipboard('${command}')" style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(255,255,255,0.1); border: none; color: white; padding: 0.25rem 0.5rem; border-radius: 4px; cursor: pointer;">
+                <code>${escapedCommand}</code>
+                <button data-command id="copy-cmd-btn" style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(255,255,255,0.1); border: none; color: white; padding: 0.25rem 0.5rem; border-radius: 4px; cursor: pointer;">
                     <i class="fas fa-copy"></i> Copy
                 </button>
             </div>
@@ -238,6 +240,14 @@ function showCLIInstructions(url, platform, format, quality) {
     statusDiv.style.background = '#eff6ff';
     statusDiv.style.color = '#1e40af';
     statusDiv.style.border = '1px solid #bfdbfe';
+
+    // Attach copy handler safely (avoids inline onclick with special chars)
+    document.getElementById('copy-cmd-btn').addEventListener('click', function() {
+        navigator.clipboard.writeText(command).then(() => {
+            this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            setTimeout(() => { this.innerHTML = '<i class="fas fa-copy"></i> Copy'; }, 2000);
+        });
+    });
 }
 
 // Smooth scroll to section
