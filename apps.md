@@ -245,6 +245,31 @@ header:
         </div>
       </div>
 
+      <div class="app-card">
+        <div class="app-card-image">
+          <img src="/assets/images/app-icons/social-downloader.png" alt="Social Media Downloader" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#667eea,#764ba2)';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:white;font-size:2.5rem;\'><i class=\'fas fa-download\'></i></div>'">
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">Social Media Downloader</h3>
+          <div class="app-card-badges">
+            <span class="badge bg-primary">YouTube</span>
+            <span class="badge bg-success">Multi-Platform</span>
+          </div>
+          <p class="app-card-desc">
+            Tải video và âm thanh từ YouTube, Facebook, Instagram, TikTok, LinkedIn. Hỗ trợ CLI Python và Web UI.
+          </p>
+          <div class="app-features-list">
+            <h6>Tính năng:</h6>
+            <ul>
+              <li>Hỗ trợ 5+ nền tảng mạng xã hội</li>
+              <li>Chất lượng 4K, 1080p, MP3, WAV</li>
+              <li>CLI tool & Python API</li>
+            </ul>
+          </div>
+          <a href="{{ site.baseurl }}/apps/social-media-downloader/" class="btn--app">Mở ứng dụng</a>
+        </div>
+      </div>
+
     </div>
 
     <div class="wasm-box">
