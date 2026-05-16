@@ -53,11 +53,11 @@ This report aims to provide a scientific and structured analysis of the PMP exam
 
 ## 2. Introduction to Freecram / Giới thiệu về Freecram
 
-Freecram is a well-known online platform that provides updated exam dumps and practice questions for various IT and professional certifications, including PMP.  
-*Freecram là một nền tảng trực tuyến nổi tiếng cung cấp các bộ đề thi cập nhật và câu hỏi thực hành cho nhiều chứng chỉ CNTT và chuyên nghiệp, bao gồm cả PMP.*
+Freecram is an online platform providing updated exam dumps and practice questions for professional certifications including PMP.  
+*Freecram là nền tảng trực tuyến cung cấp bộ đề thi cập nhật và câu hỏi thực hành cho các chứng chỉ chuyên nghiệp, bao gồm PMP.*
 
-*   **Role**: It serves as a simulation tool to help candidates familiarise themselves with the actual exam format and time pressure.  
-    *   *Vai trò: Nó đóng vai trò như một công cụ mô phỏng giúp thí sinh làm quen với định dạng bài thi thực tế và áp lực thời gian.*
+*   **Role**: A simulation tool to help candidates get used to the actual exam format and time pressure.  
+    *   *Vai trò: Công cụ mô phỏng giúp thí sinh làm quen với định dạng bài thi thực tế và áp lực thời gian.*
 *   **Version e7002**: This specific release for the 2025 PMP exam includes questions that reflect the latest Examination Content Outline (ECO).  
     *   *Phiên bản e7002: Bản phát hành cụ thể này cho kỳ thi PMP 2025 bao gồm các câu hỏi phản ánh Đề cương Nội dung Thi (ECO) mới nhất.*
 
@@ -83,8 +83,8 @@ The 2025 PMP Exam continues to adhere to the Examination Content Outline (ECO) 2
 
 ## 4. Features of Version e7002 / Đặc điểm phiên bản e7002
 
-Based on the metadata from the source link, this version (e7002) represents a significant update for late 2025 candidates.  
-*Dựa trên siêu dữ liệu từ liên kết nguồn, phiên bản này (e7002) đại diện cho một bản cập nhật quan trọng cho các ứng viên cuối năm 2025.*
+Version e7002 was released December 17, 2025 and reflects the most recent Examination Content Outline for late-2025 candidates.  
+*Phiên bản e7002 được phát hành ngày 17/12/2025, phản ánh Đề cương Nội dung Thi mới nhất cho các ứng viên cuối năm 2025.*
 
 *   **Update Date**: December 17, 2025.  
     *   *Ngày cập nhật: 17/12/2025.*
@@ -97,8 +97,8 @@ Based on the metadata from the source link, this version (e7002) represents a si
 
 ## 5. Deep Dive: Common Pitfalls & Mistakes / Các lỗi và bẫy thường gặp
 
-This section highlights areas where candidates often lose points, illustrated with examples inspired by the Freecram database.  
-*Phần này nêu bật các lĩnh vực mà thí sinh thường mất điểm, được minh họa bằng các ví dụ lấy cảm hứng từ cơ sở dữ liệu Freecram.*
+Dưới đây là các lĩnh vực thí sinh thường mất điểm nhất, với ví dụ minh họa từ bộ đề Freecram.  
+*The following are areas where candidates most commonly lose points, with examples drawn from the Freecram database.*
 
 ### 5.1. Agile vs. Waterfall Confusion / Nhầm lẫn giữa Agile và Waterfall
 
@@ -255,8 +255,8 @@ To pass the PMP exam quickly (within 4-6 weeks) using resources like Freecram, f
 
 ## 8. Exam Experience / Kinh nghiệm thi thực tế
 
-Based on successful candidates using the 2025 materials:  
-*Dựa trên các ứng viên thành công sử dụng tài liệu 2025:*
+Những điểm thực tế từ thí sinh đã thi đỗ với tài liệu 2025:  
+*Practical takeaways from candidates who passed using the 2025 materials:*
 
 1.  **Don't Memorize, Understand**: The actual exam changes variable names and contexts. Memorizing exact questions from dumps will fail.  
     *   *Đừng học vẹt, hãy hiểu: Bài thi thực tế thay đổi tên biến và bối cảnh. Học thuộc lòng câu hỏi từ bộ đề sẽ thất bại.*
@@ -267,37 +267,28 @@ Based on successful candidates using the 2025 materials:
 
 ---
 
-## 9. Review of Additional Resources / Đánh giá Tài liệu Bổ sung
+## 9. Tài liệu tham khảo bổ sung / Additional resources
 
-Below is a summary of essential resources recommended for PMP candidates to supplement their study, focusing on exam structure, policies, and visual models.
-*Dưới đây là tóm tắt các nguồn tài liệu thiết yếu được khuyến nghị cho thí sinh PMP để bổ sung cho việc học, tập trung vào cấu trúc bài thi, chính sách và các mô hình trực quan.*
+Ba nguồn dưới đây bổ trợ trực tiếp cho nội dung bài này về cấu trúc bài thi, stakeholder engagement và chính sách PMI.  
+*Three resources below directly support the content in this post on exam structure, stakeholder engagement, and PMI policy.*
 
 ### 9.1. PM Study Circle (Fahad Usmani)
-**Content**: This series of articles covers the foundational "administrative" knowledge of the PMP certification. It details **What PMP is**, the **Eligibility Requirements**, the **Application Process** (including audits), **Certification Costs**, and the detailed **Exam Format**.
-*Nội dung: Chuỗi bài viết này bao gồm các kiến thức nền tảng về "thủ tục" của chứng chỉ PMP. Nó chi tiết hóa PMP là gì, Yêu cầu điều kiện, Quy trình nộp đơn (bao gồm kiểm tra hồ sơ), Chi phí chứng chỉ, và Cấu trúc bài thi chi tiết.*
 
-**Objective**: To provide a clear, step-by-step roadmap for beginners to navigate the complexities of PMI's registration process without confusion.
-*Mục tiêu: Cung cấp lộ trình rõ ràng, từng bước cho người mới bắt đầu để điều hướng các phức tạp trong quy trình đăng ký của PMI mà không bị bối rối.*
+Chuỗi bài viết của Fahad Usmani bao gồm các kiến thức nền về chứng chỉ PMP: PMP là gì, yêu cầu điều kiện, quy trình nộp đơn (gồm kiểm tra hồ sơ), chi phí và cấu trúc bài thi chi tiết. Nếu bạn mới bắt đầu, đây là nơi nên đọc trước để xác minh điều kiện và ước lượng ngân sách. Biểu đồ phân bổ miền thi trong Mục 3 bài này lấy từ nguồn này.
 
-**Relevance**: Verify your eligibility and budget before starting. The exam format guide is the source for the structure distribution chart used in Section 3.
-*Sự liên quan: Xác minh điều kiện và ngân sách của bạn trước khi bắt đầu. Hướng dẫn cấu trúc bài thi là nguồn của biểu đồ phân bổ cấu trúc được dùng trong Mục 3.*
+*Fahad Usmani's article series covers the administrative side of PMP certification: what PMP is, eligibility requirements, the application process (including audits), certification costs, and exam format. Read this first to verify your eligibility and budget. The domain distribution chart in Section 3 above is sourced from here.*
 
 ### 9.2. Creately (Visual Guides)
-**Content**: Provides comprehensive guides on visual modeling, specifically the **Stakeholder Engagement Model**. It explains how to map stakeholders based on their interest and power, and how to move them from "Unaware" to "Leading".
-*Nội dung: Cung cấp các hướng dẫn toàn diện về mô hình hóa trực quan, cụ thể là Mô hình Gắn kết Bên liên quan. Nó giải thích cách lập bản đồ các bên liên quan dựa trên sự quan tâm và quyền lực, và cách chuyển họ từ trạng thái "Không biết" sang "Dẫn dắt".*
 
-**Objective**: To help project managers use visual tools to analyze and communicate complex stakeholder relationships effectively.
-*Mục tiêu: Giúp các giám đốc dự án sử dụng công cụ trực quan để phân tích và giao tiếp các mối quan hệ phức tạp với bên liên quan một cách hiệu quả.*
+Creately có hướng dẫn chi tiết về Stakeholder Engagement Model: cách lập bản đồ stakeholder theo mức độ quan tâm và quyền lực, và cách đưa họ từ trạng thái "Không biết" (Unaware) lên "Dẫn dắt" (Leading). Logic này nằm trực tiếp ở dạng câu hỏi tình huống trong Mục 6 bài này.
 
-**Relevance**: This resource is the origin of the engagement logic discussed in the "Sample Question Analysis" (Section 6).
-*Sự liên quan: Tài liệu này là nguồn gốc của logic về sự gắn kết được thảo luận trong phần "Phân tích câu hỏi mẫu" (Mục 6).*
+*Creately's guide explains the Stakeholder Engagement Model: how to map stakeholders by interest and power, and how to move them from Unaware to Leading. This is the engagement logic behind the sample question in Section 6.*
 
 ### 9.3. PMI Official Documents (ECO & Handbook)
-**Content**: The **Examination Content Outline (ECO)** lists the specific Tasks and Enablers examined. The **Handbook** outlines policies, code of ethics, and maintaining PDUs.
-*Nội dung: Đề cương Nội dung Thi (ECO) liệt kê các Nhiệm vụ (Tasks) và Yếu tố hỗ trợ (Enablers) cụ thể được thi. Sổ tay nêu rõ các chính sách, quy tắc đạo đức và việc duy trì PDU.*
 
-**Objective**: To serve as the "single source of truth" for the exam. Any third-party material must align with these documents.
-*Mục tiêu: Đóng vai trò là "nguồn sự thật duy nhất" cho kỳ thi. Mọi tài liệu bên thứ ba phải phù hợp với các tài liệu này.*
+ECO (Examination Content Outline) liệt kê chính xác các Tasks và Enablers được thi. Handbook nêu rõ chính sách, quy tắc đạo đức và cách duy trì PDU. Mọi tài liệu luyện thi của bên thứ ba, kể cả Freecram, phải được đọc song song với hai tài liệu gốc này.
+
+*The ECO lists the exact Tasks and Enablers that appear on the exam. The Handbook covers policies, code of ethics, and PDU maintenance. Every third-party study material, including Freecram, should be read alongside these two primary sources.*
 
 ---
 
@@ -311,8 +302,8 @@ Còn nếu bạn cần tư vấn QLDA thực tế cho dự án đang triển kha
 
 **Liên hệ:**
 
-- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) ->  trao đổi kinh nghiệm QLDA và luyện thi PMP
-- Liên hệ: [WhatsApp](https://wa.me/84374874142) ->  cho câu hỏi cụ thể hơn về dự án thực
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com): trao đổi kinh nghiệm QLDA và luyện thi PMP.
+- [WhatsApp](https://wa.me/84374874142): cho câu hỏi cụ thể hơn về dự án thực.
 
 ---
 
