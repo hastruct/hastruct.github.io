@@ -44,6 +44,9 @@ CivilPy giải quyết vấn đề này theo một hướng thực dụng hơn: 
 
 Thư viện được cấp phép theo AGPL-3.0, hoàn toàn miễn phí và mã nguồn mở. Yêu cầu Python từ 3.10 trở lên.
 
+![Hình minh họa Biểu đồ ứng suất đáy móng dùng CivilPy](/assets/images/posts/civilpy-thu-vien-python-ky-su-xay-dung/foundation-pressure.png)
+*Hình minh họa  Biểu đồ ứng suất đáy móng dùng CivilPy)*
+
 ## Cài đặt
 
 Cài đặt cơ bản chỉ cần một lệnh:
