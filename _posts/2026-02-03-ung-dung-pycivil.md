@@ -25,217 +25,286 @@ tags:
     "Thiết kế cầu",
     "Tự động hóa thiết kế"
   ]
-excerpt: "CivilPy là thư viện Python mã nguồn mở dành cho kỹ sư xây dựng, cung cấp dữ liệu tiết diện thép AISC, công cụ thiết kế theo AASHTO và AREMA, tích hợp Midas Civil API và các bộ dữ liệu cầu SNBI và ODOT TIMS."
+excerpt: "CivilPy là thư viện Python mã nguồn mở cung cấp toàn bộ tiết diện thép AISC dưới dạng đối tượng Python tích hợp đơn vị Pint, công cụ tính toán theo AASHTO và AREMA, tích hợp Midas Civil API và bộ dữ liệu quản lý cầu SNBI và ODOT TIMS."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
   caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
-CivilPy là thư viện Python mã nguồn mở do Dane Parks phát triển, hướng đến việc cung cấp bộ công cụ tính toán và tự động hóa cho kỹ sư xây dựng, đặc biệt trong lĩnh vực kết cấu thép, thiết kế cầu và giao tiếp với phần mềm kỹ thuật. Phiên bản 0.2.3 phát hành ngày 4 tháng 5 năm 2026 mang lại nhiều cải tiến đáng kể so với các phiên bản trước.
+CivilPy là thư viện Python mã nguồn mở do Dane Parks phát triển, cung cấp bộ công cụ tính toán và tự động hóa cho kỹ sư xây dựng. Phiên bản 0.2.3 phát hành ngày 4 tháng 5 năm 2026, tập trung vào ba nhóm chức năng chính: dữ liệu tiết diện thép AISC, thiết kế cầu theo AASHTO và AREMA, và tích hợp phần mềm kỹ thuật thương mại qua API.
 
-Bài viết giới thiệu các tính năng chính của CivilPy, hướng dẫn cài đặt và trình bày ví dụ ứng dụng thực tế.
+Bài viết trình bày cấu trúc thư viện, hướng dẫn cài đặt và các ví dụ ứng dụng thực tế với đường dẫn import chính xác.
 
 ## Giới thiệu
 
-Một trong những thách thức lớn nhất của kỹ sư xây dựng hiện đại là khoảng cách giữa tính toán thủ công và tự động hóa quy trình. Hầu hết các phần mềm thương mại như MIDAS, ETABS hay SAP2000 cung cấp giao diện đồ họa tiện lợi nhưng thiếu khả năng lập trình linh hoạt để xử lý hàng loạt hoặc tích hợp vào quy trình thiết kế tổng thể.
+Kỹ sư xây dựng thường làm việc với nhiều nguồn dữ liệu chuẩn — bảng tiết diện thép AISC, bảng tải trọng AASHTO, quy định vật liệu AREMA — nhưng phần lớn dữ liệu này chỉ tồn tại trong sách hoặc file PDF, buộc người dùng phải nhập tay vào mỗi lần tính toán. CivilPy giải quyết vấn đề này bằng cách đưa toàn bộ các bảng dữ liệu chuẩn đó vào Python dưới dạng đối tượng có thể lập trình được.
 
-CivilPy giải quyết vấn đề này theo một hướng thực dụng hơn: thay vì thay thế phần mềm thương mại, thư viện đóng vai trò lớp trung gian cho phép kỹ sư truy cập dữ liệu chuẩn (AISC, AASHTO, AREMA), thực hiện tính toán tự động và giao tiếp với phần mềm kỹ thuật qua API.
+Ngoài dữ liệu chuẩn, thư viện cũng cung cấp API kết nối trực tiếp với Midas Civil và các công cụ quản lý dữ liệu cầu theo tiêu chuẩn liên bang Mỹ (SNBI, ODOT TIMS).
 
-Thư viện được cấp phép theo AGPL-3.0, hoàn toàn miễn phí và mã nguồn mở. Yêu cầu Python từ 3.10 trở lên.
+Thư viện được cấp phép theo AGPL-3.0, hoàn toàn miễn phí và mã nguồn mở. Yêu cầu Python 3.10 trở lên.
 
 ![Hình minh họa Biểu đồ ứng suất đáy móng dùng CivilPy](/assets/images/posts/civilpy-thu-vien-python-ky-su-xay-dung/foundation-pressure.png)
 *Hình minh họa  Biểu đồ ứng suất đáy móng dùng CivilPy)*
 
 ## Cài đặt
 
-Cài đặt cơ bản chỉ cần một lệnh:
+Cài đặt cơ bản:
 
 ```bash
 pip install civilpy
 ```
 
-CivilPy cung cấp nhiều tùy chọn cài đặt bổ sung tùy theo nhu cầu:
+CivilPy cung cấp các gói tùy chọn tách biệt để tránh phụ thuộc không cần thiết:
 
-| Tùy chọn | Mô tả |
+| Gói tùy chọn | Nội dung |
 |---|---|
-| `civilpy[db]` | Hỗ trợ cơ sở dữ liệu |
-| `civilpy[pdf]` | Đọc và xử lý PDF |
-| `civilpy[geo]` | Công cụ địa lý và GIS |
-| `civilpy[web]` | Công cụ web scraping |
-| `civilpy[jupyter]` | Tích hợp Jupyter Notebook |
-| `civilpy[validation]` | Kiểm tra và xác thực dữ liệu |
-| `civilpy[full]` | Cài đặt toàn bộ tính năng |
+| `civilpy[db]` | Kết nối PostgreSQL, Oracle và SSH tunneling |
+| `civilpy[pdf]` | Đọc PDF: PyMuPDF, Camelot, Tesseract OCR |
+| `civilpy[geo]` | Bản đồ Folium và xử lý GeoTIFF |
+| `civilpy[web]` | Selenium và Plotly |
+| `civilpy[jupyter]` | Jupyter Notebook và ipywidgets |
+| `civilpy[validation]` | Pydantic models kiểm tra dữ liệu SNBI |
+| `civilpy[full]` | Tất cả tính năng trên |
 
-Để cài đặt đầy đủ cho môi trường phát triển:
+Môi trường phát triển đầy đủ:
 
 ```bash
 pip install civilpy[full]
 ```
 
+## Cấu trúc thư viện
+
+CivilPy tổ chức theo lĩnh vực chuyên môn, mỗi sub-module độc lập:
+
+```
+civilpy/
+├── structural/          # Kết cấu: thép AISC, AASHTO, AREMA, Midas Civil
+├── geotech/             # Địa kỹ thuật
+├── transportation/      # Hạ tầng giao thông
+├── water_resources/     # Thủy văn và thủy lực
+├── general/             # Tiện ích chung, quản lý đơn vị (Pint)
+└── state/
+    └── ohio/            # Công cụ đặc thù Ohio: SNBI, ODOT TIMS
+```
+
+Module `civilpy.structural` là trọng tâm của thư viện và chứa phần lớn các công cụ hữu ích nhất cho kỹ sư kết cấu cầu.
+
 ## Tiết diện thép AISC
 
-Một trong những tính năng nổi bật nhất của CivilPy là cơ sở dữ liệu tiết diện thép theo tiêu chuẩn AISC, tích hợp thư viện đơn vị `Pint` để tự động chuyển đổi và kiểm tra thứ nguyên trong quá trình tính toán.
+`civilpy.structural.steel` cung cấp toàn bộ tiết diện thép chuẩn AISC dưới dạng đối tượng Python, tích hợp thư viện `Pint` để mang đơn vị theo từng giá trị.
+
+Các lớp tiết diện được hỗ trợ: `W` (dầm chữ I cánh rộng), `HSS` (tiết diện hộp tròn và chữ nhật), `C` (thép máng), `L` (thép góc), `Pipe`, `HP` (cọc thép chịu tải đứng), `WT` (thép chữ T), `TwoL` (thép góc đôi).
 
 ```python
-from civilpy.structural.steel import AISCSteelSection
+from civilpy.structural.steel import W
+from civilpy.general import units
 
-# Truy xuất tiết diện W14x82
-section = AISCSteelSection("W14X82")
+# Truy xuất tiết diện W36x150
+beam = W("W36X150")
 
-print(f"Diện tích mặt cắt ngang: {section.A}")
-print(f"Mô men quán tính trục x: {section.Ix}")
-print(f"Mô men kháng uốn Sx: {section.Sx}")
-print(f"Chiều cao tiết diện: {section.d}")
-print(f"Bán kính quán tính rx: {section.rx}")
+# Thuộc tính hình học — kèm đơn vị tự động
+print(beam.depth)   # 35.9 in
+print(beam.I_x)     # 9040.0 in⁴
+print(beam.S_x)     # 504.0 in³
+print(beam.Z_x)     # 581.0 in³
+
+# Tính ứng suất uốn với kiểm tra thứ nguyên
+M = 400 * units("kip*ft")
+fb = (M.to("kip*in") / beam.S_x.to("in^3")).to("ksi")
+print(f"Ứng suất uốn: {fb:.2f}")
 ```
 
-Kết quả trả về đều kèm đơn vị cụ thể (in², in⁴, in³...) nhờ Pint, giúp phát hiện lỗi thứ nguyên ngay trong quá trình tính toán thay vì chờ đến bước kiểm tra kết quả.
+Nhờ Pint, phép tính thứ nguyên được kiểm tra tự động. Nếu đơn vị không khớp (ví dụ: kip nhân với inch nhưng chia cho in⁴), Python sẽ báo lỗi ngay thay vì trả về số vô nghĩa.
 
-Thư viện hỗ trợ đầy đủ các loại tiết diện thép AISC: W, S, M, HP (dầm và cột), C, MC (thanh máng), L, WT, ST, MT, HSS tròn, HSS chữ nhật và các tiết diện đặc biệt khác.
+Thư viện còn cung cấp `HistoricSteelSection` cho các tiết diện trước thời điểm AISC chuẩn hóa — hữu ích khi kiểm tra và đánh giá cầu cũ xây dựng trước thập niên 1920. Hàm `get_bolt_weights()` hỗ trợ tính trọng lượng bu lông cho bản thống kê vật liệu.
 
-## Phân tích tiết diện tổ hợp
+## Tiết diện tổ hợp và bản thép
 
-Module `CrossSection` cho phép xây dựng và phân tích tiết diện dầm tổ hợp (plate girder), loại tiết diện phổ biến trong thiết kế cầu thép và kết cấu công nghiệp.
+`civilpy.structural.section_properties` cung cấp lớp `CrossSection` để xây dựng và tính toán đặc trưng hình học của tiết diện tổ hợp từ nhiều bản thép.
 
 ```python
-from civilpy.structural.cross_section import CrossSection
+from civilpy.structural.section_properties import CrossSection
 
-# Xây dựng tiết diện dầm tổ hợp I
-girder = CrossSection()
-girder.add_plate(width=600, thickness=20, y_offset=0)     # Bản cánh dưới
-girder.add_web(height=1200, thickness=12)                  # Bụng dầm
-girder.add_plate(width=500, thickness=25, y_offset=1220)  # Bản cánh trên
+# Dầm tổ hợp I (plate girder)
+section = CrossSection()
+section.add_plate(b=600, t=20)    # Bản cánh dưới: rộng 600mm, dày 20mm
+section.add_plate(b=12, t=1200)   # Bụng dầm: rộng 12mm, cao 1200mm
+section.add_plate(b=500, t=25)    # Bản cánh trên: rộng 500mm, dày 25mm
 
-# Tính toán đặc trưng hình học
-props = girder.calculate_properties()
-print(f"Trọng tâm: {props.centroid} mm")
-print(f"Mô men quán tính Ixx: {props.Ixx:.2e} mm⁴")
-print(f"Mô men kháng uốn trên: {props.Sx_top:.0f} mm³")
-print(f"Mô men kháng uốn dưới: {props.Sx_bottom:.0f} mm³")
+# Tính đặc trưng hình học
+props = section.get_properties()
+print(f"Diện tích: {props.area}")
+print(f"Trọng tâm tính từ đáy: {props.centroid}")
+print(f"Mô men quán tính Ixx: {props.I_x}")
 ```
 
-Khả năng tự động tính toán đặc trưng hình học giúp giảm đáng kể thời gian khi cần so sánh nhiều phương án tiết diện trong giai đoạn thiết kế sơ bộ.
+Lớp `CrossSection` cũng hỗ trợ tích hợp tiết diện cán sẵn (rolled shapes) vào tiết diện tổ hợp, ví dụ dầm bê tông cốt thép có bản cánh thép hoặc dầm thép bổ sung bản gia cường.
 
-## Thiết kế theo AASHTO và AREMA
+## Thiết kế theo AASHTO
 
-CivilPy tích hợp các quy định tính toán từ hai tiêu chuẩn thiết kế cầu quan trọng của Bắc Mỹ.
+`civilpy.structural.aashto` triển khai các bảng tham chiếu và quy trình kiểm tra từ tiêu chuẩn AASHTO LRFD Bridge Design Specifications.
 
-Tiêu chuẩn AASHTO LRFD (American Association of State Highway and Transportation Officials) áp dụng phương pháp hệ số tải trọng và sức kháng cho thiết kế cầu đường bộ. Tiêu chuẩn AREMA (American Railway Engineering and Maintenance-of-Way Association) phục vụ thiết kế cầu đường sắt.
+Các công cụ chính:
+
+- `MethodABearing` — Kiểm tra gối đàn hồi theo AASHTO LRFD Table 14.6.2 (Method A), bao gồm kiểm tra ứng suất nén, biến dạng cắt và góc xoay cho phép.
+- `HL93Load` — Định nghĩa tải trọng xe HL-93 (xe tải thiết kế và đoàn xe) cho tổ hợp tải trọng theo LRFD.
 
 ```python
-from civilpy.structural.aashto import AASHTOBeam
+from civilpy.structural.aashto import MethodABearing, HL93Load
 
-# Phân tích dầm cầu theo AASHTO LRFD
-beam = AASHTOBeam(
-    span_length=30.0,    # Nhịp dầm, đơn vị feet
-    section="W36X160",   # Tiết diện thép AISC
-    fy=50.0,             # Cường độ chảy, ksi
-    load_factor=1.25     # Hệ số tải trọng tĩnh
+# Tải trọng HL-93 — xe tải thiết kế cho cầu đường bộ
+truck = HL93Load()
+print(truck.axle_loads)   # Tải trọng các trục xe
+
+# Kiểm tra gối đàn hồi Method A
+bearing = MethodABearing()
+result = bearing.check()
+print(result)
+```
+
+Các bảng tra cứu về độ phù hợp gối đỡ (bearing suitability) từ AASHTO LRFD được tích hợp sẵn, giúp lựa chọn loại gối phù hợp với từng điều kiện tải trọng mà không cần tra bảng thủ công.
+
+## Thiết kế cầu đường sắt theo AREMA
+
+`civilpy.structural.arema` cung cấp các định nghĩa vật liệu và tải trọng theo tiêu chuẩn AREMA Chapter 15 — tiêu chuẩn thiết kế kết cấu thép cho cầu đường sắt tại Bắc Mỹ.
+
+```python
+from civilpy.structural.arema import (
+    GlobalDefinitions,
+    LoadDefinitions,
+    ThroughPlateGirderFloorbeam
 )
 
-result = beam.check_flexure()
-print(f"Sức kháng uốn thiết kế: {result.phi_Mn:.1f} kip-ft")
-print(f"Mô men tính toán: {result.Mu:.1f} kip-ft")
-print(f"Tỷ số kiểm tra DCR: {result.DCR:.3f}")
+# Định nghĩa vật liệu toàn cục theo AREMA Chapter 15
+materials = GlobalDefinitions()
+print(f"Cường độ chảy thép: {materials.Fy}")
+print(f"Mô đun đàn hồi: {materials.E}")
+
+# Tải trọng Cooper E80 — tải trọng tàu hỏa thiết kế
+loads = LoadDefinitions()
+print(loads.cooper_e80)
+
+# Thiết kế dầm ngang dầm qua (through plate girder)
+floorbeam = ThroughPlateGirderFloorbeam(
+    span=16.0,       # feet
+    spacing=5.0      # feet
+)
+print(floorbeam.design_moment())
 ```
 
-Việc triển khai trực tiếp công thức từ AASHTO và AREMA trong Python giúp kỹ sư kiểm tra lại logic tính toán, điều chỉnh hệ số và tích hợp vào quy trình thiết kế tự động.
+`ThroughPlateGirderFloorbeam` tự động hóa thiết kế dầm ngang cho loại cầu thép dầm qua — dạng phổ biến trong các cầu đường sắt cũ và hiện đại.
 
 ## Tích hợp Midas Civil
 
-Một trong những ưu điểm thực tiễn nhất của CivilPy là khả năng giao tiếp với phần mềm Midas Civil qua API, cho phép tự động hóa nhiều tác vụ lặp đi lặp lại.
+`civilpy.structural.midas` kết nối trực tiếp với phần mềm Midas Civil phiên bản 2022 trở lên thông qua REST API, cho phép đọc và ghi dữ liệu mô hình từ Python.
 
 ```python
-from civilpy.software.midas import MidasCivilAPI
+from civilpy.structural.midas import midas_api
 
-# Kết nối với Midas Civil đang chạy
-midas = MidasCivilAPI(host="localhost", port=8080)
-
-# Đọc nội lực các phần tử
-beam_forces = midas.get_beam_forces(
-    load_case="SW+LL",
-    element_ids=range(1, 101)
+# Truy vấn danh sách phần tử từ mô hình đang mở
+elements = midas_api(
+    endpoint="/db/elem",
+    method="GET"
 )
 
-# Xuất kết quả ra DataFrame để phân tích
-import pandas as pd
-df = pd.DataFrame(beam_forces)
-print(df.describe())
+# Lấy thông tin nút, tiết diện và tải trọng
+nodes = midas_api(endpoint="/db/node", method="GET")
+sections = midas_api(endpoint="/db/sect", method="GET")
+static_loads = midas_api(endpoint="/db/stldcase", method="GET")
 
-# Cập nhật tiết diện hàng loạt và chạy lại phân tích
-for elem_id in range(1, 51):
-    midas.update_section(elem_id, section_name="W21X62")
-
-midas.run_analysis()
+# Cập nhật tiết diện hàng loạt
+for sect_id in range(1, 51):
+    midas_api(
+        endpoint=f"/db/sect/{sect_id}",
+        method="PUT",
+        data={"SECTID": sect_id, "SNAME": "W21X62"}
+    )
 ```
 
-Khả năng điều khiển Midas Civil qua Python giúp tự động hóa các quy trình như: cập nhật hàng loạt tiết diện dầm, xuất báo cáo kết quả, so sánh nhiều phương án thiết kế trong một script duy nhất — những việc trước đây phải thao tác thủ công trong giao diện đồ họa.
+Khả năng này giúp tự động hóa các quy trình lặp đi lặp lại: so sánh nhiều phương án tiết diện, xuất kết quả nội lực theo từng tổ hợp tải, hoặc cập nhật hàng loạt thông số mô hình mà không cần thao tác thủ công trong giao diện đồ họa.
 
-## Dữ liệu cầu: SNBI và ODOT TIMS
+## Quản lý dữ liệu kiểm kê cầu
 
-CivilPy cung cấp hai module phục vụ quản lý và phân tích dữ liệu hạ tầng cầu.
+### Dữ liệu SNBI
 
-Module SNBI (Specifications for the National Bridge Inventory) triển khai bộ mô hình dữ liệu dựa trên Pydantic để làm việc với dữ liệu kiểm kê cầu theo chuẩn liên bang Mỹ. Pydantic đảm bảo dữ liệu được xác thực tự động khi nhập vào, giảm nguy cơ sai sót trong quá trình xử lý.
+`civilpy.state.ohio.snbi` cung cấp bộ Pydantic models để làm việc với dữ liệu kiểm kê cầu theo tiêu chuẩn FHWA Specifications for the National Bridge Inventory (SNBI). Pydantic tự động kiểm tra kiểu và phạm vi dữ liệu khi khởi tạo đối tượng.
 
 ```python
-from civilpy.state.ohio.snbi import BridgeRecord
+from civilpy.state.ohio.snbi import Bridge, Inspection, Element
 
 # Tạo bản ghi cầu theo chuẩn SNBI
-bridge = BridgeRecord(
+bridge = Bridge(
     structure_number="3901234",
     year_built=1985,
-    main_span_length=45.7,
-    deck_condition_rating=6,
-    superstructure_rating=7,
-    substructure_rating=5
+    main_span_length=45.7
 )
 
-print(bridge.overall_condition())
+# Dữ liệu kiểm tra định kỳ
+inspection = Inspection(
+    bridge=bridge,
+    rating_year=2024,
+    deck_condition=6,
+    superstructure_condition=7,
+    substructure_condition=5
+)
+print(inspection.overall_rating())
 ```
 
-Module ODOT TIMS (Ohio Department of Transportation Transportation Information Mapping System) cung cấp công cụ truy vấn dữ liệu hạ tầng giao thông Ohio, hữu ích cho các dự án nghiên cứu và phân tích mạng lưới cầu.
+### Dữ liệu ODOT TIMS
 
-Mặc dù hai module này xây dựng theo chuẩn dữ liệu của Mỹ, cấu trúc và cách tiếp cận có thể làm tài liệu tham khảo cho việc xây dựng hệ thống quản lý dữ liệu cầu theo tiêu chuẩn Việt Nam.
+`civilpy.state.ohio.DOT.TIMS` kết nối với dịch vụ ArcGIS REST của Sở Giao thông Ohio (ODOT) để tải dữ liệu kiểm kê cầu toàn bang — không cần xác thực.
+
+```python
+from civilpy.state.ohio.DOT.TIMS import get_tims_data, TIMSBridge
+
+# Truy vấn dữ liệu cầu theo hạt (county)
+bridges = get_tims_data(county="Franklin")
+for bridge in bridges:
+    print(f"{bridge.structure_number}: năm xây {bridge.year_built}")
+```
+
+Mặc dù hai module này xây dựng theo chuẩn dữ liệu của Mỹ, cấu trúc Pydantic models và cách tiếp cận có thể làm tài liệu tham khảo cho việc xây dựng hệ thống quản lý dữ liệu cầu theo tiêu chuẩn Việt Nam.
 
 ## Ưu điểm và hạn chế
 
 ### Điểm mạnh
 
-CivilPy mang lại giá trị thực tiễn rõ ràng trong các tình huống cụ thể:
-
-- Tính toán hàng loạt: script Python xử lý hàng trăm tiết diện trong vài giây thay vì nhập liệu thủ công từng cái một.
-- Tích hợp phần mềm: module Midas Civil API kết nối các bước trong quy trình thiết kế trước đây cần thao tác thủ công.
-- Kiểm chứng tính toán: mã nguồn mở cho phép xem và xác minh đúng công thức được áp dụng, không phụ thuộc vào hộp đen của phần mềm thương mại.
-- Dữ liệu chuẩn sẵn có: cơ sở dữ liệu AISC tích hợp sẵn giúp tránh nhập liệu thủ công và giảm nguy cơ sai số.
+- Dữ liệu chuẩn tích hợp sẵn: toàn bộ tiết diện AISC, bảng tham chiếu AASHTO, định nghĩa vật liệu AREMA — không cần nhập tay, không có nguy cơ sai số khi tra bảng.
+- Đơn vị tự động qua Pint: lỗi thứ nguyên được phát hiện ngay trong lúc tính toán thay vì sau khi đã ra kết quả.
+- Tích hợp Midas Civil: điều khiển phần mềm thương mại từ Python, kết nối các bước trong quy trình thiết kế.
+- Tiết diện lịch sử: `HistoricSteelSection` phục vụ đánh giá và gia cường cầu cũ.
+- Mã nguồn mở AGPL-3.0: có thể kiểm chứng từng công thức được áp dụng, không phụ thuộc vào hộp đen phần mềm thương mại.
 
 ### Hạn chế cần lưu ý
 
-- Thư viện hiện tập trung vào tiêu chuẩn Bắc Mỹ (AISC, AASHTO, AREMA). Kỹ sư Việt Nam cần bổ sung thêm công thức và hệ số theo TCVN.
-- Yêu cầu kỹ năng Python từ cơ bản đến trung cấp — không có giao diện đồ họa.
-- Phiên bản 0.2.3 vẫn đang trong giai đoạn phát triển tích cực; API có thể thay đổi giữa các phiên bản.
-- Tài liệu hiện tại chủ yếu bằng tiếng Anh.
+- Tiêu chuẩn Bắc Mỹ: thư viện hiện tập trung vào AISC, AASHTO, AREMA. Kỹ sư áp dụng TCVN cần tự bổ sung công thức và hệ số.
+- Yêu cầu lập trình Python: không có giao diện đồ họa — đòi hỏi kỹ năng lập trình từ cơ bản đến trung cấp.
+- Đang phát triển tích cực: phiên bản 0.2.3 vẫn ở trạng thái Beta; API có thể thay đổi giữa các phiên bản.
+- Tài liệu chủ yếu bằng tiếng Anh.
 
 ## Kết luận
 
-CivilPy đại diện cho một hướng tiếp cận thực dụng trong việc áp dụng Python vào kỹ thuật xây dựng: thay vì xây dựng phần mềm thay thế hoàn toàn, thư viện tập trung vào việc làm cho dữ liệu chuẩn và công cụ tính toán trở nên dễ tiếp cận và tự động hóa được.
+CivilPy là lựa chọn thực tiễn cho kỹ sư xây dựng muốn bổ sung lập trình Python vào quy trình thiết kế mà không cần xây dựng lại các bảng dữ liệu chuẩn từ đầu. Điểm mạnh cốt lõi nằm ở việc tích hợp trực tiếp AISC, AASHTO và AREMA vào Python — cộng với API kết nối Midas Civil — giúp tự động hóa những tác vụ lặp lại tốn thời gian nhất trong thiết kế cầu thép.
 
-Đối với kỹ sư Việt Nam muốn bắt đầu với lập trình kỹ thuật, CivilPy là điểm khởi đầu tốt để làm quen với tư duy "kỹ sư-lập trình viên". Việc mở rộng thư viện để hỗ trợ tiêu chuẩn TCVN là hoàn toàn khả thi và có thể đóng góp lại cho cộng đồng mã nguồn mở.
+Đối với kỹ sư Việt Nam, thư viện có thể sử dụng ngay cho phần tính toán tiết diện và tự động hóa mô hình, trong khi phần kiểm tra theo TCVN vẫn cần phát triển thêm. Cấu trúc mã nguồn mở và cộng đồng đang tích cực tạo điều kiện đóng góp thêm tiêu chuẩn Việt Nam trong tương lai.
 
-Liên hệ [WhatsApp](https://wa.me/84374874142) hoặc [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) để trao đổi thêm về ứng dụng Python trong các dự án kỹ thuật.
+Liên hệ [WhatsApp](https://wa.me/84374874142) hoặc [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) để trao đổi về ứng dụng Python trong các dự án kỹ thuật.
 
 ## Tài liệu tham khảo
 
 1. Parks, D. (2026). *CivilPy v0.2.3*. Python Package Index. [https://pypi.org/project/civilpy/](https://pypi.org/project/civilpy/)
 
-2. Parks, D. (2026). *CivilPy documentation*. [https://dane.daneparks.com/civilpy](https://dane.daneparks.com/civilpy)
+2. Parks, D. (2026). *CivilPy repository*. GitHub. [https://github.com/drparks71/CivilPy](https://github.com/drparks71/CivilPy)
 
-3. Parks, D. (2026). *CivilPy source code*. GitHub. [https://github.com/drparks71/civilpy](https://github.com/drparks71/civilpy)
+3. Parks, D. (2026). *CivilPy documentation*. [https://dane.daneparks.com/civilpy](https://dane.daneparks.com/civilpy)
 
 4. AISC. (2022). *Steel Construction Manual* (16th ed.). American Institute of Steel Construction.
 
 5. AASHTO. (2020). *AASHTO LRFD Bridge Design Specifications* (9th ed.). American Association of State Highway and Transportation Officials.
 
-6. AREMA. (2023). *Manual for Railway Engineering*. American Railway Engineering and Maintenance-of-Way Association.
+6. AREMA. (2023). *Manual for Railway Engineering*, Chapter 15: Steel Structures. American Railway Engineering and Maintenance-of-Way Association.
 
-7. FHWA. (2022). *Specifications for the National Bridge Inventory (SNBI)*. Federal Highway Administration.
+7. FHWA. (2022). *Specifications for the National Bridge Inventory (SNBI)*. Federal Highway Administration. [https://www.fhwa.dot.gov/bridge/nbi/snbi.cfm](https://www.fhwa.dot.gov/bridge/nbi/snbi.cfm)
+
+8. Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. *Computing in Science & Engineering*, 9(3), 90–95.
