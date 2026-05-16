@@ -8,7 +8,7 @@ featured: true
 mathjax: true
 toc: true
 toc_sticky: true
-toc_label: "📑 Mục Lục"
+toc_label: "Mục lục"
 permalink: "/posts/calcpad-cong-cu-tinh-toan-ky-thuat/"
 categories:
   - Software-Engineering
@@ -44,8 +44,8 @@ header:
 
 Calcpad là công cụ tính toán kỹ thuật mã nguồn mở, cho phép kỹ sư viết phép tính phức tạp dưới dạng văn bản có cấu trúc và tự động tạo báo cáo chuyên nghiệp — từ dầm đơn giản đến phân tích FEM bản sàn phẳng nhiều nhịp.
 
-**[📐 Xem các báo cáo tính toán mẫu](https://hydrostructai.com/calcpad_engineering/calcpad.html)**  
-**[🏗️ Ví dụ FEM bản sàn phẳng (BFS)](https://hydrostructai.com/calcpad_engineering/cpdoutput/3.%20Flat%20Slab%20FEA.html)**
+**[Xem các báo cáo tính toán mẫu](https://hydrostructai.com/calcpad_engineering/calcpad.html)**  
+**[Ví dụ FEM bản sàn phẳng (BFS)](https://hydrostructai.com/calcpad_engineering/cpdoutput/3.%20Flat%20Slab%20FEA.html)**
 
 Minh họa kết quả tính toán nội lực sàn **Bending moments**
 ![Bending moments My](/assets/images/posts/calcpad-cong-cu-tinh-toan-ky-thuat/bending-moments-My.jpg)
@@ -53,7 +53,7 @@ Minh họa kết quả tính toán nội lực sàn **Bending moments**
 
 ---
 
-## 📖 Giới thiệu Calcpad
+## Giới thiệu Calcpad
 
 ### Calcpad là gì?
 
@@ -73,16 +73,16 @@ Calcpad cho phép bạn:
 - **FEM native:** Hỗ trợ ma trận hiệu năng cao (`hp`), giải `Kd = F` trực tiếp
 - **Nhanh:** Viết công thức nhanh hơn Excel, dễ hơn Python cho kỹ sư
 
-### Calcpad vs. Các công cụ khác
+### Calcpad vs. các công cụ khác
 
 | Tiêu chí | Calcpad | Excel | Python |
 |----------|---------|-------|--------|
-| Công thức hiển thị đẹp | ✅ Tự động | ⚠️ Ẩn trong cell | ⚠️ Cần LaTeX |
-| Báo cáo kỹ thuật tự động | ✅ HTML/PDF | ❌ Thủ công | ⚠️ Cần template |
-| FEM / Ma trận lớn | ✅ hp matrix | ❌ | ✅ numpy |
-| Kiểm tra đơn vị tự động | ✅ | ❌ | ⚠️ pint |
-| Đường cong học tập | ✅ Thấp | ✅ Thấp | ❌ Cao |
-| Vòng lặp, điều kiện | ✅ #For #While | ⚠️ VBA | ✅ |
+| Công thức hiển thị đẹp | Tự động | Ẩn trong cell | Cần LaTeX |
+| Báo cáo kỹ thuật tự động | HTML/PDF | Thủ công | Cần template |
+| FEM / Ma trận lớn | hp matrix | Không | numpy |
+| Kiểm tra đơn vị tự động | Có | Không | pint |
+| Đường cong học tập | Thấp | Thấp | Cao |
+| Vòng lặp, điều kiện | #For #While | VBA | Có |
 
 ---
 
@@ -107,7 +107,7 @@ Calcpad cho phép bạn:
 
 ## Bắt đầu nhanh
 
-### Bước 1: Tạo File `.cpd`
+### Bước 1: tạo file `.cpd`
 
 Tạo file text tên `my_analysis.cpd`:
 
@@ -124,7 +124,7 @@ M = P * L / 4 "kNm"  'Moment uốn giữa nhịp
 M = ?
 ```
 
-### Bước 2: Chạy Calcpad
+### Bước 2: chạy Calcpad
 
 **Trên Windows/Mac:**
 1. Mở Calcpad Editor
@@ -137,7 +137,7 @@ M = ?
 calcpad my_analysis.cpd
 ```
 
-### Bước 3: Sử dụng trên VS Code
+### Bước 3: sử dụng trên VS Code
 
 VS Code giúp viết code nhanh hơn nhờ Intellisense và xem kết quả tức thì.
 
@@ -148,7 +148,7 @@ VS Code giúp viết code nhanh hơn nhờ Intellisense và xem kết quả tứ
    - `calcpad.cliPath`: `/usr/local/bin/calcpad`
    - `calcpad.settingsPath`: `$HOME/.calcpad/Settings.xml`
 
-### Bước 4: Xuất PDF
+### Bước 4: xuất PDF
 
 ```bash
 wkhtmltopdf --page-size A4 my_analysis.html my_analysis.pdf
@@ -158,7 +158,7 @@ wkhtmltopdf --page-size A4 my_analysis.html my_analysis.pdf
 
 ## Cú pháp Calcpad cơ bản
 
-### 1. Khai báo biến & phép toán
+### Khai báo biến và phép toán
 
 ```calcpad
 '--- KHAI BÁO BIẾN ---
@@ -178,7 +178,7 @@ H = a \ b          'chia nguyên
 I = a %% b         'modulo (phần dư)
 ```
 
-### 2. Hệ thống đơn vị
+### Hệ thống đơn vị
 
 ```calcpad
 '--- CHUYỂN ĐỔI TỰ ĐỘNG ---
@@ -201,7 +201,7 @@ M!                    'ẩn hoàn toàn khỏi output
 
 > **Lưu ý:** Calcpad tự động kiểm tra tính nhất quán đơn vị. Phép tính `6 "m" + 5 "kN"` sẽ báo lỗi — bảo vệ kỹ sư khỏi sai số đơn vị.
 
-### 3. Định dạng văn bản trong báo cáo
+### Định dạng văn bản trong báo cáo
 
 ```calcpad
 "Tiêu đề chính"           'Heading 1 (lớn nhất)
@@ -216,7 +216,7 @@ M!                    'ẩn hoàn toàn khỏi output
 "| Giá trị 1 | Giá trị 2 |"
 ```
 
-### 4. Hàm tích hợp quan trọng
+### Hàm tích hợp quan trọng
 
 | Nhóm | Hàm | Mô tả |
 |------|-----|-------|
@@ -229,7 +229,7 @@ M!                    'ẩn hoàn toàn khỏi output
 
 ---
 
-## 💡 Ví dụ thực tế cơ bản
+## Ví dụ thực tế cơ bản
 
 ### Ví dụ 1: Tính diện tích hình chữ nhật
 
@@ -298,7 +298,7 @@ A_s = if(A_s_req ≥ A_s_min; A_s_req; A_s_min) "cm²"
 
 ---
 
-## Lập trình Calcpad - Tư duy kỹ sư
+## Lập trình Calcpad — tư duy kỹ sư
 
 ### Hàm tự định nghĩa (Custom Functions)
 
@@ -375,7 +375,7 @@ check_uls$("Cắt"; V_Ed; V_Rd; "kN")
 
 ---
 
-## 🔄 Điều kiện & vòng lặp 
+## Điều kiện và vòng lặp 
 
 ### #If / #Else / #Else If
 
@@ -412,7 +412,7 @@ status = if(DCR ≤ 1; "✅ OK"; "❌ NG")
 xi_lim = switch(f_yk≤300"MPa"; 0.7; f_yk≤400"MPa"; 0.65; 0.55)
 ```
 
-> **Phân biệt:** `#if` kiểm soát luồng (đa dòng, thay đổi văn bản báo cáo). `if()` là hàm inline trả về một giá trị duy nhất.
+`#if` kiểm soát luồng (đa dòng, có thể thay đổi toàn bộ đoạn văn trong báo cáo); `if()` là hàm inline trả về một giá trị duy nhất trong một biểu thức.
 
 ### Repeat / Loop — Lặp cố định số lần
 
@@ -515,7 +515,7 @@ x = x0; iter = 0; max_iter = 200
 "Hội tụ sau" iter = ? "vòng lặp"
 ```
 
-> ⚠️ **Cảnh báo:** Luôn thêm bộ đếm tối đa (`iter ≤ max_iter`) hoặc `#break` có điều kiện giới hạn để tránh vòng lặp vô hạn.
+> **Lưu ý:** Luôn thêm bộ đếm tối đa (`iter ≤ max_iter`) hoặc `#break` có điều kiện giới hạn để tránh vòng lặp vô hạn.
 
 ### Break và Continue
 
@@ -549,7 +549,7 @@ x = x0; iter = 0; max_iter = 200
 
 ---
 
-## 🔢 Vector & Ma trận — Nền tảng FEM
+## Vector và ma trận — nền tảng FEM
 
 Calcpad hỗ trợ đầy đủ đại số tuyến tính: vector, ma trận thường và ma trận hiệu năng cao (`hp`) tối ưu cho bài toán FEM lớn.
 
@@ -623,13 +623,13 @@ c = col(M; j)                     'lấy cột j
 
 ---
 
-## 🏗️ FEM Bản sàn phẳng — Ví dụ hoàn chỉnh
+## FEM bản sàn phẳng — ví dụ hoàn chỉnh
 
 Phân tích bản sàn phẳng nhiều nhịp sử dụng phần tử **Bogner-Fox-Schmit (BFS)** — phần tử tấm chữ nhật tuân thủ C1, 16 bậc tự do/phần tử (w, θx, θy, ψ tại mỗi nút góc). Đây là bài toán FEM viết hoàn toàn trong Calcpad.
 
-📎 Xem kết quả đầy đủ: [hydrostructai.com — Flat Slab FEA](https://hydrostructai.com/calcpad_engineering/cpdoutput/3.%20Flat%20Slab%20FEA.html)
+Xem kết quả đầy đủ: [hydrostructai.com — Flat Slab FEA](https://hydrostructai.com/calcpad_engineering/cpdoutput/3.%20Flat%20Slab%20FEA.html)
 
-### Bước 1 — Khai báo hình học & vật liệu
+### Bước 1 — khai báo hình học và vật liệu
 
 ```calcpad
 "PHÂN TÍCH BẢN SÀN PHẲNG — PHƯƠNG PHÁP PHẦN TỬ HỮU HẠN"
@@ -658,7 +658,7 @@ E   = 35000 "MPa"       'module đàn hồi
 ν   = 0.2               'hệ số Poisson
 ```
 
-### Bước 2 — Xây dựng lưới phần tử
+### Bước 2 — xây dựng lưới phần tử
 
 ```calcpad
 "__2. Lưới phần tử hữu hạn"
@@ -686,7 +686,7 @@ ej  = matrix_hp(n_e; 4)       'ma trận liên kết: 4 nút/phần tử
 #show
 ```
 
-### Bước 3 — Hàm hình dạng BFS (C1-conforming)
+### Bước 3 — hàm hình dạng BFS (C1-conforming)
 
 ```calcpad
 "__3. Hàm hình dạng Hermite — BFS element"
@@ -720,7 +720,7 @@ N(k; ξ; η) = take(k;
   Φ1a(ξ)*Φ3b(η);  Φ2a(ξ)*Φ3b(η);  Φ1a(ξ)*Φ4b(η);  Φ2a(ξ)*Φ4b(η))
 ```
 
-### Bước 4 — Ma trận độ cứng phần tử
+### Bước 4 — ma trận độ cứng phần tử
 
 ```calcpad
 "__4. Ma trận cấu thành D (moment - độ cong)"
@@ -747,7 +747,7 @@ F_e(i) = a1*b1 * 1∫0 1∫0 N(i; ξ; η) * q dξ dη
 F⃗_e = [0.9; 0.09; 0.09; 0.009; 0.9; -0.09; ...] "kN"
 ```
 
-### Bước 5 — Lắp ghép, Điều kiện biên & Giải
+### Bước 5 — lắp ghép, điều kiện biên và giải
 
 ```calcpad
 "__7. Ma trận độ cứng toàn cục"
@@ -794,7 +794,7 @@ $Plot{M_x(x; l_b/2) @ x = 0 : l_a}
 
 ---
 
-## 📄 Báo cáo kết quả tính toán
+## Báo cáo kết quả tính toán
 
 ### Cấu trúc báo cáo chuẩn — Trang bìa
 
@@ -862,7 +862,7 @@ wkhtmltopdf --page-size A4 \
 
 ---
 
-## 🎨 Định dạng văn bản
+## Định dạng văn bản
 
 ### Heading (Tiêu đề)
 
@@ -873,7 +873,7 @@ wkhtmltopdf --page-size A4 \
 "___Ghi chú"               'Heading 4
 ```
 
-### In Đậm, Nghiêng
+### In đậm, nghiêng
 
 ```calcpad
 "Văn bản **đậm**"
@@ -881,7 +881,7 @@ wkhtmltopdf --page-size A4 \
 "Kết quả: **✅ ĐẠT**"
 ```
 
-### Danh sách & Bảng
+### Danh sách và bảng
 
 ```calcpad
 "Danh sách:
@@ -896,16 +896,16 @@ wkhtmltopdf --page-size A4 \
 
 ---
 
-## Mẹo & Thủ thuật
+## Mẹo và thủ thuật
 
-### 1. Tái sử dụng Template
+### Tái sử dụng template
 
 ```bash
 cp template_beam.cpd analysis_B1.cpd
 # Chỉ sửa dữ liệu đầu vào — kết quả tự cập nhật!
 ```
 
-### 2. Nhóm biến liên quan
+### Nhóm biến liên quan
 
 ```calcpad
 'Vật liệu bê tông C30
@@ -915,7 +915,7 @@ f_ck = 30 "MPa"; f_cd = 20 "MPa"; E_cm = 33000 "MPa"
 f_yk = 400 "MPa"; f_yd = 348 "MPa"; E_s = 200000 "MPa"
 ```
 
-### 3. Kiểm tra độc lập
+### Kiểm tra độc lập
 
 ```calcpad
 'Tính toán chính
@@ -927,7 +927,7 @@ M_check = ?
 'Nếu M_max ≈ M_check → ✓ chính xác
 ```
 
-### 4. Ẩn phép tính trung gian
+### Ẩn phép tính trung gian
 
 ```calcpad
 'Ẩn toàn bộ phần chuẩn bị ma trận
@@ -940,7 +940,7 @@ F = setup_load_vector()
 "Độ võng lớn nhất:" w_max = ?
 ```
 
-### 5. Input form (giao diện nhập liệu)
+### Form nhập liệu (input form)
 
 Calcpad hỗ trợ tạo form nhập liệu để người dùng khác thay đổi thông số mà không cần sửa code:
 
@@ -994,8 +994,8 @@ HydrostructAI đang sử dụng Calcpad trong quy trình tính toán kỹ thuậ
 
 **Liên hệ:**
 
-- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) -> ghi rõ loại bài toán và tiêu chuẩn áp dụng
-- Liên hệ: [WhatsApp](https://wa.me/84374874142) -> trao đổi kỹ thuật nhanh trong nhóm kỹ sư
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com): ghi rõ loại bài toán và tiêu chuẩn áp dụng
+- [WhatsApp](https://wa.me/84374874142): trao đổi kỹ thuật nhanh
 
 Ngoài ra, nếu bạn đang xây dựng quy trình tính toán có kiểm tra độc lập (peer review) cho dự án có yêu cầu kiểm soát chất lượng cao, đây cũng là mảng HydrostructAI có thể hỗ trợ.
 
@@ -1005,9 +1005,9 @@ Ngoài ra, nếu bạn đang xây dựng quy trình tính toán có kiểm tra �
 
 ---
 
-## Tài liệu Tham khảo
+## Tài liệu tham khảo
 
-### Phần mềm & Tài liệu Calcpad
+### Phần mềm và tài liệu Calcpad
 
 [1] Proektsoft Ltd., *Calcpad — Free and Open Source Engineering Calculation Software*, Version 7.5+, Sofia, Bulgaria, 2024. Available: [https://github.com/Proektsoftbg/Calcpad](https://github.com/Proektsoftbg/Calcpad)
 
@@ -1023,7 +1023,7 @@ Ngoài ra, nếu bạn đang xây dựng quy trình tính toán có kiểm tra �
 
 [7] HydrostructAI, *Calcpad Engineering Worksheets Library*, 2025. Available: [https://hydrostructai.com/calcpad_engineering/calcpad.html](https://hydrostructai.com/calcpad_engineering/calcpad.html)
 
-### Tiêu chuẩn Kỹ thuật
+### Tiêu chuẩn kỹ thuật
 
 [8] Bộ Xây dựng Việt Nam, *TCVN 5574:2018 — Kết cấu bê tông và bê tông cốt thép — Tiêu chuẩn thiết kế*, Hà Nội, 2018.
 
@@ -1033,7 +1033,7 @@ Ngoài ra, nếu bạn đang xây dựng quy trình tính toán có kiểm tra �
 
 [11] European Committee for Standardization, *EN 1990: Eurocode — Basis of Structural Design*, Brussels, 2002.
 
-### Phương pháp Phần tử Hữu hạn
+### Phương pháp phần tử hữu hạn
 
 [12] Bogner, F.K., Fox, R.L., Schmit, L.A., *The Generation of Inter-Element-Compatible Stiffness and Mass Matrices by the Use of Interpolation Formulae*, Proceedings of the Conference on Matrix Methods in Structural Mechanics, Wright-Patterson Air Force Base, Ohio, pp. 397–443, 1965.
 
@@ -1043,7 +1043,7 @@ Ngoài ra, nếu bạn đang xây dựng quy trình tính toán có kiểm tra �
 
 [15] Reddy, J.N., *An Introduction to the Finite Element Method*, 4th Edition, McGraw-Hill Education, 2018. ISBN: 978-1260461831.
 
-### Tính toán Kỹ thuật & Tự động hóa
+### Tính toán kỹ thuật và tự động hóa
 
 [16] Bathe, K.J., *Finite Element Procedures*, 2nd Edition, Klaus-Jürgen Bathe, 2014. ISBN: 978-0979004957.
 
