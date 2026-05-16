@@ -47,7 +47,7 @@ Quản lý dự án trên một trang giấy (One-Page Project Manager, OPPM) l�
 
 Bài viết này phân tích cấu trúc, nguyên lý vận hành và cách triển khai OPPM phù hợp với dự án đầu tư xây dựng tại Việt Nam, từ giai đoạn chuẩn bị đầu tư đến thi công, nghiệm thu và bàn giao.
 
-![Hình minh họa quản lý dự án trên một trang giấy (Nguồn: kenhxaydung)](\assets\images\posts\quan-ly-du-an-mot-trang-giay\oppm-xay-dung.png)
+![Hình minh họa quản lý dự án trên một trang giấy (Nguồn: kenhxaydung)](/assets/images/posts/quan-ly-du-an-mot-trang-giay/oppm-xay-dung.png)
 *Hình minh họa quản lý dự án trên một trang giấy (Nguồn: kenhxaydung)*
 
 ---
