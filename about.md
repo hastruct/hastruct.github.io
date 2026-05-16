@@ -547,51 +547,57 @@ header:
       <h2>Ứng dụng kỹ thuật hỗ trợ kỹ sư</h2>
 
       <p>
-        Các phần mềm CAE/FEM truyền thống đòi hỏi workstation đắt tiền và bản quyền hàng nghìn đô la. Chúng tôi đang thay đổi điều đó bằng cách mang lõi tính toán hiệu suất cao (C++, Fortran) lên trình duyệt qua <strong>WebAssembly</strong>.
+        Phần mềm CAE/FEM truyền thống đòi hỏi workstation đắt tiền và bản quyền hàng nghìn đô la. Các công cụ dưới đây mang lõi tính toán hiệu suất cao (C++, WebAssembly) lên trình duyệt — không cần cài đặt, chạy được trên mọi thiết bị. Tất cả đang ở giai đoạn Beta, miễn phí sử dụng.
       </p>
 
       <div class="app-grid">
 
         <div class="app-card">
-                    <h4>SheetPileFEM-WASM</h4>
-          <p>Phân tích tường cừ ván theo phương pháp Phần tử Hữu hạn (FEM). Xuất kết quả biểu đồ mô men, lực cắt, chuyển vị ngay trên trình duyệt.</p>
-          <span class="app-badge free">Miễn phí</span>
-        </div>
-
-        <div class="app-card">
-                    <h4>BoQ Estimator</h4>
-          <p>Lập dự toán chi phí xây dựng theo đầu mục công việc (Bill of Quantities). Hỗ trợ xuất Excel theo đơn giá địa phương.</p>
+          <h4>Tường cừ FEM</h4>
+          <p>Phân tích tường cừ và tường vây hố đào sâu bằng phương pháp Phần tử hữu hạn. Mô phỏng thi công theo giai đoạn, hệ thanh chống, neo và dòng thấm.</p>
+          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
           <span class="app-badge beta">Beta</span>
         </div>
 
         <div class="app-card">
-                    <h4>Schedule Builder</h4>
-          <p>Lập tiến độ Gantt và Look-ahead Schedule trực quan. Xác định đường găng (Critical Path) và cảnh báo xung đột nguồn lực.</p>
+          <h4>Nhóm cọc 3D</h4>
+          <p>Phân tích móng cọc đài cao theo phương pháp Zavriev-Spiro. Hỗ trợ cọc xiên không gian, tải trọng 6 thành phần và tính phản lực đầu cọc.</p>
+          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
           <span class="app-badge beta">Beta</span>
         </div>
 
         <div class="app-card">
-                    <h4>ITP & Hold Points Checklist</h4>
-          <p>Bộ checklist nghiệm thu theo TCVN tích hợp Hold Points. Xuất biên bản PDF ngay trên thiết bị di động tại công trường.</p>
-          <span class="app-badge free">Miễn phí</span>
+          <h4>Cọc chịu tải ngang</h4>
+          <p>Phân tích cọc đơn chịu tải trọng ngang theo mô hình phi tuyến p-y curve. Hỗ trợ nhiều lớp đất, đất dính và đất rời.</p>
+          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
+          <span class="app-badge beta">Beta</span>
         </div>
 
         <div class="app-card">
-                    <h4>HydroFlow Simulator</h4>
-          <p>Mô hình thủy lực 1D/2D cho lưu vực sông và công trình thoát nước. Nền tảng WebAssembly dựa trên solver Fortran hiệu suất cao.</p>
-          <span class="app-badge roadmap">Roadmap</span>
+          <h4>Cột ngắn 3D (ShortCol)</h4>
+          <p>Biểu đồ tương tác không gian P-Mx-My cho cột bê tông cốt thép tiết diện chữ nhật chịu lệch tâm xiên.</p>
+          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
+          <span class="app-badge beta">Beta</span>
         </div>
 
         <div class="app-card">
-                    <h4>Taylor Series Visualizer</h4>
-          <p>Công cụ trực quan hóa xấp xỉ Taylor cho sinh viên và giảng viên kỹ thuật. Minh họa tương tác đa biến, đa bậc.</p>
-          <span class="app-badge free">Miễn phí</span>
+          <h4>Cột ngắn 2D (ShortCol)</h4>
+          <p>Biểu đồ tương tác P-M cho cột bê tông cốt thép tiết diện chữ nhật chịu nén lệch tâm phẳng.</p>
+          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
+          <span class="app-badge beta">Beta</span>
+        </div>
+
+        <div class="app-card">
+          <h4>Dốc nước và tiêu năng</h4>
+          <p>Tính toán thủy lực dốc nước và bể tiêu năng dựa trên lý thuyết nước nhảy. Thiết kế bể tiêu năng và kiểm tra hệ số ngập an toàn.</p>
+          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
+          <span class="app-badge beta">Beta</span>
         </div>
 
       </div>
 
       <p style="margin-top: 1.4rem; font-size: 0.9rem; color: var(--color-subtext);">
-        <strong>Lộ trình phát triển:</strong> Mỗi ứng dụng đi kèm bài viết kỹ thuật giải thích lý thuyết và thuật toán - <em>"Blog as Documentation"</em>. Phiên bản cộng đồng (Free) luôn có đầy đủ chức năng cơ bản.
+        Mỗi ứng dụng đi kèm bài viết kỹ thuật giải thích lý thuyết và thuật toán nền. Xem toàn bộ danh sách tại <a href="/apps/" style="color: var(--color-accent);">hydrostructai.com/apps</a>.
       </p>
     </div>
 
@@ -664,6 +670,9 @@ header:
       <ul style="margin: 0.8rem 0 1.2rem 1.5rem; padding: 0;">
         <li style="margin-bottom: 0.5rem; color: var(--color-text);">
           Email: <a href="mailto:ha.nguyen@hydrostructai.com" style="color: var(--color-accent); font-weight: 600;">ha.nguyen@hydrostructai.com</a>
+        </li>
+        <li style="margin-bottom: 0.5rem; color: var(--color-text);">
+          WhatsApp: <a href="https://wa.me/84374874142" style="color: var(--color-accent); font-weight: 600;">+84 374 874 142</a>
         </li>
         <li style="color: var(--color-text);">
           Blog: Cập nhật hàng tuần về QLDA xây dựng, kỹ thuật số và công cụ mới
