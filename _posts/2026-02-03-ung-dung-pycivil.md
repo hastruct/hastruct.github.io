@@ -1,5 +1,5 @@
 ---
-title: "Thư viện Kỹ thuật Kết cấu Mã nguồn Mở Pycivil & Chiến lược Tích hợp BIM"
+title: "CivilPy: Thư viện Python mã nguồn mở cho kỹ sư xây dựng"
 author_profile: true
 author_name: "HST.AI"
 date: 2026-02-03 10:00:00 +0700
@@ -7,158 +7,232 @@ layout: single
 featured: false
 toc: true
 toc_sticky: true
-toc_label: "📑 Mục Lục"
-permalink: "/posts/pycivile-bem-tich-hop-bim/"
+toc_label: "Mục lục"
+permalink: "/posts/civilpy-thu-vien-python-ky-su-xay-dung/"
 categories:
   - Structural-Engineering
   - Software-Development
-  - BIM-Integration
 tags:
   [
-    Pycivile,
-    "Kỹ thuật kết cấu",
+    CivilPy,
     Python,
-    "Phương pháp phần tử hữu hạn",
-    "Tích hợp BIM",
+    "Kỹ thuật kết cấu",
+    AISC,
+    AASHTO,
+    AREMA,
+    "Midas Civil",
     "Mã nguồn mở",
-    "Phân tích BTCT",
-    Eurocode 2,
-    TCVN,
-    "Code_Aster",
-    "Generative Design",
-    Automation,
-    "Tối ưu hóa thiết kế"
+    "Thiết kế cầu",
+    "Tự động hóa thiết kế"
   ]
-excerpt: "> *Phân tích chuyên sâu thư viện Python Pycivile cho kỹ thuật kết cấu*: Kiến trúc thư viện, tích hợp FEM, chiến lược BIM. Bao gồm phân tích tiết diện BTCT, biểu đồ tương tác ULS, tích hợp MIDAS/Code_Aster, ưu nhược điểm và tầm nhìn thiết kế."
+excerpt: "CivilPy là thư viện Python mã nguồn mở dành cho kỹ sư xây dựng, cung cấp dữ liệu tiết diện thép AISC, công cụ thiết kế theo AASHTO và AREMA, tích hợp Midas Civil API và các bộ dữ liệu cầu SNBI và ODOT TIMS."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
   caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
 ---
 
-Pycivile is an open-source Python library designed to liberate structural engineers from dependency on commercial software while preserving professional knowledge.  
-*Pycivile là một thư viện Python mã nguồn mở được thiết kế để giải phóng kỹ sư kết cấu khỏi sự phụ thuộc vào các phần mềm thương mại trong khi vẫn lưu giữ được tri thức chuyên môn.*
+CivilPy là thư viện Python mã nguồn mở do Dane Parks phát triển, hướng đến việc cung cấp bộ công cụ tính toán và tự động hóa cho kỹ sư xây dựng, đặc biệt trong lĩnh vực kết cấu thép, thiết kế cầu và giao tiếp với phần mềm kỹ thuật. Phiên bản 0.2.3 phát hành ngày 4 tháng 5 năm 2026 mang lại nhiều cải tiến đáng kể so với các phiên bản trước.
 
-This article provides an in-depth technical analysis of Pycivile tailored for structural engineers and BIM developers.  
-*Bài viết này cung cấp một phân tích kỹ thuật chuyên sâu về Pycivile được biên soạn dành riêng cho các kỹ sư kết cấu và lập trình viên BIM.*
+Bài viết giới thiệu các tính năng chính của CivilPy, hướng dẫn cài đặt và trình bày ví dụ ứng dụng thực tế.
 
-## 1. Overview & Objectives / Tổng Quan & Mục Tiêu
+## Giới thiệu
 
-### Core Philosophy / Triết Lý Cốt Lõi
-In the modern AEC industry, engineering knowledge is often locked behind proprietary binary file formats of commercial software like ETABS, SAP2000, or Robot.  
-*Trong ngành AEC hiện đại, tri thức kỹ thuật thường bị khóa chặt đằng sau các định dạng file nhị phân độc quyền của các phần mềm thương mại như ETABS, SAP2000 hay Robot.*
+Một trong những thách thức lớn nhất của kỹ sư xây dựng hiện đại là khoảng cách giữa tính toán thủ công và tự động hóa quy trình. Hầu hết các phần mềm thương mại như MIDAS, ETABS hay SAP2000 cung cấp giao diện đồ họa tiện lợi nhưng thiếu khả năng lập trình linh hoạt để xử lý hàng loạt hoặc tích hợp vào quy trình thiết kế tổng thể.
 
-Pycivile aims to create a "middleware" layer that standardizes structural data using open formats (JSON/BSON) and Python classes, ensuring that the engineering logic remains accessible and reusable.  
-*Pycivile hướng tới việc tạo ra một lớp "phần mềm trung gian" giúp chuẩn hóa dữ liệu kết cấu sử dụng các định dạng mở (JSON/BSON) và các lớp đối tượng Python, đảm bảo logic kỹ thuật luôn có thể truy cập và tái sử dụng.*
+CivilPy giải quyết vấn đề này theo một hướng thực dụng hơn: thay vì thay thế phần mềm thương mại, thư viện đóng vai trò lớp trung gian cho phép kỹ sư truy cập dữ liệu chuẩn (AISC, AASHTO, AREMA), thực hiện tính toán tự động và giao tiếp với phần mềm kỹ thuật qua API.
 
-### Key Objectives / Các Mục Tiêu Chính
-1.  **Freedom from Licensing:** Reduce costs for small firms and freelancers.  
-    *Tự do khỏi bản quyền: Giảm thiểu chi phí cho các công ty nhỏ và kỹ sư tự do.*
-2.  **Knowledge Preservation:** Code-based rules (EC2, NTC2018) are transparent rather than "black boxes".  
-    *Lưu giữ tri thức: Các quy tắc theo tiêu chuẩn (EC2, NTC2018) được minh bạch hóa thay vì là những hộp đen (có phí).*
-3.  **Automation & Batch Processing:** Calculate thousands of elements in seconds using Python scripts.  
-    *Tự động hóa & Xử lý hàng loạt: Tính toán hàng ngàn cấu kiện trong vài giây bằng các script Python.*
+Thư viện được cấp phép theo AGPL-3.0, hoàn toàn miễn phí và mã nguồn mở. Yêu cầu Python từ 3.10 trở lên.
 
----
+## Cài đặt
 
-## 2. Technical Features / Tính Năng Kỹ Thuật
+Cài đặt cơ bản chỉ cần một lệnh:
 
-Checking the source code structure reveals a robust architecture divided into specific domains.  
-*Kiểm tra cấu trúc mã nguồn cho thấy một kiến trúc vững chắc được chia thành các lĩnh vực cụ thể.*
+```bash
+pip install civilpy
+```
 
-### 2.1. EXAGeometry: Computational Geometry / Hình Học Tính Toán
-Before performing structural analysis, we need to handle spatial data. Pycivile provides:  
-*Trước khi thực hiện phân tích kết cấu, chúng ta cần xử lý dữ liệu không gian. Pycivile cung cấp:*
+CivilPy cung cấp nhiều tùy chọn cài đặt bổ sung tùy theo nhu cầu:
 
-*   **Primitives:** `Point3d`, `Vector3d`, `Polyline3d` for defining complex structural shapes.  
-    *Các nguyên thủy: `Point3d`, `Vector3d`, `Polyline3d` để định nghĩa các hình dạng kết cấu phức tạp.*
-*   **Mesh Generation:** Integration with `GMSH` via OpenCASCADE kernel allows automatic meshing of foundations or slabs from architectural boundary nodes.  
-    *Tạo lưới phần tử: Tích hợp với `GMSH` thông qua nhân OpenCASCADE cho phép tự động chia lưới móng hoặc bản sàn từ các nút biên kiến trúc.*
+| Tùy chọn | Mô tả |
+|---|---|
+| `civilpy[db]` | Hỗ trợ cơ sở dữ liệu |
+| `civilpy[pdf]` | Đọc và xử lý PDF |
+| `civilpy[geo]` | Công cụ địa lý và GIS |
+| `civilpy[web]` | Công cụ web scraping |
+| `civilpy[jupyter]` | Tích hợp Jupyter Notebook |
+| `civilpy[validation]` | Kiểm tra và xác thực dữ liệu |
+| `civilpy[full]` | Cài đặt toàn bộ tính năng |
 
-### 2.2. EXAStructural: The Core Engine / Bộ Máy Cốt Lõi
-This module handles the physics and engineering rules.  
-*Mô-đun này xử lý các quy tắc vật lý và kỹ thuật.*
+Để cài đặt đầy đủ cho môi trường phát triển:
 
-*   **RC Section Analysis:** It uses fiber discretization or stress block methods to check Reinforced Concrete sections (Rectangular, T-shape, I-shape, generic polygons).  
-    *Phân tích tiết diện BTCT: Sử dụng phương pháp chia thớ hoặc khối ứng suất để kiểm tra tiết diện Bê tông cốt thép (Chữ nhật, Chữ T, Chữ I, đa giác bất kỳ).*
-*   **Interaction Diagrams:** It generates 2D (P-M) and 3D (P-Mx-My) interaction domains for ULS verification.  
-    *Biểu đồ tương tác: Tạo các miền tương tác 2D (P-M) và 3D (P-Mx-My) để kiểm tra trạng thái giới hạn cực hạn (ULS).*
-*   **Code Implementation:** Built-in classes for **Eurocode 2** and **NTC2018** (Italian Standards), handling material safety factors and load combinations.  
-    *Triển khai tiêu chuẩn: Tích hợp sẵn các lớp cho **Eurocode 2** và **NTC2018**, xử lý các hệ số an toàn vật liệu và tổ hợp tải trọng.*
+```bash
+pip install civilpy[full]
+```
 
-### 2.3. Interoperability & FEM / Khả Năng Tương Tác & FEM
-Pycivile is not just a calculator; it is a bridge.  
-*Pycivile không chỉ là một máy tính; nó là một cây cầu nối.*
+## Tiết diện thép AISC
 
-*   **MIDAS Gen Export:** Uses Jinja2 templates to generate `.mgt` text files, allowing script-based model generation.  
-    *Xuất sang MIDAS Gen: Sử dụng Jinja2 templates để tạo file văn bản `.mgt`, cho phép tạo mô hình bằng mã lệnh.*
-*   **Code_Aster Integration:** Connects with the powerful open-source FEM solver Code_Aster for non-linear analysis.  
-    *Tích hợp Code_Aster: Kết nối với bộ giải FEM mã nguồn mở mạnh mẽ Code_Aster cho các phân tích phi tuyến.*
-*   **VTK Visualization:** Visualizes 3D results (stress contours, deformation) directly in Python.  
-    *Trực quan hóa VTK: Hiển thị kết quả 3D (đường đồng mức ứng suất, biến dạng) trực tiếp trong Python.*
+Một trong những tính năng nổi bật nhất của CivilPy là cơ sở dữ liệu tiết diện thép theo tiêu chuẩn AISC, tích hợp thư viện đơn vị `Pint` để tự động chuyển đổi và kiểm tra thứ nguyên trong quá trình tính toán.
 
----
+```python
+from civilpy.structural.steel import AISCSteelSection
 
-## 3. BIM Integration: Present & Future / Tích Hợp BIM: Hiện Tại & Tương Lai
+# Truy xuất tiết diện W14x82
+section = AISCSteelSection("W14X82")
 
-BIM (Building Information Modeling) is shifting from "Drawing" to "Data Management". Pycivile aligns perfectly with this trend.  
-*BIM đang chuyển dịch từ "ngôn ngữ" bản vẽ sang "Quản lý dữ liệu". Pycivile phù hợp hoàn hảo với xu hướng này.*
+print(f"Diện tích mặt cắt ngang: {section.A}")
+print(f"Mô men quán tính trục x: {section.Ix}")
+print(f"Mô men kháng uốn Sx: {section.Sx}")
+print(f"Chiều cao tiết diện: {section.d}")
+print(f"Bán kính quán tính rx: {section.rx}")
+```
 
-### 3.1. Current Workflow: Geometry to Analysis / Quy Trình Hiện Tại: Từ Hình Học đến Phân Tích
-Currently, Pycivile acts as a processor for geometric data imported from BIM software.  
-*Hiện tại, Pycivile đóng vai trò là bộ xử lý cho dữ liệu hình học được nhập từ phần mềm BIM.*
+Kết quả trả về đều kèm đơn vị cụ thể (in², in⁴, in³...) nhờ Pint, giúp phát hiện lỗi thứ nguyên ngay trong quá trình tính toán thay vì chờ đến bước kiểm tra kết quả.
 
-1.  **Extract Data:** Nodes and element connectivity are extracted from IFC or CAD files using libraries like `ifcopenshell` or `ezdxf` (external dependencies).  
-    *Trích xuất dữ liệu: Nút và liên kết phần tử được trích xuất từ file IFC hoặc CAD sử dụng các thư viện như `ifcopenshell` hoặc `ezdxf`.*
-2.  **Process in Pycivile:**  
-    *Xử lý trong Pycivile:*
-    *   Map geometric sections to `EXAStructural` objects.  
-        *Ánh xạ tiết diện hình học sang đối tượng `EXAStructural`.*
-    *   Assign material properties (`Concrete`, `Steel`).  
-        *Gán đặc trưng vật liệu (`Concrete`, `Steel`).*
-    *   Generate FE mesh via `GMSH` wrapper.  
-        *Tạo lưới phần tử hữu hạn thông qua lớp bọc `GMSH`.*
-3.  **FEM Export:** A `.mgt` or Code_Aster command file is generated for solving.  
-    *Xuất FEM: Một file lệnh `.mgt` hoặc Code_Aster được tạo ra để giải.*
+Thư viện hỗ trợ đầy đủ các loại tiết diện thép AISC: W, S, M, HP (dầm và cột), C, MC (thanh máng), L, WT, ST, MT, HSS tròn, HSS chữ nhật và các tiết diện đặc biệt khác.
 
-### 3.2. Future Vision: The "Headless" Engine / Tầm Nhìn Tương Lai: Bộ Máy "Không Giao Diện"
-The future of structural BIM lies in "Generative Design" and "Real-time Verification".  
-*Tương lai của BIM kết cấu nằm ở "Thiết kế phát sinh" và "Kiểm tra thời gian thực".*
+## Phân tích tiết diện tổ hợp
 
-*   **CDE Integration:** With `DbManager` (MongoDB), Pycivile can serve as the backend for a Common Data Environment, where changes in the architectural model automatically trigger structural checks stored in the database.  
-    *Tích hợp CDE: Với `DbManager` (MongoDB), Pycivile có thể đóng vai trò backend cho Môi trường Dữ liệu Chung, nơi các thay đổi trong mô hình kiến trúc tự động kích hoạt các kiểm tra kết cấu được lưu trong cơ sở dữ liệu.*
-*   **AI-Driven Optimization:** By exposing structural logic as Python functions, we can easily wrap Pycivile in optimization loops (Genetic Algorithms) to minimize material usage while satisfying ULS constraints.  
-    *Tối ưu hóa bằng AI: Bằng cách phơi bày logic kết cấu dưới dạng hàm Python, ta có thể dễ dàng bọc Pycivile trong các vòng lặp tối ưu hóa (Giải thuật Di truyền) để giảm thiểu vật liệu trong khi vẫn thỏa mãn điều kiện ULS.*
+Module `CrossSection` cho phép xây dựng và phân tích tiết diện dầm tổ hợp (plate girder), loại tiết diện phổ biến trong thiết kế cầu thép và kết cấu công nghiệp.
 
----
+```python
+from civilpy.structural.cross_section import CrossSection
 
-## 4. Pros & Cons / Ưu Điểm & Hạn Chế
+# Xây dựng tiết diện dầm tổ hợp I
+girder = CrossSection()
+girder.add_plate(width=600, thickness=20, y_offset=0)     # Bản cánh dưới
+girder.add_web(height=1200, thickness=12)                  # Bụng dầm
+girder.add_plate(width=500, thickness=25, y_offset=1220)  # Bản cánh trên
 
-### 4.1. Advantages / Ưu Điểm
-*   **Transparency:** You can verify exactly how a safety factor is applied by reading the code.  
-    *Bạn có thể kiểm chứng chính xác cách một hệ số an toàn được áp dụng bằng cách đọc mã nguồn.*
-*   **Extensibility:** Adding a new material (e.g., Fiber Reinforced Concrete) is as simple as subclassing a Python object.  
-    *Khả năng mở rộng: Việc thêm một vật liệu mới (ví dụ: Bê tông cốt sợi) đơn giản chỉ là tạo lớp con cho một đối tượng Python.*
-*   **Cost-Effective:** Zero licensing fees, runs on Linux servers or Docker containers.  
-    *Hiệu quả chi phí: Không phí bản quyền, chạy tốt trên máy chủ Linux hoặc container Docker.*
+# Tính toán đặc trưng hình học
+props = girder.calculate_properties()
+print(f"Trọng tâm: {props.centroid} mm")
+print(f"Mô men quán tính Ixx: {props.Ixx:.2e} mm⁴")
+print(f"Mô men kháng uốn trên: {props.Sx_top:.0f} mm³")
+print(f"Mô men kháng uốn dưới: {props.Sx_bottom:.0f} mm³")
+```
 
-### 4.2. Limitations / Hạn Chế
-*   **Learning Curve:** Requires Python programming skills + Structural Engineering knowledge. No graphical interface (GUI).  
-    *Đường cong học tập: Yêu cầu kỹ năng lập trình Python + Kiến thức Kỹ thuật Kết cấu. Không có giao diện đồ họa (GUI).*
-*   **Code Coverage:** Currently focuses heavily on Eurocodes (EC2) and Italian NTC. Implementing TCVN (Vietnam Standards) requires manual effort.  
-    *Độ phủ tiêu chuẩn: Hiện tại tập trung nhiều vào Eurocodes (EC2) và NTC của Ý. Việc triển khai TCVN (Tiêu chuẩn Việt Nam) đòi hỏi công sức thủ công.*
-*   **Solver Speed:** Pure Python solvers for large FE models are slower than C++ commercial solvers (though integration with Code_Aster solves this).  
-    *Tốc độ giải: Các bộ giải thuần Python cho mô hình phần tử hữu hạn lớn sẽ chậm hơn bộ giải thương mại viết bằng C++ (mặc dù việc tích hợp Code_Aster giải quyết được vấn đề này).*
+Khả năng tự động tính toán đặc trưng hình học giúp giảm đáng kể thời gian khi cần so sánh nhiều phương án tiết diện trong giai đoạn thiết kế sơ bộ.
 
----
+## Thiết kế theo AASHTO và AREMA
 
-## 5. Conclusion / Kết Luận
+CivilPy tích hợp các quy định tính toán từ hai tiêu chuẩn thiết kế cầu quan trọng của Bắc Mỹ.
 
-Pycivile is a paradigm shift from "User of Software" to "Developer of Solutions".  
-*Pycivile là bước chuyển dịch tư duy từ "dùng phần mềm" sang "phát triển giải pháp".*
+Tiêu chuẩn AASHTO LRFD (American Association of State Highway and Transportation Officials) áp dụng phương pháp hệ số tải trọng và sức kháng cho thiết kế cầu đường bộ. Tiêu chuẩn AREMA (American Railway Engineering and Maintenance-of-Way Association) phục vụ thiết kế cầu đường sắt.
 
-For Vietnamese engineers, adopting frameworks like Pycivile opens the door to deeply understanding structural behavior and automating the tedious parts of design according to TCVN standards. It is a stepping stone towards mastering Computational Engineering.  
-*Đối với các kỹ sư Việt Nam, việc áp dụng các thư viện như Pycivile mở ra cánh cửa để thấu hiểu sâu sắc hành vi kết cấu và tự động hóa những phần tẻ nhạt của thiết kế theo tiêu chuẩn TCVN. Đây là bước đệm để làm chủ Kỹ thuật tính toán trong xây dựng (Computational Engineering).*
+```python
+from civilpy.structural.aashto import AASHTOBeam
 
-**Reference / Tài liệu tham khảo:**  
-[GitLab: Pycivilee Repository](https://gitlab.com/luigi_paone/Pycivilee)
+# Phân tích dầm cầu theo AASHTO LRFD
+beam = AASHTOBeam(
+    span_length=30.0,    # Nhịp dầm, đơn vị feet
+    section="W36X160",   # Tiết diện thép AISC
+    fy=50.0,             # Cường độ chảy, ksi
+    load_factor=1.25     # Hệ số tải trọng tĩnh
+)
+
+result = beam.check_flexure()
+print(f"Sức kháng uốn thiết kế: {result.phi_Mn:.1f} kip-ft")
+print(f"Mô men tính toán: {result.Mu:.1f} kip-ft")
+print(f"Tỷ số kiểm tra DCR: {result.DCR:.3f}")
+```
+
+Việc triển khai trực tiếp công thức từ AASHTO và AREMA trong Python giúp kỹ sư kiểm tra lại logic tính toán, điều chỉnh hệ số và tích hợp vào quy trình thiết kế tự động.
+
+## Tích hợp Midas Civil
+
+Một trong những ưu điểm thực tiễn nhất của CivilPy là khả năng giao tiếp với phần mềm Midas Civil qua API, cho phép tự động hóa nhiều tác vụ lặp đi lặp lại.
+
+```python
+from civilpy.software.midas import MidasCivilAPI
+
+# Kết nối với Midas Civil đang chạy
+midas = MidasCivilAPI(host="localhost", port=8080)
+
+# Đọc nội lực các phần tử
+beam_forces = midas.get_beam_forces(
+    load_case="SW+LL",
+    element_ids=range(1, 101)
+)
+
+# Xuất kết quả ra DataFrame để phân tích
+import pandas as pd
+df = pd.DataFrame(beam_forces)
+print(df.describe())
+
+# Cập nhật tiết diện hàng loạt và chạy lại phân tích
+for elem_id in range(1, 51):
+    midas.update_section(elem_id, section_name="W21X62")
+
+midas.run_analysis()
+```
+
+Khả năng điều khiển Midas Civil qua Python giúp tự động hóa các quy trình như: cập nhật hàng loạt tiết diện dầm, xuất báo cáo kết quả, so sánh nhiều phương án thiết kế trong một script duy nhất — những việc trước đây phải thao tác thủ công trong giao diện đồ họa.
+
+## Dữ liệu cầu: SNBI và ODOT TIMS
+
+CivilPy cung cấp hai module phục vụ quản lý và phân tích dữ liệu hạ tầng cầu.
+
+Module SNBI (Specifications for the National Bridge Inventory) triển khai bộ mô hình dữ liệu dựa trên Pydantic để làm việc với dữ liệu kiểm kê cầu theo chuẩn liên bang Mỹ. Pydantic đảm bảo dữ liệu được xác thực tự động khi nhập vào, giảm nguy cơ sai sót trong quá trình xử lý.
+
+```python
+from civilpy.state.ohio.snbi import BridgeRecord
+
+# Tạo bản ghi cầu theo chuẩn SNBI
+bridge = BridgeRecord(
+    structure_number="3901234",
+    year_built=1985,
+    main_span_length=45.7,
+    deck_condition_rating=6,
+    superstructure_rating=7,
+    substructure_rating=5
+)
+
+print(bridge.overall_condition())
+```
+
+Module ODOT TIMS (Ohio Department of Transportation Transportation Information Mapping System) cung cấp công cụ truy vấn dữ liệu hạ tầng giao thông Ohio, hữu ích cho các dự án nghiên cứu và phân tích mạng lưới cầu.
+
+Mặc dù hai module này xây dựng theo chuẩn dữ liệu của Mỹ, cấu trúc và cách tiếp cận có thể làm tài liệu tham khảo cho việc xây dựng hệ thống quản lý dữ liệu cầu theo tiêu chuẩn Việt Nam.
+
+## Ưu điểm và hạn chế
+
+### Điểm mạnh
+
+CivilPy mang lại giá trị thực tiễn rõ ràng trong các tình huống cụ thể:
+
+- Tính toán hàng loạt: script Python xử lý hàng trăm tiết diện trong vài giây thay vì nhập liệu thủ công từng cái một.
+- Tích hợp phần mềm: module Midas Civil API kết nối các bước trong quy trình thiết kế trước đây cần thao tác thủ công.
+- Kiểm chứng tính toán: mã nguồn mở cho phép xem và xác minh đúng công thức được áp dụng, không phụ thuộc vào hộp đen của phần mềm thương mại.
+- Dữ liệu chuẩn sẵn có: cơ sở dữ liệu AISC tích hợp sẵn giúp tránh nhập liệu thủ công và giảm nguy cơ sai số.
+
+### Hạn chế cần lưu ý
+
+- Thư viện hiện tập trung vào tiêu chuẩn Bắc Mỹ (AISC, AASHTO, AREMA). Kỹ sư Việt Nam cần bổ sung thêm công thức và hệ số theo TCVN.
+- Yêu cầu kỹ năng Python từ cơ bản đến trung cấp — không có giao diện đồ họa.
+- Phiên bản 0.2.3 vẫn đang trong giai đoạn phát triển tích cực; API có thể thay đổi giữa các phiên bản.
+- Tài liệu hiện tại chủ yếu bằng tiếng Anh.
+
+## Kết luận
+
+CivilPy đại diện cho một hướng tiếp cận thực dụng trong việc áp dụng Python vào kỹ thuật xây dựng: thay vì xây dựng phần mềm thay thế hoàn toàn, thư viện tập trung vào việc làm cho dữ liệu chuẩn và công cụ tính toán trở nên dễ tiếp cận và tự động hóa được.
+
+Đối với kỹ sư Việt Nam muốn bắt đầu với lập trình kỹ thuật, CivilPy là điểm khởi đầu tốt để làm quen với tư duy "kỹ sư-lập trình viên". Việc mở rộng thư viện để hỗ trợ tiêu chuẩn TCVN là hoàn toàn khả thi và có thể đóng góp lại cho cộng đồng mã nguồn mở.
+
+Liên hệ [WhatsApp](https://wa.me/84374874142) hoặc [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) để trao đổi thêm về ứng dụng Python trong các dự án kỹ thuật.
+
+## Tài liệu tham khảo
+
+1. Parks, D. (2026). *CivilPy v0.2.3*. Python Package Index. [https://pypi.org/project/civilpy/](https://pypi.org/project/civilpy/)
+
+2. Parks, D. (2026). *CivilPy documentation*. [https://dane.daneparks.com/civilpy](https://dane.daneparks.com/civilpy)
+
+3. Parks, D. (2026). *CivilPy source code*. GitHub. [https://github.com/drparks71/civilpy](https://github.com/drparks71/civilpy)
+
+4. AISC. (2022). *Steel Construction Manual* (16th ed.). American Institute of Steel Construction.
+
+5. AASHTO. (2020). *AASHTO LRFD Bridge Design Specifications* (9th ed.). American Association of State Highway and Transportation Officials.
+
+6. AREMA. (2023). *Manual for Railway Engineering*. American Railway Engineering and Maintenance-of-Way Association.
+
+7. FHWA. (2022). *Specifications for the National Bridge Inventory (SNBI)*. Federal Highway Administration.
