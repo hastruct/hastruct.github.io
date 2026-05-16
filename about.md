@@ -547,7 +547,7 @@ header:
       <h2>Ứng dụng kỹ thuật hỗ trợ kỹ sư</h2>
 
       <p>
-        Phần mềm CAE/FEM truyền thống đòi hỏi workstation đắt tiền và bản quyền hàng nghìn đô la. Các công cụ dưới đây mang lõi tính toán hiệu suất cao (C++, WebAssembly) lên trình duyệt — không cần cài đặt, chạy được trên mọi thiết bị. Tất cả đang ở giai đoạn Beta, miễn phí sử dụng.
+        Phần mềm CAE/FEM truyền thống đòi hỏi workstation đắt tiền và bản quyền hàng nghìn đô la. Các công cụ dưới đây mang lõi tính toán hiệu suất cao lên trình duyệt — không cần cài đặt, chạy được trên mọi thiết bị. Tất cả đang ở giai đoạn Beta, miễn phí sử dụng.
       </p>
 
       <div class="app-grid">
@@ -641,18 +641,8 @@ header:
         <div class="author-bio">
           <h4>TS. Nguyễn Hải Hà - PMP®</h4>
           <p>
-            Tiến sĩ Kỹ thuật, chuyên gia về Công trình Thủy, Công trình bảo vệ bờ sông bờ biển, Kết cấu công trình và Địa kỹ thuật. Có kinh nghiệm thực chiến trong quản lý và giám sát các dự án xây dựng theo chuẩn trong nước và quốc tế (FIDIC, PMBOK). Đam mê lập trình và ứng dụng  để đưa công cụ kỹ thuật hiệu suất cao lên nền tảng web.
+            Tiến sĩ Kỹ thuật, chuyên gia về Công trình thủy/ bảo vệ bờ sông bờ biển, Kết cấu công trình và Địa kỹ thuật. Có kinh nghiệm thực tế trong quản lý và giám sát các dự án xây dựng theo chuẩn trong nước và quốc tế. Đam mê lập trình và ứng dụng  để đưa công cụ kỹ thuật hiệu suất cao lên nền tảng web.
           </p>
-          <div class="tag-row">
-            <span class="etag">PMP® – PMI</span>
-            <span class="etag">PMBOK Guide</span>
-            <span class="etag">FEM / FEA</span>
-            <span class="etag">Thủy lực tính toán</span>
-            <span class="etag">TCVN / QCVN</span>
-            <span class="etag">NĐ 175/2024</span>
-            <span class="etag">Ứng dụng Web</span>
-            <span class="etag">C++ / Python / Rust</span>
-          </div>
         </div>
       </div>
     </div>
