@@ -401,7 +401,7 @@ header:
     <!-- 1. SỨ MỆNH                                     -->
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
-      <h2><span class="section-icon">🏗️</span> Giới thiệu chung</h2>
+      <h2>Giới thiệu chung</h2>
 
       <p>
         <strong>HydroStructAI</strong> là nền tảng kỹ thuật chuyên biệt kết hợp gồm:
@@ -449,7 +449,7 @@ header:
         </div>
         <div class="stat-item">
           <div class="stat-val">Free</div>
-          <div class="stat-label">Công cụ cốt lõi miễn phí</div>
+          <div class="stat-label">Công cụ miễn phí</div>
         </div>
         <div class="stat-item">
           <div class="stat-val">Lessons Learned</div>
@@ -462,13 +462,13 @@ header:
     <!-- 2. HAI TRỤ CỘT CHUYÊN MÔN                     -->
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
-      <h2><span class="section-icon">🎯</span> Hai Trụ Cột Chuyên Môn</h2>
+      <h2>Hai trụ cột chuyên môn</h2>
 
       <div class="pillar-grid">
 
         <div class="pillar-card">
           <div class="pillar-num">01</div>
-          <h4>Quản lý Dự án Xây dựng (Tư duy QLDA theo PMBOK)</h4>
+          <h4>Quản lý dự án xây dựng (tư duy QLDA theo PMBOK)</h4>
           <p>
             Tư vấn và đào tạo quản lý dự án theo tư duy <strong>Value Delivery System</strong> - từ Scope, Schedule, Cost đến Risk, Stakeholders và Quality trong bối cảnh pháp lý Việt Nam (Luật XD, NĐ 175/2024, NĐ 06/2021).
           </p>
@@ -476,7 +476,7 @@ header:
 
         <div class="pillar-card accent-gold">
           <div class="pillar-num">02</div>
-          <h4>Ứng dụng Web Kỹ thuật cho Kỹ sư</h4>
+          <h4>Ứng dụng web kỹ thuật cho kỹ sư</h4>
           <p>
             Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>WASM</strong> - Phần mềm tính toán kết cấu, tính toán thủy lực, dự toán chi phí - không cần cài đặt, không cần phần cứng đắt tiền.
           </p>
@@ -489,7 +489,7 @@ header:
     <!-- 3. TƯ DUY QUẢN LÝ DỰ ÁN                       -->
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
-      <h2><span class="section-icon">📐</span> Tư Duy Quản Lý Dự Án Hiện Đại</h2>
+      <h2>Tư duy quản lý dự án hiện đại</h2>
 
       <p>
         Chúng tôi xây dựng nội dung và tư vấn dựa trên <strong>PMBOK® Guide</strong> - sự chuyển dịch từ quản lý quy trình sang quản lý nguyên tắc và hiệu suất, áp dụng vào thực tiễn xây dựng Việt Nam.
@@ -500,7 +500,7 @@ header:
         <div class="step">
           <div class="step-dot">P1</div>
           <div class="step-body">
-            <h4>Tư duy Hệ thống (Systems Thinking)</h4>
+            <h4>Tư duy hệ thống (systems thinking)</h4>
             <p>Nhìn dự án như một hệ thống liên thông - thay đổi GPMB ảnh hưởng thế nào đến dòng tiền? Rủi ro pháp lý tác động ra sao đến tiến độ? Mọi quyết định đều được phân tích trong bối cảnh tổng thể.</p>
           </div>
         </div>
@@ -508,7 +508,7 @@ header:
         <div class="step">
           <div class="step-dot">P2</div>
           <div class="step-body">
-            <h4>Kiểm soát Chủ động (Proactive Control)</h4>
+            <h4>Kiểm soát chủ động (proactive control)</h4>
             <p>Áp dụng <strong>Hold Points</strong> và <strong>Inspection Test Plan (ITP)</strong> để ngăn chặn sai sót trước khi phát sinh - không phải xử lý sự cố sau khi đã bê tông xong. Chi phí phòng ngừa rẻ hơn 25 lần so với sửa lỗi sau bàn giao.</p>
           </div>
         </div>
@@ -516,7 +516,7 @@ header:
         <div class="step">
           <div class="step-dot">P3</div>
           <div class="step-body">
-            <h4>Quản lý Giá trị (Value Delivery)</h4>
+            <h4>Quản lý giá trị (value delivery)</h4>
             <p>Mục tiêu không phải "ký xong biên bản nghiệm thu" mà là công trình đi vào vận hành đúng yêu cầu, đúng chi phí vòng đời. PM giỏi quan tâm đến <strong>Outcome</strong>, không chỉ <strong>Output</strong>.</p>
           </div>
         </div>
@@ -524,7 +524,7 @@ header:
         <div class="step">
           <div class="step-dot">P4</div>
           <div class="step-body">
-            <h4>Tuân thủ Pháp lý (Legal Compliance)</h4>
+            <h4>Tuân thủ pháp lý (legal compliance)</h4>
             <p>Tích hợp đầy đủ yêu cầu của <strong>Luật xây dựng</strong>, <strong>Nghị định 175/2024/NĐ-CP</strong> và <strong>NĐ 06/2021</strong> vào quy trình quản lý - RACI matrix, thẩm quyền phân cấp, hồ sơ hoàn công điện tử theo quy định mới nhất.</p>
           </div>
         </div>
@@ -544,7 +544,7 @@ header:
     <!-- 4. ỨNG DỤNG WEB KỸ THUẬT                      -->
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
-      <h2><span class="section-icon">⚙️</span> Ứng Dụng Kỹ Thuật Hỗ Trợ Kỹ Sư</h2>
+      <h2>Ứng dụng kỹ thuật hỗ trợ kỹ sư</h2>
 
       <p>
         Các phần mềm CAE/FEM truyền thống đòi hỏi workstation đắt tiền và bản quyền hàng nghìn đô la. Chúng tôi đang thay đổi điều đó bằng cách mang lõi tính toán hiệu suất cao (C++, Fortran) lên trình duyệt qua <strong>WebAssembly</strong>.
@@ -553,43 +553,37 @@ header:
       <div class="app-grid">
 
         <div class="app-card">
-          <div class="app-icon">🏗️</div>
-          <h4>SheetPileFEM-WASM</h4>
+                    <h4>SheetPileFEM-WASM</h4>
           <p>Phân tích tường cừ ván theo phương pháp Phần tử Hữu hạn (FEM). Xuất kết quả biểu đồ mô men, lực cắt, chuyển vị ngay trên trình duyệt.</p>
           <span class="app-badge free">Miễn phí</span>
         </div>
 
         <div class="app-card">
-          <div class="app-icon">💰</div>
-          <h4>BoQ Estimator</h4>
+                    <h4>BoQ Estimator</h4>
           <p>Lập dự toán chi phí xây dựng theo đầu mục công việc (Bill of Quantities). Hỗ trợ xuất Excel theo đơn giá địa phương.</p>
           <span class="app-badge beta">Beta</span>
         </div>
 
         <div class="app-card">
-          <div class="app-icon">📊</div>
-          <h4>Schedule Builder</h4>
+                    <h4>Schedule Builder</h4>
           <p>Lập tiến độ Gantt và Look-ahead Schedule trực quan. Xác định đường găng (Critical Path) và cảnh báo xung đột nguồn lực.</p>
           <span class="app-badge beta">Beta</span>
         </div>
 
         <div class="app-card">
-          <div class="app-icon">✅</div>
-          <h4>ITP & Hold Points Checklist</h4>
+                    <h4>ITP & Hold Points Checklist</h4>
           <p>Bộ checklist nghiệm thu theo TCVN tích hợp Hold Points. Xuất biên bản PDF ngay trên thiết bị di động tại công trường.</p>
           <span class="app-badge free">Miễn phí</span>
         </div>
 
         <div class="app-card">
-          <div class="app-icon">🌊</div>
-          <h4>HydroFlow Simulator</h4>
+                    <h4>HydroFlow Simulator</h4>
           <p>Mô hình thủy lực 1D/2D cho lưu vực sông và công trình thoát nước. Nền tảng WebAssembly dựa trên solver Fortran hiệu suất cao.</p>
           <span class="app-badge roadmap">Roadmap</span>
         </div>
 
         <div class="app-card">
-          <div class="app-icon">📐</div>
-          <h4>Taylor Series Visualizer</h4>
+                    <h4>Taylor Series Visualizer</h4>
           <p>Công cụ trực quan hóa xấp xỉ Taylor cho sinh viên và giảng viên kỹ thuật. Minh họa tương tác đa biến, đa bậc.</p>
           <span class="app-badge free">Miễn phí</span>
         </div>
@@ -605,25 +599,25 @@ header:
     <!-- 5. TRIẾT LÝ VẬN HÀNH                          -->
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
-      <h2><span class="section-icon">💡</span> Triết Lý Vận Hành</h2>
+      <h2>Triết lý vận hành</h2>
 
       <div class="pillar-grid">
 
         <div class="pillar-card">
-          <div class="pillar-num">🆓</div>
-          <h4>Giáo dục & Cộng đồng</h4>
-          <p>Công cụ cốt lõi luôn miễn phí. Sinh viên kỹ thuật và kỹ sư mới ra trường xứng đáng có phần mềm chuyên nghiệp để học và thực hành, không cần bản quyền đắt tiền.</p>
+          <div class="pillar-num">01</div>
+          <h4>Giáo dục và cộng đồng</h4>
+          <p>Công cụ nền tảng luôn miễn phí. Sinh viên kỹ thuật và kỹ sư mới ra trường xứng đáng có phần mềm chuyên nghiệp để học và thực hành, không cần bản quyền đắt tiền.</p>
         </div>
 
         <div class="pillar-card accent-gold">
-          <div class="pillar-num">🏢</div>
-          <h4>Chuyên nghiệp cho Doanh nghiệp</h4>
+          <div class="pillar-num">02</div>
+          <h4>Chuyên nghiệp cho doanh nghiệp</h4>
           <p>Phiên bản Pro mở khóa tính năng nâng cao: không giới hạn dự án, xuất báo cáo PDF chuyên nghiệp, API tích hợp hệ thống nội bộ của doanh nghiệp.</p>
         </div>
 
         <div class="pillar-card accent-teal">
-          <div class="pillar-num">📝</div>
-          <h4>Blog là Tài liệu</h4>
+          <div class="pillar-num">03</div>
+          <h4>Blog là tài liệu</h4>
           <p>Mỗi bài viết giải thích cả "Tại sao?" lẫn "Như thế nào?" - lý thuyết thuật toán, khung pháp lý, và thực hành thực chiến tại công trường Việt Nam.</p>
         </div>
 
@@ -634,7 +628,7 @@ header:
     <!-- 6. VỀ TÁC GIẢ                                  -->
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
-      <h2><span class="section-icon"></span> Về Tác Giả</h2>
+      <h2>Về tác giả</h2>
 
       <div class="author-block">
         <div class="author-avatar">HH</div>
@@ -661,7 +655,7 @@ header:
     <!-- 7. KẾT NỐI                                     -->
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
-      <h2><span class="section-icon">🤝</span> Kết Nối & Hợp Tác</h2>
+      <h2>Kết nối và hợp tác</h2>
 
       <p>
         Chúng tôi luôn tìm kiếm sự hợp tác từ các tổ chức, các doanh nghiệp xây dựng, các chuyên gia và đồng nghiệp muốn ứng dụng công nghệ vào quản lý dự án. Nếu bạn có câu hỏi, ý tưởng đóng góp hoặc nhu cầu tư vấn:
@@ -669,19 +663,19 @@ header:
 
       <ul style="margin: 0.8rem 0 1.2rem 1.5rem; padding: 0;">
         <li style="margin-bottom: 0.5rem; color: var(--color-text);">
-          📧 Email: <a href="mailto:ha.nguyen@hydrostructai.com" style="color: var(--color-accent); font-weight: 600;">ha.nguyen@hydrostructai.com</a>
+          Email: <a href="mailto:ha.nguyen@hydrostructai.com" style="color: var(--color-accent); font-weight: 600;">ha.nguyen@hydrostructai.com</a>
         </li>
         <li style="color: var(--color-text);">
-          🌐 Blog: Cập nhật hàng tuần về QLDA xây dựng, kỹ thuật số và công cụ mới
+          Blog: Cập nhật hàng tuần về QLDA xây dựng, kỹ thuật số và công cụ mới
         </li>
       </ul>
 
       <div class="cta-row">
         <a href="/apps/" class="btn-primary">
-          🚀 Khám phá Ứng dụng
+          Khám phá ứng dụng
         </a>
         <a href="/" class="btn-outline">
-          📖 Thông tin trang chủ
+          Về trang chủ
         </a>
       </div>
     </div>
