@@ -43,7 +43,7 @@ Bài viết này phân tích tài liệu luyện thi PMP từ nguồn Freecram (
 
 PMP (Project Management Professional) là chứng chỉ quản lý dự án chuyên nghiệp quốc tế do **Project Management Institute (PMI)** cấp. PMI được thành lập năm 1969, hiện có hơn 700.000 hội viên tại hơn 214 quốc gia và vùng lãnh thổ, và là tổ chức hành nghề QLDA lớn nhất thế giới.
 
-Điểm đặc trưng của PMP so với các chứng chỉ QLDA khác là yêu cầu bắt buộc phải có kinh nghiệm thực tế **dẫn dắt dự án** trước khi nộp đơn — đây không phải chứng chỉ cấp cho người mới ra trường. Bài thi được xây dựng hoàn toàn từ tình huống thực tế, không kiểm tra định nghĩa hay công thức thuần túy.
+Điểm đặc trưng của PMP so với các chứng chỉ QLDA khác là yêu cầu bắt buộc phải có kinh nghiệm thực tế **dẫn dắt dự án** trước khi nộp đơn. Đây không phải chứng chỉ cấp cho người mới ra trường. Bài thi được xây dựng hoàn toàn từ tình huống thực tế, không kiểm tra định nghĩa hay công thức thuần túy.
 
 Theo **PMI Earning Power Salary Survey 2023**: chuyên gia QLDA có chứng chỉ PMP thu nhập trung bình cao hơn **25%** so với người chưa có chứng chỉ ở cùng vị trí và khu vực. Chứng chỉ được công nhận rộng rãi trong xây dựng, công nghệ thông tin, năng lượng, tài chính và khu vực công.
 
@@ -65,7 +65,7 @@ PMI quy định hai nhóm điều kiện dựa trên bằng cấp học vấn:
 
 Một số điểm cần lưu ý khi chuẩn bị hồ sơ:
 
-- Kinh nghiệm được chấp nhận là "leading and directing projects" — không phải chỉ tham gia dự án với tư cách thành viên thực thi.
+- Kinh nghiệm được chấp nhận là "leading and directing projects" không phải chỉ tham gia dự án với tư cách thành viên thực thi.
 - PMI thực hiện kiểm tra hồ sơ ngẫu nhiên (audit) với khoảng 10–15% đơn nộp. Khi bị audit, ứng viên cần cung cấp tài liệu chứng minh và xác nhận từ người giám sát trực tiếp.
 - 35 contact hours có thể tích lũy từ khóa học online (PMI.org, Coursera, Udemy), bootcamp tập trung, hoặc chương trình đào tạo nội bộ doanh nghiệp có chứng nhận.
 - Sau khi PMI phê duyệt đơn, ứng viên có 1 năm để hoàn tất tối đa 3 lần thi.
@@ -134,7 +134,7 @@ Sau khi đỗ, PMP cần tích lũy **60 PDU (Professional Development Units)** 
 
 ---
 
-## 4. Giới thiệu về Freecram / Introduction to Freecram
+## 4. Giới thiệu về Freecram
 
 Freecram là nền tảng trực tuyến cung cấp bộ đề thi cập nhật và câu hỏi thực hành cho các chứng chỉ chuyên nghiệp, bao gồm PMP.  
 *Freecram is an online platform providing updated exam dumps and practice questions for professional certifications including PMP.*
@@ -146,7 +146,7 @@ Freecram là nền tảng trực tuyến cung cấp bộ đề thi cập nhật 
 
 ---
 
-## 5. Đặc điểm phiên bản e7002 / Features of version e7002
+## 5. Đặc điểm phiên bản e7002
 
 Phiên bản e7002 được phát hành ngày 17/12/2025, phản ánh Đề cương Nội dung Thi mới nhất cho các ứng viên cuối năm 2025.  
 *Version e7002 was released December 17, 2025 and reflects the most recent Examination Content Outline for late-2025 candidates.*
@@ -158,17 +158,17 @@ Phiên bản e7002 được phát hành ngày 17/12/2025, phản ánh Đề cư�
 
 ---
 
-## 6. Các bẫy và lỗi thường gặp / Common pitfalls & mistakes
+## 6. Các bẫy và lỗi thường gặp
 
 Dưới đây là các lĩnh vực thí sinh thường mất điểm nhất, với ví dụ minh họa từ bộ đề Freecram.  
 *The following are areas where candidates most commonly lose points, with examples drawn from the Freecram database.*
 
-### 6.1. Nhầm lẫn giữa Agile và Waterfall / Agile vs. Waterfall confusion
+### 6.1. Nhầm lẫn giữa Agile và Waterfall
 
-Bẫy phổ biến là áp dụng quy trình tài liệu nặng nề của Waterfall vào tình huống Agile — hoặc ngược lại.  
+Bẫy phổ biến là áp dụng quy trình tài liệu nặng nề của Waterfall vào tình huống Agile hoặc ngược lại.  
 *Pitfall: Applying traditional heavy documentation (Waterfall) to an Agile scenario, or vice versa.*
 
-*Ví dụ 1 — Nhóm đang dùng Scrum, stakeholder yêu cầu thay đổi:*
+*Ví dụ 1: Nhóm đang dùng Scrum, stakeholder yêu cầu thay đổi:*
 
 - Bối cảnh: Nhóm đang sử dụng Scrum. Một bên liên quan yêu cầu thay đổi.  
     *Context: The team is using Scrum. A stakeholder asks for a change.*
@@ -177,7 +177,7 @@ Bẫy phổ biến là áp dụng quy trình tài liệu nặng nề của Water
 - Hành động đúng: Thảo luận với Product Owner để ưu tiên trong Backlog.  
     *Correct action: Discuss with the Product Owner to prioritize it in the Backlog.*
 
-*Ví dụ 2 — Phát hiện lỗi nghiêm trọng trong Sprint:*
+*Ví dụ 2: Phát hiện lỗi nghiêm trọng trong Sprint:*
 
 - Bối cảnh: Một lỗi nghiêm trọng được tìm thấy trong Sprint.  
     *Context: A critical bug is found during a Sprint.*
@@ -186,7 +186,7 @@ Bẫy phổ biến là áp dụng quy trình tài liệu nặng nề của Water
 - Hành động đúng: Nhóm cộng tác để sửa; nếu đe dọa Mục tiêu Sprint, Product Owner sẽ quyết định.  
     *Correct action: The team collaborates to fix it; if it endangers the Sprint Goal, the Product Owner decides.*
 
-*Ví dụ 3 — Velocity của nhóm dao động mạnh:*
+*Ví dụ 3: Velocity của nhóm dao động mạnh:*
 
 - Bối cảnh: Tốc độ (Velocity) của nhóm đang dao động dữ dội.  
     *Context: Team velocity is fluctuating wildly.*
@@ -195,12 +195,12 @@ Bẫy phổ biến là áp dụng quy trình tài liệu nặng nề của Water
 - Hành động đúng: Điều phối Retrospective để tìm nguyên nhân gốc rễ.  
     *Correct action: Facilitate a Retrospective to find the root cause.*
 
-### 6.2. Hiểu sai về Lãnh đạo phục vụ / Servant leadership misunderstanding
+### 6.2. Hiểu sai về Lãnh đạo phục vụ
 
-Bẫy phổ biến là giải quyết vấn đề *thay cho* nhóm thay vì trao quyền — hoặc phớt lờ xung đột với hy vọng chúng tự biến mất.  
+Bẫy phổ biến là giải quyết vấn đề *thay cho* nhóm thay vì trao quyền hoặc phớt lờ xung đột với hy vọng chúng tự biến mất.  
 *Pitfall: Solving problems for the team instead of empowering them, or ignoring conflicts hoping they vanish.*
 
-*Ví dụ 1 — Hai thành viên tranh luận về giải pháp kỹ thuật:*
+*Ví dụ 1: Hai thành viên tranh luận về giải pháp kỹ thuật:*
 
 - Bối cảnh: Hai thành viên đang tranh luận về giải pháp kỹ thuật.  
     *Context: Two team members are arguing about a technical solution.*
@@ -209,7 +209,7 @@ Bẫy phổ biến là giải quyết vấn đề *thay cho* nhóm thay vì trao
 - Hành động đúng: Điều phối phiên làm việc cộng tác để hai bên đạt đồng thuận.  
     *Correct action: Facilitate a collaborative session for them to reach a consensus.*
 
-*Ví dụ 2 — Thành viên mới gặp khó khăn với nhiệm vụ:*
+*Ví dụ 2: Thành viên mới gặp khó khăn với nhiệm vụ:*
 
 - Bối cảnh: Một thành viên mới đang gặp khó khăn với nhiệm vụ.  
     *Context: A junior member is struggling with a task.*
@@ -218,7 +218,7 @@ Bẫy phổ biến là giải quyết vấn đề *thay cho* nhóm thay vì trao
 - Hành động đúng: Cung cấp coaching hoặc sắp xếp lập trình cặp (pair programming).  
     *Correct action: Provide coaching or arrange pair programming.*
 
-*Ví dụ 3 — Stakeholder bỏ qua Product Owner để giao việc trực tiếp:*
+*Ví dụ 3: Stakeholder bỏ qua Product Owner để giao việc trực tiếp:*
 
 - Bối cảnh: Các bên liên quan bỏ qua Product Owner để giao việc cho nhóm.  
     *Context: Stakeholders are bypassing the Product Owner to give work to the team.*
@@ -227,12 +227,12 @@ Bẫy phổ biến là giải quyết vấn đề *thay cho* nhóm thay vì trao
 - Hành động đúng: Bảo vệ nhóm và hướng dẫn các bên liên quan quay lại làm việc qua Product Owner.  
     *Correct action: Protect the team and redirect stakeholders to the Product Owner.*
 
-### 6.3. Tuân thủ quy trình và tùy chỉnh / Process compliance vs. Tailoring
+### 6.3. Tuân thủ quy trình và tùy chỉnh
 
 Bẫy phổ biến là tuân thủ quy trình một cách máy móc mà không xem xét giá trị hoặc bối cảnh.  
 *Pitfall: Following a process blindly without considering the value or context (Hybrid).*
 
-*Ví dụ 1 — Dự án tuân thủ nhỏ yêu cầu tài liệu nghiêm ngặt:*
+*Ví dụ 1: Dự án tuân thủ nhỏ yêu cầu tài liệu nghiêm ngặt:*
 
 - Bối cảnh: Một dự án tuân thủ nhỏ yêu cầu tài liệu nghiêm ngặt.  
     *Context: A small compliance project requires strict documentation.*
@@ -241,7 +241,7 @@ Bẫy phổ biến là tuân thủ quy trình một cách máy móc mà không x
 - Hành động đúng: Dùng phương pháp dự đoán (Waterfall) để đảm bảo tuân thủ.  
     *Correct action: Use a predictive approach (Waterfall) to ensure compliance.*
 
-*Ví dụ 2 — Dự án chậm tiến độ vì quy trình phê duyệt nhiều cấp:*
+*Ví dụ 2: Dự án chậm tiến độ vì quy trình phê duyệt nhiều cấp:*
 
 - Bối cảnh: Dự án chậm tiến độ do các lớp phê duyệt nghiêm ngặt.  
     *Context: The project is falling behind schedule due to strict approval layers.*
@@ -250,7 +250,7 @@ Bẫy phổ biến là tuân thủ quy trình một cách máy móc mà không x
 - Hành động đúng: Đánh giá xem quy trình phê duyệt có thể được tinh giản hay không (Tailoring).  
     *Correct action: Assess if the approval process can be streamlined (Tailoring).*
 
-*Ví dụ 3 — Dự án lai có cả phần cứng (Waterfall) và phần mềm (Agile):*
+*Ví dụ 3: Dự án lai có cả phần cứng (Waterfall) và phần mềm (Agile):*
 
 - Bối cảnh: Dự án lai có cả phần cứng (Waterfall) và phần mềm (Agile).  
     *Context: A hybrid project has both hardware (Waterfall) and software (Agile) components.*
@@ -261,7 +261,7 @@ Bẫy phổ biến là tuân thủ quy trình một cách máy móc mà không x
 
 ---
 
-## 7. Phân tích câu hỏi mẫu / Sample question analysis
+## 7. Phân tích câu hỏi mẫu
 
 Phân tích tình huống điển hình từ định dạng thi 2025 (câu hỏi ID: q956).  
 *We analyze a specific scenario typical of the 2025 exam format (Question ID: q956).*
@@ -281,7 +281,7 @@ D. Develop a resource management plan to define roles.
 
 **Đáp án đúng: B**
 
-#### Tại sao B đúng? (Why B is correct)
+#### Tại sao B đúng?
 
 Kick-off meeting là sự kiện quan trọng khi bắt đầu dự án (hoặc giai đoạn) để thống nhất nhóm và các bên liên quan về mục tiêu và kỳ vọng.  
 *The kick-off meeting is the critical event at the start of a project (or phase) to align the team and stakeholders on objectives and expectations.*
@@ -289,7 +289,7 @@ Kick-off meeting là sự kiện quan trọng khi bắt đầu dự án (hoặc 
 Đây là nơi đảm bảo mọi người "cùng nhìn về một hướng" liên quan đến phạm vi dự án và vai trò của mình trước khi lập kế hoạch chi tiết bắt đầu.  
 *It ensures everyone is "on the same page" regarding the project scope and their roles before detailed planning begins.*
 
-#### Tại sao các phương án khác sai? (Why others are incorrect)
+#### Tại sao các phương án khác sai?
 
 - **A (WBS)**: Quá sớm. Không thể tạo WBS chi tiết trước khi làm rõ các yêu cầu cấp cao và đạt được đồng thuận.  
     *Too early. You cannot create a detailed WBS before clarifying high-level requirements and gaining consensus.*
@@ -305,33 +305,33 @@ Kick-off meeting là sự kiện quan trọng khi bắt đầu dự án (hoặc 
 
 ---
 
-## 8. Chiến lược thi đỗ lần đầu / Study strategy for first-time pass
+## 8. Chiến lược thi đỗ lần đầu
 
 Để thi đỗ PMP nhanh (trong vòng 4–6 tuần) sử dụng nguồn tài liệu như Freecram, tập trung vào ba giai đoạn.  
 *To pass the PMP exam quickly (within 4–6 weeks) using resources like Freecram, follow this three-phase approach.*
 
-### Giai đoạn 1: Làm chủ tư duy (1 tuần) / Mindset mastery (week 1)
+### Giai đoạn 1: Làm chủ tư duy (1 tuần)
 
 - Agile Manifesto: thẩm thấu 4 giá trị và 12 nguyên tắc.  
     *Internalize the 4 values and 12 principles.*
 - Servant Leadership: PM là người điều phối, không phải người ra lệnh. Luôn ưu tiên đáp án "bảo vệ nhóm" và "loại bỏ trở ngại".  
     *The PM is a facilitator, not a dictator. Always choose answers that "protect the team" and "remove impediments".*
 
-### Giai đoạn 2: Luyện tập có mục đích (2–3 tuần) / Practice with purpose (weeks 2–4)
+### Giai đoạn 2: Luyện tập có mục đích (2–3 tuần)
 
 - Mô phỏng: Dùng bộ đề thi mô phỏng để làm quen với cách dùng từ trong câu hỏi.  
     *Simulation: Use exam dumps and simulators to get used to the question wording.*
 - Phân tích lỗ hổng: Với mỗi câu sai, đọc kỹ phần giải thích và tự hỏi "tại sao đây là bẫy?"  
     *Gap analysis: For every wrong answer, read the explanation deeply — ask why this was a trap.*
 
-### Giai đoạn 3: Trau chuốt cuối (1 tuần) / Final polishing (week 5–6)
+### Giai đoạn 3: Trau chuốt cuối (1 tuần)
 
-- Quản lý thời gian: Luyện ngồi 230 phút liên tục để trả lời 180 câu — khoảng 1,3 phút/câu.  
+- Quản lý thời gian: Luyện ngồi 230 phút liên tục để trả lời 180 câu, khoảng 1,3 phút/câu.  
     *Time management: Practice sitting for 230 minutes answering 180 questions (~1.3 minutes each).*
 
 ---
 
-## 9. Kinh nghiệm thi thực tế / Exam experience
+## 9. Kinh nghiệm thi thực tế
 
 Những điểm thực tế từ thí sinh đã thi đỗ với tài liệu 2025:  
 *Practical takeaways from candidates who passed using the 2025 materials:*
@@ -345,7 +345,7 @@ Những điểm thực tế từ thí sinh đã thi đỗ với tài liệu 2025
 
 ---
 
-## 10. Tài liệu tham khảo bổ sung / Additional resources
+## 10. Tài liệu tham khảo bổ sung
 
 Ba nguồn dưới đây bổ trợ trực tiếp cho nội dung bài này về cấu trúc bài thi, stakeholder engagement và chính sách PMI.  
 *Three resources below directly support the content in this post on exam structure, stakeholder engagement, and PMI policy.*
@@ -374,13 +374,13 @@ ECO (Examination Content Outline) liệt kê chính xác các Tasks và Enablers
 
 Tài liệu luyện thi PMP, kể cả Freecram, cần đọc song song với kinh nghiệm dự án thực. Nhiều câu hỏi về People domain hoặc xử lý xung đột stakeholder sẽ dễ hơn nhiều nếu bạn đã từng đứng ở vị trí đó trong một dự án xây dựng thực sự.
 
-HydrostructAI không cung cấp khóa học luyện thi PMP. Nhưng nếu bạn là kỹ sư xây dựng đang học PMP và muốn trao đổi về cách áp dụng PMBOK 7th vào bối cảnh dự án hạ tầng Việt Nam — quy trình pháp lý, quan hệ với PMU, xử lý phát sinh — có thể trao đổi trực tiếp.
+HydrostructAI không cung cấp khóa học luyện thi PMP. Nhưng nếu bạn là kỹ sư xây dựng đang học PMP và muốn trao đổi về cách áp dụng PMBOK 7th vào bối cảnh dự án hạ tầng Việt Nam: quy trình pháp lý, quan hệ với PMU, xử lý phát sinh, có thể trao đổi trực tiếp.
 
 Nếu bạn cần tư vấn QLDA thực tế cho dự án đang triển khai, không phải ôn thi, xem thêm [dịch vụ tư vấn QLDA](https://hydrostructai.com/about/).
 
 **Liên hệ:**
 
-- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) — trao đổi kinh nghiệm QLDA và luyện thi PMP.
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com): trao đổi kinh nghiệm QLDA và luyện thi PMP.
 - [WhatsApp](https://wa.me/84374874142): cho câu hỏi cụ thể hơn về dự án thực.
 
 ---
