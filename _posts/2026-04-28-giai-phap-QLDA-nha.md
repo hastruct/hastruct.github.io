@@ -7,7 +7,7 @@ layout: single
 featured: true  # <--- Thêm dòng này để đánh dấu bài nổi bật
 toc: true
 toc_sticky: true
-toc_label: "📑 Mục Lục"
+toc_label: "Mục lục"
 permalink: "/posts/giai-phap-qlda-nha/"
 categories:
   - Construction-Management
@@ -51,7 +51,7 @@ Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất
 | Khuyết tật công trình từ giai đoạn thi công | **51%** | Aljassmi & Han, 2014 |
 | Tỷ lệ chi phí sửa lỗi thiết kế vs sau bàn giao | **1 : 25** | Ứng dụng tương tự định luật Boehm, 1981 |
 
-### Khuyến nghị cốt lõi
+### Khuyến nghị
 
 > **Bốn điều chủ đầu tư cần làm trước khi đào móng:**
 >
@@ -151,9 +151,9 @@ Lý thuyết Agency Theory (Jensen & Meckling, 1976) gọi đây là "vấn đ�
 
 | Tiêu chí | Trọn gói (Turnkey) | Khoán nhân công | Đơn giá theo BoQ |
 |----------|-------------------|-----------------|------------------|
-| Kiểm soát của CĐT | ❌ Thấp | ⚠️ Trung bình | ✅ Cao |
-| Rủi ro chất lượng vật tư | ❌ Cao | ✅ Thấp | ⚠️ Trung bình |
-| Yêu cầu năng lực CĐT | ✅ Thấp | ❌ Cao | ❌ Cao |
+| Kiểm soát của CĐT | Thấp | Trung bình | Cao |
+| Rủi ro chất lượng vật tư | Cao | Thấp | Trung bình |
+| Yêu cầu năng lực CĐT | Thấp | Cao | Cao |
 | Khuyến nghị khi nào dùng | Khi có TVGS độc lập | Khi CĐT am hiểu vật tư | Khi có hồ sơ TK & BoQ tốt |
 
 > **Lưu ý:** Hình thức trọn gói (turnkey) không sai về bản chất, được dùng phổ biến trên thế giới. Tuy nhiên ở các nước có thị trường xây dựng phát triển, đi kèm luôn phải có Owner's Engineer / Construction Manager / Quantity Surveyor đại diện chủ đầu tư kiểm tra. Giao trọn gói không đồng nghĩa "giao và quên".
@@ -166,7 +166,7 @@ Lý thuyết Agency Theory (Jensen & Meckling, 1976) gọi đây là "vấn đ�
 4. Thiết lập **Sổ nhật ký công trình (Site Diary)** hằng ngày - là chứng cứ pháp lý quan trọng nếu có tranh chấp.
 5. Yêu cầu tất cả vật tư đưa vào công trường phải có **chứng chỉ xuất xưởng (CO/CQ)** và được nghiệm thu vật tư đầu vào trước khi sử dụng.
 
-> 💬 *"Tin tưởng nhà thầu là điều cần thiết - nhưng tin tưởng không thể thay thế giám sát. Giao việc là đúng; giao toàn bộ quyền kiểm soát mà không có cơ chế kiểm tra lại, đó là đang đặt cược chất lượng ngôi nhà của mình vào may rủi."*
+> *"Tin tưởng nhà thầu là điều cần thiết - nhưng tin tưởng không thể thay thế giám sát. Giao việc là đúng; giao toàn bộ quyền kiểm soát mà không có cơ chế kiểm tra lại, đó là đang đặt cược chất lượng ngôi nhà của mình vào may rủi."*
 
 ---
 
@@ -216,31 +216,31 @@ Philip Crosby (1979) và Joseph Juran phát triển nguyên lý chi phí chất 
 
 Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp **5 Pillars Framework** - tham chiếu từ **PMI PMBOK 7th Edition** và **RIBA Plan of Work 2020**, hiệu chỉnh phù hợp với đặc thù công trình nhà ở riêng lẻ tại Việt Nam:
 
-### 1. Quy hoạch & Thiết kế
+### Quy hoạch và thiết kế
 
 - Khảo sát địa chất công trình trước khi thiết kế móng.
 - Hồ sơ thiết kế gồm đầy đủ 3 bộ: **kiến trúc, kết cấu, MEP** - không chấp nhận "thiết kế trên giấy A4".
 - Phối hợp đa ngành (*clash detection*) giữa kiến trúc – kết cấu – MEP trước khi triển khai thi công.
 
-### 2. Hợp đồng & Pháp lý
+### Hợp đồng và pháp lý
 
 - Hợp đồng phải có: bản vẽ thiết kế đính kèm, BoQ chi tiết, danh mục vật tư cụ thể (chủng loại, hãng, mã), tiến độ thi công, điều khoản thanh toán theo nghiệm thu, phạt chậm tiến độ, bảo hành kết cấu chính theo Luật Xây dựng.
 - Quy định rõ **Hold Points / Witness Points** trong hợp đồng.
 - Đảm bảo có giấy phép xây dựng và hồ sơ pháp lý đầy đủ theo **Nghị định 175/2024/NĐ-CP**.
 
-### 3. Quản lý Chi phí
+### Quản lý chi phí
 
 - Áp dụng phương pháp **Earned Value Management (EVM)** đơn giản: theo dõi % khối lượng hoàn thành so với % chi phí đã thanh toán.
 - Sổ theo dõi phát sinh: mọi đề xuất phát sinh phải có dự toán điều chỉnh và phê duyệt bằng văn bản trước khi thi công.
 - Quỹ dự phòng **10–15%** được kiểm soát chặt.
 
-### 4. Quản lý Chất lượng
+### Quản lý chất lượng
 
 - Lập **Quality Plan**: danh mục các điểm kiểm tra (**ITP – Inspection and Test Plan**) cho từng cấu kiện.
 - Thử nghiệm vật liệu đầu vào: thép (kéo nén), bê tông (mẫu nén), gạch (cường độ, độ hút nước).
 - Hồ sơ ảnh các công đoạn ẩn, chụp đầy đủ trước khi che kín.
 
-### 5. Quản lý Tiến độ & Truyền thông
+### Quản lý tiến độ và truyền thông
 
 - Tổng tiến độ **Gantt + Dự kiến 3 tuần**.
 - Họp giao ban tuần với biên bản chuẩn (**weekly Meeting**).
@@ -330,24 +330,28 @@ Thực tế nhiều chủ nhà nhầm lẫn hai vai trò này. Đây là hai ch�
 
 | Hạng mục | Không có TVGS | Có TVGS độc lập |
 |----------|--------------|-----------------|
-| Đội vốn so với dự toán | ❌ 15 – 25% | ✅ 3 – 7% |
-| Tỷ lệ chậm tiến độ | ❌ Cao | ✅ Thấp |
-| Khuyết tật sau bàn giao 1 năm | ❌ Phổ biến | ✅ Hạn chế |
+| Đội vốn so với dự toán | 15 – 25% | 3 – 7% |
+| Tỷ lệ chậm tiến độ | Cao | Thấp |
+| Khuyết tật sau bàn giao 1 năm | Phổ biến | Hạn chế |
 | Phí tư vấn (% GT xây dựng) | - | 2 – 4% |
 | **ROI ròng (sau trừ phí TVGS)** | - | **≈ 10 – 20%** |
 
 ### 6.3. Quy trình đồng hành của Đại diện Chủ đầu tư
 
-**Giai đoạn 1: Chuẩn bị & tiền thi công:**
+#### Giai đoạn 1: Chuẩn bị và tiền thi công
+
 Rà soát hồ sơ thiết kế, BoQ, hợp đồng nhà thầu; tư vấn lựa chọn nhà thầu; kiểm tra giấy phép xây dựng theo ND 175/2024.
 
-**Giai đoạn 2: Giám sát thi công thường xuyên:**
+#### Giai đoạn 2: Giám sát thi công thường xuyên
+
 Giám sát tại công trường, nghiệm thu từng cấu kiện theo Hold Points; kiểm tra vật tư đầu vào theo ITP.
 
-**Giai đoạn 3: Quản lý chi phí & tiến độ:**
+#### Giai đoạn 3: Quản lý chi phí và tiến độ
+
 Kiểm soát phát sinh VO; xác nhận khối lượng làm cơ sở thanh toán; báo cáo tuần cho chủ đầu tư.
 
-**Giai đoạn 4: Bàn giao & bảo hành:**
+#### Giai đoạn 4: Bàn giao và bảo hành
+
 Tổng nghiệm thu, lập hồ sơ hoàn công, theo dõi bảo hành và xử lý khuyết tật sau bàn giao.
 
 ---
