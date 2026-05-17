@@ -4,6 +4,10 @@ on:
   push:
     branches: ["main", "master"]
   workflow_dispatch:
+  schedule:
+    # Chạy mỗi thứ Sáu lúc 11:00 UTC = 18:00 giờ Việt Nam (UTC+7)
+    # Đảm bảo các bài đặt lịch future (future: false) tự động lên sóng đúng giờ
+    - cron: '0 11 * * 5'
 
 permissions:
   contents: read
@@ -27,6 +31,15 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
           cache-version: 1 # Increment this to reset cache if needed
+
+      - name: Inject dispatch token
+        env:
+          DISPATCH_TOKEN: ${{ secrets.ACTIONS_DISPATCH_TOKEN }}
+        run: |
+          if [ -n "$DISPATCH_TOKEN" ]; then
+            sed -i "s|__DISPATCH_TOKEN__|${DISPATCH_TOKEN}|g" \
+              apps/social-media-downloader/assets/js/app.js
+          fi
 
       - name: Setup Pages
         id: pages

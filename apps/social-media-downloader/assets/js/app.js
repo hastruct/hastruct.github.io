@@ -1,288 +1,69 @@
-// =====================================================
-// Social Media Downloader - JavaScript
-// HydroStructAI
-// =====================================================
+// Social Media Downloader — HydroStructAI
+// Token is injected at build time by the deploy workflow (ACTIONS_DISPATCH_TOKEN secret)
+const DISPATCH_TOKEN = '__DISPATCH_TOKEN__';
+const REPO_OWNER = 'hastruct';
+const REPO_NAME = 'hastruct.github.io';
+const WORKFLOW_FILE = 'video-downloader.yml';
+const RELEASE_TAG = 'temp-downloads';
 
-// Quality options based on format
+// ── Quality options ──────────────────────────────────────────────────────────
+
 const qualityOptions = {
     mp4: [
-        { value: 'best', label: 'Best Available' },
-        { value: '4k', label: '4K (2160p)' },
+        { value: 'best',  label: 'Best Available' },
+        { value: '4k',    label: '4K (2160p)' },
         { value: '1080p', label: 'Full HD (1080p)' },
-        { value: '720p', label: 'HD (720p)' },
-        { value: '480p', label: 'SD (480p)' },
-        { value: '360p', label: 'Low (360p)' }
+        { value: '720p',  label: 'HD (720p)' },
+        { value: '480p',  label: 'SD (480p)' },
+        { value: '360p',  label: 'Low (360p)' },
     ],
     webm: [
-        { value: 'best', label: 'Best Available' },
+        { value: 'best',  label: 'Best Available' },
         { value: '1080p', label: 'Full HD (1080p)' },
-        { value: '720p', label: 'HD (720p)' },
-        { value: '480p', label: 'SD (480p)' }
+        { value: '720p',  label: 'HD (720p)' },
+        { value: '480p',  label: 'SD (480p)' },
     ],
     mp3: [
         { value: '320', label: '320 kbps (Best)' },
-        { value: '256', label: '256 kbps (High)' },
         { value: '192', label: '192 kbps (Good)' },
         { value: '128', label: '128 kbps (Standard)' },
-        { value: '96', label: '96 kbps (Low)' }
     ],
     m4a: [
         { value: '256', label: '256 kbps (Best)' },
-        { value: '192', label: '192 kbps (High)' },
-        { value: '128', label: '128 kbps (Standard)' }
+        { value: '128', label: '128 kbps (Standard)' },
     ],
     wav: [
-        { value: 'best', label: 'Lossless (Best)' },
-        { value: 'high', label: 'High Quality' }
-    ]
+        { value: 'best', label: 'Lossless' },
+    ],
 };
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function() {
+const mimeTypes = {
+    mp4: 'video/mp4',
+    webm: 'video/webm',
+    mp3: 'audio/mpeg',
+    m4a: 'audio/mp4',
+    wav: 'audio/wav',
+};
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+
+document.addEventListener('DOMContentLoaded', () => {
     updateQualityOptions();
-    setupEventListeners();
-});
-
-// Update quality options based on selected format
-function updateQualityOptions() {
-    const formatSelect = document.getElementById('format');
-    const qualitySelect = document.getElementById('quality');
-    const selectedFormat = formatSelect.value;
-
-    // Clear existing options
-    qualitySelect.innerHTML = '';
-
-    // Get options for selected format
-    const options = qualityOptions[selectedFormat] || qualityOptions.mp4;
-
-    // Add new options
-    options.forEach(option => {
-        const optionElement = document.createElement('option');
-        optionElement.value = option.value;
-        optionElement.textContent = option.label;
-        qualitySelect.appendChild(optionElement);
+    document.getElementById('url-input').addEventListener('keypress', e => {
+        if (e.key === 'Enter') handleDownload();
     });
-}
 
-// Setup event listeners
-function setupEventListeners() {
-    // Format change listener
-    const formatSelect = document.getElementById('format');
-    if (formatSelect) {
-        formatSelect.addEventListener('change', updateQualityOptions);
-    }
-
-    // Enter key on URL input
-    const urlInput = document.getElementById('url-input');
-    if (urlInput) {
-        urlInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                handleDownload();
+    // Animate cards on scroll
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
             }
         });
-    }
-}
+    }, { threshold: 0.1, rootMargin: '0px 0px -80px 0px' });
 
-// Paste from clipboard
-async function pasteFromClipboard() {
-    try {
-        const text = await navigator.clipboard.readText();
-        document.getElementById('url-input').value = text;
-        showStatus('URL pasted successfully!', 'success');
-    } catch (err) {
-        showStatus('Failed to paste. Please paste manually.', 'error');
-    }
-}
-
-// Copy to clipboard
-function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        showStatus('Copied to clipboard!', 'success');
-    }).catch(() => {
-        showStatus('Failed to copy. Please copy manually.', 'error');
-    });
-}
-
-// Copy code block
-function copyCodeBlock(button) {
-    const codeBlock = button.closest('.code-block').querySelector('code');
-    const text = codeBlock.textContent;
-
-    navigator.clipboard.writeText(text).then(() => {
-        const originalHTML = button.innerHTML;
-        button.innerHTML = '<i class="fas fa-check"></i> Copied!';
-        setTimeout(() => {
-            button.innerHTML = originalHTML;
-        }, 2000);
-    });
-}
-
-// Clear form
-function clearForm() {
-    document.getElementById('url-input').value = '';
-    document.getElementById('platform').value = 'youtube';
-    document.getElementById('format').value = 'mp4';
-    updateQualityOptions();
-    hideStatus();
-}
-
-// Show status message
-function showStatus(message, type = 'info') {
-    const statusDiv = document.getElementById('status-message');
-    statusDiv.textContent = message;
-    statusDiv.className = `status-message ${type}`;
-    statusDiv.style.display = 'block';
-
-    // Auto-hide after 5 seconds for success messages
-    if (type === 'success') {
-        setTimeout(hideStatus, 5000);
-    }
-}
-
-// Hide status message
-function hideStatus() {
-    const statusDiv = document.getElementById('status-message');
-    statusDiv.style.display = 'none';
-}
-
-// Validate URL
-function validateURL(url) {
-    if (!url || url.trim() === '') {
-        return { valid: false, message: 'Please enter a URL' };
-    }
-
-    try {
-        new URL(url);
-    } catch (e) {
-        return { valid: false, message: 'Invalid URL format' };
-    }
-
-    const platform = document.getElementById('platform').value;
-    const platformPatterns = {
-        youtube: /youtube\.com|youtu\.be/i,
-        facebook: /facebook\.com|fb\.watch/i,
-        linkedin: /linkedin\.com/i,
-        instagram: /instagram\.com/i,
-        tiktok: /tiktok\.com/i
-    };
-
-    if (!platformPatterns[platform].test(url)) {
-        return {
-            valid: false,
-            message: `URL doesn't appear to be from ${platform}`
-        };
-    }
-
-    return { valid: true };
-}
-
-// Handle download
-async function handleDownload() {
-    const url = document.getElementById('url-input').value.trim();
-    const platform = document.getElementById('platform').value;
-    const format = document.getElementById('format').value;
-    const quality = document.getElementById('quality').value;
-
-    // Validate URL
-    const validation = validateURL(url);
-    if (!validation.valid) {
-        showStatus(validation.message, 'error');
-        return;
-    }
-
-    // Show loading
-    showStatus('Processing... This may take a moment.', 'loading');
-
-    // For GitHub Pages static site, we can't actually download server-side
-    // We need to guide users to use CLI or provide alternative methods
-
-    showCLIInstructions(url, platform, format, quality);
-}
-
-// Show CLI instructions for download
-function showCLIInstructions(url, platform, format, quality) {
-    const isAudio = ['mp3', 'm4a', 'wav'].includes(format);
-
-    let command;
-    if (isAudio) {
-        command = `socialmediadl "${url}" --audio -f ${format} --audio-quality best`;
-    } else {
-        command = `socialmediadl "${url}" -q ${quality} -f ${format}`;
-    }
-
-    const escapedCommand = command.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-
-    const message = `
-        <div style="text-align: left;">
-            <p><strong>To download this ${format.toUpperCase()} file:</strong></p>
-            <ol style="margin: 1rem 0; padding-left: 1.5rem;">
-                <li>Install the CLI tool: <code style="background: #e2e8f0; padding: 2px 6px; border-radius: 3px;">pip install socialmediadl</code></li>
-                <li>Run this command:</li>
-            </ol>
-            <div style="background: #1e293b; color: #e2e8f0; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; font-family: monospace; position: relative;">
-                <code>${escapedCommand}</code>
-                <button data-command id="copy-cmd-btn" style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(255,255,255,0.1); border: none; color: white; padding: 0.25rem 0.5rem; border-radius: 4px; cursor: pointer;">
-                    <i class="fas fa-copy"></i> Copy
-                </button>
-            </div>
-            <p style="margin-top: 1rem;"><strong>Alternative:</strong> Use third-party services:</p>
-            <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
-                <li><a href="https://cobalt.tools" target="_blank" style="color: #2563eb;">Cobalt.tools</a> - Fast, ad-free</li>
-                <li><a href="https://loader.to" target="_blank" style="color: #2563eb;">Loader.to</a> - Multi-platform</li>
-            </ul>
-        </div>
-    `;
-
-    const statusDiv = document.getElementById('status-message');
-    statusDiv.innerHTML = message;
-    statusDiv.className = 'status-message';
-    statusDiv.style.display = 'block';
-    statusDiv.style.background = '#eff6ff';
-    statusDiv.style.color = '#1e40af';
-    statusDiv.style.border = '1px solid #bfdbfe';
-
-    // Attach copy handler safely (avoids inline onclick with special chars)
-    document.getElementById('copy-cmd-btn').addEventListener('click', function() {
-        navigator.clipboard.writeText(command).then(() => {
-            this.innerHTML = '<i class="fas fa-check"></i> Copied!';
-            setTimeout(() => { this.innerHTML = '<i class="fas fa-copy"></i> Copy'; }, 2000);
-        });
-    });
-}
-
-// Smooth scroll to section
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// Add animation on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observe feature cards and doc cards
-document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.feature-card, .doc-card');
-    cards.forEach(card => {
+    document.querySelectorAll('.feature-card').forEach(card => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(20px)';
         card.style.transition = 'opacity 0.5s, transform 0.5s';
@@ -290,8 +71,267 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Mobile menu toggle (for future implementation)
-function toggleMobileMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+// ── Form helpers ─────────────────────────────────────────────────────────────
+
+function updateQualityOptions() {
+    const format = document.getElementById('format').value;
+    const sel = document.getElementById('quality');
+    sel.innerHTML = '';
+    (qualityOptions[format] || qualityOptions.mp4).forEach(opt => {
+        const o = document.createElement('option');
+        o.value = opt.value;
+        o.textContent = opt.label;
+        sel.appendChild(o);
+    });
 }
+
+async function pasteFromClipboard() {
+    try {
+        document.getElementById('url-input').value = await navigator.clipboard.readText();
+    } catch {
+        showStatus('Please paste manually (Ctrl+V / Cmd+V).', 'error');
+    }
+}
+
+function clearForm() {
+    document.getElementById('url-input').value = '';
+    document.getElementById('format').value = 'mp4';
+    updateQualityOptions();
+    hideStatus();
+    setDownloadBtnEnabled(true);
+}
+
+// ── Status UI ─────────────────────────────────────────────────────────────────
+
+function showStatus(html, type = 'info') {
+    const area = document.getElementById('status-area');
+    area.innerHTML = html;
+    area.className = `status-message ${type}`;
+    area.style.display = 'block';
+}
+
+function hideStatus() {
+    const area = document.getElementById('status-area');
+    area.style.display = 'none';
+    area.innerHTML = '';
+}
+
+function setDownloadBtnEnabled(enabled) {
+    const btn = document.getElementById('download-btn');
+    btn.disabled = !enabled;
+    btn.style.opacity = enabled ? '1' : '0.6';
+}
+
+// ── URL validation ────────────────────────────────────────────────────────────
+
+function validateURL(url) {
+    if (!url.trim()) return 'Please enter a video URL.';
+    try { new URL(url); } catch { return 'Invalid URL format.'; }
+    return null;
+}
+
+// ── Main download handler ─────────────────────────────────────────────────────
+
+async function handleDownload() {
+    const url     = document.getElementById('url-input').value.trim();
+    const format  = document.getElementById('format').value;
+    const quality = document.getElementById('quality').value;
+
+    const err = validateURL(url);
+    if (err) { showStatus(err, 'error'); return; }
+
+    if (!DISPATCH_TOKEN || DISPATCH_TOKEN === '__DISPATCH_TOKEN__') {
+        showStatus(
+            'Downloader not configured. Add the <strong>ACTIONS_DISPATCH_TOKEN</strong> secret to the repository and redeploy.',
+            'error'
+        );
+        return;
+    }
+
+    const requestId = crypto.randomUUID().replace(/-/g, '').slice(0, 16);
+
+    setDownloadBtnEnabled(false);
+    showStatus(buildWaitingUI(0), 'loading');
+
+    // Trigger the GitHub Actions workflow
+    const dispatched = await dispatchWorkflow(url, format, quality, requestId);
+    if (!dispatched) {
+        showStatus('Failed to start the download service. Check the URL and try again.', 'error');
+        setDownloadBtnEnabled(true);
+        return;
+    }
+
+    // Poll for the release asset
+    const assetUrl = await pollForAsset(requestId, format);
+
+    if (!assetUrl) {
+        showStatus(
+            'Download timed out or failed. The video may be private, geo-blocked, or too large (>500 MB).',
+            'error'
+        );
+        setDownloadBtnEnabled(true);
+        return;
+    }
+
+    // File is ready — ask user where to save
+    showStatus(buildReadyUI(assetUrl, requestId, format), 'success');
+    setDownloadBtnEnabled(true);
+}
+
+// ── GitHub Actions dispatch ───────────────────────────────────────────────────
+
+async function dispatchWorkflow(url, format, quality, requestId) {
+    const endpoint = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/dispatches`;
+    try {
+        const res = await fetch(endpoint, {
+            method: 'POST',
+            headers: {
+                Authorization: `Bearer ${DISPATCH_TOKEN}`,
+                Accept: 'application/vnd.github+json',
+                'X-GitHub-Api-Version': '2022-11-28',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                ref: 'main',
+                inputs: { url, format, quality, request_id: requestId },
+            }),
+        });
+        return res.status === 204;
+    } catch {
+        return false;
+    }
+}
+
+// ── Poll release assets ───────────────────────────────────────────────────────
+
+async function pollForAsset(requestId, format, timeoutMs = 600000) {
+    const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/releases/tags/${RELEASE_TAG}`;
+    const deadline = Date.now() + timeoutMs;
+    let elapsed = 0;
+
+    while (Date.now() < deadline) {
+        updateWaitingUI(elapsed);
+        await sleep(8000);
+        elapsed += 8;
+
+        try {
+            const res = await fetch(apiUrl, {
+                headers: {
+                    Authorization: `Bearer ${DISPATCH_TOKEN}`,
+                    Accept: 'application/vnd.github+json',
+                    'X-GitHub-Api-Version': '2022-11-28',
+                },
+            });
+            if (!res.ok) continue;
+
+            const data = await res.json();
+            const asset = (data.assets || []).find(a => a.name.startsWith(requestId));
+            if (asset) return asset.browser_download_url;
+        } catch {
+            // Network glitch — keep polling
+        }
+    }
+    return null;
+}
+
+// ── Download with Save-As dialog ─────────────────────────────────────────────
+
+async function saveFile(assetUrl, requestId, format) {
+    const ext      = format;
+    const filename = `download-${requestId.slice(0, 8)}.${ext}`;
+    const mime     = mimeTypes[ext] || 'application/octet-stream';
+
+    if ('showSaveFilePicker' in window) {
+        try {
+            const handle = await window.showSaveFilePicker({
+                suggestedName: filename,
+                types: [{ description: 'Media file', accept: { [mime]: ['.' + ext] } }],
+            });
+            showStatus(buildProgressUI(), 'loading');
+
+            const response = await fetch(assetUrl);
+            if (!response.ok) throw new Error('Fetch failed');
+
+            const writable = await handle.createWritable();
+            await response.body.pipeTo(writable);
+
+            showStatus('<i class="fas fa-check-circle"></i> File saved successfully!', 'success');
+            return;
+        } catch (e) {
+            if (e.name === 'AbortError') return; // user cancelled
+        }
+    }
+
+    // Fallback: browser native download
+    const a = document.createElement('a');
+    a.href = assetUrl;
+    a.download = filename;
+    a.target = '_blank';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    showStatus('<i class="fas fa-check-circle"></i> Download started — check your Downloads folder.', 'success');
+}
+
+// ── UI builders ───────────────────────────────────────────────────────────────
+
+function buildWaitingUI(elapsed) {
+    return `
+        <div class="wait-ui">
+            <div class="spinner"></div>
+            <div>
+                <p><strong>Processing your request…</strong></p>
+                <p class="wait-note">Our cloud engine is downloading the video. This usually takes 1–3 minutes.</p>
+                <p class="wait-timer" id="wait-timer">Elapsed: ${elapsed}s</p>
+                <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+            </div>
+        </div>`;
+}
+
+function updateWaitingUI(elapsed) {
+    const timer = document.getElementById('wait-timer');
+    if (timer) timer.textContent = `Elapsed: ${elapsed}s`;
+    const fill = document.getElementById('progress-fill');
+    if (fill) {
+        const pct = Math.min(95, (elapsed / 180) * 100);
+        fill.style.width = pct + '%';
+    }
+}
+
+function buildReadyUI(assetUrl, requestId, format) {
+    return `
+        <div class="ready-ui">
+            <i class="fas fa-check-circle" style="color:var(--success-color);font-size:2rem;"></i>
+            <div>
+                <p><strong>Your file is ready!</strong></p>
+                <p class="wait-note">Click the button below to choose where to save it.</p>
+                <button class="btn btn-primary btn-large save-btn"
+                    onclick="saveFile('${assetUrl}','${requestId}','${format}')">
+                    <i class="fas fa-folder-open"></i> Browse &amp; Save File
+                </button>
+            </div>
+        </div>`;
+}
+
+function buildProgressUI() {
+    return `
+        <div class="wait-ui">
+            <div class="spinner"></div>
+            <p><strong>Writing file to disk…</strong> Please wait.</p>
+        </div>`;
+}
+
+// ── Utilities ─────────────────────────────────────────────────────────────────
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+});

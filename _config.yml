@@ -141,7 +141,7 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-future: true
+future: false
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
