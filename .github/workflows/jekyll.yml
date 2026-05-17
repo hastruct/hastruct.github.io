@@ -36,12 +36,12 @@ jobs:
         env:
           DISPATCH_TOKEN: ${{ secrets.ACTIONS_DISPATCH_TOKEN }}
         run: |
-          printf 'window.DOWNLOADER_TOKEN="%s";\n' "$DISPATCH_TOKEN" \
-            > apps/social-media-downloader/assets/js/config.js
+          sed -i "s|__DISPATCH_TOKEN__|${DISPATCH_TOKEN}|g" \
+            apps/social-media-downloader/index.html
           if [ -n "$DISPATCH_TOKEN" ]; then
-            echo "config.js written, token present: True"
+            echo "Token injected into index.html: True"
           else
-            echo "config.js written, token present: False"
+            echo "Token injected into index.html: False (secret missing)"
           fi
 
       - name: Setup Pages

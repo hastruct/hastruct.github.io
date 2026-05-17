@@ -1,6 +1,6 @@
 // Social Media Downloader — HydroStructAI
-// Token loaded from config.js (generated at build time from ACTIONS_DISPATCH_TOKEN secret)
-const DISPATCH_TOKEN = (typeof window.DOWNLOADER_TOKEN !== 'undefined' && window.DOWNLOADER_TOKEN)
+// Token injected inline by Jekyll build from ACTIONS_DISPATCH_TOKEN secret
+const DISPATCH_TOKEN = (typeof window.DOWNLOADER_TOKEN !== 'undefined')
     ? window.DOWNLOADER_TOKEN
     : '';
 const REPO_OWNER = 'hastruct';
