@@ -156,9 +156,13 @@ async function handleDownload() {
     showStatus(buildWaitingUI(0), 'loading');
 
     // Trigger the GitHub Actions workflow
-    const dispatched = await dispatchWorkflow(url, format, quality, requestId);
-    if (!dispatched) {
-        showStatus('Failed to start the download service. Check the URL and try again.', 'error');
+    const dispatch = await dispatchWorkflow(url, format, quality, requestId);
+    if (!dispatch.ok) {
+        showStatus(
+            `Download service error — <strong>${dispatch.error}</strong><br>
+            <small>Ensure the token has <em>Actions: Read &amp; Write</em> permission on this repository.</small>`,
+            'error'
+        );
         setDownloadBtnEnabled(true);
         return;
     }
@@ -198,9 +202,15 @@ async function dispatchWorkflow(url, format, quality, requestId) {
                 inputs: { url, format, quality, request_id: requestId },
             }),
         });
-        return res.status === 204;
-    } catch {
-        return false;
+        if (res.status === 204) return { ok: true };
+        let errMsg = `HTTP ${res.status}`;
+        try {
+            const body = await res.json();
+            if (body.message) errMsg += ': ' + body.message;
+        } catch { /* non-JSON body */ }
+        return { ok: false, error: errMsg };
+    } catch (err) {
+        return { ok: false, error: 'Network error — ' + err.message };
     }
 }
 
