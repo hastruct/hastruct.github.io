@@ -12,30 +12,30 @@ const RELEASE_TAG = 'temp-downloads';
 
 const qualityOptions = {
     mp4: [
-        { value: 'best',  label: 'Best Available' },
+        { value: 'best',  label: 'Tốt nhất hiện có' },
         { value: '4k',    label: '4K (2160p)' },
         { value: '1080p', label: 'Full HD (1080p)' },
         { value: '720p',  label: 'HD (720p)' },
         { value: '480p',  label: 'SD (480p)' },
-        { value: '360p',  label: 'Low (360p)' },
+        { value: '360p',  label: 'Thấp (360p)' },
     ],
     webm: [
-        { value: 'best',  label: 'Best Available' },
+        { value: 'best',  label: 'Tốt nhất hiện có' },
         { value: '1080p', label: 'Full HD (1080p)' },
         { value: '720p',  label: 'HD (720p)' },
         { value: '480p',  label: 'SD (480p)' },
     ],
     mp3: [
-        { value: '320', label: '320 kbps (Best)' },
-        { value: '192', label: '192 kbps (Good)' },
-        { value: '128', label: '128 kbps (Standard)' },
+        { value: '320', label: '320 kbps (Tốt nhất)' },
+        { value: '192', label: '192 kbps (Tốt)' },
+        { value: '128', label: '128 kbps (Tiêu chuẩn)' },
     ],
     m4a: [
-        { value: '256', label: '256 kbps (Best)' },
-        { value: '128', label: '128 kbps (Standard)' },
+        { value: '256', label: '256 kbps (Tốt nhất)' },
+        { value: '128', label: '128 kbps (Tiêu chuẩn)' },
     ],
     wav: [
-        { value: 'best', label: 'Lossless' },
+        { value: 'best', label: 'Không nén (Lossless)' },
     ],
 };
 
@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Enter') handleDownload();
     });
 
-    // Animate cards on scroll
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -104,14 +103,16 @@ async function pasteFromClipboard() {
     try {
         document.getElementById('url-input').value = await navigator.clipboard.readText();
     } catch {
-        showStatus('Please paste manually (Ctrl+V / Cmd+V).', 'error');
+        showStatus('Vui lòng dán thủ công bằng Ctrl+V / Cmd+V.', 'error');
     }
 }
 
 function clearForm() {
     document.getElementById('url-input').value = '';
     document.getElementById('format').value = 'mp4';
+    document.getElementById('platform').value = 'youtube';
     updateQualityOptions();
+    updatePlaceholder();
     hideStatus();
     setDownloadBtnEnabled(true);
 }
@@ -140,8 +141,8 @@ function setDownloadBtnEnabled(enabled) {
 // ── URL validation ────────────────────────────────────────────────────────────
 
 function validateURL(url) {
-    if (!url.trim()) return 'Please enter a video URL.';
-    try { new URL(url); } catch { return 'Invalid URL format.'; }
+    if (!url.trim()) return 'Vui lòng nhập đường dẫn video.';
+    try { new URL(url); } catch { return 'Định dạng đường dẫn không hợp lệ.'; }
     return null;
 }
 
@@ -157,7 +158,7 @@ async function handleDownload() {
 
     if (!DISPATCH_TOKEN) {
         showStatus(
-            'Downloader not configured. The <strong>ACTIONS_DISPATCH_TOKEN</strong> secret is missing or empty — please check the repository secrets and redeploy.',
+            'Dịch vụ tải chưa được cấu hình. Secret <strong>ACTIONS_DISPATCH_TOKEN</strong> đang bị trống — kiểm tra lại cài đặt repository và deploy lại.',
             'error'
         );
         return;
@@ -168,38 +169,35 @@ async function handleDownload() {
     setDownloadBtnEnabled(false);
     showStatus(buildWaitingUI(0), 'loading');
 
-    // Trigger the GitHub Actions workflow
     const dispatch = await dispatchWorkflow(url, format, quality, requestId);
     if (!dispatch.ok) {
         const is403 = dispatch.error.includes('403');
         showStatus(
             is403
-                ? `Permission denied (<strong>${dispatch.error}</strong>).<br>
-                   <small>Fix: Go to GitHub → Settings → Developer settings → Personal access tokens →
-                   add <strong>workflow</strong> scope (classic PAT) or set Actions to
-                   <strong>Read &amp; Write</strong> (fine-grained PAT), then update the
-                   <code>ACTIONS_DISPATCH_TOKEN</code> secret and redeploy.</small>`
-                : `Download service error — <strong>${dispatch.error}</strong><br>
-                   <small>Ensure the token has <em>Actions: Read &amp; Write</em> permission on this repository.</small>`,
+                ? `Không có quyền truy cập (<strong>${dispatch.error}</strong>).<br>
+                   <small>Cách sửa: Vào GitHub → Settings → Developer settings → Personal access tokens →
+                   thêm scope <strong>workflow</strong> (classic PAT) hoặc đặt Actions thành
+                   <strong>Read &amp; Write</strong> (fine-grained PAT), sau đó cập nhật secret
+                   <code>ACTIONS_DISPATCH_TOKEN</code> và deploy lại.</small>`
+                : `Lỗi dịch vụ tải — <strong>${dispatch.error}</strong><br>
+                   <small>Đảm bảo token có quyền <em>Actions: Read &amp; Write</em> trên repository này.</small>`,
             'error'
         );
         setDownloadBtnEnabled(true);
         return;
     }
 
-    // Poll for the release asset
     const assetUrl = await pollForAsset(requestId, format);
 
     if (!assetUrl) {
         showStatus(
-            'Download timed out or failed. The video may be private, geo-blocked, or too large (>500 MB).',
+            'Quá thời gian chờ hoặc tải thất bại. Video có thể bị giới hạn riêng tư, chặn theo khu vực, hoặc dung lượng vượt 500 MB.',
             'error'
         );
         setDownloadBtnEnabled(true);
         return;
     }
 
-    // File is ready — ask user where to save
     showStatus(buildReadyUI(assetUrl, requestId, format), 'success');
     setDownloadBtnEnabled(true);
 }
@@ -230,7 +228,7 @@ async function dispatchWorkflow(url, format, quality, requestId) {
         } catch { /* non-JSON body */ }
         return { ok: false, error: errMsg };
     } catch (err) {
-        return { ok: false, error: 'Network error — ' + err.message };
+        return { ok: false, error: 'Lỗi mạng — ' + err.message };
     }
 }
 
@@ -260,7 +258,7 @@ async function pollForAsset(requestId, format, timeoutMs = 600000) {
             const asset = (data.assets || []).find(a => a.name.startsWith(requestId));
             if (asset) return asset.browser_download_url;
         } catch {
-            // Network glitch — keep polling
+            // Lỗi mạng tạm thời — tiếp tục thử
         }
     }
     return null;
@@ -270,31 +268,31 @@ async function pollForAsset(requestId, format, timeoutMs = 600000) {
 
 async function saveFile(assetUrl, requestId, format) {
     const ext      = format;
-    const filename = `download-${requestId.slice(0, 8)}.${ext}`;
+    const filename = `video-${requestId.slice(0, 8)}.${ext}`;
     const mime     = mimeTypes[ext] || 'application/octet-stream';
 
     if ('showSaveFilePicker' in window) {
         try {
             const handle = await window.showSaveFilePicker({
                 suggestedName: filename,
-                types: [{ description: 'Media file', accept: { [mime]: ['.' + ext] } }],
+                types: [{ description: 'Tệp media', accept: { [mime]: ['.' + ext] } }],
             });
             showStatus(buildProgressUI(), 'loading');
 
             const response = await fetch(assetUrl);
-            if (!response.ok) throw new Error('Fetch failed');
+            if (!response.ok) throw new Error('Tải thất bại');
 
             const writable = await handle.createWritable();
             await response.body.pipeTo(writable);
 
-            showStatus('<i class="fas fa-check-circle"></i> File saved successfully!', 'success');
+            showStatus('<i class="fas fa-check-circle"></i> Đã lưu file thành công!', 'success');
             return;
         } catch (e) {
-            if (e.name === 'AbortError') return; // user cancelled
+            if (e.name === 'AbortError') return;
         }
     }
 
-    // Fallback: browser native download
+    // Fallback: tải thẳng về thư mục Downloads
     const a = document.createElement('a');
     a.href = assetUrl;
     a.download = filename;
@@ -302,7 +300,7 @@ async function saveFile(assetUrl, requestId, format) {
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    showStatus('<i class="fas fa-check-circle"></i> Download started — check your Downloads folder.', 'success');
+    showStatus('<i class="fas fa-check-circle"></i> Đang tải xuống — kiểm tra thư mục Tải xuống của bạn.', 'success');
 }
 
 // ── UI builders ───────────────────────────────────────────────────────────────
@@ -312,9 +310,9 @@ function buildWaitingUI(elapsed) {
         <div class="wait-ui">
             <div class="spinner"></div>
             <div>
-                <p><strong>Processing your request…</strong></p>
-                <p class="wait-note">Our cloud engine is downloading the video. This usually takes 1–3 minutes.</p>
-                <p class="wait-timer" id="wait-timer">Elapsed: ${elapsed}s</p>
+                <p><strong>Đang xử lý yêu cầu của bạn…</strong></p>
+                <p class="wait-note">Hệ thống đám mây đang tải video. Thông thường mất 1–3 phút.</p>
+                <p class="wait-timer" id="wait-timer">Đã chờ: ${elapsed}s</p>
                 <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
             </div>
         </div>`;
@@ -322,7 +320,7 @@ function buildWaitingUI(elapsed) {
 
 function updateWaitingUI(elapsed) {
     const timer = document.getElementById('wait-timer');
-    if (timer) timer.textContent = `Elapsed: ${elapsed}s`;
+    if (timer) timer.textContent = `Đã chờ: ${elapsed}s`;
     const fill = document.getElementById('progress-fill');
     if (fill) {
         const pct = Math.min(95, (elapsed / 180) * 100);
@@ -335,11 +333,11 @@ function buildReadyUI(assetUrl, requestId, format) {
         <div class="ready-ui">
             <i class="fas fa-check-circle" style="color:var(--success-color);font-size:2rem;"></i>
             <div>
-                <p><strong>Your file is ready!</strong></p>
-                <p class="wait-note">Click the button below to choose where to save it.</p>
+                <p><strong>File đã sẵn sàng!</strong></p>
+                <p class="wait-note">Nhấn nút bên dưới để chọn nơi lưu file.</p>
                 <button class="btn btn-primary btn-large save-btn"
                     onclick="saveFile('${assetUrl}','${requestId}','${format}')">
-                    <i class="fas fa-folder-open"></i> Browse &amp; Save File
+                    <i class="fas fa-folder-open"></i> Chọn thư mục &amp; Lưu file
                 </button>
             </div>
         </div>`;
@@ -349,7 +347,7 @@ function buildProgressUI() {
     return `
         <div class="wait-ui">
             <div class="spinner"></div>
-            <p><strong>Writing file to disk…</strong> Please wait.</p>
+            <p><strong>Đang ghi file xuống đĩa…</strong> Vui lòng chờ.</p>
         </div>`;
 }
 
@@ -359,7 +357,6 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
         e.preventDefault();
