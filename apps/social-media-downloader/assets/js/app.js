@@ -1,6 +1,8 @@
 // Social Media Downloader — HydroStructAI
-// Token is injected at build time by the deploy workflow (ACTIONS_DISPATCH_TOKEN secret)
-const DISPATCH_TOKEN = '__DISPATCH_TOKEN__';
+// Token loaded from config.js (generated at build time from ACTIONS_DISPATCH_TOKEN secret)
+const DISPATCH_TOKEN = (typeof window.DOWNLOADER_TOKEN !== 'undefined' && window.DOWNLOADER_TOKEN)
+    ? window.DOWNLOADER_TOKEN
+    : '';
 const REPO_OWNER = 'hastruct';
 const REPO_NAME = 'hastruct.github.io';
 const WORKFLOW_FILE = 'video-downloader.yml';
@@ -140,9 +142,9 @@ async function handleDownload() {
     const err = validateURL(url);
     if (err) { showStatus(err, 'error'); return; }
 
-    if (!DISPATCH_TOKEN || DISPATCH_TOKEN === '__DISPATCH_TOKEN__') {
+    if (!DISPATCH_TOKEN) {
         showStatus(
-            'Downloader not configured. Add the <strong>ACTIONS_DISPATCH_TOKEN</strong> secret to the repository and redeploy.',
+            'Downloader not configured. The <strong>ACTIONS_DISPATCH_TOKEN</strong> secret is missing or empty — please check the repository secrets and redeploy.',
             'error'
         );
         return;
