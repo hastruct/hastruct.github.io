@@ -98,20 +98,34 @@
 
             <div class="app-container">
 
-                <!-- URL Input -->
-                <div class="form-group">
-                    <label for="url-input">
-                        <i class="fas fa-link"></i> Video URL
-                    </label>
-                    <div class="url-input-wrapper">
-                        <input
-                            type="text"
-                            id="url-input"
-                            class="form-input"
-                            placeholder="https://youtube.com/watch?v=...">
-                        <button class="paste-btn" onclick="pasteFromClipboard()">
-                            <i class="fas fa-paste"></i> Paste
-                        </button>
+                <!-- Platform + URL -->
+                <div class="form-row platform-url">
+                    <div class="form-group">
+                        <label for="platform">
+                            <i class="fas fa-network-wired"></i> Platform
+                        </label>
+                        <select id="platform" class="form-select" onchange="updatePlaceholder()">
+                            <option value="youtube">YouTube</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="tiktok">TikTok</option>
+                            <option value="linkedin">LinkedIn</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="url-input">
+                            <i class="fas fa-link"></i> Video URL
+                        </label>
+                        <div class="url-input-wrapper">
+                            <input
+                                type="text"
+                                id="url-input"
+                                class="form-input"
+                                placeholder="https://youtube.com/watch?v=...">
+                            <button class="paste-btn" onclick="pasteFromClipboard()">
+                                <i class="fas fa-paste"></i> Paste
+                            </button>
+                        </div>
                     </div>
                 </div>
 

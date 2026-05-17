@@ -184,6 +184,7 @@ section { padding: 4rem 0; }
 .paste-btn:hover { background: var(--primary-dark); }
 
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-row.platform-url { grid-template-columns: 180px 1fr; }
 
 .action-buttons {
     display: flex; gap: 1rem; margin-top: 2rem;

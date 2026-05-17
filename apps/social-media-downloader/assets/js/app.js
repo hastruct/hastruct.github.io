@@ -87,6 +87,19 @@ function updateQualityOptions() {
     });
 }
 
+const platformPlaceholders = {
+    youtube:   'https://youtube.com/watch?v=...',
+    facebook:  'https://facebook.com/watch?v=...',
+    instagram: 'https://instagram.com/p/...',
+    tiktok:    'https://tiktok.com/@user/video/...',
+    linkedin:  'https://linkedin.com/posts/...',
+};
+
+function updatePlaceholder() {
+    const platform = document.getElementById('platform').value;
+    document.getElementById('url-input').placeholder = platformPlaceholders[platform] || '';
+}
+
 async function pasteFromClipboard() {
     try {
         document.getElementById('url-input').value = await navigator.clipboard.readText();
