@@ -62,6 +62,7 @@ include:
   - _pages
   - apps
   - tools
+  - apps/social-media-downloader/assets/js/config.js
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
