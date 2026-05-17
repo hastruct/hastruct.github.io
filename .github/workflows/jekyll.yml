@@ -36,13 +36,13 @@ jobs:
         env:
           DISPATCH_TOKEN: ${{ secrets.ACTIONS_DISPATCH_TOKEN }}
         run: |
-          python3 -c "
-import os
-token = os.environ.get('DISPATCH_TOKEN', '')
-with open('apps/social-media-downloader/assets/js/config.js', 'w') as f:
-    f.write('window.DOWNLOADER_TOKEN=\"' + token + '\";\n')
-print('config.js written, token present:', bool(token))
-"
+          printf 'window.DOWNLOADER_TOKEN="%s";\n' "$DISPATCH_TOKEN" \
+            > apps/social-media-downloader/assets/js/config.js
+          if [ -n "$DISPATCH_TOKEN" ]; then
+            echo "config.js written, token present: True"
+          else
+            echo "config.js written, token present: False"
+          fi
 
       - name: Setup Pages
         id: pages
