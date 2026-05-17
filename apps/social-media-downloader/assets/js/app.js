@@ -171,9 +171,16 @@ async function handleDownload() {
     // Trigger the GitHub Actions workflow
     const dispatch = await dispatchWorkflow(url, format, quality, requestId);
     if (!dispatch.ok) {
+        const is403 = dispatch.error.includes('403');
         showStatus(
-            `Download service error — <strong>${dispatch.error}</strong><br>
-            <small>Ensure the token has <em>Actions: Read &amp; Write</em> permission on this repository.</small>`,
+            is403
+                ? `Permission denied (<strong>${dispatch.error}</strong>).<br>
+                   <small>Fix: Go to GitHub → Settings → Developer settings → Personal access tokens →
+                   add <strong>workflow</strong> scope (classic PAT) or set Actions to
+                   <strong>Read &amp; Write</strong> (fine-grained PAT), then update the
+                   <code>ACTIONS_DISPATCH_TOKEN</code> secret and redeploy.</small>`
+                : `Download service error — <strong>${dispatch.error}</strong><br>
+                   <small>Ensure the token has <em>Actions: Read &amp; Write</em> permission on this repository.</small>`,
             'error'
         );
         setDownloadBtnEnabled(true);
