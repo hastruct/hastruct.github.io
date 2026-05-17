@@ -25,10 +25,37 @@ jobs:
       contents: write
 
     steps:
-      - name: Install yt-dlp and ffmpeg
+      - name: Get week (cache key)
+        id: date
+        run: echo "week=$(date +'%Y-%U')" >> $GITHUB_OUTPUT
+
+      - name: Cache yt-dlp binary
+        uses: actions/cache@v4
+        id: cache-ytdlp
+        with:
+          path: ~/.local/bin/yt-dlp
+          key: yt-dlp-${{ runner.os }}-${{ steps.date.outputs.week }}
+
+      - name: Install yt-dlp (cache miss only)
+        if: steps.cache-ytdlp.outputs.cache-hit != 'true'
         run: |
-          pip install -q yt-dlp
-          sudo apt-get install -y -q ffmpeg
+          mkdir -p ~/.local/bin
+          curl -fsSL https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp \
+            -o ~/.local/bin/yt-dlp
+          chmod +x ~/.local/bin/yt-dlp
+
+      - name: Add ~/.local/bin to PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Cache ffmpeg apt packages
+        uses: actions/cache@v4
+        id: cache-ffmpeg
+        with:
+          path: /var/cache/apt/archives
+          key: apt-ffmpeg-${{ runner.os }}-v1
+
+      - name: Install ffmpeg (uses cached debs if available)
+        run: sudo apt-get install -y -q --no-install-recommends ffmpeg
 
       - name: Download media
         id: dl
