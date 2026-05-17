@@ -32,6 +32,15 @@ jobs:
           bundler-cache: true
           cache-version: 1 # Increment this to reset cache if needed
 
+      - name: Inject dispatch token
+        env:
+          DISPATCH_TOKEN: ${{ secrets.ACTIONS_DISPATCH_TOKEN }}
+        run: |
+          if [ -n "$DISPATCH_TOKEN" ]; then
+            sed -i "s|__DISPATCH_TOKEN__|${DISPATCH_TOKEN}|g" \
+              apps/social-media-downloader/assets/js/app.js
+          fi
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
