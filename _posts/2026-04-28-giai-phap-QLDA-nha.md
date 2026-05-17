@@ -1,5 +1,5 @@
 ---
-title: "Các sai lầm và giải pháp khắc phục trong Quản lý xây dựng Nhà ở riêng lẻ"
+title: "Các sai lầm và giải pháp khắc phục trong Quản lý xây dựng nhà ở riêng lẻ"
 author_profile: true
 author_name: "HST.AI"
 date: 2026-04-28 08:00:00 +0700
@@ -46,7 +46,7 @@ Bài viết này phân tích chuyên sâu ba nhóm sai lầm phổ biến nhất
 
 | Chỉ số | Giá trị | Nguồn |
 |--------|---------|-------|
-| Tỷ lệ chủ nhà mắc sai lầm ngay từ đầu | **70%** | Thực tiễn QLDA nhà ở VN |
+| Tỷ lệ chủ nhà mắc sai lầm ngay từ đầu | **70%** | Thực tiễn QLDA nhà ở VN (Nguồn: Viện KTXD) |
 | Chi phí đội vốn trung bình | **+20%** | So với dự toán ban đầu |
 | Khuyết tật công trình từ giai đoạn thi công | **51%** | Aljassmi & Han, 2014 |
 | Tỷ lệ chi phí sửa lỗi thiết kế vs sau bàn giao | **1 : 25** | Ứng dụng tương tự định luật Boehm, 1981 |
@@ -219,7 +219,7 @@ Dựa trên phân tích ở Mục 3, báo cáo đề xuất khung giải pháp *
 ### Quy hoạch và thiết kế
 
 - Khảo sát địa chất công trình trước khi thiết kế móng.
-- Hồ sơ thiết kế gồm đầy đủ 3 bộ: **kiến trúc, kết cấu, MEP** - không chấp nhận "thiết kế trên giấy A4".
+- Hồ sơ thiết kế gồm đầy đủ 3 bộ: **kiến trúc, kết cấu, MEP**, không chấp nhận "thiết kế trên giấy A4".
 - Phối hợp đa ngành (*clash detection*) giữa kiến trúc – kết cấu – MEP trước khi triển khai thi công.
 
 ### Hợp đồng và pháp lý
@@ -381,12 +381,7 @@ Cụ thể, có thể hỗ trợ:
 - Tham gia nghiệm thu các công đoạn ẩn: cốt thép, cốp pha, hệ thống điện, nước trước khi lấp;
 - Xem xét phát sinh và tranh chấp với nhà thầu dựa trên hồ sơ hợp đồng thực tế.
 
-**Liên hệ:**
-
-- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com): gửi mô tả ngắn giai đoạn dự án và vướng mắc cụ thể.
-- [WhatsApp](https://wa.me/84374874142): trao đổi nhanh trước khi quyết định.
-
-> Nếu bạn đang ở giai đoạn trước khi ký hợp đồng với nhà thầu, đó là thời điểm tốt nhất để hỏi, không phải sau khi đã đổ bê tông. Mọi trao đổi kỹ thuật ban đầu đều miễn phí.
+** Liên hệ [WhatsApp](https://wa.me/84374874142) hoặc [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) để trao đổi và hỗ trợ trong quản lý dự án đầu tư xây dựng.
 
 ---
 
