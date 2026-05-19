@@ -62,6 +62,7 @@ include:
   - _pages
   - apps
   - tools
+  - apps/social-media-downloader/assets/js/config.js
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -141,7 +142,7 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-future: true
+future: false
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
