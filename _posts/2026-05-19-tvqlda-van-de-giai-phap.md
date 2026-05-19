@@ -2,7 +2,7 @@
 title: "Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-05-30 18:00:00 +0700
+date: 2026-05-19 18:00:00 +0700
 layout: single
 featured: true
 toc: true
@@ -36,7 +36,7 @@ tags:
     Đầu tư công,
     Giải phóng mặt bằng
   ]
-excerpt: "Tư vấn quản lý dự án (TVQLDA) đóng vai trò hỗ trợ chủ đầu tư lập kế hoạch, giám sát và điều hành để dự án hoàn thành đúng tiến độ, ngân sách và chất lượng. Nhưng trong thực tế triển khai, bốn nhóm vấn đề cốt lõi — chuyên môn nhân sự, ranh giới quyền hạn, hành lang pháp lý và áp lực tài chính — đang làm giảm đáng kể hiệu quả của dịch vụ này. Bài viết phân tích từng vấn đề kèm căn cứ pháp luật và giải pháp thực tiễn."
+excerpt: "Tư vấn quản lý dự án (TVQLDA) đóng vai trò hỗ trợ chủ đầu tư lập kế hoạch, giám sát và điều hành để dự án hoàn thành đúng tiến độ, ngân sách và chất lượng. Nhưng trong thực tế triển khai, bốn nhóm vấn đề cốt lõi: chuyên môn nhân sự, ranh giới quyền hạn, hành lang pháp lý và áp lực tài chính đang làm giảm đáng kể hiệu quả của dịch vụ này. Bài viết phân tích từng vấn đề kèm căn cứ pháp luật và giải pháp thực tiễn."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
@@ -45,11 +45,11 @@ header:
 
 ## Đặt vấn đề
 
-Tư vấn quản lý dự án (TVQLDA / PMC — Project Management Consultant) đóng vai trò hỗ trợ chủ đầu tư lập kế hoạch, giám sát và điều hành để dự án hoàn thành đúng tiến độ, ngân sách và chất lượng. Trên lý thuyết, đây là hàng rào kiểm soát chiến lược giữa ý đồ đầu tư và sản phẩm xây dựng thực tế.
+Tư vấn quản lý dự án (TVQLDA / PMC, Project Management Consultant) đóng vai trò hỗ trợ chủ đầu tư lập kế hoạch, giám sát và điều hành để dự án hoàn thành đúng tiến độ, ngân sách và chất lượng. Trên lý thuyết, đây là hàng rào kiểm soát chiến lược giữa ý đồ đầu tư và sản phẩm xây dựng thực tế.
 
 Trên thực tế, bức tranh khác hẳn. Báo cáo kiểm toán của Kiểm toán Nhà nước qua nhiều năm liên tục chỉ ra rằng nhiều dự án đầu tư công trễ tiến độ, vượt tổng mức đầu tư, hồ sơ thanh toán sai sót không phải vì thiếu đơn vị quản lý, mà vì đơn vị quản lý không đủ năng lực, không rõ phạm vi trách nhiệm, hoặc bị ép giá đến mức không thể cung cấp dịch vụ đúng nghĩa [^1].
 
-Bài viết này phân tích bốn nhóm vấn đề cốt lõi trong TVQLDA tại Việt Nam, căn cứ pháp luật liên quan và giải pháp khả thi cho từng vấn đề — bao gồm các quy định mới nhất tại Luật Xây dựng số 135/2025/QH15 (hiệu lực 01/7/2026) và Nghị định 175/2024/NĐ-CP.
+Bài viết này phân tích bốn nhóm vấn đề cốt lõi trong TVQLDA tại Việt Nam, căn cứ pháp luật liên quan và giải pháp khả thi cho từng vấn đề bao gồm các quy định mới nhất tại Luật Xây dựng số 135/2025/QH15 (hiệu lực 01/7/2026) và Nghị định 175/2024/NĐ-CP.
 
 ---
 
@@ -97,7 +97,7 @@ Nghị định 175/2024/NĐ-CP quy định TVQLDA có thể thực hiện toàn 
 
 **Vấn đề thực tiễn:**
 
-Thiếu hụt nhân sự chất lượng cao là vấn đề mang tính cấu trúc của ngành tư vấn xây dựng Việt Nam. Nhu cầu tăng nhanh khi đầu tư công mở rộng, trong khi đội ngũ có chứng chỉ hành nghề và kinh nghiệm thực chiến với các dự án phức tạp, quy mô lớn — đặc biệt là các dự án hạ tầng trọng điểm — vẫn còn khan hiếm [^13].
+Thiếu hụt nhân sự chất lượng cao là vấn đề mang tính cấu trúc của ngành tư vấn xây dựng Việt Nam. Nhu cầu tăng nhanh khi đầu tư công mở rộng, trong khi đội ngũ có chứng chỉ hành nghề và kinh nghiệm thực chiến với các dự án phức tạp, quy mô lớn, đặc biệt là các dự án hạ tầng trọng điểm vẫn còn khan hiếm [^13].
 
 Bên cạnh đó, chất lượng đội ngũ nội bộ không đồng đều. Trình độ am hiểu về các công cụ quản lý chuyên dụng như phần mềm quản lý tiến độ (Primavera P6, MS Project), phần mềm quản lý chi phí, hay mô hình thông tin công trình (BIM) của một số tư vấn viên còn hạn chế. Tư vấn giỏi về pháp lý đấu thầu chưa chắc nắm vững kỹ thuật xây dựng; tư vấn giỏi về kỹ thuật chưa chắc biết lập và phân tích đường Găng (Critical Path).
 
@@ -107,7 +107,7 @@ Tình trạng phổ biến trong hồ sơ dự thầu TVQLDA: danh sách nhân s
 
 Nghị định 175/2024/NĐ-CP, Điều 73 và 74 quy định điều kiện năng lực của tổ chức tư vấn quản lý dự án và yêu cầu chứng chỉ hành nghề của cá nhân chủ trì theo từng lĩnh vực. Luật Xây dựng 135/2025/QH15, Điều 152 bổ sung yêu cầu về kinh nghiệm tối thiểu và nghĩa vụ bảo hiểm nghề nghiệp bắt buộc đối với người chủ trì tư vấn quản lý dự án [^6].
 
-Thông tư 06/2021/TT-BXD của Bộ Xây dựng quy định phân cấp công trình và yêu cầu năng lực tương ứng theo từng cấp công trình — tạo cơ sở để đánh giá tối thiểu năng lực cần thiết của TVQLDA cho từng loại dự án [^5].
+Thông tư 06/2021/TT-BXD của Bộ Xây dựng quy định phân cấp công trình và yêu cầu năng lực tương ứng theo từng cấp công trình, tạo cơ sở để đánh giá tối thiểu năng lực cần thiết của TVQLDA cho từng loại dự án [^5].
 
 **Giải pháp:**
 
@@ -125,7 +125,7 @@ Thường xảy ra tình trạng chồng chéo hoặc tranh chấp quyền hạn
 
 Khi không rõ, nhà thầu phải nộp cùng một hồ sơ cho nhiều bên, nhận được phản hồi mâu thuẫn nhau, dẫn đến đình trệ quyết định và phát sinh chi phí chờ đợi.
 
-Điểm quan trọng hơn: TVQLDA thường chỉ mang tính chất "tham mưu", thiếu quyền quyết định trực tiếp nên gặp khó khăn khi xử lý dứt điểm các nhà thầu vi phạm hợp đồng. Khi TVQLDA phát hiện nhà thầu thi công không đúng thiết kế, họ kiến nghị — nhưng lệnh dừng thi công hoặc phạt hợp đồng phải do chủ đầu tư ký. Nếu chủ đầu tư không phản hồi kịp thời, sai phạm tiếp diễn [^13].
+Điểm quan trọng hơn: TVQLDA thường chỉ mang tính chất "tham mưu", thiếu quyền quyết định trực tiếp nên gặp khó khăn khi xử lý dứt điểm các nhà thầu vi phạm hợp đồng. Khi TVQLDA phát hiện nhà thầu thi công không đúng thiết kế, họ kiến nghị nhưng lệnh dừng thi công hoặc phạt hợp đồng phải do chủ đầu tư ký. Nếu chủ đầu tư không phản hồi kịp thời, sai phạm tiếp diễn [^13].
 
 **Căn cứ pháp lý:**
 
@@ -171,7 +171,7 @@ Một vướng mắc phổ biến cụ thể: hồ sơ điều chỉnh tổng m�
 
 **Vấn đề thực tiễn:**
 
-Áp lực ép giá dịch vụ tư vấn từ chủ đầu tư — đặc biệt trong đấu thầu cạnh tranh giá — dẫn đến hệ quả trực tiếp: cắt giảm nhân sự, rút ngắn thời gian khảo sát hiện trường, giảm tần suất báo cáo. Khi chi phí dịch vụ TVQLDA được ép xuống quá thấp, chất lượng dịch vụ không thể duy trì ở mức yêu cầu. Chủ đầu tư tiết kiệm được phí tư vấn nhưng trả giá bằng thất thoát lớn hơn nhiều do dự án trễ tiến độ hoặc vượt chi phí không được kiểm soát [^13].
+Áp lực ép giá dịch vụ tư vấn từ chủ đầu tư, đặc biệt trong đấu thầu cạnh tranh giá, dẫn đến hệ quả trực tiếp: cắt giảm nhân sự, rút ngắn thời gian khảo sát hiện trường, giảm tần suất báo cáo. Khi chi phí dịch vụ TVQLDA được ép xuống quá thấp, chất lượng dịch vụ không thể duy trì ở mức yêu cầu. Chủ đầu tư tiết kiệm được phí tư vấn nhưng trả giá bằng thất thoát lớn hơn nhiều do dự án trễ tiến độ hoặc vượt chi phí không được kiểm soát [^13].
 
 Rủi ro xung đột lợi ích xuất hiện khi đơn vị tư vấn vừa thực hiện lập dự án (báo cáo nghiên cứu khả thi, thiết kế cơ sở) vừa sau đó tham gia giám sát hoặc quản lý thực thi cùng dự án đó. Đơn vị này có động cơ bảo vệ các quyết định thiết kế ban đầu của mình thay vì đánh giá khách quan khi phát sinh vướng mắc. Họ cũng có thể không chủ động chỉ ra sai sót trong thiết kế khi thi công vì điều đó sẽ tạo ra trách nhiệm hồi tố cho chính họ.
 
@@ -183,10 +183,10 @@ Nghị định 10/2021/NĐ-CP quy định phương pháp tính chi phí tư vấ
 
 **Giải pháp:**
 
-- **Đánh giá giá thầu tư vấn theo giá trị, không chỉ theo giá thấp:** Trong tiêu chí chấm thầu TVQLDA, giảm tỷ trọng điểm giá, tăng tỷ trọng điểm kỹ thuật — đặc biệt về nhân sự và phương pháp luận. Theo Điều 76 Nghị định 24/2024/NĐ-CP về đấu thầu, gói thầu dịch vụ tư vấn được phép áp dụng tiêu chí chất lượng làm yếu tố quyết định chính.
+- **Đánh giá giá thầu tư vấn theo giá trị, không chỉ theo giá thấp:** Trong tiêu chí chấm thầu TVQLDA, giảm tỷ trọng điểm giá, tăng tỷ trọng điểm kỹ thuật, đặc biệt về nhân sự và phương pháp luận. Theo Điều 76 Nghị định 24/2024/NĐ-CP về đấu thầu, gói thầu dịch vụ tư vấn được phép áp dụng tiêu chí chất lượng làm yếu tố quyết định chính.
 - **Tách bạch rõ vai trò tư vấn:** Ngay từ giai đoạn lập kế hoạch lựa chọn nhà thầu, xác định các gói tư vấn có xung đột lợi ích tiềm tàng và tổ chức đấu thầu riêng. Tư vấn lập báo cáo nghiên cứu khả thi và tư vấn thẩm tra thiết kế không nên là cùng một đơn vị.
 - **Thiết lập KPI và chế tài trong hợp đồng:** Gắn thanh toán với kết quả đo lường được (số báo cáo được chấp thuận đúng hạn, số lần cảnh báo rủi ro trước khi sự cố xảy ra, tỷ lệ hồ sơ thanh toán không có sai sót phải trả lại), không chỉ thanh toán theo thời gian. Cơ chế thưởng khi dự án hoàn thành sớm hoặc tiết kiệm chi phí có kiểm soát tạo động cơ tích cực cho TVQLDA.
-- **Số hóa quy trình làm việc:** Ứng dụng nền tảng quản lý dự án số (phần mềm, cloud) để tăng tính minh bạch trong theo dõi công việc, lưu vết quyết định và đảm bảo tất cả các bên có cùng thông tin tại cùng thời điểm — giảm không gian cho sự thiếu minh bạch [^13].
+- **Số hóa quy trình làm việc:** Ứng dụng nền tảng quản lý dự án số (phần mềm, cloud) để tăng tính minh bạch trong theo dõi công việc, lưu vết quyết định và đảm bảo tất cả các bên có cùng thông tin tại cùng thời điểm, giảm không gian cho sự thiếu minh bạch [^13].
 
 ---
 
@@ -218,7 +218,7 @@ Hợp đồng TVQLDA hiệu quả phải xác định rõ ít nhất ba nhóm n�
 - **Cấp dự án (hai tuần / tháng):** Báo cáo OPPM tổng hợp tiến độ, chi phí, rủi ro và các vấn đề cần quyết định từ chủ đầu tư [^7].
 - **Cấp chủ đầu tư (quý):** Báo cáo giám sát đánh giá đầu tư theo Nghị định 29/2021/NĐ-CP [^12].
 
-Ba cấp độ báo cáo sử dụng cùng dữ liệu nguồn, chỉ khác mức độ chi tiết và đối tượng đọc. Dữ liệu được lưu trữ trên nền tảng số chung, tất cả các bên có quyền truy cập theo phân cấp — đây là nền tảng của tính minh bạch.
+Ba cấp độ báo cáo sử dụng cùng dữ liệu nguồn, chỉ khác mức độ chi tiết và đối tượng đọc. Dữ liệu được lưu trữ trên nền tảng số chung, tất cả các bên có quyền truy cập theo phân cấp, đây là nền tảng của tính minh bạch.
 
 ### 3.4. Số hóa quy trình và xây dựng văn hóa báo cáo trung thực
 
@@ -228,7 +228,7 @@ Số hóa không phải mục tiêu, mà là phương tiện. Ứng dụng nền
 - Cập nhật thông tin thời gian thực thay vì chờ báo cáo định kỳ.
 - Tạo hệ thống cảnh báo tự động khi tiến độ hoặc chi phí vượt ngưỡng.
 
-Nhưng số hóa chỉ phát huy tác dụng khi văn hóa báo cáo trung thực được duy trì từ trên xuống. KPI của TVQLDA nên bao gồm chỉ số cảnh báo sớm chính xác — tức là thưởng cho người phát hiện vấn đề sớm, không phải phạt họ vì mang tin xấu.
+Nhưng số hóa chỉ phát huy tác dụng khi văn hóa báo cáo trung thực được duy trì từ trên xuống. KPI của TVQLDA nên bao gồm chỉ số cảnh báo sớm chính xác, tức là thưởng cho người phát hiện vấn đề sớm, không phải phạt họ vì mang tin xấu.
 
 ---
 
@@ -236,7 +236,7 @@ Nhưng số hóa chỉ phát huy tác dụng khi văn hóa báo cáo trung thự
 
 ### Giai đoạn chuẩn bị (trước thi công)
 
-- [ ] Kiểm tra đủ hồ sơ pháp lý: quyết định đầu tư, thiết kế được duyệt, kế hoạch lựa chọn nhà thầu
+- [ ] Kiểm tra đủ hồ sơ pháp lý: quyết định đầu tư, thiết kế được duyệt, kế hoạch lựa chọn nhà thầu, hồ sơ hợp đồng
 - [ ] Xác nhận mặt bằng thi công đã được bàn giao theo Điều 96 NĐ 175/2024
 - [ ] Kiểm tra đủ điều kiện khởi công theo Điều 107 Luật Xây dựng 135/2025
 - [ ] Xác nhận bảo lãnh thực hiện hợp đồng của nhà thầu còn hiệu lực và đúng giá trị
@@ -245,7 +245,7 @@ Nhưng số hóa chỉ phát huy tác dụng khi văn hóa báo cáo trung thự
 
 ### Giai đoạn thi công
 
-- [ ] Nghiệm thu từng giai đoạn hoàn thành theo Điều 16 NĐ 06/2021 (sửa đổi NĐ 35/2023)
+- [ ] Nghiệm thu từng giai đoạn hoàn thành theo Điều 16 Nghị định 06/2021 (sửa đổi NĐ 35/2023)
 - [ ] Kiểm tra chứng chỉ xuất xứ và chứng nhận chất lượng vật liệu theo QCVN hiện hành
 - [ ] Xử lý phát sinh trong thời hạn quy định hợp đồng (không quá 28 ngày theo điều kiện FIDIC)
 - [ ] Cập nhật tiến độ và chi phí vào hệ thống báo cáo ít nhất hàng tuần
@@ -264,9 +264,9 @@ Nhưng số hóa chỉ phát huy tác dụng khi văn hóa báo cáo trung thự
 
 ## Kết luận
 
-Tư vấn quản lý dự án không phải dịch vụ phụ trợ. Trong dự án đầu tư xây dựng phức tạp, TVQLDA là người duy nhất có cái nhìn tổng thể xuyên suốt vòng đời dự án — từ giai đoạn phê duyệt đến quyết toán. Khi TVQLDA hoạt động đúng vai trò, chủ đầu tư tập trung vào quyết định chiến lược thay vì sa lầy vào chi tiết vận hành hàng ngày.
+Tư vấn quản lý dự án không phải dịch vụ phụ trợ. Trong dự án đầu tư xây dựng phức tạp, TVQLDA là người duy nhất có cái nhìn tổng thể xuyên suốt vòng đời dự án từ giai đoạn phê duyệt đến quyết toán. Khi TVQLDA hoạt động đúng vai trò, chủ đầu tư tập trung vào quyết định chiến lược thay vì sa lầy vào chi tiết vận hành hàng ngày.
 
-Bốn vấn đề được phân tích — chuyên môn nhân sự, ranh giới quyền hạn, hành lang pháp lý và áp lực tài chính — đều có giải pháp thực thi được. Điểm chung của các giải pháp này: chủ đầu tư phải đầu tư đúng mức vào việc *lựa chọn* và *tổ chức* TVQLDA ngay từ đầu. Chi phí dịch vụ tư vấn được tiết kiệm nhưng dự án trễ hoặc vượt chi phí là bài toán cộng sai từ đầu.
+Bốn vấn đề được phân tích: chuyên môn nhân sự, ranh giới quyền hạn, hành lang pháp lý và áp lực tài chính đều có giải pháp thực thi được. Điểm chung của các giải pháp này: chủ đầu tư phải đầu tư đúng mức vào việc *lựa chọn* và *tổ chức* TVQLDA ngay từ đầu. Chi phí dịch vụ tư vấn được tiết kiệm nhưng dự án trễ hoặc vượt chi phí là bài toán cộng sai từ đầu.
 
 Luật Xây dựng 135/2025/QH15 và Nghị định 175/2024/NĐ-CP tạo ra khung pháp lý đủ chi tiết để TVQLDA hoạt động chuyên nghiệp. Thách thức nằm ở năng lực thực thi và ý chí quản trị: hiểu đúng phạm vi, chuẩn bị đủ hệ thống, hợp đồng rõ ràng với quyền hạn và KPI, và số hóa quy trình để đảm bảo minh bạch xuyên suốt dự án.
 
@@ -276,15 +276,7 @@ Luật Xây dựng 135/2025/QH15 và Nghị định 175/2024/NĐ-CP tạo ra khu
 
 ## Liên hệ tư vấn
 
-Nếu bạn đang gặp phải một hoặc nhiều vấn đề được mô tả trong bài viết này — dù là với tư cách chủ đầu tư, Ban quản lý dự án, hay đơn vị tư vấn — HydrostructAI có thể hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
-
-**Liên hệ trực tiếp:**
-
-Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp.
-
-Liên hệ nhanh: [WhatsApp](https://wa.me/84374874142) để trao đổi trực tiếp.
-
-> Mọi trao đổi tư vấn kỹ thuật ban đầu đều miễn phí.
+Nếu bạn đang gặp phải một hoặc nhiều vấn đề được mô tả trong bài viết này dù là với tư cách chủ đầu tư, Ban quản lý dự án, hay đơn vị tư vấn, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
 
 ---
 
@@ -294,33 +286,33 @@ Liên hệ nhanh: [WhatsApp](https://wa.me/84374874142) để trao đổi trực
 
 ## Tài liệu tham khảo
 
-[^1]: Kiểm toán Nhà nước (2024). *Báo cáo tổng hợp kết quả kiểm toán năm 2024.* Hà Nội: KTNN — [portal.sav.gov.vn](https://portal.sav.gov.vn/Files/Others/dcc85cbf-ae3c-4491-afe5-b6d6dfd1de15/00.%20BC%20THKQKT%202024%20(PH).pdf).
+[^1]: Kiểm toán Nhà nước (2024). *Báo cáo tổng hợp kết quả kiểm toán năm 2024.* Hà Nội: KTNN [portal.sav.gov.vn](https://portal.sav.gov.vn/Files/Others/dcc85cbf-ae3c-4491-afe5-b6d6dfd1de15/00.%20BC%20THKQKT%202024%20(PH).pdf).
 
-[^2]: Luật Xây dựng số 50/2014/QH13 và Luật sửa đổi bổ sung số 62/2020/QH14 — Điều 19 về hình thức tổ chức quản lý dự án. Tra cứu tại: Luật 50/2014 — [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=36867); Luật 62/2020 — [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=144268).
+[^2]: Luật Xây dựng số 50/2014/QH13 và Luật sửa đổi bổ sung số 62/2020/QH14 Điều 19 về hình thức tổ chức quản lý dự án. Tra cứu tại: Luật 50/2014 [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=36867); Luật 62/2020 [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=144268).
 
-[^3]: Nghị định 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ — *Quy định chi tiết thi hành một số điều của Luật Xây dựng về quản lý dự án đầu tư xây dựng.* Thay thế Nghị định 15/2021/NĐ-CP. Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=173849).
+[^3]: Nghị định 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ *Quy định chi tiết thi hành một số điều của Luật Xây dựng về quản lý dự án đầu tư xây dựng.* Thay thế Nghị định 15/2021/NĐ-CP. Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=173849).
 
-[^4]: Nghị định 06/2021/NĐ-CP ngày 26/01/2021 của Chính phủ — *Quản lý chất lượng và thi công xây dựng công trình*, sửa đổi bởi Nghị định 35/2023/NĐ-CP. Tra cứu tại: NĐ 06/2021 — [vbpl.vn](https://vbpl.vn/boxaydung/Pages/vbpq-van-ban-goc.aspx?ItemID=147597); NĐ 35/2023 — [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=160908).
+[^4]: Nghị định 06/2021/NĐ-CP ngày 26/01/2021 của Chính phủ *Quản lý chất lượng và thi công xây dựng công trình*, sửa đổi bởi Nghị định 35/2023/NĐ-CP. Tra cứu tại: NĐ 06/2021 [vbpl.vn](https://vbpl.vn/boxaydung/Pages/vbpq-van-ban-goc.aspx?ItemID=147597); NĐ 35/2023 [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=160908).
 
-[^5]: Thông tư 06/2021/TT-BXD — *Phân cấp công trình xây dựng và hướng dẫn áp dụng trong quản lý hoạt động đầu tư xây dựng.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=152328).
+[^5]: Thông tư 06/2021/TT-BXD *Phân cấp công trình xây dựng và hướng dẫn áp dụng trong quản lý hoạt động đầu tư xây dựng.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=152328).
 
-[^6]: Luật Xây dựng số 135/2025/QH15 (hiệu lực 01/7/2026) — *Khung pháp lý cập nhật về hoạt động xây dựng, điều kiện năng lực tổ chức tư vấn và chứng chỉ hành nghề.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=185659).
+[^6]: Luật Xây dựng số 135/2025/QH15 (hiệu lực 01/7/2026) *Khung pháp lý cập nhật về hoạt động xây dựng, điều kiện năng lực tổ chức tư vấn và chứng chỉ hành nghề.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=185659).
 
 [^7]: Campbell, C. A. (2006). *The One-Page Project Manager.* John Wiley & Sons. Xem thêm: [Quản lý dự án trên một trang giấy](/posts/quan-ly-du-an-mot-trang-giay/).
 
-[^8]: TCVN ISO 31000:2018 — *Quản lý rủi ro — Hướng dẫn.* Ban hành bởi Tổng cục TCĐLCL, Bộ KH&CN. Tra cứu tại: [tcvn.gov.vn](https://www.tcvn.gov.vn).
+[^8]: TCVN ISO 31000:2018 *Quản lý rủi ro, hướng dẫn.* Ban hành bởi Tổng cục TCĐLCL, Bộ KH&CN. Tra cứu tại: [tcvn.gov.vn](https://www.tcvn.gov.vn).
 
-[^9]: Project Management Institute (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide), 7th Edition.* PMI. ISBN: 978-1628256642 — [pmi.org](https://www.pmi.org).
+[^9]: Project Management Institute (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide), 7th Edition.* PMI. ISBN: 978-1628256642 [pmi.org](https://www.pmi.org).
 
-[^10]: Thông tư 07/2021/TT-BXD ngày 30/08/2021 của Bộ Xây dựng — *Hướng dẫn một số nội dung về quản lý chất lượng và thi công xây dựng công trình.* Tra cứu tại: [thuvienphapluat.vn](https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Thong-tu-07-2021-TT-BXD-huong-dan-quan-ly-chat-luong-thi-cong-xay-dung-cong-trinh-482226.aspx).
+[^10]: Thông tư 07/2021/TT-BXD ngày 30/08/2021 của Bộ Xây dựng *Hướng dẫn một số nội dung về quản lý chất lượng và thi công xây dựng công trình.* Tra cứu tại: [thuvienphapluat.vn](https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Thong-tu-07-2021-TT-BXD-huong-dan-quan-ly-chat-luong-thi-cong-xay-dung-cong-trinh-482226.aspx).
 
-[^11]: FIDIC (2017). *Conditions of Contract for Construction (Red Book), 2nd Edition.* Điều khoản 13 và 20. Geneva: FIDIC — [fidic.org](https://fidic.org).
+[^11]: FIDIC (2017). *Conditions of Contract for Construction (Red Book), 2nd Edition.* Điều khoản 13 và 20. Geneva: FIDIC [fidic.org](https://fidic.org).
 
-[^12]: Nghị định 29/2021/NĐ-CP ngày 26/03/2021 — *Giám sát, đánh giá đầu tư.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-luocdo.aspx?ItemID=153954).
+[^12]: Nghị định 29/2021/NĐ-CP ngày 26/03/2021 *Giám sát, đánh giá đầu tư.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-luocdo.aspx?ItemID=153954).
 
-[^13]: Viện Kinh tế Xây dựng — Bộ Xây dựng (2023). *Báo cáo thực trạng và giải pháp nâng cao chất lượng dịch vụ tư vấn quản lý dự án đầu tư xây dựng tại Việt Nam.* Hà Nội: Viện Kinh tế Xây dựng — [vienkinhtexaydung.gov.vn](https://vienkinhtexaydung.gov.vn).
+[^13]: Viện Kinh tế Xây dựng - Bộ Xây dựng (2023). *Báo cáo thực trạng và giải pháp nâng cao chất lượng dịch vụ tư vấn quản lý dự án đầu tư xây dựng tại Việt Nam.* Hà Nội: Viện Kinh tế Xây dựng [vienkinhtexaydung.gov.vn](https://vienkinhtexaydung.gov.vn).
 
-[^14]: Nghị định 10/2021/NĐ-CP ngày 09/02/2021 — *Quản lý chi phí đầu tư xây dựng.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=147606).
+[^14]: Nghị định 10/2021/NĐ-CP ngày 09/02/2021 *Quản lý chi phí đầu tư xây dựng.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=147606).
 
 ---
 
@@ -346,22 +338,22 @@ Liên hệ nhanh: [WhatsApp](https://wa.me/84374874142) để trao đổi trực
 
 ### Tài liệu đánh giá và kiểm toán đầu tư công
 
-- **Kiểm toán Nhà nước (2024).** Báo cáo tổng hợp kết quả kiểm toán năm 2024 — [portal.sav.gov.vn](https://portal.sav.gov.vn/Files/Others/dcc85cbf-ae3c-4491-afe5-b6d6dfd1de15/00.%20BC%20THKQKT%202024%20(PH).pdf)
-- **Kiểm toán Nhà nước (2022).** Báo cáo tổng hợp kết quả kiểm toán năm 2022 — [portal.sav.gov.vn](https://portal.sav.gov.vn/Files/Others/932d5081-1360-4bbe-950c-908871a20662/BCTH_KQKT_2022_PH.pdf)
-- **Bộ Kế hoạch và Đầu tư (2024).** Báo cáo tình hình thực hiện và giải ngân vốn đầu tư công — [mpi.gov.vn](https://mpi.gov.vn)
-- **Viện Kinh tế Xây dựng (2023).** Báo cáo thực trạng và giải pháp nâng cao chất lượng TVQLDA — [vienkinhtexaydung.gov.vn](https://vienkinhtexaydung.gov.vn)
+- **Kiểm toán Nhà nước (2024).** Báo cáo tổng hợp kết quả kiểm toán năm 2024 [portal.sav.gov.vn](https://portal.sav.gov.vn/Files/Others/dcc85cbf-ae3c-4491-afe5-b6d6dfd1de15/00.%20BC%20THKQKT%202024%20(PH).pdf)
+- **Kiểm toán Nhà nước (2022).** Báo cáo tổng hợp kết quả kiểm toán năm 2022 [portal.sav.gov.vn](https://portal.sav.gov.vn/Files/Others/932d5081-1360-4bbe-950c-908871a20662/BCTH_KQKT_2022_PH.pdf)
+- **Bộ Kế hoạch và Đầu tư (2024).** Báo cáo tình hình thực hiện và giải ngân vốn đầu tư công [mpi.gov.vn](https://mpi.gov.vn)
+- **Viện Kinh tế Xây dựng (2023).** Báo cáo thực trạng và giải pháp nâng cao chất lượng TVQLDA [vienkinhtexaydung.gov.vn](https://vienkinhtexaydung.gov.vn)
 
 ### Tiêu chuẩn và hướng dẫn quốc tế
 
-- **FIDIC Red Book (2017).** *Conditions of Contract for Construction, 2nd Edition.* — [fidic.org](https://fidic.org)
-- **ISO 21500:2021** — Project management concepts — [iso.org](https://www.iso.org/standard/75704.html)
-- **ISO 31000:2018 / TCVN ISO 31000:2018** — Quản lý rủi ro — [iso.org](https://www.iso.org/standard/65694.html)
-- **PMI (2021).** *PMBOK Guide, 7th Edition.* — [pmi.org](https://www.pmi.org/pmbok-guide-standards)
+- **FIDIC Red Book (2017).** *Conditions of Contract for Construction, 2nd Edition.* [fidic.org](https://fidic.org)
+- **ISO 21500:2021** Project management concepts [iso.org](https://www.iso.org/standard/75704.html)
+- **ISO 31000:2018 / TCVN ISO 31000:2018** Quản lý rủi ro [iso.org](https://www.iso.org/standard/65694.html)
+- **PMI (2021).** *PMBOK Guide, 7th Edition.* [pmi.org](https://www.pmi.org/pmbok-guide-standards)
 
 ### Bài viết liên quan trên HydrostructAI
 
-- [Quản lý dự án trên một trang giấy (OPPM)](/posts/quan-ly-du-an-mot-trang-giay/) — Công cụ báo cáo tổng hợp tiến độ, chi phí và rủi ro cho PMU và chủ đầu tư.
-- [Quản lý nhà thầu phụ hiệu quả](/posts/quan-ly-nha-thau-phu/) — Sáu nguyên tắc thực tiễn quốc tế theo PMP và FIDIC.
-- [Các sai lầm và giải pháp trong QLDA nhà ở riêng lẻ](/posts/giai-phap-qlda-nha/) — Phân tích ba nhóm sai lầm phổ biến và khung giải pháp 5 trụ cột.
+- [Quản lý dự án trên một trang giấy (OPPM)](/posts/quan-ly-du-an-mot-trang-giay/) Công cụ báo cáo tổng hợp tiến độ, chi phí và rủi ro cho PMU và chủ đầu tư.
+- [Quản lý nhà thầu phụ hiệu quả](/posts/quan-ly-nha-thau-phu/) Sáu nguyên tắc thực tiễn quốc tế theo PMP và FIDIC.
+- [Các sai lầm và giải pháp trong QLDA nhà ở riêng lẻ](/posts/giai-phap-qlda-nha/) Phân tích ba nhóm sai lầm phổ biến và khung giải pháp 5 trụ cột.
 
 ---

@@ -311,15 +311,7 @@ Website được cấu hình GitHub Actions cron chạy mỗi thứ Sáu lúc 11
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang phụ trách PMU, là nhà thầu chính quản lý nhiều gói thầu phụ cùng lúc, hoặc là chủ đầu tư muốn thiết lập hệ thống giám sát nhà thầu phụ bài bản hơn, HydrostructAI có thể hỗ trợ xây dựng khung quản lý phù hợp với quy mô và đặc thù dự án.
-
-Dịch vụ bao gồm xây dựng hệ thống KPI nhà thầu phụ, thiết kế quy trình điều phối giao diện, xây dựng template báo cáo OPPM cho nhà thầu phụ và tư vấn điều khoản hợp đồng phụ theo thông lệ FIDIC.
-
-Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về quy mô dự án, số lượng nhà thầu phụ đang quản lý và vấn đề cụ thể đang gặp.
-
-Liên hệ nhanh: [WhatsApp](https://wa.me/84374874142) để trao đổi trước khi quyết định.
-
-> Mọi trao đổi tư vấn kỹ thuật ban đầu đều miễn phí.
+Nếu bạn đang phụ trách PMU, là nhà thầu chính quản lý nhiều gói thầu phụ cùng lúc, hoặc là chủ đầu tư muốn thiết lập hệ thống giám sát nhà thầu phụ bài bản hơn,**Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
 
 ---
 
