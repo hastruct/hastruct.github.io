@@ -180,7 +180,7 @@ Lý thuyết Agency Theory (Jensen & Meckling, 1976) gọi đây là "vấn đ�
 
 #### Nguyên lý chi phí chất lượng
 
-Philip Crosby (1979) và Joseph Juran phát triển nguyên lý chi phí chất lượng (**"Cost of Quality"**): chi phí phòng ngừa và đánh giá (*prevention + appraisal*) luôn rẻ hơn nhiều lần so với chi phí thất bại. Trong xây dựng nhà ở, áp dụng **Định luật 1:5:25** (Boehm, 1981):
+Philip Crosby (1979) và Joseph Juran phát triển nguyên lý chi phí chất lượng (*Cost of Quality"*): chi phí phòng ngừa và đánh giá (*prevention + appraisal*) luôn rẻ hơn nhiều lần so với chi phí thất bại. Trong xây dựng nhà ở, áp dụng **Định luật 1:5:25** (Boehm, 1981):
 
 | Giai đoạn phát hiện lỗi | Hệ số chi phí sửa |
 |------------------------|-------------------|
