@@ -39,7 +39,7 @@ header:
 
 ## Đặt vấn đề
 
-Một PMU quản lý dự án hạ tầng quy mô vừa có thể tiếp nhận hàng chục báo cáo tiến độ mỗi tháng. Mỗi báo cáo dày từ mười đến ba mươi trang, với đủ loại biểu đồ Gantt, bảng thống kê khối lượng, bảng theo dõi hợp đồng và danh sách kiến nghị. Khối lượng thông tin rất lớn. Nhưng câu hỏi mà người ra quyết định thực sự cần trả lời thường chỉ gồm bốn điểm: dự án đang đi đúng hướng không, ai đang trễ hạn, chi phí đang vượt hạng mục nào, và tuần tới cần xử lý vấn đề gì trước.
+Một ban quản lý dự án hạ tầng quy mô vừa có thể tiếp nhận hàng chục báo cáo tiến độ mỗi tháng. Mỗi báo cáo dày từ mười đến ba mươi trang, với đủ loại biểu đồ Gantt, bảng thống kê khối lượng, bảng theo dõi hợp đồng và danh sách kiến nghị. Khối lượng thông tin rất lớn. Nhưng câu hỏi mà người ra quyết định thực sự cần trả lời thường chỉ gồm bốn điểm: dự án đang đi đúng hướng không, ai đang trễ hạn, chi phí đang vượt hạng mục nào, và tuần tới cần xử lý vấn đề gì trước.
 
 Mâu thuẫn giữa khối lượng thông tin đầu vào và chất lượng ra quyết định không phải vấn đề riêng của ngành xây dựng. Nhưng trong môi trường đầu tư công, nơi mỗi ngày chậm tiến độ đều có chi phí vốn thực tế và hệ quả pháp lý theo Nghị định 175/2024/NĐ-CP, lãng phí thời gian quản lý vào việc đọc và tổng hợp báo cáo là bài toán cần giải quyết.
 
