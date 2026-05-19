@@ -194,7 +194,7 @@ Nghị định 10/2021/NĐ-CP quy định phương pháp tính chi phí tư vấ
 
 Bốn vấn đề trên không phải độc lập. Chúng có chung nguồn gốc: thiếu hệ thống quản lý có cấu trúc, rõ trách nhiệm và đủ công cụ. Bốn trụ cột dưới đây là nền tảng để xây dựng bộ máy TVQLDA hoạt động đúng nghĩa.
 
-### 3.1. Lựa chọn đơn vị tư vấn có uy tín và đủ năng lực thực chiến
+### 3.1. Lựa chọn đơn vị tư vấn có uy tín và đủ năng lực
 
 Thay vì chỉ kiểm tra hồ sơ năng lực trên giấy, quy trình lựa chọn TVQLDA nên bao gồm:
 
@@ -276,7 +276,7 @@ Luật Xây dựng 135/2025/QH15 và Nghị định 175/2024/NĐ-CP tạo ra khu
 
 ## Liên hệ tư vấn
 
-Nếu bạn đang gặp phải một hoặc nhiều vấn đề được mô tả trong bài viết này dù là với tư cách chủ đầu tư, Ban quản lý dự án, hay đơn vị tư vấn, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
+Nếu bạn đang gặp phải một hoặc nhiều vấn đề được mô tả trong bài viết này dù là với tư cách Chủ đầu tư, Ban quản lý dự án, hay Đơn vị tư vấn, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
 
 ---
 
