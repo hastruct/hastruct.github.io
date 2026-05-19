@@ -294,17 +294,17 @@ Liên hệ nhanh: [WhatsApp](https://wa.me/84374874142) để trao đổi trực
 
 ## Tài liệu tham khảo
 
-[^1]: Kiểm toán Nhà nước (2024). *Báo cáo kiểm toán chuyên đề quản lý dự án đầu tư xây dựng công trình thủy lợi giai đoạn 2021–2023.* Hà Nội: KTNN — [kiemtoannn.gov.vn](https://www.kiemtoannn.gov.vn).
+[^1]: Kiểm toán Nhà nước (2024). *Báo cáo tổng hợp kết quả kiểm toán năm 2024.* Hà Nội: KTNN — [portal.sav.gov.vn](https://portal.sav.gov.vn/Files/Others/dcc85cbf-ae3c-4491-afe5-b6d6dfd1de15/00.%20BC%20THKQKT%202024%20(PH).pdf).
 
-[^2]: Luật Xây dựng số 50/2014/QH13 và Luật sửa đổi bổ sung số 62/2020/QH14 — Điều 19 về hình thức tổ chức quản lý dự án. Tra cứu tại: [vbpl.vn](https://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=37898).
+[^2]: Luật Xây dựng số 50/2014/QH13 và Luật sửa đổi bổ sung số 62/2020/QH14 — Điều 19 về hình thức tổ chức quản lý dự án. Tra cứu tại: Luật 50/2014 — [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=36867); Luật 62/2020 — [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=144268).
 
-[^3]: Nghị định 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ — *Quy định chi tiết thi hành một số điều của Luật Xây dựng về quản lý dự án đầu tư xây dựng.* Thay thế Nghị định 15/2021/NĐ-CP. Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toan-van.aspx?ItemID=175-2024-nd-cp).
+[^3]: Nghị định 175/2024/NĐ-CP ngày 30/12/2024 của Chính phủ — *Quy định chi tiết thi hành một số điều của Luật Xây dựng về quản lý dự án đầu tư xây dựng.* Thay thế Nghị định 15/2021/NĐ-CP. Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=173849).
 
-[^4]: Nghị định 06/2021/NĐ-CP ngày 26/01/2021 của Chính phủ — *Quản lý chất lượng và thi công xây dựng công trình*, sửa đổi bởi Nghị định 35/2023/NĐ-CP. Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?dvid=13&ItemID=148382).
+[^4]: Nghị định 06/2021/NĐ-CP ngày 26/01/2021 của Chính phủ — *Quản lý chất lượng và thi công xây dựng công trình*, sửa đổi bởi Nghị định 35/2023/NĐ-CP. Tra cứu tại: NĐ 06/2021 — [vbpl.vn](https://vbpl.vn/boxaydung/Pages/vbpq-van-ban-goc.aspx?ItemID=147597); NĐ 35/2023 — [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=160908).
 
-[^5]: Thông tư 06/2021/TT-BXD — *Phân cấp công trình xây dựng và hướng dẫn áp dụng trong quản lý hoạt động đầu tư xây dựng.* Tra cứu tại: [moc.gov.vn](https://moc.gov.vn).
+[^5]: Thông tư 06/2021/TT-BXD — *Phân cấp công trình xây dựng và hướng dẫn áp dụng trong quản lý hoạt động đầu tư xây dựng.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=152328).
 
-[^6]: Luật Xây dựng số 135/2025/QH15 (hiệu lực 01/7/2026) — *Khung pháp lý cập nhật về hoạt động xây dựng, điều kiện năng lực tổ chức tư vấn và chứng chỉ hành nghề.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=156789).
+[^6]: Luật Xây dựng số 135/2025/QH15 (hiệu lực 01/7/2026) — *Khung pháp lý cập nhật về hoạt động xây dựng, điều kiện năng lực tổ chức tư vấn và chứng chỉ hành nghề.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=185659).
 
 [^7]: Campbell, C. A. (2006). *The One-Page Project Manager.* John Wiley & Sons. Xem thêm: [Quản lý dự án trên một trang giấy](/posts/quan-ly-du-an-mot-trang-giay/).
 
@@ -312,15 +312,15 @@ Liên hệ nhanh: [WhatsApp](https://wa.me/84374874142) để trao đổi trực
 
 [^9]: Project Management Institute (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide), 7th Edition.* PMI. ISBN: 978-1628256642 — [pmi.org](https://www.pmi.org).
 
-[^10]: Thông tư 07/2021/TT-BXD ngày 30/08/2021 của Bộ Xây dựng — *Hướng dẫn quản lý chất lượng và thi công xây dựng công trình.* Tra cứu tại: [moc.gov.vn](https://moc.gov.vn).
+[^10]: Thông tư 07/2021/TT-BXD ngày 30/08/2021 của Bộ Xây dựng — *Hướng dẫn một số nội dung về quản lý chất lượng và thi công xây dựng công trình.* Tra cứu tại: [thuvienphapluat.vn](https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Thong-tu-07-2021-TT-BXD-huong-dan-quan-ly-chat-luong-thi-cong-xay-dung-cong-trinh-482226.aspx).
 
 [^11]: FIDIC (2017). *Conditions of Contract for Construction (Red Book), 2nd Edition.* Điều khoản 13 và 20. Geneva: FIDIC — [fidic.org](https://fidic.org).
 
-[^12]: Nghị định 29/2021/NĐ-CP ngày 26/03/2021 — *Giám sát, đánh giá đầu tư.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?dvid=13&ItemID=148300).
+[^12]: Nghị định 29/2021/NĐ-CP ngày 26/03/2021 — *Giám sát, đánh giá đầu tư.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-luocdo.aspx?ItemID=153954).
 
 [^13]: Viện Kinh tế Xây dựng — Bộ Xây dựng (2023). *Báo cáo thực trạng và giải pháp nâng cao chất lượng dịch vụ tư vấn quản lý dự án đầu tư xây dựng tại Việt Nam.* Hà Nội: Viện Kinh tế Xây dựng — [vienkinhtexaydung.gov.vn](https://vienkinhtexaydung.gov.vn).
 
-[^14]: Nghị định 10/2021/NĐ-CP ngày 09/02/2021 — *Quản lý chi phí đầu tư xây dựng.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?dvid=13&ItemID=148056).
+[^14]: Nghị định 10/2021/NĐ-CP ngày 09/02/2021 — *Quản lý chi phí đầu tư xây dựng.* Tra cứu tại: [vbpl.vn](https://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=147606).
 
 ---
 
@@ -330,22 +330,24 @@ Liên hệ nhanh: [WhatsApp](https://wa.me/84374874142) để trao đổi trực
 
 | Văn bản | Nội dung | Tra cứu |
 |---------|----------|---------|
-| Luật XD 50/2014/QH13 & 62/2020/QH14 | Khung pháp lý tổng quát | [vbpl.vn](https://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=37898) |
-| **Luật XD 135/2025/QH15** (HH 01/7/2026) | Luật xây dựng cập nhật nhất | [vbpl.vn](https://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=156789) |
-| **Nghị định 175/2024/NĐ-CP** | Quản lý dự án đầu tư xây dựng | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toan-van.aspx?ItemID=175-2024-nd-cp) |
-| **Nghị định 06/2021/NĐ-CP** (sửa bởi NĐ 35/2023) | Quản lý chất lượng thi công | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?dvid=13&ItemID=148382) |
-| Nghị định 10/2021/NĐ-CP | Quản lý chi phí xây dựng | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?dvid=13&ItemID=148056) |
-| Nghị định 29/2021/NĐ-CP | Giám sát, đánh giá đầu tư | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?dvid=13&ItemID=148300) |
-| Nghị định 44/2016/NĐ-CP | An toàn lao động trong xây dựng | [vbpl.vn](https://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=139065) |
-| Thông tư 06/2021/TT-BXD | Phân cấp công trình xây dựng | [moc.gov.vn](https://moc.gov.vn) |
-| Thông tư 07/2021/TT-BXD | Quản lý chất lượng và thi công | [moc.gov.vn](https://moc.gov.vn) |
-| Thông tư 09/2021/TT-BXD | Quản lý chi phí xây dựng | [moc.gov.vn](https://moc.gov.vn) |
-| Quyết định 258/QĐ-TTg (17/3/2023) | Lộ trình áp dụng BIM | [chinhphu.vn](https://chinhphu.vn) |
+| Luật XD 50/2014/QH13 | Khung pháp lý tổng quát | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=36867) |
+| Luật XD 62/2020/QH14 (sửa đổi LXD 50) | Sửa đổi bổ sung Luật XD 2014 | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=144268) |
+| **Luật XD 135/2025/QH15** (HH 01/7/2026) | Luật xây dựng cập nhật nhất | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=185659) |
+| **Nghị định 175/2024/NĐ-CP** | Quản lý dự án đầu tư xây dựng | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=173849) |
+| **Nghị định 06/2021/NĐ-CP** | Quản lý chất lượng thi công | [vbpl.vn](https://vbpl.vn/boxaydung/Pages/vbpq-van-ban-goc.aspx?ItemID=147597) |
+| Nghị định 35/2023/NĐ-CP (sửa NĐ 06) | Sửa đổi bổ sung NĐ 06/2021 | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=160908) |
+| Nghị định 10/2021/NĐ-CP | Quản lý chi phí xây dựng | [vbpl.vn](https://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=147606) |
+| Nghị định 29/2021/NĐ-CP | Giám sát, đánh giá đầu tư | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-luocdo.aspx?ItemID=153954) |
+| Nghị định 44/2016/NĐ-CP | An toàn lao động trong xây dựng | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=117760) |
+| Thông tư 06/2021/TT-BXD | Phân cấp công trình xây dựng | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=152328) |
+| Thông tư 07/2021/TT-BXD | Quản lý chất lượng và thi công | [thuvienphapluat.vn](https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Thong-tu-07-2021-TT-BXD-huong-dan-quan-ly-chat-luong-thi-cong-xay-dung-cong-trinh-482226.aspx) |
+| Thông tư 09/2021/TT-BXD | Quản lý chi phí xây dựng | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=152325) |
+| Quyết định 258/QĐ-TTg (17/3/2023) | Lộ trình áp dụng BIM | [thuvienphapluat.vn](https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Quyet-dinh-258-QD-TTg-2023-ap-dung-Mo-hinh-thong-tin-cong-trinh-BIM-trong-hoat-dong-xay-dung-559799.aspx) |
 
 ### Tài liệu đánh giá và kiểm toán đầu tư công
 
-- **Kiểm toán Nhà nước (2024).** Báo cáo kiểm toán chuyên đề dự án đầu tư xây dựng công trình thủy lợi — [kiemtoannn.gov.vn](https://www.kiemtoannn.gov.vn)
-- **Kiểm toán Nhà nước (2023).** Báo cáo kiểm toán thực hiện chính sách pháp luật về đầu tư công 2021–2023 — [kiemtoannn.gov.vn](https://www.kiemtoannn.gov.vn/ktnn/Pages/Home.aspx)
+- **Kiểm toán Nhà nước (2024).** Báo cáo tổng hợp kết quả kiểm toán năm 2024 — [portal.sav.gov.vn](https://portal.sav.gov.vn/Files/Others/dcc85cbf-ae3c-4491-afe5-b6d6dfd1de15/00.%20BC%20THKQKT%202024%20(PH).pdf)
+- **Kiểm toán Nhà nước (2022).** Báo cáo tổng hợp kết quả kiểm toán năm 2022 — [portal.sav.gov.vn](https://portal.sav.gov.vn/Files/Others/932d5081-1360-4bbe-950c-908871a20662/BCTH_KQKT_2022_PH.pdf)
 - **Bộ Kế hoạch và Đầu tư (2024).** Báo cáo tình hình thực hiện và giải ngân vốn đầu tư công — [mpi.gov.vn](https://mpi.gov.vn)
 - **Viện Kinh tế Xây dựng (2023).** Báo cáo thực trạng và giải pháp nâng cao chất lượng TVQLDA — [vienkinhtexaydung.gov.vn](https://vienkinhtexaydung.gov.vn)
 
