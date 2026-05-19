@@ -5,9 +5,12 @@ on:
     branches: ["main", "master"]
   workflow_dispatch:
   schedule:
-    # Chạy mỗi thứ Sáu lúc 11:00 UTC = 18:00 giờ Việt Nam (UTC+7)
-    # Đảm bảo các bài đặt lịch future (future: false) tự động lên sóng đúng giờ
-    - cron: '0 11 * * 5'
+    # Chạy hàng ngày lúc 01:00 UTC = 08:00 VN (UTC+7)
+    - cron: '0 1 * * *'
+    # Chạy hàng ngày lúc 03:00 UTC = 10:00 VN (UTC+7)
+    - cron: '0 3 * * *'
+    # Chạy hàng ngày lúc 11:00 UTC = 18:00 VN (UTC+7)
+    - cron: '0 11 * * *'
 
 permissions:
   contents: read
