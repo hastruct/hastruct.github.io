@@ -45,7 +45,7 @@ header:
 
 ## Đặt vấn đề
 
-Tư vấn quản lý dự án (TVQLDA / PMC, Project Management Consultant) đóng vai trò hỗ trợ chủ đầu tư lập kế hoạch, giám sát và điều hành để dự án hoàn thành đúng tiến độ, ngân sách và chất lượng. Trên lý thuyết, đây là hàng rào kiểm soát chiến lược giữa ý đồ đầu tư và sản phẩm xây dựng thực tế.
+Tư vấn quản lý dự án (TVQLDA / PMC, Project Management Consultant) đóng vai trò hỗ trợ chủ đầu tư lập kế hoạch, giám sát và điều hành để dự án hoàn thành đúng tiến độ, ngân sách và chất lượng. Trên lý thuyết, đây là hàng rào kiểm soát chất lượng giữa mục tiêu đầu tư và sản phẩm xây dựng thực tế.
 
 Trên thực tế, bức tranh khác hẳn. Báo cáo kiểm toán của Kiểm toán Nhà nước qua nhiều năm liên tục chỉ ra rằng nhiều dự án đầu tư công trễ tiến độ, vượt tổng mức đầu tư, hồ sơ thanh toán sai sót không phải vì thiếu đơn vị quản lý, mà vì đơn vị quản lý không đủ năng lực, không rõ phạm vi trách nhiệm, hoặc bị ép giá đến mức không thể cung cấp dịch vụ đúng nghĩa [^1].
 
