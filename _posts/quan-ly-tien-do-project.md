@@ -107,19 +107,26 @@ EVM xây dựng trên ba chỉ số gốc, được tính tại bất kỳ thờ
 
 Sự khác biệt giữa PV và EV nói lên trạng thái tiến độ bằng đơn vị tiền: nếu EV < PV, dự án đang chậm tiến độ theo giá trị đã đặt kế hoạch. Sự khác biệt giữa EV và AC nói lên hiệu quả chi phí: nếu AC > EV, dự án đang tốn nhiều hơn ngân sách cho cùng khối lượng hoàn thành.
 
-### 2.3. Bốn chỉ số phái sinh quan trọng nhất
+### 2.3. Sáu chỉ số phái sinh và ngưỡng hành động
 
-Từ ba chỉ số gốc, EVM tính ra các chỉ số phái sinh có tính hành động cao:
+Từ ba chỉ số gốc, EVM tính ra các chỉ số phái sinh có tính hành động cao. Bảng dưới đây tổng hợp sáu chỉ số quan trọng nhất kèm ngưỡng cảnh báo thực tiễn cho dự án xây dựng:
 
-**Schedule Variance (SV = EV − PV):** Sai lệch tiến độ theo giá trị tiền. SV âm nghĩa là dự án chậm tiến độ. Đơn vị tiền giúp so sánh mức độ sai lệch giữa các gói thầu có quy mô khác nhau.
+| Chỉ số | Công thức | Trạng thái tốt | Cảnh báo vàng | Cảnh báo đỏ |
+|--------|-----------|---------------|--------------|-------------|
+| SV — Sai lệch tiến độ | EV − PV | > 0 | −5% đến 0 | < −5% BAC |
+| CV — Sai lệch chi phí | EV − AC | > 0 | −5% đến 0 | < −5% BAC |
+| SPI — Hiệu suất tiến độ | EV / PV | ≥ 1,0 | 0,9 – 1,0 | < 0,9 |
+| CPI — Hiệu suất chi phí | EV / AC | ≥ 1,0 | 0,95 – 1,0 | < 0,95 |
+| EAC — Dự báo chi phí HT | BAC / CPI | ≤ BAC | BAC – BAC×1,1 | > BAC×1,1 |
+| TCPI — Chỉ số phấn đấu | (BAC−EV)/(BAC−AC) | ≤ 1,0 | 1,0 – 1,1 | > 1,1 |
 
-**Cost Variance (CV = EV − AC):** Sai lệch chi phí. CV âm nghĩa là dự án đang vượt chi phí cho cùng khối lượng hoàn thành.
+**SPI = 0,85** nghĩa là mỗi đơn vị thời gian làm việc chỉ tạo ra 85% giá trị kế hoạch — tương đương cần thêm khoảng 18% thời gian nếu giữ nguyên tốc độ.
 
-**Schedule Performance Index (SPI = EV / PV):** Chỉ số hiệu suất tiến độ. SPI = 0,85 nghĩa là mỗi đơn vị thời gian làm việc chỉ tạo ra 85% giá trị kế hoạch — hoặc cần thêm khoảng 18% thời gian để hoàn thành toàn bộ khối lượng ban đầu nếu giữ nguyên tốc độ hiện tại.
+**CPI = 0,90** nghĩa là mỗi đồng chi ra chỉ tạo ra 0,9 đồng giá trị theo kế hoạch. Khi CPI đã xuống dưới 0,95 và tiếp tục giảm, xác suất phục hồi về ≥ 1,0 trước khi kết thúc dự án rất thấp theo nghiên cứu của PMI [^4].
 
-**Cost Performance Index (CPI = EV / AC):** Chỉ số hiệu suất chi phí. CPI = 0,90 nghĩa là mỗi đồng chi ra chỉ tạo ra 0,9 đồng giá trị theo kế hoạch. CPI dưới 1 là tín hiệu cảnh báo sớm rằng dự án có thể vượt tổng mức đầu tư được duyệt.
+**TCPI** là chỉ số ít được sử dụng nhưng rất có giá trị: nó cho biết để hoàn thành phần khối lượng còn lại đúng trong ngân sách ban đầu, CPI từ giờ trở đi phải đạt bao nhiêu. TCPI > 1,1 nghĩa là mỗi đồng ngân sách còn lại phải tạo ra 1,1 đồng giá trị — đây là mức mà trong thực tế hầu như không đạt được nếu không có can thiệp cơ cấu.
 
-### 2.4. Dự báo chi phí cuối dự án (EAC)
+### 2.4. Dự báo chi phí cuối dự án (EAC) và ngưỡng pháp lý
 
 Giá trị thực sự của EVM không nằm ở việc mô tả trạng thái hiện tại, mà ở khả năng dự báo kết quả cuối dự án từ dữ liệu hiện tại. Công thức phổ biến nhất:
 
@@ -129,11 +136,58 @@ Trong đó BAC (Budget at Completion) là tổng ngân sách được duyệt. N
 
 Với dự án đầu tư công tại Việt Nam, vượt quá 10% tổng mức đầu tư yêu cầu phê duyệt điều chỉnh theo Điều 62 Luật Xây dựng số 135/2025/QH15 [^5]. Nếu PMU có dự báo EAC từ sớm — ví dụ khi dự án mới đạt 30% khối lượng — quy trình điều chỉnh có thể được khởi động trước khi thực sự vượt ngưỡng, thay vì phải xử lý khủng hoảng sau khi đã vượt.
 
+**VAC (Variance at Completion = BAC − EAC):** Chỉ số này cho biết dự án dự kiến sẽ tiết kiệm hay vượt chi bao nhiêu so với ngân sách được duyệt khi hoàn thành. VAC âm là tín hiệu cần chuẩn bị hồ sơ điều chỉnh tổng mức đầu tư.
+
+### 2.5. Chu kỳ ba giai đoạn vận hành hệ thống EVM
+
+Khung EVM không chỉ là bộ công thức tính toán — nó là chu kỳ vận hành có cấu trúc ba giai đoạn, mỗi giai đoạn có mục tiêu và đầu ra khác nhau:
+
+**Giai đoạn 1 — Lập kế hoạch (Tuần đầu dự án):** Thiết lập cấu trúc phân công công việc (WBS) đủ chi tiết để gán nguồn lực và chi phí; xây dựng bộ tài nguyên (nhân công, máy móc, vật tư) với đơn giá cụ thể; tính toán Cost Baseline — đường S-curve là cơ sở duy nhất để đánh giá giải ngân trong suốt vòng đời dự án; xác định đường Găng ban đầu.
+
+**Giai đoạn 2 — Giám sát thực hiện (Hàng tuần trong thi công):** Cập nhật % hoàn thành thực tế từng công tác theo phương pháp đo lường đã định nghĩa; tính BCWP (EV) và so sánh với BCWS (PV) và ACWP (AC); tính SPI, CPI, dự báo EAC; kích hoạt cảnh báo khi chỉ số vượt ngưỡng; sinh báo cáo tiến độ kèm phân tích nguyên nhân.
+
+**Giai đoạn 3 — Dự báo và kết thúc (Giai đoạn cuối dự án):** Phân tích xu hướng SPI/CPI xuyên suốt dự án để rút bài học; so sánh tiến độ thực tế với baseline (As-Built vs. Baseline); hoàn thiện báo cáo quyết toán với dữ liệu EVM làm cơ sở kiểm toán; lưu trữ dữ liệu năng suất thực tế làm benchmark cho dự án tương lai.
+
+Ba giai đoạn này tương ứng với ba nhóm câu hỏi khác nhau: "Chúng ta đang đi đúng hướng không?" (Giai đoạn 2), "Chúng ta sẽ kết thúc như thế nào?" (Giai đoạn 3), và "Chúng ta có cơ sở để lập kế hoạch chính xác hơn lần sau không?" (kết quả từ Giai đoạn 3 đưa vào Giai đoạn 1 của dự án tiếp theo).
+
 ---
 
-## 3. Phân loại phần mềm theo chức năng và quy mô
+## 3. Khung dữ liệu nền tảng cho hệ thống quản lý tích hợp
 
-### 3.1. Nhóm phần mềm lập lịch chuyên dụng
+Trước khi chọn phần mềm, cần hiểu rằng chất lượng của hệ thống EVM phụ thuộc trực tiếp vào hai cấu trúc dữ liệu nền tảng: cấu trúc phân công công việc (WBS) và bộ tài nguyên (Resource Pool). Nếu hai cấu trúc này không được thiết lập đúng, phần mềm dù tốt đến đâu cũng không tính được EV chính xác.
+
+### 3.0. Cấu trúc WBS 4 tầng cho dự án xây dựng
+
+WBS là xương sống của toàn bộ hệ thống. Với dự án xây dựng Việt Nam, cấu trúc 4 tầng sau đây phù hợp với cả cách tổ chức hợp đồng và yêu cầu theo dõi tiến độ chi tiết:
+
+| Tầng | Cấp độ | Ví dụ | Chức năng |
+|------|--------|-------|-----------|
+| Tầng 1 | Dự án | Dự án cầu vượt sông X | Tổng hợp toàn bộ |
+| Tầng 2 | Giai đoạn / Gói thầu | Gói thầu xây lắp chính | Theo dõi theo hợp đồng |
+| Tầng 3 | Hạng mục công trình | Phần móng, Phần thân, MEP | Theo dõi kỹ thuật |
+| Tầng 4 | Công tác / Bước công việc | Đào đất, Đổ bê tông lót, Lắp thép | Gán nguồn lực và chi phí |
+
+Tầng 4 là cấp duy nhất có thể gán trực tiếp nhân công, máy móc và vật tư — đây là nơi EV được tạo ra. Tầng 1, 2, 3 là cấp tổng hợp (Summary Task), giá trị của chúng được tính tự động từ tầng 4 lên.
+
+Mỗi tầng 4 cần được gắn với: thời gian bắt đầu và kết thúc, danh sách tài nguyên được gán, phương pháp đo lường % hoàn thành, và một cột mốc (Milestone) khi hoàn thành nghiệm thu. Milestone là điểm kiểm soát quan trọng nhất trong lịch biểu — nó không có thời lượng nhưng là ranh giới rõ ràng giữa "đang làm" và "đã xong được xác nhận".
+
+### 3.0b. Bộ tài nguyên (Resource Pool) cho xây dựng Việt Nam
+
+Resource Pool trong hệ thống quản lý dự án xây dựng cần phân thành ba nhóm rõ ràng:
+
+**Nhóm nhân công (Work Resources):** Kỹ sư công trường, chỉ huy trưởng, giám sát hiện trường, thợ bê tông, thợ sắt, thợ nề, thợ ván khuôn, an toàn viên. Đơn giá tính theo giờ, phân biệt giờ thường và giờ tăng ca. Lịch làm việc theo lịch công trường thực tế: Thứ 2 đến Thứ 7, hai buổi sáng chiều, không áp dụng lịch tiêu chuẩn văn phòng.
+
+**Nhóm máy móc thiết bị (cũng là Work Resources nhưng tính chi phí khác):** Máy đào, xe bơm bê tông, cần trục tháp, xe tải, máy đầm. Đơn giá có thể phân tách thành: đơn giá theo giờ vận hành (hourly rate) và chi phí cố định mỗi lần huy động (cost per use). Bơm bê tông ví dụ có chi phí huy động xe tương đối cao cố định mỗi lần, không phụ thuộc số giờ bơm.
+
+**Nhóm vật liệu (Material Resources):** Bê tông thương phẩm (m³), thép (tấn), gạch (viên), xi măng (kg), cát (m³), ván khuôn (m²). Đơn giá theo đơn vị vật liệu, không phải theo giờ. Chi phí vật liệu được ghi nhận (Accrue) tại thời điểm bắt đầu sử dụng (Start) không phải phân bổ theo thời gian.
+
+Khi Resource Pool được xây dựng đúng, phần mềm có thể tính tự động: tổng chi phí nhân công của từng công tác, chi phí máy móc theo ca, chi phí vật liệu theo khối lượng thực tế — và tổng hợp lên thành Cost Baseline cho toàn dự án. Đây là cơ sở để tính AC thực tế và so sánh với EV.
+
+---
+
+## 4. Phân loại phần mềm theo chức năng và quy mô
+
+### 4.1. Nhóm phần mềm lập lịch và đường Găng
 
 Nhóm này tập trung vào xây dựng và theo dõi lịch biểu dự án, mô hình hóa đường Găng và quản lý nguồn lực. Đây là nền tảng kỹ thuật của bất kỳ hệ thống quản lý tiến độ nghiêm túc nào.
 
@@ -141,25 +195,25 @@ Nhóm này tập trung vào xây dựng và theo dõi lịch biểu dự án, m�
 
 Hạn chế của nhóm này: chúng thường không tích hợp sẵn với quản lý chi phí ở mức độ đủ chi tiết, và đường Găng chỉ có giá trị nếu dữ liệu thực tế được cập nhật nghiêm túc theo chu kỳ.
 
-### 3.2. Nhóm phần mềm quản lý chi phí và dự toán
+### 4.2. Nhóm phần mềm quản lý chi phí và dự toán
 
 Nhóm này bao gồm các công cụ lập dự toán, kiểm soát chi phí theo hạng mục, và theo dõi giải ngân. Trong bối cảnh Việt Nam, nhiều dự án đầu tư công vẫn sử dụng phần mềm dự toán chuyên dụng cho thị trường nội địa để đảm bảo tuân thủ định mức xây dựng do Bộ Xây dựng ban hành [^6].
 
 Điểm yếu cơ bản của nhóm này: chi phí được gắn với hạng mục dự toán, không phải với hoạt động tiến độ. Do đó, không thể tính toán EV hay phân tích SPI/CPI trực tiếp từ hệ thống chi phí đơn thuần.
 
-### 3.3. Nhóm nền tảng quản lý dự án tích hợp
+### 4.3. Nhóm nền tảng quản lý dự án tích hợp
 
 Đây là nhóm có khả năng kết hợp tiến độ, chi phí, tài liệu và truyền thông trên một nền tảng duy nhất, đáp ứng triết lý tích hợp của PMBOK. Ưu điểm lớn nhất là khả năng tính toán EV và các chỉ số EVM từ dữ liệu tiến độ và chi phí cập nhật theo thời gian thực hoặc theo chu kỳ.
 
 Tuy nhiên, độ phức tạp triển khai và chi phí bản quyền của nhóm này cao hơn đáng kể so với hai nhóm trước. Chi phí triển khai và đào tạo thường chiếm phần lớn tổng đầu tư, và quy trình làm việc phải được chuẩn hóa đầy đủ trước khi phần mềm mang lại giá trị thực sự.
 
-### 3.4. Nhóm công cụ dashboard và báo cáo
+### 4.4. Nhóm công cụ dashboard và báo cáo
 
 Nhóm này không thay thế phần mềm quản lý tiến độ hay chi phí, mà hoạt động như lớp trình bày tổng hợp phục vụ cấp ra quyết định. Khi được kết nối với nguồn dữ liệu từ hai nhóm trên, chúng cho phép xây dựng các dashboard EVM tự động cập nhật và biểu đồ S-curve theo thời gian thực.
 
 Giá trị của nhóm này phụ thuộc hoàn toàn vào chất lượng dữ liệu nguồn. Một dashboard đẹp kết nối với dữ liệu không chính xác còn nguy hiểm hơn không có dashboard — vì nó tạo ra ảo giác kiểm soát.
 
-### 3.5. Lựa chọn theo quy mô dự án
+### 4.5. Lựa chọn theo quy mô dự án
 
 | Quy mô dự án | Cấu hình đề xuất | Lý do |
 |-------------|-----------------|-------|
@@ -170,73 +224,73 @@ Giá trị của nhóm này phụ thuộc hoàn toàn vào chất lượng dữ 
 
 ---
 
-## 4. Tiêu chí lựa chọn phù hợp với bối cảnh Việt Nam
+## 5. Tiêu chí lựa chọn phù hợp với bối cảnh Việt Nam
 
-### 4.1. Tuân thủ yêu cầu báo cáo pháp lý
+### 5.1. Tuân thủ yêu cầu báo cáo pháp lý
 
 Nghị định 175/2024/NĐ-CP quy định chủ đầu tư và Ban quản lý dự án phải lập báo cáo giám sát, đánh giá đầu tư theo chu kỳ và nộp cho cơ quan có thẩm quyền [^7]. Phần mềm được lựa chọn phải hỗ trợ xuất dữ liệu phù hợp với định dạng báo cáo theo quy định này, không phải chỉ xuất báo cáo theo chuẩn quốc tế.
 
 Tương tự, hồ sơ thanh toán khối lượng theo Nghị định 175/2024/NĐ-CP yêu cầu biên bản nghiệm thu và xác nhận khối lượng theo từng hạng mục dự toán được duyệt. Nếu hệ thống phần mềm theo dõi chi phí theo cấu trúc hoạt động khác với cấu trúc dự toán, cần có cơ chế ánh xạ (mapping) để đảm bảo tính nhất quán.
 
-### 4.2. Khả năng hỗ trợ ngôn ngữ và tài liệu tiếng Việt
+### 5.2. Khả năng hỗ trợ ngôn ngữ và tài liệu tiếng Việt
 
 Phần mềm không có tài liệu hướng dẫn tiếng Việt hoặc cộng đồng người dùng Việt Nam đủ lớn sẽ tạo ra rào cản đào tạo đáng kể, đặc biệt với nhân sự mới của PMU. Chi phí đào tạo thực tế thường cao hơn nhiều so với ước tính ban đầu khi phần mềm hoàn toàn bằng tiếng Anh và cộng đồng hỗ trợ không có tài liệu tham khảo nội địa.
 
-### 4.3. Mô hình giấy phép và chi phí tổng sở hữu
+### 5.3. Mô hình giấy phép và chi phí tổng sở hữu
 
 Chi phí bản quyền phần mềm thường chiếm phần nhỏ trong tổng chi phí thực sự của việc triển khai. Ba khoản chi phí thường bị đánh giá thấp: chi phí tùy chỉnh để phù hợp với quy trình nội bộ, chi phí đào tạo đội ngũ ban đầu và đào tạo lại khi nhân sự thay đổi, và chi phí quản trị hệ thống dữ liệu theo thời gian.
 
 Đối với dự án đầu tư công, cần xem xét thêm việc chi phí phần mềm có nằm trong cơ cấu chi phí tư vấn quản lý dự án hay phải được phê duyệt riêng như một khoản mục trong dự toán.
 
-### 4.4. Khả năng mở rộng và tích hợp
+### 5.4. Khả năng mở rộng và tích hợp
 
 Phần mềm được chọn cần có khả năng tích hợp với các công cụ đang sử dụng trong tổ chức, đặc biệt là phần mềm dự toán chi phí theo định mức Bộ Xây dựng. Dữ liệu chi phí không thể nhập tay từ hệ thống này sang hệ thống khác mà không mất thời gian và giảm độ chính xác.
 
 ---
 
-## 5. Năm thách thức triển khai phổ biến và cách vượt qua
+## 6. Năm thách thức triển khai phổ biến và cách vượt qua
 
-### 5.1. Kháng cự thay đổi quy trình làm việc
+### 6.1. Kháng cự thay đổi quy trình làm việc
 
 Phần mềm quản lý tiến độ và chi phí thay đổi cách làm việc của nhiều vị trí trong tổ chức, từ kỹ sư công trường đến cán bộ kế toán PMU. Kháng cự thay đổi là phản ứng bình thường, không phải dấu hiệu không hợp tác. Cách vượt qua hiệu quả nhất là bắt đầu với pilot nhỏ trên một gói thầu cụ thể, chứng minh giá trị thực tế trước khi mở rộng.
 
-### 5.2. Dữ liệu đầu vào không nhất quán
+### 6.2. Dữ liệu đầu vào không nhất quán
 
 Phần mềm EVM chỉ tốt khi dữ liệu tốt. Nếu tiến độ thực tế được cập nhật theo trực giác ("khoảng 60% rồi") thay vì theo số liệu đo lường được (khối lượng đã hoàn thành / khối lượng kế hoạch), kết quả EVM sẽ sai lệch. Cần định nghĩa rõ phương pháp đo lường % hoàn thành cho từng loại hoạt động ngay từ đầu dự án.
 
 Các phương pháp đo lường phổ biến trong xây dựng: phương pháp cột mốc (0/100 hoặc 20/80/100 theo mốc nghiệm thu), phương pháp tỷ lệ vật liệu đã lắp đặt, và phương pháp đường cong kinh nghiệm cho công việc lặp lại. Mỗi loại hoạt động cần gắn với một phương pháp cụ thể và nhất quán trong suốt vòng đời dự án.
 
-### 5.3. Baseline không được bảo vệ đúng mức
+### 6.3. Baseline không được bảo vệ đúng mức
 
 Baseline là điểm tham chiếu bất biến để tính EV và PV. Khi baseline bị thay đổi mà không có quy trình phê duyệt rõ ràng — ví dụ để "che giấu" sai lệch tiến độ — toàn bộ hệ thống EVM mất ý nghĩa. Quy trình quản lý baseline cần được quy định trong hợp đồng TVQLDA và trong Kế hoạch quản lý dự án theo Điều 89 Nghị định 175/2024/NĐ-CP.
 
 Nguyên tắc: chỉ có hai lý do được chấp nhận để điều chỉnh baseline — phê duyệt thay đổi phạm vi có giá trị dương, và điều chỉnh tổng mức đầu tư được cấp có thẩm quyền phê duyệt. Tất cả các sai lệch do hiệu suất thực thi phải được giữ trong báo cáo EVM, không được "dọn sạch" bằng cách cập nhật baseline.
 
-### 5.4. Thiếu nhân sự kỹ thuật vận hành hệ thống
+### 6.4. Thiếu nhân sự kỹ thuật vận hành hệ thống
 
 Phần mềm chuyên dụng đòi hỏi ít nhất một người có đủ năng lực kỹ thuật để vận hành, duy trì và đào tạo người khác. Khi người này rời dự án, hệ thống thường bị suy thoái dần vì không ai đủ kỹ năng duy trì theo chuẩn ban đầu. Giải pháp: tài liệu hóa quy trình vận hành hệ thống ngay từ đầu, và đảm bảo ít nhất hai người trong PMU được đào tạo ở mức độ vận hành độc lập.
 
-### 5.5. Không có quy trình leo thang khi chỉ số cảnh báo
+### 6.5. Không có quy trình leo thang khi chỉ số cảnh báo
 
 SPI và CPI thấp chỉ có giá trị nếu có quy trình rõ ràng quy định: khi nào thì báo cáo lên cấp nào, ai có trách nhiệm phân tích nguyên nhân, và ai có quyền phê duyệt kế hoạch phục hồi (recovery plan). Nếu báo cáo EVM hàng tuần cho thấy CPI = 0,83 nhưng không có ai phân tích và hành động, hệ thống chỉ là thủ tục hành chính.
 
 ---
 
-## 6. Tích hợp với khung pháp lý đầu tư xây dựng Việt Nam
+## 7. Tích hợp với khung pháp lý đầu tư xây dựng Việt Nam
 
-### 6.1. Báo cáo giám sát đầu tư định kỳ
+### 7.1. Báo cáo giám sát đầu tư định kỳ
 
 Nghị định 29/2021/NĐ-CP về giám sát, đánh giá đầu tư yêu cầu chủ đầu tư báo cáo định kỳ các chỉ tiêu về tiến độ thực hiện, giải ngân vốn và những vấn đề phát sinh [^8]. Hệ thống EVM được vận hành tốt có thể cung cấp trực tiếp hầu hết số liệu cần thiết cho báo cáo này, giảm đáng kể thời gian tổng hợp của cán bộ PMU.
 
 Cụ thể, chỉ số SPI và CPI theo từng gói thầu có thể được trình bày trực tiếp trong báo cáo giám sát đầu tư thay vì chỉ tường thuật tiến độ tổng thể bằng văn bản. Đây là cách làm đang được một số chủ đầu tư tiên phong áp dụng để tăng chất lượng và tốc độ xử lý báo cáo ở cơ quan quản lý nhà nước.
 
-### 6.2. Kiểm soát điều chỉnh tổng mức đầu tư
+### 7.2. Kiểm soát điều chỉnh tổng mức đầu tư
 
 Dự báo EAC từ hệ thống EVM cho phép PMU và chủ đầu tư chủ động theo dõi xu hướng chi phí cuối dự án. Khi EAC vượt ngưỡng 90% BAC (tức là còn 10% dư địa trước khi vi phạm hạn mức điều chỉnh tổng mức), đây là thời điểm cần bắt đầu chuẩn bị hồ sơ điều chỉnh theo trình tự quy định tại Luật Xây dựng 135/2025/QH15 [^5].
 
 Thực tế phổ biến hiện nay là hồ sơ điều chỉnh tổng mức đầu tư được nộp sau khi vượt mức đã rõ ràng, đặt PMU vào thế bị động và kéo dài thủ tục phê duyệt. Hệ thống EVM cảnh báo sớm đủ để xử lý chủ động.
 
-### 6.3. Tích hợp với BIM
+### 7.3. Tích hợp với BIM
 
 Quyết định 258/QĐ-TTg năm 2023 xác định lộ trình áp dụng mô hình thông tin công trình (BIM) trong hoạt động đầu tư xây dựng [^9]. Khi BIM được áp dụng đầy đủ, mô hình BIM có thể liên kết trực tiếp với lịch biểu và chi phí để tạo thành mô hình 4D (BIM + thời gian) và 5D (BIM + chi phí). Đây là nền tảng để hệ thống EVM có dữ liệu tiến độ và chi phí chính xác hơn, tự động hơn từ dữ liệu đo đạc thực địa.
 
@@ -244,7 +298,7 @@ Với dự án đang trong giai đoạn đầu tư mới, lựa chọn phần m�
 
 ---
 
-## 7. Xây dựng năng lực nội bộ: Bước không thể bỏ qua
+## 8. Xây dựng năng lực nội bộ: Bước không thể bỏ qua
 
 Phần mềm tốt trong tay đội ngũ không được đào tạo sẽ cho kết quả tệ hơn Excel trong tay người hiểu việc. Đây là quan sát thực tế từ nhiều dự án triển khai hệ thống quản lý tiến độ tại Việt Nam.
 
