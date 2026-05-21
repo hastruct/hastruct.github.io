@@ -94,7 +94,7 @@ Hậu quả phổ biến khi quản lý nhà thầu phụ không có cấu trúc
 
 | Loại sự cố | Nguyên nhân gốc rễ | Tác động |
 |-----------|------------------|---------|
-| Trễ tiến độ hạng mục | Không có look-ahead planning, thiếu phối hợp giao diện trước | Kéo theo trễ các gói phụ thuộc |
+| Trễ tiến độ hạng mục | Không có kế hoạch dự phòng, thiếu phối hợp giao diện trước | Kéo theo trễ các gói phụ thuộc |
 | Làm lại (rework) | Hiểu sai phạm vi, không kiểm tra đầu ra trước khi bàn giao | 5% đến 15% giá trị gói thầu |
 | Tranh chấp hợp đồng | Ranh giới giao diện và điều kiện bàn giao mặt bằng không rõ ràng | Kéo dài thủ tục, phát sinh chi phí pháp lý |
 | Sự cố an toàn | Nhà thầu phụ không được đào tạo quy trình an toàn công trình | Dừng thi công, xử phạt hành chính |
@@ -235,14 +235,14 @@ Mở rộng khái niệm hệ sinh thái dự án: PMBOK 8 được dự báo s�
 
 Nhấn mạnh phân phối giá trị liên tục: nếu PMBOK 7 đặt câu hỏi "dự án có đang tạo ra giá trị không", PMBOK 8 có thể đẩy xa hơn thành "mỗi nhà thầu phụ có đang tạo ra giá trị theo kỳ vọng không, và nếu không thì cơ chế điều chỉnh là gì". Cách đặt câu hỏi này thay đổi căn bản cách thiết kế KPI.
 
-Tích hợp sâu hơn giữa phương pháp thích nghi và dự báo: Last Planner System và rolling wave planning, vốn phổ biến trong xây dựng, có thể được tích hợp chính thức hơn trong PMBOK 8, ảnh hưởng trực tiếp đến cách lập kế hoạch look-ahead với nhà thầu phụ.
+Tích hợp sâu hơn giữa phương pháp thích nghi và dự báo: Last Planner System (Hệ thống Người lập kế hoạch cuối cùng) và rolling wave planning (Lập kế hoạch cuốn chiếu), vốn phổ biến trong xây dựng, có thể được tích hợp chính thức hơn trong PMBOK 8, ảnh hưởng trực tiếp đến cách lập kế hoạch look-ahead với nhà thầu phụ.
 
 So sánh ba thế hệ PMBOK trong bối cảnh quản lý nhà thầu phụ:
 
 | Chiều so sánh | PMBOK 6 (2017) | PMBOK 7 (2021) | PMBOK 8 (dự kiến) |
 |--------------|----------------|----------------|-------------------|
 | Cách nhìn nhà thầu phụ | Nhà cung cấp dịch vụ | Bên liên quan quan trọng | Thành phần hệ sinh thái |
-| Cơ chế quản lý | Quy trình (Process) | Nguyên tắc (Principle) | Nguyên tắc + Thích nghi tình huống |
+| Cơ chế quản lý | Quy trình | Nguyên tắc | Nguyên tắc + Thích nghi tình huống |
 | Trọng tâm hiệu suất | Tuân thủ phạm vi, thời gian, chi phí | Tạo giá trị và kết quả | Phân phối giá trị liên tục |
 | Giao tiếp | Kế hoạch truyền thông một chiều | Tương tác hai chiều chủ động | Mạng lưới giao tiếp đa chiều |
 | Đo lường | KPI kết quả cuối | KPI kết quả kết hợp quá trình | Đo lường và học hỏi liên tục |
@@ -299,21 +299,9 @@ Sự khác biệt giữa người quản lý dự án trung bình và người g
 
 ---
 
-## Ghi chú về ngày đăng bài và GitHub Pages
-
-Bài viết này có ngày đăng là 18:00 ngày 22/5/2026 theo múi giờ Việt Nam (UTC+7).
-
-`_config.yml` của website đã cài `future: false`. Với cài đặt này, Jekyll bỏ qua mọi bài có ngày trong tương lai khi build. Bài có thể được push lên repository ngay hôm nay nhưng sẽ không xuất hiện trên website cho đến khi quá trình build chạy vào ngày 22/5/2026 hoặc sau đó.
-
-Website được cấu hình GitHub Actions cron chạy mỗi thứ Sáu lúc 11:00 UTC (18:00 giờ Việt Nam). Ngày 22/5/2026 là thứ Sáu, bài sẽ được hệ thống tự động công bố trong lần build cùng ngày.
-
----
-
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang phụ trách PMU, là nhà thầu chính quản lý nhiều gói thầu phụ cùng lúc, hoặc là chủ đầu tư muốn thiết lập hệ thống giám sát nhà thầu phụ bài bản hơn, HydrostructAI có thể hỗ trợ đánh giá hệ thống hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp phù hợp đặc thù dự án.
-
-Liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp.
+Nếu bạn đang phụ trách PMU, là nhà thầu chính quản lý nhiều gói thầu phụ cùng lúc, hoặc là chủ đầu tư muốn thiết lập hệ thống giám sát nhà thầu phụ bài bản hơn, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp để được hỗ trợ đánh giá hệ thống hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp phù hợp đặc thù dự án.
 
 ---
 
