@@ -1,8 +1,8 @@
 ---
-title: "Phần mềm quản lý tiến độ và chi phí xây dựng: Lựa chọn phù hợp theo chuẩn PMBOK"
+title: "Hướng dẫn quản lý tiến độ và chi phí xây dựng, tiếp cận theo chuẩn PMBOK"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-06-03 18:00:00 +0700
+date: 2026-05-26 18:00:00 +0700
 layout: single
 featured: true
 toc: true
@@ -336,15 +336,7 @@ Nếu bạn đang cân nhắc cách tổ chức hệ thống quản lý tiến �
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang là cán bộ PMU, chủ đầu tư hoặc tư vấn quản lý dự án muốn thiết lập hệ thống kiểm soát tiến độ và chi phí tích hợp theo chuẩn PMBOK cho dự án xây dựng đang triển khai tại Việt Nam, HydrostructAI có thể hỗ trợ: đánh giá hệ thống hiện tại, thiết kế quy trình EVM phù hợp với quy mô và bối cảnh pháp lý của dự án, lựa chọn và cấu hình phần mềm phù hợp, và đào tạo đội ngũ PMU theo ba cấp độ năng lực.
-
-**Liên hệ trực tiếp:**
-
-Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về quy mô dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp.
-
-Liên hệ nhanh: [WhatsApp](https://wa.me/84374874142) để trao đổi trước khi quyết định.
-
-> Mọi trao đổi tư vấn kỹ thuật ban đầu đều miễn phí. Chúng tôi sẵn sàng chia sẻ kinh nghiệm từ các dự án đã triển khai.
+Nếu bạn đang là cán bộ PMU, chủ đầu tư hoặc tư vấn quản lý dự án muốn thiết lập hệ thống kiểm soát tiến độ và chi phí tích hợp theo chuẩn PMBOK cho dự án xây dựng đang triển khai tại Việt Nam, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá hệ thống hiện tại, thiết kế quy trình EVM phù hợp với quy mô và bối cảnh pháp lý của dự án, lựa chọn và cấu hình phần mềm phù hợp, và đào tạo đội ngũ PMU theo ba cấp độ năng lực.
 
 ---
 

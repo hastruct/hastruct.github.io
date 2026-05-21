@@ -10,9 +10,9 @@
 
 # Site Settings
 locale: "vi"
-title: "Hydro Structure AI"
+title: "HST AI"
 title_separator: "|"
-name: "Hydro Structure AI"
+name: "HST AI"
 description: "Tư vấn Quản lý dự án và Hỗ trợ phần mềm tính toán kết cấu TCVN online: Pile Group, ShortCol 3D, Sheet Pile FEM - miễn phí cho kỹ sư và sinh viên Việt Nam"
 url: "https://hydrostructai.com"
 baseurl: ""

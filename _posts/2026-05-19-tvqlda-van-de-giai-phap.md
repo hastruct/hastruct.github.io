@@ -322,19 +322,19 @@ Nếu bạn đang gặp phải một hoặc nhiều vấn đề được mô t�
 
 | Văn bản | Nội dung | Tra cứu |
 |---------|----------|---------|
-| Luật XD 50/2014/QH13 | Khung pháp lý tổng quát | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=36867) |
-| Luật XD 62/2020/QH14 (sửa đổi LXD 50) | Sửa đổi bổ sung Luật XD 2014 | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=144268) |
-| **Luật XD 135/2025/QH15** (HH 01/7/2026) | Luật xây dựng cập nhật nhất | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=185659) |
-| **Nghị định 175/2024/NĐ-CP** | Quản lý dự án đầu tư xây dựng | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=173849) |
-| **Nghị định 06/2021/NĐ-CP** | Quản lý chất lượng thi công | [vbpl.vn](https://vbpl.vn/boxaydung/Pages/vbpq-van-ban-goc.aspx?ItemID=147597) |
-| Nghị định 35/2023/NĐ-CP (sửa NĐ 06) | Sửa đổi bổ sung NĐ 06/2021 | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=160908) |
-| Nghị định 10/2021/NĐ-CP | Quản lý chi phí xây dựng | [vbpl.vn](https://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=147606) |
-| Nghị định 29/2021/NĐ-CP | Giám sát, đánh giá đầu tư | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-luocdo.aspx?ItemID=153954) |
-| Nghị định 44/2016/NĐ-CP | An toàn lao động trong xây dựng | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=117760) |
-| Thông tư 06/2021/TT-BXD | Phân cấp công trình xây dựng | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=152328) |
-| Thông tư 07/2021/TT-BXD | Quản lý chất lượng và thi công | [thuvienphapluat.vn](https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Thong-tu-07-2021-TT-BXD-huong-dan-quan-ly-chat-luong-thi-cong-xay-dung-cong-trinh-482226.aspx) |
+| Luật XD 50/2014/QH13 | Khung pháp lý tổng quát | [Luật XD 50](https://qlda.gxd.vn/van-ban/luat/luat-xay-dung-50-ghep-62.html) |
+| Luật XD 62/2020/QH14 (sửa đổi LXD 50) | Sửa đổi bổ sung Luật XD 2014 | [Luật XD 62](https://qlda.gxd.vn/van-ban/luat/luat-xay-dung-62-2020.html) |
+| **Luật XD 135/2025/QH15** (HH 01/7/2026) | Luật xây dựng cập nhật nhất | [Luật XD](https://qlda.gxd.vn/van-ban/luat/luat-xay-dung-135-2025.html) |
+| **Nghị định 175/2024/NĐ-CP** | Quản lý dự án đầu tư xây dựng | [NĐ175](https://qlda.gxd.vn/van-ban/qlda/nghi-dinh-175-2024.html) |
+| **Nghị định 06/2021/NĐ-CP** | Quản lý chất lượng thi công | [NĐ 06](https://qlda.gxd.vn/van-ban/chat-luong/nghi-dinh-06-2021-qlcl.html) |
+| Nghị định 35/2023/NĐ-CP (sửa NĐ 06) | Sửa đổi bổ sung NĐ 06/2021 | [NĐ 35](https://qlda.gxd.vn/van-ban/qlda/nghi-dinh-35-2023.html) |
+| Nghị định 10/2021/NĐ-CP | Quản lý chi phí xây dựng | [NĐ 10](https://qlda.gxd.vn/van-ban/chi-phi/nghi-dinh-10-2021-qlcp.html) |
+| Nghị định 29/2021/NĐ-CP | Giám sát, đánh giá đầu tư | [NĐ 29](https://qlda.gxd.vn/van-ban/qlda/nghi-dinh-29-2021.html) |
+| Nghị định 44/2016/NĐ-CP | An toàn lao động trong xây dựng | [NĐ 40](https://qlda.gxd.vn/van-ban/atld/nghi-dinh-44-2016.html) |
+| Thông tư 06/2021/TT-BXD | Phân cấp công trình xây dựng | [TT 06](https://qlda.gxd.vn/van-ban/chat-luong/thong-tu-06-2021-TT-BXD.html) |
+| Thông tư 07/2021/TT-BXD | Quản lý chất lượng và thi công | [TT 07]() |
 | Thông tư 09/2021/TT-BXD | Quản lý chi phí xây dựng | [vbpl.vn](https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=152325) |
-| Quyết định 258/QĐ-TTg (17/3/2023) | Lộ trình áp dụng BIM | [thuvienphapluat.vn](https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Quyet-dinh-258-QD-TTg-2023-ap-dung-Mo-hinh-thong-tin-cong-trinh-BIM-trong-hoat-dong-xay-dung-559799.aspx) |
+| Quyết định 258/QĐ-TTg (17/3/2023) | Lộ trình áp dụng BIM | [QĐ 258](https://vanban.chinhphu.vn/?pageid=27160&docid=207592) |
 
 ### Tài liệu đánh giá và kiểm toán đầu tư công
 

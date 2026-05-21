@@ -1,8 +1,8 @@
 ---
-title: "BIM Mã Nguồn Mở: Tiếp Cận Bổ Trợ giữa Pascal Editor và pyvista-cad"
+title: "Ứng dụng mô hình BIM mã nguồn mở: Tiếp cận kết hợp Pascal editor và Pyvista-cad"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-06-05 18:00:00 +0700
+date: 2026-05-22 18:00:00 +0700
 layout: single
 featured: true
 toc: true
@@ -10,7 +10,7 @@ toc_sticky: true
 toc_label: "Mục Lục"
 permalink: "/posts/mo-hinh-bim-open-source/"
 categories:
-  - BIM
+  - Mô hình BIM
   - Open-Source
   - Python
 tags:
@@ -37,7 +37,7 @@ tags:
     Digital Twin,
     Thủy lợi
   ]
-excerpt: "Bài viết phân tích chuyên sâu hai công cụ mã nguồn mở đang định hình lại phương trình chi phí-năng lực trong hệ sinh thái BIM: **Pascal Editor** (trình soạn thảo kiến trúc 3D chạy hoàn toàn trên trình duyệt với WebGPU) và **pyvista-cad** (lớp tương tác CAD/IFC chính thức cho Python). Không phải để thay thế Revit, mà để lấp đầy những khoảng trống mà Revit không thể lấp, và xây dựng năng lực BIM thực chất từ nền tảng mã nguồn mở."
+excerpt: "Bài viết phân tích chuyên sâu hai công cụ mã nguồn mở đang định hình lại phương trình chi phí-năng lực trong hệ sinh thái BIM: **Pascal Editor** (trình soạn thảo kiến trúc 3D chạy hoàn toàn trên trình duyệt với WebGPU) và **Pyvista-cad** (lớp tương tác CAD/IFC chính thức cho Python). Không phải để thay thế Revit, mà để lấp đầy những khoảng trống mà Revit không thể lấp, và xây dựng năng lực BIM thực chất từ nền tảng mã nguồn mở."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(15, 32, 55, 0.95), rgba(45, 80, 120, 0.85))"
@@ -46,7 +46,7 @@ header:
 
 ## Đặt vấn đề
 
-Một chi phí license Autodesk AEC Collection năm 2026 dao động từ **3.500 đến 4.500 USD/người dùng/năm** tại Việt Nam [^1]. Với một đơn vị tư vấn thiết kế có 50 kỹ sư cần BIM, con số đó leo lên từ **210.000 đến 300.000 USD mỗi năm** (chưa tính phần cứng, đào tạo và quản lý) [^2]. Trong khi đó, **Quyết định 258/QĐ-TTg** ngày 17/3/2023 đã đưa BIM thành yêu cầu bắt buộc đối với công trình cấp I, cấp II sử dụng vốn đầu tư công từ 2023-2025 [^3]. Khoảng cách giữa yêu cầu pháp lý và năng lực tiếp cận công cụ của phần lớn đơn vị vừa và nhỏ tại Việt Nam vì thế ngày càng rõ nét.
+Chi phí 1 license Autodesk AEC Collection năm 2026 dao động từ **3.500 đến 4.500 USD/người dùng/năm** tại Việt Nam [^1]. Với một đơn vị tư vấn thiết kế có 50 kỹ sư cần BIM, con số đó leo lên từ **210.000 đến 300.000 USD mỗi năm** (chưa tính phần cứng, đào tạo và quản lý) [^2]. Trong khi đó, **Quyết định 258/QĐ-TTg** ngày 17/3/2023 đã đưa BIM thành yêu cầu bắt buộc đối với công trình cấp I, cấp II sử dụng vốn đầu tư công từ 2023-2025 [^3]. Khoảng cách giữa yêu cầu pháp lý và năng lực tiếp cận công cụ của phần lớn đơn vị vừa và nhỏ tại Việt Nam vì thế ngày càng rõ nét.
 
 Phong trào **OpenBIM** (với IFC làm ngôn ngữ trung gian, mã nguồn mở làm hạ tầng) đang lớn mạnh như một phản ứng cấu trúc với thực tế này. Đặc biệt với ngành thủy lợi Việt Nam, nơi hiện có **5.656 hồ chứa, 8.512 đập dâng và 5.194 trạm bơm điện** đang khai thác mà phần lớn chưa có hồ sơ kỹ thuật số hóa [^4], bài toán BIM không chỉ là câu hỏi phần mềm mà là câu hỏi chiến lược quốc gia.
 
@@ -608,12 +608,7 @@ Phần mềm thương mại cho bạn một workflow hoàn chỉnh. Mã nguồn 
 
 ## Bạn đang xây dựng năng lực BIM cho dự án hạ tầng hoặc thủy lợi?
 
-Nếu bạn đang đánh giá workflow mã nguồn mở cho dự án cụ thể, hoặc muốn tích hợp pyvista-cad vào quy trình QA/QC IFC hiện có, HydrostructAI sẵn sàng trao đổi kỹ thuật:
-
-- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com): mô tả ngắn bài toán và stack hiện tại của bạn
-- Liên hệ: [WhatsApp](https://wa.me/84374874142): trao đổi trực tiếp
-
-Câu hỏi kỹ thuật về IFC, pyvista-cad hay workflow BIM mã nguồn mở: liên hệ trực tiếp qua các kênh trên.
+Nếu bạn đang nghiên cứu workflow mã nguồn mở cho dự án cụ thể, hoặc muốn tích hợp pyvista-cad vào quy trình QA/QC IFC hiện có, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ kỹ thuật về IFC, pyvista-cad hay workflow BIM mã nguồn mở.
 
 *© 2026 HydrostructAI - Tư vấn Mô hình hóa BIM, Phát triển Giải pháp Mã nguồn mở cho AEC*
 
