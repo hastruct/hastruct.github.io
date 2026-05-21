@@ -2,7 +2,7 @@
 title: "Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-05-23 18:00:00 +0700
+date: 2026-05-22 18:00:00 +0700
 layout: single
 featured: true
 toc: true
@@ -147,7 +147,7 @@ Theo Nghị định 175/2024/NĐ-CP, báo cáo giám sát thi công định kỳ
 
 ### 3.4. Quan hệ là nền tảng vận hành, không phải điều kiện phụ
 
-Quản lý nhà thầu phụ không chỉ là kiểm soát. Chiều quan hệ có trọng lượng thực tế lớn hơn nhiều so với những gì được ghi trong điều khoản hợp đồng.[^1]
+Quản lý nhà thầu phụ là cả kiểm soát hợp đồng lẫn xây dựng quan hệ. Chiều quan hệ có trọng lượng thực tế lớn hơn nhiều so với những gì được ghi trong điều khoản.[^1]
 
 Khi nhà thầu phụ được tham gia vào quá trình lập kế hoạch, được nghe khi gặp khó khăn thực sự và được hỗ trợ giải quyết vướng mắc kỹ thuật, họ thường trở nên chủ động và tìm giải pháp thay vì chờ chỉ đạo. Ngược lại, khi quan hệ xấu đi, ngay cả vấn đề nhỏ cũng có thể biến thành xung đột hợp đồng kéo dài.
 
@@ -289,7 +289,7 @@ Về cập nhật: chu kỳ phù hợp là hàng tuần trong giai đoạn thi c
 
 Quản lý nhà thầu phụ hiệu quả là xây dựng một hệ thống giao tiếp, phối hợp và đo lường hoạt động nhất quán giữa tất cả các bên, từ khi nhà thầu phụ đầu tiên được phê duyệt cho đến khi gói thầu cuối cùng được nghiệm thu.
 
-Bài viết gốc trên LinkedIn đặt đúng vấn đề: đây không phải nhiệm vụ của bộ phận mua sắm hay hành chính. Đây là trách nhiệm quản lý dự án cốt lõi, ở mọi cấp độ từ chỉ huy trưởng công trường đến Giám đốc PMU.[^1]
+Bài viết gốc trên LinkedIn đặt đúng vấn đề: quản lý nhà thầu phụ là trách nhiệm trực tiếp của người quản lý dự án, ở mọi cấp từ chỉ huy trưởng công trường đến Giám đốc PMU, không phải việc của bộ phận mua sắm hay hành chính.[^1]
 
 Pháp luật Việt Nam đặt ra khung đủ rõ về trách nhiệm. PMBOK 7 cung cấp nguyên tắc đúng về cách tiếp cận. Những gì còn thiếu trong phần lớn dự án là cơ chế thực thi nhất quán: hợp đồng phụ có quy định KPI, họp điều phối có cấu trúc và đúng tần suất, bảng OPPM được cập nhật đều đặn, và người ra quyết định cao nhất yêu cầu thông tin trung thực hơn thông tin đẹp.
 
@@ -301,17 +301,19 @@ Sự khác biệt giữa người quản lý dự án trung bình và người g
 
 ## Ghi chú về ngày đăng bài và GitHub Pages
 
-Bài viết này có ngày đăng là 18:00 ngày 23/5/2026 theo múi giờ Việt Nam (UTC+7).
+Bài viết này có ngày đăng là 18:00 ngày 22/5/2026 theo múi giờ Việt Nam (UTC+7).
 
-`_config.yml` của website đã cài `future: false`. Với cài đặt này, Jekyll bỏ qua mọi bài có ngày trong tương lai khi build. Bài có thể được push lên repository ngay hôm nay nhưng sẽ không xuất hiện trên website cho đến khi quá trình build chạy vào ngày 23/5/2026 hoặc sau đó.
+`_config.yml` của website đã cài `future: false`. Với cài đặt này, Jekyll bỏ qua mọi bài có ngày trong tương lai khi build. Bài có thể được push lên repository ngay hôm nay nhưng sẽ không xuất hiện trên website cho đến khi quá trình build chạy vào ngày 22/5/2026 hoặc sau đó.
 
-Website được cấu hình GitHub Actions cron chạy mỗi thứ Sáu lúc 11:00 UTC (18:00 giờ Việt Nam). Do ngày 23/5/2026 là thứ Bảy, bài sẽ được hệ thống tự động công bố vào thứ Sáu kế tiếp (29/5/2026). Để công bố đúng ngày 23/5, cần kích hoạt thủ công qua `workflow_dispatch` trên GitHub Actions vào ngày đó.
+Website được cấu hình GitHub Actions cron chạy mỗi thứ Sáu lúc 11:00 UTC (18:00 giờ Việt Nam). Ngày 22/5/2026 là thứ Sáu, bài sẽ được hệ thống tự động công bố trong lần build cùng ngày.
 
 ---
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang phụ trách PMU, là nhà thầu chính quản lý nhiều gói thầu phụ cùng lúc, hoặc là chủ đầu tư muốn thiết lập hệ thống giám sát nhà thầu phụ bài bản hơn,**Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
+Nếu bạn đang phụ trách PMU, là nhà thầu chính quản lý nhiều gói thầu phụ cùng lúc, hoặc là chủ đầu tư muốn thiết lập hệ thống giám sát nhà thầu phụ bài bản hơn, HydrostructAI có thể hỗ trợ đánh giá hệ thống hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp phù hợp đặc thù dự án.
+
+Liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp.
 
 ---
 
