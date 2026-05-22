@@ -202,7 +202,7 @@ Thứ ba, yêu cầu công khai danh sách nhà thầu phụ chưa được th�
 So sánh khung pháp lý giữa Việt Nam và thực tiễn hợp đồng quốc tế:
 
 | Nội dung | FIDIC Red Book 2017 | Nghị định 175/2024 + Luật XD 135/2025 |
-|---------|--------------------|------------------------------------||
+|---------|--------------------|--------------------------------------|
 | Phê duyệt nhà thầu phụ | Kỹ sư phê duyệt, có quyền từ chối có lý do | Chủ đầu tư phê duyệt, thủ tục hành chính |
 | Trách nhiệm nhà thầu chính | Toàn bộ, bao gồm hành động của nhà thầu phụ | Toàn bộ về chất lượng và an toàn |
 | Quy trình giao diện | Sub-Clause 4.6 quy định phối hợp với các nhà thầu khác | Không quy định cụ thể cơ chế giao diện |
@@ -296,6 +296,16 @@ Pháp luật Việt Nam đặt ra khung đủ rõ về trách nhiệm. PMBOK 7 c
 Sự khác biệt giữa người quản lý dự án trung bình và người giỏi thực sự thường không nằm ở kỹ năng kỹ thuật hay hiểu biết hợp đồng. Nó nằm ở khả năng tạo ra sự gắn kết, trách nhiệm và kỷ luật thực thi trong toàn bộ hệ sinh thái dự án, kể cả với những người không ký hợp đồng trực tiếp với mình.
 
 > "Thành công hiếm khi phụ thuộc vào một đội duy nhất. Nó phụ thuộc vào cách nhiều đội, nhà cung cấp, chuyên gia và nhà thầu phụ phối hợp cùng nhau hướng đến một mục tiêu chung." (LinkedIn Pulse, 2024)[^1]
+
+---
+
+## Tham khảo thêm
+
+Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
+
+- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Khung pháp lý điều chỉnh mối quan hệ giữa chủ đầu tư, TVQLDA và nhà thầu theo Nghị định 175/2024. Bài này giải thích ai có thẩm quyền phê duyệt hay từ chối nhà thầu phụ.
+- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) — EVM theo gói thầu phụ là nền tảng để đo lường SPI và CPI từng nhà thầu phụ trong bảng OPPM đã trình bày.
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Điều kiện hiện trường, thời tiết và sự phụ thuộc chuỗi tạo ra các ràng buộc giao diện mà phần lớn tranh chấp nhà thầu phụ bắt nguồn từ đó.
 
 ---
 
