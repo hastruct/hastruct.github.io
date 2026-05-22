@@ -274,6 +274,16 @@ Luật Xây dựng 135/2025/QH15 và Nghị định 175/2024/NĐ-CP tạo ra khu
 
 ---
 
+## Tham khảo thêm
+
+Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
+
+- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) — Khung EVM để đo lường tích hợp tiến độ và chi phí: SPI, CPI, đường cơ sở và dự báo EAC. Công cụ kỹ thuật cốt lõi mà TVQLDA sử dụng để kiểm soát dự án.
+- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Sáu nguyên tắc từ thực tiễn quốc tế, đối chiếu FIDIC và PMBOK 7, với khung OPPM theo dõi hiệu suất nhà thầu phụ.
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù tạo bối cảnh mà mọi hệ thống TVQLDA phải vận hành trong đó.
+
+---
+
 ## Liên hệ tư vấn
 
 Nếu bạn đang gặp phải một hoặc nhiều vấn đề được mô tả trong bài viết này dù là với tư cách Chủ đầu tư, Ban quản lý dự án, hay Đơn vị tư vấn, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
