@@ -205,7 +205,7 @@ pyvista-cad/
         └── cad_to_fea_tet_mesh.py   # STEP → gmsh → .vtu
 ```
 
-pyvista-cad dùng thiết kế **không monkey-patch**: đăng ký reader vào `pv.read()` và accessor `.cad` qua cơ chế extension chính thống của PyVista, đảm bảo tương thích ngược khi PyVista cập nhật.
+pyvista-cad dùng thiết kế **không monkey-patch** (Xem giải thích [monkey-patch](https://vi.wikipedia.org/wiki/Monkey_patch)): đăng ký reader vào `pv.read()` và accessor `.cad` qua cơ chế extension chính thống của PyVista, đảm bảo tương thích ngược khi PyVista cập nhật.
 
 ### 3.3. Kiến trúc API và luồng dữ liệu
 
