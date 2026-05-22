@@ -22,7 +22,7 @@ tags:
   - Pháp lý xây dựng
   - Năng lực PM
   - Số hóa xây dựng
-excerpt: "Xây dựng Việt Nam đang trong giai đoạn thay đổi nhanh về quy mô vốn nhưng năng lực quản lý chưa theo kịp. Ba dữ liệu nói lên tất cả: tỷ lệ giải ngân vốn công, số vụ vi phạm chất lượng, và tỏ lệ PM có chứng chỉ quốc tế."
+excerpt: "Xây dựng Việt Nam đang trong giai đoạn thay đổi nhanh về quy mô vốn nhưng năng lực quản lý chưa theo kịp. Ba dữ liệu nói lên tất cả: tỷ lệ giải ngân vốn công, số vụ vi phạm chất lượng, và tỷ lệ PM có chứng chỉ quốc tế."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
@@ -31,7 +31,7 @@ header:
 
 ## Đặt vấn đề
 
-Cuoi năm 2025, Quốc hội giao chỉ tiêu giải ngân vốn đầu tư công là 95% kế hoạch. Thực tế: cả năm cả nước giải ngân được khoảng 77-80%, một số bộ ngành đạt dưới 50%. Chỉ tiêu được duy trì nhiều năm, kết quả dưới mức mục tiêu cũng được lhập lại nhiều năm. Đây không phải bất cẩn mà là dấu hiệu của vấn đề hệ thống.
+Cuối năm 2025, Quốc hội giao chỉ tiêu giải ngân vốn đầu tư công là 95% kế hoạch. Thực tế: cả năm cả nước giải ngân được khoảng 77-80%, một số bộ ngành đạt dưới 50%. Chỉ tiêu được duy trì nhiều năm, kết quả dưới mức mục tiêu cũng được lặp lại nhiều năm. Đây không phải bất cẩn mà là dấu hiệu của vấn đề hệ thống.
 
 Bài viết này tổng hợp thực trạng quản lý dự án xây dựng Việt Nam năm 2026 dựa trên các báo cáo chuyên ngành, kết quả kiểm toán và dữ liệu sẵn có từ cơ quan nhà nước.
 
@@ -41,15 +41,15 @@ Bài viết này tổng hợp thực trạng quản lý dự án xây dựng Vi�
 
 Tổng vốn đầu tư toàn xã hội năm 2025 ước tính khoảng 3,5 triệu tỷ đồng (tương đương khoảng 140 tỷ USD), trong đó vốn nhà nước chiếm khoảng 32%, vốn tư nhân khoảng 56%, FDI khoảng 12%. Phần lớn vốn nhà nước đưa vào các công trình giao thông, hạ tầng kỹ thuật, năng lượng và thủy lợi.
 
-Xây dựng trực tiếp chiếm khoảng 8-9% GDP, đưa Việt Nam vào nhóm nước có tỷ trọng xây dựng/GDP cao. Con số này phản ánh một giai đoạn đầu tư hạ tầng cường độ cao theo mô hình phát triển của các quốc gia Nhông Đông Á 20-30 năm trước.
+Xây dựng trực tiếp chiếm khoảng 8-9% GDP, đưa Việt Nam vào nhóm nước có tỷ trọng xây dựng/GDP cao. Con số này phản ánh một giai đoạn đầu tư hạ tầng cường độ cao theo mô hình phát triển của các quốc gia Đông Á 20-30 năm trước.
 
 ### 1.2. Chương trình 3.000 km đường cao tốc
 
 Mục tiêu hoàn thành 3.000 km đường cao tốc vào năm 2030 là dự án định hình lớn nhất ngành xây dựng Việt Nam hiện tại. Từ khoảng 1.800 km hoàn thành cuối 2024, cần thêm khoảng 1.200 km trong 6 năm. Tốc độ hoàn thành cần được duy trì gấp đôi so với trung bình 10 năm trước.
 
-Áp lực này chưa phải là bất khả thi về kỹ thuật, nhưng đòi hỏi năng lực quản lý dự án của cả hệ thống phải nâng cao rõ rệt. Các đại dự án cao tốc đang vận hành song song cũng đang đặt ra bài toán về quản lý chương trình (program management) chứ không chỉ quản lý dự án đơn lᮥ.
+Áp lực này chưa phải là bất khả thi về kỹ thuật, nhưng đòi hỏi năng lực quản lý dự án của cả hệ thống phải nâng cao rõ rệt. Các đại dự án cao tốc đang vận hành song song cũng đang đặt ra bài toán về quản lý chương trình (program management) chứ không chỉ quản lý dự án đơn lẻ.
 
-## 2. Vấn đề giải ngân: dai dẳng và có ngưỡn gốc hệ thống
+## 2. Vấn đề giải ngân: dai dẳng và có nguồn gốc hệ thống
 
 ### 2.1. Dữ liệu giải ngân 2020-2025
 
@@ -63,19 +63,19 @@ Vốn không giải ngân được có nhiều hệ lụy: chi phí cơ hội do
 
 Một hệ lụy ít được nói đến: vốn không giải ngân hết trong năm được chuyển sang năm sau, cộng với vốn mới của năm sau, tạo ra một khối lượng công việc tích lũy dần mà hệ thống không có năng lực hấp thụ thêm.
 
-## 3. Chất lượng công trình: tốn tại ở nhiều tầng
+## 3. Chất lượng công trình: tồn tại ở nhiều tầng
 
 ### 3.1. Kết quả thanh kiểm tra
 
 Theo báo cáo của Thanh tra Bộ Xây dựng (2024), tỷ lệ công trình kiểm tra có vi phạm quy định về quản lý chất lượng tiếp tục ở mức cao: khoảng 40-45% số công trình được thanh tra có ít nhất một sai sót về thủ tục hoặc kỹ thuật. Con số này chỉ phản ánh các vi phạm được phát hiện khi thanh tra, không phải toàn cảnh.
 
-Các loại sai sót phổ biến nhất theo thư tự: khối lượng quyết toán vượt khối lượng thực tế, hồ sơ nghiệm thu thiếu hạng mục, thất thoát vật liệu trong thi công, và nhà thầu phụ không đủ năng lực thực tế so với hồ sơ dự thầu.
+Các loại sai sót phổ biến nhất theo thứ tự: khối lượng quyết toán vượt khối lượng thực tế, hồ sơ nghiệm thu thiếu hạng mục, thất thoát vật liệu trong thi công, và nhà thầu phụ không đủ năng lực thực tế so với hồ sơ dự thầu.
 
 ### 3.2. Vấn đề giám sát thi công
 
-Luật Xây dựng quy định giám sát thi công là bắt buộc. Trong thực tế, chất lượng giám sát rất không đồng đều. Tại các dự án cấp quận huyện, giám sát được chỉ định thường là don vị có mối quan hệ với chủ đầu tư, không dựa trên tiêu chí năng lực kỹ thuật. Giám sát có mặt không đủ số ngày theo hợp đồng, chờ nhà thầu tu hóa rồi ký xác nhận sau.
+Luật Xây dựng quy định giám sát thi công là bắt buộc. Trong thực tế, chất lượng giám sát rất không đồng đều. Tại các dự án cấp quận huyện, giám sát được chỉ định thường là đơn vị có mối quan hệ với chủ đầu tư, không dựa trên tiêu chí năng lực kỹ thuật. Giám sát có mặt không đủ số ngày theo hợp đồng, chờ nhà thầu tu sửa rồi ký xác nhận sau.
 
-Nghị định 175/2024/NĐ-CP có một số quy định mới về điều kiện năng lực của nhà thầu giám sát, nhưng hiệu lực thực thi phụ thuộc vào các địt thanh kiểm tra thường xuyên hơn là quy định trên giấy.
+Nghị định 175/2024/NĐ-CP có một số quy định mới về điều kiện năng lực của nhà thầu giám sát, nhưng hiệu lực thực thi phụ thuộc vào các đợt thanh kiểm tra thường xuyên hơn là quy định trên giấy.
 
 ## 4. Năng lực quản lý dự án: khoảng cách giữa yêu cầu và thực tế
 
@@ -83,27 +83,27 @@ Nghị định 175/2024/NĐ-CP có một số quy định mới về điều ki�
 
 PMI ước tính tổng số chứng chỉ PMP tại Việt Nam cuối 2025 vào khoảng 4.500-5.000. Với quy mô ngành xây dựng có hơn 200.000 doanh nghiệp hoạt động đăng ký và hàng chục ngàn công trình triển khai mỗi năm, con số này phản ánh khoảng cách đầu tư vào năng lực quản lý chuyên nghiệp.
 
-Most PM Việt Nam trong ngành xây dựng trưởng thành từ kinh nghiệm hiện trường, không qua học quản lý dự án có cấu trúc. Đại đa số chưa bao giờ xây dựng WBS, không biết tính SPI hay CPI, chỉ thống kê % hoàn thành bằng quan sát chủ quan. Không phải vì họ không chấp nhận hay tối năng, mà vì hệ thống chưa yêu cầu.
+Hầu hết PM Việt Nam trong ngành xây dựng trưởng thành từ kinh nghiệm hiện trường, không qua học quản lý dự án có cấu trúc. Đại đa số chưa bao giờ xây dựng WBS, không biết tính SPI hay CPI, chỉ thống kê % hoàn thành bằng quan sát chủ quan. Không phải vì họ không chấp nhận hay không có năng lực, mà vì hệ thống chưa yêu cầu.
 
 ### 4.2. Khoảng cách giữa bằng cấp và năng lực thực tế
 
-Chứng chỉ hành nghề xây dựng theo quy định Việt Nam tập trung vào kỹ thuật chuyên ngành (khoảng kết cấu, nền móng, định giá xây dựng) chứ không bao gồm quản lý tiến độ theo đường găng, quản lý rủi ro có cấu trúc, EVM hay quản lý hợp đồng phức tạp. Đây là khoảng trống giữa chứng chỉ hành nghề quốc gia và cái mà dự án quy mô lớn thực sự cần.
+Chứng chỉ hành nghề xây dựng theo quy định Việt Nam tập trung vào kỹ thuật chuyên ngành (kết cấu, nền móng, định giá xây dựng) chứ không bao gồm quản lý tiến độ theo đường găng, quản lý rủi ro có cấu trúc, EVM hay quản lý hợp đồng phức tạp. Đây là khoảng trống giữa chứng chỉ hành nghề quốc gia và cái mà dự án quy mô lớn thực sự cần.
 
-Nhớn tích cực: nhiều doanh nghiệp lớn đã tự xây dựng chương trình đào tạo PM nội bộ, hoặc yêu cầu PMP là điều kiện cho các vị trí quản lý cấp cao. Xu hướng này rõ hơn ở khối doanh nghiệp FDI và các chủ đầu tư tư nhân lớn.
+Điểm tích cực: nhiều doanh nghiệp lớn đã tự xây dựng chương trình đào tạo PM nội bộ, hoặc yêu cầu PMP là điều kiện cho các vị trí quản lý cấp cao. Xu hướng này rõ hơn ở khối doanh nghiệp FDI và các chủ đầu tư tư nhân lớn.
 
 ## 5. Xu hướng số hóa và ứng dụng công nghệ
 
 ### 5.1. BIM: tiến độ triển khai
 
-Bộ Xây dựng bắt buộc áp dụng BIM cho các công trình cấp 1 sử dụng vốn nhà nước từ năm 2025. Trên thực tế triển khai, tỏ lệ công trình có mô hình BIM đáp ứng yêu cầu đầy đủ còn thấp, chủ yếu do thiếu phần mềm, nhân lực có kĩ năng BIM, và quy trình phê duyệt hồ sơ còn dựa trên bản vẽ 2D truyền thống.
+Bộ Xây dựng bắt buộc áp dụng BIM cho các công trình cấp 1 sử dụng vốn nhà nước từ năm 2025. Trên thực tế triển khai, tỷ lệ công trình có mô hình BIM đáp ứng yêu cầu đầy đủ còn thấp, chủ yếu do thiếu phần mềm, nhân lực có kĩ năng BIM, và quy trình phê duyệt hồ sơ còn dựa trên bản vẽ 2D truyền thống.
 
 Nhiều chủ đầu tư nộp hồ sơ BIM để tuân thủ quy định nhưng không thực sự sử dụng mô hình trong quản lý thi công. Điều này tạo ra một tình trạng: BIM trên hồ sơ và BIM trong thực tế tách rời nhau.
 
-### 5.2. Phần mềm quản lý dự án: từ Excel đến giài pháp tích hợp
+### 5.2. Phần mềm quản lý dự án: từ Excel đến giải pháp tích hợp
 
 Khảo sát không chính thức trong ngành (2024) cho thấy khoảng 60% các dự án xây dựng vừa và nhỏ tại Việt Nam sử dụng Excel là công cụ quản lý tiến độ chính. Procore, Primavera P6, MS Project được dùng chủ yếu tại các tổng thầu lớn hoặc dự án ODA có yêu cầu từ phía nhà tài trợ.
 
-Xu hướng dịch chuyỉn sang giải pháp đạm mây đang bắt đầu, đặc biệt sau khi một số công ty Việt Nam triển khai Procore và báo cáo giảm thời gian làm báo cáo 30-40% trong giai đoạn 2024-2025. Nhưng chi phí phần mềm vẫn là rào cản với các nhà thầu nhỏ và vừa.
+Xu hướng dịch chuyển sang giải pháp đám mây đang bắt đầu, đặc biệt sau khi một số công ty Việt Nam triển khai Procore và báo cáo giảm thời gian làm báo cáo 30-40% trong giai đoạn 2024-2025. Nhưng chi phí phần mềm vẫn là rào cản với các nhà thầu nhỏ và vừa.
 
 ## 6. Thay đổi chính sách 2024-2026 và định hướng
 
@@ -115,7 +115,7 @@ Về phía trách nhiệm cá nhân: đây là thay đổi đáng chú ý và đ
 
 ### 6.2. Xu hướng thiết kế-thi công (Design-Build)
 
-Nhiều dự án hạ tầng lớn đang chuyển sang mô hình hợp đồng thiết kế-thi công (DB) hoặc EPC thay vì Design-Bid-Build truyền thống. Như vậy có thể rút ngắn tổng thời gian, nhưng đặt ra yêu cầu cao hơn với chủ đầu tư trong việc định nghĩa yêu cầu đầu ra (output specification) thay vì thiết kế chi tiết đầu vào.
+Nhiều dự án hạ tầng lớn đang chuyển sang mô hình hợp đồng thiết kế-thi công (DB) hoặc EPC thay vì Design-Bid-Build truyền thống. Mô hình này có thể rút ngắn tổng thời gian, nhưng đặt ra yêu cầu cao hơn với chủ đầu tư trong việc định nghĩa yêu cầu đầu ra (output specification) thay vì thiết kế chi tiết đầu vào.
 
 Nhiều chủ đầu tư Việt Nam chưa có kinh nghiệm viết output specification tốt, dẫn đến tranh chấp trong hợp đồng DB về phạm vi công việc. Đây là lĩnh vực cần đào tạo và chuyển giao kiến thức rõ ràng hơn.
 
@@ -131,7 +131,7 @@ Khoảng 60-70% việc điều chỉnh dự án trong giai đoạn thi công có
 
 Không có cơ sở dữ liệu quốc gia về hiệu suất dự án xây dựng: thường xây xong mấy tiến độ so với khởi công, vượt dự toán trung bình bao nhiêu %, tỷ lệ dự án điều chỉnh lần 1/lần 2 là bao nhiêu. Không có dữ liệu hệ thống này, việc rút kinh nghiệm theo ngành rất khó thực hiện.
 
-Các nước có hệ thống quản lý dự án tốt như Hàn Quốc (K-PIMS), Singapore, ÚC đều có cơ sở dữ liệu hiệu suất dự án tổng hợp mà chủ đầu tư và nhà thầu có thể tham khảo để cân chuẩn kế hoạch của mình.
+Các nước có hệ thống quản lý dự án tốt như Hàn Quốc (K-PIMS), Singapore, Úc đều có cơ sở dữ liệu hiệu suất dự án tổng hợp mà chủ đầu tư và nhà thầu có thể tham khảo để cân chuẩn kế hoạch của mình.
 
 ## Kết luận
 
