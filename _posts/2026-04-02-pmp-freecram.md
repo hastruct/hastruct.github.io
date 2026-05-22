@@ -28,7 +28,7 @@ tags:
     Exam Preparation,
     "Kỹ năng lãnh đạo phục vụ"
   ]
-excerpt: "> *Phân tích chuyên sâu tài liệu luyện thi PMP Freecram v2025 (e7002)*: Chứng chỉ PMP là gì, điều kiện đăng ký, cấu trúc bài thi, phân bổ miền People-Process-Business, các lỗi thường gặp và chiến lược thi đỗ lần đầu trong 4–6 tuần."
+excerpt: "Tài liệu luyện thi PMP Freecram v2025 (e7002): Giới thiệu chứng chỉ PMP, điều kiện đăng ký, cấu trúc bài thi, phân bổ miền People-Process-Business, các lỗi thường gặp và chiến lược thi đỗ lần đầu trong thời gian ngắn."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
