@@ -80,7 +80,7 @@ Trên nhiều dự án, chủ đầu tư có cả PMU và PMC cùng lúc. Khi ra
 Nghị định 175/2024/NĐ-CP quy định TVQLDA có thể thực hiện toàn bộ hoặc một phần các nhóm công việc:
 
 | Nhóm công việc | Nội dung chủ yếu |
-|----------------|-----------------|
+|----------------|------------------|
 | Quản lý phạm vi | Theo dõi thay đổi thiết kế, phê duyệt phát sinh |
 | Quản lý tiến độ | Lập và kiểm soát tiến độ tổng thể, cảnh báo sớm |
 | Quản lý chi phí | Kiểm soát khối lượng, thẩm tra hồ sơ thanh toán |
@@ -111,9 +111,9 @@ Thông tư 06/2021/TT-BXD của Bộ Xây dựng quy định phân cấp công t
 
 **Giải pháp:**
 
-- **Trong hồ sơ mời thầu TVQLDA:** Yêu cầu CV chi tiết và chứng chỉ hành nghề của từng thành viên sẽ thực hiện dự án này cụ thể (không phải nhân sự chung của công ty); yêu cầu ít nhất hai dự án tương tự do *cùng nhóm nhân sự đó* thực hiện; bổ sung điều khoản cam kết không thay thế nhân sự chủ chốt mà không có sự chấp thuận bằng văn bản của chủ đầu tư trong năm đầu tiên.
-- **Trong hợp đồng TVQLDA:** Gắn điều kiện thanh toán với xác nhận nhân sự đúng theo đề xuất; quy định rõ chế tài nếu thay thế nhân sự không được chấp thuận.
-- **Về dài hạn:** Tổ chức đào tạo nội bộ theo định kỳ, kết hợp với chương trình chứng chỉ PMP, FIDIC hoặc các khóa đào tạo BIM chuyên ngành.
+- Trong hồ sơ mời thầu TVQLDA: Yêu cầu CV chi tiết và chứng chỉ hành nghề của từng thành viên sẽ thực hiện dự án này cụ thể (không phải nhân sự chung của công ty); yêu cầu ít nhất hai dự án tương tự do *cùng nhóm nhân sự đó* thực hiện; bổ sung điều khoản cam kết không thay thế nhân sự chủ chốt mà không có sự chấp thuận bằng văn bản của chủ đầu tư trong năm đầu tiên.
+- Trong hợp đồng TVQLDA: Gắn điều kiện thanh toán với xác nhận nhân sự đúng theo đề xuất; quy định rõ chế tài nếu thay thế nhân sự không được chấp thuận.
+- Về dài hạn: Tổ chức đào tạo nội bộ theo định kỳ, kết hợp với chương trình chứng chỉ PMP, FIDIC hoặc các khóa đào tạo BIM chuyên ngành.
 
 ---
 
@@ -135,9 +135,9 @@ Nghị định 175/2024/NĐ-CP phân định rõ tại Chương III về trách 
 
 **Giải pháp:**
 
-- **Trước khi khởi công:** Ban hành **Quy chế quản lý dự án** (Project Management Manual) được tất cả các bên ký xác nhận. Tài liệu này xác định: ma trận quyết định theo từng loại vấn đề (thẩm quyền quyết định của ai, ai được tham vấn, ai chỉ cần thông báo); quy trình lưu chuyển hồ sơ và thời hạn phản hồi tối đa; đầu mối duy nhất tiếp nhận kiến nghị từ nhà thầu.
-- **Trong hợp đồng TVQLDA:** Liệt kê cụ thể các thẩm quyền được ủy quyền theo Điều 26 NĐ 175/2024, kèm giới hạn giá trị quyết định và quy trình báo cáo lên chủ đầu tư. Quyền hạn rõ ràng hơn giúp TVQLDA hành động kịp thời thay vì chờ phê duyệt từng bước.
-- **Ứng dụng OPPM:** Báo cáo tổng hợp tuần/tháng theo mô hình OPPM giúp chủ đầu tư nắm nhanh trạng thái toàn dự án và ra quyết định kịp thời dựa trên thông tin được cập nhật đầy đủ [^7].
+- Trước khi khởi công: Ban hành Quy chế quản lý dự án (Project Management Manual) được tất cả các bên ký xác nhận. Tài liệu này xác định: ma trận quyết định theo từng loại vấn đề (thẩm quyền quyết định của ai, ai được tham vấn, ai chỉ cần thông báo); quy trình lưu chuyển hồ sơ và thời hạn phản hồi tối đa; đầu mối duy nhất tiếp nhận kiến nghị từ nhà thầu.
+- Trong hợp đồng TVQLDA: Liệt kê cụ thể các thẩm quyền được ủy quyền theo Điều 26 NĐ 175/2024, kèm giới hạn giá trị quyết định và quy trình báo cáo lên chủ đầu tư. Quyền hạn rõ ràng hơn giúp TVQLDA hành động kịp thời thay vì chờ phê duyệt từng bước.
+- Ứng dụng OPPM: Báo cáo tổng hợp tuần/tháng theo mô hình OPPM giúp chủ đầu tư nắm nhanh trạng thái toàn dự án và ra quyết định kịp thời dựa trên thông tin được cập nhật đầy đủ [^7].
 
 ---
 
@@ -153,17 +153,17 @@ Một vướng mắc phổ biến cụ thể: hồ sơ điều chỉnh tổng m�
 
 **Căn cứ pháp lý:**
 
-- **Luật Xây dựng 135/2025/QH15**, Điều 61–65: Điều kiện và quy trình điều chỉnh dự án đầu tư xây dựng.
-- **Nghị định 175/2024/NĐ-CP**, Chương V: Thủ tục thực hiện các bước trong quản lý dự án và thời hạn giải quyết thủ tục hành chính.
-- **Nghị định 06/2021/NĐ-CP** (sửa đổi bởi **Nghị định 35/2023/NĐ-CP**), Điều 15–22: Quy trình kiểm tra và nghiệm thu chất lượng công trình [^4].
-- **Thông tư 07/2021/TT-BXD**: Hướng dẫn quy trình thực hiện hợp đồng xây dựng [^10].
+- Luật Xây dựng 135/2025/QH15, Điều 61–65: Điều kiện và quy trình điều chỉnh dự án đầu tư xây dựng.
+- Nghị định 175/2024/NĐ-CP, Chương V: Thủ tục thực hiện các bước trong quản lý dự án và thời hạn giải quyết thủ tục hành chính.
+- Nghị định 06/2021/NĐ-CP (sửa đổi bởi Nghị định 35/2023/NĐ-CP), Điều 15–22: Quy trình kiểm tra và nghiệm thu chất lượng công trình [^4].
+- Thông tư 07/2021/TT-BXD: Hướng dẫn quy trình thực hiện hợp đồng xây dựng [^10].
 
 **Giải pháp:**
 
-- **Xây dựng thư viện pháp lý nội bộ:** Duy trì cơ sở dữ liệu văn bản pháp luật được cập nhật, phân loại theo từng loại vấn đề (hợp đồng, chất lượng, chi phí, an toàn). Giao một người phụ trách theo dõi và cập nhật thay đổi pháp lý hàng tháng.
-- **Đầu tư vào năng lực pháp lý:** Ít nhất một thành viên nhóm TVQLDA phải có chuyên môn về pháp lý xây dựng và đấu thầu, không chỉ dựa vào tư vấn pháp lý thuê ngoài cho từng vụ việc.
-- **Chủ động lập kế hoạch thủ tục:** Lập "bản đồ thủ tục hành chính" ngay từ đầu dự án, xác định thời hạn xử lý pháp lý của mỗi bước và kết nối vào lịch tổng thể của dự án. Khi dự án gần đến bước cần thủ tục phê duyệt, bắt đầu chuẩn bị hồ sơ trước ít nhất ba tháng.
-- **Tư vấn chủ động về rủi ro pháp lý:** Thay vì chờ vướng mắc xảy ra, TVQLDA nên định kỳ đánh giá rủi ro pháp lý của dự án và cảnh báo sớm cho chủ đầu tư về các thay đổi quy định có thể ảnh hưởng đến dự án.
+- Xây dựng thư viện pháp lý nội bộ: Duy trì cơ sở dữ liệu văn bản pháp luật được cập nhật, phân loại theo từng loại vấn đề (hợp đồng, chất lượng, chi phí, an toàn). Giao một người phụ trách theo dõi và cập nhật thay đổi pháp lý hàng tháng.
+- Đầu tư vào năng lực pháp lý: Ít nhất một thành viên nhóm TVQLDA phải có chuyên môn về pháp lý xây dựng và đấu thầu, không chỉ dựa vào tư vấn pháp lý thuê ngoài cho từng vụ việc.
+- Chủ động lập kế hoạch thủ tục: Lập "bản đồ thủ tục hành chính" ngay từ đầu dự án, xác định thời hạn xử lý pháp lý của mỗi bước và kết nối vào lịch tổng thể của dự án. Khi dự án gần đến bước cần thủ tục phê duyệt, bắt đầu chuẩn bị hồ sơ trước ít nhất ba tháng.
+- Tư vấn chủ động về rủi ro pháp lý: Thay vì chờ vướng mắc xảy ra, TVQLDA nên định kỳ đánh giá rủi ro pháp lý của dự án và cảnh báo sớm cho chủ đầu tư về các thay đổi quy định có thể ảnh hưởng đến dự án.
 
 ---
 
@@ -183,10 +183,10 @@ Nghị định 10/2021/NĐ-CP quy định phương pháp tính chi phí tư vấ
 
 **Giải pháp:**
 
-- **Đánh giá giá thầu tư vấn theo giá trị, không chỉ theo giá thấp:** Trong tiêu chí chấm thầu TVQLDA, giảm tỷ trọng điểm giá, tăng tỷ trọng điểm kỹ thuật, đặc biệt về nhân sự và phương pháp luận. Theo Điều 76 Nghị định 24/2024/NĐ-CP về đấu thầu, gói thầu dịch vụ tư vấn được phép áp dụng tiêu chí chất lượng làm yếu tố quyết định chính.
-- **Tách bạch rõ vai trò tư vấn:** Ngay từ giai đoạn lập kế hoạch lựa chọn nhà thầu, xác định các gói tư vấn có xung đột lợi ích tiềm tàng và tổ chức đấu thầu riêng. Tư vấn lập báo cáo nghiên cứu khả thi và tư vấn thẩm tra thiết kế không nên là cùng một đơn vị.
-- **Thiết lập KPI và chế tài trong hợp đồng:** Gắn thanh toán với kết quả đo lường được (số báo cáo được chấp thuận đúng hạn, số lần cảnh báo rủi ro trước khi sự cố xảy ra, tỷ lệ hồ sơ thanh toán không có sai sót phải trả lại), không chỉ thanh toán theo thời gian. Cơ chế thưởng khi dự án hoàn thành sớm hoặc tiết kiệm chi phí có kiểm soát tạo động cơ tích cực cho TVQLDA.
-- **Số hóa quy trình làm việc:** Ứng dụng nền tảng quản lý dự án số (phần mềm, cloud) để tăng tính minh bạch trong theo dõi công việc, lưu vết quyết định và đảm bảo tất cả các bên có cùng thông tin tại cùng thời điểm, giảm không gian cho sự thiếu minh bạch [^13].
+- Đánh giá giá thầu tư vấn theo giá trị, không chỉ theo giá thấp: Trong tiêu chí chấm thầu TVQLDA, giảm tỷ trọng điểm giá, tăng tỷ trọng điểm kỹ thuật, đặc biệt về nhân sự và phương pháp luận. Theo Điều 76 Nghị định 24/2024/NĐ-CP về đấu thầu, gói thầu dịch vụ tư vấn được phép áp dụng tiêu chí chất lượng làm yếu tố quyết định chính.
+- Tách bạch rõ vai trò tư vấn: Ngay từ giai đoạn lập kế hoạch lựa chọn nhà thầu, xác định các gói tư vấn có xung đột lợi ích tiềm tàng và tổ chức đấu thầu riêng. Tư vấn lập báo cáo nghiên cứu khả thi và tư vấn thẩm tra thiết kế không nên là cùng một đơn vị.
+- Thiết lập KPI và chế tài trong hợp đồng: Gắn thanh toán với kết quả đo lường được (số báo cáo được chấp thuận đúng hạn, số lần cảnh báo rủi ro trước khi sự cố xảy ra, tỷ lệ hồ sơ thanh toán không có sai sót phải trả lại), không chỉ thanh toán theo thời gian. Cơ chế thưởng khi dự án hoàn thành sớm hoặc tiết kiệm chi phí có kiểm soát tạo động cơ tích cực cho TVQLDA.
+- Số hóa quy trình làm việc: Ứng dụng nền tảng quản lý dự án số (phần mềm, cloud) để tăng tính minh bạch trong theo dõi công việc, lưu vết quyết định và đảm bảo tất cả các bên có cùng thông tin tại cùng thời điểm, giảm không gian cho sự thiếu minh bạch [^13].
 
 ---
 
@@ -206,17 +206,17 @@ Thay vì chỉ kiểm tra hồ sơ năng lực trên giấy, quy trình lựa ch
 
 Hợp đồng TVQLDA hiệu quả phải xác định rõ ít nhất ba nhóm nội dung:
 
-1. **Phạm vi và đầu ra cụ thể:** Danh sách tối thiểu 20 sản phẩm bàn giao (deliverables) kèm tiêu chí chấp thuận và thời hạn nộp.
-2. **Quyền hạn được ủy quyền:** Theo Điều 26 NĐ 175/2024, liệt kê cụ thể những quyết định nào TVQLDA được tự quyết, giới hạn giá trị và quy trình báo cáo ngược.
-3. **KPI đo lường và chế tài:** Không dưới năm chỉ số đo lường hiệu suất, kèm điều kiện giải ngân từng đợt và hậu quả khi không đạt.
+1. Phạm vi và đầu ra cụ thể: Danh sách tối thiểu 20 sản phẩm bàn giao (deliverables) kèm tiêu chí chấp thuận và thời hạn nộp.
+2. Quyền hạn được ủy quyền: Theo Điều 26 NĐ 175/2024, liệt kê cụ thể những quyết định nào TVQLDA được tự quyết, giới hạn giá trị và quy trình báo cáo ngược.
+3. KPI đo lường và chế tài: Không dưới năm chỉ số đo lường hiệu suất, kèm điều kiện giải ngân từng đợt và hậu quả khi không đạt.
 
 ### 3.3. Hệ thống báo cáo tích hợp và minh bạch
 
 Áp dụng mô hình báo cáo ba cấp độ:
 
-- **Cấp công trường (tuần):** Biên bản kiểm tra hiện trường, khối lượng hoàn thành, sự cố và tồn tại cần xử lý.
-- **Cấp dự án (hai tuần / tháng):** Báo cáo OPPM tổng hợp tiến độ, chi phí, rủi ro và các vấn đề cần quyết định từ chủ đầu tư [^7].
-- **Cấp chủ đầu tư (quý):** Báo cáo giám sát đánh giá đầu tư theo Nghị định 29/2021/NĐ-CP [^12].
+- Cấp công trường (tuần): Biên bản kiểm tra hiện trường, khối lượng hoàn thành, sự cố và tồn tại cần xử lý.
+- Cấp dự án (hai tuần / tháng): Báo cáo OPPM tổng hợp tiến độ, chi phí, rủi ro và các vấn đề cần quyết định từ chủ đầu tư [^7].
+- Cấp chủ đầu tư (quý): Báo cáo giám sát đánh giá đầu tư theo Nghị định 29/2021/NĐ-CP [^12].
 
 Ba cấp độ báo cáo sử dụng cùng dữ liệu nguồn, chỉ khác mức độ chi tiết và đối tượng đọc. Dữ liệu được lưu trữ trên nền tảng số chung, tất cả các bên có quyền truy cập theo phân cấp, đây là nền tảng của tính minh bạch.
 
@@ -274,9 +274,19 @@ Luật Xây dựng 135/2025/QH15 và Nghị định 175/2024/NĐ-CP tạo ra khu
 
 ---
 
+## Tham khảo thêm
+
+Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
+
+- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) — Khung EVM để đo lường tích hợp tiến độ và chi phí: SPI, CPI, đường cơ sở và dự báo EAC. Công cụ kỹ thuật cốt lõi mà TVQLDA sử dụng để kiểm soát dự án.
+- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Sáu nguyên tắc từ thực tiễn quốc tế, đối chiếu FIDIC và PMBOK 7, với khung OPPM theo dõi hiệu suất nhà thầu phụ.
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù tạo bối cảnh mà mọi hệ thống TVQLDA phải vận hành trong đó.
+
+---
+
 ## Liên hệ tư vấn
 
-Nếu bạn đang gặp phải một hoặc nhiều vấn đề được mô tả trong bài viết này dù là với tư cách Chủ đầu tư, Ban quản lý dự án, hay Đơn vị tư vấn, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
+Nếu bạn đang gặp phải một hoặc nhiều vấn đề được mô tả trong bài viết này dù là với tư cách Chủ đầu tư, Ban quản lý dự án, hay Đơn vị tư vấn, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
 
 ---
 

@@ -63,27 +63,27 @@ Bài viết này phân tích khung tư duy đó, cách áp dụng trong bối c�
 
 PMBOK phiên bản 7 (2021) tiếp cận quản lý tiến độ như một vòng lặp kiểm soát liên tục, không phải một nhiệm vụ lập kế hoạch một lần [^2]. Sáu quy trình chính của lĩnh vực này trong PMBOK 6 (được tham chiếu rộng rãi trong thực tiễn) bao gồm:
 
-**Xác định hoạt động (Define Activities):** Phân rã WBS thành các hoạt động đủ nhỏ để ước lượng và theo dõi. Đây là bước thường bị bỏ qua hoặc làm qua loa trong dự án xây dựng Việt Nam: WBS được lập theo hạng mục hợp đồng thay vì theo hoạt động có thể theo dõi tiến độ thực tế.
+Xác định hoạt động (Define Activities): Phân rã WBS thành các hoạt động đủ nhỏ để ước lượng và theo dõi. Đây là bước thường bị bỏ qua hoặc làm qua loa trong dự án xây dựng Việt Nam: WBS được lập theo hạng mục hợp đồng thay vì theo hoạt động có thể theo dõi tiến độ thực tế.
 
-**Sắp xếp trình tự (Sequence Activities):** Xác định mối quan hệ phụ thuộc giữa các hoạt động. Trong dự án xây dựng, mối quan hệ Finish-to-Start là phổ biến, nhưng nhiều trường hợp thực tế có quan hệ Start-to-Start hoặc Finish-to-Finish cần được mô hình hóa chính xác để lịch tổng thể phản ánh đúng hiện thực thi công.
+Sắp xếp trình tự (Sequence Activities): Xác định mối quan hệ phụ thuộc giữa các hoạt động. Trong dự án xây dựng, mối quan hệ Finish-to-Start là phổ biến, nhưng nhiều trường hợp thực tế có quan hệ Start-to-Start hoặc Finish-to-Finish cần được mô hình hóa chính xác để lịch tổng thể phản ánh đúng hiện thực thi công.
 
-**Ước lượng thời gian (Estimate Activity Durations):** Dữ liệu lịch sử từ các dự án tương tự là nguồn tin cậy nhất. Trong bối cảnh thiếu cơ sở dữ liệu lịch sử có hệ thống của ngành xây dựng Việt Nam, nhiều dự án ước lượng theo kinh nghiệm cá nhân của kỹ sư lập lịch, dẫn đến sai lệch lớn.
+Ước lượng thời gian (Estimate Activity Durations): Dữ liệu lịch sử từ các dự án tương tự là nguồn tin cậy nhất. Trong bối cảnh thiếu cơ sở dữ liệu lịch sử có hệ thống của ngành xây dựng Việt Nam, nhiều dự án ước lượng theo kinh nghiệm cá nhân của kỹ sư lập lịch, dẫn đến sai lệch lớn.
 
-**Xây dựng lịch biểu (Develop Schedule):** Kết hợp toàn bộ thông tin trên để tạo ra lịch biểu tổng thể kèm đường Găng (Critical Path). Đường Găng xác định chuỗi hoạt động quyết định thời gian hoàn thành dự án, bất kỳ sự chậm trễ nào trên chuỗi này đều làm chậm toàn bộ dự án.
+Xây dựng lịch biểu (Develop Schedule): Kết hợp toàn bộ thông tin trên để tạo ra lịch biểu tổng thể kèm đường Găng (Critical Path). Đường Găng xác định chuỗi hoạt động quyết định thời gian hoàn thành dự án, bất kỳ sự chậm trễ nào trên chuỗi này đều làm chậm toàn bộ dự án.
 
-**Kiểm soát tiến độ (Control Schedule):** Đây là quy trình thực sự tạo giá trị, nhưng cũng là quy trình bị bỏ sót nhiều nhất. Kiểm soát tiến độ không phải cập nhật tiến độ, mà là so sánh tiến độ thực tế với baseline, phân tích nguyên nhân sai lệch và ra quyết định điều chỉnh.
+Kiểm soát tiến độ (Control Schedule): Đây là quy trình thực sự tạo giá trị, nhưng cũng là quy trình bị bỏ sót nhiều nhất. Kiểm soát tiến độ không phải cập nhật tiến độ, mà là so sánh tiến độ thực tế với baseline, phân tích nguyên nhân sai lệch và ra quyết định điều chỉnh.
 
 ### 1.2. Quản lý chi phí (Cost Management)
 
 Bốn quy trình trong lĩnh vực quản lý chi phí của PMBOK tạo ra một chuỗi logic từ kế hoạch đến kiểm soát [^3]:
 
-**Lập kế hoạch quản lý chi phí:** Xác định đơn vị đo lường, mức độ chính xác cần thiết, và chu kỳ cập nhật chi phí, thường bị bỏ qua vì người ta cho rằng "chi phí theo dự toán là đủ".
+Lập kế hoạch quản lý chi phí: Xác định đơn vị đo lường, mức độ chính xác cần thiết, và chu kỳ cập nhật chi phí, thường bị bỏ qua vì người ta cho rằng "chi phí theo dự toán là đủ".
 
-**Ước lượng chi phí:** Gắn kết chi phí ước tính với từng hoạt động trong WBS, không phải với từng hạng mục hợp đồng tổng hợp. Sự khác biệt này quan trọng: chi phí theo hạng mục hợp đồng cho biết đã chi bao nhiêu tiền, nhưng không cho biết khối lượng đó có đúng kế hoạch không.
+Ước lượng chi phí: Gắn kết chi phí ước tính với từng hoạt động trong WBS, không phải với từng hạng mục hợp đồng tổng hợp. Sự khác biệt này quan trọng: chi phí theo hạng mục hợp đồng cho biết đã chi bao nhiêu tiền, nhưng không cho biết khối lượng đó có đúng kế hoạch không.
 
-**Xác định ngân sách:** Tổng hợp chi phí ước tính thành đường ngân sách tổng thể (cost baseline) theo thời gian, là đường cong S (S-curve) thường thấy trong báo cáo tiến độ. Đường S này là cơ sở duy nhất để đánh giá tiến độ giải ngân thực tế.
+Xác định ngân sách: Tổng hợp chi phí ước tính thành đường ngân sách tổng thể (cost baseline) theo thời gian, là đường cong S (S-curve) thường thấy trong báo cáo tiến độ. Đường S này là cơ sở duy nhất để đánh giá tiến độ giải ngân thực tế.
 
-**Kiểm soát chi phí:** So sánh chi phí thực tế với ngân sách theo kế hoạch, kết hợp với dữ liệu tiến độ để đánh giá hiệu quả chi tiêu: đã chi bao nhiêu, và khối lượng hoàn thành có đúng kế hoạch không.
+Kiểm soát chi phí: So sánh chi phí thực tế với ngân sách theo kế hoạch, kết hợp với dữ liệu tiến độ để đánh giá hiệu quả chi tiêu: đã chi bao nhiêu, và khối lượng hoàn thành có đúng kế hoạch không.
 
 ---
 
@@ -100,7 +100,7 @@ Earned Value Management (EVM) giải quyết bài toán này bằng cách đặt
 EVM xây dựng trên ba chỉ số gốc, được tính tại bất kỳ thời điểm nào trong vòng đời dự án:
 
 | Chỉ số | Ký hiệu | Định nghĩa |
-|--------|---------|-----------|
+|--------|---------|------------|
 | Planned Value | PV | Giá trị ngân sách cho khối lượng dự kiến hoàn thành đến thời điểm đo |
 | Earned Value | EV | Giá trị ngân sách cho khối lượng thực tế đã hoàn thành |
 | Actual Cost | AC | Chi phí thực tế đã chi cho khối lượng đã hoàn thành |
@@ -136,17 +136,17 @@ Trong đó BAC (Budget at Completion) là tổng ngân sách được duyệt. N
 
 Với dự án đầu tư công tại Việt Nam, vượt quá 10% tổng mức đầu tư yêu cầu phê duyệt điều chỉnh theo Điều 62 Luật Xây dựng số 135/2025/QH15 [^5]. Nếu PMU có dự báo EAC từ sớm (ví dụ khi dự án mới đạt 30% khối lượng), quy trình điều chỉnh có thể được khởi động trước khi thực sự vượt ngưỡng, thay vì phải xử lý khủng hoảng sau khi đã vượt.
 
-**VAC (Variance at Completion = BAC − EAC):** Chỉ số này cho biết dự án dự kiến sẽ tiết kiệm hay vượt chi bao nhiêu so với ngân sách được duyệt khi hoàn thành. VAC âm là tín hiệu cần chuẩn bị hồ sơ điều chỉnh tổng mức đầu tư.
+VAC (Variance at Completion = BAC − EAC): Chỉ số này cho biết dự án dự kiến sẽ tiết kiệm hay vượt chi bao nhiêu so với ngân sách được duyệt khi hoàn thành. VAC âm là tín hiệu cần chuẩn bị hồ sơ điều chỉnh tổng mức đầu tư.
 
 ### 2.5. Chu kỳ ba giai đoạn vận hành hệ thống EVM
 
 Khung EVM là chu kỳ vận hành có cấu trúc, gồm ba giai đoạn với mục tiêu và đầu ra khác nhau:
 
-**Giai đoạn 1 (Lập kế hoạch, tuần đầu dự án):** Thiết lập cấu trúc phân công công việc (WBS) đủ chi tiết để gán nguồn lực và chi phí; xây dựng bộ tài nguyên (nhân công, máy móc, vật tư) với đơn giá cụ thể; tính toán Cost Baseline (đường S-curve, cơ sở duy nhất để đánh giá giải ngân trong suốt vòng đời dự án); xác định đường Găng ban đầu.
+Giai đoạn 1 (Lập kế hoạch, tuần đầu dự án): Thiết lập cấu trúc phân công công việc (WBS) đủ chi tiết để gán nguồn lực và chi phí; xây dựng bộ tài nguyên (nhân công, máy móc, vật tư) với đơn giá cụ thể; tính toán Cost Baseline (đường S-curve, cơ sở duy nhất để đánh giá giải ngân trong suốt vòng đời dự án); xác định đường Găng ban đầu.
 
-**Giai đoạn 2 (Giám sát thực hiện, hàng tuần trong thi công):** Cập nhật % hoàn thành thực tế từng công tác theo phương pháp đo lường đã định nghĩa; tính BCWP (EV) và so sánh với BCWS (PV) và ACWP (AC); tính SPI, CPI, dự báo EAC; kích hoạt cảnh báo khi chỉ số vượt ngưỡng; sinh báo cáo tiến độ kèm phân tích nguyên nhân.
+Giai đoạn 2 (Giám sát thực hiện, hàng tuần trong thi công): Cập nhật % hoàn thành thực tế từng công tác theo phương pháp đo lường đã định nghĩa; tính BCWP (EV) và so sánh với BCWS (PV) và ACWP (AC); tính SPI, CPI, dự báo EAC; kích hoạt cảnh báo khi chỉ số vượt ngưỡng; sinh báo cáo tiến độ kèm phân tích nguyên nhân.
 
-**Giai đoạn 3 (Dự báo và kết thúc, giai đoạn cuối dự án):** Phân tích xu hướng SPI/CPI xuyên suốt dự án để rút bài học; so sánh tiến độ thực tế với baseline (As-Built vs. Baseline); hoàn thiện báo cáo quyết toán với dữ liệu EVM làm cơ sở kiểm toán; lưu trữ dữ liệu năng suất thực tế làm benchmark cho dự án tương lai.
+Giai đoạn 3 (Dự báo và kết thúc, giai đoạn cuối dự án): Phân tích xu hướng SPI/CPI xuyên suốt dự án để rút bài học; so sánh tiến độ thực tế với baseline (As-Built vs. Baseline); hoàn thiện báo cáo quyết toán với dữ liệu EVM làm cơ sở kiểm toán; lưu trữ dữ liệu năng suất thực tế làm benchmark cho dự án tương lai.
 
 Ba giai đoạn này tương ứng với ba nhóm câu hỏi khác nhau: "Chúng ta đang đi đúng hướng không?" (Giai đoạn 2), "Chúng ta sẽ kết thúc như thế nào?" (Giai đoạn 3), và "Chúng ta có cơ sở để lập kế hoạch chính xác hơn lần sau không?" (kết quả từ Giai đoạn 3 đưa vào Giai đoạn 1 của dự án tiếp theo).
 
@@ -156,12 +156,12 @@ Ba giai đoạn này tương ứng với ba nhóm câu hỏi khác nhau: "Chúng
 
 Trước khi chọn phần mềm, cần hiểu rằng chất lượng của hệ thống EVM phụ thuộc trực tiếp vào hai cấu trúc dữ liệu nền tảng: cấu trúc phân công công việc (WBS) và bộ tài nguyên (Resource Pool). Nếu hai cấu trúc này không được thiết lập đúng, phần mềm dù tốt đến đâu cũng không tính được EV chính xác.
 
-### 3.0. Cấu trúc WBS 4 tầng cho dự án xây dựng
+### 3.1. Cấu trúc WBS 4 tầng cho dự án xây dựng
 
 WBS là xương sống của toàn bộ hệ thống. Với dự án xây dựng Việt Nam, cấu trúc 4 tầng sau đây phù hợp với cả cách tổ chức hợp đồng và yêu cầu theo dõi tiến độ chi tiết:
 
 | Tầng | Cấp độ | Ví dụ | Chức năng |
-|------|--------|-------|-----------|
+|------|--------|-------|----------|
 | Tầng 1 | Dự án | Dự án cầu vượt sông X | Tổng hợp toàn bộ |
 | Tầng 2 | Giai đoạn / Gói thầu | Gói thầu xây lắp chính | Theo dõi theo hợp đồng |
 | Tầng 3 | Hạng mục công trình | Phần móng, Phần thân, MEP | Theo dõi kỹ thuật |
@@ -171,15 +171,15 @@ Tầng 4 là cấp duy nhất có thể gán trực tiếp nhân công, máy mó
 
 Mỗi tầng 4 cần được gắn với: thời gian bắt đầu và kết thúc, danh sách tài nguyên được gán, phương pháp đo lường % hoàn thành, và một cột mốc (Milestone) khi hoàn thành nghiệm thu. Milestone là điểm kiểm soát trong lịch biểu, không có thời lượng nhưng là ranh giới rõ ràng giữa "đang làm" và "đã xong được xác nhận".
 
-### 3.0b. Bộ tài nguyên (Resource Pool) cho xây dựng Việt Nam
+### 3.2. Bộ tài nguyên (Resource Pool) cho xây dựng Việt Nam
 
 Resource Pool trong hệ thống quản lý dự án xây dựng cần phân thành ba nhóm rõ ràng:
 
-**Nhóm nhân công (Work Resources):** Kỹ sư công trường, chỉ huy trưởng, giám sát hiện trường, thợ bê tông, thợ sắt, thợ nề, thợ ván khuôn, an toàn viên. Đơn giá tính theo giờ, phân biệt giờ thường và giờ tăng ca. Lịch làm việc theo lịch công trường thực tế: Thứ 2 đến Thứ 7, hai buổi sáng chiều, không áp dụng lịch tiêu chuẩn văn phòng.
+Nhóm nhân công (Work Resources): Kỹ sư công trường, chỉ huy trưởng, giám sát hiện trường, thợ bê tông, thợ sắt, thợ nề, thợ ván khuôn, an toàn viên. Đơn giá tính theo giờ, phân biệt giờ thường và giờ tăng ca. Lịch làm việc theo lịch công trường thực tế: Thứ 2 đến Thứ 7, hai buổi sáng chiều, không áp dụng lịch tiêu chuẩn văn phòng.
 
-**Nhóm máy móc thiết bị (cũng là Work Resources nhưng tính chi phí khác):** Máy đào, xe bơm bê tông, cần trục tháp, xe tải, máy đầm. Đơn giá có thể phân tách thành: đơn giá theo giờ vận hành (hourly rate) và chi phí cố định mỗi lần huy động (cost per use). Bơm bê tông ví dụ có chi phí huy động xe tương đối cao cố định mỗi lần, không phụ thuộc số giờ bơm.
+Nhóm máy móc thiết bị (cũng là Work Resources nhưng tính chi phí khác): Máy đào, xe bơm bê tông, cần trục tháp, xe tải, máy đầm. Đơn giá có thể phân tách thành: đơn giá theo giờ vận hành (hourly rate) và chi phí cố định mỗi lần huy động (cost per use). Bơm bê tông ví dụ có chi phí huy động xe tương đối cao cố định mỗi lần, không phụ thuộc số giờ bơm.
 
-**Nhóm vật liệu (Material Resources):** Bê tông thương phẩm (m³), thép (tấn), gạch (viên), xi măng (kg), cát (m³), ván khuôn (m²). Đơn giá theo đơn vị vật liệu, không phải theo giờ. Chi phí vật liệu được ghi nhận (Accrue) tại thời điểm bắt đầu sử dụng (Start) không phải phân bổ theo thời gian.
+Nhóm vật liệu (Material Resources): Bê tông thương phẩm (m³), thép (tấn), gạch (viên), xi măng (kg), cát (m³), ván khuôn (m²). Đơn giá theo đơn vị vật liệu, không phải theo giờ. Chi phí vật liệu được ghi nhận (Accrue) tại thời điểm bắt đầu sử dụng (Start) không phải phân bổ theo thời gian.
 
 Khi Resource Pool được xây dựng đúng, phần mềm có thể tính tự động: tổng chi phí nhân công của từng công tác, chi phí máy móc theo ca, chi phí vật liệu theo khối lượng thực tế, rồi tổng hợp lên thành Cost Baseline cho toàn dự án. Đây là cơ sở để tính AC thực tế và so sánh với EV.
 
@@ -330,13 +330,17 @@ Dự án đầu tư công Việt Nam có đủ khung pháp lý để triển kha
 
 ## Tham khảo thêm
 
-Nếu bạn đang cân nhắc cách tổ chức hệ thống quản lý tiến độ và chi phí cho dự án đang chuẩn bị hoặc đang triển khai, bài viết [**Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp**](/posts/tvqlda-van-de-giai-phap/) đăng ngày 19/5/2026 phân tích bốn nhóm vấn đề cụ thể mà đơn vị tư vấn quản lý dự án thường gặp, kèm căn cứ pháp lý theo Nghị định 175/2024/NĐ-CP và Luật Xây dựng 135/2025/QH15, là nền tảng pháp lý để giao đúng vai trò cho TVQLDA trong việc vận hành hệ thống EVM.
+Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
+
+- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Bốn nhóm vấn đề TVQLDA kèm căn cứ pháp lý theo Nghị định 175/2024 và Luật Xây dựng 135/2025. Nền tảng để hiểu ai có vai trò triển khai hệ thống EVM trong cấu trúc dự án.
+- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Chi phí và tiến độ nhà thầu phụ là dữ liệu nguồn của EVM ở cấp gói thầu. Bài này phân tích cách thu thập và đo lường dữ liệu đó trong thực tế.
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù tạo bối cảnh ảnh hưởng trực tiếp đến khả năng cập nhật baseline và tính chính xác của EVM.
 
 ---
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang là cán bộ PMU, chủ đầu tư hoặc tư vấn quản lý dự án muốn thiết lập hệ thống kiểm soát tiến độ và chi phí tích hợp theo chuẩn PMBOK cho dự án xây dựng đang triển khai tại Việt Nam, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá hệ thống hiện tại, thiết kế quy trình EVM phù hợp với quy mô và bối cảnh pháp lý của dự án, lựa chọn và cấu hình phần mềm phù hợp, và đào tạo đội ngũ PMU theo ba cấp độ năng lực.
+Nếu bạn đang là cán bộ PMU, chủ đầu tư hoặc tư vấn quản lý dự án muốn thiết lập hệ thống kiểm soát tiến độ và chi phí tích hợp theo chuẩn PMBOK cho dự án xây dựng đang triển khai tại Việt Nam, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá hệ thống hiện tại, thiết kế quy trình EVM phù hợp với quy mô và bối cảnh pháp lý của dự án, lựa chọn và cấu hình phần mềm phù hợp, và đào tạo đội ngũ PMU theo ba cấp độ năng lực.
 
 ---
 

@@ -77,7 +77,7 @@ Theo Nghị định 175/2024/NĐ-CP, nhà thầu phụ là nhà thầu ký hợp
 Trong thực tế dự án, có thể phân loại nhà thầu phụ theo ba chiều quan trọng về mặt quản lý:
 
 | Tiêu chí | Loại | Đặc điểm quản lý |
-|----------|------|-----------------|
+|----------|------|------------------|
 | Theo chuyên ngành | Kết cấu, MEP, hoàn thiện, thiết bị | Yêu cầu kỹ thuật đặc thù từng ngành |
 | Theo vị trí hợp đồng | Nêu trong hồ sơ dự thầu / bổ sung sau | Loại bổ sung sau phải được chủ đầu tư chấp thuận |
 | Theo giá trị đảm nhận | Trên 10% giá hợp đồng chính / dưới 10% | Mức độ giám sát, báo cáo và rủi ro tương ứng |
@@ -93,7 +93,7 @@ Tiêu chí thành công của nhà thầu phụ cũng đôi khi không trùng kh
 Hậu quả phổ biến khi quản lý nhà thầu phụ không có cấu trúc:
 
 | Loại sự cố | Nguyên nhân gốc rễ | Tác động |
-|-----------|------------------|---------|
+|-----------|------------------|----------|
 | Trễ tiến độ hạng mục | Không có kế hoạch dự phòng, thiếu phối hợp giao diện trước | Kéo theo trễ các gói phụ thuộc |
 | Làm lại (rework) | Hiểu sai phạm vi, không kiểm tra đầu ra trước khi bàn giao | 5% đến 15% giá trị gói thầu |
 | Tranh chấp hợp đồng | Ranh giới giao diện và điều kiện bàn giao mặt bằng không rõ ràng | Kéo dài thủ tục, phát sinh chi phí pháp lý |
@@ -202,7 +202,7 @@ Thứ ba, yêu cầu công khai danh sách nhà thầu phụ chưa được th�
 So sánh khung pháp lý giữa Việt Nam và thực tiễn hợp đồng quốc tế:
 
 | Nội dung | FIDIC Red Book 2017 | Nghị định 175/2024 + Luật XD 135/2025 |
-|---------|--------------------|------------------------------------|
+|---------|--------------------|--------------------------------------|
 | Phê duyệt nhà thầu phụ | Kỹ sư phê duyệt, có quyền từ chối có lý do | Chủ đầu tư phê duyệt, thủ tục hành chính |
 | Trách nhiệm nhà thầu chính | Toàn bộ, bao gồm hành động của nhà thầu phụ | Toàn bộ về chất lượng và an toàn |
 | Quy trình giao diện | Sub-Clause 4.6 quy định phối hợp với các nhà thầu khác | Không quy định cụ thể cơ chế giao diện |
@@ -299,9 +299,19 @@ Sự khác biệt giữa người quản lý dự án trung bình và người g
 
 ---
 
+## Tham khảo thêm
+
+Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
+
+- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Khung pháp lý điều chỉnh mối quan hệ giữa chủ đầu tư, TVQLDA và nhà thầu theo Nghị định 175/2024. Bài này giải thích ai có thẩm quyền phê duyệt hay từ chối nhà thầu phụ.
+- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) — EVM theo gói thầu phụ là nền tảng để đo lường SPI và CPI từng nhà thầu phụ trong bảng OPPM đã trình bày.
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Điều kiện hiện trường, thời tiết và sự phụ thuộc chuỗi tạo ra các ràng buộc giao diện mà phần lớn tranh chấp nhà thầu phụ bắt nguồn từ đó.
+
+---
+
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang phụ trách PMU, là nhà thầu chính quản lý nhiều gói thầu phụ cùng lúc, hoặc là chủ đầu tư muốn thiết lập hệ thống giám sát nhà thầu phụ bài bản hơn, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp để được hỗ trợ đánh giá hệ thống hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp phù hợp đặc thù dự án.
+Nếu bạn đang phụ trách PMU, là nhà thầu chính quản lý nhiều gói thầu phụ cùng lúc, hoặc là chủ đầu tư muốn thiết lập hệ thống giám sát nhà thầu phụ bài bản hơn, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp để được hỗ trợ đánh giá hệ thống hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp phù hợp đặc thù dự án.
 
 ---
 
