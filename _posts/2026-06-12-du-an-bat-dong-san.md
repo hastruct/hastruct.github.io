@@ -160,7 +160,7 @@ Các bài trong chuỗi quản lý dự án xây dựng:
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang quản lý dự án bất động sản và cần hỗ trợ xây dựng hệ thống kiểm soát tiến độ, giao diện nhà thầu hoặc báo cáo EVM phù hợp với thực tế Việt Nam, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp.
+Nếu dự án của bạn đang trong giai đoạn hoàn thiện với lịch bàn giao đã cam kết với khách hàng, và bạn chưa có hệ thống EVM theo từng tòa, khoảng rủi ro đó là số thực. Liên hệ để đánh giá: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com).
 
 ---
 
