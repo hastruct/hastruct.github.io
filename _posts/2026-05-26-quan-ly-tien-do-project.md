@@ -161,7 +161,7 @@ Trước khi chọn phần mềm, cần hiểu rằng chất lượng của hệ
 WBS là xương sống của toàn bộ hệ thống. Với dự án xây dựng Việt Nam, cấu trúc 4 tầng sau đây phù hợp với cả cách tổ chức hợp đồng và yêu cầu theo dõi tiến độ chi tiết:
 
 | Tầng | Cấp độ | Ví dụ | Chức năng |
-|------|--------|-------|-----------|
+|------|--------|-------|----------|
 | Tầng 1 | Dự án | Dự án cầu vượt sông X | Tổng hợp toàn bộ |
 | Tầng 2 | Giai đoạn / Gói thầu | Gói thầu xây lắp chính | Theo dõi theo hợp đồng |
 | Tầng 3 | Hạng mục công trình | Phần móng, Phần thân, MEP | Theo dõi kỹ thuật |
@@ -330,7 +330,11 @@ Dự án đầu tư công Việt Nam có đủ khung pháp lý để triển kha
 
 ## Tham khảo thêm
 
-Nếu bạn đang cân nhắc cách tổ chức hệ thống quản lý tiến độ và chi phí cho dự án đang chuẩn bị hoặc đang triển khai, bài viết [**Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp**](/posts/tvqlda-van-de-giai-phap/) đăng ngày 19/5/2026 phân tích bốn nhóm vấn đề cụ thể mà đơn vị tư vấn quản lý dự án thường gặp, kèm căn cứ pháp lý theo Nghị định 175/2024/NĐ-CP và Luật Xây dựng 135/2025/QH15, là nền tảng pháp lý để giao đúng vai trò cho TVQLDA trong việc vận hành hệ thống EVM.
+Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
+
+- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Bốn nhóm vấn đề TVQLDA kèm căn cứ pháp lý theo Nghị định 175/2024 và Luật Xây dựng 135/2025. Nền tảng để hiểu ai có vai trò triển khai hệ thống EVM trong cấu trúc dự án.
+- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Chi phí và tiến độ nhà thầu phụ là dữ liệu nguồn của EVM ở cấp gói thầu. Bài này phân tích cách thu thập và đo lường dữ liệu đó trong thực tế.
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù tạo bối cảnh ảnh hưởng trực tiếp đến khả năng cập nhật baseline và tính chính xác của EVM.
 
 ---
 
