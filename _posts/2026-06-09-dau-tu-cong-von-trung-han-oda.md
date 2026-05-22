@@ -184,7 +184,7 @@ Bài viết [**Hướng dẫn quản lý tiến độ và chi phí theo chuẩn 
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn là cán bộ PMU hoặc chủ đầu tư đang cần hỗ trợ xây dựng hệ thống kiểm soát tiến độ và giải ngân cho dự án đầu tư công hoặc ODA, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp.
+Nếu đơn vị bạn đang gặp khó khăn với giải ngân dưới 70% kế hoạch, hoặc đang chuẩn bị đàm phán hợp đồng ODA, liên hệ để đánh giá hệ thống kiểm soát tiến độ và tài chính hiện tại: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com).
 
 ---
 
