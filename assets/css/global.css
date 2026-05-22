@@ -493,3 +493,54 @@ div.highlighter-rouge pre.highlight {
   }
   */
 }
+/* =========================================================
+   EXCERPT RENDER FIX — JEKYLL / MINIMAL MISTAKES
+   ========================================================= */
+
+/* Hero excerpt */
+.page__hero--overlay .page__lead,
+.page__hero--overlay .page__lead p,
+.page__hero--overlay .page__lead blockquote {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* Neutralize markdown blockquote inside excerpt */
+.page__hero--overlay .page__lead blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-style: normal;
+    line-height: inherit;
+}
+
+/* Homepage card excerpt */
+.card-excerpt {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    color: #4a4a5e;
+    line-height: 1.65;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+/* Prevent block elements from breaking line clamp */
+.card-excerpt p,
+.card-excerpt blockquote {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-style: normal;
+}

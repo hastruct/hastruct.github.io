@@ -618,10 +618,3 @@
   text-decoration: underline !important;
 }
 
-/* Đổi màu chữ Blockquote trong vùng Hero Banner thành màu trắng */
-.page__hero--overlay blockquote,
-.page__hero--overlay blockquote p {
-  color: #ffffff !important;
-  font-style: italic; /* Giữ chữ nghiêng nếu muốn */
-  border-left-color: rgba(255, 255, 255, 0.5) !important; /* Đổi màu đường kẻ sọc sang trắng mờ */
-}
