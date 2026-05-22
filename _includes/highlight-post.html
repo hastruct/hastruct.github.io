@@ -20,7 +20,7 @@
     </h3>
     
     <p class="post-card__excerpt">
-      {{ post.excerpt | strip_html | truncatewords: 25 }}
+      {{ post.excerpt | markdownify | strip_html | truncatewords: 25 }}
     </p>
 
     <a href="{{ post.url | relative_url }}" class="post-card__readmore">Xem chi tiết →</a>
