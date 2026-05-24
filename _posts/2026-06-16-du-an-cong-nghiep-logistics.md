@@ -97,7 +97,7 @@ Vào thời điểm 2025-2026, các kho có chiều cao giá kệ trên 7,5m có
 
 Khác với dự án bất động sản nơi khách hàng thường chấp nhận trễ hạn một thời gian hợp lý nếu có giải trình hợp lý, hợp đồng thuê công nghiệp với khách FDI thường bao gồm điều khoản phạt nghịch cụ thể: phạt tiền theo ngày trễ, quyền hủy hợp đồng sau một thời gian trễ nhất định, và điều khoản bồi thường chi phí di dời hoạt động sản xuất của khách thuê.
 
-Bất lợi cho chủ đầu tư: các lý do bất khả kháng trong hợp đồng công nghiệp theo thông lệ quốc tế thường hẹp hơn so với luật Việt Nam. Lý do thiếu giấy phép xây dựng hoặc vướng mắc PCCC — nếu là của chủ đầu tư — thường không được chấp nhận là bất khả kháng trong hợp đồng thuê FDI.
+Bất lợi cho chủ đầu tư: các lý do bất khả kháng trong hợp đồng công nghiệp theo thông lệ quốc tế thường hẹp hơn so với luật Việt Nam. Lý do vướng mắc PCCC — nếu là của chủ đầu tư — thường không được chấp nhận là bất khả kháng trong hợp đồng thuê FDI.
 
 ### 5.2. Giao tiếp kỹ thuật với khách thuê quốc tế
 
@@ -129,12 +129,16 @@ Phòng ngừa vẫn tốt hơn xử lý: freeze design sớm, lập kế hoạch
 
 ## Tham khảo thêm
 
-Các bài trong chuỗi quản lý dự án xây dựng:
+Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
 
-- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/)
+- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Khung pháp lý về TVQLDA và cách phân định quyền hạn giữa chủ đầu tư khu công nghiệp, PMC và nhà thầu thi công theo Nghị định 175/2024.
+- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) — Báo cáo tiến độ theo chuẩn EVM cho khách thuê FDI: SPI, CPI và EAC là ngôn ngữ kỹ thuật mà đội kỹ thuật của khách thuê quốc tế quen dùng.
+- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Điều phối giao diện thiết bị và các đơn vị commissioning chuyên ngành: nguyên tắc interface management trực tiếp áp dụng cho giai đoạn cuối dự án FDI.
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù nền tảng, trong đó “nhiều bên liên quan” và “chu kỳ thanh toán” có tác động trực tiếp đến bối cảnh FDI.
 - [Đầu tư công trong xây dựng: vốn trung hạn, ODA và những nút thắt hệ thống](/posts/dau-tu-cong-von-trung-han-oda/)
 - [Dự án bất động sản: khi áp lực thị trường chi phối tiến độ xây dựng](/posts/du-an-bat-dong-san/)
-- [Quản lý nhà thầu phụ trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/)
+
+---
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
