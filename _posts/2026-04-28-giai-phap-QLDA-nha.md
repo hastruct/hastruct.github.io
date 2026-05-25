@@ -56,7 +56,7 @@ Nhìn vào các chỉ số này, có vài vấn đề cốt lõi chúng ta cần
 
 Đầu tiên, 70% chủ nhà sai ngay từ vạch xuất phát. Tức là chưa gọi thợ, chưa ép cọc đã sai. Mọi người thường sai vì chốt phương án vội vàng, không tính toán kỹ công năng sinh hoạt thực tế, hoặc đơn giản là tự gộp nhặt mỗi nơi một ít bản vẽ trên mạng về ghép lại thành nhà mình.
 
-Hệ quả của việc chuẩn bị ẩu là phải sửa đổi. Tỷ lệ chi phí sửa lỗi trên bản vẽ so với khi nhà đã xây xong là 1:25 (Áp dụng định luật Boehm vào xây dựng). Tẩy một nét chì hay sửa một file Cad chẳng tốn đồng nào, nhưng đập một bức tường đã trát tốn cả chục triệu bạc và hàng tuần dọn dẹp phế thải. Tôi luôn nói với khách hàng: bỏ tiền thuê thiết kế bài bản ban đầu không phải là chi phí, mà là cách rẻ nhất để mua bảo hiểm cho túi tiền của bạn.
+Hệ quả của việc thiếu chuẩn bị là phải sửa đổi nhiều lần. Tỷ lệ chi phí sửa lỗi trên bản vẽ so với khi nhà đã xây xong là 1:25 (Áp dụng định luật Boehm vào xây dựng). Tẩy một nét chì hay sửa một file Cad chẳng tốn đồng nào, nhưng đập một bức tường đã trát tốn cả chục triệu bạc và hàng tuần dọn dẹp phế thải. Tôi luôn nói với khách hàng: bỏ tiền thuê thiết kế bài bản ban đầu không phải là chi phí, mà là cách rẻ nhất để mua bảo hiểm cho túi tiền của bạn.
 
 Tiếp theo là câu chuyện đội vốn. Mức phát sinh trung bình 10-20% gần như là "luật bất thành văn" nếu bạn không quản lý kỹ. Bất cứ ai chuẩn bị xây nhà cũng phải có sẵn khoản dự phòng này. Vật tư tăng giá thường chỉ chiếm phần nhỏ; nguyên nhân chính nằm ở việc chủ nhà liên tục đổi ý khi thấy công trình dần thành hình, đòi làm thêm cái này, ốp thêm cái kia.
 
