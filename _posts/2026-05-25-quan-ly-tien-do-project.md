@@ -2,7 +2,7 @@
 title: "Tại sao dự án xây dựng phát hiện vấn đề quá muộn và cách EVM giải quyết điều đó"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-05-26 18:00:00 +0700
+date: 2026-05-25 14:00:00 +0700
 layout: single
 featured: true
 toc: true
