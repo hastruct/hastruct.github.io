@@ -47,9 +47,9 @@ header:
 
 Báo cáo tổng hợp kết quả kiểm toán năm 2024 của Kiểm toán Nhà nước ghi nhận hàng trăm dự án đầu tư công vi phạm tiến độ hợp đồng, trong đó phần lớn kéo theo vượt tổng mức đầu tư được duyệt [^1]. Đây không phải con số bất thường của một năm; đây là xu hướng lặp lại qua nhiều chu kỳ kiểm toán liên tiếp.
 
-Câu hỏi đặt ra không phải "tại sao dự án trễ tiến độ", câu trả lời đó thường rõ ràng: giải phóng mặt bằng chậm, thời tiết bất lợi, nhà thầu thiếu năng lực, thiết kế phải điều chỉnh. Câu hỏi thực sự là: **tại sao người ra quyết định biết quá muộn rằng dự án đang trật bánh?**
+Câu hỏi đặt ra không phải "tại sao dự án chậm tiến độ", câu trả lời đó thường rõ ràng: giải phóng mặt bằng chậm, thời tiết bất lợi, nhà thầu thiếu năng lực, thiết kế phải điều chỉnh. Câu hỏi thực sự là: **tại sao người ra quyết định biết quá muộn rằng dự án đang trật bánh?**
 
-Trong nhiều trường hợp được ghi nhận, dự án đã trễ nhiều tháng nhưng báo cáo tiến độ định kỳ vẫn cho thấy "đạt kế hoạch" hoặc "chậm tiến độ nhẹ". Nguyên nhân nằm ở một vấn đề phương pháp cơ bản: tiến độ và chi phí được theo dõi riêng rẽ, trên hai hệ thống khác nhau, theo hai chu kỳ khác nhau, bởi hai bộ phận khác nhau. Không có cơ sở tham chiếu thống nhất để đánh giá xem khối lượng đã hoàn thành thực sự tương ứng với bao nhiêu phần trăm kế hoạch và tiêu tốn bao nhiêu ngân sách.
+Trong nhiều trường hợp được ghi nhận, dự án đã chậm nhiều tháng nhưng báo cáo tiến độ định kỳ vẫn cho thấy "đạt kế hoạch" hoặc "chậm tiến độ nhẹ". Nguyên nhân nằm ở một vấn đề phương pháp cơ bản: tiến độ và chi phí được theo dõi riêng rẽ, trên hai hệ thống khác nhau, theo hai chu kỳ khác nhau, bởi hai bộ phận khác nhau. Không có cơ sở tham chiếu thống nhất để đánh giá xem khối lượng đã hoàn thành thực sự tương ứng với bao nhiêu phần trăm kế hoạch và tiêu tốn bao nhiêu ngân sách.
 
 PMBOK (Cẩm nang Kiến thức Quản lý Dự án do Project Management Institute xuất bản) đề xuất một cách tiếp cận khác: tích hợp quản lý tiến độ và chi phí ngay từ giai đoạn lập kế hoạch thông qua một đường cơ sở (baseline) duy nhất, và đo lường sai lệch bằng hệ thống chỉ số có thể hành động được.
 
@@ -110,7 +110,7 @@ EVM xây dựng trên ba chỉ số gốc, được tính tại bất kỳ thờ
 
 Sự khác biệt giữa PV và EV nói lên trạng thái tiến độ bằng đơn vị tiền: nếu EV < PV, dự án đang chậm tiến độ theo giá trị đã đặt kế hoạch. Sự khác biệt giữa EV và AC nói lên hiệu quả chi phí: nếu AC > EV, dự án đang tốn nhiều hơn ngân sách cho cùng khối lượng hoàn thành.
 
-### 2.3. Sáu chỉ số phái sinh và ngưỡng hành động
+### 2.3. Sáu chỉ số liên quan và hành động tương ứng
 
 Từ ba chỉ số gốc, EVM tính ra các chỉ số phái sinh có tính hành động cao. Bảng dưới đây tổng hợp sáu chỉ số quan trọng nhất kèm ngưỡng cảnh báo thực tiễn cho dự án xây dựng:
 
@@ -129,7 +129,7 @@ Từ ba chỉ số gốc, EVM tính ra các chỉ số phái sinh có tính hàn
 
 **TCPI** là chỉ số ít được sử dụng nhưng rất có giá trị: nó cho biết để hoàn thành phần khối lượng còn lại đúng trong ngân sách ban đầu, CPI từ giờ trở đi phải đạt bao nhiêu. TCPI > 1,1 nghĩa là mỗi đồng ngân sách còn lại phải tạo ra 1,1 đồng giá trị, và mức này trên thực tế hầu như không đạt được nếu không có can thiệp cơ cấu.
 
-### 2.4. Dự báo chi phí cuối dự án (EAC) và ngưỡng pháp lý
+### 2.4. Dự báo chi phí cuối dự án (EAC) và điều chỉnh
 
 Giá trị thực sự của EVM không nằm ở việc mô tả trạng thái hiện tại, mà ở khả năng dự báo kết quả cuối dự án từ dữ liệu hiện tại. Công thức phổ biến nhất:
 
