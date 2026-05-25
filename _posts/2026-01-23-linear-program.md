@@ -30,7 +30,7 @@ tags:
     "Nghiên cứu hoạt động",
     PMBOK
   ]
-excerpt: "> *Hướng dẫn toàn diện quy hoạch tuyến tính (Linear Programming)*: Cơ sở toán học, phương pháp Simplex, Interior Point, chi tiết mô hình hóa 3 bài toán thực tế (Sản xuất, Vận chuyển, CPM Dự án) với code Python SciPy, biểu đồ trực quan hóa và kết quả tối ưu."
+excerpt: " *Hướng dẫn toàn diện quy hoạch tuyến tính (Linear Programming)*: Cơ sở toán học, phương pháp Simplex, Interior Point, chi tiết mô hình hóa 3 bài toán thực tế (Sản xuất, Vận chuyển, CPM Dự án) với code Python SciPy, biểu đồ trực quan hóa và kết quả tối ưu."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"

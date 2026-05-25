@@ -1,5 +1,5 @@
 ---
-title: "Hướng dẫn quản lý tiến độ và chi phí xây dựng, tiếp cận theo chuẩn PMBOK"
+title: "Tại sao dự án xây dựng phát hiện vấn đề quá muộn và cách EVM giải quyết điều đó"
 author_profile: true
 author_name: "HST.AI"
 date: 2026-05-26 18:00:00 +0700
@@ -63,7 +63,7 @@ Bài viết này phân tích khung tư duy đó, cách áp dụng trong bối c�
 
 PMBOK phiên bản 7 (2021) tiếp cận quản lý tiến độ như một vòng lặp kiểm soát liên tục, không phải một nhiệm vụ lập kế hoạch một lần [^2]. Sáu quy trình chính của lĩnh vực này trong PMBOK 6 (được tham chiếu rộng rãi trong thực tiễn) bao gồm:
 
-Xác định hoạt động (Define Activities): Phân rã WBS thành các hoạt động đủ nhỏ để ước lượng và theo dõi. Đây là bước thường bị bỏ qua hoặc làm qua loa trong dự án xây dựng Việt Nam: WBS được lập theo hạng mục hợp đồng thay vì theo hoạt động có thể theo dõi tiến độ thực tế.
+Xác định hoạt động (Define Activities): Phân rã các hoạt động (Work breakdown structure, WBS) thành các hoạt động đủ nhỏ để ước lượng và theo dõi. Đây là bước thường bị bỏ qua hoặc làm qua loa trong dự án xây dựng Việt Nam: WBS được lập theo hạng mục hợp đồng thay vì theo hoạt động có thể theo dõi tiến độ thực tế.
 
 Sắp xếp trình tự (Sequence Activities): Xác định mối quan hệ phụ thuộc giữa các hoạt động. Trong dự án xây dựng, mối quan hệ Finish-to-Start là phổ biến, nhưng nhiều trường hợp thực tế có quan hệ Start-to-Start hoặc Finish-to-Finish cần được mô hình hóa chính xác để lịch tổng thể phản ánh đúng hiện thực thi công.
 
@@ -72,6 +72,9 @@ Sắp xếp trình tự (Sequence Activities): Xác định mối quan hệ ph�
 Xây dựng lịch biểu (Develop Schedule): Kết hợp toàn bộ thông tin trên để tạo ra lịch biểu tổng thể kèm đường Găng (Critical Path). Đường Găng xác định chuỗi hoạt động quyết định thời gian hoàn thành dự án, bất kỳ sự chậm trễ nào trên chuỗi này đều làm chậm toàn bộ dự án.
 
 Kiểm soát tiến độ (Control Schedule): Đây là quy trình thực sự tạo giá trị, nhưng cũng là quy trình bị bỏ sót nhiều nhất. Kiểm soát tiến độ không phải cập nhật tiến độ, mà là so sánh tiến độ thực tế với baseline, phân tích nguyên nhân sai lệch và ra quyết định điều chỉnh.
+
+
+![Tiến độ dự án](\assets\images\posts\2026-05-26-quan-ly-tien-do-project/construction-gantt-resources-costs-150-2048x1095.jpg) *Hình minh họa tiến độ dự án. (Nguồn: projectmanager.com)
 
 ### 1.2. Quản lý chi phí (Cost Management)
 

@@ -76,7 +76,11 @@ Nguyên nhân pháp lý và thủ tục: thẩm định dự án, thẩm định
 
 Nguyên nhân GPMB: như đã phân tích trong bài trước của chuỗi này, GPMB chậm là nguyên nhân trực tiếp làm trễ hàng loạt dự án. Không có mặt bằng thì không có chỗ thi công, và không thể giải ngân cho khối lượng chưa thi công.
 
+<<<<<<< Updated upstream
 Nguyên nhân năng lực: nhiều PMU địa phương không có đủ nhân sự có chuyên môn để xử lý đồng thời nhiều dự án. Cán bộ phụ trách kiêm nhiệm nhiều vai trò, hồ sơ nghiệm thu tồn đậng, quyết toán hoàn thành chậm kéo dài nhiều năm sau khi dự án bàn giao đưa vào sử dụng.
+=======
+Nguyên nhân năng lực: nhiều PMU địa phương không có đủ nhân sự có chuyên môn để xử lý đồng thời nhiều dự án. Cán bộ phụ trách kiêm nhiệm nhiều vai trò, hồ sơ nghiệm thu tồn đọng, quyết toán hoàn thành chậm kéo dài nhiều năm sau khi dự án bàn giao đưa vào sử dụng.
+>>>>>>> Stashed changes
 
 ### 2.2. Hậu quả của giải ngân thấp
 
@@ -116,7 +120,11 @@ Ngoài ra, vốn ODA không phải là viện trợ không hoàn lại, dù lãi
 
 ---
 
+<<<<<<< Updated upstream
 ## 4. Quy trình phê duyệt nhiều tầng và điểm nghận
+=======
+## 4. Quy trình phê duyệt nhiều tầng và điểm nghẽn
+>>>>>>> Stashed changes
 
 ### 4.1. Phân cấp quyết định theo thẩm quyền
 
@@ -176,12 +184,18 @@ Bài tiếp theo trong chuỗi này sẽ chuyển sang khu vực tư nhân, nơi
 
 ## Tham khảo thêm
 
+<<<<<<< Updated upstream
 Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
 
 - [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Bốn vấn đề cốt lõi của TVQLDA trong dự án đầu tư công: nhân sự PMU, phân định quyền hạn, pháp lý và áp lực tài chính. Nền tảng để xây dựng hệ thống quản lý cho PMU.
 - [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) — EVM hỗ trợ PMU giám sát giải ngân và tiến độ tích hợp. Bao gồm ngưỡng cảnh báo pháp lý khi EAC vượt 10% BAC theo Luật Xây dựng 135/2025.
 - [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Quản lý chuỗi nhà thầu phụ trong dự án đầu tư công: phân định trách nhiệm, KPI và hệ thống báo cáo theo Nghị định 175/2024.
 - [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù làm nền tảng hiểu tại sao quản lý vốn công trong xây dựng phức tạp hơn các ngành khác.
+=======
+Bài viết [**Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác**](/posts/dac-thu-du-an-xay-dung/) phân tích các đặc thù chung làm nền tảng hiểu tại sao quản lý vốn công trong xây dựng phức tạp hơn các ngành khác.
+
+Bài viết [**Hướng dẫn quản lý tiến độ và chi phí theo chuẩn PMBOK**](/posts/quan-ly-tien-do-project/) trình bày cách EVM hỗ trợ PMU giám sát giải ngân và tiến độ tích hợp trong dự án đầu tư công.
+>>>>>>> Stashed changes
 
 ---
 

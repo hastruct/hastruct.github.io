@@ -83,7 +83,11 @@ Nghị định 175/2024/NĐ-CP có một số quy định mới về điều ki�
 
 PMI ước tính tổng số chứng chỉ PMP tại Việt Nam cuối 2025 vào khoảng 4.500-5.000. Với quy mô ngành xây dựng có hơn 200.000 doanh nghiệp hoạt động đăng ký và hàng chục ngàn công trình triển khai mỗi năm, con số này phản ánh khoảng cách đầu tư vào năng lực quản lý chuyên nghiệp.
 
+<<<<<<< Updated upstream
 Hầu hết PM Việt Nam trong ngành xây dựng trưởng thành từ kinh nghiệm hiện trường, không qua học quản lý dự án có cấu trúc. Đại đa số chưa bao giờ xây dựng WBS, không biết tính SPI hay CPI, chỉ thống kê % hoàn thành bằng quan sát chủ quan. Hệ thống EVM và cách thiết lập WBS chuẩn được phân tích tại [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/). Không phải vì họ không chấp nhận hay không có năng lực, mà vì hệ thống chưa yêu cầu.
+=======
+Hầu hết PM Việt Nam trong ngành xây dựng trưởng thành từ kinh nghiệm hiện trường, không qua học quản lý dự án có cấu trúc. Đại đa số chưa bao giờ xây dựng WBS, không biết tính SPI hay CPI, chỉ thống kê % hoàn thành bằng quan sát chủ quan. Không phải vì họ không chấp nhận hay không có năng lực, mà vì hệ thống chưa yêu cầu.
+>>>>>>> Stashed changes
 
 ### 4.2. Khoảng cách giữa bằng cấp và năng lực thực tế
 
@@ -141,6 +145,7 @@ Vấn đề không phải thiếu vốn hay thiếu kỹ thuật. Vấn đề l�
 
 ## Tham khảo thêm
 
+<<<<<<< Updated upstream
 Các bài trong chuỗi quản lý dự án xây dựng đi sâu vào giải pháp cho từng vấn đề được phân tích trong bài này:
 
 - [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Giải pháp cụ thể cho bốn vấn đề TVQLDA đã được Kiểm toán Nhà nước chỉ ra nhiều năm: nhân sự, quyền hạn, pháp lý và áp lực tài chính.
@@ -148,12 +153,21 @@ Các bài trong chuỗi quản lý dự án xây dựng đi sâu vào giải ph�
 - [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Sáu nguyên tắc quản lý nhà thầu phụ từ thực tiễn quốc tế: giải pháp cho vấn đề "phần lớn vi phạm chất lượng bắt nguồn từ nhà thầu phụ không được quản lý đúng cách".
 - [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù cấu trúc giải thích tại sao tỷ lệ trễ tiến độ và vượt chi phí trong ngành xây dựng cao hơn các ngành khác.
 - [Đầu tư công trong xây dựng: vốn trung hạn, ODA và những nút thắt hệ thống](/posts/dau-tu-cong-von-trung-han-oda/) — Phân tích chuyên sâu ba nhóm nguyên nhân giải ngân thấp và khuyến nghị thực tiễn cho PMU.
+=======
+Các bài trong chuỗi quản lý dự án xây dựng:
+
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/)
+- [Đầu tư công trong xây dựng: vốn trung hạn, ODA và những nút thắt hệ thống](/posts/dau-tu-cong-von-trung-han-oda/)
+>>>>>>> Stashed changes
 - [Dự án bất động sản: khi áp lực thị trường chi phối tiến độ xây dựng](/posts/du-an-bat-dong-san/)
 - [Dự án công nghiệp và logistics: cam kết với nhà đầu tư nước ngoài](/posts/du-an-cong-nghiep-logistics/)
 - [Dự án hạ tầng nông nghiệp và vùng khó: đặc thù ít được viết đủ](/posts/du-an-ha-tang-nong-nghiep/)
 
+<<<<<<< Updated upstream
 ---
 
+=======
+>>>>>>> Stashed changes
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
 Nếu bạn muốn hiểu sâu hơn về thực trạng và cách xây dựng hệ thống quản lý dự án phù hợp với bối cảnh Việt Nam, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp.

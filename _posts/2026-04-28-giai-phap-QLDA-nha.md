@@ -27,7 +27,7 @@ tags:
     Nghị định 175,
     Owner's Representative
   ]
-excerpt: "> *Nhiều chủ nhà mắc sai lầm ngay từ đầu mà không biết, tiền không mất một lần mà mất dần qua từng quyết định nhỏ*. Phân tích chuyên sâu dưới góc nhìn kỹ sư xây dựng gồm 3 nhóm sai lầm điển hình, khung giải pháp và bộ checklist nghiệm thu theo TCVN."
+excerpt: " *Nhiều chủ nhà mắc sai lầm ngay từ đầu mà không biết, tiền không mất một lần mà mất dần qua từng quyết định nhỏ*. Phân tích chuyên sâu dưới góc nhìn kỹ sư xây dựng gồm 3 nhóm sai lầm điển hình, khung giải pháp và bộ checklist nghiệm thu theo TCVN."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"

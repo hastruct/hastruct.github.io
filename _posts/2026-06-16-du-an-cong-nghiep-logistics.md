@@ -129,6 +129,7 @@ Phòng ngừa vẫn tốt hơn xử lý: freeze design sớm, lập kế hoạch
 
 ## Tham khảo thêm
 
+<<<<<<< Updated upstream
 Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
 
 - [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Khung pháp lý về TVQLDA và cách phân định quyền hạn giữa chủ đầu tư khu công nghiệp, PMC và nhà thầu thi công theo Nghị định 175/2024.
@@ -139,6 +140,14 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 - [Dự án bất động sản: khi áp lực thị trường chi phối tiến độ xây dựng](/posts/du-an-bat-dong-san/)
 
 ---
+=======
+Các bài trong chuỗi quản lý dự án xây dựng:
+
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/)
+- [Đầu tư công trong xây dựng: vốn trung hạn, ODA và những nút thắt hệ thống](/posts/dau-tu-cong-von-trung-han-oda/)
+- [Dự án bất động sản: khi áp lực thị trường chi phối tiến độ xây dựng](/posts/du-an-bat-dong-san/)
+- [Quản lý nhà thầu phụ trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/)
+>>>>>>> Stashed changes
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
