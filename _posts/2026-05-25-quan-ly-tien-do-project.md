@@ -335,9 +335,9 @@ Dự án đầu tư công Việt Nam có đủ khung pháp lý để triển kha
 
 Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
 
-- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Bốn nhóm vấn đề TVQLDA kèm căn cứ pháp lý theo Nghị định 175/2024 và Luật Xây dựng 135/2025. Nền tảng để hiểu ai có vai trò triển khai hệ thống EVM trong cấu trúc dự án.
-- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Chi phí và tiến độ nhà thầu phụ là dữ liệu nguồn của EVM ở cấp gói thầu. Bài này phân tích cách thu thập và đo lường dữ liệu đó trong thực tế.
-- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù tạo bối cảnh ảnh hưởng trực tiếp đến khả năng cập nhật baseline và tính chính xác của EVM.
+- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) Bốn nhóm vấn đề TVQLDA kèm căn cứ pháp lý theo Nghị định 175/2024 và Luật Xây dựng 135/2025. Nền tảng để hiểu ai có vai trò triển khai hệ thống EVM trong cấu trúc dự án.
+- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) Chi phí và tiến độ nhà thầu phụ là dữ liệu nguồn của EVM ở cấp gói thầu. Bài này phân tích cách thu thập và đo lường dữ liệu đó trong thực tế.
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) Bảy đặc thù tạo bối cảnh ảnh hưởng trực tiếp đến khả năng cập nhật baseline và tính chính xác của EVM.
 
 ---
 

@@ -106,11 +106,11 @@ Câu hỏi không phải "có thuê không" mà là "thuê ai, vào lúc nào, v
 
 Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
 
-- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Bốn vấn đề cốt lõi trong thực tiễn TVQLDA tại Việt Nam: nhân sự, quyền hạn, pháp lý và áp lực tài chính.
-- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) — EVM, SPI, CPI: hệ thống đo lường tích hợp tiến độ và chi phí mà TVQLDA cần triển khai trong giai đoạn thi công.
-- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Sáu nguyên tắc quản lý nhà thầu phụ và khung OPPM: nội dung cốt lõi trong phạm vi dịch vụ của một TVQLDA chuyên nghiệp.
-- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù cấu trúc giải thích tại sao quản lý dự án xây dựng đòi hỏi năng lực chuyên biệt mà không phải tổ chức nào cũng có sẵn.
-- [Thực trạng quản lý dự án xây dựng Việt Nam 2026](/posts/thuc-trang-qlda-viet-nam-2026/) — Số liệu về khoảng cách năng lực PM tại Việt Nam: bối cảnh để hiểu tại sao chủ đầu tư cần đánh giá thực tế năng lực nội bộ trước khi quyết định.
+- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) Bốn vấn đề cốt lõi trong thực tiễn TVQLDA tại Việt Nam: nhân sự, quyền hạn, pháp lý và áp lực tài chính.
+- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) EVM, SPI, CPI: hệ thống đo lường tích hợp tiến độ và chi phí mà TVQLDA cần triển khai trong giai đoạn thi công.
+- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) Sáu nguyên tắc quản lý nhà thầu phụ và khung OPPM: nội dung cốt lõi trong phạm vi dịch vụ của một TVQLDA chuyên nghiệp.
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) Bảy đặc thù cấu trúc giải thích tại sao quản lý dự án xây dựng đòi hỏi năng lực chuyên biệt mà không phải tổ chức nào cũng có sẵn.
+- [Thực trạng quản lý dự án xây dựng Việt Nam 2026](/posts/thuc-trang-qlda-viet-nam-2026/) Số liệu về khoảng cách năng lực PM tại Việt Nam: bối cảnh để hiểu tại sao chủ đầu tư cần đánh giá thực tế năng lực nội bộ trước khi quyết định.
 
 ---
 
