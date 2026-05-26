@@ -319,7 +319,7 @@ Quản lý PMU và chủ đầu tư cần đọc và diễn giải chỉ số EV
 
 ## Kết luận
 
-Vấn đề trong quản lý tiến độ và chi phí dự án xây dựng Việt Nam không phải là thiếu phần mềm. Phần mềm Primavera P6 đã có mặt tại nhiều PMU từ hơn một thập kỷ; phần mềm dự toán nội địa đã được chuẩn hóa theo định mức Bộ Xây dựng. Vấn đề là hai hệ thống này không nói chuyện được với nhau để tạo ra chỉ số tích hợp có khả năng cảnh báo sớm.
+Vấn đề trong quản lý tiến độ và chi phí dự án xây dựng Việt Nam không phải là thiếu phần mềm. Phần mềm MS Project hay Primavera P6 đã có mặt tại nhiều Ban QLDA từ hơn một thập kỷ; phần mềm dự toán nội địa đã được chuẩn hóa theo định mức Bộ Xây dựng. Vấn đề là hai hệ thống này không nói chuyện được với nhau để tạo ra chỉ số tích hợp có khả năng cảnh báo sớm.
 
 PMBOK giải quyết vấn đề này ở cấp độ tư duy: trước khi chọn phần mềm, cần thiết lập một đường cơ sở (baseline) tích hợp tiến độ và chi phí, một phương pháp đo lường % hoàn thành nhất quán, và một quy trình leo thang rõ ràng khi chỉ số cảnh báo xuất hiện.
 
