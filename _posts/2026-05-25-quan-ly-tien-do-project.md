@@ -253,7 +253,7 @@ Phần mềm được chọn cần có khả năng tích hợp với các công 
 
 ## 6. Năm thách thức triển khai phổ biến và cách vượt qua
 
-### 6.1. Kháng cự thay đổi quy trình làm việc
+### 6.1. Chậm thay đổi quy trình làm việc
 
 Phần mềm quản lý tiến độ và chi phí thay đổi cách làm việc của nhiều vị trí trong tổ chức, từ kỹ sư công trường đến cán bộ kế toán PMU. Kháng cự thay đổi là phản ứng bình thường, không phải dấu hiệu không hợp tác. Cách vượt qua hiệu quả nhất là bắt đầu với pilot nhỏ trên một gói thầu cụ thể, chứng minh giá trị thực tế trước khi mở rộng.
 
@@ -263,7 +263,7 @@ Phần mềm EVM chỉ tốt khi dữ liệu tốt. Nếu tiến độ thực t�
 
 Các phương pháp đo lường phổ biến trong xây dựng: phương pháp cột mốc (0/100 hoặc 20/80/100 theo mốc nghiệm thu), phương pháp tỷ lệ vật liệu đã lắp đặt, và phương pháp đường cong kinh nghiệm cho công việc lặp lại. Mỗi loại hoạt động cần gắn với một phương pháp cụ thể và nhất quán trong suốt vòng đời dự án.
 
-### 6.3. Baseline không được bảo vệ đúng mức
+### 6.3. Baseline không được cập nhật kịp thời
 
 Baseline là điểm tham chiếu bất biến để tính EV và PV. Khi baseline bị thay đổi mà không có quy trình phê duyệt rõ ràng (ví dụ để "che giấu" sai lệch tiến độ), toàn bộ hệ thống EVM mất ý nghĩa. Quy trình quản lý baseline cần được quy định trong hợp đồng TVQLDA và trong Kế hoạch quản lý dự án theo Điều 89 Nghị định 175/2024/NĐ-CP.
 
@@ -273,7 +273,7 @@ Nguyên tắc: chỉ có hai lý do được chấp nhận để điều chỉnh
 
 Phần mềm chuyên dụng đòi hỏi ít nhất một người có đủ năng lực kỹ thuật để vận hành, duy trì và đào tạo người khác. Khi người này rời dự án, hệ thống thường bị suy thoái dần vì không ai đủ kỹ năng duy trì theo chuẩn ban đầu. Giải pháp: tài liệu hóa quy trình vận hành hệ thống ngay từ đầu, và đảm bảo ít nhất hai người trong PMU được đào tạo ở mức độ vận hành độc lập.
 
-### 6.5. Không có quy trình leo thang khi chỉ số cảnh báo
+### 6.5. Không có quy trình ứng phó khi chỉ số cảnh báo
 
 SPI và CPI thấp chỉ có giá trị nếu có quy trình rõ ràng quy định: khi nào thì báo cáo lên cấp nào, ai có trách nhiệm phân tích nguyên nhân, và ai có quyền phê duyệt kế hoạch phục hồi (recovery plan). Nếu báo cáo EVM hàng tuần cho thấy CPI = 0,83 nhưng không có ai phân tích và hành động, hệ thống chỉ là thủ tục hành chính.
 
