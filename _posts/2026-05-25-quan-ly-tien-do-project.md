@@ -336,6 +336,7 @@ Dự án đầu tư công Việt Nam có đủ khung pháp lý để triển kha
 Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
 
 - [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) Bốn nhóm vấn đề TVQLDA kèm căn cứ pháp lý theo Nghị định 175/2024 và Luật Xây dựng 135/2025. Nền tảng để hiểu ai có vai trò triển khai hệ thống EVM trong cấu trúc dự án.
+- [Quản lý dự án trên một trang giấy (OPPM)](/posts/quan-ly-du-an-mot-trang-giay/): Công cụ báo cáo tổng hợp tiến độ, chi phí và rủi ro phục vụ cấp ra quyết định.
 - [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) Chi phí và tiến độ nhà thầu phụ là dữ liệu nguồn của EVM ở cấp gói thầu. Bài này phân tích cách thu thập và đo lường dữ liệu đó trong thực tế.
 - [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) Bảy đặc thù tạo bối cảnh ảnh hưởng trực tiếp đến khả năng cập nhật baseline và tính chính xác của EVM.
 
@@ -343,7 +344,7 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang là cán bộ PMU, chủ đầu tư hoặc tư vấn quản lý dự án muốn thiết lập hệ thống kiểm soát tiến độ và chi phí tích hợp theo chuẩn PMBOK cho dự án xây dựng đang triển khai tại Việt Nam, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá hệ thống hiện tại, thiết kế quy trình EVM phù hợp với quy mô và bối cảnh pháp lý của dự án, lựa chọn và cấu hình phần mềm phù hợp, và đào tạo đội ngũ PMU theo ba cấp độ năng lực.
+Nếu bạn đang là cán bộ Ban QLDA, chủ đầu tư hoặc tư vấn quản lý dự án muốn thiết lập hệ thống kiểm soát tiến độ và chi phí tích hợp theo chuẩn PMBOK cho dự án xây dựng đang triển khai tại Việt Nam, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá hệ thống hiện tại, thiết kế quy trình EVM phù hợp với quy mô và bối cảnh pháp lý của dự án, lựa chọn và cấu hình phần mềm phù hợp, và đào tạo đội ngũ QLDA theo ba cấp độ năng lực.
 
 ---
 
@@ -416,8 +417,5 @@ Nếu bạn đang là cán bộ PMU, chủ đầu tư hoặc tư vấn quản l�
 
 ### Bài viết liên quan trên HydrostructAI
 
-- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/): Phân tích bốn nhóm vấn đề TVQLDA kèm căn cứ pháp lý Nghị định 175/2024 và Luật XD 135/2025.
-- [Quản lý dự án trên một trang giấy (OPPM)](/posts/quan-ly-du-an-mot-trang-giay/): Công cụ báo cáo tổng hợp tiến độ, chi phí và rủi ro phục vụ cấp ra quyết định.
-- [Quản lý nhà thầu phụ hiệu quả](/posts/quan-ly-nha-thau-phu/): Sáu nguyên tắc thực tiễn quốc tế theo PMP và FIDIC.
 
 ---
