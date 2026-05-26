@@ -69,7 +69,7 @@ Sắp xếp trình tự (Sequence Activities): Xác định mối quan hệ ph�
 
 Ước lượng thời gian (Estimate Activity Durations): Dữ liệu lịch sử từ các dự án tương tự là nguồn tin cậy nhất. Trong bối cảnh thiếu cơ sở dữ liệu lịch sử có hệ thống của ngành xây dựng Việt Nam, nhiều dự án ước lượng theo kinh nghiệm cá nhân của kỹ sư lập lịch, dẫn đến sai lệch lớn.
 
-Xây dựng lịch biểu (Develop Schedule): Kết hợp toàn bộ thông tin trên để tạo ra lịch biểu tổng thể kèm đường Găng (Critical Path). Đường Găng xác định chuỗi hoạt động quyết định thời gian hoàn thành dự án, bất kỳ sự chậm trễ nào trên chuỗi này đều làm chậm toàn bộ dự án.
+Xây dựng tiến độ (Develop Schedule): Kết hợp toàn bộ thông tin trên để tạo ra tiến độ tổng thể kèm đường Găng (Critical Path). Đường Găng xác định chuỗi hoạt động quyết định thời gian hoàn thành dự án, bất kỳ sự chậm trễ nào trên chuỗi này đều làm chậm toàn bộ dự án.
 
 Kiểm soát tiến độ (Control Schedule): Đây là quy trình thực sự tạo giá trị, nhưng cũng là quy trình bị bỏ sót nhiều nhất. Kiểm soát tiến độ không phải cập nhật tiến độ, mà là so sánh tiến độ thực tế với baseline, phân tích nguyên nhân sai lệch và ra quyết định điều chỉnh.
 
@@ -172,7 +172,7 @@ WBS là xương sống của toàn bộ hệ thống. Với dự án xây dựng
 
 Tầng 4 là cấp duy nhất có thể gán trực tiếp nhân công, máy móc và vật tư, và đây là nơi EV được tạo ra. Tầng 1, 2, 3 là cấp tổng hợp (Summary Task), giá trị của chúng được tính tự động từ tầng 4 lên.
 
-Mỗi tầng 4 cần được gắn với: thời gian bắt đầu và kết thúc, danh sách tài nguyên được gán, phương pháp đo lường % hoàn thành, và một cột mốc (Milestone) khi hoàn thành nghiệm thu. Milestone là điểm kiểm soát trong lịch biểu, không có thời lượng nhưng là ranh giới rõ ràng giữa "đang làm" và "đã xong được xác nhận".
+Mỗi tầng 4 cần được gắn với: thời gian bắt đầu và kết thúc, danh sách tài nguyên được gán, phương pháp đo lường % hoàn thành, và một cột mốc (Milestone) khi hoàn thành nghiệm thu. Milestone là điểm kiểm soát trong tiến độ, không có thời lượng nhưng là ranh giới rõ ràng giữa "đang làm" và "đã xong được xác nhận".
 
 ### 3.2. Bộ tài nguyên (Resource Pool) cho xây dựng Việt Nam
 
@@ -192,9 +192,9 @@ Khi Resource Pool được xây dựng đúng, phần mềm có thể tính tự
 
 ### 4.1. Nhóm phần mềm lập lịch và đường Găng
 
-Nhóm này tập trung vào xây dựng và theo dõi lịch biểu dự án, mô hình hóa đường Găng và quản lý nguồn lực. Đây là nền tảng kỹ thuật của bất kỳ hệ thống quản lý tiến độ nghiêm túc nào.
+Nhóm này tập trung vào xây dựng và theo dõi tiến độ dự án, mô hình hóa đường Găng và quản lý nguồn lực. Đây là nền tảng kỹ thuật của bất kỳ hệ thống quản lý tiến độ nghiêm túc nào.
 
-Đặc trưng của nhóm này là khả năng mô hình hóa quan hệ phụ thuộc phức tạp giữa hàng trăm đến hàng nghìn hoạt động, tính toán đường Găng tự động, và phân tích tác động khi một hoạt động bị trễ lên toàn bộ lịch biểu. Đây là công cụ cần thiết cho kỹ sư lập lịch và phụ trách tiến độ cấp công trường.
+Đặc trưng của nhóm này là khả năng mô hình hóa quan hệ phụ thuộc phức tạp giữa hàng trăm đến hàng nghìn hoạt động, tính toán đường Găng tự động, và phân tích tác động khi một hoạt động bị trễ lên toàn bộ tiến độ. Đây là công cụ cần thiết cho kỹ sư lập lịch và phụ trách tiến độ cấp công trường.
 
 Hạn chế của nhóm này: chúng thường không tích hợp sẵn với quản lý chi phí ở mức độ đủ chi tiết, và đường Găng chỉ có giá trị nếu dữ liệu thực tế được cập nhật nghiêm túc theo chu kỳ.
 
@@ -295,7 +295,7 @@ Thực tế phổ biến hiện nay là hồ sơ điều chỉnh tổng mức đ
 
 ### 7.3. Tích hợp với BIM
 
-Quyết định 258/QĐ-TTg năm 2023 xác định lộ trình áp dụng mô hình thông tin công trình (BIM) trong hoạt động đầu tư xây dựng [^9]. Khi BIM được áp dụng đầy đủ, mô hình BIM có thể liên kết trực tiếp với lịch biểu và chi phí để tạo thành mô hình 4D (BIM + thời gian) và 5D (BIM + chi phí). Đây là nền tảng để hệ thống EVM có dữ liệu tiến độ và chi phí chính xác hơn, tự động hơn từ dữ liệu đo đạc thực địa.
+Quyết định 258/QĐ-TTg năm 2023 xác định lộ trình áp dụng mô hình thông tin công trình (BIM) trong hoạt động đầu tư xây dựng [^9]. Khi BIM được áp dụng đầy đủ, mô hình BIM có thể liên kết trực tiếp với tiến độ và chi phí để tạo thành mô hình 4D (BIM + thời gian) và 5D (BIM + chi phí). Đây là nền tảng để hệ thống EVM có dữ liệu tiến độ và chi phí chính xác hơn, tự động hơn từ dữ liệu đo đạc thực địa.
 
 Với dự án đang trong giai đoạn đầu tư mới, lựa chọn phần mềm quản lý tiến độ và chi phí cần xem xét khả năng tích hợp với nền tảng BIM trong tương lai gần.
 
@@ -309,7 +309,7 @@ Năng lực cần xây dựng bao gồm ba cấp độ khác nhau:
 
 Kỹ sư công trường cần hiểu cách đo lường và báo cáo % hoàn thành theo phương pháp đã định nghĩa. Không cần biết vận hành phần mềm, nhưng phải cung cấp đúng thông tin đúng thời hạn.
 
-Cán bộ PMU vận hành phần mềm trực tiếp: cập nhật lịch biểu thực tế, tính EV và xuất báo cáo. Cần đào tạo kỹ thuật cụ thể về phần mềm đang dùng và phương pháp EVM.
+Cán bộ PMU vận hành phần mềm trực tiếp: cập nhật tiến độ thực tế, tính EV và xuất báo cáo. Cần đào tạo kỹ thuật cụ thể về phần mềm đang dùng và phương pháp EVM.
 
 Quản lý PMU và chủ đầu tư cần đọc và diễn giải chỉ số EVM, phân biệt khi nào SPI/CPI thấp là tín hiệu cần hành động và khi nào là biến động bình thường đầu kỳ. Không cần biết vận hành phần mềm, nhưng phải hiểu phương pháp đủ để không bị báo cáo đẹp che mắt.
 
