@@ -39,7 +39,7 @@ header:
 
 ## Đặt vấn đề
 
-Một PMU quản lý dự án hạ tầng quy mô vừa có thể tiếp nhận hàng chục báo cáo tiến độ mỗi tháng. Mỗi báo cáo dày từ mười đến ba mươi trang, với đủ loại biểu đồ Gantt, bảng thống kê khối lượng, bảng theo dõi hợp đồng và danh sách kiến nghị. Khối lượng thông tin rất lớn. Nhưng câu hỏi mà người ra quyết định thực sự cần trả lời thường chỉ gồm bốn điểm: dự án đang đi đúng hướng không, ai đang trễ hạn, chi phí đang vượt hạng mục nào, và tuần tới cần xử lý vấn đề gì trước.
+Một ban quản lý dự án hạ tầng quy mô vừa có thể tiếp nhận hàng chục báo cáo tiến độ mỗi tháng. Mỗi báo cáo dày từ mười đến ba mươi trang, với đủ loại biểu đồ Gantt, bảng thống kê khối lượng, bảng theo dõi hợp đồng và danh sách kiến nghị. Khối lượng thông tin rất lớn. Nhưng câu hỏi mà người ra quyết định thực sự cần trả lời thường chỉ gồm bốn điểm: dự án đang đi đúng hướng không, ai đang trễ hạn, chi phí đang vượt hạng mục nào, và tuần tới cần xử lý vấn đề gì trước.
 
 Mâu thuẫn giữa khối lượng thông tin đầu vào và chất lượng ra quyết định không phải vấn đề riêng của ngành xây dựng. Nhưng trong môi trường đầu tư công, nơi mỗi ngày chậm tiến độ đều có chi phí vốn thực tế và hệ quả pháp lý theo Nghị định 175/2024/NĐ-CP, lãng phí thời gian quản lý vào việc đọc và tổng hợp báo cáo là bài toán cần giải quyết.
 
@@ -284,9 +284,8 @@ Quan trọng hơn cả công cụ là văn hóa báo cáo trung thực. OPPM ph�
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang là cán bộ PMU, chủ đầu tư hoặc nhà thầu đang gặp khó khăn trong việc kiểm soát tiến độ và chi phí dự án xây dựng đang triển khai, hoặc muốn xây dựng hệ thống báo cáo tổng hợp phù hợp với đặc thù dự án của mình, HydrostructAI có thể hỗ trợ thiết lập hệ thống OPPM và dashboard quản lý, từ định dạng Excel đơn giản đến dashboard Power BI tích hợp với dữ liệu MS Project hoặc Primavera P6.
+Nếu bạn đang là cán bộ PMU, chủ đầu tư hoặc nhà thầu đang gặp khó khăn trong việc kiểm soát tiến độ và chi phí dự án xây dựng đang triển khai, hoặc muốn xây dựng hệ thống báo cáo tổng hợp phù hợp với đặc thù dự án của mình, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ hỗ trợ tư vấn thiết kế cấu trúc OPPM phù hợp với từng loại dự án, xây dựng template chuẩn hóa cho tổ chức, đào tạo nhóm PMU sử dụng và vận hành, và hỗ trợ tích hợp với hệ thống báo cáo hiện hành.
 
-Dịch vụ bao gồm tư vấn thiết kế cấu trúc OPPM phù hợp với từng loại dự án, xây dựng template chuẩn hóa cho tổ chức, đào tạo nhóm PMU sử dụng và vận hành, và hỗ trợ tích hợp với hệ thống báo cáo hiện hành.
 
 **Liên hệ trực tiếp:**
 

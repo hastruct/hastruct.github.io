@@ -1,0 +1,126 @@
+name: Video Downloader
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Video URL'
+        required: true
+      format:
+        description: 'Output format (mp4, mp3, m4a, webm, wav)'
+        default: 'mp4'
+        required: false
+      quality:
+        description: 'Quality (best, 4k, 1080p, 720p, 480p, 360p)'
+        default: 'best'
+        required: false
+      request_id:
+        description: 'Unique request ID'
+        required: true
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Get week (cache key)
+        id: date
+        run: echo "week=$(date +'%Y-%U')" >> $GITHUB_OUTPUT
+
+      - name: Cache yt-dlp binary
+        uses: actions/cache@v4
+        id: cache-ytdlp
+        with:
+          path: ~/.local/bin/yt-dlp
+          key: yt-dlp-${{ runner.os }}-${{ steps.date.outputs.week }}
+
+      - name: Install yt-dlp (cache miss only)
+        if: steps.cache-ytdlp.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/.local/bin
+          curl -fsSL https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp \
+            -o ~/.local/bin/yt-dlp
+          chmod +x ~/.local/bin/yt-dlp
+
+      - name: Add ~/.local/bin to PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Cache ffmpeg apt packages
+        uses: actions/cache@v4
+        id: cache-ffmpeg
+        with:
+          path: /var/cache/apt/archives
+          key: apt-ffmpeg-${{ runner.os }}-v1
+
+      - name: Install ffmpeg (uses cached debs if available)
+        run: sudo apt-get install -y -q --no-install-recommends ffmpeg
+
+      - name: Download media
+        id: dl
+        run: |
+          URL="${{ inputs.url }}"
+          FORMAT="${{ inputs.format }}"
+          QUALITY="${{ inputs.quality }}"
+          RID="${{ inputs.request_id }}"
+
+          AUDIO_FORMATS="mp3 m4a wav"
+          IS_AUDIO=false
+          for af in $AUDIO_FORMATS; do
+            [[ "$FORMAT" == "$af" ]] && IS_AUDIO=true
+          done
+
+          if $IS_AUDIO; then
+            yt-dlp "$URL" \
+              --extract-audio \
+              --audio-format "$FORMAT" \
+              --audio-quality 0 \
+              --output "${RID}.%(ext)s" \
+              --no-playlist \
+              --max-filesize 500m
+          else
+            case "$QUALITY" in
+              4k)    FMT="bestvideo[height<=2160]+bestaudio/best" ;;
+              1080p) FMT="bestvideo[height<=1080]+bestaudio/best" ;;
+              720p)  FMT="bestvideo[height<=720]+bestaudio/best" ;;
+              480p)  FMT="bestvideo[height<=480]+bestaudio/best" ;;
+              360p)  FMT="bestvideo[height<=360]+bestaudio/best" ;;
+              *)     FMT="bestvideo+bestaudio/best" ;;
+            esac
+
+            yt-dlp "$URL" \
+              -f "$FMT" \
+              --merge-output-format "$FORMAT" \
+              --output "${RID}.%(ext)s" \
+              --no-playlist \
+              --max-filesize 500m
+          fi
+
+          FILE=$(ls ${RID}.* 2>/dev/null | head -1)
+          if [ -z "$FILE" ]; then
+            echo "Download failed: file not found"
+            exit 1
+          fi
+
+          echo "filename=$FILE" >> "$GITHUB_OUTPUT"
+          ls -lh "$FILE"
+
+      - name: Publish to release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          FILE="${{ steps.dl.outputs.filename }}"
+
+          gh release create temp-downloads \
+            --repo "${{ github.repository }}" \
+            --title "Temporary Downloads" \
+            --notes "Auto-managed storage for web downloader." \
+            --prerelease \
+            2>/dev/null || true
+
+          gh release upload temp-downloads "$FILE" \
+            --repo "${{ github.repository }}" \
+            --clobber
+
+          echo "Ready: https://github.com/${{ github.repository }}/releases/download/temp-downloads/$FILE"

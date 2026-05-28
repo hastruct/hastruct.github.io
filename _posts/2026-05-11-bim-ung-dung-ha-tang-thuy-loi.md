@@ -10,7 +10,7 @@ toc_sticky: true
 toc_label: "📑 Mục Lục"
 permalink: "/posts/bim-ung-dung-ha-tang-thuy-loi/"
 categories:
-  - BIM
+  - "Mô hình BIM"
   - Infrastructure
   - Hydraulic-Engineering
 tags:
@@ -31,7 +31,7 @@ tags:
     Nghị định 175,
     LOD - LOI
   ]
-excerpt: "> *Mô hình BIM tốt nhất không phải mô hình đẹp nhất, mà là mô hình được ứng dụng hiệu quả nhất*. Một số dự án hạ tầng và thủy lợi tại Việt Nam triển khai BIM nhưng kết quả chỉ dừng ở 'mô hình 3D đẹp'. Bài viết phân tích chuyên sâu vì sao BIM hạ tầng khác hoàn toàn BIM dân dụng, vai trò trọng tâm của điều phối và CDE, framework lựa chọn phần mềm theo bài toán thực tế."
+excerpt: "*Mô hình BIM tốt nhất không phải mô hình đẹp nhất, mà là mô hình được ứng dụng hiệu quả nhất*. Một số dự án hạ tầng và thủy lợi tại Việt Nam triển khai BIM nhưng kết quả chỉ dừng ở 'mô hình 3D đẹp'. Bài viết phân tích chuyên sâu vì sao BIM hạ tầng khác hoàn toàn BIM dân dụng, vai trò trọng tâm của điều phối và CDE, framework lựa chọn phần mềm theo bài toán thực tế."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
@@ -333,7 +333,7 @@ HydrostructAI tư vấn chuyên biệt BIM cho công trình hạ tầng và th�
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) -> Mô tả ngắn dự án, giai đoạn hiện tại, và vấn đề cụ thể bạn đang gặp
 - Liên hệ: [WhatsApp](https://wa.me/84374874142) -> Trao đổi nhanh trước khi quyết định
 
-> Bạn vẫn đang băn khoăn về giải pháp? Đừng ngần ngại gửi mô tả tình huống qua email hay WhatsApp. Chúng tôi luôn sẵn sàng lắng nghe và giải đáp mọi thắc mắc kỹ thuật của bạn hoàn toàn miễn phí.
+> Bạn vẫn đang băn khoăn về giải pháp? Đừng ngần ngại gửi mô tả tình huống qua email hay WhatsApp. Chúng tôi luôn sẵn sàng lắng nghe và giải đáp các thắc mắc kỹ thuật của bạn hoàn toàn miễn phí.
 
 ---
 
