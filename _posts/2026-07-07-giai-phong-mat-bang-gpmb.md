@@ -27,7 +27,12 @@ tags:
     Chính quyền 2 cấp,
     Quản lý dự án xây dựng,
     Rủi ro GPMB,
-    Bồi thường hỗ trợ tái định cư
+    Bồi thường hỗ trợ tái định cư,
+    Nghị định 151/2025,
+    Phân cấp GPMB,
+    Minh bạch bồi thường,
+    Dữ liệu GPMB,
+    Sáp nhập đơn vị hành chính
   ]
 excerpt: "Giải phóng mặt bằng là nút thắt số một của hầu hết dự án hạ tầng tại Việt Nam. Bài viết phân tích trình tự thủ tục theo khung pháp lý 2024-2026, cơ cấu chi phí GPMB trong tổng mức đầu tư, và những điểm rủi ro mà người quản lý dự án thường bỏ qua khi lập kế hoạch."
 header:
@@ -41,6 +46,8 @@ header:
 Trong bài về đặc thù dự án xây dựng thuộc chuỗi này, đã có một nhận định: hỏi bất kỳ PMU hay nhà thầu nào có kinh nghiệm nhiều dự án tại Việt Nam về nguyên nhân trễ tiến độ số một, câu trả lời gần như đồng nhất là giải phóng mặt bằng. Không phải thiết kế chậm, không phải nhà thầu yếu, không phải thủ tục thanh toán. Là giải phóng mặt bằng.
 
 Điều đó không phải vì quy trình GPMB tự thân xấu. Mà vì phần lớn người quản lý dự án không chuẩn bị đúng mức cho nó: không phân tích đủ thời gian cần thiết, không tính đủ chi phí vào tổng mức đầu tư, không xây dựng phương án dự phòng khi GPMB chậm hơn kế hoạch.
+
+Thực tế còn thêm một nguyên nhân thường bị bỏ qua: dữ liệu không sạch. Khi thông tin kiểm đếm nằm rải rác trong các file riêng lẻ của từng cán bộ, đơn giá bồi thường thay đổi hằng năm mà không có hệ thống cập nhật tập trung, và nhân sự xáo trộn sau các đợt sáp nhập đơn vị hành chính, thì GPMB chậm không phải vì thiếu nỗ lực mà vì công việc chưa có nền dữ liệu đủ để chạy nhanh.[^8]
 
 Bài viết này phân tích trình tự thủ tục GPMB theo khung pháp lý hiện hành, cơ cấu chi phí cần tính trong tổng mức đầu tư, và những điểm rủi ro thực tiễn từ góc nhìn quản lý dự án.
 
@@ -70,6 +77,8 @@ Nghị định 102/2024/NĐ-CP hướng dẫn thi hành một số điều của
 
 Nghị định 175/2024/NĐ-CP về quản lý dự án đầu tư xây dựng quy định chi phí GPMB là một trong những cấu phần của tổng mức đầu tư và dự toán xây dựng, đồng thời xác định trách nhiệm của chủ đầu tư trong phối hợp thực hiện GPMB.[^6]
 
+Nghị định 151/2025/NĐ-CP quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp và phân cấp trong lĩnh vực đất đai, trong đó có nội dung phân cấp mạnh trách nhiệm phê duyệt phương án bồi thường về cấp cơ sở (xã/phường) từ năm 2026. Đây là nghị định quan trọng nhất về phân công chức năng GPMB trong mô hình chính quyền 2 cấp mới.[^9]
+
 ### 1.3. Chính quyền 2 cấp và tác động lên GPMB
 
 Việc tổ chức lại chính quyền địa phương theo mô hình 2 cấp (tỉnh/thành phố và xã/phường, bỏ cấp huyện) có tác động trực tiếp đến phân công thực hiện GPMB. Theo mô hình mới:
@@ -81,6 +90,8 @@ UBND xã/phường có vai trò thực thi tại địa bàn: niêm yết thông
 Cơ quan chuyên trách GPMB (Trung tâm Phát triển Quỹ đất cấp tỉnh hoặc Ban QLDA được giao nhiệm vụ) thực hiện công tác đo đạc, kiểm kê, lập phương án bồi thường.
 
 Việc bỏ cấp huyện rút ngắn một số bước phê duyệt trung gian nhưng đồng thời đặt ra yêu cầu cao hơn về năng lực của cơ quan cấp tỉnh khi phải xử lý khối lượng công việc lớn hơn.
+
+Theo Nghị định 151/2025/NĐ-CP, từ năm 2026, thẩm quyền phê duyệt phương án bồi thường được phân cấp mạnh về cấp xã/phường. Điều này tăng tốc quy trình phê duyệt về lý thuyết, nhưng đặt áp lực pháp lý rất lớn lên người đứng đầu cấp cơ sở: Chủ tịch UBND xã/phường ký phê duyệt phương án bồi thường cụ thể và chịu trách nhiệm trực tiếp về tính chính xác của từng khoản tính toán. Đây là thẩm quyền trước đây thuộc cấp huyện hoặc tỉnh, nay chuyển xuống trong khi đội ngũ cán bộ cấp xã ở nhiều địa phương chưa được chuẩn bị đủ về chuyên môn GPMB.[^9]
 
 ## 2. Trình tự thủ tục GPMB theo mô hình chính quyền 2 cấp
 
@@ -128,6 +139,8 @@ Hội đồng Bồi thường/Tái định cư phê duyệt phương án bồi t
 Chi trả bồi thường, hỗ trợ và tái định cư phải thực hiện trong vòng 30 ngày kể từ ngày có quyết định phê duyệt phương án. Sau khi chi trả đủ, hộ dân bàn giao mặt bằng. Trường hợp không tự nguyện bàn giao, tiến hành cưỡng chế bàn giao theo quy trình pháp luật.
 
 Mặt bằng sau khi thu hồi được bàn giao cho chủ đầu tư để tiến hành thi công xây dựng.
+
+Bộ Nông nghiệp và Môi trường đã ban hành hướng dẫn chi tiết hóa quy trình trên thành 16 bước cụ thể áp dụng cho các dự án thu hồi đất phục vụ mục đích quốc phòng, an ninh, phát triển kinh tế-xã hội.[^10] Tài liệu này là tham chiếu hữu ích để kiểm tra chéo quy trình nội bộ của từng đơn vị với chuẩn hướng dẫn chính thức.
 
 ## 3. Cơ cấu chi phí GPMB trong tổng mức đầu tư
 
@@ -239,6 +252,44 @@ GPMB là lĩnh vực có nhiều quy định trình tự bắt buộc với th�
 
 Biện pháp phòng ngừa: có bộ phận pháp lý chuyên trách theo dõi tuân thủ quy trình, lập checklist kiểm soát từng bước với mốc thời gian pháp lý, và lưu trữ đầy đủ hồ sơ mỗi bước để có căn cứ khi cần chứng minh thực hiện đúng quy trình.
 
+### 6.4. Rủi ro pháp lý cho cán bộ phê duyệt sau phân cấp
+
+Với Nghị định 151/2025/NĐ-CP phân cấp thẩm quyền phê duyệt phương án bồi thường về cấp xã từ năm 2026, rủi ro pháp lý cá nhân của người ký phê duyệt tăng lên đáng kể. Một phương án bồi thường sai đơn giá, bỏ sót khoản hỗ trợ, hoặc áp dụng không đúng quy định mới nhất của tỉnh không còn chỉ là vấn đề nghiệp vụ mà là căn cứ cho xử lý kỷ luật hoặc truy trách nhiệm cá nhân người ký.[^9]
+
+Nguy cơ này có nguồn gốc từ đặc thù của công tác GPMB: đơn giá bồi thường cây trồng, vật nuôi, nhà ở được cập nhật hàng năm theo quyết định của từng tỉnh; quy định pháp luật thay đổi qua từng nghị định; và ở nhiều nơi chưa có hệ thống tra cứu tập trung, cán bộ vẫn tự quản lý dữ liệu trong file Excel riêng lẻ. Khi đơn giá áp sai hoặc dùng văn bản đã hết hiệu lực, người ký phê duyệt không phải là người nhập số mà lại là người chịu trách nhiệm pháp lý.
+
+Biện pháp phòng ngừa từ phía chủ đầu tư và cơ quan chuyên trách: thiết lập quy trình kiểm tra chéo phương án bồi thường trước khi trình ký, đặc biệt là kiểm tra đơn giá áp dụng so với quyết định hiện hành của tỉnh, và đảm bảo biên bản kiểm kê đủ chữ ký xác nhận để chứng minh căn cứ tính toán.
+
+## 7. Tính minh bạch trong phương án bồi thường và công tác vận động
+
+### 7.1. Sự đồng thuận đến từ sự rõ ràng, không phải từ áp lực
+
+Tỷ lệ hộ dân không hợp tác trong GPMB thường không phải vì họ không chấp nhận thu hồi đất. Phần lớn xuất phát từ việc họ không hiểu rõ mình được bồi thường những gì, theo cơ sở nào, tại sao thửa đất của họ được định giá như vậy mà thửa kế bên thì khác.
+
+Khi hộ dân nhìn thấy từng khoản được liệt kê rõ ràng, từng đơn giá có căn cứ pháp lý cụ thể, và có thể tự kiểm tra xem diện tích đất hay cây trồng của mình đã được tính đủ chưa, công tác vận động sẽ thuận lợi hơn nhiều. Sự đồng thuận đến từ sự rõ ràng, không phải từ áp lực hay thuyết phục chung chung.[^8]
+
+Điều này có hàm ý thực tiễn cho người quản lý dự án: đầu tư thời gian để phương án bồi thường được trình bày dễ đọc và dễ kiểm tra không phải là công việc hành chính phụ. Đó là cách phòng ngừa khiếu nại và giảm thời gian thuyết phục từng hộ.
+
+### 7.2. Niêm yết đủ và đúng cách
+
+Pháp luật quy định niêm yết phương án bồi thường tại địa phương để lấy ý kiến. Trong thực tiễn, nhiều đơn vị thực hiện niêm yết theo nghĩa hình thức: dán tờ A4 khó đọc tại bảng thông báo của UBND xã. Hộ dân không đến xem, không hiểu nội dung, nhưng biên bản vẫn ghi "đã niêm yết đúng quy định".
+
+Cách tiếp cận thực chất hơn là giao thông báo trực tiếp đến từng hộ dân cùng với phiếu tính chi tiết, tổ chức họp tổ dân phố để giải thích, và có người giải đáp câu hỏi cụ thể. Chi phí thêm cho bước này thường thấp hơn nhiều so với chi phí xử lý một vụ khiếu nại kéo dài sau khi phương án đã được phê duyệt.
+
+## 8. Thách thức quản lý dữ liệu và nhân sự trong bối cảnh sáp nhập
+
+### 8.1. Dữ liệu rời rạc là nguồn gốc của sai sót
+
+Một thực trạng phổ biến tại các đơn vị thực hiện GPMB là mỗi cán bộ tự quản lý dữ liệu trong bộ file riêng của mình: bảng kiểm kê một file, đơn giá một file khác, biên bản một thư mục khác, biểu mẫu theo mẫu tự chế. Khi một người nghỉ phép, chuyển công tác, hoặc đơn vị sáp nhập, khả năng tiếp quản công việc đó gần như phụ thuộc hoàn toàn vào người cũ bàn giao trực tiếp.
+
+Rủi ro kép là: đơn giá bồi thường cây trồng, vật nuôi, nhà ở thay đổi hằng năm theo quyết định của từng tỉnh; nếu cán bộ áp file đơn giá cũ mà không biết đã có quyết định cập nhật, phương án bồi thường sẽ sai ngay từ dữ liệu nền, dẫn đến phải làm lại toàn bộ tính toán khi bị phát hiện.[^8]
+
+### 8.2. Xáo trộn nhân sự sau sáp nhập đơn vị hành chính
+
+Quá trình sắp xếp lại đơn vị hành chính theo mô hình chính quyền 2 cấp dẫn đến xáo trộn nhân sự tại các cơ quan thực hiện GPMB: người cũ luân chuyển sang vị trí khác, người mới tiếp nhận dự án đang dở dang mà không có hệ thống lưu trữ đủ để tự đọc hiểu trạng thái công việc. Kết quả thực tế là tháng đầu của người mới mất vào việc tìm hiểu lại từ đầu những gì người cũ đã làm.
+
+Về phía chủ đầu tư và PMU, điều này có nghĩa là cần xây dựng yêu cầu tối thiểu về bàn giao hồ sơ GPMB khi có thay đổi nhân sự tại cơ quan chuyên trách: trạng thái từng hộ dân, các hộ đã kiểm kê xong nhưng chưa ký biên bản, các hộ đã ký biên bản nhưng chưa nhận tiền, và các hộ đang có khiếu nại. Thông tin này cần ở dạng có thể đọc được mà không cần giải thích thêm.
+
 ## Kết luận
 
 GPMB không phải là vấn đề có thể giải quyết tốt chỉ bằng ý chí hoặc quan hệ. Nó là một quy trình pháp lý có trình tự bắt buộc, mốc thời gian xác định, và cơ cấu chi phí cụ thể. Người quản lý dự án am hiểu GPMB không phải là người có thể "đẩy nhanh" bằng cách bỏ bước, mà là người biết:
@@ -251,7 +302,9 @@ Tuân thủ đúng trình tự pháp lý từng bước, đặc biệt trình t�
 
 Quản lý kỳ vọng của tất cả các bên về khả năng GPMB chậm, và có phương án dự phòng tiến độ thi công khi mặt bằng bàn giao không đúng hạn.
 
-Khung pháp lý Luật Đất đai 2024 cùng với mô hình chính quyền 2 cấp đang trong quá trình định hình thực tiễn. Người quản lý dự án cần theo dõi sát các văn bản hướng dẫn tiếp theo và kinh nghiệm thực tiễn tại địa phương cụ thể, vì áp dụng tại mỗi tỉnh vẫn có những khác biệt đáng kể.
+GPMB không chậm chỉ vì cán bộ thiếu nỗ lực. Nhiều khi nó chậm vì dữ liệu chưa được tổ chức để công việc có thể chạy nhanh: số liệu kiểm kê rời rạc, đơn giá không được cập nhật kịp, hồ sơ không thể tiếp quản khi nhân sự thay đổi. Từ góc nhìn quản lý dự án, giải quyết điều này không phải là đầu tư vào công nghệ mà là đầu tư vào quy trình: ai giữ dữ liệu gì, theo định dạng nào, cập nhật bao giờ, và bàn giao như thế nào khi cần.
+
+Khung pháp lý Luật Đất đai 2024 và Nghị định 151/2025/NĐ-CP đang định hình lại cách phân công trách nhiệm GPMB ở cấp địa phương. Người quản lý dự án cần theo dõi sát việc địa phương cụ thể triển khai thẩm quyền phê duyệt mới như thế nào, vì năng lực và quy trình giữa các tỉnh vẫn có những khác biệt đáng kể trong giai đoạn chuyển tiếp này.
 
 ## Tham khảo thêm
 
@@ -291,6 +344,12 @@ Nếu bạn đang chuẩn bị lập tổng mức đầu tư cho dự án có ch
 
 [^7]: Bộ Xây dựng. (2021). *Thông tư 11/2021/TT-BXD ngày 31/8/2021 hướng dẫn một số nội dung xác định và quản lý chi phí đầu tư xây dựng.* Hà Nội. Tra cứu tại [vbpl.vn](https://vbpl.vn).
 
+[^8]: Nguyễn Thế Anh. (2025). *Công tác giải phóng mặt bằng: khi công cụ số trở thành cánh tay nối dài của nhà quản lý.* Diễn đàn Giá Xây Dựng. Tra cứu tại [giaxaydung.vn](https://giaxaydung.vn/threads/cong-tac-giai-phong-mat-bang-khi-cong-cu-so-tro-thanh-canh-tay-noi-dai-cua-nha-quan-ly.184391).
+
+[^9]: Chính phủ nước CHXHCN Việt Nam. (2025). *Nghị định 151/2025/NĐ-CP quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp và phân cấp trong lĩnh vực đất đai.* Hà Nội. Tra cứu tại [vbpl.vn](https://vbpl.vn).
+
+[^10]: Bộ Nông nghiệp và Môi trường. (2025). *Hướng dẫn 16 bước thực hiện thu hồi đất phục vụ quốc phòng, an ninh, phát triển kinh tế-xã hội.* Hà Nội.
+
 ---
 
 ## Danh mục tài liệu
@@ -306,11 +365,14 @@ Nếu bạn đang chuẩn bị lập tổng mức đầu tư cho dự án có ch
 | **Nghị định 175/2024/NĐ-CP** | Quản lý dự án đầu tư xây dựng | [vbpl.vn](https://vbpl.vn) |
 | **Luật XD 135/2025/QH15** (HH 01/7/2026) | Khung pháp lý đầu tư xây dựng cập nhật | [vbpl.vn](https://vbpl.vn) |
 | **Thông tư 11/2021/TT-BXD** | Chi phí đầu tư xây dựng, gồm chi phí GPMB | [vbpl.vn](https://vbpl.vn) |
+| **Nghị định 151/2025/NĐ-CP** | Phân định thẩm quyền chính quyền địa phương 02 cấp trong lĩnh vực đất đai | [vbpl.vn](https://vbpl.vn) |
 
 ### Tài liệu chuyên ngành
 
 - **GXD - Quản lý dự án.** *Trình tự thủ tục giải phóng mặt bằng và bồi thường (Chính quyền 2 cấp mới).* Tra cứu tại [qlda.gxd.vn](https://qlda.gxd.vn).
 - **Ts. Nguyễn Thế Anh.** *Tổng hợp quy trình GPMB áp dụng mô hình chính quyền 2 cấp.* Facebook: Ts. Nguyễn Thế Anh.
+- **Nguyễn Thế Anh. (2025).** *Công tác giải phóng mặt bằng: khi công cụ số trở thành cánh tay nối dài của nhà quản lý.* Diễn đàn Giá Xây Dựng (giaxaydung.vn).
+- **Bộ Nông nghiệp và Môi trường. (2025).** *Hướng dẫn 16 bước thực hiện thu hồi đất phục vụ quốc phòng, an ninh, phát triển kinh tế-xã hội.*
 
 ### Bài viết liên quan trên HydrostructAI
 
