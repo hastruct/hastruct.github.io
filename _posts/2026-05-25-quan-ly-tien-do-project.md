@@ -63,18 +63,28 @@ Bài viết này phân tích khung tư duy đó, cách áp dụng trong bối c�
 
 PMBOK phiên bản 7 (2021) tiếp cận quản lý tiến độ như một vòng lặp kiểm soát liên tục, không phải một nhiệm vụ lập kế hoạch một lần [^2]. Sáu quy trình chính của lĩnh vực này trong PMBOK 6 (được tham chiếu rộng rãi trong thực tiễn) bao gồm:
 
+<<<<<<< Updated upstream:_posts/2026-05-25-quan-ly-tien-do-project.md
 Xác định hoạt động (Define Activities): Phân rã các hoạt động (Work breakdown structure, WBS) thành các hoạt động đủ nhỏ để ước lượng và theo dõi. Đây là bước thường bị bỏ qua hoặc làm qua loa trong dự án xây dựng Việt Nam: WBS được lập theo hạng mục hợp đồng thay vì theo hoạt động có thể theo dõi tiến độ thực tế.
+=======
+Xác định hoạt động (Define Activities): Phân rã WBS thành các hoạt động đủ nhỏ để ước lượng và theo dõi. Đây là bước thường bị bỏ qua hoặc làm qua loa trong dự án xây dựng Việt Nam: WBS được lập theo hạng mục hợp đồng thay vì theo hoạt động có thể theo dõi tiến độ thực tế.
+>>>>>>> Stashed changes:_posts/2026-05-26-quan-ly-tien-do-project.md
 
 Sắp xếp trình tự (Sequence Activities): Xác định mối quan hệ phụ thuộc giữa các hoạt động. Trong dự án xây dựng, mối quan hệ Finish-to-Start là phổ biến, nhưng nhiều trường hợp thực tế có quan hệ Start-to-Start hoặc Finish-to-Finish cần được mô hình hóa chính xác để lịch tổng thể phản ánh đúng hiện thực thi công.
 
 Ước lượng thời gian (Estimate Activity Durations): Dữ liệu lịch sử từ các dự án tương tự là nguồn tin cậy nhất. Trong bối cảnh thiếu cơ sở dữ liệu lịch sử có hệ thống của ngành xây dựng Việt Nam, nhiều dự án ước lượng theo kinh nghiệm cá nhân của kỹ sư lập lịch, dẫn đến sai lệch lớn.
 
+<<<<<<< Updated upstream:_posts/2026-05-25-quan-ly-tien-do-project.md
 Xây dựng tiến độ (Develop Schedule): Kết hợp toàn bộ thông tin trên để tạo ra tiến độ tổng thể kèm đường Găng (Critical Path). Đường Găng xác định chuỗi hoạt động quyết định thời gian hoàn thành dự án, bất kỳ sự chậm trễ nào trên chuỗi này đều làm chậm toàn bộ dự án.
 
 Kiểm soát tiến độ (Control Schedule): Đây là quy trình thực sự tạo giá trị, nhưng cũng là quy trình bị bỏ sót nhiều nhất. Kiểm soát tiến độ không phải cập nhật tiến độ, mà là so sánh tiến độ thực tế với baseline, phân tích nguyên nhân sai lệch và ra quyết định điều chỉnh.
 
 
 ![Tiến độ dự án](\assets\images\posts\2026-05-26-quan-ly-tien-do-project/construction-gantt-resources-costs-150-2048x1095.jpg) *Hình minh họa tiến độ dự án. (Nguồn: projectmanager.com)
+=======
+Xây dựng lịch biểu (Develop Schedule): Kết hợp toàn bộ thông tin trên để tạo ra lịch biểu tổng thể kèm đường Găng (Critical Path). Đường Găng xác định chuỗi hoạt động quyết định thời gian hoàn thành dự án, bất kỳ sự chậm trễ nào trên chuỗi này đều làm chậm toàn bộ dự án.
+
+Kiểm soát tiến độ (Control Schedule): Đây là quy trình thực sự tạo giá trị, nhưng cũng là quy trình bị bỏ sót nhiều nhất. Kiểm soát tiến độ không phải cập nhật tiến độ, mà là so sánh tiến độ thực tế với baseline, phân tích nguyên nhân sai lệch và ra quyết định điều chỉnh.
+>>>>>>> Stashed changes:_posts/2026-05-26-quan-ly-tien-do-project.md
 
 ### 1.2. Quản lý chi phí (Cost Management)
 
@@ -344,7 +354,11 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
+<<<<<<< Updated upstream:_posts/2026-05-25-quan-ly-tien-do-project.md
 Nếu bạn đang là cán bộ Ban QLDA, chủ đầu tư hoặc tư vấn quản lý dự án muốn thiết lập hệ thống kiểm soát tiến độ và chi phí tích hợp theo chuẩn PMBOK cho dự án xây dựng đang triển khai tại Việt Nam, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá hệ thống hiện tại, thiết kế quy trình EVM phù hợp với quy mô và bối cảnh pháp lý của dự án, lựa chọn và cấu hình phần mềm phù hợp, và đào tạo đội ngũ QLDA theo ba cấp độ năng lực.
+=======
+Nếu bạn đang là cán bộ PMU, chủ đầu tư hoặc tư vấn quản lý dự án muốn thiết lập hệ thống kiểm soát tiến độ và chi phí tích hợp theo chuẩn PMBOK cho dự án xây dựng đang triển khai tại Việt Nam, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá hệ thống hiện tại, thiết kế quy trình EVM phù hợp với quy mô và bối cảnh pháp lý của dự án, lựa chọn và cấu hình phần mềm phù hợp, và đào tạo đội ngũ PMU theo ba cấp độ năng lực.
+>>>>>>> Stashed changes:_posts/2026-05-26-quan-ly-tien-do-project.md
 
 ---
 

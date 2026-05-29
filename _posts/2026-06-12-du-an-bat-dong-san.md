@@ -152,6 +152,7 @@ Dự án bất động sản thất bại ít khi vì thiếu kỹ thuật. Thư
 ## Tham khảo thêm
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
 
 - [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Khung pháp lý theo Nghị định 175/2024 về vai trò TVQLDA trong dự án tư nhân: phân định quyền hạn giữa PMC và Ban QLDA, xử lý xung đột lợi ích tư vấn.
@@ -162,12 +163,17 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 
 ---
 =======
+=======
+>>>>>>> Stashed changes
 Các bài trong chuỗi quản lý dự án xây dựng:
 
 - [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/)
 - [Đầu tư công trong xây dựng: vốn trung hạn, ODA và những nút thắt hệ thống](/posts/dau-tu-cong-von-trung-han-oda/)
 - [Quản lý tiến độ dự án xây dựng](/posts/quan-ly-tien-do-project/)
 - [Quản lý nhà thầu phụ trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 ## Liên hệ tư vấn và hỗ trợ triển khai

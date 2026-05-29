@@ -60,7 +60,11 @@ Không có hai công trường nào giống nhau. Điều kiện nền đất, v
 Phần mềm có thể triển khai trên môi trường test trước khi lên production. Sản phẩm tiêu dùng có thể ra phiên bản beta. Dự án xây dựng không có khái niệm đó.
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Mỗi công trình là bản duy nhất. Khi thi công, không có "ăn thử thứ nhất" được phép sai. Đổ bê tông sai tỷ lệ cốt thép thì phải đập ra làm lại. Lắp đặt hệ thống HVAC sai sơ đồ thì gỡ toàn bộ. Chi phí của lỗi trong xây dựng cao hơn nhiều so với phần lớn các ngành khác vì mọi sai lầm đều vật chất hóa thành sản phẩm thực đã được làm ra.
+=======
+Mỗi công trình là bản duy nhất. Khi thi công, không có "lần thử thứ nhất" được phép sai. Đổ bê tông sai tỷ lệ cốt thép thì phải đập ra làm lại. Lắp đặt hệ thống HVAC sai sơ đồ thì gỡ toàn bộ. Chi phí của lỗi trong xây dựng cao hơn nhiều so với phần lớn các ngành khác vì mọi sai lầm đều vật chất hóa thành sản phẩm thực đã được làm ra.
+>>>>>>> Stashed changes
 =======
 Mỗi công trình là bản duy nhất. Khi thi công, không có "lần thử thứ nhất" được phép sai. Đổ bê tông sai tỷ lệ cốt thép thì phải đập ra làm lại. Lắp đặt hệ thống HVAC sai sơ đồ thì gỡ toàn bộ. Chi phí của lỗi trong xây dựng cao hơn nhiều so với phần lớn các ngành khác vì mọi sai lầm đều vật chất hóa thành sản phẩm thực đã được làm ra.
 >>>>>>> Stashed changes
@@ -196,6 +200,7 @@ Các bài tiếp theo trong chuỗi này sẽ đi vào từng loại dự án c�
 ## Tham khảo thêm
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Các bài trong chuỗi quản lý dự án xây dựng đi sâu hơn vào từng nhóm vấn đề đặc thù đã phân tích:
 
 - [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Bốn nhóm vấn đề TVQLDA kèm căn cứ pháp lý theo Nghị định 175/2024: nhân sự, quyền hạn, pháp lý và xung đột lợi ích. Nền tảng để hiểu ai có vai trò gì trong việc xử lý các đặc thù đã nêu.
@@ -203,6 +208,11 @@ Các bài trong chuỗi quản lý dự án xây dựng đi sâu hơn vào từn
 - [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Sáu nguyên tắc quản lý nhà thầu phụ từ thực tiễn quốc tế, là cách cụ thể để xử lý đặc thù "nhiều bên liên quan" đã phân tích ở bài này.
 - [Đầu tư công trong xây dựng: vốn trung hạn, ODA và những nút thắt hệ thống](/posts/dau-tu-cong-von-trung-han-oda/) — Áp dụng cụ thể cho loại dự án có quy trình phê duyệt nhiều tầng và áp lực giải ngân ngân sách.
 - [Thực trạng quản lý dự án xây dựng Việt Nam 2026](/posts/thuc-trang-qlda-viet-nam-2026/) — Số liệu tổng quan về giải ngân, chất lượng công trình và năng lực PM toàn ngành.
+=======
+Bài viết [**Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp**](/posts/tvqlda-van-de-giai-phap/) phân tích bốn nhóm vấn đề TVQLDA thường gặp kèm căn cứ pháp lý theo Nghị định 175/2024 và Luật Xây dựng 135/2025, là nền tảng để hiểu ai có vai trò gì trong việc xử lý các đặc thù đã nêu.
+
+Bài viết [**Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK**](/posts/quan-ly-tien-do-project/) trình bày cụ thể cách EVM giúp đo lường tích hợp tiến độ và chi phí trong bối cảnh các đặc thù trên.
+>>>>>>> Stashed changes
 =======
 Bài viết [**Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp**](/posts/tvqlda-van-de-giai-phap/) phân tích bốn nhóm vấn đề TVQLDA thường gặp kèm căn cứ pháp lý theo Nghị định 175/2024 và Luật Xây dựng 135/2025, là nền tảng để hiểu ai có vai trò gì trong việc xử lý các đặc thù đã nêu.
 
