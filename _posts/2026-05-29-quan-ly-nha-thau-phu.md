@@ -210,11 +210,7 @@ Thứ ba, yêu cầu công khai danh sách nhà thầu phụ chưa được th�
 So sánh khung pháp lý giữa Việt Nam và thực tiễn hợp đồng quốc tế:
 
 | Nội dung | FIDIC Red Book 2017 | Nghị định 175/2024 + Luật XD 135/2025 |
-<<<<<<< Updated upstream:_posts/2026-05-29-quan-ly-nha-thau-phu.md
 |---------|--------------------|--------------------------------------|
-=======
-|---------|--------------------|------------------------------------||
->>>>>>> Stashed changes:_posts/2026-06-02-quan-ly-nha-thau-phu.md
 | Phê duyệt nhà thầu phụ | Kỹ sư phê duyệt, có quyền từ chối có lý do | Chủ đầu tư phê duyệt, thủ tục hành chính |
 | Trách nhiệm nhà thầu chính | Toàn bộ, bao gồm hành động của nhà thầu phụ | Toàn bộ về chất lượng và an toàn |
 | Quy trình giao diện | Sub-Clause 4.6 quy định phối hợp với các nhà thầu khác | Không quy định cụ thể cơ chế giao diện |
