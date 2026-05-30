@@ -312,7 +312,7 @@ Sự khác biệt giữa người quản lý dự án trung bình và người g
 Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
 
 - [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Khung pháp lý điều chỉnh mối quan hệ giữa chủ đầu tư, TVQLDA và nhà thầu theo Nghị định 175/2024. Bài này giải thích ai có thẩm quyền phê duyệt hay từ chối nhà thầu phụ.
-- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) — EVM theo gói thầu phụ là nền tảng để đo lường SPI và CPI từng nhà thầu phụ trong bảng OPPM đã trình bày.
+- [Tại sao dự án xây dựng phát hiện vấn đề quá muộn và cách EVM giải quyết điều đó](/posts/quan-ly-tien-do-project/) — EVM theo gói thầu phụ là nền tảng để đo lường SPI và CPI từng nhà thầu phụ trong bảng OPPM đã trình bày.
 - [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Điều kiện hiện trường, thời tiết và sự phụ thuộc chuỗi tạo ra các ràng buộc giao diện mà phần lớn tranh chấp nhà thầu phụ bắt nguồn từ đó.
 
 ---
