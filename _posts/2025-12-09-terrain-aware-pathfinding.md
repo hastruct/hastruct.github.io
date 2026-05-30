@@ -38,11 +38,11 @@ Trong thiết kế mạng lưới thoát nước và hạ tầng kỹ thuật ng
 
 ## Đặt vấn đề
 
-Bài toán quy hoạch tuyến cống thoát nước khác hoàn toàn với bài toán tìm đường ngắn nhất trên đồ thị phẳng. Trên mặt phẳng 2D, khoảng cách Euclidean là tiêu chí duy nhất. Trong thực tế hạ tầng, phải xử lý đồng thời ba nhóm ràng buộc:
+Bài toán quy hoạch tuyến cống thoát nước khác hoàn toàn với bài toán tìm đường ngắn nhất trên đồ thị phẳng. Trên mặt phẳng 2D, khoảng cách Euclidean là tiêu chí duy nhất. Trong thực tế hạ tầng, phải xử lý đồng thời ba nhóm điều kiện:
 
-- Ràng buộc hình học: độ dốc tuyến phải nằm trong dải cho phép $[i_{\min},\, i_{\max}]$ theo yêu cầu thủy lực và thi công
-- Ràng buộc thủy lực: hướng dòng chảy phải đảm bảo tự chảy ($z_{\text{upstream}} > z_{\text{downstream}}$)
-- Ràng buộc kinh tế: tối ưu hóa cao độ đặt ống để giảm thiểu khối lượng đào đắp
+- Điều kiện hình học: độ dốc tuyến phải nằm trong dải cho phép $$[i_{\min},\, i_{\max}]$$ theo yêu cầu thủy lực và thi công
+- Điều kiện thủy lực: hướng dòng chảy phải đảm bảo tự chảy ($$z_{\text{upstream}} > z_{\text{downstream}}$$)
+- Điều kiện kinh tế: tối ưu hóa cao độ đặt ống để giảm thiểu khối lượng đào đắp
 
 Thách thức này xuất hiện trong nhiều bài toán thực tế: quy hoạch tuyến cống thoát nước mưa trên địa hình đồi dốc, thiết kế tuyến kênh tưới tiêu có cao độ thay đổi, lựa chọn tuyến đường ống ngầm qua vùng đất phức tạp, hay quy hoạch tuyến đường giao thông nội đồng với giới hạn độ dốc nghiêm ngặt.
 
@@ -100,7 +100,7 @@ A* tiêu chuẩn hoạt động trên lưới rời rạc — mỗi nút tương
 
 Hybrid A* [^4] mở rộng A* sang không gian trạng thái liên tục. Thay vì snap vào lưới, các trạng thái được lưu trong không gian $(x, y, \theta)$ với $\theta$ là góc hướng. Khi mở rộng nút, thuật toán mô phỏng nhiều hướng tiến trong không gian liên tục nhưng vẫn dùng lưới rời rạc để kiểm tra trạng thái đã thăm (closed set). Kết quả là tuyến đường mượt mà, có thể điều chỉnh độ cong liên tục.
 
-Với bài toán quy hoạch tuyến cống, trạng thái là bộ ba $(x,\, y,\, z_{\text{invert}})$ trong đó $z_{\text{invert}}$ là cao độ đáy ống tại điểm hiện tại. Không gian tìm kiếm là không gian 3D liên tục bị ràng buộc bởi các điều kiện thủy lực.
+Với bài toán quy hoạch tuyến cống, trạng thái là bộ ba $$(x,\, y,\, z_{\text{invert}})$$ trong đó $$z_{\text{invert}}$$ là cao độ đáy ống tại điểm hiện tại. Không gian tìm kiếm là không gian 3D liên tục bị ràng buộc bởi các điều kiện thủy lực.
 
 | Tiêu chí | Dijkstra | A* tiêu chuẩn | Hybrid A* |
 |---|---|---|---|
@@ -119,16 +119,16 @@ $$f(n) = g(n) + h(n) + C_{\text{terrain}}(n) + C_{\text{hydraulic}}(n)$$
 
 Trong đó:
 
-- $g(n)$ — chi phí tích lũy từ điểm xuất phát đến nút hiện tại (khoảng cách Euclidean tích lũy)
-- $h(n)$ — heuristic khoảng cách đến đích (khoảng cách Euclidean 2D, admissible)
-- $C_{\text{terrain}}(n)$ — chi phí đào đắp, tỉ lệ với chiều sâu chôn ống vượt mức tối thiểu
-- $C_{\text{hydraulic}}(n)$ — hình phạt vi phạm ràng buộc thủy lực
+- $$g(n)$$ — chi phí tích lũy từ điểm xuất phát đến nút hiện tại (khoảng cách Euclidean tích lũy)
+- $$h(n)$$ — heuristic khoảng cách đến đích (khoảng cách Euclidean 2D, admissible)
+- $$C_{\text{terrain}}(n)$$ — chi phí đào đắp, tỉ lệ với chiều sâu chôn ống vượt mức tối thiểu
+- $$C_{\text{hydraulic}}(n)$$ — hình phạt vi phạm ràng buộc thủy lực
 
 Chi phí đào đắp tính theo hàm bậc hai của độ sâu đào:
 
 $$C_{\text{terrain}}(n) = \alpha \cdot \max\!\left(0,\; z_{\text{ground}}(n) - z_{\text{invert}}(n) - d_{\text{min}}\right)^2$$
 
-Hàm bậc hai thay vì tuyến tính phản ánh thực tế chi phí thi công tăng nhanh theo chiều sâu đào: ở độ sâu lớn phải gia cố vách hố, thay đổi phương pháp đào và tăng chi phí an toàn lao động [^5]. Hệ số $\alpha$ được hiệu chỉnh theo đơn giá đào đắp của từng địa phương và loại đất.
+Hàm bậc hai thay vì tuyến tính phản ánh thực tế chi phí thi công tăng nhanh theo chiều sâu đào: ở độ sâu lớn phải gia cố vách hố, thay đổi phương pháp đào và tăng chi phí an toàn lao động [^5]. Hệ số $$\alpha$$ được hiệu chỉnh theo đơn giá đào đắp của từng địa phương và loại đất.
 
 Ràng buộc thủy lực được xử lý theo hai cơ chế:
 
