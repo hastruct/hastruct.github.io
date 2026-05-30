@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "HST.AI"
+title: "HST - Tư vấn & Quản lý dự án"
 permalink: /about/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
@@ -404,7 +404,7 @@ header:
       <h2>Giới thiệu chung</h2>
 
       <p>
-        <strong>HydroStructAI</strong> là nền tảng kỹ thuật chuyên biệt kết hợp gồm:
+        <strong>*HST - Tư vấn & Quản lý dự án*</strong> là nền tảng kỹ thuật chuyên biệt kết hợp gồm:
 		
 		<div style="
 		  background: var(--color-background-primary);
@@ -478,7 +478,7 @@ header:
           <div class="pillar-num">02</div>
           <h4>Ứng dụng web kỹ thuật cho kỹ sư</h4>
           <p>
-            Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>WASM</strong> - Phần mềm tính toán kết cấu, tính toán thủy lực, dự toán chi phí - không cần cài đặt, không cần phần cứng đắt tiền.
+            Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>Web</strong> - Phần mềm tính toán kết cấu, tính toán thủy lực, dự toán chi phí - không cần cài đặt, không cần phần cứng đắt tiền.
           </p>
         </div>
 
@@ -641,7 +641,7 @@ header:
         <div class="author-bio">
           <h4>TS. Nguyễn Hải Hà - PMP®</h4>
           <p>
-            Tiến sĩ Kỹ thuật, chuyên gia về Công trình thủy/ bảo vệ bờ sông bờ biển, Kết cấu công trình và Địa kỹ thuật. Có kinh nghiệm thực tế trong quản lý và giám sát các dự án xây dựng theo chuẩn trong nước và quốc tế. Đam mê lập trình và ứng dụng  để đưa công cụ kỹ thuật hiệu suất cao lên nền tảng web.
+            Tiến sĩ Kỹ thuật, chuyên gia về Công trình thủy, kết cấu công trình và địa kỹ thuật. Có kinh nghiệm thực tế trong quản lý và giám sát các dự án xây dựng theo chuẩn trong nước và quốc tế. Ứng dụng công nghệ và lập trình để đưa công cụ kỹ thuật hiệu suất cao.
           </p>
         </div>
       </div>
