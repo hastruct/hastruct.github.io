@@ -49,7 +49,7 @@ Thách thức này xuất hiện trong nhiều bài toán thực tế: quy hoạ
 Thuật toán tìm đường thông thường như Dijkstra hay A* tiêu chuẩn không phù hợp vì chúng tối ưu hóa một chiều chi phí duy nhất và không xử lý được ràng buộc vật lý liên tục [^1].
 
 ![Quy hoạch tuyến hạ tầng dựa trên mô hình số độ cao](/assets/images/posts/terrain-aware-pathfinding/terrain-planning-cover.jpg)
-*Mô hình DEM 3D với tuyến tối ưu qua địa hình phức tạp*
+*Mô hình DEM 3D với tuyến tối ưu qua địa hình phức tạp (Kangneoung et al, 2024)*
 
 ## Mô hình số độ cao
 
