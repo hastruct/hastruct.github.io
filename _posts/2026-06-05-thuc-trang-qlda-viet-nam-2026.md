@@ -31,7 +31,7 @@ header:
 
 ## Đặt vấn đề
 
-Tình hình giải ngân vốn đầu tư công năm 2025 (kéo dài đến hết đầu năm 2026) đạt khoảng 83,7% đến 94,8% kế hoạch Thủ tướng Chính phủ giao. Đây là mức cao nhất trong giai đoạn 2021-2025, tuy nhiên vẫn không đạt mục tiêu giải ngân 100% đề ra do vướng mắc về giải phóng mặt bằng và thể chế. Trước đó, Quốc hội giao chỉ tiêu giải ngân vốn đầu tư công là 95% kế hoạch. 
+Tình hình giải ngân vốn đầu tư công năm 2025 (kéo dài đến hết đầu năm 2026) đạt khoảng 83,7% đến 94,8% kế hoạch Thủ tướng Chính phủ giao. Đây là mức cao nhất trong giai đoạn 2021-2025, tuy nhiên vẫn không đạt mục tiêu giải ngân 100% đề ra do vướng mắc về giải phóng mặt bằng và thể chế. 
 
 Bài viết này tổng hợp thực trạng quản lý dự án xây dựng Việt Nam năm 2026 dựa trên các báo cáo chuyên ngành, kết quả kiểm toán và dữ liệu sẵn có từ cơ quan nhà nước.
 
