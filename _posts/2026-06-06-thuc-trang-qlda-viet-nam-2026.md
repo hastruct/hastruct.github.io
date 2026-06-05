@@ -2,7 +2,7 @@
 title: "Thực trạng quản lý dự án xây dựng Việt Nam 2026: số liệu, vấn đề và xu hướng"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-06-23 18:00:00 +0700
+date: 2026-06-05 10:00:00 +0700
 layout: single
 featured: true
 toc: true
@@ -22,7 +22,7 @@ tags:
   - Pháp lý xây dựng
   - Năng lực PM
   - Số hóa xây dựng
-excerpt: "Xây dựng Việt Nam đang trong giai đoạn thay đổi nhanh về quy mô vốn nhưng năng lực quản lý chưa theo kịp. Ba dữ liệu nói lên tất cả: tỷ lệ giải ngân vốn công, số vụ vi phạm chất lượng, và tỷ lệ PM có chứng chỉ quốc tế."
+excerpt: "Xây dựng Việt Nam đang trong giai đoạn thay đổi nhanh về quy mô vốn nhưng năng lực quản lý chưa theo kịp. Ba dữ liệu nói lên tất cả: tỷ lệ giải ngân vốn công, số vụ vi phạm chất lượng, và tỷ lệ nhân sự có chứng chỉ quốc tế."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
@@ -31,7 +31,7 @@ header:
 
 ## Đặt vấn đề
 
-Cuối năm 2025, Quốc hội giao chỉ tiêu giải ngân vốn đầu tư công là 95% kế hoạch. Thực tế: cả năm cả nước giải ngân được khoảng 77-80%, một số bộ ngành đạt dưới 50%. Chỉ tiêu được duy trì nhiều năm, kết quả dưới mức mục tiêu cũng được lặp lại nhiều năm. Đây không phải bất cẩn mà là dấu hiệu của vấn đề hệ thống.
+Tình hình giải ngân vốn đầu tư công năm 2025 (kéo dài đến hết đầu năm 2026) đạt khoảng 83,7% đến 94,8% kế hoạch Thủ tướng Chính phủ giao. Đây là mức cao nhất trong giai đoạn 2021-2025, tuy nhiên vẫn không đạt mục tiêu giải ngân 100% đề ra do vướng mắc về giải phóng mặt bằng và thể chế. Trước đó, Quốc hội giao chỉ tiêu giải ngân vốn đầu tư công là 95% kế hoạch. 
 
 Bài viết này tổng hợp thực trạng quản lý dự án xây dựng Việt Nam năm 2026 dựa trên các báo cáo chuyên ngành, kết quả kiểm toán và dữ liệu sẵn có từ cơ quan nhà nước.
 
@@ -45,17 +45,17 @@ Xây dựng trực tiếp chiếm khoảng 8-9% GDP, đưa Việt Nam vào nhóm
 
 ### 1.2. Chương trình 3.000 km đường cao tốc
 
-Mục tiêu hoàn thành 3.000 km đường cao tốc vào năm 2030 là dự án định hình lớn nhất ngành xây dựng Việt Nam hiện tại. Từ khoảng 1.800 km hoàn thành cuối 2024, cần thêm khoảng 1.200 km trong 6 năm. Tốc độ hoàn thành cần được duy trì gấp đôi so với trung bình 10 năm trước.
+Mục tiêu hoàn thành 3.000 km đường cao tốc vào năm 2030 là dự án định hình lớn nhất ngành xây dựng Việt Nam hiện tại. Từ khoảng 1.800 km hoàn thành cuối 2024, đến  hơn 3.000km cao tốc hoàn thành và đưa vào khai thác trong năm 2025, ngành giao thông bước vào giai đoạn tăng tốc mới, hướng tới mục tiêu 5.000km cao tốc vào năm 2030.
 
-Áp lực này chưa phải là bất khả thi về kỹ thuật, nhưng đòi hỏi năng lực quản lý dự án của cả hệ thống phải nâng cao rõ rệt. Các đại dự án cao tốc đang vận hành song song cũng đang đặt ra bài toán về quản lý chương trình (program management) chứ không chỉ quản lý dự án đơn lẻ.
+Áp lực này chưa phải là bất khả thi về kỹ thuật, nhưng đòi hỏi năng lực quản lý dự án của cả hệ thống phải nâng cao rõ rệt. Các đại dự án cao tốc đang vận hành song song cũng đang đặt ra bài toán về quản lý chương trình chứ không chỉ quản lý dự án đơn lẻ.
 
 ## 2. Vấn đề giải ngân: dai dẳng và có nguồn gốc hệ thống
 
 ### 2.1. Dữ liệu giải ngân 2020-2025
 
-Từ 2020 đến 2025, tỷ lệ giải ngân vốn đầu tư công hàng năm thường đạt trong khoảng 73-82% kế hoạch. Năm 2023 là năm tốt hơn với khoảng 83%, có một phần do thay đổi cơ chế theo dõi và áp lực chính trị mạnh hơn. Nhưng pattern tổng thể cho thấy mỗi năm đều có một lượng vốn không được sử dụng, trong khi nhu cầu hạ tầng có thể thấy bằng mắt khắp nơi.
+Từ 2020 đến 2025, tỷ lệ giải ngân vốn đầu tư công hàng năm thường đạt trong khoảng 73-82% kế hoạch. Năm 2023 là năm tốt hơn với khoảng 83%, có một phần do thay đổi cơ chế theo dõi và áp lực chính trị mạnh hơn. Nhưng mô hình tổng thể cho thấy mỗi năm đều có một lượng vốn không được sử dụng, trong khi nhu cầu hạ tầng có thể thấy bằng mắt khắp nơi.
 
-Ba nhóm nguyên nhân chính theo Bộ Kế hoạch Đầu tư (2025): vướng mắc giải phóng mặt bằng (chiếm khoảng 35% các trường hợp chậm giải ngân), hồ sơ thủ tục chưa hoàn chỉnh (25%), và năng lực chủ đầu tư/nhà thầu yếu (40%). Tỷ lệ nhóm thứ ba đáng chú ý vì đây là nhóm có thể cải thiện chủ động nhất thông qua đào tạo và thể chế.
+Ba nhóm nguyên nhân chính theo Bộ Tài chính (2025): vướng mắc giải phóng mặt bằng (chiếm khoảng 35% các trường hợp chậm giải ngân), hồ sơ thủ tục chưa hoàn chỉnh (25%), và năng lực chủ đầu tư/nhà thầu yếu (40%). Tỷ lệ nhóm thứ ba đáng chú ý vì đây là nhóm có thể cải thiện chủ động nhất thông qua đào tạo và thể chế.
 
 ### 2.2. Hệ lụy của giải ngân thấp
 
@@ -83,15 +83,7 @@ Nghị định 175/2024/NĐ-CP có một số quy định mới về điều ki�
 
 PMI ước tính tổng số chứng chỉ PMP tại Việt Nam cuối 2025 vào khoảng 4.500-5.000. Với quy mô ngành xây dựng có hơn 200.000 doanh nghiệp hoạt động đăng ký và hàng chục ngàn công trình triển khai mỗi năm, con số này phản ánh khoảng cách đầu tư vào năng lực quản lý chuyên nghiệp.
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Hầu hết PM Việt Nam trong ngành xây dựng trưởng thành từ kinh nghiệm hiện trường, không qua học quản lý dự án có cấu trúc. Đại đa số chưa bao giờ xây dựng WBS, không biết tính SPI hay CPI, chỉ thống kê % hoàn thành bằng quan sát chủ quan. Hệ thống EVM và cách thiết lập WBS chuẩn được phân tích tại [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/). Không phải vì họ không chấp nhận hay không có năng lực, mà vì hệ thống chưa yêu cầu.
-=======
-Hầu hết PM Việt Nam trong ngành xây dựng trưởng thành từ kinh nghiệm hiện trường, không qua học quản lý dự án có cấu trúc. Đại đa số chưa bao giờ xây dựng WBS, không biết tính SPI hay CPI, chỉ thống kê % hoàn thành bằng quan sát chủ quan. Không phải vì họ không chấp nhận hay không có năng lực, mà vì hệ thống chưa yêu cầu.
->>>>>>> Stashed changes
-=======
-Hầu hết PM Việt Nam trong ngành xây dựng trưởng thành từ kinh nghiệm hiện trường, không qua học quản lý dự án có cấu trúc. Đại đa số chưa bao giờ xây dựng WBS, không biết tính SPI hay CPI, chỉ thống kê % hoàn thành bằng quan sát chủ quan. Không phải vì họ không chấp nhận hay không có năng lực, mà vì hệ thống chưa yêu cầu.
->>>>>>> Stashed changes
+Hầu hết giám đốc dự án trong ngành xây dựng trưởng thành từ kinh nghiệm hiện trường, không qua học quản lý dự án có cấu trúc. Đại đa số chưa bao giờ xây dựng WBS, không biết tính SPI hay CPI, chỉ thống kê % hoàn thành bằng quan sát chủ quan. Hệ thống EVM và cách thiết lập WBS chuẩn được phân tích tại [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/). Không phải vì họ không chấp nhận hay không có năng lực, mà vì hệ thống chưa yêu cầu.
 
 ### 4.2. Khoảng cách giữa bằng cấp và năng lực thực tế
 
@@ -109,7 +101,7 @@ Nhiều chủ đầu tư nộp hồ sơ BIM để tuân thủ quy định nhưng
 
 ### 5.2. Phần mềm quản lý dự án: từ Excel đến giải pháp tích hợp
 
-Khảo sát không chính thức trong ngành (2024) cho thấy khoảng 60% các dự án xây dựng vừa và nhỏ tại Việt Nam sử dụng Excel là công cụ quản lý tiến độ chính. Procore, Primavera P6, MS Project được dùng chủ yếu tại các tổng thầu lớn hoặc dự án ODA có yêu cầu từ phía nhà tài trợ.
+Khảo sát không chính thức trong ngành (2024) cho thấy khoảng 60% các dự án xây dựng vừa và nhỏ tại Việt Nam sử dụng Excel là công cụ quản lý tiến độ chính. Primavera P6, MS Project được dùng chủ yếu tại các tổng thầu lớn hoặc dự án ODA có yêu cầu từ phía nhà tài trợ.
 
 Xu hướng dịch chuyển sang giải pháp đám mây đang bắt đầu, đặc biệt sau khi một số công ty Việt Nam triển khai Procore và báo cáo giảm thời gian làm báo cáo 30-40% trong giai đoạn 2024-2025. Nhưng chi phí phần mềm vẫn là rào cản với các nhà thầu nhỏ và vừa.
 
@@ -123,7 +115,7 @@ Về phía trách nhiệm cá nhân: đây là thay đổi đáng chú ý và đ
 
 ### 6.2. Xu hướng thiết kế-thi công (Design-Build)
 
-Nhiều dự án hạ tầng lớn đang chuyển sang mô hình hợp đồng thiết kế-thi công (DB) hoặc EPC thay vì Design-Bid-Build truyền thống. Mô hình này có thể rút ngắn tổng thời gian, nhưng đặt ra yêu cầu cao hơn với chủ đầu tư trong việc định nghĩa yêu cầu đầu ra (output specification) thay vì thiết kế chi tiết đầu vào.
+Nhiều dự án hạ tầng lớn đang chuyển sang mô hình hợp đồng thiết kế thi công (DB) hoặc EPC thay vì Design-Bid-Build truyền thống. Mô hình này có thể rút ngắn tổng thời gian, nhưng đặt ra yêu cầu cao hơn với chủ đầu tư trong việc định nghĩa yêu cầu đầu ra (output specification) thay vì thiết kế chi tiết đầu vào.
 
 Nhiều chủ đầu tư Việt Nam chưa có kinh nghiệm viết output specification tốt, dẫn đến tranh chấp trong hợp đồng DB về phạm vi công việc. Đây là lĩnh vực cần đào tạo và chuyển giao kiến thức rõ ràng hơn.
 
@@ -149,41 +141,17 @@ Vấn đề không phải thiếu vốn hay thiếu kỹ thuật. Vấn đề l�
 
 ## Tham khảo thêm
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 Các bài trong chuỗi quản lý dự án xây dựng đi sâu vào giải pháp cho từng vấn đề được phân tích trong bài này:
 
-- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Giải pháp cụ thể cho bốn vấn đề TVQLDA đã được Kiểm toán Nhà nước chỉ ra nhiều năm: nhân sự, quyền hạn, pháp lý và áp lực tài chính.
-- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) — EVM là giải pháp kỹ thuật trực tiếp cho vấn đề "tỷ lệ PM thiếu công cụ đo lường tích hợp" mà bài này đã phân tích.
-- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Sáu nguyên tắc quản lý nhà thầu phụ từ thực tiễn quốc tế: giải pháp cho vấn đề "phần lớn vi phạm chất lượng bắt nguồn từ nhà thầu phụ không được quản lý đúng cách".
-- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù cấu trúc giải thích tại sao tỷ lệ trễ tiến độ và vượt chi phí trong ngành xây dựng cao hơn các ngành khác.
-- [Đầu tư công trong xây dựng: vốn trung hạn, ODA và những nút thắt hệ thống](/posts/dau-tu-cong-von-trung-han-oda/) — Phân tích chuyên sâu ba nhóm nguyên nhân giải ngân thấp và khuyến nghị thực tiễn cho PMU.
-=======
-=======
->>>>>>> Stashed changes
-Các bài trong chuỗi quản lý dự án xây dựng:
+- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) giải pháp cụ thể cho bốn vấn đề TVQLDA đã được Kiểm toán Nhà nước chỉ ra nhiều năm: nhân sự, quyền hạn, pháp lý và áp lực tài chính.
+- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) giải pháp kỹ thuật trực tiếp cho vấn đề "tỷ lệ nhân sự thiếu công cụ đo lường tích hợp" mà bài này đã phân tích.
+- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) trình bày sáu nguyên tắc quản lý nhà thầu phụ từ thực tiễn quốc tế: giải pháp cho vấn đề "phần lớn vi phạm chất lượng bắt nguồn từ nhà thầu phụ không được quản lý đúng cách".
+- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) trình bày bảy đặc thù cấu trúc giải thích tại sao tỷ lệ trễ tiến độ và vượt chi phí trong ngành xây dựng cao hơn các ngành khác.
+- [Đầu tư công trong xây dựng: vốn trung hạn, ODA và những nút thắt hệ thống](/posts/dau-tu-cong-von-trung-han-oda/) phân tích chuyên sâu ba nhóm nguyên nhân giải ngân thấp và khuyến nghị thực tiễn cho PMU.
 
-- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/)
-- [Đầu tư công trong xây dựng: vốn trung hạn, ODA và những nút thắt hệ thống](/posts/dau-tu-cong-von-trung-han-oda/)
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-- [Dự án bất động sản: khi áp lực thị trường chi phối tiến độ xây dựng](/posts/du-an-bat-dong-san/)
-- [Dự án công nghiệp và logistics: cam kết với nhà đầu tư nước ngoài](/posts/du-an-cong-nghiep-logistics/)
-- [Dự án hạ tầng nông nghiệp và vùng khó: đặc thù ít được viết đủ](/posts/du-an-ha-tang-nong-nghiep/)
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
----
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn muốn hiểu sâu hơn về thực trạng và cách xây dựng hệ thống quản lý dự án phù hợp với bối cảnh Việt Nam, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp.
+Nếu bạn muốn hiểu sâu hơn về thực trạng và cách xây dựng hệ thống quản lý dự án phù hợp với bối cảnh Việt Nam, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---
 
@@ -191,7 +159,7 @@ Nếu bạn muốn hiểu sâu hơn về thực trạng và cách xây dựng h�
 
 ## Tài liệu tham khảo
 
-[^1]: Bộ Kế hoạch Đầu tư (2025) - Báo cáo tổng kết giải ngân vốn đầu tư công 2025 và phương hướng 2026.
+[^1]: Bộ Tài chính (2025) - Báo cáo tổng kết giải ngân vốn đầu tư công 2025 và phương hướng 2026.
 [^2]: Thanh tra Bộ Xây dựng (2024) - Kết quả thanh tra chất lượng công trình xây dựng năm 2023.
 [^3]: Luật Xây dựng số 135/2025/QH15 - Quốc hội Việt Nam khóa XV.
 [^4]: World Bank (2024) - Vietnam Infrastructure Finance Assessment: Strengthening Project Preparation and Management.

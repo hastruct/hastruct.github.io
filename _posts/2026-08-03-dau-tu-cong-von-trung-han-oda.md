@@ -1,8 +1,8 @@
 ---
 title: "Đầu tư công trong xây dựng: vốn trung hạn, ODA và những nút thắt hệ thống"
 author_profile: true
-author_name: "HST.AI"
-date: 2026-06-09 18:00:00 +0700
+author_name: "HST"
+date: 2026-08-03 18:00:00 +0700
 layout: single
 featured: true
 toc: true
@@ -21,7 +21,7 @@ tags:
     Giải ngân vốn,
     Nghị định 175,
     Luật Đầu tư công,
-    PMU,
+    Ban QLDA,
     Chủ đầu tư,
     Xây dựng Việt Nam,
     ADB,
@@ -29,7 +29,7 @@ tags:
     JICA,
     Đấu thầu quốc tế
   ]
-excerpt: "Tỷ lệ giải ngân vốn đầu tư công thấp mãn tính không phải vấn đề ý chí. Đó là vấn đề cấu trúc hệ thống, xuất phát từ cơ chế phân bổ vốn, thủ tục phê duyệt nhiều tầng, và năng lực PMU địa phương."
+excerpt: "Tỷ lệ giải ngân vốn đầu tư công thấp không phải vấn đề ý chí. Đó là vấn đề cấu trúc hệ thống, xuất phát từ cơ chế phân bổ vốn, thủ tục phê duyệt nhiều tầng, và năng lực QLDA địa phương."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
@@ -50,7 +50,7 @@ Lý do hay được nêu là thủ tục hành chính phức tạp, GPMB chậm,
 
 ### 1.1. Cơ chế kế hoạch 5 năm và những hạn chế thực tế
 
-Luật Đầu tư công 2019 quy định vốn đầu tư công phải được lập kế hoạch theo giai đoạn 5 năm (kế hoạch trung hạn) và phân bổ hàng năm trong khuôn khổ đó. Đây là bước tiến so với cơ chế trước đây, khi việc phân bổ vốn hàng năm thiếu tính liên tục và khó dự báo.
+Luật Đầu tư công 2023 quy định vốn đầu tư công phải được lập kế hoạch theo giai đoạn 5 năm (kế hoạch trung hạn) và phân bổ hàng năm trong khuôn khổ đó. Đây là bước tiến so với cơ chế trước đây, khi việc phân bổ vốn hàng năm thiếu tính liên tục và khó dự báo.
 
 Tuy nhiên, cơ chế trung hạn có ít nhất hai hạn chế cấu trúc quan trọng.
 
@@ -76,15 +76,7 @@ Nguyên nhân pháp lý và thủ tục: thẩm định dự án, thẩm định
 
 Nguyên nhân GPMB: như đã phân tích trong bài trước của chuỗi này, GPMB chậm là nguyên nhân trực tiếp làm trễ hàng loạt dự án. Không có mặt bằng thì không có chỗ thi công, và không thể giải ngân cho khối lượng chưa thi công.
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Nguyên nhân năng lực: nhiều PMU địa phương không có đủ nhân sự có chuyên môn để xử lý đồng thời nhiều dự án. Cán bộ phụ trách kiêm nhiệm nhiều vai trò, hồ sơ nghiệm thu tồn đậng, quyết toán hoàn thành chậm kéo dài nhiều năm sau khi dự án bàn giao đưa vào sử dụng.
-=======
-Nguyên nhân năng lực: nhiều PMU địa phương không có đủ nhân sự có chuyên môn để xử lý đồng thời nhiều dự án. Cán bộ phụ trách kiêm nhiệm nhiều vai trò, hồ sơ nghiệm thu tồn đọng, quyết toán hoàn thành chậm kéo dài nhiều năm sau khi dự án bàn giao đưa vào sử dụng.
->>>>>>> Stashed changes
-=======
-Nguyên nhân năng lực: nhiều PMU địa phương không có đủ nhân sự có chuyên môn để xử lý đồng thời nhiều dự án. Cán bộ phụ trách kiêm nhiệm nhiều vai trò, hồ sơ nghiệm thu tồn đọng, quyết toán hoàn thành chậm kéo dài nhiều năm sau khi dự án bàn giao đưa vào sử dụng.
->>>>>>> Stashed changes
+Nguyên nhân năng lực: nhiều Ban QLDA địa phương không có đủ nhân sự có chuyên môn để xử lý đồng thời nhiều dự án. Cán bộ phụ trách kiêm nhiệm nhiều vai trò, hồ sơ nghiệm thu tồn đọng, quyết toán hoàn thành chậm kéo dài nhiều năm sau khi dự án bàn giao đưa vào sử dụng.
 
 ### 2.2. Hậu quả của giải ngân thấp
 
@@ -112,7 +104,7 @@ Các nhà tài trợ lớn như World Bank và ADB thường yêu cầu:
 
 Safeguards chính sách: về di dân tái định cư (Operational Policy 4.12 của WB), về bảo vệ môi trường, về quyền của người dân tộc thiểu số. Những safeguards này không phải thủ tục hình thức mà cần có kế hoạch thực hiện cụ thể, được giám sát và báo cáo định kỳ.
 
-Hệ thống quản lý tài chính: PMU phải duy trì tài khoản riêng cho dự án ODA, nộp báo cáo tài chính theo chuẩn của nhà tài trợ, và sẵn sàng cho kiểm toán của cả hai phía (kiểm toán Việt Nam và kiểm toán độc lập theo yêu cầu nhà tài trợ).
+Hệ thống quản lý tài chính: Ban QLDA phải duy trì tài khoản riêng cho dự án ODA, nộp báo cáo tài chính theo chuẩn của nhà tài trợ, và sẵn sàng cho kiểm toán của cả hai phía (kiểm toán Việt Nam và kiểm toán độc lập theo yêu cầu nhà tài trợ).
 
 Mua sắm quốc tế: gói thầu trên ngưỡng quy định phải đấu thầu quốc tế cạnh tranh, sử dụng tài liệu đấu thầu chuẩn của nhà tài trợ, và nhà tài trợ có quyền không phê duyệt kết quả đấu thầu nếu không đạt tiêu chuẩn.
 
@@ -124,15 +116,7 @@ Ngoài ra, vốn ODA không phải là viện trợ không hoàn lại, dù lãi
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## 4. Quy trình phê duyệt nhiều tầng và điểm nghận
-=======
 ## 4. Quy trình phê duyệt nhiều tầng và điểm nghẽn
->>>>>>> Stashed changes
-=======
-## 4. Quy trình phê duyệt nhiều tầng và điểm nghẽn
->>>>>>> Stashed changes
 
 ### 4.1. Phân cấp quyết định theo thẩm quyền
 
@@ -154,7 +138,7 @@ Trong thời gian thẩm định, thi công thường không dừng hoàn toàn.
 
 Luật Xây dựng mới (hiệu lực từ 01/7/2026) có một số thay đổi đáng chú ý trong lĩnh vực đầu tư công. Đơn giản hóa thủ tục thẩm định một số loại thiết kế. Mở rộng phạm vi áp dụng phương pháp quản lý dự án theo hợp đồng EPC và PCM. Điều chỉnh ngưỡng phân cấp thẩm quyền phê duyệt.
 
-Những thay đổi này trên giấy là tích cực. Tác động thực tế phụ thuộc vào khả năng triển khai ở cấp địa phương, nơi năng lực PMU vẫn là điểm yếu chủ đạo.
+Những thay đổi này trên giấy là tích cực. Tác động thực tế phụ thuộc vào khả năng triển khai ở cấp địa phương, nơi năng lực Ban QLDA vẫn là điểm yếu chủ đạo.
 
 ### 5.2. Xu hướng tập trung hóa các dự án trọng điểm
 
@@ -164,17 +148,17 @@ Kết quả của mô hình này còn cần thêm thời gian để đánh giá 
 
 ---
 
-## 6. Khuyến nghị thực tiễn cho PMU và chủ đầu tư
+## 6. Khuyến nghị thực tiễn cho Ban QLDA và chủ đầu tư
 
 ### 6.1. Chuẩn bị dự án trước khi có vốn
 
 Vấn đề cốt lõi của giải ngân thấp là khi vốn được phân bổ, dự án chưa sẵn sàng. GPMB chưa xong, thiết kế chưa được phê duyệt, đấu thầu chưa được tổ chức.
 
-Giải pháp thực tế: PMU cần chuẩn bị đồng thời, không phải tuần tự. Trong khi chờ phê duyệt vốn, chuẩn bị hồ sơ GPMB. Trong khi GPMB đang triển khai, chuẩn bị hồ sơ thiết kế kỹ thuật. Trong khi thiết kế được thẩm định, chuẩn bị hồ sơ mời thầu. Tư duy song song thay vì tư duy tuần tự có thể cắt giảm đáng kể thời gian từ khi có vốn đến khi thi công thực chất.
+Giải pháp thực tế: Ban QLDA cần chuẩn bị đồng thời, không phải tuần tự. Trong khi chờ phê duyệt vốn, chuẩn bị hồ sơ GPMB. Trong khi GPMB đang triển khai, chuẩn bị hồ sơ thiết kế kỹ thuật. Trong khi thiết kế được thẩm định, chuẩn bị hồ sơ mời thầu. Tư duy song song thay vì tư duy tuần tự có thể cắt giảm đáng kể thời gian từ khi có vốn đến khi thi công thực chất.
 
 ### 6.2. Quản lý dự án ODA theo hai hệ thống
 
-PMU quản lý dự án ODA cần có ít nhất một cán bộ nắm rõ cả hai hệ thống: quy định pháp luật Việt Nam và yêu cầu cụ thể của nhà tài trợ. Sai sót trong thủ tục phía nhà tài trợ có thể dẫn đến nhà tài trợ từ chối hoàn trả, nghĩa là phí đó trở thành gánh nặng ngân sách của phía Việt Nam.
+Ban QLDA quản lý dự án ODA cần có ít nhất một cán bộ nắm rõ cả hai hệ thống: quy định pháp luật Việt Nam và yêu cầu cụ thể của nhà tài trợ. Sai sót trong thủ tục phía nhà tài trợ có thể dẫn đến nhà tài trợ từ chối hoàn trả, nghĩa là phí đó trở thành gánh nặng ngân sách của phía Việt Nam.
 
 Tài liệu hóa đầy đủ là yêu cầu bắt buộc trong dự án ODA, không phải tùy chọn. Kiểm toán của nhà tài trợ có thể diễn ra bất kỳ lúc nào trong và sau dự án.
 
@@ -184,7 +168,7 @@ Tài liệu hóa đầy đủ là yêu cầu bắt buộc trong dự án ODA, kh
 
 Giải ngân vốn đầu tư công thấp không phải vấn đề ý chí hay thiếu nỗ lực. Đó là vấn đề cấu trúc hệ thống, từ cách lập kế hoạch vốn trung hạn đến cách tổ chức thực hiện ở cấp địa phương.
 
-Cải thiện thực sự cần thay đổi ở nhiều cấp đồng thời: cải cách quy trình phê duyệt, tăng cường năng lực PMU địa phương, đẩy nhanh GPMB, và tư duy chuẩn bị dự án chủ động hơn trước khi vốn được phân bổ. Không cải cách nào trong số đó có thể thực hiện đơn lẻ và cho kết quả ngay trong một năm ngân sách.
+Cải thiện thực sự cần thay đổi ở nhiều cấp đồng thời: cải cách quy trình phê duyệt, tăng cường năng lực Ban QLDA địa phương, đẩy nhanh GPMB, và tư duy chuẩn bị dự án chủ động hơn trước khi vốn được phân bổ. Không cải cách nào trong số đó có thể thực hiện đơn lẻ và cho kết quả ngay trong một năm ngân sách.
 
 Bài tiếp theo trong chuỗi này sẽ chuyển sang khu vực tư nhân, nơi áp lực thị trường thay thế áp lực ngân sách, nhưng vấn đề quản lý dự án xây dựng không vì thế mà đơn giản hơn.
 
@@ -192,30 +176,13 @@ Bài tiếp theo trong chuỗi này sẽ chuyển sang khu vực tư nhân, nơi
 
 ## Tham khảo thêm
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp đến nội dung bài viết này:
+Bài viết [**Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp**](/posts/tvqlda-van-de-giai-phap/)  trình bày bốn vấn đề cốt lõi của TVQLDA trong dự án đầu tư công: nhân sự Ban QLDA, phân định quyền hạn, pháp lý và áp lực tài chính. Nền tảng để xây dựng hệ thống quản lý cho Ban QLDA.
 
-- [Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp](/posts/tvqlda-van-de-giai-phap/) — Bốn vấn đề cốt lõi của TVQLDA trong dự án đầu tư công: nhân sự PMU, phân định quyền hạn, pháp lý và áp lực tài chính. Nền tảng để xây dựng hệ thống quản lý cho PMU.
-- [Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK](/posts/quan-ly-tien-do-project/) — EVM hỗ trợ PMU giám sát giải ngân và tiến độ tích hợp. Bao gồm ngưỡng cảnh báo pháp lý khi EAC vượt 10% BAC theo Luật Xây dựng 135/2025.
-- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/) — Quản lý chuỗi nhà thầu phụ trong dự án đầu tư công: phân định trách nhiệm, KPI và hệ thống báo cáo theo Nghị định 175/2024.
-- [Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác](/posts/dac-thu-du-an-xay-dung/) — Bảy đặc thù làm nền tảng hiểu tại sao quản lý vốn công trong xây dựng phức tạp hơn các ngành khác.
-=======
+Bài viết [**Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK**](/posts/quan-ly-tien-do-project/) giải pháp hỗ trợ Ban QLDA giám sát giải ngân và tiến độ tích hợp. Bao gồm ngưỡng cảnh báo pháp lý khi EAC vượt 10% BAC theo Luật Xây dựng 135/2025.
+
+Bài viết [**Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng**](/posts/quan-ly-nha-thau-phu/) quản lý nhà thầu phụ trong dự án đầu tư công: phân định trách nhiệm, KPI và hệ thống báo cáo theo Nghị định 175/2024.
+
 Bài viết [**Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác**](/posts/dac-thu-du-an-xay-dung/) phân tích các đặc thù chung làm nền tảng hiểu tại sao quản lý vốn công trong xây dựng phức tạp hơn các ngành khác.
-
-Bài viết [**Hướng dẫn quản lý tiến độ và chi phí theo chuẩn PMBOK**](/posts/quan-ly-tien-do-project/) trình bày cách EVM hỗ trợ PMU giám sát giải ngân và tiến độ tích hợp trong dự án đầu tư công.
->>>>>>> Stashed changes
-=======
-Bài viết [**Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác**](/posts/dac-thu-du-an-xay-dung/) phân tích các đặc thù chung làm nền tảng hiểu tại sao quản lý vốn công trong xây dựng phức tạp hơn các ngành khác.
-
-Bài viết [**Hướng dẫn quản lý tiến độ và chi phí theo chuẩn PMBOK**](/posts/quan-ly-tien-do-project/) trình bày cách EVM hỗ trợ PMU giám sát giải ngân và tiến độ tích hợp trong dự án đầu tư công.
->>>>>>> Stashed changes
-
----
-
-## Liên hệ tư vấn và hỗ trợ triển khai
-
-Nếu đơn vị bạn đang gặp khó khăn với giải ngân dưới 70% kế hoạch, hoặc đang chuẩn bị đàm phán hợp đồng ODA, liên hệ để đánh giá hệ thống kiểm soát tiến độ và tài chính hiện tại: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com).
 
 ---
 

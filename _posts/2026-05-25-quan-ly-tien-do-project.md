@@ -1,5 +1,5 @@
 ---
-title: "Tại sao dự án xây dựng phát hiện vấn đề quá muộn và cách EVM giải quyết điều đó"
+title: "Hướng dẫn quản lý tiến độ và chi phí xây dựng theo chuẩn PMBOK"
 author_profile: true
 author_name: "HST.AI"
 date: 2026-05-25 14:00:00 +0700
