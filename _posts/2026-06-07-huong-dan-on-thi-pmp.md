@@ -1,8 +1,8 @@
 ---
-title: "Huong dan on thi PMP: tu 3 domain den ngay thi (PMBOK 7 / ECO 2021)"
+title: "Hướng dẫn ôn thi PMP (PMBOK 7 / ECO 2021)"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-06-07 07:00:00 +0700
+date: 2026-06-07 18:00:00 +0700
 layout: single
 featured: true
 toc: true
@@ -24,22 +24,20 @@ tags:
     PMI,
     Chung chi quan ly du an
   ]
-excerpt: "De thi PMP 2024-2026 khong hoi ban thuat long PMBOK. No hoi ban xu ly tinh huong. Bai nay tong hop toan bo 35 task tu 3 domain chinh, kem he thong tu khoa chon dap an va meo thi thuc te tu cong dong r/pmp."
+excerpt: "Đề thi PMP không cần thuộc lòng tài liệu hướng dẫn mà tập trung vào xử lý tình huống. Bài viết nàu tổng hợp toàn bộ 35 nhiệm vụ từ 3 miền chính kemd hệ thống từ khóa chọn đáp án đúng và mẹo thi thực tế từ cộng đồng PMP."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "HydrostructAI - Tu van quan ly du an xay dung va ha tang"
+  caption: "HydrostructAI - Tư vấn quản lý dự án"
 ---
 
 ## Đặt vấn đề
 
-Có một điều mà nhiều người học PMP không ai nói thẳng: học PMBOK để thi PMP là sai chiến lược.
+Đề thi PMP từ năm 2021 trở đi chạy theo **Exam Content Outline (ECO) 2021** của PMI, không phải theo cấu trúc Knowledge Area của PMBOK 6 nữa. ECO 2021 tổ chức nội dung thi theo 3 domain và 35 task. Khoảng 50% câu hỏi là về Agile và phương pháp kết hợp, 50% còn lại là Predictive.
 
-Đề thi PMP từ năm 2021 trở đi chạy theo **Exam Content Outline (ECO) 2021** của PMI, không phải theo cấu trúc Knowledge Area của PMBOK 6 nữa. ECO 2021 tổ chức nội dung thi theo 3 domain và 35 task. Khoảng 50% câu hỏi là về Agile và phương pháp kết hợp, 50% còn lại là Predictive. Bạn ôi am lịch sử các process group hay Knowledge Area theo PMBOK 6 thì ít có ích hơn là biết xử lý tình huống theo ECO.
+PMBOK 7 (xuất bản năm 2021) phản ánh chuyển dịch này: thay vì liệt kê các process cụ thể, nó đi vào 12 nguyên tắc quản lý dự án và 8 lĩnh vực hiệu suất. 
 
-PMBOK 7 (xuất bản năm 2021) phản ánh chuyển dịch này: thay vì liệt kê các process cụ thể, nó đi vào 12 nguyên tắc quản lý dự án và 8 lĩnh vực hiệu suất. Không có đáp án tùy tiện. Có quan điểm thì được.
-
-Bài này tổng hợp nội dung chính từ 3 domain ECO 2021, giải thích từng task theo góc nhìn làm bài thi, và kèm theo hệ thống từ khóa giúp bạn nhận ra đáp án đúng nhanh hơn. Nguồn gốc là bộ poster ôn thi của lyfe_is_good trên r/pmp [1] kết hợp với hướng dẫn ôn thi thực tế từ cộng đồng [2] và các tài liệu PMI chính thức.
+Bài này tổng hợp nội dung chính từ 3 domain ECO 2021, giải thích từng task theo góc nhìn làm bài thi kèm theo hệ thống từ khóa giúp bạn nhận ra đáp án đúng nhanh hơn. Nguồn gốc là bộ poster ôn thi trên r/pmp [1] kết hợp với hướng dẫn ôn thi thực tế từ cộng đồng [2] và các tài liệu PMI chính thức.
 
 ---
 
@@ -53,7 +51,7 @@ Bài này tổng hợp nội dung chính từ 3 domain ECO 2021, giải thích t
 | Process | 50% | 17 task |
 | Business Environment | 8% | 4 task |
 
-People và Business Environment nhiều người để ngó vì nên tập trung vào Process, nhưng 42% của People là con số lớn. Bỏ qua People đồng nghĩa với mất gần nửa đề thi.
+People và Business Environment nhiều người để ngỏ vì nên tập trung vào Process, nhưng 42% của People là con số lớn. Bỏ qua People đồng nghĩa với mất gần nửa đề thi.
 
 Một lưu ý quan trọng: các domain không độc lập. Task trong Business Environment hay xuất hiện dưới dạng tình huống lớn hơn trong Process hoặc People. Ví dụ, câu hỏi về regulatory compliance có thể xuất hiện trong bất kỳ phần nào của bài thi.
 
@@ -402,7 +400,7 @@ Bài viết này đang được cập nhật theo PMBOK 8 khi PMI phát hành ph
 
 ---
 
-*© 2026 HydrostructAI - Tư vấn Quản lý Dự án Xây dựng và Hạ tầng*
+*© 2026 HydrostructAI - Tư vấn Quản lý Dự án Xây dựng*
 
 ---
 
@@ -424,12 +422,4 @@ Bài viết này đang được cập nhật theo PMBOK 8 khi PMI phát hành ph
 
 [8] PMAspirant. *Process Group and Knowledge Area Mapping Game*. Truy cập tại: [https://www.pmaspirant.com](https://www.pmaspirant.com)
 
-[9] Nguyen Hai Ha. *PMP People Domain: Tasks 1-14*. Obsidian vault, 2026. (Nội bộ)
-
-[10] Nguyen Hai Ha. *PMP Process Domain: Tasks 1-17*. Obsidian vault, 2026. (Nội bộ)
-
-[11] Nguyen Hai Ha. *PMP Business Environment Domain: Tasks 1-4 + Key Words + Misc Definitions*. Obsidian vault, 2026. (Nội bộ)
-
 ---
-
-*Bài viết biên soạn bởi Nguyễn Hải Hà. Nội dung trích dẫn từ [1] và [2] ghi rõ nguồn. Phần phân tích, hướng dẫn và tổ chức bài là nội dung bổ sung.*
