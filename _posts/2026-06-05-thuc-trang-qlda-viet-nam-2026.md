@@ -59,7 +59,7 @@ Ba nhóm nguyên nhân chính theo Bộ Tài chính (2025): vướng mắc giả
 
 ### 2.2. Hệ lụy của giải ngân thấp
 
-Vốn không giải ngân được có nhiều hệ lụy: chi phí cơ hội do hạ tầng trễ, lãi tiền vay ODA tiếp tục chạy dù tiến độ dừng, áp lực đẩy nhanh cuối năm gây rủi ro chất lượng, và biến dạng trong đánh giá năng lực cán bộ (cán bộ giải ngân được 90% được coi là hoàn thành nhiệm vụ bất kể chất lượng thi công).
+Vốn không giải ngân được có nhiều hệ lụy: chi phí cơ hội do hạ tầng chậm trễ, lãi tiền vay ODA tiếp tục chạy dù tiến độ dừng, áp lực đẩy nhanh cuối năm gây rủi ro chất lượng, và biến dạng trong đánh giá năng lực cán bộ (cán bộ giải ngân được 90% được coi là hoàn thành nhiệm vụ bất kể chất lượng thi công).
 
 Một hệ lụy ít được nói đến: vốn không giải ngân hết trong năm được chuyển sang năm sau, cộng với vốn mới của năm sau, tạo ra một khối lượng công việc tích lũy dần mà hệ thống không có năng lực hấp thụ thêm.
 
@@ -123,7 +123,7 @@ Nhiều chủ đầu tư Việt Nam chưa có kinh nghiệm viết output specif
 
 ### 7.1. Chuẩn bị dự án: khâu yếu nhất
 
-Nhiều báo cáo trong nước và quốc tế đều chỉ ra chuẩn bị dự án là khâu yếu nhất trong chu trình đầu tư công Việt Nam. Khảo sát địa điểm địa chất và thủy văn thường được rút ngắn để đẩy nhanh phê duyệt. Thiết kế cơ sở nộp cùng hồ sơ phê duyệt chủ trương không đủ độ sâu để phát hiện các vấn đề sẽ xuất hiện trong thiết kế kỹ thuật sau.
+Nhiều báo cáo trong nước và quốc tế đều chỉ ra chuẩn bị dự án là khâu yếu nhất trong chu trình đầu tư công Việt Nam. Khảo sát địa hình, địa chất và thủy văn thường được rút ngắn để đẩy nhanh phê duyệt. Thiết kế cơ sở nộp cùng hồ sơ phê duyệt chủ trương không đủ độ sâu để phát hiện các vấn đề sẽ xuất hiện trong thiết kế kỹ thuật sau.
 
 Khoảng 60-70% việc điều chỉnh dự án trong giai đoạn thi công có nguồn gốc từ chuẩn bị không đủ chất lượng ở giai đoạn trước. Nước Anh, Hàn Quốc và Singapore đầu tư vào chuẩn bị dự án 5-8% tổng mức, Việt Nam thường dưới 2%.
 
