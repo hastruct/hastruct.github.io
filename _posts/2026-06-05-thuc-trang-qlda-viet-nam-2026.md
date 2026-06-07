@@ -123,13 +123,13 @@ Nhiều chủ đầu tư Việt Nam chưa có kinh nghiệm viết output specif
 
 ### 7.1. Chuẩn bị dự án: khâu yếu nhất
 
-Nhiều báo cáo trong nước và quốc tế đều chỉ ra chuẩn bị dự án là khâu yếu nhất trong chu trình đầu tư công Việt Nam. Khảo sát địa hình, địa chất và thủy văn thường được rút ngắn để đẩy nhanh phê duyệt. Thiết kế cơ sở nộp cùng hồ sơ phê duyệt chủ trương không đủ độ sâu để phát hiện các vấn đề sẽ xuất hiện trong thiết kế kỹ thuật sau.
+Nhiều báo cáo trong nước và quốc tế đều chỉ ra chuẩn bị dự án là khâu yếu nhất trong chu trình đầu tư công Việt Nam. Các bước như khảo sát địa hình, địa chất và thủy văn thường được rút ngắn để đẩy nhanh phê duyệt. Hồ sơ phê duyệt chủ trương, thiết kế cơ sở không đủ độ sâu để phát hiện các vấn đề sẽ xuất hiện trong thiết kế kỹ thuật sau.
 
-Khoảng 60-70% việc điều chỉnh dự án trong giai đoạn thi công có nguồn gốc từ chuẩn bị không đủ chất lượng ở giai đoạn trước. Nước Anh, Hàn Quốc và Singapore đầu tư vào chuẩn bị dự án 5-8% tổng mức, Việt Nam thường dưới 2%.
+Khoảng 60-70% việc điều chỉnh dự án trong giai đoạn thi công có nguồn gốc từ chuẩn bị không đủ chất lượng ở giai đoạn trước. Tại các nước như Anh, Hàn Quốc hay Singapore đầu tư vào chuẩn bị dự án 5-8% tổng mức, còn Việt Nam thường dưới 2%.
 
 ### 7.2. Hệ thống dữ liệu dự án
 
-Không có cơ sở dữ liệu quốc gia về hiệu suất dự án xây dựng: thường xây xong mấy tiến độ so với khởi công, vượt dự toán trung bình bao nhiêu %, tỷ lệ dự án điều chỉnh lần 1/lần 2 là bao nhiêu. Không có dữ liệu hệ thống này, việc rút kinh nghiệm theo ngành rất khó thực hiện.
+Không có cơ sở dữ liệu quốc gia về hiệu suất dự án xây dựng: thống kê tiến độ dự án so với khởi công, vượt dự toán trung bình bao nhiêu %, tỷ lệ dự án điều chỉnh lần 1, lần 2... là bao nhiêu. Khi không đủ hoặc không có các dữ liệu này, việc rút kinh nghiệm theo ngành rất khó thực hiện.
 
 Các nước có hệ thống quản lý dự án tốt như Hàn Quốc (K-PIMS), Singapore, Úc đều có cơ sở dữ liệu hiệu suất dự án tổng hợp mà chủ đầu tư và nhà thầu có thể tham khảo để cân chuẩn kế hoạch của mình.
 
