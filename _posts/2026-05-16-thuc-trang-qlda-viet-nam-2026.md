@@ -2,7 +2,7 @@
 title: "Thực trạng quản lý dự án xây dựng Việt Nam 2026: số liệu, vấn đề và xu hướng"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-06-05 10:00:00 +0700
+date: 2026-05-16 10:00:00 +0700
 layout: single
 featured: true
 toc: true
