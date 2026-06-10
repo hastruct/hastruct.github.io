@@ -130,10 +130,9 @@
       <h2>Tặng Bộ tài liệu QLDA thực chiến, miễn phí và dùng ngay</h2>
       <p style="font-size:.9rem;color:#1e4620">Hoàn thành khảo sát khoảng 5 phút, Anh/Chị nhận ngay bộ tài liệu qua email, bao gồm:</p>
       <ul>
-        <li>Mẫu kế hoạch dự án (WBS, Gantt)</li>
+        <li>Mẫu kế hoạch dự án</li>
         <li>Checklist kiểm soát tiến độ và chi phí (EVM)</li>
         <li>Mẫu báo cáo tiến độ 1 trang (OPPM)</li>
-        <li>Hướng dẫn chọn tư vấn QLDA phù hợp</li>
         <li>Bí quyết tránh 5 sai lầm phổ biến nhất trong QLDA xây dựng Việt Nam</li>
       </ul>
       <p class="note">Bộ tài liệu được gửi tự động vào email của Anh/Chị ngay sau khi hoàn thành.</p>
@@ -168,9 +167,9 @@
     </div>
 
     <div class="question">
-      <div class="q-label">Số điện thoại / WhatsApp</div>
-      <div class="q-hint">Không bắt buộc.</div>
-      <input class="text-input" type="text" name="dienThoai" placeholder="09xx xxx xxx">
+      <div class="q-label">Số điện thoại / WhatsApp<span class="required">*</span></div>
+      <div class="q-hint">Dùng để liên hệ nhanh nếu Anh/Chị muốn nhận tư vấn.</div>
+      <input class="text-input" type="text" name="dienThoai" placeholder="09xx xxx xxx" required>
     </div>
 
     <div class="question">
@@ -312,9 +311,9 @@
       Bộ tài liệu Quản lý Dự án đang được gửi vào email của Anh/Chị.<br>
       Vui lòng kiểm tra hòm thư trong vài phút tới, kể cả mục Spam hoặc Quảng cáo.<br><br>
       Mọi thắc mắc xin liên hệ:<br>
-      <strong>TS. Nguyễn Hải Hà, PMP</strong><br>
+      <strong>HST - Tư vấn &amp; Quản lý dự án</strong><br>
       <a href="mailto:ha.nguyen@hydrostructai.com">ha.nguyen@hydrostructai.com</a> &nbsp;|&nbsp;
-      <a href="https://wa.me/84374874142">WhatsApp +84 374 874 142</a>
+      <a href="https://wa.me/84374874142">WhatsApp</a>
     </p>
   </div>
 </div>
@@ -333,7 +332,6 @@
 // Định dạng: https://script.google.com/macros/s/XXXXXXXX/exec
 // ====================================================================
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwzkV-hp8yvK7F_TnGTcynPipeHWspsEpcE98VI0jTST64HQGkK2u0ub2aPU-rlcUgf3w/exec";
-
 
 // Dữ liệu câu hỏi thang điểm (Phần II)
 const GROUPS = {
@@ -445,7 +443,7 @@ function validate() {
   let firstInvalid = null;
 
   // Text bắt buộc
-  ["hoTen", "email"].forEach(function (name) {
+  ["hoTen", "email", "dienThoai"].forEach(function (name) {
     const el = form.querySelector('input[name="' + name + '"]');
     el.closest(".question").style.border = "";
     if (!el.value.trim()) {

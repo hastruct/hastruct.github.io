@@ -592,8 +592,13 @@
 }
 
 /* 2. Class riêng cho từng loại giá trị */
+.v-zalo {
+  color: #0068FF !important; /* Zalo blue */
+  text-decoration: none !important;
+}
+
 .v-whatsapp {
-  color: #000080 !important; /* Xanh Navy */
+  color: #25D366 !important; /* WhatsApp green */
   text-decoration: none !important;
 }
 

@@ -31,9 +31,9 @@ header:
 
 ## Đặt vấn đề
 
-Cuối năm 2024, một chủ đầu tư tại TP. Hồ Chí Minh phải đưa ra quyết định khó: dự án căn hộ 800 đơn vị đang thi công tầng 12, nhưng thị trường bất động sản phục hồi mạnh sau một thời gian trầm lắng. Khách hàng đã đặt cọc liên tục hỏi tiến độ bàn giao. Ban kinh doanh muốn mở bán thêm 200 căn. Nhà thầu báo cần thêm 8 tuần để hoàn thiện hạ tầng nội khu trước khi có thể tăng tốc phần thô. Và ngân hàng tài trợ dự án yêu cầu báo cáo tiến độ thực tế hàng tháng để duy trì hạn mức.
+Cuối năm 2024, một chủ đầu tư tại TP. Hồ Chí Minh phải đưa ra quyết định khó: dự án căn hộ 800 đơn vị đang thi công tầng 12, nhưng thị trường bất động sản phục hồi mạnh sau một thời gian trầm lắng. Khách hàng đã đặt cọc liên tục hỏi tiến độ bàn giao. Bộ phận kinh doanh muốn mở bán thêm 200 căn. Nhà thầu báo cần thêm 8 tuần để hoàn thiện hạ tầng nội khu trước khi có thể tăng tốc phần thô. Và ngân hàng tài trợ dự án yêu cầu báo cáo tiến độ thực tế hàng tháng để duy trì hạn mức.
 
-Đây là tình huống điển hình của dự án bất động sản: tiến độ xây dựng không do kỹ thuật thuần túy quyết định. Nó bị định hình bởi áp lực thị trường, cấu trúc tài chính, ràng buộc pháp lý, và kỳ vọng của nhiều nhóm bên liên quan với lợi ích không hoàn toàn trùng nhau.
+Đây là tình huống điển hình của dự án bất động sản: tiến độ xây dựng không chỉ do kỹ thuật quyết định mà còn ảnh hưởng bởi áp lực thị trường, cấu trúc tài chính, ràng buộc pháp lý, và kỳ vọng của nhiều nhóm bên liên quan với lợi ích không hoàn toàn trùng nhau.
 
 Bài viết này phân tích những đặc thù đó từ góc độ quản lý dự án thực tế.
 
