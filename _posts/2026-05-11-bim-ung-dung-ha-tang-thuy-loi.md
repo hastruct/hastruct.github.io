@@ -1,4 +1,4 @@
----
+﻿---
 title: "BIM cho Hạ tầng & Thủy lợi: Từ xây dựng mô hình đến hệ thống điều phối đồng bộ"
 author_profile: true
 author_name: "HST.AI"
@@ -35,7 +35,7 @@ excerpt: "*Mô hình BIM tốt nhất không phải mô hình đẹp nhất, mà
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Mô hình hóa BIM & Điều phối Dự án hạ tầng, công trình thủy lợi"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 ## Đặt vấn đề

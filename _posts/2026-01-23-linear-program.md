@@ -1,4 +1,4 @@
----
+﻿---
 title: "Quy hoạch Tuyến tính: Giải thuật Ứng dụng Sản xuất, Vận chuyển & Dự án"
 author_profile: true
 author_name: "HST.AI"
@@ -34,7 +34,7 @@ excerpt: " *Hướng dẫn toàn diện quy hoạch tuyến tính (Linear Progra
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 Quy hoạch tuyến tính (Linear Programming - LP) là một trong những kỹ thuật tối ưu hóa quan trọng nhất trong toán học ứng dụng và kinh tế. Bài viết này sẽ giới thiệu về cơ sở toán học của LP và cách triển khai giải quyết 3 bài toán thực tế bằng thư viện SciPy trong Python.

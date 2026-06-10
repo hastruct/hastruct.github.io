@@ -1,4 +1,4 @@
----
+﻿---
 title: "CivilPy: Thư viện Python mã nguồn mở cho kỹ sư xây dựng"
 author_profile: true
 author_name: "HST.AI"
@@ -29,7 +29,7 @@ excerpt: "CivilPy là thư viện Python mã nguồn mở cung cấp toàn bộ 
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 CivilPy là thư viện Python mã nguồn mở do Dane Parks phát triển, cung cấp bộ công cụ tính toán và tự động hóa cho kỹ sư xây dựng. Phiên bản 0.2.3 phát hành ngày 4 tháng 5 năm 2026, tập trung vào ba nhóm chức năng chính: dữ liệu tiết diện thép AISC, thiết kế cầu theo AASHTO và AREMA, và tích hợp phần mềm kỹ thuật thương mại qua API.

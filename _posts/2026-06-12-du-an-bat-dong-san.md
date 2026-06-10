@@ -1,4 +1,4 @@
----
+﻿---
 title: "Dự án bất động sản: khi áp lực thị trường chi phối tiến độ xây dựng"
 author_profile: true
 author_name: "HST.AI"
@@ -26,7 +26,7 @@ excerpt: "Dự án bất động sản không chỉ là bài toán xây dựng. 
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án Đầu tư Xây dựng"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 ## Đặt vấn đề

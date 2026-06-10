@@ -1,4 +1,4 @@
----
+﻿---
 title: "Dự án công nghiệp và logistics: cam kết với nhà đầu tư nước ngoài và bài toán giao diện thiết bị"
 author_profile: true
 author_name: "HST.AI"
@@ -26,7 +26,7 @@ excerpt: "Dự án nhà máy và kho logistics có một áp lực mà các lo�
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án Đầu tư Xây dựng"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 ## Đặt vấn đề

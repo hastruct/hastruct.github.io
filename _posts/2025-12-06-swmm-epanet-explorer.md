@@ -1,4 +1,4 @@
----
+﻿---
 title: "SWMM5 & EPANET Explorer: Công cụ Trực quan hóa File INP Trực tuyến"
 author_profile: true
 author_name: "HST.AI"
@@ -33,7 +33,7 @@ excerpt: "Giới thiệu công cụ web SWMM5 & EPANET Explorer: Trực quan hó
 header:
   overlay_color: "#1a1a2e"
   overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: single
 title: "Quy hoạch tuyến công trình dựa trên địa hình với thuật toán Hybrid A*"
 author_profile: true
@@ -31,7 +31,7 @@ excerpt: "Bài toán quy hoạch tuyến cống thoát nước không phải là
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 Trong thiết kế mạng lưới thoát nước và hạ tầng kỹ thuật ngầm, bài toán quy hoạch tuyến phức tạp hơn nhiều so với tìm đường ngắn nhất thông thường. Người kỹ sư phải cân bằng đồng thời giữa chiều dài tuyến, chi phí đào đắp phụ thuộc vào địa hình thực tế, và các ràng buộc thủy lực để đảm bảo dòng tự chảy. Bài viết trình bày cách định dạng bài toán này thành bài toán tối ưu và giải bằng thuật toán Hybrid A* tích hợp dữ liệu mô hình số độ cao (DEM).

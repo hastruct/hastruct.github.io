@@ -1,4 +1,4 @@
----
+﻿---
 title: "Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng"
 author_profile: true
 author_name: "HST.AI"
@@ -38,7 +38,7 @@ excerpt: "Phần lớn dự án xây dựng không thất bại vì kế hoạch
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án Đầu tư Xây dựng"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 ## Đặt vấn đề

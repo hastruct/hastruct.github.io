@@ -480,17 +480,25 @@ header:
   animation: survey-label-pulse 1.1s ease-in-out infinite;
 }
 
-/* Mũi tên xanh navy nằm bên trong vùng cam, cao 80% */
+/* Mũi tên xoay 3 màu: đỏ → xanh → trắng */
+@keyframes survey-arrow-cycle {
+  0%         { border-left-color: #e63946; }
+  33%        { border-left-color: #0077cc; }
+  66%        { border-left-color: #ffffff; }
+  100%       { border-left-color: #e63946; }
+}
+
 .survey-label::after {
   content: '';
   position: absolute;
   right: 3px;
-  top: 2px;   /* (20px - 16px) / 2 = 2px — căn giữa dọc */
+  top: 2px;
   width: 0;
   height: 0;
-  border-top: 8px solid transparent;    /* 8+8 = 16px = 80% chiều cao ~20px */
+  border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 10px solid #1a1a2e;      /* navy, mũi tên chỉ phải */
+  border-left: 10px solid #e63946;
+  animation: survey-arrow-cycle 1.8s steps(1, end) infinite;
 }
 
 .survey-link {
@@ -501,7 +509,6 @@ header:
   color: #7C3AED;
   text-decoration: none;
   line-height: 1.35;
-  animation: survey-text-blink 1.8s ease-in-out infinite;
 }
 
 .survey-link:hover {

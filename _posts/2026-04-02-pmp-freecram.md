@@ -1,4 +1,4 @@
----
+﻿---
 title: "PMP Project Management Professional Exam 2025 (Ver e7002)"
 author_profile: true
 author_name: "HST.AI"
@@ -32,7 +32,7 @@ excerpt: "Tài liệu luyện thi PMP Freecram v2025 (e7002): Giới thiệu ch�
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 Bài viết này phân tích tài liệu luyện thi PMP từ nguồn Freecram (phiên bản e7002, cập nhật 17/12/2025), kết hợp với tổng hợp thông tin chính thức từ PMI về điều kiện đăng ký, cấu trúc bài thi và chiến lược ôn tập. Phù hợp cho kỹ sư xây dựng và kỹ thuật đang chuẩn bị thi PMP lần đầu.

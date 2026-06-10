@@ -1,4 +1,4 @@
----
+﻿---
 title: "Các sai lầm và giải pháp khắc phục trong Quản lý xây dựng nhà ở riêng lẻ"
 author_profile: true
 author_name: "HST.AI"
@@ -31,7 +31,7 @@ excerpt: " *Nhiều chủ nhà mắc sai lầm ngay từ đầu mà không biế
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "©  HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 Nhiều chủ nhà xây dựng công trình nhà ở riêng lẻ mắc sai lầm ngay từ giai đoạn đầu mà không nhận ra. Sai lầm tích tụ qua từng quyết định nhỏ, *"tiền không mất một lần mà mất dần qua từng quyết định nhỏ của bạn"*, và chỉ bộc lộ ở giai đoạn cuối hoặc sau khi bàn giao.

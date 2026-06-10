@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tư vấn quản lý dự án xây dựng: Vấn đề thực tiễn và giải pháp"
 author_profile: true
 author_name: "HST.AI"
@@ -40,7 +40,7 @@ excerpt: "Tư vấn quản lý dự án (TVQLDA) đóng vai trò hỗ trợ ch�
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án Đầu tư Xây dựng"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 ## Đặt vấn đề

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Calcpad: Hướng dẫn tính toán kỹ thuật chuyên sâu, lập trình, vòng lặp & FEM"
 author_profile: true
 author_name: "HST.AI"
@@ -39,7 +39,7 @@ excerpt: " *Hướng dẫn chuyên sâu Calcpad: lập trình vòng lặp, hàm 
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 Calcpad là công cụ tính toán kỹ thuật mã nguồn mở, cho phép kỹ sư viết phép tính phức tạp dưới dạng văn bản có cấu trúc và tự động tạo báo cáo chuyên nghiệp — từ dầm đơn giản đến phân tích FEM bản sàn phẳng nhiều nhịp.

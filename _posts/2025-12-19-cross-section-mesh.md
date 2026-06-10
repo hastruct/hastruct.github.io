@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tiết Diện Dầm: Tạo lưới và phân tích ứng suất với SectionProperties"
 author_profile: true
 author_name: "HST.AI"
@@ -33,7 +33,7 @@ excerpt: "Hướng dẫn phân tích tiết diện dầm bê tông với Python 
 header:
   overlay_color: "#1a1a2e"
   overlay_filter: "linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 77, 153, 0.7))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 image: /assets/images/posts/2025-12-19-cross-section-mesh/box-girder.png

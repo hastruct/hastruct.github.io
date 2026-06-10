@@ -1,4 +1,4 @@
----
+﻿---
 title: "Markov Chain Monte Carlo: Tổng quan và ứng dụng trong kỹ thuật xây dựng"
 author_profile: true
 author_name: "HST.AI"
@@ -33,7 +33,7 @@ excerpt: "Phân tích chuyên sâu thuật toán Markov Chain Monte Carlo và �
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
-  caption: "© HydrostructAI - Tư vấn Quản lý Dự án & Ứng dụng kỹ thuật"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 MCMC (Markov Chain Monte Carlo) là nhóm thuật toán lấy mẫu từ phân phối xác suất bằng cách xây dựng một chuỗi Markov có phân phối cân bằng trùng với phân phối mục tiêu. Kỹ thuật này là nền tảng của suy luận Bayes hiện đại và có nhiều ứng dụng trong phân tích rủi ro kỹ thuật, độ tin cậy kết cấu và tối ưu hóa thiết kế.

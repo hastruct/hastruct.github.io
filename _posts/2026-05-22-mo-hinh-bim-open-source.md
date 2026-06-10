@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ứng dụng mô hình BIM mã nguồn mở: Tiếp cận kết hợp Pascal editor và Pyvista-cad"
 author_profile: true
 author_name: "HST.AI"
@@ -41,7 +41,7 @@ excerpt: "Bài viết phân tích chuyên sâu hai công cụ mã nguồn mở �
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(15, 32, 55, 0.95), rgba(45, 80, 120, 0.85))"
-  caption: "© HydrostructAI - Tư vấn Mô hình hóa BIM & Phát triển Giải pháp Mã nguồn mở cho AEC"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 ## Đặt vấn đề
