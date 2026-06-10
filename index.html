@@ -414,20 +414,21 @@ header:
 /* ==========================================================================
    SURVEY BANNER — Khảo sát QLDA
    ========================================================================== */
-@keyframes survey-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(200, 65, 10, 0.45); }
-  60%       { box-shadow: 0 0 0 9px rgba(200, 65, 10, 0); }
-}
-
 @keyframes survey-dot-blink {
   0%, 100% { opacity: 1; }
-  50%       { opacity: 0.35; }
+  50%       { opacity: 0.3; }
+}
+
+@keyframes survey-text-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.45; }
 }
 
 .survey-strip {
-  background: linear-gradient(135deg, #fff8f0 0%, #fff1e0 100%);
-  border-top: 2px solid rgba(200, 65, 10, 0.35);
-  border-bottom: 2px solid rgba(200, 65, 10, 0.35);
+  background: #eef5ff;
+  border: 2px solid #0077cc;
+  border-radius: 4px;
+  margin: 0;
   position: relative;
   overflow: hidden;
 }
@@ -437,24 +438,24 @@ header:
   position: absolute;
   top: 0; left: 0; bottom: 0;
   width: 4px;
-  background: linear-gradient(180deg, #c8410a, #e8a010);
+  background: linear-gradient(180deg, #0057b8, #00aaff);
 }
 
 .survey-inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 13px 32px 13px 36px;
+  padding: 8px 32px 8px 36px;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
 .survey-live-dot {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background: #c8410a;
+  background: #0077cc;
   flex-shrink: 0;
   animation: survey-dot-blink 1.4s ease-in-out infinite;
 }
@@ -466,76 +467,39 @@ header:
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #0057b8;
-  background: rgba(0, 87, 184, 0.09);
+  background: rgba(0, 87, 184, 0.1);
   border: 1px solid rgba(0, 87, 184, 0.3);
-  padding: 3px 9px;
+  padding: 2px 8px;
   border-radius: 2px;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
-.survey-text {
+.survey-link {
   flex: 1;
   min-width: 220px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #2d1a00;
-  line-height: 1.45;
-  margin: 0;
-}
-
-.survey-text strong {
-  color: #a33208;
-  font-weight: 700;
-}
-
-.survey-text em {
-  font-style: normal;
-  color: #1a6b3c;
-  font-weight: 600;
-}
-
-.survey-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background: #0077cc;
-  color: #ffffff !important;
-  padding: 9px 20px;
-  border-radius: 4px;
   font-size: 0.82rem;
-  font-weight: 700;
-  text-decoration: none !important;
-  white-space: nowrap;
-  flex-shrink: 0;
-  letter-spacing: 0.3px;
-  animation: survey-pulse 2.2s ease-in-out infinite;
-  transition: background 0.2s, transform 0.15s;
+  font-weight: 600;
+  color: #0057b8;
+  text-decoration: none;
+  line-height: 1.35;
+  animation: survey-text-blink 1.8s ease-in-out infinite;
 }
 
-.survey-cta:hover {
-  background: #a33208;
-  transform: translateY(-1px);
+.survey-link:hover {
+  text-decoration: underline;
   animation: none;
-  box-shadow: 0 4px 14px rgba(200, 65, 10, 0.38);
-}
-
-.survey-cta .survey-arrow {
-  transition: transform 0.2s;
-}
-
-.survey-cta:hover .survey-arrow {
-  transform: translateX(3px);
+  opacity: 1;
+  color: #003d8a;
 }
 
 @media (max-width: 768px) {
   .survey-inner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-    padding: 14px 20px 14px 24px;
+    gap: 8px;
+    padding: 8px 20px 8px 24px;
   }
-  .survey-cta { width: 100%; justify-content: center; }
 }
 </style>
 
@@ -571,12 +535,9 @@ header:
   <div class="survey-inner">
     <span class="survey-live-dot"></span>
     <span class="survey-label">Khảo sát</span>
-    <p class="survey-text">
-      Tham gia <strong>khảo sát thực trạng quản lý dự án tại Việt Nam</strong> để nhận <em>Bộ tài liệu QLDA thực chiến</em>
-    </p>
     <a href="https://hydrostructai.com/apps/survey_form_qlda.html"
-       class="survey-cta" target="_blank" rel="noopener">
-      Tham gia ngay <span class="survey-arrow">→</span>
+       class="survey-link" target="_blank" rel="noopener">
+      Tham gia khảo sát thực trạng quản lý dự án tại Việt Nam để nhận Bộ tài liệu QLDA thực chiến
     </a>
   </div>
 </div>
