@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khảo sát thực trạng Quản lý Dự án | HydroStructAI</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 15px; }
+    body {
+      font-family: "Google Sans", "Segoe UI", Arial, sans-serif;
+      background: #f0f4f9;
+      color: #202124;
+      min-height: 100vh;
+      padding: 24px 12px 48px;
+    }
+    a { color: #1a73e8; }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(60,64,67,.15), 0 4px 8px rgba(60,64,67,.06);
+      max-width: 720px;
+      margin: 0 auto 20px;
+      overflow: hidden;
+    }
+    .card-header { border-top: 10px solid #1155cc; padding: 24px 24px 20px; }
+    .card-header h1 { font-size: 1.5rem; font-weight: 600; line-height: 1.4; margin-bottom: 12px; }
+
+    /* Gift banner */
+    .gift {
+      background: #e6f4ea;
+      border: 1px solid #b7e1c2;
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+    }
+    .gift h2 { font-size: 1.05rem; color: #137333; margin-bottom: 8px; }
+    .gift ul { margin: 8px 0 0 20px; font-size: .9rem; line-height: 1.7; color: #1e4620; }
+    .gift .note { margin-top: 10px; font-size: .85rem; color: #137333; font-weight: 500; }
+
+    .intro {
+      background: #f8f9fa;
+      border-left: 4px solid #1155cc;
+      border-radius: 0 4px 4px 0;
+      padding: 12px 16px;
+      font-size: .875rem;
+      line-height: 1.6;
+      color: #3c4043;
+    }
+
+    .section-header { border-top: 10px solid #1155cc; padding: 18px 24px 14px; }
+    .section-header h2 { font-size: 1.1rem; font-weight: 600; }
+    .section-header p { font-size: .85rem; color: #5f6368; margin-top: 4px; }
+
+    .group-header { padding: 14px 24px 4px; border-top: 2px solid #e8eaed; }
+    .group-header h3 {
+      font-size: .95rem; font-weight: 600; color: #1155cc;
+      text-transform: uppercase; letter-spacing: .03em;
+    }
+
+    .card-body { padding: 0 24px 24px; }
+
+    .question { padding: 16px 24px; border-bottom: 1px solid #f1f3f4; }
+    .question:last-child { border-bottom: none; }
+    .q-label { font-size: .95rem; font-weight: 500; margin-bottom: 10px; line-height: 1.45; }
+    .q-label .required { color: #d93025; margin-left: 3px; font-weight: 700; }
+    .q-hint { font-size: .8rem; color: #5f6368; margin-top: -6px; margin-bottom: 8px; }
+
+    .choices { display: flex; flex-direction: column; gap: 6px; }
+    .choice-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 7px 10px; border-radius: 4px; cursor: pointer; transition: background .15s;
+    }
+    .choice-item:hover { background: #f8f9fa; }
+    .choice-item input { width: 16px; height: 16px; accent-color: #1a73e8; flex-shrink: 0; cursor: pointer; }
+    .choice-item label { font-size: .9rem; cursor: pointer; line-height: 1.4; }
+
+    .scale-wrapper { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+    .scale-label { font-size: .78rem; color: #5f6368; white-space: nowrap; }
+    .scale-options { display: flex; gap: 4px; flex: 1; justify-content: center; }
+    .scale-option { display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 44px; }
+    .scale-option input { width: 18px; height: 18px; accent-color: #1a73e8; cursor: pointer; }
+    .scale-option .num { font-size: .8rem; color: #3c4043; font-weight: 500; }
+
+    .text-input {
+      width: 100%; border: none; border-bottom: 1px solid #dadce0;
+      padding: 6px 2px; font-size: .9rem; font-family: inherit; color: #202124;
+      background: transparent; outline: none; transition: border-color .2s;
+    }
+    .text-input:focus { border-bottom-color: #1a73e8; }
+
+    .form-actions { display: flex; gap: 16px; align-items: center; padding: 20px 24px; flex-wrap: wrap; }
+    .btn-submit {
+      background: #1a73e8; color: #fff; border: none; border-radius: 4px;
+      padding: 10px 28px; font-size: .95rem; font-weight: 500; cursor: pointer;
+      font-family: inherit; transition: background .2s, box-shadow .2s;
+    }
+    .btn-submit:hover { background: #1557b0; box-shadow: 0 2px 6px rgba(26,115,232,.35); }
+    .btn-submit:disabled { background: #9aa0a6; cursor: not-allowed; box-shadow: none; }
+    .btn-clear { background: transparent; color: #1a73e8; border: none; font-size: .9rem; cursor: pointer; font-family: inherit; }
+    .btn-clear:hover { text-decoration: underline; }
+
+    .thank-you { display: none; text-align: center; padding: 48px 24px; }
+    .thank-you svg { width: 56px; height: 56px; margin-bottom: 16px; }
+    .thank-you h2 { font-size: 1.3rem; font-weight: 600; color: #1a73e8; margin-bottom: 8px; }
+    .thank-you p { color: #5f6368; font-size: .92rem; line-height: 1.7; }
+
+    .footer {
+      max-width: 720px; margin: 0 auto; text-align: center;
+      font-size: .75rem; color: #5f6368; padding: 0 12px;
+    }
+    .footer a { color: #5f6368; }
+
+    @media (max-width: 540px) {
+      .scale-options { gap: 2px; }
+      .scale-option { min-width: 36px; }
+      .card-body, .section-header, .group-header, .question, .form-actions { padding-left: 16px; padding-right: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="card">
+  <div class="card-header">
+    <h1>Khảo sát thực trạng Quản lý Dự án tại Việt Nam</h1>
+
+    <div class="gift">
+      <h2>Tặng Bộ tài liệu QLDA thực chiến, miễn phí và dùng ngay</h2>
+      <p style="font-size:.9rem;color:#1e4620">Hoàn thành khảo sát khoảng 5 phút, Anh/Chị nhận ngay bộ tài liệu qua email, bao gồm:</p>
+      <ul>
+        <li>Mẫu kế hoạch dự án (WBS, Gantt)</li>
+        <li>Checklist kiểm soát tiến độ và chi phí (EVM)</li>
+        <li>Mẫu báo cáo tiến độ 1 trang (OPPM)</li>
+        <li>Hướng dẫn chọn tư vấn QLDA phù hợp</li>
+        <li>Bí quyết tránh 5 sai lầm phổ biến nhất trong QLDA xây dựng Việt Nam</li>
+      </ul>
+      <p class="note">Bộ tài liệu được gửi tự động vào email của Anh/Chị ngay sau khi hoàn thành.</p>
+    </div>
+
+    <div class="intro">
+      Khảo sát do <strong>HST - Tư vấn &amp; Quản lý dự án</strong> thực hiện nhằm tìm hiểu thực trạng
+      quản lý dự án tại Việt Nam. Thông tin của Anh/Chị được bảo mật và chỉ dùng cho mục đích nghiên cứu.
+    </div>
+  </div>
+</div>
+
+<form id="qldaForm" novalidate>
+
+<!-- PHẦN I -->
+<div class="card">
+  <div class="section-header">
+    <h2>Phần I. Thông tin và điều kiện nhận tài liệu</h2>
+    <p>Vui lòng điền đầy đủ. Email là nơi nhận bộ tài liệu QLDA.</p>
+  </div>
+  <div class="card-body">
+
+    <div class="question">
+      <div class="q-label">Họ và tên<span class="required">*</span></div>
+      <input class="text-input" type="text" name="hoTen" placeholder="Nguyễn Văn A" required>
+    </div>
+
+    <div class="question">
+      <div class="q-label">Email<span class="required">*</span></div>
+      <div class="q-hint">Bộ tài liệu sẽ được gửi về địa chỉ này.</div>
+      <input class="text-input" type="email" name="email" placeholder="ten@congty.com" required>
+    </div>
+
+    <div class="question">
+      <div class="q-label">Số điện thoại / WhatsApp</div>
+      <div class="q-hint">Không bắt buộc.</div>
+      <input class="text-input" type="text" name="dienThoai" placeholder="09xx xxx xxx">
+    </div>
+
+    <div class="question">
+      <div class="q-label">Vai trò của Anh/Chị<span class="required">*</span></div>
+      <div class="choices" data-radio="vaiTro">
+        <label class="choice-item"><input type="radio" name="vaiTro" value="Chủ đầu tư" required><label>Chủ đầu tư</label></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="PMU"><label>Ban quản lý dự án (PMU)</label></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="Nhà thầu"><label>Nhà thầu</label></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="Tư vấn"><label>Tư vấn</label></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="Cơ quan nhà nước"><label>Cơ quan nhà nước</label></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="Khác"><label>Khác</label></label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-label">Loại dự án chủ yếu<span class="required">*</span></div>
+      <div class="choices" data-radio="loaiDuAn">
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Dân dụng" required><label>Dân dụng</label></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Công nghiệp"><label>Công nghiệp</label></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Hạ tầng"><label>Hạ tầng</label></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Thủy lợi"><label>Thủy lợi</label></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Nông nghiệp"><label>Nông nghiệp</label></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Khác"><label>Khác</label></label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-label">Quy mô dự án thường gặp<span class="required">*</span></div>
+      <div class="choices" data-radio="quyMo">
+        <label class="choice-item"><input type="radio" name="quyMo" value="Dưới 10 tỷ" required><label>Dưới 10 tỷ</label></label>
+        <label class="choice-item"><input type="radio" name="quyMo" value="10-100 tỷ"><label>10 đến 100 tỷ</label></label>
+        <label class="choice-item"><input type="radio" name="quyMo" value="100-500 tỷ"><label>100 đến 500 tỷ</label></label>
+        <label class="choice-item"><input type="radio" name="quyMo" value="Trên 500 tỷ"><label>Trên 500 tỷ</label></label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-label">Khu vực dự án<span class="required">*</span></div>
+      <div class="choices" data-radio="khuVuc">
+        <label class="choice-item"><input type="radio" name="khuVuc" value="Bắc" required><label>Miền Bắc</label></label>
+        <label class="choice-item"><input type="radio" name="khuVuc" value="Trung"><label>Miền Trung</label></label>
+        <label class="choice-item"><input type="radio" name="khuVuc" value="Nam"><label>Miền Nam</label></label>
+        <label class="choice-item"><input type="radio" name="khuVuc" value="Nhiều vùng"><label>Nhiều vùng</label></label>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PHẦN II -->
+<div class="card">
+  <div class="section-header">
+    <h2>Phần II. Thực trạng quản lý dự án</h2>
+    <p>Đánh giá theo thang điểm: 1 = Rất thấp / Không đúng &nbsp;|&nbsp; 5 = Rất cao / Rất đúng</p>
+  </div>
+  <div class="card-body">
+
+    <div class="group-header"><h3>Nhóm A. Năng lực quản lý nội bộ</h3></div>
+    <div id="group-A"></div>
+
+    <div class="group-header"><h3>Nhóm B. Vấn đề thường gặp</h3></div>
+    <div id="group-B"></div>
+
+    <div class="group-header"><h3>Nhóm C. Sử dụng tư vấn QLDA</h3></div>
+    <div id="group-C"></div>
+
+    <div class="group-header"><h3>Nhóm D. Chuyển đổi số trong QLDA</h3></div>
+    <div id="group-D"></div>
+
+  </div>
+</div>
+
+<!-- PHẦN III -->
+<div class="card">
+  <div class="section-header">
+    <h2>Phần III. Nhu cầu hỗ trợ</h2>
+    <p>Giúp chúng tôi hiểu rõ hơn để hỗ trợ Anh/Chị đúng việc.</p>
+  </div>
+  <div class="card-body">
+
+    <div class="question">
+      <div class="q-label">Khó khăn lớn nhất hiện tại của Anh/Chị</div>
+      <div class="q-hint">Chọn tối đa 3.</div>
+      <div class="choices">
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Lập kế hoạch và tiến độ không chính xác"><label>Lập kế hoạch và tiến độ không chính xác</label></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Kiểm soát chi phí kém hiệu quả"><label>Kiểm soát chi phí kém hiệu quả</label></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Quản lý hồ sơ và tài liệu phức tạp"><label>Quản lý hồ sơ và tài liệu phức tạp</label></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Nhân sự PM thiếu kỹ năng"><label>Nhân sự PM thiếu kỹ năng</label></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Thiếu công cụ hoặc phần mềm phù hợp"><label>Thiếu công cụ hoặc phần mềm phù hợp</label></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Khó quản lý nhà thầu phụ"><label>Khó quản lý nhà thầu phụ</label></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Thủ tục pháp lý phức tạp"><label>Thủ tục pháp lý phức tạp</label></label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-label">Dịch vụ nào hữu ích nhất với Anh/Chị</div>
+      <div class="q-hint">Chọn các mục phù hợp.</div>
+      <div class="choices">
+        <label class="choice-item"><input type="checkbox" name="dichVu" value="Tư vấn thiết lập hệ thống QLDA"><label>Tư vấn thiết lập hệ thống QLDA</label></label>
+        <label class="choice-item"><input type="checkbox" name="dichVu" value="Đào tạo và huấn luyện PM nội bộ"><label>Đào tạo và huấn luyện PM nội bộ</label></label>
+        <label class="choice-item"><input type="checkbox" name="dichVu" value="Hỗ trợ kỹ thuật theo dự án (retainer)"><label>Hỗ trợ kỹ thuật theo dự án (retainer)</label></label>
+        <label class="choice-item"><input type="checkbox" name="dichVu" value="Lập kế hoạch tổng thể và giám sát độc lập"><label>Lập kế hoạch tổng thể và giám sát độc lập</label></label>
+        <label class="choice-item"><input type="checkbox" name="dichVu" value="Phần mềm và công cụ QLDA"><label>Phần mềm và công cụ QLDA</label></label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-label">Anh/Chị có muốn nhận tư vấn 1-1 miễn phí 30 phút không?</div>
+      <div class="choices" data-radio="tuVanMienPhi">
+        <label class="choice-item"><input type="radio" name="tuVanMienPhi" value="Có"><label>Có</label></label>
+        <label class="choice-item"><input type="radio" name="tuVanMienPhi" value="Không"><label>Không</label></label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-label">Thời điểm phù hợp để liên hệ</div>
+      <div class="choices" data-radio="thoiDiem">
+        <label class="choice-item"><input type="radio" name="thoiDiem" value="Ngay bây giờ"><label>Ngay bây giờ</label></label>
+        <label class="choice-item"><input type="radio" name="thoiDiem" value="1-3 tháng tới"><label>Trong 1 đến 3 tháng tới</label></label>
+        <label class="choice-item"><input type="radio" name="thoiDiem" value="Trên 3 tháng"><label>Sau 3 tháng</label></label>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="form-actions">
+    <button type="submit" class="btn-submit" id="submitBtn">Gửi và nhận tài liệu</button>
+    <button type="button" class="btn-clear" onclick="clearForm()">Xóa câu trả lời</button>
+  </div>
+</div>
+
+<div class="card" id="thankYouCard" style="display:none">
+  <div class="thank-you" id="thankYouMsg" style="display:block">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#1a73e8" stroke-width="2">
+      <circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/>
+    </svg>
+    <h2>Cảm ơn Anh/Chị đã tham gia khảo sát</h2>
+    <p>
+      Bộ tài liệu Quản lý Dự án đang được gửi vào email của Anh/Chị.<br>
+      Vui lòng kiểm tra hòm thư trong vài phút tới, kể cả mục Spam hoặc Quảng cáo.<br><br>
+      Mọi thắc mắc xin liên hệ:<br>
+      <strong>TS. Nguyễn Hải Hà, PMP</strong><br>
+      <a href="mailto:ha.nguyen@hydrostructai.com">ha.nguyen@hydrostructai.com</a> &nbsp;|&nbsp;
+      <a href="https://wa.me/84374874142">WhatsApp +84 374 874 142</a>
+    </p>
+  </div>
+</div>
+
+</form>
+
+<div class="footer">
+  <p>HST - Tư vấn &amp; Quản lý dự án &nbsp;|&nbsp;
+  <a href="https://hydrostructai.com" target="_blank">hydrostructai.com</a> &nbsp;|&nbsp;
+  <a href="mailto:ha.nguyen@hydrostructai.com">ha.nguyen@hydrostructai.com</a></p>
+</div>
+
+<script>
+// ====================================================================
+// CẤU HÌNH: dán URL Web App của Apps Script sau khi deploy vào đây.
+// Định dạng: https://script.google.com/macros/s/XXXXXXXX/exec
+// ====================================================================
+const SCRIPT_URL = "PASTE_APPS_SCRIPT_WEB_APP_URL_HERE";
+
+// Dữ liệu câu hỏi thang điểm (Phần II)
+const GROUPS = {
+  A: [
+    ["A1", "Tổ chức có quy trình QLDA bài bản (WBS, CPM, EVM)"],
+    ["A2", "Nhân sự PM được đào tạo chuyên nghiệp (PMP/PMI)"],
+    ["A3", "Sử dụng phần mềm QLDA (MS Project, Primavera, PMIS)"],
+    ["A4", "Báo cáo tiến độ cập nhật thường xuyên và chính xác"],
+    ["A5", "Kiểm soát chi phí có hệ thống (CPI, SPI)"]
+  ],
+  B: [
+    ["B1", "Dự án bị trễ tiến độ so với kế hoạch ban đầu"],
+    ["B2", "Chi phí vượt ngân sách được duyệt"],
+    ["B3", "Tranh chấp hợp đồng với nhà thầu hoặc tư vấn"],
+    ["B4", "Khó khăn trong giải phóng mặt bằng"],
+    ["B5", "Hồ sơ pháp lý và thủ tục phê duyệt chậm"]
+  ],
+  C: [
+    ["C1", "Đã sử dụng dịch vụ tư vấn QLDA (TVQLDA hoặc PMC)"],
+    ["C2", "Hài lòng với chất lượng tư vấn hiện tại"],
+    ["C3", "Khó khăn khi chọn tư vấn QLDA phù hợp"],
+    ["C4", "Chi phí tư vấn QLDA tương xứng với lợi ích thực tế"]
+  ],
+  D: [
+    ["D1", "Sử dụng BIM trong quản lý dự án"],
+    ["D2", "Có nền tảng quản lý tài liệu số (DMS hoặc EDMS)"],
+    ["D3", "Dashboard và báo cáo tự động được sử dụng"],
+    ["D4", "Ứng dụng AI hoặc tự động hóa trong công việc QLDA"]
+  ]
+};
+
+function renderGroup(nhom) {
+  const el = document.getElementById("group-" + nhom);
+  let html = "";
+  GROUPS[nhom].forEach(function (q) {
+    const ma = q[0], text = q[1];
+    html += '<div class="question"><div class="q-label">' + ma + ". " + text +
+            '<span class="required">*</span></div>' +
+            '<div class="scale-wrapper"><span class="scale-label">Rất thấp</span>' +
+            '<div class="scale-options">';
+    for (let v = 1; v <= 5; v++) {
+      html += '<div class="scale-option">' +
+              '<input type="radio" name="' + ma + '" value="' + v + '" required>' +
+              '<span class="num">' + v + '</span></div>';
+    }
+    html += '</div><span class="scale-label">Rất cao</span></div></div>';
+  });
+  el.innerHTML = html;
+}
+["A", "B", "C", "D"].forEach(renderGroup);
+
+// Giới hạn checkbox khó khăn tối đa 3
+document.querySelectorAll('input[name="khoKhan"]').forEach(function (cb) {
+  cb.addEventListener("change", function () {
+    const checked = document.querySelectorAll('input[name="khoKhan"]:checked');
+    if (checked.length > 3) { cb.checked = false; }
+  });
+});
+
+// Thu thập dữ liệu form thành payload
+function collectPayload() {
+  const form = document.getElementById("qldaForm");
+  const val = function (name) {
+    const el = form.querySelector('[name="' + name + '"]:checked, input[name="' + name + '"]');
+    if (!el) return "";
+    if (el.type === "radio") {
+      const sel = form.querySelector('input[name="' + name + '"]:checked');
+      return sel ? sel.value : "";
+    }
+    return el.value.trim();
+  };
+  const multi = function (name) {
+    return Array.prototype.map.call(
+      form.querySelectorAll('input[name="' + name + '"]:checked'),
+      function (e) { return e.value; }
+    );
+  };
+
+  const thucTrang = [];
+  ["A", "B", "C", "D"].forEach(function (nhom) {
+    GROUPS[nhom].forEach(function (q) {
+      const ma = q[0];
+      const sel = form.querySelector('input[name="' + ma + '"]:checked');
+      thucTrang.push({ nhom: nhom, ma: ma, diem: sel ? sel.value : "" });
+    });
+  });
+
+  return {
+    action: "khao-sat-qlda",
+    hoTen: val("hoTen"),
+    email: val("email"),
+    dienThoai: val("dienThoai"),
+    vaiTro: val("vaiTro"),
+    loaiDuAn: val("loaiDuAn"),
+    quyMo: val("quyMo"),
+    khuVuc: val("khuVuc"),
+    thucTrang: thucTrang,
+    khoKhan: multi("khoKhan"),
+    dichVu: multi("dichVu"),
+    tuVanMienPhi: val("tuVanMienPhi"),
+    thoiDiem: val("thoiDiem")
+  };
+}
+
+// Kiểm tra các trường bắt buộc
+function validate() {
+  const form = document.getElementById("qldaForm");
+  const requiredRadios = ["vaiTro", "loaiDuAn", "quyMo", "khuVuc"];
+  let firstInvalid = null;
+
+  // Text bắt buộc
+  ["hoTen", "email"].forEach(function (name) {
+    const el = form.querySelector('input[name="' + name + '"]');
+    el.closest(".question").style.border = "";
+    if (!el.value.trim()) {
+      if (!firstInvalid) firstInvalid = el.closest(".question");
+      el.closest(".question").style.border = "2px solid #d93025";
+    }
+  });
+  // Email hợp lệ
+  const emailEl = form.querySelector('input[name="email"]');
+  if (emailEl.value.trim() && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(emailEl.value.trim())) {
+    if (!firstInvalid) firstInvalid = emailEl.closest(".question");
+    emailEl.closest(".question").style.border = "2px solid #d93025";
+  }
+
+  // Radio bắt buộc Phần I
+  requiredRadios.forEach(function (name) {
+    const wrap = form.querySelector('[data-radio="' + name + '"]').closest(".question");
+    wrap.style.border = "";
+    if (!form.querySelector('input[name="' + name + '"]:checked')) {
+      if (!firstInvalid) firstInvalid = wrap;
+      wrap.style.border = "2px solid #d93025";
+    }
+  });
+
+  // 18 câu thang điểm bắt buộc
+  ["A", "B", "C", "D"].forEach(function (nhom) {
+    GROUPS[nhom].forEach(function (q) {
+      const ma = q[0];
+      const input = form.querySelector('input[name="' + ma + '"]');
+      const wrap = input.closest(".question");
+      wrap.style.border = "";
+      if (!form.querySelector('input[name="' + ma + '"]:checked')) {
+        if (!firstInvalid) firstInvalid = wrap;
+        wrap.style.border = "2px solid #d93025";
+      }
+    });
+  });
+
+  if (firstInvalid) {
+    firstInvalid.scrollIntoView({ behavior: "smooth", block: "center" });
+    return false;
+  }
+  return true;
+}
+
+// Submit qua fetch no-cors
+document.getElementById("qldaForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  if (!validate()) {
+    alert("Vui lòng điền đầy đủ các câu hỏi có dấu sao đỏ trước khi gửi.");
+    return;
+  }
+
+  const btn = document.getElementById("submitBtn");
+  btn.disabled = true;
+  btn.textContent = "Đang gửi...";
+
+  const payload = collectPayload();
+
+  try {
+    if (SCRIPT_URL.indexOf("PASTE_") === 0) {
+      throw new Error("Chưa cấu hình SCRIPT_URL");
+    }
+    await fetch(SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({ payload: JSON.stringify(payload) })
+    });
+  } catch (err) {
+    // no-cors trả opaque response nên không đọc được; lỗi mạng thật mới vào đây
+    console.warn("Submit warning:", err);
+  }
+
+  // Hiển thị màn hình cảm ơn (data đã được gửi)
+  document.getElementById("qldaForm").querySelectorAll(".card").forEach(function (c) {
+    if (c.id !== "thankYouCard") c.style.display = "none";
+  });
+  document.getElementById("thankYouCard").style.display = "block";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+function clearForm() {
+  if (!confirm("Xóa tất cả câu trả lời đã nhập?")) return;
+  document.getElementById("qldaForm").reset();
+  document.querySelectorAll(".question").forEach(function (q) { q.style.border = ""; });
+}
+</script>
+</body>
+</html>
