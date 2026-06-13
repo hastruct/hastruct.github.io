@@ -151,7 +151,10 @@ Các bài trong chuỗi quản lý dự án xây dựng đi sâu vào giải ph�
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn muốn hiểu sâu hơn về thực trạng và cách xây dựng hệ thống quản lý dự án phù hợp với bối cảnh Việt Nam, liên hệ trực tiếp: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
+Nếu bạn muốn hiểu sâu hơn về thực trạng và cách xây dựng hệ thống quản lý dự án phù hợp với bối cảnh Việt Nam, hãy liên hệ trực tiếp:
+
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---
 

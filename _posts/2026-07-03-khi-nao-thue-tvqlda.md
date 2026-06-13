@@ -116,7 +116,10 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn muốn đánh giá cụ thể dự án của mình có cần TVQLDA không, vào lúc nào, liên hệ trực tiếp: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, quy mô, và giai đoạn hiện tại.
+Nếu bạn muốn đánh giá cụ thể dự án của mình có cần TVQLDA không, vào lúc nào, hãy liên hệ trực tiếp kèm mô tả ngắn về loại dự án, quy mô, và giai đoạn hiện tại:
+
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---
 

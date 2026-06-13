@@ -320,7 +320,10 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan đến nội 
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang chuẩn bị lập tổng mức đầu tư cho dự án có chi phí GPMB phức tạp, hoặc cần hỗ trợ xây dựng kế hoạch GPMB và phân tích rủi ro cho dự án cụ thể, liên hệ trực tiếp: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, quy mô, địa bàn và giai đoạn hiện tại.
+Nếu bạn đang chuẩn bị lập tổng mức đầu tư cho dự án có chi phí GPMB phức tạp, hoặc cần hỗ trợ xây dựng kế hoạch GPMB và phân tích rủi ro cho dự án cụ thể, hãy liên hệ trực tiếp kèm mô tả ngắn về loại dự án, quy mô, địa bàn và giai đoạn hiện tại:
+
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---
 

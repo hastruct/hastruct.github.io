@@ -378,10 +378,8 @@ HydrostructAI không cung cấp khóa học luyện thi PMP. Nhưng nếu bạn 
 
 Nếu bạn cần tư vấn QLDA thực tế cho dự án đang triển khai, không phải ôn thi, xem thêm [dịch vụ tư vấn QLDA](https://hydrostructai.com/about/).
 
-**Liên hệ:**
-
-- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com): trao đổi kinh nghiệm QLDA và luyện thi PMP.
-- [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142): cho câu hỏi cụ thể hơn về dự án thực.
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---
 

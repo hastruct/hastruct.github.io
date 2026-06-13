@@ -343,7 +343,10 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang là cán bộ Ban QLDA, chủ đầu tư hoặc tư vấn quản lý dự án muốn thiết lập hệ thống kiểm soát tiến độ và chi phí tích hợp theo chuẩn PMBOK cho dự án xây dựng đang triển khai tại Việt Nam, liên hệ trực tiếp: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá hệ thống hiện tại, thiết kế quy trình EVM phù hợp với quy mô và bối cảnh pháp lý của dự án, lựa chọn và cấu hình phần mềm phù hợp, và đào tạo đội ngũ QLDA theo ba cấp độ năng lực.
+Nếu bạn đang là cán bộ Ban QLDA, chủ đầu tư hoặc tư vấn quản lý dự án muốn thiết lập hệ thống kiểm soát tiến độ và chi phí tích hợp theo chuẩn PMBOK cho dự án xây dựng đang triển khai tại Việt Nam, hãy liên hệ trực tiếp kèm mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá hệ thống hiện tại, thiết kế quy trình EVM phù hợp với quy mô và bối cảnh pháp lý của dự án, lựa chọn và cấu hình phần mềm phù hợp, và đào tạo đội ngũ QLDA theo ba cấp độ năng lực:
+
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---
 

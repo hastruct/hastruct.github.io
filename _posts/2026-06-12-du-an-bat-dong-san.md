@@ -204,7 +204,10 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 
 ## Liên hệ
 
-Nếu bạn muốn tìm hiểu thêm về các nội dung trong bài viết, liên hệ qua [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com).
+Nếu bạn muốn tìm hiểu thêm về các nội dung trong bài viết, hãy liên hệ trực tiếp:
+
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---
 

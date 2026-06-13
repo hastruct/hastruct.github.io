@@ -141,7 +141,10 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 
 ## Liên hệ tư vấn và hỗ trợ triển khai
 
-Nếu bạn đang phát triển dự án khu công nghiệp hoặc nhà xưởng build-to-suit cho khách FDI và cần hệ thống báo cáo tiến độ theo chuẩn EVM cho khách thuê quốc tế, liên hệ trực tiếp: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com).
+Nếu bạn đang phát triển dự án khu công nghiệp hoặc nhà xưởng build-to-suit cho khách FDI và cần hệ thống báo cáo tiến độ theo chuẩn EVM cho khách thuê quốc tế, hãy liên hệ trực tiếp:
+
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---
 

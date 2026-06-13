@@ -992,10 +992,8 @@ Bài viết này mô tả Calcpad ở mức kỹ thuật. Nếu bạn đang cân
 
 HydrostructAI đang sử dụng Calcpad trong quy trình tính toán kỹ thuật nội bộ và có thể chia sẻ template cho một số bài toán phổ biến: dầm đơn, bản sàn phẳng, tính toán móng cọc.
 
-**Liên hệ:**
-
-- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com): ghi rõ loại bài toán và tiêu chuẩn áp dụng
-- [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142): trao đổi kỹ thuật nhanh
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 Ngoài ra, nếu bạn đang xây dựng quy trình tính toán có kiểm tra độc lập (peer review) cho dự án có yêu cầu kiểm soát chất lượng cao, đây cũng là mảng HydrostructAI có thể hỗ trợ.
 

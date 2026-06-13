@@ -289,7 +289,10 @@ CivilPy là lựa chọn thực tiễn cho kỹ sư xây dựng muốn bổ sung
 
 Đối với kỹ sư Việt Nam, thư viện có thể sử dụng ngay cho phần tính toán tiết diện và tự động hóa mô hình, trong khi phần kiểm tra theo TCVN vẫn cần phát triển thêm. Cấu trúc mã nguồn mở và cộng đồng đang tích cực tạo điều kiện đóng góp thêm tiêu chuẩn Việt Nam trong tương lai.
 
-Liên hệ [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) để trao đổi về ứng dụng Python trong các dự án kỹ thuật.
+Để trao đổi về ứng dụng Python trong các dự án kỹ thuật, hãy liên hệ trực tiếp:
+
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ## Tài liệu tham khảo
 
