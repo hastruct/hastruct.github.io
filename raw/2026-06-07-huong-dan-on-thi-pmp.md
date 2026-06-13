@@ -394,7 +394,7 @@ Hệ thống Key Words từ poster [1] là công cụ hữu ích. Học để bi
 Nếu bạn đang ôn thi PMP hoặc chưa biết bắt đầu từ đâu, liên hệ để trao đổi:
 
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) -- Mô tả ngắn giai đoạn bạn đang ở, đã học được gì, và khó khăn cụ thể.
-- WhatsApp: [+84 374 874 142](https://wa.me/84374874142) -- Trao đổi nhanh trước khi quyết định.
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) -- Trao đổi nhanh trước khi quyết định.
 
 Bài viết này đang được cập nhật theo PMBOK 8 khi PMI phát hành phiên bản mới. Theo dõi để nhận thông báo.
 

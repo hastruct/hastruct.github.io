@@ -4,7 +4,7 @@ title: "Ứng dụng"
 permalink: /apps/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper'><span class='c-item'><span class='c-label'>Contact:</span> <a href='https://wa.me/84374874142' class='v-whatsapp'>WhatsApp</a></span> <span class='c-sep'>|</span> <span class='c-item'><span class='c-label'>Email:</span> <a href='mailto:ha.nguyen@hydrostructai.com' class='v-email'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item'><span class='c-label'>Tel:</span> <span class='v-tel'></span></span></div>"
+  caption: "<div class='hero-contact-wrapper'><span class='c-item'><span class='c-label'>Contact:</span> <a href='https://zalo.me/84374874142' class='v-zalo'>Zalo</a></span> <span class='c-sep'>|</span> <span class='c-item'><a href='https://wa.me/84374874142' class='v-whatsapp'>WhatsApp</a></span> <span class='c-sep'>|</span> <span class='c-item'><span class='c-label'>Email:</span> <a href='mailto:ha.nguyen@hydrostructai.com' class='v-email'>ha.nguyen@hydrostructai.com</a></span> <span class='c-sep'>|</span> <span class='c-item'><span class='c-label'>Tel:</span> <span class='v-tel'></span></span></div>"
   title: "Các Ứng dụng cho Kỹ thuật xây dựng"
 ---
 

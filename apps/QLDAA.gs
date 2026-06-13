@@ -195,7 +195,7 @@ function buildQLDAEmailHTML(hoTen, link) {
   '</p>' +
   '<hr style="border:none;border-top:1px solid #e0e0e0;margin:24px 0">' +
   '<p>Nếu Anh/Chị muốn trao đổi thêm về dự án đang triển khai, xin vui lòng ' +
-  '<p>liên hệ: <a href="https://zaloapp.com/qr/p/fdy0yluq6pjx?src=qr">Zalo</a> | ' +
+  '<p>liên hệ: <a href="https://zalo.me/84374874142">Zalo</a> | ' +
     '<a href="https://wa.me/84374874142">WhatsApp</a> | ' +
     'Email: <a href="mailto:ha.nguyen@hydrostructai.com">ha.nguyen@hydrostructai.com</a></p>' +
   '<p style="margin-top:24px">Trân trọng,<br>' +

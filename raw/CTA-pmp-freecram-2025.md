@@ -15,7 +15,7 @@ Còn nếu bạn cần tư vấn QLDA thực tế cho dự án đang triển kha
 **Liên hệ:**
 
 - WhatsApp: [HST.AI](https://chat.whatsapp.com/Dg8hN1twzuzFRT5tlFL18W) -. trao đổi kỹ thuật QLDA trong nhóm kỹ sư
-- Liên hệ: [WhatsApp](https://wa.me/84374874142) ->  cho câu hỏi cụ thể hơn về dự án thực
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) ->  cho câu hỏi cụ thể hơn về dự án thực
 
 ---
 
