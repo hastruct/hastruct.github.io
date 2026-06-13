@@ -286,7 +286,7 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 
 ## Liên hệ tư vấn
 
-Nếu bạn đang gặp phải một hoặc nhiều vấn đề được mô tả trong bài viết này dù là với tư cách Chủ đầu tư, Ban quản lý dự án, hay Đơn vị tư vấn, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
+Nếu bạn đang gặp phải một hoặc nhiều vấn đề được mô tả trong bài viết này dù là với tư cách Chủ đầu tư, Ban quản lý dự án, hay Đơn vị tư vấn, liên hệ trực tiếp: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ đánh giá tình trạng hệ thống quản lý hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp thực tiễn phù hợp với đặc thù dự án.
 
 ---
 

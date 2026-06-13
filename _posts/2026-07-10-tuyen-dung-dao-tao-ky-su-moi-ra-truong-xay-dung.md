@@ -288,7 +288,7 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 
 ## Liên hệ tư vấn và hỗ trợ
 
-Nếu tổ chức của bạn đang xây dựng lại quy trình tuyển dụng và đào tạo kỹ sư mới ra trường, hoặc cần thiết kế chương trình phát triển đội ngũ nhân sự mới tốt nghiệp phù hợp với đặc thù dự án đầu tư xây dựng tại Việt Nam, liên hệ trực tiếp: [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về quy mô tổ chức, loại dự án đang thực hiện và vấn đề cụ thể trong phát triển nhân sự để được hỗ trợ đánh giá bộ kỹ năng hiện tại, xác định khoảng trống ưu tiên và đề xuất lộ trình đào tạo phù hợp.
+Nếu tổ chức của bạn đang xây dựng lại quy trình tuyển dụng và đào tạo kỹ sư mới ra trường, hoặc cần thiết kế chương trình phát triển đội ngũ nhân sự mới tốt nghiệp phù hợp với đặc thù dự án đầu tư xây dựng tại Việt Nam, liên hệ trực tiếp: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về quy mô tổ chức, loại dự án đang thực hiện và vấn đề cụ thể trong phát triển nhân sự để được hỗ trợ đánh giá bộ kỹ năng hiện tại, xác định khoảng trống ưu tiên và đề xuất lộ trình đào tạo phù hợp.
 
 ---
 

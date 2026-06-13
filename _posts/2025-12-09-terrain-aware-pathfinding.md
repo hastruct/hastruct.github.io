@@ -392,7 +392,7 @@ Quy hoạch tuyến dựa trên địa hình là minh họa rõ nét cho xu hư�
 
 Điều quan trọng cần nhớ: thuật toán cung cấp phương án khởi điểm tốt, không phải giải pháp cuối cùng. Kỹ sư vẫn cần hiệu chỉnh tuyến dựa trên điều kiện thực địa, yêu cầu pháp lý theo TCVN 7957:2023 và kinh nghiệm chuyên môn tích lũy. Mã nguồn trong bài được đơn giản hóa cho mục đích minh họa; hệ thống thực tế cần bổ sung xử lý ngoại lệ, kiểm tra tính hội tụ và tinh chỉnh hệ số chi phí theo từng dự án cụ thể.
 
-Liên hệ [WhatsApp](https://wa.me/84374874142) hoặc [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) để trao đổi về ứng dụng trong các dự án thiết kế hạ tầng cụ thể.
+Liên hệ [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) để trao đổi về ứng dụng trong các dự án thiết kế hạ tầng cụ thể.
 
 ## Tài liệu tham khảo
 

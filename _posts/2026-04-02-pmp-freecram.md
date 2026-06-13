@@ -381,7 +381,7 @@ Nếu bạn cần tư vấn QLDA thực tế cho dự án đang triển khai, kh
 **Liên hệ:**
 
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com): trao đổi kinh nghiệm QLDA và luyện thi PMP.
-- [WhatsApp](https://wa.me/84374874142): cho câu hỏi cụ thể hơn về dự án thực.
+- [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142): cho câu hỏi cụ thể hơn về dự án thực.
 
 ---
 
