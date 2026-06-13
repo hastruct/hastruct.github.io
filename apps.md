@@ -11,6 +11,9 @@ header:
 <link rel="stylesheet" href="/assets/css/custom-home.css">
 
 <style>
+  /* Ẩn tiêu đề trên hero, giữ chiều cao */
+  .page__hero--overlay .page__title { visibility: hidden !important; }
+
   /* Chỉ định nghĩa thêm những gì trang Apps cần mà custom-home.css chưa có */
   .app-card-badges {
     display: flex;

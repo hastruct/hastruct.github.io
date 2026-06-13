@@ -11,6 +11,9 @@ header:
 <link rel="stylesheet" href="/assets/css/custom-home.css">
 
 <style>
+  /* Ẩn tiêu đề trên hero, giữ chiều cao */
+  .page__hero--overlay .page__title { visibility: hidden !important; }
+
   /* ─── Root Variables ──────────────────────────────── */
   :root {
     --color-ink:       #1a1a2e;
