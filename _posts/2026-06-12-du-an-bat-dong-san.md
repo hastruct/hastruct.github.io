@@ -37,7 +37,7 @@ Cuối năm 2024, một chủ đầu tư tại TP. Hồ Chí Minh phải đưa r
 
 Bài viết này phân tích những đặc thù đó từ góc độ quản lý dự án thực tế.
 
-## 1. Cấu trúc tài chính chi phối lịch thi công
+## 1. Cấu trúc tài chính chi phối tiến độ thi công
 
 ### 1.1. Dòng tiền từ khách hàng là nguồn vốn thi công
 
@@ -59,11 +59,11 @@ Hệ quả là các quyết định kỹ thuật đôi khi bị chi phối bởi
 
 Một dự án căn hộ thương mại tại Hà Nội hoặc TP.HCM thường phải trải qua: chấp thuận chủ trương đầu tư, phê duyệt quy hoạch 1/500, phê duyệt dự án đầu tư xây dựng, cấp phép xây dựng, và trong một số trường hợp, phê duyệt phương án phòng cháy chữa cháy riêng cho từng giai đoạn. Mỗi bước có thể kéo dài 3-12 tháng tùy địa phương và mức độ phức tạp của dự án.
 
-Khác với dự án công, chủ đầu tư bất động sản tư nhân không có cơ chế ưu tiên trong hàng đợi phê duyệt. Thực tế cho thấy nhiều dự án bắt đầu thi công phần móng dựa trên giấy phép tạm hoặc quyết định chủ trương, rồi phát hiện vướng mắc pháp lý ở bước tiếp theo khiến phải dừng giữa chừng. Tình trạng này đặc biệt phổ biến trong giai đoạn 2022-2023 khi cơ quan quản lý siết chặt kiểm tra hồ sơ pháp lý sau một số vụ việc lớn.
+Khác với dự án công, chủ đầu tư bất động sản tư nhân không có cơ chế ưu tiên trong danh mục phê duyệt. Thực tế cho thấy nhiều dự án bắt đầu thi công phần móng dựa trên giấy phép tạm hoặc quyết định chủ trương, rồi phát hiện vướng mắc pháp lý ở bước tiếp theo khiến phải dừng giữa chừng. Tình trạng này đặc biệt phổ biến trong giai đoạn 2022-2023 khi cơ quan quản lý siết chặt kiểm tra hồ sơ pháp lý sau một số vụ việc lớn.
 
 ### 2.2. Nghị định 175/2024/NĐ-CP và yêu cầu mới
 
-Nghị định 175/2024/NĐ-CP (hiệu lực từ tháng 1/2025) thay thế Nghị định 15/2021 với nhiều thay đổi về quản lý thi công, đặc biệt yêu cầu chủ đầu tư bất động sản phải chứng minh năng lực tài chính đủ để hoàn thành dự án trước khi được phép mở bán. Điều này ảnh hưởng trực tiếp đến mô hình huy động vốn truyền thống và buộc nhiều chủ đầu tư phải tái cấu trúc kế hoạch tài chính dự án.
+Nghị định 175/2024/NĐ-CP (hiệu lực từ tháng 1/2025) với nhiều thay đổi về quản lý thi công, đặc biệt yêu cầu chủ đầu tư bất động sản phải chứng minh năng lực tài chính đủ để hoàn thành dự án trước khi được phép mở bán. Điều này ảnh hưởng trực tiếp đến mô hình huy động vốn truyền thống và buộc nhiều chủ đầu tư phải tái cấu trúc kế hoạch tài chính dự án.
 
 Từ góc độ quản lý thi công, thay đổi này đòi hỏi PM (quản lý dự án) phải phối hợp chặt hơn với bộ phận tài chính và pháp lý ngay từ giai đoạn lập kế hoạch, không phải chỉ khi vấn đề phát sinh.
 
@@ -85,7 +85,7 @@ Với một dự án 800 căn, giá trị hợp đồng trung bình 3 tỷ đồ
 
 ### 4.1. Nhà thầu chính, nhà thầu phụ và đơn vị chuyên ngành
 
-Dự án bất động sản quy mô trung bình thường có nhà thầu chính thi công phần thô, sau đó chia nhỏ cho nhiều nhà thầu phụ ở giai đoạn hoàn thiện: điện, nước, điều hòa không khí, thang máy, phòng cháy chữa cháy, nội thất mẫu, ngoại thất cảnh quan. Mỗi nhà thầu có lịch riêng, tiêu chuẩn riêng và thường hoạt động trên cùng một mặt bằng với nhau.
+Dự án bất động sản quy mô trung bình thường có nhà thầu chính thi công phần thô, sau đó chia nhỏ cho nhiều nhà thầu phụ ở giai đoạn hoàn thiện: điện, nước, điều hòa không khí, thang máy, phòng cháy chữa cháy, nội thất mẫu, ngoại thất cảnh quan. Mỗi nhà thầu có tiến độ riêng, tiêu chuẩn riêng và thường hoạt động trên cùng một mặt bằng với nhau.
 
 Vấn đề giao diện giữa các nhà thầu này là nguồn gốc của phần lớn tranh chấp tiến độ ở giai đoạn cuối dự án. Ví dụ: nhà thầu điện lạnh không thể lắp đặt ống gió nếu nhà thầu thạch cao chưa hoàn thiện trần; nhà thầu thạch cao chờ nhà thầu kết cấu hoàn thiện sàn vệ sinh; nhà thầu sàn vệ sinh chờ nhà thầu MEP đặt sẵn ống ngầm. Một điểm tắc nghẽn đủ để ảnh hưởng toàn bộ chuỗi.
 
@@ -93,7 +93,7 @@ Vấn đề giao diện giữa các nhà thầu này là nguồn gốc của ph�
 
 Kinh nghiệm thực tế cho thấy: PM dự án bất động sản cần xây dựng ma trận giao diện (interface matrix) ngay từ giai đoạn lập kế hoạch, xác định rõ điều kiện tiên quyết của từng gói công việc và người chịu trách nhiệm cho từng điểm giao cắt. Không phải tài liệu nặng nề, nhưng đủ chi tiết để khi tranh chấp xảy ra, câu trả lời đã có sẵn.
 
-Thực tế nhiều dự án bỏ qua bước này vì lịch triển khai quá gấp, rồi mất thêm 4-8 tuần ở giai đoạn cuối để giải quyết các xung đột giao diện có thể phòng tránh được.
+Thực tế nhiều dự án bỏ qua bước này vì tiến độ triển khai quá gấp, rồi mất thêm 4-8 tuần ở giai đoạn cuối để giải quyết các xung đột giao diện có thể phòng tránh được.
 
 ## 5. Rủi ro pháp lý đặc thù: tranh chấp đất đai và quyền sở hữu
 
@@ -160,7 +160,7 @@ Nếu PM không có đủ thẩm quyền và năng lực để làm trọng tài
 
 ### 7.2. Hệ thống báo cáo hai chiều
 
-PM cần duy trì hai hệ thống báo cáo song song: báo cáo kỹ thuật cho Ban điều hành về tiến độ thực tế theo đường Găng và các điểm rủi ro, và báo cáo tài chính cho Ban kinh doanh và ngân hàng tài trợ về tương quan giữa tiến độ xây dựng và lịch thu tiền theo hợp đồng mua bán.
+PM cần duy trì hai hệ thống báo cáo song song: báo cáo kỹ thuật cho Ban điều hành về tiến độ thực tế theo đường Găng và các điểm rủi ro, và báo cáo tài chính cho Ban kinh doanh và ngân hàng tài trợ về tương quan giữa tiến độ xây dựng và kế hoạch thu tiền theo hợp đồng mua bán.
 
 Hai hệ thống này phải nhất quán với nhau. Tô hồng tiến độ với khách hàng trong khi giấu rủi ro thực với nội bộ là bẫy quản lý phổ biến, và thường là điểm khởi đầu của mất kiểm soát.
 
@@ -184,7 +184,7 @@ Nguyên tắc đơn giản: PV (Planned Value) lấy theo lịch bàn giao từn
 
 ## Kết luận
 
-Dự án bất động sản đặt PM vào vị trí phải cân bằng giữa nhiều áp lực đồng thời: tiến độ kỹ thuật, lịch thu tiền từ khách hàng, yêu cầu pháp lý thay đổi liên tục, và quyết định kinh doanh từ cấp trên không phải lúc nào cũng có thể lường trước.
+Dự án bất động sản đặt PM vào vị trí phải cân bằng giữa nhiều áp lực đồng thời: tiến độ xây dựng, lịch thu tiền từ khách hàng, yêu cầu pháp lý thay đổi liên tục, và quyết định kinh doanh từ cấp trên không phải lúc nào cũng có thể lường trước.
 
 Không có công thức hoàn hảo. Nhưng có một số nguyên tắc nhất quán: lên kế hoạch giao diện sớm, duy trì đệm tiến độ có quản lý, xây dựng hệ thống báo cáo nhất quán giữa các bên, và đảm bảo PM có đủ thẩm quyền thực sự để ra quyết định tại hiện trường khi cần.
 
