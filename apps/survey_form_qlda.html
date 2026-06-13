@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
@@ -79,7 +79,7 @@
     .scale-wrapper { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
     .scale-label { font-size: .78rem; color: #5f6368; white-space: nowrap; }
     .scale-options { display: flex; gap: 4px; flex: 1; justify-content: center; }
-    .scale-option { display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 44px; }
+    .scale-option { display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 44px; cursor: pointer; }
     .scale-option input { width: 18px; height: 18px; accent-color: #1a73e8; cursor: pointer; }
     .scale-option .num { font-size: .8rem; color: #3c4043; font-weight: 500; }
 
@@ -240,44 +240,44 @@
     <div class="question">
       <div class="q-label">Vai trò của Anh/Chị<span class="required">*</span></div>
       <div class="choices" data-radio="vaiTro">
-        <label class="choice-item"><input type="radio" name="vaiTro" value="Chủ đầu tư" required><label>Chủ đầu tư</label></label>
-        <label class="choice-item"><input type="radio" name="vaiTro" value="PMU"><label>Ban quản lý dự án (PMU)</label></label>
-        <label class="choice-item"><input type="radio" name="vaiTro" value="Nhà thầu"><label>Nhà thầu</label></label>
-        <label class="choice-item"><input type="radio" name="vaiTro" value="Tư vấn"><label>Tư vấn</label></label>
-        <label class="choice-item"><input type="radio" name="vaiTro" value="Cơ quan nhà nước"><label>Cơ quan nhà nước</label></label>
-        <label class="choice-item"><input type="radio" name="vaiTro" value="Khác"><label>Khác</label></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="Chủ đầu tư" required><span>Chủ đầu tư</span></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="PMU"><span>Ban quản lý dự án (PMU)</span></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="Nhà thầu"><span>Nhà thầu</span></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="Tư vấn"><span>Tư vấn</span></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="Cơ quan nhà nước"><span>Cơ quan nhà nước</span></label>
+        <label class="choice-item"><input type="radio" name="vaiTro" value="Khác"><span>Khác</span></label>
       </div>
     </div>
 
     <div class="question">
       <div class="q-label">Loại dự án chủ yếu<span class="required">*</span></div>
       <div class="choices" data-radio="loaiDuAn">
-        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Dân dụng" required><label>Dân dụng</label></label>
-        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Công nghiệp"><label>Công nghiệp</label></label>
-        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Hạ tầng"><label>Hạ tầng</label></label>
-        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Thủy lợi"><label>Thủy lợi</label></label>
-        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Nông nghiệp"><label>Nông nghiệp</label></label>
-        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Khác"><label>Khác</label></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Dân dụng" required><span>Dân dụng</span></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Công nghiệp"><span>Công nghiệp</span></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Hạ tầng"><span>Hạ tầng</span></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Thủy lợi"><span>Thủy lợi</span></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Nông nghiệp"><span>Nông nghiệp</span></label>
+        <label class="choice-item"><input type="radio" name="loaiDuAn" value="Khác"><span>Khác</span></label>
       </div>
     </div>
 
     <div class="question">
       <div class="q-label">Quy mô dự án thường gặp<span class="required">*</span></div>
       <div class="choices" data-radio="quyMo">
-        <label class="choice-item"><input type="radio" name="quyMo" value="Dưới 10 tỷ" required><label>Dưới 10 tỷ</label></label>
-        <label class="choice-item"><input type="radio" name="quyMo" value="10-100 tỷ"><label>10 đến 100 tỷ</label></label>
-        <label class="choice-item"><input type="radio" name="quyMo" value="100-500 tỷ"><label>100 đến 500 tỷ</label></label>
-        <label class="choice-item"><input type="radio" name="quyMo" value="Trên 500 tỷ"><label>Trên 500 tỷ</label></label>
+        <label class="choice-item"><input type="radio" name="quyMo" value="Dưới 10 tỷ" required><span>Dưới 10 tỷ</span></label>
+        <label class="choice-item"><input type="radio" name="quyMo" value="10-100 tỷ"><span>10 đến 100 tỷ</span></label>
+        <label class="choice-item"><input type="radio" name="quyMo" value="100-500 tỷ"><span>100 đến 500 tỷ</span></label>
+        <label class="choice-item"><input type="radio" name="quyMo" value="Trên 500 tỷ"><span>Trên 500 tỷ</span></label>
       </div>
     </div>
 
     <div class="question">
       <div class="q-label">Khu vực dự án<span class="required">*</span></div>
       <div class="choices" data-radio="khuVuc">
-        <label class="choice-item"><input type="radio" name="khuVuc" value="Bắc" required><label>Miền Bắc</label></label>
-        <label class="choice-item"><input type="radio" name="khuVuc" value="Trung"><label>Miền Trung</label></label>
-        <label class="choice-item"><input type="radio" name="khuVuc" value="Nam"><label>Miền Nam</label></label>
-        <label class="choice-item"><input type="radio" name="khuVuc" value="Nhiều vùng"><label>Nhiều vùng</label></label>
+        <label class="choice-item"><input type="radio" name="khuVuc" value="Bắc" required><span>Miền Bắc</span></label>
+        <label class="choice-item"><input type="radio" name="khuVuc" value="Trung"><span>Miền Trung</span></label>
+        <label class="choice-item"><input type="radio" name="khuVuc" value="Nam"><span>Miền Nam</span></label>
+        <label class="choice-item"><input type="radio" name="khuVuc" value="Nhiều vùng"><span>Nhiều vùng</span></label>
       </div>
     </div>
 
@@ -319,13 +319,13 @@
       <div class="q-label">Khó khăn lớn nhất hiện tại của Anh/Chị</div>
       <div class="q-hint">Chọn tối đa 3.</div>
       <div class="choices">
-        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Lập kế hoạch và tiến độ không chính xác"><label>Lập kế hoạch và tiến độ không chính xác</label></label>
-        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Kiểm soát chi phí kém hiệu quả"><label>Kiểm soát chi phí kém hiệu quả</label></label>
-        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Quản lý hồ sơ và tài liệu phức tạp"><label>Quản lý hồ sơ và tài liệu phức tạp</label></label>
-        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Nhân sự PM thiếu kỹ năng"><label>Nhân sự PM thiếu kỹ năng</label></label>
-        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Thiếu công cụ hoặc phần mềm phù hợp"><label>Thiếu công cụ hoặc phần mềm phù hợp</label></label>
-        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Khó quản lý nhà thầu phụ"><label>Khó quản lý nhà thầu phụ</label></label>
-        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Thủ tục pháp lý phức tạp"><label>Thủ tục pháp lý phức tạp</label></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Lập kế hoạch và tiến độ không chính xác"><span>Lập kế hoạch và tiến độ không chính xác</span></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Kiểm soát chi phí kém hiệu quả"><span>Kiểm soát chi phí kém hiệu quả</span></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Quản lý hồ sơ và tài liệu phức tạp"><span>Quản lý hồ sơ và tài liệu phức tạp</span></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Nhân sự PM thiếu kỹ năng"><span>Nhân sự PM thiếu kỹ năng</span></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Thiếu công cụ hoặc phần mềm phù hợp"><span>Thiếu công cụ hoặc phần mềm phù hợp</span></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Khó quản lý nhà thầu phụ"><span>Khó quản lý nhà thầu phụ</span></label>
+        <label class="choice-item"><input type="checkbox" name="khoKhan" value="Thủ tục pháp lý phức tạp"><span>Thủ tục pháp lý phức tạp</span></label>
       </div>
     </div>
 
@@ -333,28 +333,28 @@
       <div class="q-label">Dịch vụ nào hữu ích nhất với Anh/Chị</div>
       <div class="q-hint">Chọn các mục phù hợp.</div>
       <div class="choices">
-        <label class="choice-item"><input type="checkbox" name="dichVu" value="Tư vấn thiết lập hệ thống QLDA"><label>Tư vấn thiết lập hệ thống QLDA</label></label>
-        <label class="choice-item"><input type="checkbox" name="dichVu" value="Đào tạo và huấn luyện PM nội bộ"><label>Đào tạo và huấn luyện PM nội bộ</label></label>
-        <label class="choice-item"><input type="checkbox" name="dichVu" value="Hỗ trợ kỹ thuật theo dự án (retainer)"><label>Hỗ trợ kỹ thuật theo dự án (retainer)</label></label>
-        <label class="choice-item"><input type="checkbox" name="dichVu" value="Lập kế hoạch tổng thể và giám sát độc lập"><label>Lập kế hoạch tổng thể và giám sát độc lập</label></label>
-        <label class="choice-item"><input type="checkbox" name="dichVu" value="Phần mềm và công cụ QLDA"><label>Phần mềm và công cụ QLDA</label></label>
+        <label class="choice-item"><input type="checkbox" name="dichVu" value="Tư vấn thiết lập hệ thống QLDA"><span>Tư vấn thiết lập hệ thống QLDA</span></label>
+        <label class="choice-item"><input type="checkbox" name="dichVu" value="Đào tạo và huấn luyện PM nội bộ"><span>Đào tạo và huấn luyện PM nội bộ</span></label>
+        <label class="choice-item"><input type="checkbox" name="dichVu" value="Hỗ trợ kỹ thuật theo dự án (retainer)"><span>Hỗ trợ kỹ thuật theo dự án (retainer)</span></label>
+        <label class="choice-item"><input type="checkbox" name="dichVu" value="Lập kế hoạch tổng thể và giám sát độc lập"><span>Lập kế hoạch tổng thể và giám sát độc lập</span></label>
+        <label class="choice-item"><input type="checkbox" name="dichVu" value="Phần mềm và công cụ QLDA"><span>Phần mềm và công cụ QLDA</span></label>
       </div>
     </div>
 
     <div class="question">
       <div class="q-label">Anh/Chị có muốn nhận tư vấn 1-1 miễn phí 30 phút không?</div>
       <div class="choices" data-radio="tuVanMienPhi">
-        <label class="choice-item"><input type="radio" name="tuVanMienPhi" value="Có"><label>Có</label></label>
-        <label class="choice-item"><input type="radio" name="tuVanMienPhi" value="Không"><label>Không</label></label>
+        <label class="choice-item"><input type="radio" name="tuVanMienPhi" value="Có"><span>Có</span></label>
+        <label class="choice-item"><input type="radio" name="tuVanMienPhi" value="Không"><span>Không</span></label>
       </div>
     </div>
 
     <div class="question">
       <div class="q-label">Thời điểm phù hợp để liên hệ</div>
       <div class="choices" data-radio="thoiDiem">
-        <label class="choice-item"><input type="radio" name="thoiDiem" value="Ngay bây giờ"><label>Ngay bây giờ</label></label>
-        <label class="choice-item"><input type="radio" name="thoiDiem" value="1-3 tháng tới"><label>Trong 1 đến 3 tháng tới</label></label>
-        <label class="choice-item"><input type="radio" name="thoiDiem" value="Trên 3 tháng"><label>Sau 3 tháng</label></label>
+        <label class="choice-item"><input type="radio" name="thoiDiem" value="Ngay bây giờ"><span>Ngay bây giờ</span></label>
+        <label class="choice-item"><input type="radio" name="thoiDiem" value="1-3 tháng tới"><span>Trong 1 đến 3 tháng tới</span></label>
+        <label class="choice-item"><input type="radio" name="thoiDiem" value="Trên 3 tháng"><span>Sau 3 tháng</span></label>
       </div>
     </div>
 
@@ -440,9 +440,9 @@ function renderGroup(nhom) {
             '<div class="scale-wrapper"><span class="scale-label">Rất thấp</span>' +
             '<div class="scale-options">';
     for (let v = 1; v <= 5; v++) {
-      html += '<div class="scale-option">' +
+      html += '<label class="scale-option">' +
               '<input type="radio" name="' + ma + '" value="' + v + '" required>' +
-              '<span class="num">' + v + '</span></div>';
+              '<span class="num">' + v + '</span></label>';
     }
     html += '</div><span class="scale-label">Rất cao</span></div></div>';
   });
