@@ -286,7 +286,7 @@ Quan trọng hơn cả công cụ là văn hóa báo cáo trung thực. OPPM ph�
 
 Nếu bạn đang là cán bộ PMU, chủ đầu tư hoặc nhà thầu đang gặp khó khăn trong việc kiểm soát tiến độ và chi phí dự án xây dựng đang triển khai, hoặc muốn xây dựng hệ thống báo cáo tổng hợp phù hợp với đặc thù dự án của mình, hãy liên hệ trực tiếp kèm mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ tư vấn thiết kế cấu trúc OPPM phù hợp với từng loại dự án, xây dựng template chuẩn hóa cho tổ chức, đào tạo nhóm PMU sử dụng và vận hành, và hỗ trợ tích hợp với hệ thống báo cáo hiện hành:
 
-- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Liên hệ: [Zalo](https://zalo.me/84374874142) \| [WhatsApp](https://wa.me/84374874142)
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 > Mọi trao đổi tư vấn kỹ thuật ban đầu đều miễn phí. Chúng tôi sẵn sàng chia sẻ kinh nghiệm từ các dự án đã triển khai.

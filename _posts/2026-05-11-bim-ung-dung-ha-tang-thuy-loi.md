@@ -328,7 +328,7 @@ Nếu bạn vừa đọc đến đây, nhiều khả năng bạn đang đối m�
 
 HydrostructAI tư vấn chuyên biệt BIM cho công trình hạ tầng và thủy lợi như trạm bơm, cống ngăn sông, đê điều, kênh mương theo chuẩn ISO 19650 / TCVN 14177:2024. Không phải tư vấn lý thuyết mà từ thiết lập BEP, dựng mô hình tích hợp đa bộ môn (Civil 3D + Revit + Tekla), đến vận hành CDE trên Autodesk Construction Cloud.
 
-- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Liên hệ: [Zalo](https://zalo.me/84374874142) \| [WhatsApp](https://wa.me/84374874142)
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 > Bạn vẫn đang băn khoăn về giải pháp? Đừng ngần ngại gửi mô tả tình huống qua email hay WhatsApp. Chúng tôi luôn sẵn sàng lắng nghe và giải đáp các thắc mắc kỹ thuật của bạn hoàn toàn miễn phí.

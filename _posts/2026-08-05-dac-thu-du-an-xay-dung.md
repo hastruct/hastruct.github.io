@@ -205,7 +205,7 @@ Bài viết [**Đầu tư công trong xây dựng: vốn trung hạn, ODA và nh
 
 Nếu bạn đang phụ trách một dự án xây dựng và muốn đánh giá lại mức độ rủi ro hiện tại, hoặc cần hỗ trợ xây dựng khung quản lý phù hợp với đặc thù dự án, hãy liên hệ trực tiếp kèm mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp:
 
-- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Liên hệ: [Zalo](https://zalo.me/84374874142) \| [WhatsApp](https://wa.me/84374874142)
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---

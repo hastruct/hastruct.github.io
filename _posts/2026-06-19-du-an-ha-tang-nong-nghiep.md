@@ -224,7 +224,7 @@ Các bài trong chuỗi quản lý dự án xây dựng:
 
 Nếu bạn đang triển khai dự án hạ tầng nông nghiệp hoặc hạ tầng vùng khó và cần hỗ trợ xây dựng hệ thống quản lý phù hợp với điều kiện thực địa, hãy liên hệ trực tiếp kèm mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp:
 
-- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Liên hệ: [Zalo](https://zalo.me/84374874142) \| [WhatsApp](https://wa.me/84374874142)
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---

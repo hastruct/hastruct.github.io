@@ -291,7 +291,7 @@ CivilPy là lựa chọn thực tiễn cho kỹ sư xây dựng muốn bổ sung
 
 Để trao đổi về ứng dụng Python trong các dự án kỹ thuật, hãy liên hệ trực tiếp:
 
-- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Liên hệ: [Zalo](https://zalo.me/84374874142) \| [WhatsApp](https://wa.me/84374874142)
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ## Tài liệu tham khảo

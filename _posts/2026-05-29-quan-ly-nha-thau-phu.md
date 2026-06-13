@@ -321,7 +321,7 @@ Các bài trong chuỗi quản lý dự án xây dựng liên quan trực tiếp
 
 Nếu bạn đang phụ trách PMU, là nhà thầu chính quản lý nhiều gói thầu phụ cùng lúc, hoặc là chủ đầu tư muốn thiết lập hệ thống giám sát nhà thầu phụ bài bản hơn, hãy liên hệ trực tiếp kèm mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể đang gặp để được hỗ trợ đánh giá hệ thống hiện tại, xác định điểm rủi ro cao nhất và đề xuất giải pháp phù hợp đặc thù dự án:
 
-- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142)
+- Liên hệ: [Zalo](https://zalo.me/84374874142) \| [WhatsApp](https://wa.me/84374874142)
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com)
 
 ---
