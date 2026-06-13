@@ -995,7 +995,7 @@ HydrostructAI đang sử dụng Calcpad trong quy trình tính toán kỹ thuậ
 **Liên hệ:**
 
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com): ghi rõ loại bài toán và tiêu chuẩn áp dụng
-- [WhatsApp](https://wa.me/84374874142): trao đổi kỹ thuật nhanh
+- [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142): trao đổi kỹ thuật nhanh
 
 Ngoài ra, nếu bạn đang xây dựng quy trình tính toán có kiểm tra độc lập (peer review) cho dự án có yêu cầu kiểm soát chất lượng cao, đây cũng là mảng HydrostructAI có thể hỗ trợ.
 

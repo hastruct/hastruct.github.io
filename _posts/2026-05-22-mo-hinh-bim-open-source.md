@@ -608,7 +608,7 @@ Phần mềm thương mại cho bạn một workflow hoàn chỉnh. Mã nguồn 
 
 ## Bạn đang xây dựng năng lực BIM cho dự án hạ tầng hoặc thủy lợi?
 
-Nếu bạn đang nghiên cứu workflow mã nguồn mở cho dự án cụ thể, hoặc muốn tích hợp pyvista-cad vào quy trình QA/QC IFC hiện có, **Liên hệ trực tiếp:** [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ kỹ thuật về IFC, pyvista-cad hay workflow BIM mã nguồn mở.
+Nếu bạn đang nghiên cứu workflow mã nguồn mở cho dự án cụ thể, hoặc muốn tích hợp pyvista-cad vào quy trình QA/QC IFC hiện có, **Liên hệ trực tiếp:** [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) với mô tả ngắn về loại dự án, giai đoạn hiện tại và vấn đề cụ thể bạn đang gặp, để nhận hỗ trợ kỹ thuật về IFC, pyvista-cad hay workflow BIM mã nguồn mở.
 
 *© 2026 HydrostructAI - Tư vấn Mô hình hóa BIM, Phát triển Giải pháp Mã nguồn mở cho AEC*
 

@@ -331,7 +331,7 @@ HydrostructAI tư vấn chuyên biệt BIM cho công trình hạ tầng và th�
 **Liên hệ trực tiếp:**
 
 - Email: [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) -> Mô tả ngắn dự án, giai đoạn hiện tại, và vấn đề cụ thể bạn đang gặp
-- Liên hệ: [WhatsApp](https://wa.me/84374874142) -> Trao đổi nhanh trước khi quyết định
+- Liên hệ: [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) -> Trao đổi nhanh trước khi quyết định
 
 > Bạn vẫn đang băn khoăn về giải pháp? Đừng ngần ngại gửi mô tả tình huống qua email hay WhatsApp. Chúng tôi luôn sẵn sàng lắng nghe và giải đáp các thắc mắc kỹ thuật của bạn hoàn toàn miễn phí.
 

@@ -390,7 +390,7 @@ Cụ thể, có thể hỗ trợ:
 - Tham gia nghiệm thu các công đoạn ẩn: cốt thép, cốp pha, hệ thống điện, nước trước khi lấp;
 - Xem xét phát sinh và tranh chấp với nhà thầu dựa trên hồ sơ hợp đồng thực tế.
 
-** Liên hệ [WhatsApp](https://wa.me/84374874142) hoặc [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) để được hỗ trợ trong quản lý dự án đầu tư xây dựng.
+** Liên hệ [Zalo](https://zalo.me/84374874142) | [WhatsApp](https://wa.me/84374874142) hoặc [ha.nguyen@hydrostructai.com](mailto:ha.nguyen@hydrostructai.com) để được hỗ trợ trong quản lý dự án đầu tư xây dựng.
 
 ---
 
