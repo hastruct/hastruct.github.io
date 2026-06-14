@@ -33,6 +33,7 @@ function doGet(e) {
 // ------------------------------------------------------------
 // doPost router
 // Form gui body: payload = JSON.stringify({ action:'khao-sat-qlda', ... })
+// action:'send-new-article' goi tu GitHub Actions khi push bai viet moi.
 // ------------------------------------------------------------
 function doPost(e) {
   try {
@@ -43,6 +44,12 @@ function doPost(e) {
       const result = saveKhaoSatQLDA(data);
       return jsonOut({ status: "ok", khId: result.khId, tag: result.tag });
     }
+
+    if (data.action === "send-new-article") {
+      const result = sendNewArticleToAll(data);
+      return jsonOut({ status: "ok", sent: result.sent, skipped: result.skipped, errors: result.errors });
+    }
+
     return jsonOut({ status: "error", message: "Unknown action" });
   } catch (err) {
     return jsonOut({ status: "error", message: String(err) });
@@ -237,6 +244,157 @@ function sendCRMAlert(data, score, tag) {
     "Xem Sheet:    " + sheetUrl;
 
   MailApp.sendEmail(CRM_EMAIL, subject, body);
+}
+
+// ============================================================
+// GỬI BÀI VIẾT MỚI TỚI TOÀN BỘ DANH SÁCH KHẢO SÁT
+// Gọi từ GitHub Actions mỗi khi push bài viết mới vào _posts/.
+// payload: { action, slug, title, url, summary, date }
+// ============================================================
+
+const COL_HO_TEN        = 3;   // C – HoTen
+const COL_EMAIL_KH      = 4;   // D – Email
+const COL_ARTICLES_SENT = 13;  // M – ArticlesSent (slug cách nhau bằng ";")
+
+// Đảm bảo cột M "ArticlesSent" có header trước khi dùng.
+function ensureArticlesSentColumn(ss) {
+  const sheet = ss.getSheetByName("QLDA_KhachHang");
+  if (!sheet) return;
+  const cell = sheet.getRange(1, COL_ARTICLES_SENT);
+  if (!cell.getValue()) {
+    cell.setValue("ArticlesSent")
+        .setBackground("#1e3a8a")
+        .setFontColor("#ffffff")
+        .setFontWeight("bold");
+  }
+}
+
+// Vòng lặp gửi email bài mới tới từng người trong danh sách.
+// Nếu cột M trống → lần đầu nhận mail bài → dùng tone cảm ơn khảo sát.
+// Nếu cột M đã có dữ liệu → lần 2 trở đi → dùng tone bản tin.
+function sendNewArticleToAll(params) {
+  const ss = SpreadsheetApp.openById(SPREADSHEET_ID_QLDA);
+  ensureArticlesSentColumn(ss);
+
+  const sheet = ss.getSheetByName("QLDA_KhachHang");
+  if (!sheet) return { sent: 0, skipped: 0, errors: 0 };
+
+  const rows = sheet.getDataRange().getValues(); // row 0 = header
+  let sent = 0, skipped = 0, errors = 0;
+
+  for (let i = 1; i < rows.length; i++) {
+    const email        = (rows[i][COL_EMAIL_KH - 1]        || "").toString().trim();
+    const hoTen        = (rows[i][COL_HO_TEN - 1]          || "").toString().trim();
+    const articlesSent = (rows[i][COL_ARTICLES_SENT - 1]   || "").toString().trim();
+
+    if (!email)                           { skipped++; continue; }
+    if (articlesSent.split(";").indexOf(params.slug) !== -1) { skipped++; continue; }
+
+    try {
+      const isFirst = !articlesSent;
+      const htmlBody = isFirst
+        ? buildArticleEmail_First(hoTen, params)
+        : buildArticleEmail_Repeat(hoTen, params);
+
+      MailApp.sendEmail({
+        to:       email,
+        subject:  "Bài viết mới từ HST: " + params.title,
+        htmlBody: htmlBody,
+        name:     SENDER_NAME,
+        replyTo:  CRM_EMAIL
+      });
+
+      const newVal = articlesSent ? articlesSent + ";" + params.slug : params.slug;
+      sheet.getRange(i + 1, COL_ARTICLES_SENT).setValue(newVal);
+
+      sent++;
+      Utilities.sleep(300); // tránh vượt rate limit MailApp
+    } catch (err) {
+      Logger.log("Lỗi gửi tới " + email + ": " + err);
+      errors++;
+    }
+  }
+
+  Logger.log("sendNewArticleToAll – sent:" + sent + " skipped:" + skipped + " errors:" + errors);
+  return { sent: sent, skipped: skipped, errors: errors };
+}
+
+// Định dạng ngày "2026-06-12" → "12/06/2026"
+function formatVNDate(iso) {
+  const parts = (iso || "").substring(0, 10).split("-");
+  if (parts.length !== 3) return iso || "";
+  return parts[2] + "/" + parts[1] + "/" + parts[0];
+}
+
+// Email lần đầu – nhắc lại việc đã tham gia khảo sát.
+function buildArticleEmail_First(hoTen, p) {
+  const chao = hoTen ? ("Chào " + hoTen + ",") : "Chào Anh/Chị,";
+  const ngay = formatVNDate(p.date);
+  return '' +
+'<div style="font-family:Arial,Helvetica,sans-serif;max-width:600px;margin:0 auto;color:#202124;line-height:1.6">' +
+  '<p>' + chao + '</p>' +
+  '<p>Cảm ơn Anh/Chị đã tham gia khảo sát thực trạng Quản lý Dự án cùng ' +
+    '<strong>HST – Tư vấn &amp; Quản lý dự án</strong>.</p>' +
+  '<p>Chúng tôi vừa đăng bài viết mới, hy vọng sẽ có ích cho công việc của Anh/Chị:</p>' +
+  _articleCard(p.title, p.url, p.summary, ngay) +
+  _readButton(p.url) +
+  _footer();
+}
+
+// Email lần 2 trở đi – tone bản tin thông thường.
+function buildArticleEmail_Repeat(hoTen, p) {
+  const chao = hoTen ? ("Chào " + hoTen + ",") : "Chào Anh/Chị,";
+  const ngay = formatVNDate(p.date);
+  return '' +
+'<div style="font-family:Arial,Helvetica,sans-serif;max-width:600px;margin:0 auto;color:#202124;line-height:1.6">' +
+  '<p>' + chao + '</p>' +
+  '<p><strong>HST – Tư vấn &amp; Quản lý dự án</strong> gửi đến bạn bài viết mới vừa được đăng:</p>' +
+  _articleCard(p.title, p.url, p.summary, ngay) +
+  _readButton(p.url) +
+  _footer();
+}
+
+// Khối card bài viết dùng chung cho cả 2 template.
+function _articleCard(title, url, summary, ngay) {
+  return '' +
+  '<div style="border-left:4px solid #1a73e8;padding:14px 18px;background:#f8f9ff;' +
+      'border-radius:0 6px 6px 0;margin:20px 0">' +
+    '<p style="margin:0 0 6px 0;font-size:11px;color:#5f6368">Đăng ngày ' + ngay + '</p>' +
+    '<p style="margin:0 0 10px 0;font-size:16px;font-weight:600;line-height:1.4">' +
+      '<a href="' + url + '" target="_blank" rel="noopener" ' +
+         'style="color:#1a73e8;text-decoration:none">' + title + '</a>' +
+    '</p>' +
+    '<p style="margin:0;font-size:14px;color:#444444;line-height:1.5">' + summary + '</p>' +
+  '</div>';
+}
+
+// Nút CTA "Đọc bài viết đầy đủ".
+function _readButton(url) {
+  return '' +
+  '<p style="text-align:center;margin:24px 0">' +
+    '<a href="' + url + '" target="_blank" rel="noopener" ' +
+       'style="background:#1a73e8;color:#ffffff;padding:12px 28px;border-radius:6px;' +
+       'text-decoration:none;font-weight:600;display:inline-block">' +
+      'Đọc bài viết đầy đủ' +
+    '</a>' +
+  '</p>';
+}
+
+// Footer dùng chung.
+function _footer() {
+  return '' +
+  '<hr style="border:none;border-top:1px solid #e0e0e0;margin:24px 0">' +
+  '<p>Nếu Anh/Chị muốn trao đổi thêm về dự án đang triển khai, xin vui lòng liên hệ:</p>' +
+  '<p><a href="https://zalo.me/84374874142">Zalo</a> | ' +
+    '<a href="https://wa.me/84374874142">WhatsApp</a> | ' +
+    'Email: <a href="mailto:ha.nguyen@hydrostructai.com">ha.nguyen@hydrostructai.com</a></p>' +
+  '<p style="margin-top:24px">Trân trọng,<br>' +
+    '<strong>HST – Tư vấn &amp; Quản lý dự án</strong><br>' +
+    '<a href="mailto:ha.nguyen@hydrostructai.com">ha.nguyen@hydrostructai.com</a> | ' +
+    '<a href="https://hydrostructai.com">hydrostructai.com</a></p>' +
+  '<p style="font-size:11px;color:#9e9e9e;margin-top:20px">' +
+    'Nếu bạn muốn ngừng nhận email, vui lòng reply "Hủy đăng ký".</p>' +
+'</div>';
 }
 
 // ------------------------------------------------------------

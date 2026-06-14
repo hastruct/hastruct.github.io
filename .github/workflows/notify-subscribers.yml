@@ -1,0 +1,135 @@
+name: Notify Subscribers – New Post
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - '_posts/**.md'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    # Chỉ chạy khi push từ người dùng, không chạy từ bot CI để tránh vòng lặp
+    if: github.actor != 'github-actions[bot]'
+
+    steps:
+      - name: Checkout (2 commits để so sánh file mới/cũ)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Phát hiện file bài viết mới được thêm vào _posts/
+        id: detect
+        run: |
+          # Lấy danh sách file .md được ADD (A) trong commit này, không lấy M/D
+          NEW=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- '_posts/*.md' 2>/dev/null || true)
+          echo "new_posts<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$NEW"          >> "$GITHUB_OUTPUT"
+          echo "EOF"           >> "$GITHUB_OUTPUT"
+
+      - name: Gọi GAS endpoint gửi email bài mới
+        if: steps.detect.outputs.new_posts != ''
+        env:
+          GAS_URL:   ${{ secrets.GAS_ENDPOINT_URL }}
+          NEW_POSTS: ${{ steps.detect.outputs.new_posts }}
+          SITE_URL:  https://hydrostructai.com
+        run: |
+          python3 - <<'PYEOF'
+          import os, re, json, urllib.request, urllib.parse, sys
+
+          gas_url  = os.environ.get("GAS_URL", "").strip()
+          site_url = os.environ.get("SITE_URL", "https://hydrostructai.com").rstrip("/")
+          new_posts_raw = os.environ.get("NEW_POSTS", "").strip()
+
+          if not gas_url:
+              print("SKIP: GAS_ENDPOINT_URL secret chưa được thiết lập.")
+              sys.exit(0)
+
+          post_files = [p.strip() for p in new_posts_raw.splitlines() if p.strip()]
+          if not post_files:
+              print("Không có bài viết mới.")
+              sys.exit(0)
+
+          def strip_markdown(text):
+              """Xóa cú pháp markdown cơ bản để lấy plain text cho phần tóm tắt."""
+              text = re.sub(r'^#{1,6}\s+', '', text, flags=re.MULTILINE)
+              text = re.sub(r'\*{1,3}([^*]+)\*{1,3}', r'\1', text)
+              text = re.sub(r'`{1,3}[^`]*`{1,3}', '', text)
+              text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
+              text = re.sub(r'!\[[^\]]*\]\([^)]+\)', '', text)
+              text = re.sub(r'^\s*[-*>|]\s*', '', text, flags=re.MULTILINE)
+              return re.sub(r'\s+', ' ', text).strip()
+
+          def get_fm_value(fm_text, key):
+              """Trích xuất giá trị đơn từ front matter YAML (không dùng thư viện)."""
+              m = re.search(
+                  r'^' + re.escape(key) + r':\s*["\']?(.*?)["\']?\s*$',
+                  fm_text, re.MULTILINE
+              )
+              return m.group(1).strip().strip('"\'') if m else ""
+
+          def extract_summary(body, max_chars=280):
+              """Lấy đoạn văn đầu tiên có ý nghĩa từ nội dung bài (sau front matter)."""
+              paragraphs = re.split(r'\n{2,}', body)
+              for para in paragraphs:
+                  clean = strip_markdown(para.strip())
+                  # Bỏ qua dòng quá ngắn hoặc là metadata Jekyll
+                  if len(clean) > 60 and not clean.startswith(("{%", "{{", "<")):
+                      return (clean[:max_chars] + "…") if len(clean) > max_chars else clean
+              return ""
+
+          for post_file in post_files:
+              if not os.path.exists(post_file):
+                  print(f"File không tồn tại, bỏ qua: {post_file}")
+                  continue
+
+              with open(post_file, encoding="utf-8") as f:
+                  content = f.read()
+
+              # Phân tích front matter
+              fm_match = re.match(r'^---\n(.*?)\n---\s*\n', content, re.DOTALL)
+              if not fm_match:
+                  print(f"Không tìm thấy front matter: {post_file}")
+                  continue
+
+              fm     = fm_match.group(1)
+              body   = content[fm_match.end():]
+
+              title     = get_fm_value(fm, "title")
+              permalink = get_fm_value(fm, "permalink")
+              date_raw  = get_fm_value(fm, "date")
+              excerpt   = get_fm_value(fm, "excerpt")   # dùng excerpt nếu có
+
+              date_str  = date_raw[:10] if date_raw else ""
+              url       = site_url + permalink if permalink else ""
+              slug      = os.path.basename(post_file).replace(".md", "")
+              summary   = excerpt if excerpt else extract_summary(body)
+
+              if not title or not url:
+                  print(f"Thiếu title/url, bỏ qua: {post_file}")
+                  continue
+
+              payload = json.dumps({
+                  "action":  "send-new-article",
+                  "slug":    slug,
+                  "title":   title,
+                  "url":     url,
+                  "summary": summary,
+                  "date":    date_str
+              }, ensure_ascii=False)
+
+              data = urllib.parse.urlencode({"payload": payload}).encode("utf-8")
+              req  = urllib.request.Request(
+                  gas_url, data=data, method="POST",
+                  headers={"Content-Type": "application/x-www-form-urlencoded"}
+              )
+
+              try:
+                  with urllib.request.urlopen(req, timeout=45) as resp:
+                      result = resp.read().decode("utf-8")
+                  print(f"OK [{slug}]: {result}")
+              except Exception as e:
+                  print(f"LỖI [{slug}]: {e}", file=sys.stderr)
+                  sys.exit(1)
+
+          PYEOF
