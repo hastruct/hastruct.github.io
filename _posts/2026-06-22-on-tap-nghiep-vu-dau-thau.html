@@ -53,7 +53,7 @@ header:
   padding:5px 9px; border:1px solid #d1d5db; border-radius:6px; font-size:.88rem;
 }
 #perPageSel { min-width:80px; font-size:1rem; font-weight:600; text-align:center; }
-.quiz-toolbar input[type=number] { width:68px; }
+.quiz-toolbar input[type=number] { width:100px; }
 .btn { padding:6px 13px; border:none; border-radius:6px; cursor:pointer;
   font-size:.86rem; font-weight:500; transition:opacity .15s; }
 .btn:hover { opacity:.85; }
@@ -181,7 +181,6 @@ header:
       </select>
     </label>
     <label>Đến câu: <input type="number" id="jumpInput" min="1" max="390" placeholder="1-390"></label>
-    <button class="btn btn-primary btn-sm" onclick="quizJump()">Đến</button>
     <span style="flex:1"></span>
     <button class="btn btn-secondary btn-sm" onclick="quizReset()">Làm lại</button>
   </div>
@@ -476,6 +475,10 @@ header:
     answered = {};
     render();
   };
+
+  document.getElementById('jumpInput').addEventListener('keydown', function(e){
+    if (e.key === 'Enter') { e.preventDefault(); quizJump(); }
+  });
 
   document.getElementById('perPageSel').addEventListener('change', function(){
     perPage=parseInt(this.value); currentPage=1; render();
