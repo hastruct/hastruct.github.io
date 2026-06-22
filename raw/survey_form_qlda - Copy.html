@@ -1,141 +1,192 @@
----
-layout: single
-title: "Khảo sát nhu cầu tư vấn quản lý dự án"
-date: 2026-06-22 08:00:00 +0700
-permalink: "/posts/khao-sat-nhu-cau-qlda/"
-categories: [khao-sat]
-tags: [tu-van-qlda, khao-sat]
-excerpt: "Khảo sát nhu cầu tư vấn và quản lý dự án xây dựng — nhận bộ tài liệu QLDA miễn phí."
-author_profile: true
-toc: false
----
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khảo sát thực trạng Quản lý Dự án | HydroStructAI</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 15px; }
+    body {
+      font-family: "Google Sans", "Segoe UI", Arial, sans-serif;
+      background: #f0f4f9;
+      color: #202124;
+      min-height: 100vh;
+      padding: 24px 12px 48px;
+    }
+    a { color: #1a73e8; }
 
-<style>
-.survey-form-body *, .survey-form-body *::before, .survey-form-body *::after { box-sizing: border-box; }
-.survey-form-body { font-family: "Google Sans", "Segoe UI", Arial, sans-serif; color: #202124; }
-a { color: #1a73e8; }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(60,64,67,.15), 0 4px 8px rgba(60,64,67,.06);
+      max-width: 720px;
+      margin: 0 auto 20px;
+      overflow: hidden;
+    }
+    .card-header { border-top: 10px solid #1155cc; padding: 24px 24px 20px; }
+    .card-header h1 { font-size: 1.5rem; font-weight: 600; line-height: 1.4; margin-bottom: 12px; }
 
-.card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(60,64,67,.15), 0 4px 8px rgba(60,64,67,.06);
-  max-width: 720px;
-  margin: 0 auto 20px;
-  overflow: hidden;
-}
-.card-header { border-top: 10px solid #1155cc; padding: 24px 24px 20px; }
-.card-header h1 { font-size: 1.5rem; font-weight: 600; line-height: 1.4; margin-bottom: 12px; }
+    /* Gift banner */
+    .gift {
+      background: #e6f4ea;
+      border: 1px solid #b7e1c2;
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+    }
+    .gift h2 { font-size: 1.05rem; color: #137333; margin-bottom: 8px; }
+    .gift ul { margin: 8px 0 0 20px; font-size: .9rem; line-height: 1.7; color: #1e4620; }
+    .gift .note { margin-top: 10px; font-size: .85rem; color: #137333; font-weight: 500; }
 
-/* Gift banner */
-.gift {
-  background: #e6f4ea;
-  border: 1px solid #b7e1c2;
-  border-radius: 8px;
-  padding: 16px 18px;
-  margin-bottom: 14px;
-}
-.gift h2 { font-size: 1.05rem; color: #137333; margin-bottom: 8px; }
-.gift ul { margin: 8px 0 0 20px; font-size: .9rem; line-height: 1.7; color: #1e4620; }
-.gift .note { margin-top: 10px; font-size: .85rem; color: #137333; font-weight: 500; }
+    .intro {
+      background: #f8f9fa;
+      border-left: 4px solid #1155cc;
+      border-radius: 0 4px 4px 0;
+      padding: 12px 16px;
+      font-size: .875rem;
+      line-height: 1.6;
+      color: #3c4043;
+    }
 
-.intro {
-  background: #f8f9fa;
-  border-left: 4px solid #1155cc;
-  border-radius: 0 4px 4px 0;
-  padding: 12px 16px;
-  font-size: .875rem;
-  line-height: 1.6;
-  color: #3c4043;
-}
+    .section-header { border-top: 10px solid #1155cc; padding: 18px 24px 14px; }
+    .section-header h2 { font-size: 1.1rem; font-weight: 600; }
+    .section-header p { font-size: .85rem; color: #5f6368; margin-top: 4px; }
 
-.section-header { border-top: 10px solid #1155cc; padding: 18px 24px 14px; }
-.section-header h2 { font-size: 1.1rem; font-weight: 600; }
-.section-header p { font-size: .85rem; color: #5f6368; margin-top: 4px; }
+    .group-header { padding: 14px 24px 4px; border-top: 2px solid #e8eaed; }
+    .group-header h3 {
+      font-size: .95rem; font-weight: 600; color: #1155cc;
+      text-transform: uppercase; letter-spacing: .03em;
+    }
 
-.group-header { padding: 14px 24px 4px; border-top: 2px solid #e8eaed; }
-.group-header h3 {
-  font-size: .95rem; font-weight: 600; color: #1155cc;
-  text-transform: uppercase; letter-spacing: .03em;
-}
+    .card-body { padding: 0 24px 24px; }
 
-.card-body { padding: 0 24px 24px; }
+    .question { padding: 16px 24px; border-bottom: 1px solid #f1f3f4; }
+    .question:last-child { border-bottom: none; }
+    .q-label { font-size: .95rem; font-weight: 500; margin-bottom: 10px; line-height: 1.45; }
+    .q-label .required { color: #d93025; margin-left: 3px; font-weight: 700; }
+    .q-hint { font-size: .8rem; color: #5f6368; margin-top: -6px; margin-bottom: 8px; }
 
-.question { padding: 16px 24px; border-bottom: 1px solid #f1f3f4; }
-.question:last-child { border-bottom: none; }
-.q-label { font-size: .95rem; font-weight: 500; margin-bottom: 10px; line-height: 1.45; }
-.q-label .required { color: #d93025; margin-left: 3px; font-weight: 700; }
-.q-hint { font-size: .8rem; color: #5f6368; margin-top: -6px; margin-bottom: 8px; }
+    .choices { display: flex; flex-direction: column; gap: 6px; }
+    .choice-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 7px 10px; border-radius: 4px; cursor: pointer; transition: background .15s;
+    }
+    .choice-item:hover { background: #f8f9fa; }
+    .choice-item input { width: 16px; height: 16px; accent-color: #1a73e8; flex-shrink: 0; cursor: pointer; }
+    .choice-item label { font-size: .9rem; cursor: pointer; line-height: 1.4; }
 
-.choices { display: flex; flex-direction: column; gap: 6px; }
-.choice-item {
-  display: flex; align-items: center; gap: 10px;
-  padding: 7px 10px; border-radius: 4px; cursor: pointer; transition: background .15s;
-}
-.choice-item:hover { background: #f8f9fa; }
-.choice-item input { width: 16px; height: 16px; accent-color: #1a73e8; flex-shrink: 0; cursor: pointer; }
-.choice-item label { font-size: .9rem; cursor: pointer; line-height: 1.4; }
+    .scale-wrapper { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+    .scale-label { font-size: .78rem; color: #5f6368; white-space: nowrap; }
+    .scale-options { display: flex; gap: 4px; flex: 1; justify-content: center; }
+    .scale-option { display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 44px; cursor: pointer; }
+    .scale-option input { width: 18px; height: 18px; accent-color: #1a73e8; cursor: pointer; }
+    .scale-option .num { font-size: .8rem; color: #3c4043; font-weight: 500; }
 
-.scale-wrapper { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
-.scale-label { font-size: .78rem; color: #5f6368; white-space: nowrap; }
-.scale-options { display: flex; gap: 4px; flex: 1; justify-content: center; }
-.scale-option { display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 44px; cursor: pointer; }
-.scale-option input { width: 18px; height: 18px; accent-color: #1a73e8; cursor: pointer; }
-.scale-option .num { font-size: .8rem; color: #3c4043; font-weight: 500; }
+    .text-input {
+      width: 100%; border: none; border-bottom: 1px solid #dadce0;
+      padding: 6px 2px; font-size: .9rem; font-family: inherit; color: #202124;
+      background: transparent; outline: none; transition: border-color .2s;
+    }
+    .text-input:focus { border-bottom-color: #1a73e8; }
 
-.text-input {
-  width: 100%; border: none; border-bottom: 1px solid #dadce0;
-  padding: 6px 2px; font-size: .9rem; font-family: inherit; color: #202124;
-  background: transparent; outline: none; transition: border-color .2s;
-}
-.text-input:focus { border-bottom-color: #1a73e8; }
+    .form-actions { display: flex; gap: 16px; align-items: center; padding: 20px 24px; flex-wrap: wrap; }
+    .btn-submit {
+      background: #1a73e8; color: #fff; border: none; border-radius: 4px;
+      padding: 10px 28px; font-size: .95rem; font-weight: 500; cursor: pointer;
+      font-family: inherit; transition: background .2s, box-shadow .2s;
+    }
+    .btn-submit:hover { background: #1557b0; box-shadow: 0 2px 6px rgba(26,115,232,.35); }
+    .btn-submit:disabled { background: #9aa0a6; cursor: not-allowed; box-shadow: none; }
+    .btn-clear { background: transparent; color: #1a73e8; border: none; font-size: .9rem; cursor: pointer; font-family: inherit; }
+    .btn-clear:hover { text-decoration: underline; }
 
-.form-actions { display: flex; gap: 16px; align-items: center; padding: 20px 24px; flex-wrap: wrap; }
-.btn-submit {
-  background: #1a73e8; color: #fff; border: none; border-radius: 4px;
-  padding: 10px 28px; font-size: .95rem; font-weight: 500; cursor: pointer;
-  font-family: inherit; transition: background .2s, box-shadow .2s;
-}
-.btn-submit:hover { background: #1557b0; box-shadow: 0 2px 6px rgba(26,115,232,.35); }
-.btn-submit:disabled { background: #9aa0a6; cursor: not-allowed; box-shadow: none; }
-.btn-clear { background: transparent; color: #1a73e8; border: none; font-size: .9rem; cursor: pointer; font-family: inherit; }
-.btn-clear:hover { text-decoration: underline; }
+    .thank-you { display: none; text-align: center; padding: 48px 24px; }
+    .thank-you svg { width: 56px; height: 56px; margin-bottom: 16px; }
+    .thank-you h2 { font-size: 1.3rem; font-weight: 600; color: #1a73e8; margin-bottom: 8px; }
+    .thank-you p { color: #5f6368; font-size: .92rem; line-height: 1.7; }
 
-.thank-you { display: none; text-align: center; padding: 48px 24px; }
-.thank-you svg { width: 56px; height: 56px; margin-bottom: 16px; }
-.thank-you h2 { font-size: 1.3rem; font-weight: 600; color: #1a73e8; margin-bottom: 8px; }
-.thank-you p { color: #5f6368; font-size: .92rem; line-height: 1.7; }
+    .footer {
+      max-width: 720px; margin: 0 auto; text-align: center;
+      font-size: .75rem; color: #5f6368; padding: 0 12px;
+    }
+    .footer a { color: #5f6368; }
 
-.survey-footer {
-  max-width: 720px; margin: 0 auto; text-align: center;
-  font-size: .75rem; color: #5f6368; padding: 0 12px;
-}
-.survey-footer a { color: #5f6368; }
+    @media (max-width: 540px) {
+      .scale-options { gap: 2px; }
+      .scale-option { min-width: 36px; }
+      .card-body, .section-header, .group-header, .question, .form-actions { padding-left: 16px; padding-right: 16px; }
+    }
 
-@media (max-width: 540px) {
-  .scale-options { gap: 2px; }
-  .scale-option { min-width: 36px; }
-  .card-body, .section-header, .group-header, .question, .form-actions { padding-left: 16px; padding-right: 16px; }
-}
+    /* ── Desktop: rộng hơn, chữ lớn hơn ── */
+    @media (min-width: 768px) {
+      html { font-size: 16.5px; }
+      body { padding: 28px 20px 56px; }
+      .card, .top-nav, .footer { max-width: 800px; }
+      .card-header { padding: 28px 28px 22px; }
+      .card-header h1 { font-size: 1.65rem; }
+      .section-header { padding: 20px 28px 16px; }
+      .section-header h2 { font-size: 1.22rem; }
+      .group-header { padding: 16px 28px 6px; }
+      .group-header h3 { font-size: 1rem; }
+      .card-body { padding: 0 28px 28px; }
+      .question { padding: 18px 28px; }
+      .q-label { font-size: 1rem; }
+      .choice-item label { font-size: .95rem; }
+      .form-actions { padding: 22px 28px; }
+      .gift h2 { font-size: 1.12rem; }
+      .gift ul { font-size: .95rem; }
+    }
 
-@media (min-width: 768px) {
-  .card, .survey-footer { max-width: 800px; }
-  .card-header { padding: 28px 28px 22px; }
-  .card-header h1 { font-size: 1.65rem; }
-  .section-header { padding: 20px 28px 16px; }
-  .section-header h2 { font-size: 1.22rem; }
-  .group-header { padding: 16px 28px 6px; }
-  .group-header h3 { font-size: 1rem; }
-  .card-body { padding: 0 28px 28px; }
-  .question { padding: 18px 28px; }
-  .q-label { font-size: 1rem; }
-  .choice-item label { font-size: .95rem; }
-  .form-actions { padding: 22px 28px; }
-  .gift h2 { font-size: 1.12rem; }
-  .gift ul { font-size: .95rem; }
-}
-</style>
+    /* ── Nút Về Trang chủ ── */
+    .top-nav {
+      max-width: 720px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .btn-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #1a1a2e 0%, #0057b8 100%);
+      color: #fff !important;
+      text-decoration: none !important;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      box-shadow: 0 3px 10px rgba(26,26,46,0.28);
+      transition: all 0.2s ease;
+    }
+    .btn-home:hover {
+      background: linear-gradient(135deg, #0f0f1f 0%, #003d8a 100%);
+      box-shadow: 0 6px 18px rgba(26,26,46,0.38);
+      transform: translateY(-2px);
+      color: #fff !important;
+    }
+    .btn-home svg { flex-shrink: 0; }
+    .top-nav-title {
+      font-size: 0.8rem;
+      color: #80868b;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
 
-<div class="survey-form-body">
+<!-- TOP NAV -->
+<div class="top-nav">
+  <a href="https://www.hydrostructai.com" class="btn-home">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/>
+    </svg>
+    Về Trang chủ
+  </a>
+  <span class="top-nav-title">HST - Tư vấn &amp; Quản lý dự án</span>
+</div>
 
 <!-- HEADER -->
 <div class="card">
@@ -147,7 +198,7 @@ a { color: #1a73e8; }
       <p style="font-size:.9rem;color:#1e4620">Hoàn thành khảo sát khoảng 5 phút, Anh/Chị nhận ngay bộ tài liệu qua email, bao gồm:</p>
       <ul>
         <li>Mẫu hợp đồng xây dựng (dự thảo)</li>
-        <li>Mẫu cấu trúc thư mục quản lý dự án</li>
+		<li>Mẫu cấu trúc thư mục quản lý dự án</li>
         <li>Mẫu báo cáo tiến độ 1 trang (OPPM)</li>
       </ul>
       <p class="note">Bộ tài liệu được gửi tự động vào email của Anh/Chị ngay sau khi hoàn thành.</p>
@@ -336,17 +387,20 @@ a { color: #1a73e8; }
 
 </form>
 
-<div class="survey-footer">
+<div class="footer">
   <p>HST - Tư vấn &amp; Quản lý dự án &nbsp;|&nbsp;
   <a href="https://hydrostructai.com" target="_blank">hydrostructai.com</a> &nbsp;|&nbsp;
   <a href="mailto:ha.nguyen@hydrostructai.com">ha.nguyen@hydrostructai.com</a></p>
 </div>
 
-</div><!-- end .survey-form-body -->
-
 <script>
+// ====================================================================
+// CẤU HÌNH: dán URL Web App của Apps Script sau khi deploy vào đây.
+// Định dạng: https://script.google.com/macros/s/XXXXXXXX/exec
+// ====================================================================
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw8Cu4QLbJYPvS-9huq6zdwIOTIBoqBGCoWvtp20oSRgOO2-16DKRVh5TV2j1Ygz__J4A/exec";
 
+// Dữ liệu câu hỏi thang điểm (Phần II)
 const GROUPS = {
   A: [
     ["A1", "Tổ chức có quy trình QLDA bài bản (WBS, CPM, EVM)"],
@@ -396,6 +450,7 @@ function renderGroup(nhom) {
 }
 ["A", "B", "C", "D"].forEach(renderGroup);
 
+// Giới hạn checkbox khó khăn tối đa 3
 document.querySelectorAll('input[name="khoKhan"]').forEach(function (cb) {
   cb.addEventListener("change", function () {
     const checked = document.querySelectorAll('input[name="khoKhan"]:checked');
@@ -403,6 +458,7 @@ document.querySelectorAll('input[name="khoKhan"]').forEach(function (cb) {
   });
 });
 
+// Thu thập dữ liệu form thành payload
 function collectPayload() {
   const form = document.getElementById("qldaForm");
   const val = function (name) {
@@ -447,11 +503,13 @@ function collectPayload() {
   };
 }
 
+// Kiểm tra các trường bắt buộc
 function validate() {
   const form = document.getElementById("qldaForm");
   const requiredRadios = ["vaiTro", "loaiDuAn", "quyMo", "khuVuc"];
   let firstInvalid = null;
 
+  // Text bắt buộc
   ["hoTen", "email", "dienThoai"].forEach(function (name) {
     const el = form.querySelector('input[name="' + name + '"]');
     el.closest(".question").style.border = "";
@@ -460,12 +518,14 @@ function validate() {
       el.closest(".question").style.border = "2px solid #d93025";
     }
   });
+  // Email hợp lệ
   const emailEl = form.querySelector('input[name="email"]');
   if (emailEl.value.trim() && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(emailEl.value.trim())) {
     if (!firstInvalid) firstInvalid = emailEl.closest(".question");
     emailEl.closest(".question").style.border = "2px solid #d93025";
   }
 
+  // Radio bắt buộc Phần I
   requiredRadios.forEach(function (name) {
     const wrap = form.querySelector('[data-radio="' + name + '"]').closest(".question");
     wrap.style.border = "";
@@ -475,6 +535,7 @@ function validate() {
     }
   });
 
+  // 18 câu thang điểm bắt buộc
   ["A", "B", "C", "D"].forEach(function (nhom) {
     GROUPS[nhom].forEach(function (q) {
       const ma = q[0];
@@ -495,6 +556,7 @@ function validate() {
   return true;
 }
 
+// Submit qua fetch no-cors
 document.getElementById("qldaForm").addEventListener("submit", async function (e) {
   e.preventDefault();
   if (!validate()) {
@@ -509,6 +571,9 @@ document.getElementById("qldaForm").addEventListener("submit", async function (e
   const payload = collectPayload();
 
   try {
+    if (SCRIPT_URL.indexOf("PASTE_") === 0) {
+      throw new Error("Chưa cấu hình SCRIPT_URL");
+    }
     await fetch(SCRIPT_URL, {
       method: "POST",
       mode: "no-cors",
@@ -516,9 +581,11 @@ document.getElementById("qldaForm").addEventListener("submit", async function (e
       body: new URLSearchParams({ payload: JSON.stringify(payload) })
     });
   } catch (err) {
+    // no-cors trả opaque response nên không đọc được; lỗi mạng thật mới vào đây
     console.warn("Submit warning:", err);
   }
 
+  // Hiển thị màn hình cảm ơn (data đã được gửi)
   document.getElementById("qldaForm").querySelectorAll(".card").forEach(function (c) {
     if (c.id !== "thankYouCard") c.style.display = "none";
   });
@@ -532,6 +599,7 @@ function clearForm() {
   document.querySelectorAll(".question").forEach(function (q) { q.style.border = ""; });
 }
 
+// Click vào chữ hoặc vùng lựa chọn đều chọn được
 document.querySelectorAll(".choice-item").forEach(function(item) {
   var input = item.querySelector("input");
   if (!input) return;
@@ -546,3 +614,5 @@ document.querySelectorAll(".choice-item").forEach(function(item) {
   });
 });
 </script>
+</body>
+</html>

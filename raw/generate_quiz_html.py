@@ -122,7 +122,9 @@ q_json = json.dumps(q_data, ensure_ascii=False, separators=(',', ':'))
 
 # ── HTML template ─────────────────────────────────────────────────────────────
 TEMPLATE = r"""---
-layout: post
+layout: single
+author_profile: true
+toc: false
 title: "Trắc nghiệm ôn tập nghiệp vụ chuyên môn về đấu thầu (390 câu)"
 date: 2026-06-22 18:00:00 +0700
 permalink: "/posts/on-tap-nghiep-vu-dau-thau/"
