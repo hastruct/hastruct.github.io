@@ -2,7 +2,7 @@
 title: "Dự án công nghiệp và logistics: cam kết với nhà đầu tư nước ngoài và bài toán thiết bị"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-06-16 18:00:00 +0700
+date: 2026-06-27 18:00:00 +0700
 layout: single
 featured: true
 toc: true
