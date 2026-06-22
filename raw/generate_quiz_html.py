@@ -132,6 +132,10 @@ categories: [on-tap, luat-dau-thau]
 tags: [trac-nghiem, dau-thau, quiz, chung-chi-dau-thau]
 excerpt: "390 câu trắc nghiệm ôn tập nghiệp vụ chuyên môn về đấu thầu theo Luật Đấu thầu 2023, Nghị định 214/2025/NĐ-CP và Thông tư 79/2025/TT-BTC."
 description: "390 câu trắc nghiệm ôn tập nghiệp vụ chuyên môn về đấu thầu theo Luật Đấu thầu 2023, Nghị định 214/2025/NĐ-CP và Thông tư 79/2025/TT-BTC"
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(0, 87, 184, 0.8))"
+  caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
 <style>
