@@ -65,6 +65,12 @@
   z-index: 1 !important;
 }
 
+/* Fix: caption font không hỗ trợ tiếng Việt → chuyển sang sans-serif */
+.page__hero-caption {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif !important;
+  font-style: normal !important;
+}
+
 /* Fix 4: Canvas elements in web apps should not overlap navigation */
 canvas {
   position: relative;
