@@ -128,6 +128,7 @@ date: 2026-06-22 18:00:00 +0700
 permalink: "/posts/on-tap-nghiep-vu-dau-thau/"
 categories: [on-tap, luat-dau-thau]
 tags: [trac-nghiem, dau-thau, quiz, chung-chi-dau-thau]
+excerpt: "390 câu trắc nghiệm ôn tập nghiệp vụ chuyên môn về đấu thầu theo Luật Đấu thầu 2023, Nghị định 214/2025/NĐ-CP và Thông tư 79/2025/TT-BTC."
 description: "390 câu trắc nghiệm ôn tập nghiệp vụ chuyên môn về đấu thầu theo Luật Đấu thầu 2023, Nghị định 214/2025/NĐ-CP và Thông tư 79/2025/TT-BTC"
 ---
 
@@ -271,7 +272,32 @@ description: "390 câu trắc nghiệm ôn tập nghiệp vụ chuyên môn về
   .quiz-question { padding:12px; }
   .quiz-toolbar, .mode-bar { flex-direction:column; align-items:stretch; }
 }
+
+/* ── Nút Về Trang chủ ── */
+.top-nav { max-width:860px; margin:0 auto 16px; display:flex; align-items:center; gap:14px; }
+.btn-home {
+  display:inline-flex; align-items:center; gap:8px;
+  background:linear-gradient(135deg,#1a1a2e 0%,#0057b8 100%);
+  color:#fff !important; text-decoration:none !important;
+  padding:10px 22px; border-radius:8px; font-size:.88rem; font-weight:600;
+  letter-spacing:.3px; box-shadow:0 3px 10px rgba(26,26,46,.28); transition:all .2s ease;
+}
+.btn-home:hover {
+  background:linear-gradient(135deg,#0f0f1f 0%,#003d8a 100%);
+  box-shadow:0 6px 18px rgba(26,26,46,.38); transform:translateY(-2px); color:#fff !important;
+}
+.btn-home svg { flex-shrink:0; }
 </style>
+
+<div class="top-nav">
+  <a href="https://www.hydrostructai.com" class="btn-home">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/>
+    </svg>
+    Về Trang chủ
+  </a>
+  <span style="font-size:.8rem;color:#80868b;font-weight:500;">HST - Tư vấn &amp; Quản lý dự án</span>
+</div>
 
 <div class="quiz-wrapper">
 
@@ -516,10 +542,9 @@ description: "390 câu trắc nghiệm ôn tập nghiệp vụ chuyên môn về
         feed.className = 'feedback-msg ok';
         feed.innerHTML = '✓ Bạn đã trả lời <strong>đúng</strong>!';
       } else {
-        var correctText = q.opts[q.correct] || q.correct;
         feed.className = 'feedback-msg err';
         feed.innerHTML = '✗ Bạn đã trả lời <strong>sai</strong>. ' +
-          'Câu trả lời đúng là: <strong>' + q.correct + '</strong> — ' + correctText;
+          'Câu trả lời đúng là: <strong>' + q.correct + '</strong>';
       }
       feed.style.display = 'block';
     }
