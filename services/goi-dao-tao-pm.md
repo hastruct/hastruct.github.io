@@ -16,7 +16,7 @@
 - **Giá:** [1 con số, ví dụ 5.000.000đ cho buổi lẻ — sửa sau dễ]
 
 ## Lợi thế của anh để nhấn trong nội dung (đừng quên)
-- Tiến sĩ kỹ thuật thủy lực, PMP
+- Tiến sĩ kỹ thuật, PMP
 - Khung pháp lý xây dựng VN mới nhất (Luật XD 135/2025, NĐ 175/2024) — đúng nỗi đau "thủ tục pháp lý"
 - Có sẵn công cụ/biểu mẫu thực chiến
 
