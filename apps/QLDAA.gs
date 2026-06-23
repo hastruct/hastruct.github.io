@@ -185,7 +185,8 @@ function buildQLDAEmailHTML(hoTen, link) {
     'tổng hợp từ kinh nghiệm thực tế các dự án hạ tầng, thủy lợi và xây dựng tại Việt Nam.</p>' +
   '<p style="margin-bottom:6px"><strong>Bộ tài liệu bao gồm:</strong></p>' +
   '<ul style="margin-top:0">' +
-    '<li>Mẫu cấu trúc thư mục quản lý dự án (tham khảo)</li>' +
+    '<li>Mẫu hợp đồng xây dựng (dự thảo)</li>' +
+    '<li>Mẫu cấu trúc thư mục quản lý dự án</li>' +
     '<li>Mẫu báo cáo tiến độ 1 trang (OPPM - One Page Project Manager)</li>' +
   '</ul>' +
   '<p style="text-align:center;margin:24px 0">' +
