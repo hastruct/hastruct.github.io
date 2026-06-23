@@ -370,6 +370,7 @@ header:
   /* ── Apply revealed result to a question div ── */
   function applyResult(div, q, choice, result) {
     var isCorrect = (result === 'correct');
+    var isRevealed = (result === 'revealed');
 
     // Lock all options
     div.querySelectorAll('.quiz-option').forEach(function(o) {
@@ -388,8 +389,8 @@ header:
     div.querySelectorAll('[data-correct="true"]').forEach(function(o) {
       o.classList.add('correct');
     });
-    // Mark chosen option red if wrong
-    if (!isCorrect) {
+    // Mark chosen option red if wrong and user actually selected something
+    if (!isCorrect && !isRevealed && choice) {
       var wrongOpt = div.querySelector('[data-choice="'+choice+'"]');
       if (wrongOpt) wrongOpt.classList.add('incorrect');
     }
@@ -397,13 +398,17 @@ header:
     // Feedback message
     var feed = div.querySelector('.feedback-msg');
     if (feed && q.correct) {
-      if (isCorrect) {
+      var correctOptText = (q.opts && q.opts[q.correct]) ? q.opts[q.correct] : '';
+      if (isRevealed) {
+        feed.className = 'feedback-msg ok';
+        feed.innerHTML = 'Đáp án đúng: <strong>' + q.correct + '</strong>. ' + correctOptText;
+      } else if (isCorrect) {
         feed.className = 'feedback-msg ok';
         feed.innerHTML = '✓ Bạn đã trả lời <strong>đúng</strong>!';
       } else {
         feed.className = 'feedback-msg err';
         feed.innerHTML = '✗ Bạn đã trả lời <strong>sai</strong>. ' +
-          'Câu trả lời đúng là: <strong>' + q.correct + '</strong>';
+          'Đáp án đúng: <strong>' + q.correct + '</strong>. ' + correctOptText;
       }
       feed.style.display = 'block';
     }
@@ -420,13 +425,12 @@ header:
       var div = document.getElementById('q'+q.num);
       if (!div) return;
       var prev = answered[q.num];
-      var choice = prev ? prev.choice : null;
+      var choice = (prev && prev.choice && prev.choice !== '—') ? prev.choice : null;
       var result;
       if (choice) {
         result = (choice === q.correct) ? 'correct' : 'wrong';
       } else {
-        result = 'wrong'; // unanswered = wrong
-        choice = '—';
+        result = 'revealed'; // unanswered → show correct answer, no verdict
       }
       answered[q.num] = { choice: choice, result: result };
 
