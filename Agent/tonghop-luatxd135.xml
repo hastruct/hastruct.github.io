@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  tonghop-luatxd135.xml
+  Ban tong hop he thong Luat Xay dung so 135/2025/QH15 va cac van ban duoi luat.
+  Cau truc bam sat tu duy trong "Claude-internal-structure.md" (5 ky thuat prompt noi bo cua Anthropic):
+    1. Dung the XML co cau truc thay cho van ban thuan.
+    2. Vai tro viet nhu ban mo ta cong viec, khong noi "ban la chuyen gia".
+    3. Tach suy luan ra khoi dau ra bang the rieng.
+    4. Vi du la tai lieu day du: dau vao -> suy luan -> dau ra.
+    5. Noi ro nhung gi KHONG nen lam (rang buoc tieu cuc).
+  Quy uoc trung thuc: moi du kien dec kem thuoc tinh do_tin_cay va nguon. Du kien chua kiem chung
+  duoc danh dau ro rang, khong bia so hieu hay ten van ban.
+  Quy uoc trinh bay: khong dau gach ngang dai, khong dau gach ngang ngan, dung dau nhay thang.
+-->
+<tong_hop_luat_xay_dung_135_2025 phien_ban="1.0" ngay_soan="2026-06-27" ngon_ngu="vi">
+
+  <!-- ============================================================ -->
+  <!-- KY THUAT 2: VAI TRO VIET NHU BAN MO TA CONG VIEC             -->
+  <!-- ============================================================ -->
+  <vai_tro>
+    Giam doc quan ly du an dau tu xay dung (chu the dai dien chu dau tu), trach nhiem xuyen suot
+    tu chuan bi du an den ket thuc xay dung dua cong trinh vao khai thac.
+
+    Chuyen mon cot loi:
+    - Phap luat xay dung Viet Nam va he thong van ban duoi luat (nghi dinh, thong tu, quy chuan QCVN, tieu chuan TCVN).
+    - Trinh tu dau tu xay dung: chuan bi du an, thuc hien du an, ket thuc xay dung.
+    - Quan ly chi phi: tong muc dau tu, du toan, dinh muc, gia xay dung, quyet toan.
+    - Quan ly chat luong, tien do, an toan, hop dong xay dung (FIDIC va hop dong mau Viet Nam).
+    - Quan ly nha nuoc ve xay dung: tham dinh, cap phep, kiem tra cong tac nghiem thu, hau kiem.
+
+    Cong cu va khung lam viec ap dung:
+    - Khung OPPM 5 truc de bao cao trang thai du an (xem skill pmp-report cua vault).
+    - BIM va co so du lieu quoc gia ve hoat dong xay dung (yeu cau moi cua Luat 135/2025).
+    - Bang doi chieu phap ly cu - moi de danh gia tac dong chuyen tiep.
+
+    Thu tu uu tien khi xu ly mot tinh huong xay dung:
+    1. An toan cong trinh va an toan cong dong (tuan thu quy chuan ky thuat bat buoc).
+    2. Tinh phap ly va kha nang giai trinh (moi quyet dinh phai truy ve dieu khoan cu the).
+    3. Hieu qua dau tu (tien do va chi phi).
+    4. Phat trien ben vung (tang truong xanh, ung pho bien doi khi hau, vat lieu than thien moi truong).
+  </vai_tro>
+
+  <!-- ============================================================ -->
+  <!-- NHIEM VU                                                      -->
+  <!-- ============================================================ -->
+  <nhiem_vu>
+    Tong hop he thong Luat Xay dung so 135/2025/QH15 va cac van ban duoi luat (nghi dinh, thong tu)
+    tu hai nguon chinh thong la qlda.gxd.vn va vanban.chinhphu.vn, sau do phan tich nhung dieu chinh
+    so voi he thong cu (Luat Xay dung 50/2014/QH13 va Luat sua doi 62/2020/QH14), de phuc vu cong tac
+    quan ly du an dau tu xay dung.
+  </nhiem_vu>
+
+  <!-- ============================================================ -->
+  <!-- YEU CAU (huong dan tich cuc, xac dinh muc tieu)              -->
+  <!-- ============================================================ -->
+  <yeu_cau>
+    <muc>Moi du kien (so hieu, ngay, dieu khoan) phai kem thuoc tinh nguon va do_tin_cay.</muc>
+    <muc>Khi so sanh cu - moi, phai chi ro dieu chinh nam o cap do nao: bo thu tuc, chuyen tien kiem sang hau kiem, phan cap, hay so hoa.</muc>
+    <muc>Phan suy luan tong hop tach rieng khoi phan du lieu dau ra.</muc>
+    <muc>Du lieu chua kiem chung phai danh dau, khong dien so hieu van ban theo phong doan.</muc>
+    <muc>Uu tien tac dong thuc te len cong tac quan ly du an, khong dien giai phap ly chung chung.</muc>
+  </yeu_cau>
+
+  <!-- ============================================================ -->
+  <!-- NGUON DU LIEU VA GHI CHU MINH BACH                           -->
+  <!-- ============================================================ -->
+  <nguon_du_lieu>
+    <ghi_chu_truy_cap>
+      Hai nguon duoc yeu cau (qlda.gxd.vn va vanban.chinhphu.vn) bi chinh sach mang cua moi truong
+      thuc thi chan o tang egress (HTTP 403 khi truy cap truc tiep, ke ca tep PDF goc tai
+      datafiles.chinhphu.vn). Noi dung duoi day duoc thu thap qua cong cu tim kiem web, doi chieu
+      tu cac trang trong he sinh thai Chinh phu (baochinhphu.vn, xaydungchinhsach.chinhphu.vn,
+      moc.gov.vn, quochoi.vn) cong them cong bao luat. Vi vay co the con sai lech ten goi mot so
+      nghi dinh, thong tu va ten chuong VII, VIII. Cac muc nay duoc danh do_tin_cay="can_kiem_chung".
+      De co ban day du chinh xac tung dieu, can mo truc tiep hai nguon goc khi mang cho phep.
+    </ghi_chu_truy_cap>
+    <nguon ma="N1" do_tin_cay="cao">xaydungchinhsach.chinhphu.vn - Noi dung co ban cua Luat Xay dung 135/2025/QH15</nguon>
+    <nguon ma="N2" do_tin_cay="cao">baochinhphu.vn - Xay dung 7 Nghi dinh, 4 Thong tu trien khai Luat Xay dung 2025</nguon>
+    <nguon ma="N3" do_tin_cay="cao">quochoi.vn - Quoc hoi thong qua Luat Xay dung (sua doi)</nguon>
+    <nguon ma="N4" do_tin_cay="cao">moc.gov.vn - Tai lieu gioi thieu Luat Xay dung so 135/2025/QH15</nguon>
+    <nguon ma="N5" do_tin_cay="trung_binh">luatvietnam.vn, thuvienphapluat.vn - Toan van va tong hop diem moi (doi chieu)</nguon>
+    <nguon ma="N6" do_tin_cay="can_kiem_chung">qlda.gxd.vn - Luat 135/2025 va Nghi dinh 144/2025 (khong truy cap truc tiep duoc, ghi nhan qua chi muc tim kiem)</nguon>
+  </nguon_du_lieu>
+
+  <!-- ============================================================ -->
+  <!-- KY THUAT 3: TACH SUY LUAN KHOI DAU RA                        -->
+  <!-- Phan nay la qua trinh suy nghi, khong phai ket qua cuoi      -->
+  <!-- ============================================================ -->
+  <phan_tich>
+    <buoc so="1" ten="Xac dinh truc thay doi">
+      Doc he thong cu va moi, moi dieu chinh duoc quy ve mot trong nam truc:
+      (a) Cat bo thu tuc hanh chinh; (b) Chuyen tien kiem sang hau kiem; (c) Phan cap phan quyen;
+      (d) So hoa va du lieu; (e) Muc tieu phat trien ben vung. Cach quy nay giup tach dieu chinh
+      hinh thuc khoi dieu chinh ban chat.
+    </buoc>
+    <buoc so="2" ten="Doi chieu nguong dinh luong">
+      Voi moi thay doi co con so (dien tich san, so ngay cap phep, so buoc tham dinh), ghi nhan
+      con so cu va con so moi de do duoc do lon tac dong, khong noi chung chung la "don gian hoa".
+    </buoc>
+    <buoc so="3" ten="Truy nguon goc thay doi">
+      Phan biet dieu chinh do Luat 62/2020 da khoi xuong va dieu chinh that su moi tu Luat 135/2025.
+      Luat 62/2020 da mo dau viec mien giay phep cho cong trinh da tham dinh thiet ke ky thuat va
+      tich hop mot so thu tuc. Luat 135/2025 day xa hon: bo han buoc tham dinh thiet ke trien khai
+      sau thiet ke co so tai co quan chuyen mon, giao chu dau tu tu chiu trach nhiem.
+    </buoc>
+    <buoc so="4" ten="Danh gia tac dong len quan ly du an">
+      Voi moi dieu chinh, hoi: chu dau tu duoc them quyen gi, ganh them trach nhiem giai trinh nao,
+      va rui ro chuyen tu nha nuoc sang chu dau tu o khau nao. Day la phan quan trong nhat voi nguoi
+      quan ly du an, vi hau kiem nghia la sai sot bi phat hien o giai doan sau, chi phi sua cao hon.
+    </buoc>
+    <buoc so="5" ten="Danh dau khoang trong">
+      Ten va so hieu cac nghi dinh, thong tu chua ban hanh day du tinh den 2026-06-27 deu danh dau
+      can_kiem_chung. Khong bia so hieu. Khi van ban duoc ban hanh, cap nhat vao the van_ban_duoi_luat.
+    </buoc>
+  </phan_tich>
+
+  <!-- ============================================================ -->
+  <!-- KY THUAT 3: DAU RA CO DINH DANG                              -->
+  <!-- Day la ket qua tong hop, tach khoi phan suy luan o tren      -->
+  <!-- ============================================================ -->
+  <dinh_dang_dau_ra>
+
+    <!-- ===== 1. NHAN DANG VAN BAN GOC ===== -->
+    <van_ban_goc do_tin_cay="cao" nguon="N1 N3 N5">
+      <so_hieu>135/2025/QH15</so_hieu>
+      <ten>Luat Xay dung (sua doi)</ten>
+      <co_quan_ban_hanh>Quoc hoi khoa XV, ky hop thu 10</co_quan_ban_hanh>
+      <ngay_thong_qua>10/12/2025</ngay_thong_qua>
+      <hieu_luc_chinh>01/7/2026</hieu_luc_chinh>
+      <hieu_luc_som do_tin_cay="trung_binh">
+        Mot so dieu khoan hieu luc tu 01/01/2026: khoan 2 va khoan 3 Dieu 43, Dieu 71,
+        va cac khoan 3, 4, 5 Dieu 95 (can doi chieu lai dung so dieu voi ban ky chinh thuc).
+      </hieu_luc_som>
+      <bo_cuc do_tin_cay="cao">8 chuong, 95 dieu</bo_cuc>
+      <pham_vi_dieu_chinh>
+        Hoat dong xay dung; quyen, nghia vu, trach nhiem cua co quan, to chuc, ca nhan trong hoat dong
+        xay dung; va quan ly nha nuoc ve xay dung.
+      </pham_vi_dieu_chinh>
+      <thay_the>
+        Luat Xay dung 50/2014/QH13 va cac luat sua doi bo sung: 03/2016/QH14, 35/2018/QH14,
+        40/2019/QH14, 62/2020/QH14, 45/2024/QH15, 47/2024/QH15, 55/2024/QH15, 61/2024/QH15,
+        84/2025/QH15, 93/2025/QH15, 95/2025/QH15. Cac van ban nay het hieu luc tu ngay Luat 135/2025
+        co hieu luc thi hanh.
+      </thay_the>
+      <luu_y_so_hieu>
+        Luat Xay dung cu mang so 50/2014/QH13, khong phai 52/2014. Yeu cau ban dau ghi "52 2014"
+        co the la nham. Da hieu chinh trong ban tong hop nay.
+      </luu_y_so_hieu>
+    </van_ban_goc>
+
+    <!-- ===== 2. BO CUC 8 CHUONG ===== -->
+    <bo_cuc_chuong>
+      <chuong so="I" ten="Nhung quy dinh chung" do_tin_cay="cao">
+        Pham vi dieu chinh, doi tuong ap dung, giai thich tu ngu, nguyen tac hoat dong xay dung,
+        quyen nghia vu trach nhiem cac chu the, quan ly nha nuoc.
+      </chuong>
+      <chuong so="II" ten="Quy hoach" do_tin_cay="cao">Quy hoach xay dung.</chuong>
+      <chuong so="III" ten="Du an dau tu xay dung cong trinh" do_tin_cay="cao">
+        Phan loai du an theo quy mo va muc do quan trong; theo cong nang va tinh chat chuyen nganh;
+        theo nguon von va hinh thuc dau tu. Lap, tham dinh, phe duyet du an.
+      </chuong>
+      <chuong so="IV" ten="Khao sat va thiet ke" do_tin_cay="cao">
+        Khao sat xay dung, thiet ke co so, thiet ke trien khai sau thiet ke co so.
+      </chuong>
+      <chuong so="V" ten="Giay phep xay dung" do_tin_cay="cao">
+        Dieu kien, thu tuc cap phep, cac truong hop mien giay phep.
+      </chuong>
+      <chuong so="VI" ten="Thi cong xay dung" do_tin_cay="cao">
+        Quan ly thi cong, quan ly trat tu xay dung, an toan, nghiem thu.
+      </chuong>
+      <chuong so="VII" ten="Du kien: Dieu kien nang luc / Quan ly nha nuoc" do_tin_cay="can_kiem_chung">
+        Ten chuong VII chua kiem chung tu ban goc. Du doan noi dung: dieu kien nang luc hoat dong
+        xay dung va/hoac trach nhiem quan ly nha nuoc.
+      </chuong>
+      <chuong so="VIII" ten="Du kien: Dieu khoan thi hanh" do_tin_cay="can_kiem_chung">
+        Ten chuong VIII chua kiem chung. Du doan: dieu khoan chuyen tiep va hieu luc thi hanh.
+      </chuong>
+    </bo_cuc_chuong>
+
+    <!-- ===== 3. NAM TRUC DIEU CHINH SO VOI LUAT CU ===== -->
+    <dieu_chinh_so_voi_luat_cu>
+
+      <truc ma="a" ten="Cat bo thu tuc hanh chinh" do_tin_cay="cao" nguon="N1 N5">
+        <noi_dung>
+          Nguyen tac moi: moi cong trinh chi thuc hien mot thu tuc hanh chinh tu chuan bi dau tu
+          den khoi cong. Bai bo thu tuc tham dinh thiet ke xay dung trien khai sau thiet ke co so
+          tai co quan chuyen mon ve xay dung. Chu dau tu tu to chuc tham dinh va phe duyet thiet ke
+          sau khi du an da duoc phe duyet.
+        </noi_dung>
+        <dinh_luong>Rut ngan thoi gian chuan bi du an khoang 1 den 3 thang.</dinh_luong>
+        <so_voi_cu>
+          Luat 50/2014 va 62/2020: thiet ke trien khai sau thiet ke co so cua nhieu loai cong trinh
+          van phai qua co quan chuyen mon tham dinh truoc khi phe duyet. Luat 135/2025 bo han buoc nay
+          voi truong hop du an da duoc tham dinh o giai doan kha thi.
+        </so_voi_cu>
+      </truc>
+
+      <truc ma="b" ten="Chuyen tien kiem sang hau kiem" do_tin_cay="cao" nguon="N1 N5">
+        <noi_dung>
+          Kiem soat nha nuoc dich chuyen len giai doan tham dinh bao cao nghien cuu kha thi, khong
+          lap lai o buoc cap phep. Co quan chuyen mon tap trung kiem soat yeu to cot loi: an toan,
+          quy chuan, tieu chuan ky thuat. Tang cuong kiem tra sau (hau kiem).
+        </noi_dung>
+        <so_voi_cu>
+          Luat cu nghieng ve tien kiem: nha nuoc kiem tra nhieu lan o nhieu khau truoc khi cho phep
+          trien khai. Luat 135/2025 doi trong tam sang kiem tra sau khi trien khai.
+        </so_voi_cu>
+        <canh_bao_quan_ly_du_an>
+          Hau kiem chuyen rui ro sang chu dau tu. Sai sot thiet ke bi phat hien o giai doan thi cong
+          hay nghiem thu se ton chi phi sua chua cao hon. Phai siet nang luc tu van va kiem soat noi bo.
+        </canh_bao_quan_ly_du_an>
+      </truc>
+
+      <truc ma="c" ten="Phan cap phan quyen" do_tin_cay="cao" nguon="N1 N5 N6">
+        <noi_dung>
+          Tang phan cap cho dia phuong va giao trach nhiem cho chu dau tu trong tham dinh, phe duyet
+          thiet ke sau khi du an duoc phe duyet. Ghi nhan trong qua trinh tim kiem co Nghi dinh
+          144/2025/ND-CP ve phan cap phan quyen (can kiem chung pham vi ap dung cho linh vuc xay dung).
+        </noi_dung>
+        <so_voi_cu>
+          Luat cu tap trung tham quyen tham dinh o co quan chuyen mon cap bo va cap tinh nhieu hon.
+        </so_voi_cu>
+      </truc>
+
+      <truc ma="d" ten="So hoa va co so du lieu" do_tin_cay="cao" nguon="N1 N2 N5">
+        <noi_dung>
+          Lan dau chuyen doi so trong xay dung duoc luat hoa ro rang. Dat nen tang cho mo hinh thong tin
+          cong trinh (BIM), he thong thong tin va co so du lieu quoc gia ve hoat dong xay dung, ket noi
+          chia se du lieu giua cac co quan quan ly. Cap giay phep xay dung truc tuyen toan trinh, giam
+          ho so va dieu kien, thoi gian cap toi da 7 ngay.
+        </noi_dung>
+        <dinh_luong>Thoi gian cap giay phep xay dung toi da 7 ngay; thuc hien truc tuyen toan trinh.</dinh_luong>
+        <so_voi_cu>
+          Luat 50/2014 quy dinh thoi han cap phep dai hon va chua co nen tang du lieu quoc gia ve hoat
+          dong xay dung hay BIM o cap luat.
+        </so_voi_cu>
+      </truc>
+
+      <truc ma="e" ten="Phat trien ben vung va vat lieu" do_tin_cay="cao" nguon="N1 N4">
+        <noi_dung>
+          Bo sung nguyen tac hoat dong xay dung phai bao dam tang truong xanh, do thi thong minh,
+          ung pho bien doi khi hau va phat trien ben vung. Bo sung yeu cau phat trien, san xuat va
+          su dung vat lieu xay dung an toan, hieu qua, than thien moi truong, su dung hop ly tai nguyen.
+        </noi_dung>
+        <so_voi_cu>Luat cu chua dua cac muc tieu nay thanh nguyen tac bat buoc o cap luat.</so_voi_cu>
+      </truc>
+
+    </dieu_chinh_so_voi_luat_cu>
+
+    <!-- ===== 4. MIEN GIAY PHEP XAY DUNG (chi tiet) ===== -->
+    <mien_giay_phep_xay_dung do_tin_cay="trung_binh" nguon="N1 N5">
+      <truong_hop>Cong trinh thuoc du an da duoc co quan chuyen mon ve xay dung tham dinh thiet ke.</truong_hop>
+      <truong_hop>Cong trinh bi mat nha nuoc.</truong_hop>
+      <truong_hop>Cong trinh xay dung khan cap, cap bach.</truong_hop>
+      <truong_hop>Du an dau tu cong dac biet va du an theo thu tuc dau tu dac biet.</truong_hop>
+      <truong_hop>
+        Nha o rieng le tai nong thon duoi nguong tong dien tich san xay dung 500 m2. Tu 500 m2 tro len
+        bat buoc xin giay phep. Day la nguong dinh luong moi so voi Luat 50/2014.
+      </truong_hop>
+      <ghi_chu>Cac cong trinh khac: thu tuc don gian hoa, truc tuyen toan trinh, cap toi da 7 ngay.</ghi_chu>
+    </mien_giay_phep_xay_dung>
+
+    <!-- ===== 5. PHAN LOAI DU AN ===== -->
+    <phan_loai_du_an do_tin_cay="trung_binh" nguon="N5">
+      <theo_quy_mo>Du an quan trong quoc gia; nhom A; nhom B; nhom C.</theo_quy_mo>
+      <theo_hinh_thuc_dau_tu>Du an dau tu cong; du an PPP; du an dau tu kinh doanh.</theo_hinh_thuc_dau_tu>
+      <theo_cong_nang>Phan loai theo cong nang phuc vu va tinh chat chuyen nganh cong trinh.</theo_cong_nang>
+    </phan_loai_du_an>
+
+    <!-- ===== 6. VAN BAN DUOI LUAT ===== -->
+    <van_ban_duoi_luat do_tin_cay="trung_binh" nguon="N2">
+      <chuong_trinh>
+        Theo Quyet dinh 160/QD-TTg ngay 23/01/2026 cua Thu tuong Chinh phu, trien khai Luat Xay dung 2025
+        bang 7 nghi dinh va 4 thong tu, do Bo Xay dung, Bo Tai chinh, Bo Cong an, Bo Quoc phong soan thao.
+      </chuong_trinh>
+      <nhom_noi_dung_du_kien>
+        <nhom>Nghi dinh quy dinh chi tiet ve quan ly hoat dong xay dung (du kien trinh Chinh phu thang 4/2026).</nhom>
+        <nhom>Nghi dinh ve quan ly chi phi dau tu xay dung.</nhom>
+        <nhom>Nghi dinh ve hop dong xay dung.</nhom>
+        <nhom>Nghi dinh ve dieu kien nang luc hoat dong xay dung.</nhom>
+        <nhom>Nghi dinh ve he thong thong tin va co so du lieu quoc gia ve hoat dong xay dung.</nhom>
+        <nhom>Cac thong tu huong dan cua Bo Xay dung va cac bo lien quan (4 thong tu).</nhom>
+      </nhom_noi_dung_du_kien>
+      <canh_bao>
+        Ten va so hieu cu the cua tung nghi dinh, thong tu chua duoc ban hanh day du tinh den 2026-06-27.
+        Khong dien so hieu theo phong doan. Cap nhat khi van ban chinh thuc ban hanh.
+      </canh_bao>
+    </van_ban_duoi_luat>
+
+  </dinh_dang_dau_ra>
+
+  <!-- ============================================================ -->
+  <!-- KY THUAT 4: VI DU LA TAI LIEU DAY DU                         -->
+  <!-- Dau vao -> Suy luan -> Dau ra, de nguoi dung hoc CACH suy nghi -->
+  <!-- ============================================================ -->
+  <vi_du_co_suy_luan>
+
+    <vi_du so="1" tinh_huong="Cong trinh nha xuong thuoc du an da tham dinh, sap khoi cong">
+      <dau_vao>
+        Du an nha xuong nhom B, da duoc co quan chuyen mon ve xay dung tham dinh bao cao nghien cuu
+        kha thi. Chu dau tu hoi: co phai xin giay phep xay dung truoc khi khoi cong khong?
+      </dau_vao>
+      <suy_luan>
+        Buoc 1: Quy ve truc dieu chinh. Day la truc (a) cat bo thu tuc va truc (b) hau kiem.
+        Buoc 2: Tra the mien_giay_phep_xay_dung. Cong trinh thuoc du an da duoc co quan chuyen mon
+        tham dinh thiet ke thuoc dien mien giay phep theo Luat 135/2025.
+        Buoc 3: Doi chieu cu - moi. Theo Luat 50/2014, nhieu cong trinh dang nay van phai xin phep.
+        Theo Luat 135/2025, khong phai xin phep nua, nhung trach nhiem giai trinh an toan va quy chuan
+        chuyen sang chu dau tu o khau hau kiem.
+        Buoc 4: Tac dong quan ly du an. Tiet kiem thoi gian cap phep nhung phai luu day du ho so tham
+        dinh, thiet ke duoc phe duyet, va ho so nang luc tu van de san sang giai trinh khi bi kiem tra sau.
+      </suy_luan>
+      <dau_ra>
+        Khong phai xin giay phep xay dung. Du dieu kien khoi cong khi: thiet ke trien khai da duoc chu
+        dau tu phe duyet, co ho so tham dinh kha thi, dap ung dieu kien khoi cong theo luat. Chuan bi
+        san bo ho so phap ly va an toan de phuc vu hau kiem.
+      </dau_ra>
+    </vi_du>
+
+    <vi_du so="2" tinh_huong="Nha o rieng le nong thon 520 m2 san">
+      <dau_vao>
+        Chu nha xay nha o rieng le tai xa, tong dien tich san 520 m2. Co can giay phep xay dung khong?
+      </dau_vao>
+      <suy_luan>
+        Buoc 1: Day la truc (a) nhung co nguong dinh luong, nen phai do con so.
+        Buoc 2: Nguong moi la 500 m2. 520 m2 vuot nguong.
+        Buoc 3: So voi Luat 50/2014, nha o nong thon truoc day nhieu truong hop duoc mien phu thuoc
+        khu vuc quy hoach. Luat 135/2025 dat nguong dien tich san ro rang.
+      </suy_luan>
+      <dau_ra>
+        Phai xin giay phep xay dung vi tong dien tich san 520 m2 vuot nguong 500 m2. Thuc hien truc
+        tuyen, thoi gian cap toi da 7 ngay.
+      </dau_ra>
+    </vi_du>
+
+  </vi_du_co_suy_luan>
+
+  <!-- ============================================================ -->
+  <!-- KY THUAT 5: RANG BUOC TIEU CUC (noi ro KHONG nen lam gi)     -->
+  <!-- ============================================================ -->
+  <rang_buoc_tieu_cuc>
+    <khong>KHONG dien so hieu nghi dinh, thong tu khi chua kiem chung tu nguon goc.</khong>
+    <khong>KHONG noi "don gian hoa thu tuc" chung chung khi co the dan con so cu the (so ngay, so buoc, dien tich).</khong>
+    <khong>KHONG ket luan mot cong trinh duoc mien giay phep ma khong tra ve dieu khoan va dieu kien khoi cong di kem.</khong>
+    <khong>KHONG coi hau kiem la nhe hon tien kiem; phai canh bao rui ro chuyen sang chu dau tu.</khong>
+    <khong>KHONG dung dau gach ngang dai, dau gach ngang ngan, emoji, hay dau nhay cong.</khong>
+    <khong>KHONG dan nguon thu cap nhu tin tuc bao chi neu co the truy ve cong bao goc; khi dung nguon thu cap phai ghi do_tin_cay.</khong>
+    <khong>KHONG ket thuc bang cau moi chung chung kieu "hay cho toi biet neu can them".</khong>
+  </rang_buoc_tieu_cuc>
+
+  <!-- ============================================================ -->
+  <!-- CAC DIEM CAN TRAO DOI (theo yeu cau cuoi cua nguoi dung)     -->
+  <!-- ============================================================ -->
+  <can_trao_doi>
+    <diem so="1" loai="hieu_chinh_du_lieu">
+      So hieu Luat Xay dung cu la 50/2014/QH13, khong phai 52/2014. Da hieu chinh trong ban tong hop.
+    </diem>
+    <diem so="2" loai="gioi_han_nguon">
+      Hai nguon goc qlda.gxd.vn va vanban.chinhphu.vn bi chinh sach mang chan (403). Ban nay dung noi dung
+      tu he sinh thai Chinh phu qua tim kiem. De co ban day du chinh xac tung dieu va dung so hieu van ban
+      duoi luat, nen mo truc tiep hai nguon goc khi mang cho phep, hoac cung cap ban PDF luat de soat lai.
+    </diem>
+    <diem so="3" loai="khoang_trong_can_bo_sung">
+      Ten chuong VII va VIII, danh sach chinh xac 7 nghi dinh va 4 thong tu (so hieu, ngay ban hanh),
+      va pham vi Nghi dinh 144/2025/ND-CP doi voi linh vuc xay dung deu can kiem chung va bo sung.
+    </diem>
+    <diem so="4" loai="nang_cap_de_xuat">
+      Co the nang cap ban nay thanh: (a) bang doi chieu chi tiet tung dieu cu - moi; (b) so do quy trinh
+      mot thu tuc tu chuan bi dau tu den khoi cong; (c) checklist hau kiem cho chu dau tu. Can xac nhan
+      huong nao truoc khi mo rong.
+    </diem>
+    <diem so="5" loai="dinh_dang">
+      File luu duoi dang .xml trong Agent/ cua hastruct.github.io. Neu muon hien thi nhu trang web Jekyll,
+      can them front matter hoac chuyen sang layout phu hop; hien tai file la du lieu thuan, khong render
+      thanh trang. Can xac nhan co muon publish thanh trang khong.
+    </diem>
+  </can_trao_doi>
+
+</tong_hop_luat_xay_dung_135_2025>
