@@ -1,5 +1,5 @@
 ---
-title: "Nhận diện \"bẫy\" kỹ thuật trong E-HSMT 2026: Rủi ro pháp lý cho bên mời thầu và cách ứng xử đúng luật cho nhà thầu"
+title: "Nhận diện cài cắm trong E-HSMT 2026 và giải pháp cho nhà thầu"
 author_profile: true
 author_name: "HST.AI"
 date: 2026-07-01 18:00:00 +0700
