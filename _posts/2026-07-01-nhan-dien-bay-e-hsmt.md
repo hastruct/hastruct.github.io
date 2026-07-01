@@ -45,7 +45,8 @@ Nhưng động cơ giành giật gói thầu không biến mất, nó chỉ chuy
 
 Bài viết này tổng hợp và phân tích lại nội dung một bài viết chuyên đề rất đáng chú ý của DauThau.info về chủ đề này[^1], đặt trong góc nhìn của người quản lý dự án: không chỉ mô tả các chiêu thức, mà còn làm rõ vì sao đây là rủi ro pháp lý thực sự cho bên mời thầu, và Ban quản lý dự án cần kiểm soát khâu thẩm định E-HSMT như thế nào trước khi phát hành, song song với việc nhà thầu cần biết những công cụ nào để bảo vệ quyền lợi hợp pháp của mình.
 
-![Nhận diện bẫy và phản đòn trong E-HSMT 2026 (Hình minh họa do AI tạo)](/assets/images/posts/nhan-dien-bay-e-hsmt/tomtat.jpg)
+![Nhận diện bẫy và phản đòn trong E-HSMT 2026 (Hình minh họa do AI tạo)](/assets/images/posts/nhan-dien-bay-e-hsmt/tomtat.jpg)  
+
 *Sơ đồ tóm tắt: nhận diện "bẫy" kỹ thuật và bộ công cụ phản đòn trong E-HSMT 2026 (Hình minh họa do AI tạo)*
 
 ---

@@ -2,7 +2,7 @@
 title: "Khi nào nên thuê tư vấn quản lý dự án xây dựng"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-07-03 18:00:00 +0700
+date: 2026-08-03 18:00:00 +0700
 layout: single
 featured: true
 toc: true
