@@ -30,7 +30,7 @@ tags:
     Quản trị rủi ro đấu thầu,
     Chứng chỉ nghiệp vụ đấu thầu
   ]
-excerpt: "Đấu thầu qua mạng bắt buộc 100% đã xóa gần hết các thủ thuật \"quây thầu\" ngoài thực địa. Nhưng động cơ giành gói thầu không mất đi, nó chuyển vào chính văn bản E-HSMT dưới dạng những rào cản kỹ thuật được cài cắm rất tinh vi. Bài viết phân tích hiện tượng này từ góc nhìn quản lý dự án: vì sao nó là rủi ro pháp lý cho bên mời thầu, và nhà thầu chân chính có thể ứng xử ra sao trong khuôn khổ pháp luật."
+excerpt: "Đấu thầu qua mạng bắt buộc 100% xóa gần hết các thủ thuật \"quây thầu\" ngoài thực tế. Nhưng động cơ giành gói thầu không mất đi, nó chuyển vào chính văn bản E-HSMT dưới dạng những rào cản kỹ thuật được cài cắm rất tinh vi. Bài viết phân tích hiện tượng này từ góc nhìn quản lý dự án: vì sao nó là rủi ro pháp lý cho bên mời thầu, và nhà thầu chân chính có thể ứng xử ra sao trong khuôn khổ pháp luật."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
@@ -160,7 +160,7 @@ Nếu bạn cần trao đổi thêm về nội dung bài viết, đối chiếu 
 
 ---
 
-*© 2026 HydrostructAI - Tư vấn Quản lý Dự án Đầu tư Xây dựng & Mô hình hóa BIM*
+*© 2026 HydrostructAI - Tư vấn & Quản lý Dự án*
 
 ---
 
@@ -189,11 +189,11 @@ Nếu bạn cần trao đổi thêm về nội dung bài viết, đối chiếu 
 
 ### Tài liệu tham khảo ôn tập nghiệp vụ
 
-- **HydrostructAI (2026).** [Trắc nghiệm ôn tập nghiệp vụ chuyên môn về đấu thầu (390 câu)](/posts/on-tap-nghiep-vu-dau-thau/) - Bộ câu hỏi hệ thống hóa quy định về hành vi bị cấm, tiêu chuẩn đánh giá E-HSMT và xử lý tình huống theo Luật Đấu thầu 2023, Nghị định 214/2025/NĐ-CP và Thông tư 79/2025/TT-BTC.
+- [Trắc nghiệm ôn tập nghiệp vụ chuyên môn về đấu thầu (390 câu)](/posts/on-tap-nghiep-vu-dau-thau/) - Bộ câu hỏi hệ thống hóa quy định về hành vi bị cấm, tiêu chuẩn đánh giá E-HSMT và xử lý tình huống theo Luật Đấu thầu 2023, Nghị định 214/2025/NĐ-CP và Thông tư 79/2025/TT-BTC.
 
 ### Bài viết liên quan trên chuyên trang
 
-- **HydrostructAI (2026).** [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/).
-- **HydrostructAI (2026).** [Quản lý dự án trên một trang giấy áp dụng cho xây dựng](/posts/quan-ly-du-an-mot-trang-giay/).
+- [Quản lý nhà thầu phụ hiệu quả trong dự án xây dựng](/posts/quan-ly-nha-thau-phu/).
+- [Quản lý dự án trên một trang giấy áp dụng cho xây dựng](/posts/quan-ly-du-an-mot-trang-giay/).
 
 ---
