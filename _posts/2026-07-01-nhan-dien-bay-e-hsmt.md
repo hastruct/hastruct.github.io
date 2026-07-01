@@ -39,9 +39,9 @@ header:
 
 ## Đặt vấn đề
 
-Trong công tác quản lý dự án đầu tư xây dựng, khâu lựa chọn nhà thầu là điểm giao nhau giữa hai áp lực trái chiều: bên mời thầu cần chọn được nhà thầu đủ năng lực để không phải xử lý phát sinh, chậm tiến độ hay chất lượng kém sau này; còn nhà thầu cần một sân chơi đủ minh bạch để cạnh tranh bằng năng lực thực chất. Từ khi Luật Đấu thầu số 22/2023/QH15 đi vào cuộc sống và lộ trình đấu thầu qua mạng bắt buộc đạt tỷ lệ 100%, phần lớn các hành vi "vật lý" từng làm méo mó sân chơi này — nộp hồ sơ sát giờ G, giữ hồ sơ, hay dùng sức ép để ngăn nhà thầu lạ nộp thầu trực tiếp — gần như đã bị loại bỏ, vì mọi thao tác đấu thầu hiện nay đều diễn ra ẩn danh trên Hệ thống mạng đấu thầu quốc gia (e-GP).
+Trong công tác quản lý dự án đầu tư xây dựng, khâu lựa chọn nhà thầu là điểm giao nhau giữa hai áp lực trái chiều: bên mời thầu cần chọn được nhà thầu đủ năng lực để không phải xử lý phát sinh, chậm tiến độ hay chất lượng kém sau này; còn nhà thầu cần một sân chơi đủ minh bạch để cạnh tranh bằng năng lực thực chất. Từ khi Luật Đấu thầu số 22/2023/QH15 đi vào cuộc sống và lộ trình đấu thầu qua mạng bắt buộc đạt tỷ lệ 100%, phần lớn các hành vi "vật lý" từng làm méo mó sân chơi này (nộp hồ sơ sát giờ G, giữ hồ sơ, hay dùng sức ép để ngăn nhà thầu lạ nộp thầu trực tiếp) gần như đã bị loại bỏ, vì mọi thao tác đấu thầu hiện nay đều diễn ra ẩn danh trên Hệ thống mạng đấu thầu quốc gia (e-GP).
 
-Nhưng động cơ giành giật gói thầu không biến mất, nó chỉ chuyển từ không gian thực địa lên không gian số. Thay vì các biện pháp thô sơ, một số chủ đầu tư hoặc đơn vị tư vấn lập hồ sơ đã "công nghệ hóa" rào cản bằng cách cài cắm những yêu cầu kỹ thuật cực kỳ tinh vi ngay trong Hồ sơ mời thầu điện tử (E-HSMT). Về hình thức, các yêu cầu này hoàn toàn hợp pháp trên câu chữ. Nhưng xét về bản chất, chúng có thể cấu thành hành vi hạn chế nhà thầu — một hành vi bị cấm theo Luật Đấu thầu.
+Nhưng động cơ giành giật gói thầu không biến mất, nó chỉ chuyển từ không gian thực địa lên không gian số. Thay vì các biện pháp thô sơ, một số chủ đầu tư hoặc đơn vị tư vấn lập hồ sơ đã "công nghệ hóa" rào cản bằng cách cài cắm những yêu cầu kỹ thuật cực kỳ tinh vi ngay trong Hồ sơ mời thầu điện tử (E-HSMT). Về hình thức, các yêu cầu này hoàn toàn hợp pháp trên câu chữ. Nhưng xét về bản chất, chúng có thể cấu thành hành vi hạn chế nhà thầu, một hành vi bị cấm theo Luật Đấu thầu.
 
 Bài viết này tổng hợp và phân tích lại nội dung một bài viết chuyên đề rất đáng chú ý của DauThau.info về chủ đề này[^1], đặt trong góc nhìn của người quản lý dự án: không chỉ mô tả các chiêu thức, mà còn làm rõ vì sao đây là rủi ro pháp lý thực sự cho bên mời thầu, và Ban quản lý dự án cần kiểm soát khâu thẩm định E-HSMT như thế nào trước khi phát hành, song song với việc nhà thầu cần biết những công cụ nào để bảo vệ quyền lợi hợp pháp của mình.
 
@@ -54,11 +54,11 @@ Bài viết này tổng hợp và phân tích lại nội dung một bài viết
 
 ### 1.1. Đấu thầu qua mạng 100% đã xóa gần hết hành vi vật lý
 
-Trước khi lộ trình đấu thầu qua mạng toàn diện được áp dụng, nhiều gói thầu bị chi phối bởi các thủ thuật mang tính "vật lý": gây khó khăn khi nộp hồ sơ sát giờ đóng thầu, giữ hoặc làm thất lạc hồ sơ, dùng sức ép để ngăn cản nhà thầu lạ tiếp cận gói thầu. Khi toàn bộ quy trình — từ phát hành hồ sơ, nộp hồ sơ dự thầu, mở thầu đến làm rõ hồ sơ — được thực hiện ẩn danh trên e-GP, các hành vi này gần như không còn đất sống, vì mọi động tác đều để lại dấu vết dữ liệu có thể truy vết.
+Trước khi lộ trình đấu thầu qua mạng toàn diện được áp dụng, nhiều gói thầu bị chi phối bởi các thủ thuật mang tính "vật lý": gây khó khăn khi nộp hồ sơ sát giờ đóng thầu, giữ hoặc làm thất lạc hồ sơ, dùng sức ép để ngăn cản nhà thầu lạ tiếp cận gói thầu. Khi toàn bộ quy trình (từ phát hành hồ sơ, nộp hồ sơ dự thầu, mở thầu đến làm rõ hồ sơ) được thực hiện ẩn danh trên e-GP, các hành vi này gần như không còn đất sống, vì mọi động tác đều để lại dấu vết dữ liệu có thể truy vết.
 
 ### 1.2. Rào cản kỹ thuật tinh vi thay thế rào cản thô sơ
 
-Đây chính là điểm mấu chốt mà bài viết gốc gọi là "Luật nâng cấp thì chiêu trò cũng nâng cấp". Cuộc cạnh tranh không lành mạnh trong việc giành gói thầu không mất đi, nó chỉ chuyển từ hành vi cản trở bên ngoài hồ sơ sang hành vi cài cắm ngay bên trong nội dung của E-HSMT — nơi mọi yêu cầu kỹ thuật, tiêu chuẩn nhân sự và mốc tiến độ đều do bên mời thầu chủ động soạn thảo. Thay vì hành xử thô bạo, rào cản được lồng ghép dưới dạng các điều kiện tưởng như hợp pháp về hình thức, nhưng bất hợp lý về thực tế, khiến các nhà thầu năng lực thật nhưng "lạ mặt" bị loại ngay từ vòng đánh giá kỹ thuật mà không hiểu rõ lý do.
+Đây chính là điểm mấu chốt mà bài viết gốc gọi là "Luật nâng cấp thì chiêu trò cũng nâng cấp". Cuộc cạnh tranh không lành mạnh trong việc giành gói thầu không mất đi, nó chỉ chuyển từ hành vi cản trở bên ngoài hồ sơ sang hành vi cài cắm ngay bên trong nội dung của E-HSMT, nơi mọi yêu cầu kỹ thuật, tiêu chuẩn nhân sự và mốc tiến độ đều do bên mời thầu chủ động soạn thảo. Thay vì hành xử thô bạo, rào cản được lồng ghép dưới dạng các điều kiện tưởng như hợp pháp về hình thức, nhưng bất hợp lý về thực tế, khiến các nhà thầu năng lực thật nhưng "lạ mặt" bị loại ngay từ vòng đánh giá kỹ thuật mà không hiểu rõ lý do.
 
 Đối với các doanh nghiệp làm ăn chân chính, việc nhận diện và ứng xử đúng với các E-HSMT có dấu hiệu cài cắm này đang là bài toán thực tế trong năm 2026, khi khối lượng gói thầu qua mạng ngày càng lớn và tốc độ ra quyết định tham gia hay không tham gia một gói thầu cần rất nhanh.
 
@@ -72,7 +72,7 @@ Theo phân tích của DauThau.info, khi mọi bước đi đều bị giám sá
 
 Luật Đấu thầu nghiêm cấm việc chỉ định nhãn hiệu, xuất xứ cụ thể trong E-HSMT nhằm bảo đảm tính cạnh tranh, trừ một số trường hợp được quy định riêng đối với hàng hóa trong nước theo lộ trình 2026[^2]. Để lách quy định này, một số đơn vị lập hồ sơ áp dụng chiêu thức "bê nguyên catalogue" của một hãng cụ thể.
 
-Cách vận hành phổ biến: đối với các gói thầu mua sắm thiết bị, hệ thống cơ điện hay vật tư chuyên ngành, bên mời thầu đưa chính xác bảng thông số kỹ thuật chi tiết đến từng milimet, từng vòng quay, hoặc các tính năng phần mềm độc quyền của một hãng "ruột" vào yêu cầu kỹ thuật của E-HSMT. Hậu quả thực tế là dù thị trường có hàng chục hãng sản xuất khác với công năng tương đương, thậm chí giá tốt hơn, chỉ cần lệch một thông số phụ — ví dụ dung tích lệch một đến hai lít, hoặc trọng lượng lệch vài trăm gam — nhà thầu "lạ" lập tức bị đánh trượt ở bước đánh giá kỹ thuật với lý do "không đáp ứng yêu cầu cơ bản".
+Cách vận hành phổ biến: đối với các gói thầu mua sắm thiết bị, hệ thống cơ điện hay vật tư chuyên ngành, bên mời thầu đưa chính xác bảng thông số kỹ thuật chi tiết đến từng milimet, từng vòng quay, hoặc các tính năng phần mềm độc quyền của một hãng "ruột" vào yêu cầu kỹ thuật của E-HSMT. Hậu quả thực tế là dù thị trường có hàng chục hãng sản xuất khác với công năng tương đương, thậm chí giá tốt hơn, chỉ cần lệch một thông số phụ (ví dụ dung tích lệch một đến hai lít, hoặc trọng lượng lệch vài trăm gam) là nhà thầu "lạ" lập tức bị đánh trượt ở bước đánh giá kỹ thuật với lý do "không đáp ứng yêu cầu cơ bản".
 
 ### 2.2. "Chứng chỉ con" và tiêu chuẩn nhân sự phi lý
 
@@ -81,7 +81,7 @@ Cách vận hành phổ biến: đối với các gói thầu mua sắm thiết 
 - **Chứng chỉ độc lạ:** đưa vào điều kiện tiên quyết yêu cầu nhà thầu phải có chứng chỉ hành nghề, chứng nhận chất lượng hoặc giấy phép phụ rất hiếm tại Việt Nam, thậm chí là loại chứng chỉ vừa "kịp" được cấp riêng cho một vài doanh nghiệp trong cùng nhóm liên danh.
 - **Gài bẫy nhân sự chủ chốt:** đẩy tiêu chuẩn của chỉ huy trưởng hoặc cán bộ kỹ thuật chủ chốt lên mức phi lý so với quy mô công trình. Ví dụ điển hình là một gói thầu chỉ thuộc công trình cấp III nhưng E-HSMT lại yêu cầu chỉ huy trưởng phải có chứng chỉ hành nghề hạng I, từng điều hành hai đến ba hợp đồng tương tự cấp I, kèm điều kiện đóng bảo hiểm xã hội liên tục tại chính doanh nghiệp dự thầu từ hai đến ba năm trở lên. Tiêu chí này thực chất là một "chiếc chìa khóa" đánh sẵn khớp với đúng nhân sự của một nhà thầu "gà nhà".
 
-Đáng chú ý, với các quy định ngày càng chặt chẽ trong mẫu E-HSMT mới cùng phản ứng mạnh từ phía nhà thầu, dạng cài cắm này gần đây đã ít được các chủ đầu tư ưu tiên sử dụng hơn — một tín hiệu cho thấy các công cụ giám sát và phản đòn đang phát huy hiệu quả.
+Đáng chú ý, với các quy định ngày càng chặt chẽ trong mẫu E-HSMT mới cùng phản ứng mạnh từ phía nhà thầu, dạng cài cắm này gần đây đã ít được các chủ đầu tư ưu tiên sử dụng hơn, một tín hiệu cho thấy các công cụ giám sát và phản đòn đang phát huy hiệu quả.
 
 ### 2.3. "Bẫy tiến độ" kết hợp thời gian làm rõ chớp nhoáng
 
@@ -98,9 +98,9 @@ Chiêu thức này đánh thẳng vào tâm lý sợ rủi ro tài chính và á
 
 Hệ quả pháp lý và vận hành khi hành vi này bị phát hiện thường không dừng ở mức "gói thầu kém cạnh tranh". Trên thực tế, chủ đầu tư và bên mời thầu có thể đối mặt với:
 
-- **Kiến nghị và khiếu nại kéo dài thời gian lựa chọn nhà thầu**, buộc phải sửa đổi E-HSMT, gia hạn thời gian nộp thầu hoặc hủy thầu, ảnh hưởng trực tiếp đến tiến độ giải ngân của dự án — vấn đề đặc biệt nhạy cảm với các dự án sử dụng vốn đầu tư công.
+- **Kiến nghị và khiếu nại kéo dài thời gian lựa chọn nhà thầu**, buộc phải sửa đổi E-HSMT, gia hạn thời gian nộp thầu hoặc hủy thầu, ảnh hưởng trực tiếp đến tiến độ giải ngân của dự án, vấn đề đặc biệt nhạy cảm với các dự án sử dụng vốn đầu tư công.
 - **Rủi ro thanh tra, kiểm tra hậu kiểm** đối với cá nhân lập, thẩm định và phê duyệt E-HSMT, khi dữ liệu về tỷ lệ tiết kiệm, tần suất trúng thầu của cùng một nhà thầu tại cùng một chủ đầu tư đều được lưu vết công khai và có thể truy xuất trên e-GP.
-- **Chi phí cơ hội** khi loại bỏ nhà thầu có năng lực và giá cạnh tranh thực sự, dẫn đến lựa chọn nhà thầu không tối ưu, tiềm ẩn rủi ro chất lượng và tiến độ trong giai đoạn thực hiện hợp đồng — hệ quả mà Ban quản lý dự án là bên phải xử lý trực tiếp về sau.
+- **Chi phí cơ hội** khi loại bỏ nhà thầu có năng lực và giá cạnh tranh thực sự, dẫn đến lựa chọn nhà thầu không tối ưu, tiềm ẩn rủi ro chất lượng và tiến độ trong giai đoạn thực hiện hợp đồng, hệ quả mà Ban quản lý dự án là bên phải xử lý trực tiếp về sau.
 
 Nói cách khác, một E-HSMT bị cài cắm không chỉ gây thiệt hại cho nhà thầu bị loại oan, mà còn đặt chính chủ đầu tư và Ban quản lý dự án vào thế rủi ro pháp lý và rủi ro vận hành dự án trong toàn bộ vòng đời sau đó.
 
@@ -108,7 +108,7 @@ Nói cách khác, một E-HSMT bị cài cắm không chỉ gây thiệt hại c
 
 ## 4. Bộ công cụ ứng xử cho nhà thầu khi gặp E-HSMT có dấu hiệu cài cắm
 
-Với các nhà thầu chân chính, thời kỳ "ngậm bồ hòn làm ngọt" — thấy hồ sơ khó là tự động rút lui — không còn phù hợp trong môi trường đấu thầu số hóa toàn diện của năm 2026. Ba công cụ dưới đây, được tổng hợp từ thực tiễn thị trường, giúp nhà thầu ứng xử chủ động và đúng luật khi gặp E-HSMT có dấu hiệu bất thường[^1].
+Với các nhà thầu chân chính, thời kỳ "ngậm bồ hòn làm ngọt" (thấy hồ sơ khó là tự động rút lui) không còn phù hợp trong môi trường đấu thầu số hóa toàn diện của năm 2026. Ba công cụ dưới đây, được tổng hợp từ thực tiễn thị trường, giúp nhà thầu ứng xử chủ động và đúng luật khi gặp E-HSMT có dấu hiệu bất thường[^1].
 
 ### 4.1. Rà soát dữ liệu lịch sử đấu thầu của bên mời thầu trước khi làm hồ sơ
 
@@ -122,7 +122,7 @@ Khi soạn văn bản kiến nghị, nhà thầu nên tránh trình bày theo h�
 
 ### 4.3. Chiến lược liên danh để bù đắp khoảng trống năng lực
 
-Trong trường hợp rào cản nằm ở yêu cầu năng lực tài chính hoặc tiêu chuẩn nhân sự bị đẩy lên quá cao nhằm loại các nhà thầu vừa và nhỏ, phương án khôn ngoan không phải là cố gắng hợp thức hóa hồ sơ bằng tài liệu không đúng thực tế — hướng đi này tiềm ẩn rủi ro rất lớn, có thể dẫn đến bị cấm tham gia hoạt động đấu thầu. Giải pháp phù hợp hơn là chủ động liên danh với một hoặc hai nhà thầu đối tác có năng lực bổ khuyết cho mình. Quy định pháp luật hiện hành cho phép cộng dồn năng lực tài chính và kinh nghiệm của các thành viên liên danh, giúp doanh nghiệp không chỉ vượt qua rào cản về hợp đồng tương tự hay chứng chỉ nhân sự hạng cao, mà còn tăng cường năng lực tổng thể để cạnh tranh sòng phẳng.
+Trong trường hợp rào cản nằm ở yêu cầu năng lực tài chính hoặc tiêu chuẩn nhân sự bị đẩy lên quá cao nhằm loại các nhà thầu vừa và nhỏ, phương án khôn ngoan không phải là cố gắng hợp thức hóa hồ sơ bằng tài liệu không đúng thực tế, vì hướng đi này tiềm ẩn rủi ro rất lớn, có thể dẫn đến bị cấm tham gia hoạt động đấu thầu. Giải pháp phù hợp hơn là chủ động liên danh với một hoặc hai nhà thầu đối tác có năng lực bổ khuyết cho mình. Quy định pháp luật hiện hành cho phép cộng dồn năng lực tài chính và kinh nghiệm của các thành viên liên danh, giúp doanh nghiệp không chỉ vượt qua rào cản về hợp đồng tương tự hay chứng chỉ nhân sự hạng cao, mà còn tăng cường năng lực tổng thể để cạnh tranh sòng phẳng.
 
 ---
 
