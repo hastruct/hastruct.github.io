@@ -30,7 +30,7 @@ tags:
     Quản trị rủi ro đấu thầu,
     Chứng chỉ nghiệp vụ đấu thầu
   ]
-excerpt: "Đấu thầu qua mạng bắt buộc 100% xóa gần hết các thủ thuật \"quây thầu\" ngoài thực tế. Nhưng động cơ giành gói thầu không mất đi, nó chuyển vào chính văn bản E-HSMT dưới dạng những rào cản kỹ thuật được cài cắm rất tinh vi. Bài viết phân tích hiện tượng này từ góc nhìn quản lý dự án: vì sao nó là rủi ro pháp lý cho bên mời thầu, và nhà thầu chân chính có thể ứng xử ra sao trong khuôn khổ pháp luật."
+excerpt: "Trong công tác quản lý dự án đầu tư xây dựng, khâu lựa chọn nhà thầu là điểm giao nhau giữa hai áp lực trái chiều: bên mời thầu cần chọn được nhà thầu đủ năng lực để không phải xử lý phát sinh, chậm tiến độ hay chất lượng kém sau này; còn nhà thầu cần một sân chơi đủ minh bạch để cạnh tranh bằng năng lực thực chất. Bài viết phân tích hiện tượng này từ góc nhìn quản lý dự án: vì sao nó là rủi ro pháp lý cho bên mời thầu, và nhà thầu chân chính có thể ứng xử ra sao trong khuôn khổ pháp luật."
 header:
   overlay_color: "#f1f5f9"
   overlay_filter: "linear-gradient(135deg, rgba(27, 38, 59, 0.95), rgba(65, 90, 119, 0.8))"
