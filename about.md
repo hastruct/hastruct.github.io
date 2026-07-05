@@ -447,7 +447,6 @@ header:
           <div class="stat-val">Đào tạo kỹ thuật</div>
           <div class="stat-label">Hỗ trợ đào tạo</div>
         </div>
-
         <div class="stat-item">
           <div class="stat-val">Ứng dụng KT</div>
           <div class="stat-label">Nền tảng ứng dụng trên web</div>
@@ -468,25 +467,17 @@ header:
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
       <h2>Hai trụ cột chuyên môn</h2>
-
       <div class="pillar-grid">
-
         <div class="pillar-card">
           <div class="pillar-num">01</div>
           <h4>Quản lý dự án xây dựng (tư duy QLDA theo PMBOK)</h4>
-          <p>
-            Tư vấn và đào tạo quản lý dự án theo tư duy <strong>Value Delivery System</strong> - từ Scope, Schedule, Cost đến Risk, Stakeholders và Quality trong bối cảnh pháp lý Việt Nam (Luật XD, NĐ 175/2024, NĐ 06/2021).
-          </p>
+          <p>Tư vấn và đào tạo quản lý dự án theo tư duy <strong>Value Delivery System</strong> - từ Scope, Schedule, Cost đến Risk, Stakeholders và Quality trong bối cảnh pháp lý Việt Nam (Luật XD, NĐ 175/2024, NĐ 06/2021).</p>
         </div>
-
         <div class="pillar-card accent-gold">
           <div class="pillar-num">02</div>
           <h4>Ứng dụng web kỹ thuật cho kỹ sư</h4>
-          <p>
-            Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>Web</strong> - Phần mềm tính toán kết cấu, tính toán thủy lực, dự toán chi phí - không cần cài đặt, không cần phần cứng đắt tiền.
-          </p>
+          <p>Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>Web</strong> - Phần mềm tính toán kết cấu, tính toán thủy lực, dự toán chi phí - không cần cài đặt, không cần phần cứng đắt tiền.</p>
         </div>
-
       </div>
     </div>
 
@@ -495,53 +486,13 @@ header:
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
       <h2>Tư duy quản lý dự án hiện đại</h2>
-
-      <p>
-        Chúng tôi xây dựng nội dung và tư vấn dựa trên <strong>PMBOK® Guide</strong> - sự chuyển dịch từ quản lý quy trình sang quản lý nguyên tắc và hiệu suất, áp dụng vào thực tiễn xây dựng Việt Nam.
-      </p>
-
+      <p>Chúng tôi xây dựng nội dung và tư vấn dựa trên <strong>PMBOK® Guide</strong> - sự chuyển dịch từ quản lý quy trình sang quản lý nguyên tắc và hiệu suất, áp dụng vào thực tiễn xây dựng Việt Nam.</p>
       <div class="process-steps">
-
-        <div class="step">
-          <div class="step-dot">P1</div>
-          <div class="step-body">
-            <h4>Tư duy hệ thống (systems thinking)</h4>
-            <p>Nhìn dự án như một hệ thống liên thông - thay đổi GPMB ảnh hưởng thế nào đến dòng tiền? Rủi ro pháp lý tác động ra sao đến tiến độ? Mọi quyết định đều được phân tích trong bối cảnh tổng thể.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-dot">P2</div>
-          <div class="step-body">
-            <h4>Kiểm soát chủ động (proactive control)</h4>
-            <p>Áp dụng <strong>Hold Points</strong> và <strong>Inspection Test Plan (ITP)</strong> để ngăn chặn sai sót trước khi phát sinh - không phải xử lý sự cố sau khi đã bê tông xong. Chi phí phòng ngừa rẻ hơn 25 lần so với sửa lỗi sau bàn giao.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-dot">P3</div>
-          <div class="step-body">
-            <h4>Quản lý giá trị (value delivery)</h4>
-            <p>Mục tiêu không phải “ý xong biên bản nghiệm thu” mà là công trình đi vào vận hành đúng yêu cầu, đúng chi phí vòng đời. PM giỏi quan tâm đến <strong>Outcome</strong>, không chỉ <strong>Output</strong>.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-dot">P4</div>
-          <div class="step-body">
-            <h4>Tuân thủ pháp lý (legal compliance)</h4>
-            <p>Tích hợp đầy đủ yêu cầu của <strong>Luật xây dựng</strong>, <strong>Nghị định 175/2024/NĐ-CP</strong> và <strong>NĐ 06/2021</strong> vào quy trình quản lý - RACI matrix, thẩm quyền phân cấp, hồ sơ hoàn công điện tử theo quy định mới nhất.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-dot">P5</div>
-          <div class="step-body">
-            <h4>Tùy chỉnh linh hoạt (Tailoring)</h4>
-            <p>Không có một quy trình nào phù hợp cho mọi dự án. Chúng tôi hướng dẫn cách <em>tailoring</em> phương pháp - từ Predictive (Waterfall) cho dự án lớn đến Hybrid/Agile cho dự án cần linh hoạt.</p>
-          </div>
-        </div>
-
+        <div class="step"><div class="step-dot">P1</div><div class="step-body"><h4>Tư duy hệ thống (systems thinking)</h4><p>Nhìn dự án như một hệ thống liên thông - thay đổi GPMB ảnh hưởng thế nào đến dòng tiền? Rủi ro pháp lý tác động ra sao đến tiến độ? Mọi quyết định đều được phân tích trong bối cảnh tổng thể.</p></div></div>
+        <div class="step"><div class="step-dot">P2</div><div class="step-body"><h4>Kiểm soát chủ động (proactive control)</h4><p>Áp dụng <strong>Hold Points</strong> và <strong>Inspection Test Plan (ITP)</strong> để ngăn chặn sai sót trước khi phát sinh - không phải xử lý sự cố sau khi đã bê tông xong. Chi phí phòng ngừa rẻ hơn 25 lần so với sửa lỗi sau bàn giao.</p></div></div>
+        <div class="step"><div class="step-dot">P3</div><div class="step-body"><h4>Quản lý giá trị (value delivery)</h4><p>Mục tiêu không phải “ý xong biên bản nghiệm thu” mà là công trình đi vào vận hành đúng yêu cầu, đúng chi phí vòng đời. PM giỏi quan tâm đến <strong>Outcome</strong>, không chỉ <strong>Output</strong>.</p></div></div>
+        <div class="step"><div class="step-dot">P4</div><div class="step-body"><h4>Tuân thủ pháp lý (legal compliance)</h4><p>Tích hợp đầy đủ yêu cầu của <strong>Luật xây dựng</strong>, <strong>Nghị định 175/2024/NĐ-CP</strong> và <strong>NĐ 06/2021</strong> vào quy trình quản lý - RACI matrix, thẩm quyền phân cấp, hồ sơ hoàn công điện tử theo quy định mới nhất.</p></div></div>
+        <div class="step"><div class="step-dot">P5</div><div class="step-body"><h4>Tùy chỉnh linh hoạt (Tailoring)</h4><p>Không có một quy trình nào phù hợp cho mọi dự án. Chúng tôi hướng dẫn cách <em>tailoring</em> phương pháp - từ Predictive (Waterfall) cho dự án lớn đến Hybrid/Agile cho dự án cần linh hoạt.</p></div></div>
       </div>
     </div>
 
@@ -550,57 +501,15 @@ header:
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
       <h2>Ứng dụng kỹ thuật hỗ trợ kỹ sư</h2>
-
-      <p>
-        Phần mềm CAE/FEM truyền thống đòi hỏi workstation đắt tiền và bản quyền hàng nghìn đô la. Các công cụ dưới đây mang lõi tính toán hiệu suất cao lên trình duyệt — không cần cài đặt, chạy được trên mọi thiết bị. Tất cả đang ở giai đoạn Beta, miễn phí sử dụng.
-      </p>
-
+      <p>Phần mềm CAE/FEM truyền thống đòi hỏi workstation đắt tiền và bản quyền hàng nghìn đô la. Các công cụ dưới đây mang lõi tính toán hiệu suất cao lên trình duyệt — không cần cài đặt, chạy được trên mọi thiết bị. Tất cả đang ở giai đoạn Beta, miễn phí sử dụng.</p>
       <div class="app-grid">
-
-        <div class="app-card">
-          <h4>Tường cừ FEM</h4>
-          <p>Phân tích tường cừ và tường vây hố đào sâu bằng phương pháp Phần tử hữu hạn. Mô phỏng thi công theo giai đoạn, hệ thanh chống, neo và dòng thấm.</p>
-          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
-          <span class="app-badge beta">Beta</span>
-        </div>
-
-        <div class="app-card">
-          <h4>Nhóm cọ 3D</h4>
-          <p>Phân tích móng cọ đài cao theo phương pháp Zavriev-Spiro. Hỗ trợ cọ xiên không gian, tải trọ ng 6 thành phần và tính phản lực đầu cọ.</p>
-          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
-          <span class="app-badge beta">Beta</span>
-        </div>
-
-        <div class="app-card">
-          <h4>Cọ chịu tải ngang</h4>
-          <p>Phân tích cọ đơn chịu tải trọ ng ngang theo mô hình phi tuyến p-y curve. Hỗ trợ nhiều lớp đất, đất dính và đất rời.</p>
-          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
-          <span class="app-badge beta">Beta</span>
-        </div>
-
-        <div class="app-card">
-          <h4>Cột ngắn 3D (ShortCol)</h4>
-          <p>Biểu đồ tương tác không gian P-Mx-My cho cột bê tông cốt thép tiết diện chữ nhật chịu lệch tâm xiên.</p>
-          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
-          <span class="app-badge beta">Beta</span>
-        </div>
-
-        <div class="app-card">
-          <h4>Cột ngắn 2D (ShortCol)</h4>
-          <p>Biểu đồ tương tác P-M cho cột bê tông cốt thép tiết diện chữ nhật chịu nén lệch tâm phẳng.</p>
-          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
-          <span class="app-badge beta">Beta</span>
-        </div>
-
-        <div class="app-card">
-          <h4>Dốc nước và tiêu năng</h4>
-          <p>Tính toán thủy lực dốc nước và bể tiêu năng dựa trên lý thuyết nước nhảy. Thiết kế bể tiêu năng và kiểm tra hệ số ngập an toàn.</p>
-          <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
-          <span class="app-badge beta">Beta</span>
-        </div>
-
+        <div class="app-card"><h4>Tường cừ FEM</h4><p>Phân tích tường cừ và tường vây hố đào sâu bằng phương pháp Phần tử hữu hạn. Mô phỏng thi công theo giai đoạn, hệ thanh chống, neo và dòng thấm.</p><a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a><span class="app-badge beta">Beta</span></div>
+        <div class="app-card"><h4>Nhóm cọ 3D</h4><p>Phân tích móng cọ đài cao theo phương pháp Zavriev-Spiro. Hỗ trợ cọ xiên không gian, tải trọ ng 6 thành phần và tính phản lực đầu cọ.</p><a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a><span class="app-badge beta">Beta</span></div>
+        <div class="app-card"><h4>Cọ chịu tải ngang</h4><p>Phân tích cọ đơn chịu tải trọ ng ngang theo mô hình phi tuyến p-y curve. Hỗ trợ nhiều lớp đất, đất dính và đất rời.</p><a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a><span class="app-badge beta">Beta</span></div>
+        <div class="app-card"><h4>Cột ngắn 3D (ShortCol)</h4><p>Biểu đồ tương tác không gian P-Mx-My cho cột bê tông cốt thép tiết diện chữ nhật chịu lệch tâm xiên.</p><a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a><span class="app-badge beta">Beta</span></div>
+        <div class="app-card"><h4>Cột ngắn 2D (ShortCol)</h4><p>Biểu đồ tương tác P-M cho cột bê tông cốt thép tiết diện chữ nhật chịu nén lệch tâm phẳng.</p><a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a><span class="app-badge beta">Beta</span></div>
+        <div class="app-card"><h4>Dốc nước và tiêu năng</h4><p>Tính toán thủy lực dốc nước và bể tiêu năng dựa trên lý thuyết nước nhảy. Thiết kế bể tiêu năng và kiểm tra hệ số ngập an toàn.</p><a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a><span class="app-badge beta">Beta</span></div>
       </div>
-
       <p style="margin-top: 1.4rem; font-size: 0.9rem; color: var(--color-subtext);">
         Mỗi ứng dụng đi kèm bài viết kỹ thuật giải thích lý thuyết và thuật toán nền. Xem toàn bộ danh sách tại <a href="/apps/" style="color: var(--color-accent);">hydrostructai.com/apps</a>.
       </p>
@@ -611,27 +520,10 @@ header:
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
       <h2>Triết lý vận hành</h2>
-
       <div class="pillar-grid">
-
-        <div class="pillar-card">
-          <div class="pillar-num">01</div>
-          <h4>Giáo dục và cộng đồng</h4>
-          <p>Công cụ nền tảng luôn miễn phí. Sinh viên kỹ thuật và kỹ sư mới ra trường xứng đáng có phần mềm chuyên nghiệp để học và thực hành, không cần bản quyền đắt tiền.</p>
-        </div>
-
-        <div class="pillar-card accent-gold">
-          <div class="pillar-num">02</div>
-          <h4>Chuyên nghiệp cho doanh nghiệp</h4>
-          <p>Phiên bản Pro mở khóa tính năng nâng cao: không giới hạn dự án, xuất báo cáo PDF chuyên nghiệp, API tích hợp hệ thống nội bộ của doanh nghiệp.</p>
-        </div>
-
-        <div class="pillar-card accent-teal">
-          <div class="pillar-num">03</div>
-          <h4>Blog là tài liệu</h4>
-          <p>Mỗi bài viết giải thích cả “Tại sao?” lẫn “Như thế nào?” - lý thuyết thuật toán, khung pháp lý, và thực hành thực chiến tại công trường Việt Nam.</p>
-        </div>
-
+        <div class="pillar-card"><div class="pillar-num">01</div><h4>Giáo dục và cộng đồng</h4><p>Công cụ nền tảng luôn miễn phí. Sinh viên kỹ thuật và kỹ sư mới ra trường xứng đáng có phần mềm chuyên nghiệp để học và thực hành, không cần bản quyền đắt tiền.</p></div>
+        <div class="pillar-card accent-gold"><div class="pillar-num">02</div><h4>Chuyên nghiệp cho doanh nghiệp</h4><p>Phiên bản Pro mở khóa tính năng nâng cao: không giới hạn dự án, xuất báo cáo PDF chuyên nghiệp, API tích hợp hệ thống nội bộ của doanh nghiệp.</p></div>
+        <div class="pillar-card accent-teal"><div class="pillar-num">03</div><h4>Blog là tài liệu</h4><p>Mỗi bài viết giải thích cả “Tại sao?” lẫn “Như thế nào?” - lý thuyết thuật toán, khung pháp lý, và thực hành thực chiến tại công trường Việt Nam.</p></div>
       </div>
     </div>
 
@@ -640,14 +532,11 @@ header:
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
       <h2>Về tác giả</h2>
-
       <div class="author-block">
         <div class="author-avatar">HH</div>
         <div class="author-bio">
           <h4>TS. Nguyễn Hải Hà - PMP®</h4>
-          <p>
-            Tiến sĩ Kỹ thuật, chuyên gia về Công trình thủy, kết cấu công trình và địa kỹ thuật. Có kinh nghiệm thực tế trong quản lý và giám sát các dự án xây dựng theo chuẩn trong nước và quốc tế. Ứng dụng công nghệ và lập trình để đưa công cụ kỹ thuật hiệu suất cao.
-          </p>
+          <p>Tiến sĩ Kỹ thuật, chuyên gia về Công trình thủy, kết cấu công trình và địa kỹ thuật. Có kinh nghiệm thực tế trong quản lý và giám sát các dự án xây dựng theo chuẩn trong nước và quốc tế. Ứng dụng công nghệ và lập trình để đưa công cụ kỹ thuật hiệu suất cao.</p>
         </div>
       </div>
     </div>
@@ -657,17 +546,13 @@ header:
     <!-- ══════════════════════════════════════════════ -->
     <div class="about-section">
       <h2>Kết nối và hợp tác</h2>
-
-      <p>
-        Chúng tôi luôn tìm kiếm sự hợp tác từ các tổ chức, các doanh nghiệp xây dựng, các chuyên gia và đồng nghiệp muốn ứng dụng công nghệ vào quản lý dự án. Nếu bạn có câu hỏi, ý tưởng đóng góp hoặc nhu cầu tư vấn:
-      </p>
+      <p>Chúng tôi luôn tìm kiếm sự hợp tác từ các tổ chức, các doanh nghiệp xây dựng, các chuyên gia và đồng nghiệp muốn ứng dụng công nghệ vào quản lý dự án. Nếu bạn có câu hỏi, ý tưởng đóng góp hoặc nhu cầu tư vấn:</p>
 
       <div style="margin: 0.8rem 0 1.2rem 0; display:flex; flex-direction:column; gap:0.7rem;">
         <div style="color: var(--color-text);">
           Profile: <a href="http://hatech.info" style="display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);">🌐 hatech.info</a>
         </div>
         <div style="display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;">
-          <span style="display:inline-block;font-size:1.3rem;line-height:1;animation:point-nudge 1s ease-in-out infinite;">👉</span>
           <a href="https://zalo.me/84374874142" style="display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);">💬 Zalo</a>
           <a href="https://wa.me/84374874142" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);">📱 WhatsApp</a>
         </div>
@@ -677,12 +562,8 @@ header:
       </div>
 
       <div class="cta-row">
-        <a href="/apps/" class="btn-primary">
-          Khám phá ứng dụng
-        </a>
-        <a href="/" class="btn-outline">
-          Về trang chủ
-        </a>
+        <a href="/apps/" class="btn-primary">Khám phá ứng dụng</a>
+        <a href="/" class="btn-outline">Về trang chủ</a>
       </div>
     </div>
 
