@@ -19,22 +19,27 @@ header:
     margin-top: 0 !important;
   }
 
-  /* Thanh liên hệ nằm NGOÀI ảnh hero, ngay phía dưới: dàn đều 2 bên, WhatsApp cố định chính giữa */
+  /* Thanh liên hệ nằm NGOÀI ảnh hero: WhatsApp chính giữa, Zalo/Profile cách đều 12% chiều rộng màn hình (vw) - nhất quán trên mọi trang bất kể độ rộng container */
   .hero-contact-bar {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    position: relative;
+    display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.3rem 1.5rem;
+    justify-content: center;
+    padding: 0.3rem 0;
     margin: 0;
+    min-height: 1.9rem;
     line-height: 1;
     background: #f4f6f9;
     border-bottom: 1px solid #e1e4e8;
   }
 
-  .hero-contact-bar a:nth-child(1) { justify-self: start; }
-  .hero-contact-bar a:nth-child(2) { justify-self: center; }
-  .hero-contact-bar a:nth-child(3) { justify-self: end; }
+  .hero-contact-bar a:nth-child(1) { position: absolute; left: 12vw; }
+  .hero-contact-bar a:nth-child(3) { position: absolute; right: 12vw; }
+
+  @media (max-width: 700px) {
+    .hero-contact-bar a:nth-child(1) { left: 4vw; }
+    .hero-contact-bar a:nth-child(3) { right: 4vw; }
+  }
 
   :root {
     --color-ink:       #1a1a2e;
