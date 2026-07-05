@@ -4,7 +4,6 @@ title: "HST - Tư vấn & Quản lý dự án"
 permalink: /about/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;justify-content:flex-end;gap:0.4rem;flex-wrap:nowrap;width:100%;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
   title: "Giới thiệu chung"
 ---
 
@@ -12,7 +11,30 @@ header:
 
 <style>
   .page__hero--overlay .page__title { visibility: hidden !important; }
-  @keyframes point-nudge { 0%,100% { transform:translateX(0); } 50% { transform:translateX(7px); } }
+
+  /* Khử padding-top mặc định của khung nội dung theme để dai liên hệ dính sát ảnh hero */
+  .page__inner-wrap,
+  .page__content {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  /* Thanh liên hệ nằm NGOÀI ảnh hero, ngay phía dưới: dàn đều 2 bên, WhatsApp cố định chính giữa */
+  .hero-contact-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 1.5rem;
+    margin: 0;
+    line-height: 1;
+    background: #f4f6f9;
+    border-bottom: 1px solid #e1e4e8;
+  }
+
+  .hero-contact-bar a:nth-child(1) { justify-self: start; }
+  .hero-contact-bar a:nth-child(2) { justify-self: center; }
+  .hero-contact-bar a:nth-child(3) { justify-self: end; }
 
   :root {
     --color-ink:       #1a1a2e;
@@ -265,6 +287,12 @@ header:
   }
 </style>
 
+<div class="hero-contact-bar">
+  <a href="https://zalo.me/84374874142" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);">💬 Zalo</a>
+  <a href="https://wa.me/84374874142" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);">📱 WhatsApp</a>
+  <a href="http://hatech.info" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);">🌐 Profile</a>
+</div>
+
 <div class="home-wrapper">
 
   {% include sidebar-left.html %}
@@ -311,8 +339,16 @@ header:
     <div class="about-section">
       <h2>Hai trụ cột chuyên môn</h2>
       <div class="pillar-grid">
-        <div class="pillar-card"><div class="pillar-num">01</div><h4>Quản lý dự án xây dựng (tư duy QLDA theo PMBOK)</h4><p>Tư vấn và đào tạo quản lý dự án theo tư duy <strong>Value Delivery System</strong> - từ Scope, Schedule, Cost đến Risk, Stakeholders và Quality trong bối cảnh pháp lý Việt Nam (Luật XD, NĐ 175/2024, NĐ 06/2021).</p></div>
-        <div class="pillar-card accent-gold"><div class="pillar-num">02</div><h4>Ứng dụng web kỹ thuật cho kỹ sư</h4><p>Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>Web</strong> - Phần mềm tính toán kết cấu, tính toán thủy lực, dự toán chi phí - không cần cài đặt, không cần phần cứng đắt tiền.</p></div>
+        <div class="pillar-card">
+          <div class="pillar-num">01</div>
+          <h4>Quản lý dự án xây dựng (tư duy QLDA theo PMBOK)</h4>
+          <p>Tư vấn và đào tạo quản lý dự án theo tư duy <strong>Value Delivery System</strong> - từ Scope, Schedule, Cost đến Risk, Stakeholders và Quality trong bối cảnh pháp lý Việt Nam (Luật XD, NĐ 175/2024, NĐ 06/2021).</p>
+        </div>
+        <div class="pillar-card accent-gold">
+          <div class="pillar-num">02</div>
+          <h4>Ứng dụng web kỹ thuật cho kỹ sư</h4>
+          <p>Phát triển công cụ phân tích kỹ thuật chạy trên nền tảng <strong>Web</strong> - Phần mềm tính toán kết cấu, tính toán thủy lực, dự toán chi phí - không cần cài đặt, không cần phần cứng đắt tiền.</p>
+        </div>
       </div>
     </div>
 
