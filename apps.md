@@ -4,7 +4,7 @@ title: "Ứng dụng"
 permalink: /apps/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;justify-content:flex-end;gap:0.4rem;flex-wrap:nowrap;width:100%;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
+  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;justify-content:space-evenly;gap:0.4rem;flex-wrap:nowrap;width:100%;'><span style='display:inline-block;font-size:1.05rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.6rem;padding:0.24rem 0.52rem;border-radius:16px;box-shadow:0 2px 6px rgba(0,104,255,0.55);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.6rem;padding:0.24rem 0.52rem;border-radius:16px;box-shadow:0 2px 6px rgba(37,211,102,0.55);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.6rem;padding:0.24rem 0.52rem;border-radius:16px;box-shadow:0 2px 6px rgba(232,160,16,0.55);'>🌐 Profile</a></div>"
   title: "Các Ứng dụng cho Kỹ thuật xây dựng"
 ---
 
@@ -14,6 +14,15 @@ header:
   .page__hero--overlay .page__title { visibility: hidden !important; }
 
   @keyframes point-nudge { 0%,100% { transform:translateX(0); } 50% { transform:translateX(7px); } }
+
+  /* Thanh liên hệ hero: rộng 80%, nền trong suốt để màu nút nổi rõ */
+  .page__hero-caption,
+  .page__hero--overlay .page__hero-caption {
+    width: 80% !important;
+    max-width: 80%;
+    background: transparent !important;
+    padding: 2px 10px;
+  }
 
   .app-card-badges {
     display: flex;
