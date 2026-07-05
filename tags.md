@@ -4,13 +4,15 @@ title: "Danh Sách Tags"
 permalink: /tags/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper'><span class='c-item'><span class='c-label'>Contact:</span> <a href='https://zalo.me/84374874142' class='v-zalo'>Zalo</a></span> <span class='c-sep'>|</span> <span class='c-item'><a href='https://wa.me/84374874142' class='v-whatsapp'>WhatsApp</a></span> <span class='c-sep'>|</span> <span class='c-item'><a href='http://hatech.info' class='v-profile'>Profile</a></span></div>"
+  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
   title: "Tags"
 ---
 
 <link rel="stylesheet" href="/assets/css/custom-home.css">
 
 <style>
+  @keyframes point-nudge { 0%,100% { transform:translateX(0); } 50% { transform:translateX(7px); } }
+
   /* Tags Page Specific Styles */
   .tag-section {
     margin-bottom: 3rem;
