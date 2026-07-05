@@ -4,7 +4,7 @@ title: "HST - Tư vấn & Quản lý dự án"
 author_profile: false
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
+  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;justify-content:flex-end;gap:0.4rem;flex-wrap:nowrap;width:100%;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
   
   cta_label: "Xem chi tiết"
   cta_url: "/apps/landing.html"
@@ -251,7 +251,7 @@ header:
   font-size: 11px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #1a1a2e; /* Màu xanh navy chủ đạo */
+  color: #1a1a2e;
   font-weight: 700;
   margin: 0;
   opacity: 0.8;
@@ -260,7 +260,7 @@ header:
 .latest-posts-line {
   flex: 1;
   height: 1px;
-  background: rgba(26, 26, 46, 0.15); /* Đường kẻ xanh mờ */
+  background: rgba(26, 26, 46, 0.15);
 }
 
 .posts-grid {
@@ -269,12 +269,11 @@ header:
   gap: 16px;
 }
 
-/* Featured (first) post card — larger */
 .post-card-featured {
   grid-column: 1 / -1;
   display: flex;
   gap: 0;
-  background: #fdfcf9; /* Nền trắng sứ nhẹ nhàng */
+  background: #fdfcf9;
   border: 1px solid rgba(26, 26, 46, 0.1);
   border-radius: 4px;
   overflow: hidden;
@@ -291,7 +290,6 @@ header:
 
 .post-card-featured .card-accent-bar {
   width: 6px;
-  /* Chuyển màu từ xanh đậm sang xanh sáng hơn như hình đính kèm */
   background: linear-gradient(180deg, #1a1a2e, #004d99); 
   flex-shrink: 0;
 }
@@ -319,7 +317,6 @@ header:
   font-weight: 600;
 }
 
-/* Các nhãn chuyên ngành theo tông màu lạnh */
 .cat-management { background: rgba(26, 26, 46, 0.1); color: #1a1a2e; } 
 .cat-standards  { background: rgba(0, 77, 153, 0.1); color: #004d99; } 
 .cat-hydraulic  { background: rgba(65, 90, 119, 0.15); color: #415a77; } 
@@ -334,14 +331,13 @@ header:
 .card-title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #1a1a2e; /* Xanh navy đậm */
+  color: #1a1a2e;
   line-height: 1.4;
   margin: 0 0 12px;
 }
 
 .card-excerpt {
   font-size: 0.88rem;
-  /* Dùng màu xám đậm có pha chút xanh cho dịu mắt */
   color: #4a4a5e; 
   line-height: 1.65;
   margin: 0 0 16px;
@@ -364,13 +360,12 @@ header:
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #555;
-  background: rgba(245, 240, 232, 0.4); /* Màu trắng kem mờ bạn đã hỏi */
+  background: rgba(245, 240, 232, 0.4);
   border: 1px solid rgba(26, 26, 46, 0.1);
   padding: 2px 8px;
   border-radius: 2px;
 }
 
-/* Regular post cards */
 .post-card {
   background: #ffffff;
   border: 1px solid rgba(26, 26, 46, 0.08);
@@ -391,7 +386,6 @@ header:
 
 .post-card .card-top-bar {
   height: 4px;
-  /* Thanh ngang gradient đồng bộ */
   background: linear-gradient(90deg, #1a1a2e, #415a77);
 }
 
@@ -479,14 +473,13 @@ header:
   text-transform: uppercase;
   color: #ffffff;
   background: #e8650a;
-  padding: 4px 20px 4px 10px; /* padding phải dành chỗ cho mũi tên bên trong */
+  padding: 4px 20px 4px 10px;
   white-space: nowrap;
   flex-shrink: 0;
   position: relative;
   animation: survey-label-pulse 1.1s ease-in-out infinite;
 }
 
-/* Mũi tên xoay 3 màu: đỏ → xanh → trắng */
 @keyframes survey-arrow-cycle {
   0%         { border-left-color: #e63946; }
   33%        { border-left-color: #0077cc; }
@@ -532,9 +525,6 @@ header:
 }
 </style>
 
-<!-- ══════════════════════════════════════════════════════
-     FEATURED POST STRIP — Bài viết mới nhất nổi bật
-══════════════════════════════════════════════════════ -->
 {% assign latest_post = site.posts.first %}
 
 {% if latest_post %}
@@ -557,9 +547,6 @@ header:
 </div>
 {% endif %}
 
-<!-- ══════════════════════════════════════════════════════
-     SURVEY BANNER — Khảo sát thực trạng QLDA
-══════════════════════════════════════════════════════ -->
 <div class="survey-strip">
   <div class="survey-inner">
     <span class="survey-live-dot"></span>
@@ -571,9 +558,6 @@ header:
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════
-     LAYOUT CHÍNH (giữ nguyên cấu trúc gốc)
-══════════════════════════════════════════════════════ -->
 <div class="home-wrapper">
 
   {% include sidebar-left.html %}
