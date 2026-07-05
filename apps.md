@@ -4,7 +4,7 @@ title: "Ứng dụng"
 permalink: /apps/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
+  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;justify-content:flex-end;gap:0.4rem;flex-wrap:nowrap;width:100%;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
   title: "Các Ứng dụng cho Kỹ thuật xây dựng"
 ---
 
@@ -208,17 +208,17 @@ header:
           <h3 class="app-card-title">Nhóm Cọ 3D</h3>
           <div class="app-card-badges">
             <span class="badge bg-warning">Zavriev</span>
-            <span class="badge bg-primary">Móng cọ</span>
+            <span class="badge bg-primary">Móng cọc</span>
           </div>
           <p class="app-card-desc">
-            Phân tích móng cọ đài cao (bệ cứng) theo phương pháp Zavriev-Spiro.
+            Phân tích móng cọc đài cao (bệ cứng) theo phương pháp Zavriev-Spiro.
           </p>
           <div class="app-features-list">
             <h6>Tính năng:</h6>
             <ul>
-              <li>Hỗ trợ cọ xiên không gian</li>
+              <li>Hỗ trợ cọc xiên không gian</li>
               <li>Tải trọ ng 6 thành phần</li>
-              <li>Tính phản lực đầu cọ</li>
+              <li>Tính phản lực đầu cọc</li>
             </ul>
           </div>
           <a href="{{ site.baseurl }}/apps/landing.html" class="btn--app">Xem chi tiết</a>
