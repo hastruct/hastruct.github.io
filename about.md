@@ -4,7 +4,7 @@ title: "HST - Tư vấn & Quản lý dự án"
 permalink: /about/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper'><span class='c-item'><span class='c-label'>Liên hệ:</span>&nbsp;<a href='https://zalo.me/84374874142' class='v-zalo'>Zalo</a></span> <span class='c-sep'>|</span> <span class='c-item'><a href='https://wa.me/84374874142' class='v-whatsapp'>WhatsApp</a></span> <span class='c-sep'>|</span> <span class='c-item'><a href='http://hatech.info' class='v-profile'>Profile</a></span></div>"
+  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
   title: "Giới thiệu chung"
 ---
 
@@ -14,7 +14,9 @@ header:
   /* Ẩn tiêu đề trên hero, giữ chiều cao */
   .page__hero--overlay .page__title { visibility: hidden !important; }
 
-  /* ─── Root Variables ──────────────────────────────── */
+  @keyframes point-nudge { 0%,100% { transform:translateX(0); } 50% { transform:translateX(7px); } }
+
+  /* ─── Root Variables ────────────────────────────────── */
   :root {
     --color-ink:       #1a1a2e;
     --color-accent:    #0057b8;
@@ -28,7 +30,7 @@ header:
     --shadow-card:     0 2px 18px rgba(0,0,0,0.07);
   }
 
-  /* ─── Layout Wrapper ─────────────────────────────── */
+  /* ─── Layout Wrapper ──────────────────────────────── */
   .about-wrapper {
     max-width: 860px;
     margin: 0 auto;
@@ -38,7 +40,7 @@ header:
     line-height: 1.75;
   }
 
-  /* ─── Section Divider ────────────────────────────── */
+  /* ─── Section Divider ──────────────────────────────── */
   .about-section {
     margin: 2.8rem 0;
     padding: 2.2rem 2.4rem;
@@ -48,7 +50,7 @@ header:
     box-shadow: var(--shadow-card);
   }
 
-  /* ─── Section Heading ────────────────────────────── */
+  /* ─── Section Heading ──────────────────────────────── */
   .about-section h2 {
     font-size: 1.25rem;
     font-weight: 700;
@@ -197,7 +199,7 @@ header:
   .app-badge.pro     { background: #cce5ff; color: #004085; }
   .app-badge.roadmap { background: #f8d7da; color: #721c24; }
 
-  /* ─── Timeline ───────────────────────────────────── */
+  /* ─── Timeline ────────────────────────────────────── */
   .process-steps {
     display: flex;
     flex-direction: column;
@@ -299,7 +301,7 @@ header:
     line-height: 1.6;
   }
 
-  /* ─── Expertise Tags ─────────────────────────────── */
+  /* ─── Expertise Tags ──────────────────────────────── */
   .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.6rem; }
 
   .etag {
@@ -355,7 +357,7 @@ header:
 
   .btn-outline:hover { background: var(--color-accent); color: #fff; }
 
-  /* ─── Stat Strip ─────────────────────────────────── */
+  /* ─── Stat Strip ───────────────────────────────────── */
   .stat-strip {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -385,7 +387,7 @@ header:
     font-weight: 500;
   }
 
-  /* ─── Mobile ─────────────────────────────────────── */
+  /* ─── Mobile ───────────────────────────────────────── */
   @media (max-width: 768px) {
     .about-section { padding: 1.5rem 1.2rem; }
     .author-block  { flex-direction: column; gap: 1rem; }
@@ -407,7 +409,7 @@ header:
       <h2>Giới thiệu chung</h2>
 
       <p>
-        <strong>*HST - Tư vấn & Quản lý dự án*</strong> là nền tảng kỹ thuật chuyên biệt kết hợp gồm:
+        <strong>*HST - Tư vấn &amp; Quản lý dự án*</strong> là nền tảng kỹ thuật chuyên biệt kết hợp gồm:
 		
 		<div style="
 		  background: var(--color-background-primary);
@@ -520,7 +522,7 @@ header:
           <div class="step-dot">P3</div>
           <div class="step-body">
             <h4>Quản lý giá trị (value delivery)</h4>
-            <p>Mục tiêu không phải "ký xong biên bản nghiệm thu" mà là công trình đi vào vận hành đúng yêu cầu, đúng chi phí vòng đời. PM giỏi quan tâm đến <strong>Outcome</strong>, không chỉ <strong>Output</strong>.</p>
+            <p>Mục tiêu không phải “ý xong biên bản nghiệm thu” mà là công trình đi vào vận hành đúng yêu cầu, đúng chi phí vòng đời. PM giỏi quan tâm đến <strong>Outcome</strong>, không chỉ <strong>Output</strong>.</p>
           </div>
         </div>
 
@@ -563,15 +565,15 @@ header:
         </div>
 
         <div class="app-card">
-          <h4>Nhóm cọc 3D</h4>
-          <p>Phân tích móng cọc đài cao theo phương pháp Zavriev-Spiro. Hỗ trợ cọc xiên không gian, tải trọng 6 thành phần và tính phản lực đầu cọc.</p>
+          <h4>Nhóm cọ 3D</h4>
+          <p>Phân tích móng cọ đài cao theo phương pháp Zavriev-Spiro. Hỗ trợ cọ xiên không gian, tải trọ ng 6 thành phần và tính phản lực đầu cọ.</p>
           <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
           <span class="app-badge beta">Beta</span>
         </div>
 
         <div class="app-card">
-          <h4>Cọc chịu tải ngang</h4>
-          <p>Phân tích cọc đơn chịu tải trọng ngang theo mô hình phi tuyến p-y curve. Hỗ trợ nhiều lớp đất, đất dính và đất rời.</p>
+          <h4>Cọ chịu tải ngang</h4>
+          <p>Phân tích cọ đơn chịu tải trọ ng ngang theo mô hình phi tuyến p-y curve. Hỗ trợ nhiều lớp đất, đất dính và đất rời.</p>
           <a href="/apps/" style="font-size:0.75rem; color: var(--color-accent); text-decoration:none;">Xem ứng dụng →</a>
           <span class="app-badge beta">Beta</span>
         </div>
@@ -627,7 +629,7 @@ header:
         <div class="pillar-card accent-teal">
           <div class="pillar-num">03</div>
           <h4>Blog là tài liệu</h4>
-          <p>Mỗi bài viết giải thích cả "Tại sao?" lẫn "Như thế nào?" - lý thuyết thuật toán, khung pháp lý, và thực hành thực chiến tại công trường Việt Nam.</p>
+          <p>Mỗi bài viết giải thích cả “Tại sao?” lẫn “Như thế nào?” - lý thuyết thuật toán, khung pháp lý, và thực hành thực chiến tại công trường Việt Nam.</p>
         </div>
 
       </div>
@@ -660,17 +662,19 @@ header:
         Chúng tôi luôn tìm kiếm sự hợp tác từ các tổ chức, các doanh nghiệp xây dựng, các chuyên gia và đồng nghiệp muốn ứng dụng công nghệ vào quản lý dự án. Nếu bạn có câu hỏi, ý tưởng đóng góp hoặc nhu cầu tư vấn:
       </p>
 
-      <ul style="margin: 0.8rem 0 1.2rem 1.5rem; padding: 0;">
-        <li style="margin-bottom: 0.5rem; color: var(--color-text);">
-          Profile: <a href="http://hatech.info" style="color: var(--color-accent); font-weight: 600;">hatech.info</a>
-        </li>
-        <li style="margin-bottom: 0.5rem; color: var(--color-text);">
-          Liên hệ: <a href="https://zalo.me/84374874142" style="color: #0068FF; font-weight: 600;">Zalo</a> | <a href="https://wa.me/84374874142" style="color: #25D366; font-weight: 600;">WhatsApp</a>
-        </li>
-        <li style="color: var(--color-text);">
+      <div style="margin: 0.8rem 0 1.2rem 0; display:flex; flex-direction:column; gap:0.7rem;">
+        <div style="color: var(--color-text);">
+          Profile: <a href="http://hatech.info" style="display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);">🌐 hatech.info</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;">
+          <span style="display:inline-block;font-size:1.3rem;line-height:1;animation:point-nudge 1s ease-in-out infinite;">👉</span>
+          <a href="https://zalo.me/84374874142" style="display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);">💬 Zalo</a>
+          <a href="https://wa.me/84374874142" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);">📱 WhatsApp</a>
+        </div>
+        <div style="color: var(--color-text);">
           Blog: Cập nhật hàng tuần về QLDA xây dựng, kỹ thuật số và công cụ mới
-        </li>
-      </ul>
+        </div>
+      </div>
 
       <div class="cta-row">
         <a href="/apps/" class="btn-primary">
