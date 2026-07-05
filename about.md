@@ -4,7 +4,7 @@ title: "HST - Tư vấn & Quản lý dự án"
 permalink: /about/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper'><span class='c-item'><span class='c-label'>Liên hệ:</span>&nbsp;<a href='https://zalo.me/84374874142' class='v-zalo'>Zalo</a></span> <span class='c-sep'>|</span> <span class='c-item'><a href='https://wa.me/84374874142' class='v-whatsapp'>WhatsApp</a></span> <span class='c-sep'>|</span> <span class='c-item'><span class='c-label'>Email:</span> <a href='mailto:ha.nguyen@hydrostructai.com' class='v-email'>ha.nguyen@hydrostructai.com</a></span></div>"
+  caption: "<div class='hero-contact-wrapper'><span class='c-item'><span class='c-label'>Liên hệ:</span>&nbsp;<a href='https://zalo.me/84374874142' class='v-zalo'>Zalo</a></span> <span class='c-sep'>|</span> <span class='c-item'><a href='https://wa.me/84374874142' class='v-whatsapp'>WhatsApp</a></span> <span class='c-sep'>|</span> <span class='c-item'><a href='http://hatech.info' class='v-profile'>Profile</a></span></div>"
   title: "Giới thiệu chung"
 ---
 
@@ -662,7 +662,7 @@ header:
 
       <ul style="margin: 0.8rem 0 1.2rem 1.5rem; padding: 0;">
         <li style="margin-bottom: 0.5rem; color: var(--color-text);">
-          Email: <a href="mailto:ha.nguyen@hydrostructai.com" style="color: var(--color-accent); font-weight: 600;">ha.nguyen@hydrostructai.com</a>
+          Profile: <a href="http://hatech.info" style="color: var(--color-accent); font-weight: 600;">hatech.info</a>
         </li>
         <li style="margin-bottom: 0.5rem; color: var(--color-text);">
           Liên hệ: <a href="https://zalo.me/84374874142" style="color: #0068FF; font-weight: 600;">Zalo</a> | <a href="https://wa.me/84374874142" style="color: #25D366; font-weight: 600;">WhatsApp</a>
