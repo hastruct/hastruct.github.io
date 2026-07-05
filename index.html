@@ -4,8 +4,6 @@ title: "HST - Tư vấn & Quản lý dự án"
 author_profile: false
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;justify-content:flex-end;gap:0.4rem;flex-wrap:nowrap;width:100%;'><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.6rem;padding:0.24rem 0.52rem;border-radius:16px;box-shadow:0 2px 6px rgba(0,104,255,0.55);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.6rem;padding:0.24rem 0.52rem;border-radius:16px;box-shadow:0 2px 6px rgba(37,211,102,0.55);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.6rem;padding:0.24rem 0.52rem;border-radius:16px;box-shadow:0 2px 6px rgba(232,160,16,0.55);'>🌐 Profile</a></div>"
-  
   cta_label: "Xem chi tiết"
   cta_url: "/apps/landing.html"
 ---
@@ -16,20 +14,16 @@ header:
 /* Ẩn tiêu đề trang trên hero nhưng giữ chiều cao (giữ lại tên site trên nav bar) */
 .page__hero--overlay .page__title { visibility: hidden !important; }
 
-/* Thanh liên hệ nằm trên ảnh hero, sát mép trên (ngay dưới thanh menu), nền trong suốt */
-.page__hero--overlay { position: relative; }
-.page__hero-caption,
-.page__hero--overlay .page__hero-caption {
-  position: absolute;
-  top: 10px;
-  bottom: auto !important;
-  right: 0;
-  left: auto;
-  width: auto;
-  max-width: 90%;
-  background: transparent !important;
-  padding: 2px 14px;
-  z-index: 5;
+/* Thanh liên hệ nằm NGOÀI ảnh hero, ngay phía dưới (không đè lên ảnh) */
+.hero-contact-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  padding: 0.6rem 1.5rem;
+  background: #f4f6f9;
+  border-bottom: 1px solid #e1e4e8;
 }
 
 /* ==========================================================================
@@ -538,6 +532,12 @@ header:
   }
 }
 </style>
+
+<div class="hero-contact-bar">
+  <a href="https://zalo.me/84374874142" style="display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);">💬 Zalo</a>
+  <a href="https://wa.me/84374874142" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);">📱 WhatsApp</a>
+  <a href="http://hatech.info" style="display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);">🌐 Profile</a>
+</div>
 
 {% assign latest_post = site.posts.first %}
 
