@@ -4,7 +4,7 @@ title: "Danh Sách Tags"
 permalink: /tags/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
+  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;justify-content:flex-end;gap:0.4rem;flex-wrap:nowrap;width:100%;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
   title: "Tags"
 ---
 
@@ -13,10 +13,7 @@ header:
 <style>
   @keyframes point-nudge { 0%,100% { transform:translateX(0); } 50% { transform:translateX(7px); } }
 
-  /* Tags Page Specific Styles */
-  .tag-section {
-    margin-bottom: 3rem;
-  }
+  .tag-section { margin-bottom: 3rem; }
 
   .tag-header {
     display: flex;
@@ -66,26 +63,11 @@ header:
     transform: translateY(-2px);
   }
 
-  .post-card h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
-  }
+  .post-card h3 { margin: 0 0 0.5rem 0; font-size: 1.1rem; }
+  .post-card a { color: #0d6efd; text-decoration: none; font-weight: 600; }
+  .post-card a:hover { text-decoration: underline; }
 
-  .post-card a {
-    color: #0d6efd;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  .post-card a:hover {
-    text-decoration: underline;
-  }
-
-  .post-date {
-    font-size: 0.85rem;
-    color: #6a737d;
-    margin-bottom: 0.75rem;
-  }
+  .post-date { font-size: 0.85rem; color: #6a737d; margin-bottom: 0.75rem; }
 
   .post-excerpt {
     font-size: 0.9rem;
@@ -110,17 +92,9 @@ header:
     transition: all 0.2s;
   }
 
-  .post-cta:hover {
-    background: #5468d3;
-    transform: translateY(-1px);
-  }
+  .post-cta:hover { background: #5468d3; transform: translateY(-1px); }
 
-  .post-tags {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    margin-top: 0.75rem;
-  }
+  .post-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem; }
 
   .post-tag {
     font-size: 0.75rem;
@@ -132,10 +106,7 @@ header:
     transition: all 0.2s;
   }
 
-  .post-tag:hover {
-    background: #667eea;
-    color: white;
-  }
+  .post-tag:hover { background: #667eea; color: white; }
 
   .intro-box {
     background: linear-gradient(135deg, #f5f7fa 0%, #f9fafc 100%);
@@ -155,23 +126,18 @@ header:
   }
 </style>
 
-<!-- Structure like apps.md: home-wrapper + sidebar-left + center-content -->
 <div class="home-wrapper">
 
-  <!-- LEFT SIDEBAR (từ _includes/sidebar-left.html) -->
   {% include sidebar-left.html %}
 
-  <!-- CENTER CONTENT -->
   <div class="center-content">
     
-    <!-- Introduction Box -->
     <div class="intro-box">
       <h3 style="margin-top: 0;">📌 Cách Sử Dụng Tags</h3>
       <p>Trang này hiển thị tất cả <strong>tags</strong> được sử dụng trong các bài viết của HST.AI. Mỗi tag liệt kê các bài viết liên quan kèm <strong>tóm tắt nội dung</strong> và <strong>ngày đăng</strong>.</p>
       <p style="margin-bottom: 0;"><strong>Mẹo:</strong> Sử dụng Ctrl+F (⌘+F trên Mac) để tìm tag bạn cần.</p>
     </div>
 
-    <!-- Tags List -->
     {% assign tags = site.tags | sort %}
     {% assign tag_count = tags | size %}
 
@@ -183,7 +149,6 @@ header:
       <p style="color: #6a737d; margin: 0;">Nhấp vào tiêu đề bài viết để đọc nội dung đầy đủ</p>
     </div>
 
-    <!-- Tags Sections -->
     {% for tag in tags %}
       {% assign tag_name = tag | first %}
       {% assign tag_posts = tag | last %}
@@ -195,43 +160,21 @@ header:
           <span class="tag-badge">{{ post_count }}</span>
         </div>
 
-        <!-- Posts Grid -->
         <div class="posts-grid">
           {% for post in tag_posts %}
             <div class="post-card">
-              <!-- Post Title -->
-              <h3>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-              </h3>
-
-              <!-- Post Date -->
-              <div class="post-date">
-                📅 {{ post.date | date: "%d/%m/%Y" }}
-              </div>
-
-              <!-- Post Excerpt / Summary -->
+              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+              <div class="post-date">📅 {{ post.date | date: "%d/%m/%Y" }}</div>
               {% if post.excerpt %}
-                <div class="post-excerpt">
-                  {{ post.excerpt | strip_html | truncatewords: 30 }}
-                </div>
+                <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
               {% elsif post.content %}
-                <div class="post-excerpt">
-                  {{ post.content | strip_html | truncatewords: 30 }}
-                </div>
+                <div class="post-excerpt">{{ post.content | strip_html | truncatewords: 30 }}</div>
               {% else %}
-                <div class="post-excerpt">
-                  <em>Không có mô tả</em>
-                </div>
+                <div class="post-excerpt"><em>Không có mô tả</em></div>
               {% endif %}
-
-              <!-- Read More Button -->
               <div style="margin-top: 1rem;">
-                <a href="{{ post.url }}" class="post-cta">
-                  Đọc tiếp <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i>
-                </a>
+                <a href="{{ post.url }}" class="post-cta">Đọc tiếp <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i></a>
               </div>
-
-              <!-- Tags -->
               {% if post.tags %}
                 <div class="post-tags">
                   {% for tag_item in post.tags limit:3 %}
@@ -248,7 +191,6 @@ header:
       </div>
     {% endfor %}
 
-    <!-- Footer -->
     <div class="tags-footer">
       <p>Cập nhật lần cuối: <strong>{{ site.time | date: "%d/%m/%Y %H:%M" }}</strong></p>
       <p>Tổng cộng: <strong>{{ site.posts | size }}</strong> bài viết | <strong>{{ tag_count }}</strong> tags</p>
@@ -257,5 +199,4 @@ header:
   </div>
 
 </div>
-<!-- RIGHT SIDEBAR -->
-  {% include sidebar-right.html %}
+{% include sidebar-right.html %}
