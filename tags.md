@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Danh Sách Tags"
+title: "HST - Tư vấn & Quản lý dự án"
 permalink: /tags/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
