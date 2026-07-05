@@ -4,7 +4,7 @@ title: "Ứng dụng"
 permalink: /apps/
 header:
   overlay_image: "/assets/images/hero-engineering.jpg"
-  caption: "<div class='hero-contact-wrapper'><span class='c-item'><span class='c-label'>Contact:</span> <a href='https://zalo.me/84374874142' class='v-zalo'>Zalo</a></span> <span class='c-sep'>|</span> <span class='c-item'><a href='https://wa.me/84374874142' class='v-whatsapp'>WhatsApp</a></span> <span class='c-sep'>|</span> <span class='c-item'><a href='http://hatech.info' class='v-profile'>Profile</a></span></div>"
+  caption: "<div class='hero-contact-wrapper' style='display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;'><span style='display:inline-block;font-size:1.3rem;line-height:1;filter:grayscale(1) brightness(0) invert(1);animation:point-nudge 1s ease-in-out infinite;'>👉</span><a href='https://zalo.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);'>💬 Zalo</a><a href='https://wa.me/84374874142' style='display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);'>📱 WhatsApp</a><a href='http://hatech.info' style='display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);'>🌐 Profile</a></div>"
   title: "Các Ứng dụng cho Kỹ thuật xây dựng"
 ---
 
@@ -13,6 +13,8 @@ header:
 <style>
   /* Ẩn tiêu đề trên hero, giữ chiều cao */
   .page__hero--overlay .page__title { visibility: hidden !important; }
+
+  @keyframes point-nudge { 0%,100% { transform:translateX(0); } 50% { transform:translateX(7px); } }
 
   /* Chỉ định nghĩa thêm những gì trang Apps cần mà custom-home.css chưa có */
   .app-card-badges {
@@ -153,20 +155,20 @@ header:
            <img src="{{ relative_url }}/assets/images/app-icons/lateral-pile.png" alt="Lateral Pile Analysis" onerror="this.src='/assets/images/app-icons/pile-group2.png'">
         </div>
         <div class="app-card-body">
-          <h3 class="app-card-title">Cọc Chịu Tải Ngang</h3>
+          <h3 class="app-card-title">Cọ Chịu Tải Ngang</h3>
           <div class="app-card-badges">
             <span class="badge bg-danger">P-Y Curve</span>
             <span class="badge bg-info" style="color:#000">TCVN 10304</span>
           </div>
           <p class="app-card-desc">
-            Phân tích cọc đơn chịu tải trọng ngang sử dụng mô hình phi tuyến p-y curve.
+            Phân tích cọ đơn chịu tải trọ ng ngang sử dụng mô hình phi tuyến p-y curve.
           </p>
           <div class="app-features-list">
             <h6>Tính năng:</h6>
             <ul>
               <li>Mô hình đất nền nhiều lớp</li>
               <li>Đất dính và đất rời</li>
-              <li>Biểu đồ chuyển vị & nội lực</li>
+              <li>Biểu đồ chuyển vị &amp; nội lực</li>
             </ul>
           </div>
           <a href="{{ site.baseurl }}/apps/landing.html" class="btn--app">Xem chi tiết</a>
@@ -190,7 +192,7 @@ header:
             <h6>Tính năng:</h6>
             <ul>
               <li>Mô phỏng thi công theo giai đoạn</li>
-              <li>Hệ thanh chống (Strut) & Neo</li>
+              <li>Hệ thanh chống (Strut) &amp; Neo</li>
               <li>Tính toán dòng thấm</li>
             </ul>
           </div>
@@ -203,20 +205,20 @@ header:
           <img src="/assets/images/app-icons/pilegroup-icon.png" alt="Pile Group 3D">
         </div>
         <div class="app-card-body">
-          <h3 class="app-card-title">Nhóm Cọc 3D</h3>
+          <h3 class="app-card-title">Nhóm Cọ 3D</h3>
           <div class="app-card-badges">
             <span class="badge bg-warning">Zavriev</span>
-            <span class="badge bg-primary">Móng cọc</span>
+            <span class="badge bg-primary">Móng cọ</span>
           </div>
           <p class="app-card-desc">
-            Phân tích móng cọc đài cao (bệ cứng) theo phương pháp Zavriev-Spiro.
+            Phân tích móng cọ đài cao (bệ cứng) theo phương pháp Zavriev-Spiro.
           </p>
           <div class="app-features-list">
             <h6>Tính năng:</h6>
             <ul>
-              <li>Hỗ trợ cọc xiên không gian</li>
-              <li>Tải trọng 6 thành phần</li>
-              <li>Tính phản lực đầu cọc</li>
+              <li>Hỗ trợ cọ xiên không gian</li>
+              <li>Tải trọ ng 6 thành phần</li>
+              <li>Tính phản lực đầu cọ</li>
             </ul>
           </div>
           <a href="{{ site.baseurl }}/apps/landing.html" class="btn--app">Xem chi tiết</a>
@@ -228,7 +230,7 @@ header:
           <img src="/assets/images/app-icons/hydraulic-spillway.png" alt="Hydraulic Spillway" onerror="this.src='/assets/images/app-icons/chute-spillway.png'">
         </div>
         <div class="app-card-body">
-          <h3 class="app-card-title">Dốc Nước & Tiêu Năng</h3>
+          <h3 class="app-card-title">Dốc Nước &amp; Tiêu Năng</h3>
           <div class="app-card-badges">
             <span class="badge bg-primary">Thủy lực</span>
             <span class="badge bg-success">Hydraulic Jump</span>
@@ -266,7 +268,7 @@ header:
             <ul>
               <li>Hỗ trợ 5+ nền tảng mạng xã hội</li>
               <li>Chất lượng 4K, 1080p, MP3, WAV</li>
-              <li>CLI tool & Python API</li>
+              <li>CLI tool &amp; Python API</li>
             </ul>
           </div>
           <a href="{{ site.baseurl }}/apps/social-media-downloader/" class="btn--app">Mở ứng dụng</a>
