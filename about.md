@@ -19,26 +19,20 @@ header:
     margin-top: 0 !important;
   }
 
-  /* Thanh liên hệ nằm NGOÀI ảnh hero: WhatsApp chính giữa, Zalo/Profile cách đều 12% chiều rộng màn hình (vw) - nhất quán trên mọi trang bất kể độ rộng container */
+  /* Thanh liên hệ nằm NGOÀI ảnh hero: gom 3 nút Zalo/WhatsApp/Profile lại gần nhau, canh giữa */
   .hero-contact-bar {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
     padding: 0.3rem 0;
     margin: 0;
     min-height: 1.9rem;
     line-height: 1;
     background: #f4f6f9;
     border-bottom: 1px solid #e1e4e8;
-  }
-
-  .hero-contact-bar a:nth-child(1) { position: absolute; left: 12vw; }
-  .hero-contact-bar a:nth-child(3) { position: absolute; right: 12vw; }
-
-  @media (max-width: 700px) {
-    .hero-contact-bar a:nth-child(1) { left: 4vw; }
-    .hero-contact-bar a:nth-child(3) { right: 4vw; }
   }
 
   :root {
