@@ -17,6 +17,7 @@ description: "Tư vấn Quản lý dự án và Hỗ trợ phần mềm tính to
 url: "https://hydrostructai.com"
 baseurl: ""
 repository: " "
+og_image: "/assets/images/og-image.png" # ảnh mặc định khi share link (Zalo, Facebook...)
 teaser: # path to an image to be used as a teaser - relative to /assets/images/
 logo: # path to an image to be used for the site logo - relative to /assets/images/
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
