@@ -97,7 +97,8 @@ Theo Nghị định 151/2025/NĐ-CP, từ năm 2026, thẩm quyền phê duyệt
 
 Trình tự GPMB được tổ chức theo ba giai đoạn, từ khi có quyết định chủ trương đến khi bàn giao mặt bằng cho nhà thầu thi công.
 
-![Trình tự thủ tục giải phóng mặt bằng và bồi thường - Chính quyền 2 cấp mới](/assets/images/posts/giai-phong-mat-bang-gpmb/trinh-tu-gpmb.jpg)
+![Trình tự thủ tục giải phóng mặt bằng và bồi thường - Chính quyền 2 cấp mới](/assets/images/posts/giai-phong-mat-bang-gpmb/trinh-tu-gpmb.jpg) 
+
 *Tham khảo trình tự giải phóng mặt bằng GPMB GXD, Fb Ts. Nguyễn Thế Anh*
 
 ### 2.1. Giai đoạn 1: Bắt đầu và kế hoạch
