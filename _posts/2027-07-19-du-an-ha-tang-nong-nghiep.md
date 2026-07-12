@@ -2,7 +2,7 @@
 title: "Dự án hạ tầng nông nghiệp và vùng khó: đặc thù ít được viết đủ"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-07-19 18:00:00 +0700
+date: 2027-07-19 18:00:00 +0700
 layout: single
 featured: true
 toc: true
