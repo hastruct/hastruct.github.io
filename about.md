@@ -393,8 +393,8 @@ header:
         <div class="author-avatar">HH</div>
         <div class="author-bio">
           <h4>TS. Nguyễn Hải Hà - PMP®</h4>
-          <p> Với hơn 20 năm kinh nghiệm, tôi may mắn được đi qua đủ các vai: kỹ sư thiết kế, chủ nhiệm đồ án, tư vấn giám sát, tư vấn quản lý dự án cho các công trình thủy lợi, hạ tầng và cấp thoát nước trên khắp cả nước. 
-		  [Profile](https://hatech.info/about)</p>
+          <p> Với hơn 20 năm kinh nghiệm, tôi may mắn được đi qua đủ các vai: kỹ sư thiết kế, chủ nhiệm đồ án, tư vấn giám sát, tư vấn quản lý dự án cho các công trình thủy lợi, hạ tầng và cấp thoát nước trên khắp cả nước.
+          <a href="https://hatech.info/about" style="color: var(--color-accent);">Profile</a></p>
         </div>
       </div>
     </div>
