@@ -393,12 +393,33 @@ header:
         <div class="author-avatar">HH</div>
         <div class="author-bio">
           <h4>TS. Nguyễn Hải Hà - PMP®</h4>
-          <p> Với hơn 20 năm kinh nghiệm, tôi may mắn được đi qua đủ các vai: kỹ sư thiết kế, chủ nhiệm đồ án, tư vấn giám sát, tư vấn quản lý dự án cho các công trình thủy lợi, hạ tầng và cấp thoát nước trên khắp cả nước. 
-		  [Profile](https://hatech.info/about)</p>
+          <p>Tiến sĩ Kỹ thuật, chuyên gia về Công trình thủy, kết cấu công trình và địa kỹ thuật. Có kinh nghiệm thực tế trong quản lý và giám sát các dự án xây dựng theo chuẩn trong nước và quốc tế. Ứng dụng công nghệ và lập trình để đưa công cụ kỹ thuật hiệu suất cao.</p>
         </div>
       </div>
     </div>
 
+    <div class="about-section">
+      <h2>Kết nối và hợp tác</h2>
+      <p>Chúng tôi luôn tìm kiếm sự hợp tác từ các tổ chức, các doanh nghiệp xây dựng, các chuyên gia và đồng nghiệp muốn ứng dụng công nghệ vào quản lý dự án. Nếu bạn có câu hỏi, ý tưởng đóng góp hoặc nhu cầu tư vấn:</p>
+
+      <div style="margin: 0.8rem 0 1.2rem 0; display:flex; flex-direction:column; gap:0.7rem;">
+        <div style="color: var(--color-text);">
+          Profile: <a href="http://hatech.info" style="display:inline-flex;align-items:center;gap:0.3rem;background:#e8a010;color:#1e3a5f;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(232,160,16,0.4);">🌐 hatech.info</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;">
+          <a href="https://zalo.me/84374874142" style="display:inline-flex;align-items:center;gap:0.3rem;background:#0068FF;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(0,104,255,0.4);">💬 Zalo</a>
+          <a href="https://wa.me/84374874142" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:0.72rem;padding:0.3rem 0.65rem;border-radius:20px;box-shadow:0 2px 6px rgba(37,211,102,0.4);">📱 WhatsApp</a>
+        </div>
+        <div style="color: var(--color-text);">
+          Blog: Cập nhật hàng tuần về QLDA xây dựng, kỹ thuật số và công cụ mới
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a href="/apps/" class="btn-primary">Khám phá ứng dụng</a>
+        <a href="/" class="btn-outline">Về trang chủ</a>
+      </div>
+    </div>
 
   </div>
   </div>
