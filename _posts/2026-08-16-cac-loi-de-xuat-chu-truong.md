@@ -2,7 +2,7 @@
 title: "Các lỗi thường gặp khiến hồ sơ đề xuất chủ trương đầu tư bị trả lại"
 author_profile: true
 author_name: "HST.AI"
-date: 2026-08-17 18:00:00 +0700
+date: 2026-08-16 18:00:00 +0700
 layout: single
 featured: true
 toc: true
@@ -167,7 +167,7 @@ Dùng bảng này để rà trực tiếp phần căn cứ pháp lý của hồ 
 | Vật liệu xây dựng | NĐ 209/2026/NĐ-CP, TT 41/2026/TT-BXD | NĐ 09/2021, TT 10/2024 |
 | Quyết toán vốn đầu tư | NĐ 193/2026/NĐ-CP, TT 73/2026/TT-BTC | NĐ 99/2021 phần quyết toán, TT 27/2025/TT-BTC |
 
-> [!tip] Mẹo rà nhanh
+>  Mẹo rà nhanh
 > Tìm trong toàn văn hồ sơ các chuỗi ký tự sau: `2014`, `175/2024`, `10/2021`, `06/2021`, `11/2021`, `12/2021`, `13/2021`, `37/2015`, `50/2021`, `99/2021`, `111/2024`, `09/2021`. Mỗi lần tìm thấy là một điểm cần kiểm tra.
 
 ---
@@ -244,7 +244,7 @@ Trình tự này bắt được phần lớn lỗi trả hồ sơ mà không c�
 | 5 | 5 phút | Tìm bảng chi phí vận hành sau hoàn thành. Trống hoặc một dòng là thiếu | Lỗi 4 |
 | 6 | 5 phút | Đọc phần hiệu quả đầu tư, đếm số liệu định lượng. Dưới ba con số là viết cho có | Lỗi 5 |
 
-> [!warning] Điều dễ bỏ sót nhất
+>  Điều dễ bỏ sót nhất
 > Bốn trong sáu bước trên không đòi hỏi kiến thức chuyên ngành, chỉ đòi hỏi có người thực sự ngồi rà. Phần lớn hồ sơ bị trả không phải vì đơn vị tư vấn yếu chuyên môn, mà vì không ai chạy bước rà cuối cùng trước khi trình.
 
 ---
