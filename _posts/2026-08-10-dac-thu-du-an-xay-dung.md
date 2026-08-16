@@ -2,7 +2,7 @@
 title: "Đặc thù của dự án xây dựng: tại sao khó quản lý hơn các ngành khác"
 author_profile: true
 author_name: "HST"
-date: 2026-08-05 18:00:00 +0700
+date: 2026-08-10 18:00:00 +0700
 layout: single
 featured: true
 toc: true
