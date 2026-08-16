@@ -15,11 +15,10 @@ categories:
   - Project-Management
 tags:
   [
-  - dau-tu-cong
-  - qlda
-  - thuy-loi
-  - phap-luat
-  - tham-tra
+    Quản lý dự án,
+    Rủi ro xây dựng,
+    Đề xuất chủ trương đầu tư,
+    Xây dựng Việt Nam,
   ]
 excerpt: "Hồ sơ đề xuất chủ trương đầu tư bị trả lại hiếm khi vì lý do kỹ thuật. Phần lớn là năm lỗi dưới đây, lặp đi lặp lại qua từng bộ hồ sơ."
 header:
@@ -28,7 +27,7 @@ header:
   caption: "© HST - Tư vấn & Quản lý dự án"
 ---
 
-> [!info] Tổng quan
+> ## Tổng quan
 > Hồ sơ **Báo cáo đề xuất chủ trương đầu tư** (ĐXCTĐT) dự án nhóm B, nhóm C bị trả lại hiếm khi vì lý do kỹ thuật thuần tuý. Phần lớn rơi vào **năm nhóm lỗi lặp đi lặp lại**, đều đối chiếu được với **Điều 35 Luật Đầu tư công số 58/2024/QH15** và, từ tháng 4/2026, với **Chỉ thị số 16/CT-TTg ngày 23/4/2026** của Thủ tướng Chính phủ. Báo cáo này mô tả từng lỗi theo cấu trúc biểu hiện, căn cứ, hệ quả, cách sửa; kèm bộ tiêu chí rà soát và quy trình tự kiểm tra trước khi trình.
 
 ## Mục lục
@@ -59,7 +58,7 @@ header:
 | **TT 34/2026/TT-BXD** | Xác định cấp công trình, thẩm quyền, yêu cầu năng lực | Hiệu lực 01/7/2026, thay TT 06/2021 |
 | **QCVN 04-05:2022/BNNPTNT** | Phân cấp công trình thủy lợi, tần suất lũ thiết kế và lũ kiểm tra | Đối chiếu bản chính thức trước khi trích giá trị tần suất |
 
-> [!warning] Nguyên tắc trích dẫn
+> Nguyên tắc trích dẫn
 > Chỉ dẫn văn bản đã tự xác nhận hiệu lực trên Công báo Chính phủ hoặc cơ sở dữ liệu pháp luật chính thức. Hệ thống văn bản đang trong giai đoạn chuyển tiếp mạnh 2024 đến 2026, một số nghị định và thông tư có thể đã được sửa đổi sau thời điểm biên soạn tài liệu này.
 
 ---
